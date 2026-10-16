@@ -25,6 +25,10 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 ## Formati
 - YouTube lungo: 16:9, 1920x1080 (o 4K).
 - Shorts YT e Reel IG: 9:16, 1080x1920, testi nella safe zone. Su Instagram niente orizzontale.
+- Ogni video lungo esce nel fine settimana (orientativamente). Per ognuno: 3 Shorts/Reel dallo stesso girato,
+  pubblicati nei giorni prima come preparazione. Ognuno autonomo (funziona anche senza il lungo), con un angolo
+  diverso, senza svelare il finale del lungo. Su YT collegati al lungo con "video correlato".
+- Consegna: lungo 16:9 + 3 verticali + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
 
 ## Ambiente
 - Girato: Manuel lo carica nella cartella Drive "YT Video Claude editing"
