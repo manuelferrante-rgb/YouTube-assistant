@@ -28,7 +28,8 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Ogni video lungo esce nel fine settimana (orientativamente). Per ognuno 3 Shorts/Reel dallo stesso girato,
   ognuno autonomo e con un angolo diverso:
   - 1 teaser prima del lungo: aggancia senza svelare il finale.
-  - 2 dopo il lungo: rimandano al lungo (su YT "video correlato", su IG il rimando in didascalia).
+  - 2 dopo il lungo: niente scritte di rimando nel video. Solo un rimando breve nel testo (tipo "video fuori",
+    proporre varianti). Link su IG e "video correlato" su YT li mette Manuel.
 - Consegna: lungo 16:9 + 3 verticali + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
 
 ## Ambiente
