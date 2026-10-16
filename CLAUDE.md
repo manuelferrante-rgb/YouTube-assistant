@@ -30,6 +30,10 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
   - 1 teaser prima del lungo: aggancia senza svelare il finale.
   - 2 dopo il lungo: niente scritte di rimando nel video. Solo un rimando breve nel testo (tipo "video fuori",
     proporre varianti). Link su IG e "video correlato" su YT li mette Manuel.
+- Sottotitoli: impressi in italiano per ora (lingua del canale ancora da decidere, si valuta con Analytics dopo
+  6-8 lunghi). Una riga sola, stile classico senza sfondo (giallo o bianco, bordo sottile + ombra), in basso
+  nel lungo, più in alto nei verticali sopra l'interfaccia dell'app. Stile definitivo da scegliere su frame di prova.
+  Titolo e descrizione YT anche in inglese (traduzioni YouTube).
 - Consegna: lungo 16:9 + 3 verticali + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
 
 ## Ambiente
