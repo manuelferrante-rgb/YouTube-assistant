@@ -21,8 +21,12 @@ Voci Vere racconta le persone e i luoghi lontani dalle cartoline, con il loro co
 
 Capitoli:
 00:00 Il mercato sulla spiaggia
-00:27 Il giorno prima a Marari
-(gli altri capitoli si aggiornano con i tempi del montaggio finale)
+00:23 Il giorno prima a Marari
+00:50 I pescatori
+02:05 Il Kerala di cui ci parlano
+02:38 Il mercato all'alba
+05:03 Colazione: parotta e chai
+05:38 Si torna
 
 ## Descrizione YouTube (inglese, per la traduzione YouTube)
 At 3 a.m. the fishermen of Marari, in Kerala, are already at sea. By 8 the catch reaches the beach, where an
