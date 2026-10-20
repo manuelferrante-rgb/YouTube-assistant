@@ -117,3 +117,5 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   Le clip sorgente della sigla si conservano in `assets/sigla/` (NN_luogo.mp4, 4K, circa 1.5 s ciascuna)
   perché il girato su Drive viene cancellato dopo la pubblicazione. Va subito dopo il teaser di 20 s, sia nel lungo sia nei verticali. Copione e
   inquadrature in `copioni/presentazione_e_sigla.md`.
+- Silenzi (vale per tutti i video): tagliare le parti vuote e accorciare anche le pause troppo lunghe dentro il
+  parlato di Manuel, lasciando solo il respiro naturale tra le frasi.
