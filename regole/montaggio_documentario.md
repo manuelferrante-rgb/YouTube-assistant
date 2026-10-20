@@ -134,6 +134,7 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   consegna in chat.
 - Velocità e pause (riferimento dalla presentazione, che Manuel ha accelerato e ritoccato):
   - Parlato di Manuel (in camera e voiceover) a 1.1x (audio con atempo, tono invariato).
+  - Velocità da valutare video per video (ritmo, noia, comprensibilità), non automatica. Default:
   - Interviste alle persone del posto a velocità normale: è la loro voce, e l'inglese con accento deve
     restare comprensibile.
   - Nessuna pausa oltre ~0.3 s tra le frasi di Manuel, salvo una pausa voluta nei punti forti. Controllo
