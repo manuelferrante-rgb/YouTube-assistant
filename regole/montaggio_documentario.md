@@ -138,3 +138,8 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
     restare comprensibile.
   - Nessuna pausa oltre ~0.3 s tra le frasi di Manuel, salvo una pausa voluta nei punti forti. Controllo
     finale: cercare ogni silenzio > 0.4 s nel montato e giustificarlo o tagliarlo.
+- Lezioni tecniche dal primo documentario (in tools/doc_render.py):
+  - L'audio del montato si unisce a campione esatto (n fotogrammi x 1600 campioni), mai con il concat dei file:
+    perde ~13 ms a taglio e su 100+ tagli il labiale slitta di secondi.
+  - Voiceover e musica si posizionano con adelay + apad=whole_dur (apad+atrim annulla il ritardo).
+  - Prima della codifica finale: MIXONLY=1 per controllare il mix (silenzi > 0.4 s, durata = video).
