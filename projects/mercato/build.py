@@ -276,12 +276,52 @@ def short3(tl):
     tl.clip(sigla(tl.W, tl.H, "9x16"), audio=True)
 
 
+# ---------- trailer (teaser in stile film: v2 dopo il feedback di Manuel) ----------
+BEAT = 0.4528          # Taking Flight, 132.5 bpm
+M_OFF = 3.414          # attacco del brano su un battere, prima della crescita
+SIGLA_VO = f"{ROOT}/assets/sigla/frase_sigla_manuel.m4a"
+
+
+def _to_beat(tl, nbeats):
+    """Durata che porta il prossimo taglio su un battito (almeno ~nbeats battiti)."""
+    import math
+    target = math.ceil((tl.t + nbeats * BEAT - 0.2 * BEAT) / BEAT) * BEAT
+    return target - tl.t
+
+
+def montage(tl, shots, beats):
+    for (src, a, cx), nb in zip(shots, beats):
+        tl.broll(src, a, _to_beat(tl, nb), gain=0.0, cx=cx)
+
+
+def trailer(tl):
+    """Un solo suono per volta: musica sui montaggi, una voce per volta, poi sigla con la frase di Manuel."""
+    montage(tl, [(raw("0117"), 3.0, .5), (raw("0119"), 0.3, .45), (raw("0086"), 20.0, .5), (raw("0121"), 0.5, .5)],
+            [2, 2, 2, 2])
+    tl.speech(raw("0076"), [(26.45, 28.35)], subs=[(26.45, 28.35, "Di notte. Alle tre si comincia.")], cx=0.45)
+    montage(tl, [(raw("0085"), 0.3, .5), (raw("0093"), 25.0, .5), (raw("0123"), 0.5, .4), (raw("0109"), 5.0, .5)],
+            [2, 2, 1, 1])
+    tl.speech(raw("0076"), [(316.0, 319.1), (343.3, 345.1)], cx=0.45,
+              subs=[(316.0, 319.1, "Cristiani, induisti, musulmani."), (343.3, 345.1, "È un posto in pace.")])
+    montage(tl, [(raw("0086"), 27.0, .5), (raw("0089"), 3.5, .5), (raw("0120"), 3.0, .5), (raw("0118"), 12.0, .62),
+                 (raw("0124"), 1.6, .42), (raw("0126"), 10.0, .5)], [1, 1, 1, 1, 1, 1])
+    tl.speech(raw("0091"), [(3.3, 7.8)], speed=1.1)
+    tl._add(maps(tl.W, tl.H), 0, 4.5, speed=1.8, audio=False, grade="null")
+    # sigla: lampi sotto "Il mondo, raccontato da chi lo vive", logo su "Questo è Voci Vere"
+    t_s = tl.t
+    tl.vos.append(dict(file=SIGLA_VO, a=1.70, b=5.75, speed=1.0, t=t_s + 0.05))
+    montage(tl, [(raw("0122"), 1.0, .5), (raw("0076"), 40.0, .42), (raw("0081"), 95.0, .5), (raw("0117"), 15.0, .5),
+                 (raw("0143"), 3.0, .5)], [1, 1, 1, 1, 1])
+    tl.clip(logo_card(raw("0143"), 3.4, 2.9, tl.W, tl.H, f"{OUT}/sigla_logo2_{tl.W}x{tl.H}.mp4"))
+    tl.music(0, tl.t, M_FLIGHT, offset=M_OFF, level=0.8, fin=0.05, fout=1.2)
+
+
 if __name__ == "__main__":
     what = sys.argv[1] if len(sys.argv) > 1 else "all"
     prev = "--preview" in sys.argv
-    jobs = {"long": (long_video, False), "teaser": (teaser, True), "short2": (short2, True), "short3": (short3, True)}
+    jobs = {"long": (long_video, False), "teaser": (teaser, True), "trailer": (trailer, True), "short2": (short2, True), "short3": (short3, True)}
     for name, (fn, vert) in jobs.items():
-        if what not in ("all", name):
+        if what != name and not (what == "all" and name != "trailer"):
             continue
         W, H = ((540, 960) if vert else (960, 540)) if prev else ((1080, 1920) if vert else (3840, 2160))
         tag = f"{name}_{W}x{H}"
