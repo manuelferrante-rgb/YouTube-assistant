@@ -146,9 +146,21 @@ class Timeline:
         cut = f"{self.dir}/cut.mkv"
         run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", cut])
         total = self.t
+        # audio unito campione per campione (il concat dei file perde ~13 ms a taglio e sposta il labiale):
+        # ogni inquadratura contribuisce esattamente n fotogrammi * 1600 campioni
+        nat = f"{self.dir}/nat.wav"
+        import wave
+        with wave.open(nat, "wb") as wf:
+            wf.setnchannels(2); wf.setsampwidth(2); wf.setframerate(48000)
+            for p, s in zip(parts, self.shots):
+                pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", p, "-map", "0:a:0", "-f", "s16le", "-ac", "2",
+                                      "-ar", "48000", "-"], capture_output=True).stdout
+                need = s["n"] * 1600 * 4
+                pcm = pcm[:need] + b"\0" * max(0, need - len(pcm))
+                wf.writeframes(pcm)
 
         # ---- audio: ambiente/parlato + voiceover + musica in ducking ----
-        inputs = ["-i", cut]
+        inputs = ["-i", nat]
         fc, vo_labels = [], []
         for j, v in enumerate(self.vos):
             inputs += ["-i", v["file"]]
@@ -157,7 +169,7 @@ class Timeline:
             fc.append(f"[{k}:a]atrim={v['a']:.3f}:{v['b']:.3f},asetpts=PTS-STARTPTS,atempo={v['speed']},aresample=48000,"
                       f"highpass=f=80,afftdn=nf=-30,loudnorm=I=-16:TP=-2:LRA=6,aresample=48000,"
                       f"afade=t=in:d=0.04,afade=t=out:st={dvo - 0.08:.3f}:d=0.08,"
-                      f"adelay={int(v['t'] * 1000)}:all=1,apad,atrim=end={total:.3f}[vo{j}]")
+                      f"adelay={int(v['t'] * 1000)}:all=1,apad=whole_dur={total:.3f}[vo{j}]")
             vo_labels.append(f"[vo{j}]")
         mu_labels = []
         for j, m in enumerate(self.musics):
@@ -167,7 +179,7 @@ class Timeline:
             fc.append(f"[{k}:a]atrim={m['offset']:.3f}:{m['offset'] + d:.3f},asetpts=PTS-STARTPTS,aresample=48000,"
                       f"loudnorm=I=-18:TP=-2,aresample=48000,volume={m['level']},"
                       f"afade=t=in:d={m['fin']},afade=t=out:st={max(0, d - m['fout']):.3f}:d={m['fout']},"
-                      f"adelay={int(m['t0'] * 1000)}:all=1,apad,atrim=end={total:.3f}[mu{j}]")
+                      f"adelay={int(m['t0'] * 1000)}:all=1,apad=whole_dur={total:.3f}[mu{j}]")
             mu_labels.append(f"[mu{j}]")
         fc.append(f"[0:a]asplit=2[nat][natk]")
         if vo_labels:
@@ -185,6 +197,9 @@ class Timeline:
         run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(fc), "-map", "[a]",
              "-c:a", "pcm_s16le", "-ar", "48000", "-t", f"{total:.3f}", mix])
 
+        if os.environ.get("MIXONLY"):  # controllo rapido del mix prima della codifica finale
+            self.check(mix); return mix
+
         # ---- sottotitoli ----
         ass = f"{self.dir}/subs.ass"
         PALE_GOLD = "&H0098D8F2"
@@ -199,7 +214,7 @@ class Timeline:
             for a, b, t in sorted(self.subs):
                 f.write(f"Dialogue: 0,{ts(a)},{ts(b)},Sub,,0,0,0,,{t}\n")
 
-        run(["ffmpeg", "-v", "error", "-y", "-i", cut, "-i", mix, "-vf", f"ass={ass}:fontsdir={ROOT}/models",
+        run(["ffmpeg", "-v", "error", "-y", "-i", cut, "-i", mix, "-vf", f"setpts=N/({FPS}*TB),ass={ass}:fontsdir={ROOT}/models", "-r", str(FPS),
              "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", str(crf), "-preset", preset, "-profile:v", "high",
              "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", "-t", f"{total:.3f}", out])
         self.check(out)
@@ -207,7 +222,8 @@ class Timeline:
 
     def check(self, out):
         """Controlli finali: durata audio = video, nessun silenzio lungo."""
-        v = float(run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=duration", "-of", "csv=p=0", out]))
+        has_v = out.endswith(".mp4")
+        v = float(run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=duration", "-of", "csv=p=0", out])) if has_v else 0.0
         a = float(run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=duration", "-of", "csv=p=0", out]))
         raw = subprocess.run(["ffmpeg", "-v", "error", "-i", out, "-ac", "1", "-ar", "8000", "-f", "f32le", "-"], capture_output=True).stdout
         x = np.frombuffer(raw, np.float32); hop = 80; n = len(x) // hop
