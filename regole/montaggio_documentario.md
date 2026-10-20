@@ -129,3 +129,6 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   - Musica sotto la voce molto bassa (circa -22/-24 dB rispetto alla voce), un po' più presente solo nel finale.
   - Silenzi: tagliare tutto, restano solo i respiri tra le frasi (circa 0.2 s) e al massimo una pausa voluta
     nei punti forti.
+- Decisioni di Manuel per il mercato: titolo e copertina li fa lui; lungo tra 6 e 9 minuti; l'host parla con i
+  suoi sottotitoli senza voiceover sopra; usare il materiale utile senza annoiare, non serve usare tutto;
+  consegna in chat.

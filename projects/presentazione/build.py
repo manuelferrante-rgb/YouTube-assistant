@@ -150,7 +150,9 @@ ASR = sherpa_onnx.OfflineRecognizer.from_transducer(
 TEXT_FIX = [("lavorato", "laureato"), ("desiderava", "desideravo"), ("non ci vuoi", "non ci voglio"),
             ("Adesso vuoi", "Adesso voglio"), ("Na chile vive", "Da chi le vive"), ("Viaggiano i", "Viaggio nei"),
             ("posti lontano", "posti lontani"), ("cioverò", "troverò"), ("ti chiedi?", "ti chiedi:"),
-            ("capitata.", "capitata?")]
+            ("capitata.", "capitata?"),
+            ("ti chiedi.", "ti chiedi:"), ("Viaggia nei", "Viaggio nei"), ("Voi scivere.", "Voci Vere."),
+            ("è nato.", "è nato"), ("scoprire insieme", "scoprirlo insieme"), ("a me.", "a me,")]
 
 
 def seg_words(path):
@@ -177,7 +179,7 @@ for i, (c, s0, s1, ws) in enumerate(segs):
     nfr = round((s1 - s0) * FPS)
     d = nfr / FPS  # durata esatta in fotogrammi: audio e video identici, niente deriva sui tagli
     p = f"{OUT}/seg_{i:02d}.mkv"
-    vf = f"{crop_filter(zoom, faces[c])},{GRADE},fps={FPS},trim=end_frame={nfr},setpts=PTS-STARTPTS,format=yuv420p"
+    vf = f"{crop_filter(zoom, faces[c])},{GRADE},fps={FPS},tpad=stop_mode=clone:stop_duration=1,trim=end_frame={nfr},setpts=PTS-STARTPTS,format=yuv420p"
     af = f"aresample=48000,apad,atrim=end={d:.4f},afade=t=in:d=0.02,afade=t=out:st={d - 0.03:.3f}:d=0.03"
     if not (os.environ.get("REUSE") and os.path.exists(p)):  # REUSE=1 riusa i segmenti già renderizzati
       run(["ffmpeg", "-v", "error", "-y", "-ss", f"{s0:.3f}", "-t", f"{d + 0.5:.3f}", "-i", f"{SRC}/{c}.mov",
@@ -226,10 +228,10 @@ for o, dur, ws in timeline:
     for w in ws:
         cur.append(w)
         txt = " ".join(x[0] for x in cur)
-        if (w[0][-1] in ".?!,:" and len(cur) >= 2) or len(txt) > 36:
+        if (w[0][-1] in ".?!,:" and len(cur) >= 2) or len(txt) > 40:
             chunks.append(cur); cur = []
     if cur:
-        if chunks and len(" ".join(x[0] for x in chunks[-1] + cur)) <= 42:
+        if chunks and (len(cur) <= 2 or len(" ".join(x[0] for x in chunks[-1] + cur)) <= 46):
             chunks[-1] += cur
         else:
             chunks.append(cur)
