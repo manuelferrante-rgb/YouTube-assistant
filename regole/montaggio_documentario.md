@@ -144,3 +144,11 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
     perde ~13 ms a taglio e su 100+ tagli il labiale slitta di secondi.
   - Voiceover e musica si posizionano con adelay + apad=whole_dur (apad+atrim annulla il ritardo).
   - Prima della codifica finale: MIXONLY=1 per controllare il mix (silenzi > 0.4 s, durata = video).
+- Feedback di Manuel sul primo documentario (teaser e Short):
+  - Teaser (inizio del lungo e verticale) come il trailer di un film: veloce, d'impatto, emozionante. Non una
+    scena sola: i 2-3 momenti più forti (es. "ci alziamo alle 3 di notte", le religioni che convivono, il
+    mercato), con immagini rapide tagliate a ritmo di musica.
+  - Musica del teaser: niente chitarrina flebile. Brano cinematografico che cresce, con colpi su cui tagliare.
+  - Gli altri 2 Short: stesso stile da trailer, ma concentrati su un solo argomento, poi rimando al video
+    (il concetto lo decide Manuel).
+  - Consegna preferita: su Drive (token rclone), così Manuel vede e scarica tutto da lì.
