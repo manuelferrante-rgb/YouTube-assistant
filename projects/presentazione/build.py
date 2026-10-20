@@ -146,12 +146,14 @@ for i, (c, s0, s1, ws) in enumerate(segs):
     if zoom == zoom_prev:
         zoom = 1.0 if zoom != 1.0 else 1.1
     zoom_prev = zoom
-    d = s1 - s0
+    nfr = round((s1 - s0) * FPS)
+    d = nfr / FPS  # durata esatta in fotogrammi: audio e video identici, niente deriva sui tagli
     p = f"{OUT}/seg_{i:02d}.mkv"
     vf = f"{crop_filter(zoom, faces[c])},{GRADE},fps={FPS},format=yuv420p"
-    af = f"aresample=48000,afade=t=in:d=0.02,afade=t=out:st={d - 0.03:.3f}:d=0.03"
-    run(["ffmpeg", "-v", "error", "-y", "-ss", f"{s0:.3f}", "-t", f"{d:.3f}", "-i", f"{SRC}/{c}.mov",
-         "-map", "0:v:0", "-map", "0:a:0", "-vf", vf, "-af", af, "-c:v", "libx264", "-crf", "14", "-preset", "fast",
+    af = f"aresample=48000,apad,atrim=end={d:.4f},afade=t=in:d=0.02,afade=t=out:st={d - 0.03:.3f}:d=0.03"
+    if not (os.environ.get("REUSE") and os.path.exists(p)):  # REUSE=1 riusa i segmenti già renderizzati
+      run(["ffmpeg", "-v", "error", "-y", "-ss", f"{s0:.3f}", "-t", f"{d + 0.5:.3f}", "-i", f"{SRC}/{c}.mov",
+         "-map", "0:v:0", "-map", "0:a:0", "-vf", vf, "-af", af, "-frames:v", str(nfr), "-c:v", "libx264", "-crf", "14", "-preset", "fast",
          "-c:a", "pcm_s16le", p])
     real = float(run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p]))
     parts.append(p)
@@ -169,7 +171,7 @@ run(["ffmpeg", "-v", "error", "-y", "-ss", f"{last_s1:.3f}", "-i", f"{SRC}/{last
      "-filter_complex",
      f"[0:v]{crop_filter(1.0, fc)},{GRADE},fps={FPS},tpad=stop_mode=clone:stop_duration={TAIL},trim=duration={TAIL},"
      f"setpts=PTS-STARTPTS,split[a][b];"
-     f"[b]gblur=sigma=28,eq=brightness=-0.10:saturation=0.85[bl];"
+     f"[b]gblur=sigma=28,eq=brightness=-0.24:saturation=0.65[bl];"
      f"[a][bl]xfade=transition=fade:duration=1.0:offset=0.2[v];"
      f"[1:v]scale=980:-1,format=rgba,fade=t=in:st=0.7:d=0.8:alpha=1[lg];"
      f"[v][lg]overlay=(W-w)/2:(H-h)/2:shortest=1,format=yuv420p[out]",
@@ -216,7 +218,7 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Sub,Poppins Medium,50,{PALE_GOLD},{PALE_GOLD},&H00000000,&H90000000,0,0,0,0,100,100,0.5,0,1,1.6,1.4,2,160,160,70,1
+Style: Sub,Poppins Medium,56,{PALE_GOLD},{PALE_GOLD},&H00000000,&H90000000,0,0,0,0,100,100,0.5,0,1,1.6,1.4,2,160,160,70,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
