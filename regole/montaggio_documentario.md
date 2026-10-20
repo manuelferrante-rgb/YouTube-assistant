@@ -156,3 +156,6 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   va bene anche per tutto lo stile trailer, insieme agli altri brani più dinamici. La "chitarrina" (il brano
   che partiva con la sigla dopo il teaser) non gli piace: usarla poco o niente. Mai cambiare brano tra teaser e
   sigla, e mai musica sotto un audio originale che contiene voci (niente doppie voci).
+- Frase della sigla (voce di Manuel, file assets/sigla/frase_sigla_manuel.m4a, parlato 1.82-5.57 s):
+  "Il mondo, raccontato da chi lo vive. Questo è Voci Vere." Il logo entra su "Voci Vere". Stessa frase in
+  ogni video, sopra la musica del teaser (nessun cambio di brano).
