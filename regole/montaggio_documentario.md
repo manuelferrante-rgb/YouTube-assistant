@@ -111,6 +111,9 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   soli suoni ambientali la musica resta sotto, bassa; può salire nei passaggi tra una scena e l'altra (stile
   colonna sonora da film). Mai silenzio o solo ambiente "nudo". Prevale sulle sezioni 5F e 9 dove dicono di
   lasciare i soli suoni ambientali.
-- Sigla Voci Vere (5-10 s): si rifà a ogni video con il girato di quel video (stessa struttura), chiude sul logo;
-  va subito dopo il teaser di 20 s, sia nel lungo sia nei verticali. Copione e
+- Sigla Voci Vere (max 10 s): CUMULATIVA. A ogni nuovo video si aggiunge 1 pezzettino (l'inquadratura più
+  forte di quel video) a quelli già presenti, poi chiusura sul logo (~2 s). Più video, più pezzettini più brevi
+  (da 1 s fino a minimo ~0.5 s). Quando non ci stanno più, si tiene 1 pezzo per luogo/paese (il più forte).
+  Le clip sorgente della sigla si conservano in `assets/sigla/` (NN_luogo.mp4, 4K, circa 1.5 s ciascuna)
+  perché il girato su Drive viene cancellato dopo la pubblicazione. Va subito dopo il teaser di 20 s, sia nel lungo sia nei verticali. Copione e
   inquadrature in `copioni/presentazione_e_sigla.md`.
