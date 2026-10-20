@@ -38,7 +38,7 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Regole di montaggio complete: `regole/montaggio_documentario.md` (leggerle prima di ogni montaggio).
 - Flusso per video: girato su Drive -> analisi e copione voiceover -> Manuel carica registrazioni voiceover e
   musica (YouTube Audio Library) nella stessa cartella -> montaggio e consegna.
-  Titolo e descrizione YT anche in inglese (traduzioni YouTube).
+- Titolo e descrizione YT anche in inglese (traduzioni YouTube).
 - Consegna: lungo 16:9 + 3 verticali + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
 
 ## Ambiente
