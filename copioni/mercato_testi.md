@@ -3,10 +3,11 @@
 Titolo e copertina: li fa Manuel.
 
 ## Calendario suggerito
-- Venerdì: teaser verticale (Shorts + Reel)
-- Domenica: video lungo su YouTube
-- Martedì: Short 2 (il pescatore, "alle tre di notte")
-- Giovedì: Short 3 (il mercato, il pesce da 50 chili)
+- Venerdì: teaser verticale in stile trailer (Shorts + Reel), con sigla
+- Domenica: video lungo su YouTube (apre con lo stesso trailer)
+- Martedì: Reel C "Un posto in pace" (il più condivisibile, subito dopo il lungo)
+- Giovedì: Reel B "Il pesce da 50 chili"
+- Sabato: Reel A "Alle tre di notte" (facoltativo, il terzo in più)
 
 ## Descrizione YouTube (italiano)
 Alle tre di notte i pescatori di Marari, in Kerala, sono già in mare. Alle otto il pesce arriva sulla spiaggia,
@@ -21,12 +22,12 @@ Voci Vere racconta le persone e i luoghi lontani dalle cartoline, con il loro co
 
 Capitoli:
 00:00 Il mercato sulla spiaggia
-00:23 Il giorno prima a Marari
-00:50 I pescatori
-02:05 Il Kerala di cui ci parlano
-02:38 Il mercato all'alba
-05:03 Colazione: parotta e chai
-05:38 Si torna
+00:28 Il giorno prima a Marari
+00:55 I pescatori
+02:09 Il Kerala di cui ci parlano
+02:42 Il mercato all'alba
+05:07 Colazione: parotta e chai
+05:43 Si torna
 
 ## Descrizione YouTube (inglese, per la traduzione YouTube)
 At 3 a.m. the fishermen of Marari, in Kerala, are already at sea. By 8 the catch reaches the beach, where an
@@ -43,11 +44,14 @@ Voci Vere tells the stories of people and places far from the postcards, with th
 Alle tre di notte loro sono già in mare. Alle otto il pesce arriva qui, sulla spiaggia di Marari, in Kerala.
 Domenica il video completo sul canale YouTube.
 
-## Didascalie Short dopo il lungo (rimando breve, il link lo mette Manuel)
-Short 2, il pescatore:
-Trent'anni in mare, ogni notte alle tre. Video fuori, storia completa su YouTube.
-Varianti per il rimando: "Il video completo è fuori." / "La storia intera è su YouTube." / "Video fuori, link in bio."
+## Didascalie Reel dopo il lungo (rimando breve, il link lo mette Manuel)
+Reel C, Un posto in pace:
+Cristiani, induisti, musulmani. Lui lo dice così: "È un posto in pace". Marari, Kerala. Video fuori.
 
-Short 3, il mercato:
-Un pesce da 50 chili, venduto all'asta sulla spiaggia. Succede ogni mattina a Marari.
-Varianti per il rimando: "Video fuori." / "Il mercato completo nel video su YouTube." / "Trovi tutto nel video, link in bio."
+Reel B, Il pesce da 50 chili:
+Un pesce da 50 chili, venduto all'asta sulla spiaggia. Succede ogni mattina a Marari. Video fuori.
+
+Reel A, Alle tre di notte:
+Alle tre di notte è già in mare. Da trent'anni. Video fuori, storia completa su YouTube.
+
+Varianti per il rimando: "Video fuori." / "Il video completo è sul canale." / "La storia intera è su YouTube, link in bio."

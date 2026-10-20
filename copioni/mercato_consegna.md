@@ -1,23 +1,24 @@
 # Mercato del pesce di Marari: consegna
 
-## File
-- Lungo 16:9 4K, 6:06 (master 3,2 GB in work/mercato; consegnato in chat in 3 parti da unire in CapCut).
-- Teaser 9:16, 23 s (teaser 20 s + sigla).
-- Short 2 9:16, 21 s: il pescatore, "alle tre di notte", trent'anni di pesca.
-- Short 3 9:16, 24 s: il mercato, il pesce da 50 chili, "questo l'hanno venduto".
+## File (versione 2, dopo il feedback di Manuel)
+- Lungo 16:9 4K, 6:11: apre con il trailer (hook dei primi 28 s) e la sigla con la frase di Manuel.
+- Teaser 9:16 in stile trailer, 28 s, con sigla.
+- Reel A "Alle tre di notte" 18 s, Reel B "Il pesce da 50 chili" 19 s, Reel C "Un posto in pace" 24 s: senza sigla.
+- Verticali: sottotitoli alti, quasi centrali. Musica unica (Taking Flight), che scende di 14 dB sotto ogni voce.
+- Consegna su Drive (montati/mercato) appena c'è il token rclone.
 
 ## Struttura del lungo
 | Tempo | Sezione | Contenuto |
 |---|---|---|
-| 0:00 | Teaser | folla del mercato, ceste, il pescatore "alle tre si comincia", mappa India > Kerala > Marari |
-| 0:17 | Sigla | 5 lampi del girato + logo (prima versione della sigla cumulativa) |
-| 0:23 | Il giorno prima | spiaggia di Marari, reti sui teli, Manuel: "Immagini di svegliarti alle 3..." |
-| 0:50 | Pescatore 1 | le reti, gli orari, "Mar Arabico" |
-| 1:26 | Pescatore 2 | la notte, il mercato, trent'anni, il kayak nei canali |
-| 2:05 | Il Kerala | la vita, le religioni che convivono, la festa con il cibo per tutti |
-| 2:38 | Il mercato | l'host, l'asta sulla spiaggia, il pesce da 50 chili, barche grandi e piccole, il ghiaccio |
-| 5:03 | Colazione | parotta e chai sotto il telo, il gattino |
-| 5:38 | Chiusura | tuk-tuk, le reti, "siamo venuti ad ascoltarla", saluto di Manuel, logo |
+| 0:00 | Trailer | montaggio a tempo, "alle tre si comincia", "cristiani, induisti, musulmani", "un posto in pace", il pesce da 50 chili, mappa |
+| 0:23 | Sigla | lampi del girato, "Il mondo, raccontato da chi lo vive. Questo è Voci Vere", logo |
+| 0:28 | Il giorno prima | spiaggia di Marari, reti sui teli, Manuel: "Immagini di svegliarti alle 3..." |
+| 0:55 | Pescatore 1 | le reti, gli orari, "Mar Arabico" |
+| 1:30 | Pescatore 2 | la notte, il mercato, trent'anni, il kayak nei canali |
+| 2:09 | Il Kerala | la vita, le religioni che convivono, la festa con il cibo per tutti |
+| 2:42 | Il mercato | l'host, l'asta sulla spiaggia, il pesce da 50 chili, barche grandi e piccole, il ghiaccio |
+| 5:07 | Colazione | parotta e chai sotto il telo, il gattino |
+| 5:43 | Chiusura | tuk-tuk, le reti, "siamo venuti ad ascoltarla", saluto di Manuel, logo |
 
 ## Scelte di montaggio
 - Parlato di Manuel (in camera e voiceover) a 1.1x; interviste ai pescatori e all'host a velocità normale.
