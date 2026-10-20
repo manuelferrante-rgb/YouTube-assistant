@@ -119,3 +119,13 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   inquadrature in `copioni/presentazione_e_sigla.md`.
 - Silenzi (vale per tutti i video): tagliare le parti vuote e accorciare anche le pause troppo lunghe dentro il
   parlato di Manuel, lasciando solo il respiro naturale tra le frasi.
+- Feedback presentazione (vale per tutti i video):
+  - Labiale SEMPRE in sincrono: ogni taglio con durata esatta in fotogrammi, audio e video tagliati insieme
+    (mai -frames:v, che tronca l'audio), e verifica finale che audio e video abbiano la stessa durata.
+  - Sottotitoli completi: nessuna parola mancante. Si generano dall'audio già montato (trascrizione di ogni
+    taglio), poi si correggono gli errori noti. Rileggere l'elenco dei sottotitoli prima di esportare.
+  - Sottotitoli sempre alla stessa altezza: una riga sola (niente a capo), sopra il video finale, quindi
+    non si spostano con gli zoom.
+  - Musica sotto la voce molto bassa (circa -22/-24 dB rispetto alla voce), un po' più presente solo nel finale.
+  - Silenzi: tagliare tutto, restano solo i respiri tra le frasi (circa 0.2 s) e al massimo una pausa voluta
+    nei punti forti.

@@ -27,7 +27,7 @@ FIX = {
 # frasi su cui stringere l'inquadratura (prima parola del segmento, maiuscolo)
 STRONG = {"MI", "PER", "MA", "SE", "FORSE"}
 # pause in più (s) dopo il segmento che finisce con questa parola
-EXTRA_PAUSE_AFTER = {"CAPITATA": 0.45, "NO": 0.35}
+EXTRA_PAUSE_AFTER = {"CAPITATA": 0.25}
 
 FPS = 30
 W, H = 1920, 1080
@@ -69,7 +69,7 @@ def vad(path, span):
     regs = [r for r in regs if r[1] > span[0] - 0.3 and r[0] < span[1] + 0.5]
     merged = []
     for r in regs:
-        if merged and r[0] - merged[-1][1] < 0.45:
+        if merged and r[0] - merged[-1][1] < 0.30:
             merged[-1][1] = r[1]
         else:
             merged.append(r)
@@ -124,7 +124,7 @@ for c in CLIPS:
     for k, (s0, s1) in enumerate(regs):
         nxt = regs[k + 1][0] - 0.6 if k + 1 < len(regs) else 1e9
         ws = [(w[0], w[1] + 0.25, w[2]) for w in words if s0 - 0.6 <= w[1] < nxt]
-        segs.append([c, max(0, s0 - 0.14), s1 + 0.16, ws])
+        segs.append([c, max(0, s0 - 0.10), s1 + 0.12, ws])
 
 # pause espressive
 for s in segs:
@@ -139,6 +139,34 @@ FACES = {"01_IMG_8295": (980, 340), "02a_IMG_8298": (960, 340), "02b_IMG_8298": 
 faces = FACES
 
 # ---------- 2. render dei segmenti ----------
+import sherpa_onnx
+sys.path.insert(0, f"{ROOT}/tools")
+from analyze_clips import words_from_tokens
+_M = f"{ROOT}/models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8"
+ASR = sherpa_onnx.OfflineRecognizer.from_transducer(
+    encoder=f"{_M}/encoder.int8.onnx", decoder=f"{_M}/decoder.int8.onnx", joiner=f"{_M}/joiner.int8.onnx",
+    tokens=f"{_M}/tokens.txt", model_type="nemo_transducer", num_threads=4)
+# errori noti della trascrizione automatica -> parole dette davvero (verificate con Manuel)
+TEXT_FIX = [("lavorato", "laureato"), ("desiderava", "desideravo"), ("non ci vuoi", "non ci voglio"),
+            ("Adesso vuoi", "Adesso voglio"), ("Na chile vive", "Da chi le vive"), ("Viaggiano i", "Viaggio nei"),
+            ("posti lontano", "posti lontani"), ("cioverò", "troverò"), ("ti chiedi?", "ti chiedi:"),
+            ("capitata.", "capitata?")]
+
+
+def seg_words(path):
+    """Parole del segmento con tempi relativi, corrette con TEXT_FIX a livello di frase."""
+    st = ASR.create_stream(); st.accept_waveform(16000, audio16k(path)); ASR.decode_stream(st)
+    r = st.result
+    ws = words_from_tokens(list(r.tokens), list(r.timestamps))
+    text = " ".join(w for w, _ in ws)
+    for a, b in TEXT_FIX:
+        text = text.replace(a, b)
+    toks = text.split()
+    if len(toks) != len(ws):  # la correzione ha cambiato il numero di parole: tempi distribuiti
+        t0, t1 = ws[0][1], ws[-1][1]
+        return [(tk, t0 + (t1 - t0) * k / max(1, len(toks) - 1)) for k, tk in enumerate(toks)]
+    return [(tk, t) for tk, (_, t) in zip(toks, ws)]
+
 parts, timeline, t_out, zoom_prev = [], [], 0.0, None
 for i, (c, s0, s1, ws) in enumerate(segs):
     first = ws[0][2]
@@ -149,15 +177,15 @@ for i, (c, s0, s1, ws) in enumerate(segs):
     nfr = round((s1 - s0) * FPS)
     d = nfr / FPS  # durata esatta in fotogrammi: audio e video identici, niente deriva sui tagli
     p = f"{OUT}/seg_{i:02d}.mkv"
-    vf = f"{crop_filter(zoom, faces[c])},{GRADE},fps={FPS},format=yuv420p"
+    vf = f"{crop_filter(zoom, faces[c])},{GRADE},fps={FPS},trim=end_frame={nfr},setpts=PTS-STARTPTS,format=yuv420p"
     af = f"aresample=48000,apad,atrim=end={d:.4f},afade=t=in:d=0.02,afade=t=out:st={d - 0.03:.3f}:d=0.03"
     if not (os.environ.get("REUSE") and os.path.exists(p)):  # REUSE=1 riusa i segmenti già renderizzati
       run(["ffmpeg", "-v", "error", "-y", "-ss", f"{s0:.3f}", "-t", f"{d + 0.5:.3f}", "-i", f"{SRC}/{c}.mov",
-         "-map", "0:v:0", "-map", "0:a:0", "-vf", vf, "-af", af, "-frames:v", str(nfr), "-c:v", "libx264", "-crf", "14", "-preset", "fast",
+         "-map", "0:v:0", "-map", "0:a:0", "-vf", vf, "-af", af, "-t", f"{d:.4f}", "-c:v", "libx264", "-crf", "14", "-preset", "fast",
          "-c:a", "pcm_s16le", p])
     real = float(run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p]))
     parts.append(p)
-    timeline.append((t_out, c, s0, ws))
+    timeline.append((t_out, real, seg_words(p)))
     t_out += real
     print(f"seg {i:02d} {c} {s0:6.2f}-{s1:6.2f} zoom {zoom}  {' '.join(w[0] for w in ws)}")
 
@@ -193,28 +221,31 @@ def ts(t):
     return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 events = []
-for k, (o, c, s0, ws) in enumerate(timeline):
-    seg_end = timeline[k + 1][0] if k + 1 < len(timeline) else t_out
+for o, dur, ws in timeline:
     chunks, cur = [], []
     for w in ws:
         cur.append(w)
         txt = " ".join(x[0] for x in cur)
-        if w[0][-1] in ".?!," and len(cur) >= 2 or len(txt) > 34:
+        if (w[0][-1] in ".?!,:" and len(cur) >= 2) or len(txt) > 36:
             chunks.append(cur); cur = []
     if cur:
-        chunks.append(cur)
+        if chunks and len(" ".join(x[0] for x in chunks[-1] + cur)) <= 42:
+            chunks[-1] += cur
+        else:
+            chunks.append(cur)
     for j, ch in enumerate(chunks):
-        a = o + (ch[0][1] - s0) - 0.05
-        b = o + (chunks[j + 1][0][1] - s0) - 0.05 if j + 1 < len(chunks) else seg_end - 0.05
-        text = " ".join(x[0] for x in ch).rstrip(",")
-        events.append((a, b, text))
+        a = o if j == 0 else o + max(0.0, ch[0][1] - 0.05)
+        b = o + dur if j + 1 == len(chunks) else o + max(0.0, chunks[j + 1][0][1] - 0.05)
+        events.append((a, b - 0.02, " ".join(x[0] for x in ch).rstrip(",")))
+for a, b, t in events:
+    print(f"  sub {a:6.2f}-{b:6.2f}  {t}")
 
 PALE_GOLD = "&H0098D8F2"  # #F2D898 in BGR
 ass = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
 PlayResY: {H}
-WrapStyle: 0
+WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -234,7 +265,7 @@ run(["ffmpeg", "-v", "error", "-y", "-i", f"{OUT}/cut.mkv", "-i", music, "-filte
      f"[0:a]highpass=f=80,afftdn=nf=-30,acompressor=threshold=-22dB:ratio=3:attack=10:release=150,"
      f"loudnorm=I=-15:TP=-2:LRA=7,aresample=48000[voc];"
      f"[1:a]atrim=0:{total + 0.5:.2f},asetpts=PTS-STARTPTS,loudnorm=I=-16:TP=-2,aresample=48000,"
-     f"volume='if(lt(t,{end_t:.2f}),0.10,0.10+min(1,(t-{end_t:.2f})/1.2)*0.30)':eval=frame,"
+     f"volume='if(lt(t,{end_t:.2f}),0.075,0.075+min(1,(t-{end_t:.2f})/1.2)*0.20)':eval=frame,"
      f"afade=t=in:d=1.5,afade=t=out:st={total - 1.6:.2f}:d=1.6[mus];"
      f"[voc][mus]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1:LRA=9,aresample=48000[a]",
      "-map", "[a]", "-c:a", "pcm_s16le", "-ar", "48000", f"{OUT}/mix.wav"])
