@@ -53,8 +53,10 @@ Variante più forte: il tuo riflesso in uno specchio, un po' sfocato, con te nit
 
 # Sigla Voci Vere (6-8 secondi)
 
-Va dopo il teaser di 20 secondi, sia nel video lungo sia negli Shorts. Stessa struttura ogni volta, così diventa
-riconoscibile. Il gesto del microfono si può rigirare in ogni paese.
+Si monta UNA volta sola, dal video di presentazione più qualche inquadratura del Kerala, e si riusa identica
+dopo il teaser di 20 secondi di ogni video lungo e di ogni verticale.
+Durante le riprese della presentazione Manuel gira anche 2-3 prese dedicate della frase della sigla, staccate
+dal resto (pausa prima e dopo, sguardo in camera). Il volto e la voce vengono da lì.
 
 ## Inquadrature da girare (orizzontale, 4K)
 1. (1 s) Mani al lavoro, in primo piano: reti, pesce, attrezzi.
