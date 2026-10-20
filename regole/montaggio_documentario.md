@@ -152,3 +152,7 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   - Gli altri 2 Short: stesso stile da trailer, ma concentrati su un solo argomento, poi rimando al video
     (il concetto lo decide Manuel).
   - Consegna preferita: su Drive (token rclone), così Manuel vede e scarica tutto da lì.
+- Musica (Manuel): il brano preferito per teaser e momenti di ritmo è quello del primo teaser (Taking Flight);
+  va bene anche per tutto lo stile trailer, insieme agli altri brani più dinamici. La "chitarrina" (il brano
+  che partiva con la sigla dopo il teaser) non gli piace: usarla poco o niente. Mai cambiare brano tra teaser e
+  sigla, e mai musica sotto un audio originale che contiene voci (niente doppie voci).
