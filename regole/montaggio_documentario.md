@@ -105,3 +105,9 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   Manuel potrebbe darli, chiederli se il video ruota su una persona. Le persone si presentano attraverso il
   contesto e il voiceover.
 - Informazioni sul luogo: solo quelle che si sentono nel girato (interviste, spiegazioni). Niente altre fonti.
+- Ritmo: nessuna parte noiosa. Tagliare tempi morti, ripetizioni e attese; ogni inquadratura deve aggiungere qualcosa.
+- Elementi artificiali (non girati da Manuel): solo la mappa animata nel teaser iniziale. Nessun B-roll stock nel resto.
+- Audio sempre pieno: in ogni momento c'è parlato (Manuel, interviste, voiceover) oppure musica. Nei momenti di
+  soli suoni ambientali la musica resta sotto, bassa; può salire nei passaggi tra una scena e l'altra (stile
+  colonna sonora da film). Mai silenzio o solo ambiente "nudo". Prevale sulle sezioni 5F e 9 dove dicono di
+  lasciare i soli suoni ambientali.
