@@ -176,13 +176,33 @@ class Timeline:
                       f"afade=t=in:d=0.04,afade=t=out:st={dvo - 0.08:.3f}:d=0.08,"
                       f"adelay={int(v['t'] * 1000)}:all=1,apad=whole_dur={total:.3f}[vo{j}]")
             vo_labels.append(f"[vo{j}]")
+        # intervalli in cui qualcuno parla (parlato originale o voiceover): lì la musica scende di ~14 dB
+        voice = sorted([(sh["t"], sh["t"] + sh["d"]) for sh in self.shots if sh["norm"]] +
+                       [(v["t"], v["t"] + (v["b"] - v["a"]) / v["speed"]) for v in self.vos])
+        merged = []
+        for a, b in voice:
+            if merged and a - merged[-1][1] < 0.5:
+                merged[-1][1] = max(merged[-1][1], b)
+            else:
+                merged.append([a, b])
+        DUCK = 0.2
+
+        def duck_expr(t0):
+            terms = [f"clip(min((t-{a - t0 - 0.25:.3f})/0.25,({b - t0 + 0.35:.3f}-t)/0.35),0,1)" for a, b in merged]
+            if not terms:
+                return "1"
+            mx = terms[0]
+            for tt in terms[1:]:
+                mx = f"max({mx},{tt})"
+            return f"1-{1 - DUCK}*{mx}"
+
         mu_labels = []
         for j, m in enumerate(self.musics):
             inputs += ["-i", m["track"]]
             k = len(inputs) // 2 - 1
             d = m["t1"] - m["t0"]
             fc.append(f"[{k}:a]atrim={m['offset']:.3f}:{m['offset'] + d:.3f},asetpts=PTS-STARTPTS,aresample=48000,"
-                      f"loudnorm=I=-18:TP=-2,aresample=48000,volume={m['level']},"
+                      f"loudnorm=I=-18:TP=-2,aresample=48000,volume={m['level']},volume='{duck_expr(m['t0'])}':eval=frame,"
                       f"afade=t=in:d={m['fin']},afade=t=out:st={max(0, d - m['fout']):.3f}:d={m['fout']},"
                       f"adelay={int(m['t0'] * 1000)}:all=1,apad=whole_dur={total:.3f}[mu{j}]")
             mu_labels.append(f"[mu{j}]")
@@ -193,9 +213,8 @@ class Timeline:
             fc.append(f"anullsrc=r=48000:cl=stereo,atrim=end={total:.3f}[vo];anullsrc=r=48000:cl=stereo,atrim=end={total:.3f}[vok]")
         if mu_labels:
             fc.append(f"{''.join(mu_labels)}amix=inputs={len(mu_labels)}:normalize=0[mus]")
-            fc.append(f"[vok][natk]amix=inputs=2:normalize=0[key]")
-            fc.append(f"[mus][key]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400:makeup=1[musd]")
-            fc.append(f"[nat][vo][musd]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1:LRA=9,aresample=48000[a]")
+            fc.append(f"[vok]anullsink;[natk]anullsink")
+            fc.append(f"[nat][vo][mus]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1:LRA=9,aresample=48000[a]")
         else:
             fc.append(f"[nat][vo]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1:LRA=9,aresample=48000[a]")
         mix = f"{self.dir}/mix.wav"
