@@ -46,8 +46,10 @@ class Timeline:
         self.t = 0.0
         self.vertical = h > w
         k = h / 1080 if not self.vertical else w / 1080
-        self.sub_size = sub_size or int(52 * k)
-        self.sub_margin = sub_margin or (int(110 * k) if not self.vertical else int(560 * w / 1080))
+        self.sub_size = sub_size or (int(52 * k) if not self.vertical else int(58 * w / 1080))
+        # verticali: sottotitoli alti, quasi centrali, fuori dall'interfaccia delle app (richiesta di Manuel)
+        self.sub_margin = sub_margin or (int(110 * k) if not self.vertical else int(780 * h / 1920))
+        self.voice_check = None  # funzione(src, a, b) -> True se nell'audio originale c'è una voce
 
     # ---------- elementi ----------
     def _add(self, src, a, dur_src, speed=1.0, gain=1.0, cx=0.5, zoom=1.0, grade=GRADE_DEFAULT, norm=False,
@@ -85,7 +87,10 @@ class Timeline:
             src, sa = sh[0], sh[1]
             cx = sh[2] if len(sh) > 2 else 0.5
             grade = sh[3] if len(sh) > 3 else GRADE_DEFAULT
-            self._add(src, sa, total * w / sum(weights), gain=nat, cx=cx, grade=grade, fade=0.25)
+            d = total * w / sum(weights)
+            # mai due voci insieme: se l'audio originale dell'immagine contiene parlato, si azzera
+            g = 0.0 if (self.voice_check and self.voice_check(src, sa, sa + d)) else nat
+            self._add(src, sa, d, gain=g, cx=cx, grade=grade, fade=0.25)
         self.vos.append(dict(file=vofile, a=a, b=b, speed=speed, t=start + lead))
         return start
 

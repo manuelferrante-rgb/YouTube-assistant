@@ -74,7 +74,17 @@ def prep_vo(key):
     return out, dur_of(out)
 
 
+import json
+_SEG = json.load(open(f"{ROOT}/work/out/seg_speech.json"))
+
+
+def has_voice(src, a, b):
+    segs = _SEG.get(os.path.basename(src), [])
+    return any(sg["start"] < b and sg["end"] > a for sg in segs)
+
+
 def vo(tl, key, shots, **kw):
+    tl.voice_check = has_voice
     f, d = prep_vo(key)
     return tl.vo(f, 0, d, shots, speed=1.0, **kw)
 
@@ -138,7 +148,7 @@ def teaser(tl):
 
 
 def long_video(tl):
-    teaser(tl)
+    trailer(tl)
 
     # ---- il giorno prima ----
     t0 = vo(tl, "vo_04", [(mimo("143640"), 0.0), (mimo("143748"), 0.5), (mimo("142648"), 3.0),
@@ -253,7 +263,7 @@ def long_video(tl):
     vo(tl, "vo_15", [(raw("0094"), 20.0), (raw("0108"), 4.0)], tail=0.6)
     tl.speech(raw("0143"), [(0.0, 9.0)], speed=1.1)
     tl.clip(logo_card(raw("0143"), 8.0, 3.5, tl.W, tl.H, f"{OUT}/fine_logo_{tl.W}x{tl.H}.mp4"))
-    tl.music(t3, tl.t, M_HERE, offset=60.0, level=0.42, fin=1.0, fout=2.0)
+    tl.music(t3, tl.t, M_FLIGHT, offset=60.0, level=0.42, fin=1.0, fout=2.0)  # niente "chitarrina"
 
 
 def short2(tl):
@@ -316,10 +326,54 @@ def trailer(tl):
     tl.music(0, tl.t, M_FLIGHT, offset=M_OFF, level=0.8, fin=0.05, fout=1.2)
 
 
+
+def reel_A(tl):
+    """Alle tre di notte: la giornata del pescatore."""
+    tl.speech(raw("0076"), [(24.2, 28.35)], cx=0.45,
+              subs=[(24.2, 26.5, "No, no, di notte."), (26.5, 28.35, "Di notte. Alle tre si comincia.")])
+    montage(tl, [(raw("0085"), 0.3, .5), (raw("0093"), 3.0, .5), (raw("0094"), 3.0, .5), (raw("0123"), 0.5, .4)],
+            [2, 2, 2, 2])
+    tl.speech(raw("0076"), [(63.8, 66.8)], cx=0.45, subs=[(63.8, 65.6, "Trent'anni di pesca."), (65.6, 66.8, "Tre, zero. Sì.")])
+    montage(tl, [(raw("0081"), 50.0, .5), (mimo("142648"), 3.0, .5), (raw("0121"), 0.5, .5), (raw("0119"), 0.3, .45)],
+            [1, 1, 1, 1])
+    tl.speech(raw("0081"), [(21.9, 24.7)], cx=0.5, subs=[(21.9, 24.7, "Tutti i giorni, a pescare.")])
+    montage(tl, [(raw("0117"), 3.0, .5), (raw("0126"), 10.0, .5)], [2, 3])
+    tl.music(0, tl.t, M_FLIGHT, offset=M_OFF + 8 * BEAT * 4, level=0.8, fin=0.05, fout=1.5)
+
+
+def reel_B(tl):
+    """Il pesce da 50 chili: il mercato."""
+    tl.speech(raw("0086"), [(0.6, 4.5)], speed=1.1)
+    montage(tl, [(raw("0117"), 8.0, .5), (raw("0126"), 6.0, .5), (raw("0119"), 0.3, .45), (raw("0086"), 27.0, .5),
+                 (raw("0089"), 3.5, .5), (raw("0120"), 3.0, .5)], [1, 1, 1, 1, 1, 1])
+    tl.speech(raw("0091"), [(0.45, 7.8)], speed=1.1)
+    montage(tl, [(raw("0121"), 0.5, .5), (raw("0095"), 3.0, .5), (raw("0109"), 5.0, .5), (raw("0110"), 1.0, .5)],
+            [1, 1, 2, 2])
+    tl.speech(raw("0122"), [(0.0, 3.5)], speed=1.1)
+    tl.music(0, tl.t, M_FLIGHT, offset=M_OFF + 8 * BEAT * 8, level=0.8, fin=0.05, fout=1.2)
+
+
+def reel_C(tl):
+    """Un posto in pace: la convivenza tra religioni."""
+    tl.speech(raw("0076"), [(316.0, 319.1)], cx=0.45, subs=[(316.0, 319.1, "Cristiani, induisti, musulmani.")])
+    montage(tl, [(raw("0118"), 12.0, .62), (raw("0124"), 1.6, .42), (raw("0125"), 1.0, .45), (raw("0120"), 3.0, .5)],
+            [2, 2, 2, 2])
+    tl.speech(raw("0076"), [(322.05, 325.8)], cx=0.45, subs=[(322.05, 325.8, "Vanno molto d'accordo. Amici.")])
+    montage(tl, [(raw("0117"), 15.0, .5), (raw("0126"), 10.0, .5), (raw("0119"), 0.3, .45), (raw("0093"), 25.0, .5)],
+            [1, 1, 1, 1])
+    tl.speech(raw("0076"), [(343.3, 347.0)], cx=0.45, subs=[(343.3, 347.0, "È un posto in pace. Un posto in pace.")])
+    montage(tl, [(mimo("145004"), 1.0, .5), (mimo("151316"), 0.5, .5)], [2, 2])
+    tl.speech(raw("0076"), [(146.05, 150.35)], cx=0.45,
+              subs=[(146.05, 147.2, "Vengono mille persone."), (147.4, 150.35, "Per tutti c'è il cibo gratis.")])
+    montage(tl, [(raw("0117"), 3.0, .5)], [3])
+    tl.music(0, tl.t, M_FLIGHT, offset=M_OFF + 8 * BEAT * 12, level=0.8, fin=0.05, fout=1.5)
+
+
 if __name__ == "__main__":
     what = sys.argv[1] if len(sys.argv) > 1 else "all"
     prev = "--preview" in sys.argv
-    jobs = {"long": (long_video, False), "teaser": (teaser, True), "trailer": (trailer, True), "short2": (short2, True), "short3": (short3, True)}
+    jobs = {"long": (long_video, False), "teaser": (teaser, True), "trailer": (trailer, True),
+            "reelA": (reel_A, True), "reelB": (reel_B, True), "reelC": (reel_C, True), "short2": (short2, True), "short3": (short3, True)}
     for name, (fn, vert) in jobs.items():
         if what != name and not (what == "all" and name != "trailer"):
             continue
