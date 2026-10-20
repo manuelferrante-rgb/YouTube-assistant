@@ -11,7 +11,8 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Ogni contenuto contestualizzato (paese, regione, situazione), mai generalizzazioni.
 - Framing "raccontare", mai "salvare" o "aiutare dall'alto". Niente tono da salvatore bianco.
 - Nel copy: "paesi a basso/medio reddito" o il nome del paese, mai "sottosviluppati" (anche se Manuel lo dice a voce).
-- Storie di persone solo con il loro consenso.
+- Storie di persone solo con il loro consenso. Manuel lo raccoglie prima di caricare: nel girato che manda il
+  consenso c'è sempre, non chiederlo.
 - Stile: diretto, concreto, niente retorica. Mai il trattino lungo.
 
 ## Compiti
