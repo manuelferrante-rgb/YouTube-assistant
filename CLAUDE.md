@@ -1,6 +1,6 @@
 # Voci Vere: assistente editoriale e montaggio
 
-Canale YouTube @VociVereUnfiltered e Instagram @vocivere di Manuel Ferrante: viaggi crudi nei paesi a basso e
+Progetto Voci Vere (mai "BEYOND HUMAN", nome vecchio). Canale YouTube @VociVereUnfiltered e Instagram @vocivere di Manuel Ferrante: viaggi crudi nei paesi a basso e
 medio reddito, voce a lavoratori, comunità marginalizzate e vita quotidiana lontana dal turismo da cartolina.
 Anche paesaggi, cose insolite, cibo locale (Manuel è vegetariano). Si risponde in italiano.
 Viaggio attuale: Kerala, India, da ottobre 2026 per 4 settimane (base iniziale Mararikulam, Alappuzha).
@@ -31,9 +31,13 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
   - 1 teaser prima del lungo: aggancia senza svelare il finale.
   - 2 dopo il lungo: niente scritte di rimando nel video. Solo un rimando breve nel testo (tipo "video fuori",
     proporre varianti). Link su IG e "video correlato" su YT li mette Manuel.
-- Sottotitoli: impressi in italiano per ora (lingua del canale ancora da decidere, si valuta con Analytics dopo
-  6-8 lunghi). Una riga sola, stile classico senza sfondo (giallo o bianco, bordo sottile + ombra), in basso
-  nel lungo, più in alto nei verticali sopra l'interfaccia dell'app. Stile definitivo da scegliere su frame di prova.
+- Lingua: tutto in italiano per ora (si rivaluta con Analytics dopo 6-8 lunghi). Voiceover italiano registrato da
+  Manuel sul copione che scrivo io. Sottotitoli solo sulle interviste (tradotti in italiano, fedeli), mai sulle
+  parti di Manuel o sul voiceover. Stile: giallo tenue, ombra leggera, font semplice, max 2 righe, in basso nel
+  lungo, più in alto nei verticali sopra l'interfaccia dell'app.
+- Regole di montaggio complete: `regole/montaggio_documentario.md` (leggerle prima di ogni montaggio).
+- Flusso per video: girato su Drive -> analisi e copione voiceover -> Manuel carica registrazioni voiceover e
+  musica (YouTube Audio Library) nella stessa cartella -> montaggio e consegna.
   Titolo e descrizione YT anche in inglese (traduzioni YouTube).
 - Consegna: lungo 16:9 + 3 verticali + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
 

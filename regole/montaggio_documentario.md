@@ -91,4 +91,13 @@ spettacolarizzate, niente mercato come sfondo esotico. Prima di esportare: sincr
 mappa, leggibilità, qualità complessiva.
 
 ## Decisioni aperte / aggiornamenti
-- (da chiarire con Manuel: nome progetto, lingua, numero di verticali, voce del voiceover, musica)
+Decisioni di Manuel (prevalgono sulle sezioni sopra):
+- Nome del progetto: Voci Vere (BEYOND HUMAN è vecchio, non usarlo).
+- Lingua: tutto in italiano. Voiceover in italiano; interviste in inglese con sottotitoli tradotti in italiano
+  (fedeli, stile della sezione 7); nessun sottotitolo sulle parti di Manuel e sul voiceover.
+- Verticali: 3 per ogni lungo (1 teaser prima, 2 dopo), come in CLAUDE.md.
+- Voiceover: lo registra Manuel. Flusso: analisi girato + struttura -> copione voiceover (per sequenze, con
+  durata indicativa di ogni blocco) -> Manuel carica nella stessa cartella Drive le registrazioni e 2-3 brani
+  musicali (YouTube Audio Library) -> montaggio finale. Niente voce sintetica nel prodotto finito.
+- Musica: la fornisce Manuel a ogni video, nella stessa cartella. Senza musica si monta con soli suoni originali.
+- Mappa: Marari, mercato/spiaggia a 9.62646 N, 76.29600 E (coordinate date da Manuel sul posto).
