@@ -10,6 +10,16 @@ ROOT="${CLAUDE_PROJECT_DIR:-$(pwd)}"
 M="$ROOT/models"
 mkdir -p "$M"
 
+# rclone per caricare i video finiti su Drive (da GitHub)
+if ! command -v rclone >/dev/null 2>&1; then
+  V=v1.68.2
+  T=$(mktemp -d)
+  curl -fsSL --retry 3 -o "$T/rc.zip" "https://github.com/rclone/rclone/releases/download/$V/rclone-$V-linux-amd64.zip"
+  python3 -c "import zipfile,sys; zipfile.ZipFile(sys.argv[1]).extractall(sys.argv[2])" "$T/rc.zip" "$T"
+  install -m 755 "$T/rclone-$V-linux-amd64/rclone" /usr/local/bin/rclone
+  rm -rf "$T"
+fi
+
 pip install -q --break-system-packages -r "$ROOT/requirements.txt" 2>&1 | grep -v "WARNING: Running pip" || true
 
 dl() {  # dl URL DEST

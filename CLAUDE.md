@@ -40,6 +40,8 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Girato: Manuel lo carica nella cartella Drive "YT Video Claude editing"
   (id 1X3qkOWu91EZUWqKoVu0pZ3Dd1ipXlGeB), condivisa con "chiunque abbia il link".
   Elenco file con il connettore Google Drive, download con `tools/drive.sh <file_id> <dest>` (in `work/`, ignorato da git).
+- Consegna dei video finiti: `tools/drive_upload.sh <progetto> <file...>` li carica in `montati/<progetto>` sulla
+  stessa cartella Drive (serve `GDRIVE_RCLONE_TOKEN`, token di `rclone authorize "drive"`). Senza token: in chat.
 - B-roll: prima quello girato da Manuel. Stock solo per grafiche o immagini generiche, da Pixabay
   (`PIXABAY_API_KEY`), mai con persone che possano sembrare quelle della storia. Pexels non disponibile.
 - Trascrizione con tempi parola: modello parakeet in `models/` (installato dall'hook di avvio).
