@@ -101,6 +101,7 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   musicali (YouTube Audio Library) -> montaggio finale. Niente voce sintetica nel prodotto finito.
 - Musica: la fornisce Manuel a ogni video, nella stessa cartella. Senza musica si monta con soli suoni originali.
 - Mappa: Marari, mercato/spiaggia a 9.62646 N, 76.29600 E (coordinate date da Manuel sul posto).
-- Nomi delle persone: non servono, niente scritte con nome/ruolo. Le persone si presentano attraverso il
+- Nomi delle persone: per ora non servono (primi video), niente scritte con nome/ruolo; nei prossimi video
+  Manuel potrebbe darli, chiederli se il video ruota su una persona. Le persone si presentano attraverso il
   contesto e il voiceover.
 - Informazioni sul luogo: solo quelle che si sentono nel girato (interviste, spiegazioni). Niente altre fonti.
