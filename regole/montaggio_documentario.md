@@ -111,5 +111,6 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   soli suoni ambientali la musica resta sotto, bassa; può salire nei passaggi tra una scena e l'altra (stile
   colonna sonora da film). Mai silenzio o solo ambiente "nudo". Prevale sulle sezioni 5F e 9 dove dicono di
   lasciare i soli suoni ambientali.
-- Sigla Voci Vere (5-10 s): montata una volta dalla presentazione + girato, file fisso riusato identico subito dopo il teaser di 20 s, sia nel lungo sia nei verticali. Copione e
+- Sigla Voci Vere (5-10 s): si rifà a ogni video con il girato di quel video (stessa struttura), chiude sul logo;
+  va subito dopo il teaser di 20 s, sia nel lungo sia nei verticali. Copione e
   inquadrature in `copioni/presentazione_e_sigla.md`.

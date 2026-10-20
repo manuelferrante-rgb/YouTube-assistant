@@ -42,6 +42,9 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Consegna: lungo 16:9 + 3 verticali + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
 
 ## Ambiente
+- Logo: `assets/brand/logo_vocivere_originale.png`, scontornati `logo_vocivere_trasparente.png` (testo nero, per
+  sfondi chiari) e `logo_vocivere_trasparente_chiaro.png` (testo bianco, per sfondi scuri). Colori: nero + oro #B68A4B.
+  Payoff: "la voce di chi ne ha più bisogno".
 - Girato: Manuel lo carica nella cartella Drive "YT Video Claude editing"
   (id 1X3qkOWu91EZUWqKoVu0pZ3Dd1ipXlGeB), condivisa con "chiunque abbia il link".
   Elenco file con il connettore Google Drive, download con `tools/drive.sh <file_id> <dest>` (in `work/`, ignorato da git).
