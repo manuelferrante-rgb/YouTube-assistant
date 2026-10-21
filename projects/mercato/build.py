@@ -332,42 +332,40 @@ def intro(tl):
     """Intro v3 (parte variabile, cambia a ogni video): stile cold open, niente musica.
     Raffica di immagini forti -> Manuel: "Immagina di svegliarti alle tre..." -> il pescatore: "Alle tre si comincia"
     -> il pesce da 50 chili -> mappa -> "Cristiani, induisti, musulmani. È un posto in pace." -> sigla fissa."""
-    punch = lambda fl=None: dict(zoom=(1.14, 1.0, 0.35), **({"flash": fl} if fl else {}))
-    W_S = sfx_file("whoosh_short")
+    # v4 (feedback di Manuel): pochi effetti, cinematografico ma sobrio. Tagli netti, niente whoosh/flash a ogni
+    # taglio; colpi bassi solo nei 2 momenti chiave, un solo whoosh (ingresso nella mappa).
+    push = dict(zoom=(1.0, 1.04, None))
     # 1. apertura: il pesce passa di mano in mano, subito
-    tl.sfx(0, sfx_file("boom"), 0.45)
-    for i, (src, a, cx, nf, fl) in enumerate([(raw("0122"), 2.2, .5, 18, None), (raw("0109"), 2.0, .5, 14, 0.1),
-                                              (raw("0119"), 0.3, .45, 14, None), (raw("0121"), 0.8, .5, 14, 0.1),
-                                              (raw("0086"), 12.0, .5, 18, None)]):
-        if i:
-            tl.sfx(tl.t - 0.2, W_S, 0.35)
-        tl.broll(src, a, nf / 30, gain=0.55, cx=cx, fade=0.02, fx=punch(fl))
+    tl.sfx(0, sfx_file("boom"), 0.35)
+    for i, (src, a, cx, nf) in enumerate([(raw("0122"), 2.2, .5, 18), (raw("0109"), 2.0, .5, 14),
+                                          (raw("0119"), 0.3, .45, 14), (raw("0121"), 0.8, .5, 14),
+                                          (raw("0086"), 12.0, .5, 18)]):
+        tl.broll(src, a, nf / 30, gain=0.55, cx=cx, fade=0.02, fx=dict(zoom=(1.10, 1.0, 0.35)) if i == 0 else push)
     # 2. Manuel, su barche e mare: lento avvicinamento
     n0 = len(tl.shots)
-    tl.sfx(tl.t - 0.3, sfx_file("whoosh"), 0.3)
     tl.voice_check = has_voice
     f, d = prep_cuts("vo_immagina", mimo("143504"), [(1.0, 4.15), (4.85, 7.85), (8.75, 9.6)])
     tl.vo(f, 0, d, [(raw("0094"), 3.0, .5), (raw("0093"), 21.0, .5), (raw("0123"), 1.0, .4), (raw("0085"), 3.0, .5)],
           speed=1.0, lead=0.15, tail=0.15)
     for sh in tl.shots[n0:]:
         sh["fx"] = dict(zoom=(1.0, 1.07, None))
+    # letto d'ambiente basso sotto la voce (le clip qui sotto hanno l'audio azzerato: mai silenzio digitale)
+    t_v0 = tl.shots[n0]["t"]
+    tl.sfx(t_v0, ambient(raw("0117"), 2.0, tl.t - t_v0 + 0.3), 0.3)
     # 3. il pescatore conferma
-    tl.sfx(tl.t, sfx_file("hit"), 0.35)
+    tl.sfx(tl.t, sfx_file("boom"), 0.22)
     tl.speech(raw("0076"), [(26.45, 28.35)], subs=[(26.45, 28.35, "Di notte. Alle tre si comincia.")], cx=0.45,
               fx=dict(zoom=(1.12, 1.0, 0.3)))
     # 4. raffica sul mercato
     for src, a, cx in [(raw("0126"), 6.0, .5), (raw("0118"), 2.0, .5), (raw("0110"), 2.0, .5)]:
-        tl.sfx(tl.t - 0.2, W_S, 0.35)
-        tl.broll(src, a, 13 / 30, gain=0.55, cx=cx, fade=0.02, fx=punch(0.08))
+        tl.broll(src, a, 13 / 30, gain=0.55, cx=cx, fade=0.02, fx=push)
     # 5. il pesce da 50 chili
-    tl.sfx(tl.t, sfx_file("hit"), 0.32)
     tl.speech(raw("0091"), [(3.3, 7.8)], speed=1.1, fx=dict(zoom=(1.0, 1.05, None)))
     # 6. mappa (sola grafica ammessa), con l'ambiente del mercato sotto
     t_m = tl.t
-    tl.sfx(t_m - 0.45, sfx_file("whoosh_rev"), 0.4)
+    tl.sfx(t_m - 0.45, sfx_file("whoosh_rev"), 0.25)
     tl._add(maps(tl.W, tl.H), 0, 4.5, speed=2.0, audio=False, grade="null")
     tl.sfx(t_m, ambient(raw("0117"), 10.0, tl.t - t_m + 0.3), 0.5)
-    tl.sfx(t_m + 3.4 / 2.0, sfx_file("flash"), 0.3)
     # 7. chiusura variabile, che passa la parola alla sigla
     tl.speech(raw("0076"), [(316.0, 319.1), (343.3, 345.1)], cx=0.45,
               subs=[(316.0, 319.1, "Cristiani, induisti, musulmani."), (343.3, 345.1, "È un posto in pace.")])

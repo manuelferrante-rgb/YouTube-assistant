@@ -140,7 +140,7 @@ class Timeline:
             z = f"({z0}+({z1}-{z0})*(1-pow(1-min(1\\,t/{T})\\,3)))" if T < d else f"({z0}+({z1}-{z0})*t/{d:.3f})"
             f.append(f"scale=w='trunc({W}*{z}/2)*2':h='trunc({H}*{z}/2)*2':eval=frame:flags=bicubic,crop={W}:{H}")
         if "flash" in fx:
-            f.append(f"eq=brightness='0.45*max(0\\,1-t/{fx['flash']})':contrast='1-0.25*max(0\\,1-t/{fx['flash']})':eval=frame")
+            f.append(f"eq=brightness='0.3*max(0\\,1-t/{fx['flash']})':contrast='1-0.25*max(0\\,1-t/{fx['flash']})':eval=frame")
         if "black_in" in fx:
             f.append(f"fade=t=in:st=0:d={fx['black_in']}")
         if "black_out" in fx:

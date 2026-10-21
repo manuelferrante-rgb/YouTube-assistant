@@ -25,22 +25,24 @@ LOGO_DUR = 2.9
 
 def sigla(tl, workdir):
     t_s = tl.t
-    tl.sfx(max(0, t_s - 0.6), sfx_file("whoosh_rev"), 0.45)        # ingresso dall'intro
+    # sobria (feedback di Manuel): un solo lampo all'ingresso, poi tagli netti con una lenta spinta in avanti
     for i, ((f, cx, cy), nf) in enumerate(zip(PIECES, FRAMES)):
         t = tl.t
-        tl._add(f"{S}/{f}", 0.05, nf / 30, cx=cx, cy=cy, grade="null", audio=False,
-                fx=dict(flash=0.1 if i else 0.15, zoom=(1.10, 1.0, 0.3)))
-        tl.sfx(t, sfx_file("flash"), 0.5 if i == 0 else 0.32)
+        fx = dict(zoom=(1.0, 1.05, None), **({"flash": 0.12} if i == 0 else {}))
+        tl._add(f"{S}/{f}", 0.05, nf / 30, cx=cx, cy=cy, grade="null", audio=False, fx=fx)
+        if i == 0:
+            tl.sfx(t, sfx_file("flash"), 0.3)
     t_logo = tl.t
     # frase: "Voci" cade sul primo colpo della V
     tl.vos.append(dict(file=FRASE, a=FRASE_A, b=FRASE_B, speed=1.0, t=t_logo + 0.03 - (VOCI - FRASE_A)))
-    tl.sfx(max(0, t_logo - 2.6), sfx_file("riser_long"), 0.3)
+    tl.sfx(max(0, t_logo - 2.6), sfx_file("riser_long"), 0.2)
     os.makedirs(workdir, exist_ok=True)
     card = f"{workdir}/logo_anim_{tl.W}x{tl.H}.mp4"
     if not os.path.exists(card):
         logo_build(card, f"{S}/logo_sfondo.jpg", tl.W, tl.H, LOGO_DUR)
     tl.clip(card)
-    gains = {"stamp": 0.42, "tick": 0.35, "shimmer": 0.45}
+    gains = {"stamp": 0.34, "shimmer": 0.28}           # niente tic sulle lettere
     for t, name in EVENTS:
-        tl.sfx(t_logo + t, sfx_file(name), gains[name])
+        if name in gains:
+            tl.sfx(t_logo + t, sfx_file(name), gains[name])
     return t_s
