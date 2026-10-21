@@ -58,3 +58,12 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Trascrizione con tempi parola: modello parakeet in `models/` (installato dall'hook di avvio).
 - Strumenti di riferimento per reel (taglio pause, sottotitoli): repo `manuelferrante-rgb/Video-maker`,
   senza logo e regole specifiche del coaching.
+
+## Ripresa in una nuova sessione (stato al 21/10)
+- Mercato di Marari v2 approvato nella struttura: da rifare i render e caricarli su Drive.
+  1. `projects/mercato/fetch.sh` (riscarica girato e musica da Drive, rigenera le mappe).
+  2. Prova il token: `tools/drive_upload.sh mercato <file piccolo>` prima dei render lunghi.
+  3. `python3 projects/mercato/build.py trailer|reelA|reelB|reelC|long` (il lungo 4K richiede ~2 ore).
+  4. Carica i 5 file con `tools/drive_upload.sh mercato ...`.
+- I processi in background si fermano quando la sessione va in pausa: tenere il turno attivo con attese in
+  primo piano (cicli di attesa) finché i render non finiscono.
