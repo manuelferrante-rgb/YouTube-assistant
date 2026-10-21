@@ -4,6 +4,7 @@ Progetto Voci Vere (mai "BEYOND HUMAN", nome vecchio). Canale YouTube @VociVereU
 medio reddito, voce a lavoratori, comunità marginalizzate e vita quotidiana lontana dal turismo da cartolina.
 Anche paesaggi, cose insolite, cibo locale (Manuel è vegetariano). Si risponde in italiano.
 Viaggio attuale: Kerala, India, da ottobre 2026 per 4 settimane (base iniziale Mararikulam, Alappuzha).
+Coordinate del mercato di Marari per la mappa: 9.62646 N, 76.29600 E (date da Manuel sul posto).
 Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente supporto editoriale lì.
 
 ## Limiti (sempre)
