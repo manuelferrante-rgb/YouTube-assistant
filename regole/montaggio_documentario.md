@@ -162,3 +162,9 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   - Mai `pkill -f "<testo>"` con un testo che compare nello stesso comando: uccide anche la shell che lo lancia.
     Usare il PID (ps aux | grep ...) e kill.
   - Font Poppins e dati della mappa li installa l'hook di avvio (.claude/hooks/session-start.sh).
+- Intro e sigla v3 (21/10, feedback di Manuel sul riferimento Progetto Happiness; prevale su teaser, sigla
+  cumulativa e musica del teaser sopra): intro VARIABILE senza musica, solo parlato vero nei momenti più forti,
+  immagini veloci e persuasive, effetti brevi e non artificiali (zoom a scatto, lampi, whoosh, colpi: `tools/sfx.py`,
+  `fx=` in doc_render). Prima immagine mai lenta. Poi sigla FISSA (`tools/sigla.py`, logo animato
+  `tools/logo_anim.py`). Struttura e copy in `copioni/presentazione_e_sigla.md`. I pezzi della sigla sono in
+  `assets/sigla/` (nel repo, perché il girato su Drive viene cancellato).

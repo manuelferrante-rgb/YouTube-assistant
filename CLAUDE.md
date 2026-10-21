@@ -61,13 +61,13 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Strumenti di riferimento per reel (taglio pause, sottotitoli): repo `manuelferrante-rgb/Video-maker`,
   senza logo e regole specifiche del coaching.
 
-## Ripresa in una nuova sessione (stato al 21/10)
-- Mercato di Marari v2: i 4 verticali (trailer + reel A, B, C) sono APPROVATI da Manuel così come sono; il
-  lungo v2 (con il trailer in apertura) Manuel non l'ha ancora visto. Da rifare i render dal codice (identici)
-  e caricarli su Drive. Questa è l'unica chat attiva del progetto: la precedente è stata chiusa.
-  1. `projects/mercato/fetch.sh` (riscarica girato e musica da Drive, rigenera le mappe).
+## Ripresa in una nuova sessione (stato al 21/10 sera)
+- Mercato di Marari: reel A, B, C APPROVATI (non toccare). Intro rifatta in v3 (nessuna musica, effetti brevi,
+  sigla fissa con logo animato: vedi `copioni/presentazione_e_sigla.md`): trailer v3 caricato su Drive
+  (`VociVere_mercato_trailer_v3_1080x1920.mp4`) e lungo rifatto con la nuova intro, in attesa del parere di Manuel.
+  1. `projects/mercato/fetch.sh` (riscarica girato, musica e clip extra da Drive, rigenera le mappe).
   2. Prova il token: `tools/drive_upload.sh mercato <file piccolo>` prima dei render lunghi.
-  3. `python3 projects/mercato/build.py trailer|reelA|reelB|reelC|long` (il lungo 4K richiede ~2 ore).
-  4. Carica i 5 file con `tools/drive_upload.sh mercato ...`.
+  3. `python3 projects/mercato/build.py trailer|reelA|reelB|reelC|long` (`--preview` per una prova veloce;
+     il lungo 4K richiede ~2 ore).
 - I processi in background si fermano quando la sessione va in pausa: tenere il turno attivo con attese in
   primo piano (cicli di attesa) finché i render non finiscono.
