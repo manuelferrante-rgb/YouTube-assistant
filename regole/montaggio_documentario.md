@@ -159,3 +159,6 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
 - Frase della sigla (voce di Manuel, file assets/sigla/frase_sigla_manuel.m4a, parlato 1.82-5.57 s):
   "Il mondo, raccontato da chi lo vive. Questo è Voci Vere." Il logo entra su "Voci Vere". Stessa frase in
   ogni video, sopra la musica del teaser (nessun cambio di brano).
+  - Mai `pkill -f "<testo>"` con un testo che compare nello stesso comando: uccide anche la shell che lo lancia.
+    Usare il PID (ps aux | grep ...) e kill.
+  - Font Poppins e dati della mappa li installa l'hook di avvio (.claude/hooks/session-start.sh).

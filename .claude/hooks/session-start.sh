@@ -26,6 +26,12 @@ dl() {  # dl URL DEST
   if [ ! -s "$2" ]; then curl -fsSL --retry 3 -o "$2.part" "$1" && mv "$2.part" "$2"; fi
 }
 dl https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf "$M/Anton-Regular.ttf"
+# font dei sottotitoli e delle etichette della mappa
+dl https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/Poppins-Medium.ttf "$M/Poppins-Medium.ttf"
+# dati cartografici reali per la mappa animata (Natural Earth)
+mkdir -p "$M/geo"
+dl https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson "$M/geo/admin0_50m.geojson"
+dl https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson "$M/geo/admin1_10m.geojson"
 # trascrizione multilingua con tempi parola (parakeet-tdt-0.6b-v3)
 P="$M/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8"
 if [ ! -s "$P/tokens.txt" ]; then

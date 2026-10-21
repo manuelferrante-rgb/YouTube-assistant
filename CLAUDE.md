@@ -50,8 +50,9 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
   (id 1X3qkOWu91EZUWqKoVu0pZ3Dd1ipXlGeB), condivisa con "chiunque abbia il link".
   Elenco file con il connettore Google Drive, download con `tools/drive.sh <file_id> <dest>` (in `work/`, ignorato da git).
 - Consegna dei video finiti: `tools/drive_upload.sh <progetto> <file...>` li carica in `montati/<progetto>` sulla
-  stessa cartella Drive (serve `GDRIVE_RCLONE_TOKEN`, token di `rclone authorize "drive"`). Per ora si consegna
-  in chat (scelta di Manuel). Limite chat: 400 MiB per file. Lungo 4K: parti da ~2 minuti a ~21 Mbps
+  stessa cartella Drive (serve `GDRIVE_RCLONE_TOKEN`, token di `rclone authorize "drive"`). DA ORA SI CONSEGNA
+  SU DRIVE (scelta di Manuel, token attivo dal 21/10): lungo intero in 4K, verticali, niente parti. La chat
+  resta solo come ripiego (limite 400 MiB per file, e da iPhone/Mac non si scaricano). Lungo 4K: parti da ~2 minuti a ~21 Mbps
   (circa 320 MB), tagliate su un cambio scena; Manuel le unisce in CapCut ed esporta in 4K. Mandare un file
   solo dopo aver verificato con ffprobe che la codifica è finita (mai durante).
 - B-roll: prima quello girato da Manuel. Stock solo per grafiche o immagini generiche, da Pixabay
