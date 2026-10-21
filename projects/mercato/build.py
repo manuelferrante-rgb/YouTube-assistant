@@ -151,7 +151,8 @@ def long_video(tl):
     trailer(tl)
 
     # ---- il giorno prima ----
-    t0 = vo(tl, "vo_04", [(mimo("143640"), 0.0), (mimo("143748"), 0.5), (mimo("142648"), 3.0),
+    t0 = vo(tl, "vo_04", [(mimo("143640"), 0.0), (mimo("142648"), 12.0), (mimo("142648"), 3.0)  # TODO: dji_143748 non piu su Drive (21/10): sostituito con altro tratto di 142648
+                          ,
                           (mimo("143050"), 1.0)])
     tl.broll(mimo("144938"), 0.5, 2.2, gain=0.35)
     tl.broll(mimo("145004"), 3.0, 2.4, gain=0.35)
