@@ -168,3 +168,6 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   `fx=` in doc_render). Prima immagine mai lenta. Poi sigla FISSA (`tools/sigla.py`, logo animato
   `tools/logo_anim.py`). Struttura e copy in `copioni/presentazione_e_sigla.md`. I pezzi della sigla sono in
   `assets/sigla/` (nel repo, perché il girato su Drive viene cancellato).
+- Effetti v4 (21/10, Manuel dopo la v3): "non troppo artificiosa, non come i classici reel: cinematografico ma
+  professionale". Pochi effetti sonori, tagli netti, niente whoosh/lampi/zoom a scatto su ogni taglio. Il budget
+  di effetti è in `copioni/presentazione_e_sigla.md`.
