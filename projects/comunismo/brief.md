@@ -20,3 +20,12 @@ Copione corretto (fatti verificati, vedi chat 22/10):
 5. [Cosa succederà ora?] "Fine di un'era, o le radici sono troppo profonde? Dimmi la tua nei commenti."
 Fatti: UDF ~97-102 seggi, LDF 35 (risultati 4/5/2026); Kerala "totally literate" 1991, censimento 2011 ~94%.
 Immagini d'archivio solo con licenza libera verificata, mai persone che sembrino quelle della storia.
+
+Aggiornamento 22/10: durata 19 s, voce a 1.15-1.2x (tagliare se serve). Copione corto proposto (~50 parole):
+1. "L'India ha appena perso il suo ultimo governo comunista. Ed è successo qui, in Kerala."
+2. "Nel 1957 fu il primo stato indiano a eleggerne uno con il voto."
+3. "Riforma agraria, scuole, sanità. Nel 1991, primo stato totalmente alfabetizzato dell'India."
+4. "Ma a maggio la sinistra ha perso."   [scritta animata: seggi ~100 su 140]
+5. "Fine di un'era? Dimmi la tua."
+Bandiere: niente girato, le genera tools/flag_anim.py (ldf rossa con falce, martello e stella; udf tricolore
+del Congresso). Mai il tricolore nazionale al posto di quello del partito.
