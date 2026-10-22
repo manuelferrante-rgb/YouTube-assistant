@@ -27,7 +27,10 @@ CX_M = 0.47        # Manuel nel ritaglio verticale
 
 
 def clip(tag):
-    return glob.glob(f"{R}/*{tag}*")[0]
+    """Clip dall'orario nel nome (es. 120520): solo il campo dell'orario, non i numeri lunghi dopo."""
+    m = glob.glob(f"{R}/dji_mimo_20261022_{tag}_*") or glob.glob(f"{R}/*{tag}*")
+    assert len(m) == 1, (tag, m)
+    return m[0]
 
 
 FLAG_REAL = clip("IMG_8420")

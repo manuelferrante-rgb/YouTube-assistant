@@ -17,8 +17,8 @@ FRASE = f"{S}/frase_sigla_manuel.m4a"
 FRASE_A, FRASE_B, VOCI = 1.70, 5.75, 4.63   # inizio/fine del parlato e attacco di "Voci" nel file
 # pezzi: (file, posizione orizzontale nel verticale, posizione verticale nel 16:9)
 PIECES = [("01_strada_tuktuk.mp4", 0.5, 0.5), ("02_marari_pescatori.mp4", 0.42, 0.5),
-          ("03_marari_spiaggia.mp4", 0.5, 0.5), ("04_kerala_chai.mp4", 0.5, 0.45),
-          ("05_marari_laguna.mp4", 0.5, 0.55), ("06_marari_mare.mp4", 0.5, 0.5)]
+          ("03_marari_pescatore.mp4", 0.45, 0.5), ("04_kerala_chai.mp4", 0.5, 0.45),
+          ("05_marari_folla.mp4", 0.5, 0.5), ("06_marari_mare.mp4", 0.5, 0.5)]
 FRAMES = [15, 15, 15, 15, 14, 14]            # 88 fotogrammi: il logo entra su "Voci"
 LOGO_DUR = 2.9
 
