@@ -29,3 +29,6 @@ Aggiornamento 22/10: durata 19 s, voce a 1.15-1.2x (tagliare se serve). Copione 
 5. "Fine di un'era? Dimmi la tua."
 Bandiere: niente girato, le genera tools/flag_anim.py (ldf rossa con falce, martello e stella; udf tricolore
 del Congresso). Mai il tricolore nazionale al posto di quello del partito.
+
+Decisione finale 22/10: copione LUNGO (il primo corretto, punti 1-5 in alto), tutto il testo resta. Niente
+limite di 19 s: il più breve possibile tagliando SOLO pause e parti morte, voce 1.15-1.2x, B-roll continuo.
