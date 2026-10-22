@@ -22,3 +22,11 @@ Aggiornamento 22/10 (info dell'host + verifiche):
   Da confermare con l'host. Partenza prima dell'alba (fonti: 4:00 o 6:00; host: da mezzanotte).
 - Copione in camera e voiceover in 16 blocchi dati a Manuel in chat (22/10), da registrare in un unico audio.
 - YouTube non raggiungibile dalla rete dell'ambiente: video di riferimento da farsi mandare come file.
+
+Montaggio (22/10): seguire le istruzioni dell'altra AI di Manuel (stile realistico, VO sui B-roll, mappa
+Kalavoor->Arthunkal, linea del tempo 52 d.C. tradizione/2002/1584/1647, interviste lingua originale + sottotitoli
+italiani, suoni veri) MA: niente pescatore di Marari ne' altri richiami ai video vecchi; niente titoli dei capitoli
+nel video (solo minutaggi per la descrizione); VO finale in 10 blocchi (8 chi cammina, 9 arrivo, 10 chiusura con la
+riflessione "viaggiare non significa soltanto..."); durata dettata dal materiale (8-9 min se regge, mai allungare).
+Musica: brani YouTube Audio Library calmi se Manuel li carica, altrimenti solo suoni veri. Sigla fissa dopo l'intro.
+Cartella Drive: 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX ("Festa pellegrinaggio Kerala").
