@@ -35,3 +35,4 @@ limite di 19 s: il più breve possibile tagliando SOLO pause e parti morte, voce
 Formato: 9:16 1080x1920 (Shorts/Reel). Sottotitoli SU TUTTO il parlato di Manuel (eccezione voluta da lui per
 questo reel), centrali nella safe zone (fuori da ~250 px in alto, ~500 px in basso e dalla colonna di icone a
 destra), animati parola per parola: 2-4 parole per volta, parola corrente in oro #B68A4B, ingresso con piccolo pop.
+Dimensione sottotitoli: NON troppo grandi (Manuel): circa 56-62 px su 1080 di larghezza, una riga, max ~22 caratteri.
