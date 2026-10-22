@@ -13,3 +13,12 @@ Fatti verificati:
 Da chiedere a Manuel: evento filmato (nome, data, percorso), cosa ha detto l'host, interviste.
 Tono: togliere retorica ("paradiso tropicale", "magia sociale", "milioni di cuori"...).
 Gancio: partire dal momento più forte del girato (lezione del mercato), non da "Immaginate una spiaggia...".
+
+Aggiornamento 22/10 (info dell'host + verifiche):
+- Evento: Kreupasanam Akhanda Japamala (marcia del rosario ininterrotto), dal santuario mariano di Kreupasanam,
+  Kalavoor (sud di Marari) alla basilica di Arthunkal (nord), ~13 km lungo la costa. Prima edizione 2002 (poche
+  centinaia, fonte: santuario). 2025: ~100.000 (CatholicConnect). Host: 500.000 nel 2026 (attribuire).
+- Data: host e Instagram del santuario dicono sabato 24/10; una fonte dice "ultimo sabato di ottobre" (= 31/10).
+  Da confermare con l'host. Partenza prima dell'alba (fonti: 4:00 o 6:00; host: da mezzanotte).
+- Copione in camera e voiceover in 16 blocchi dati a Manuel in chat (22/10), da registrare in un unico audio.
+- YouTube non raggiungibile dalla rete dell'ambiente: video di riferimento da farsi mandare come file.
