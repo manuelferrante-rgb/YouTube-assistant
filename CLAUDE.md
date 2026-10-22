@@ -64,7 +64,8 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 ## Ripresa in una nuova sessione (stato al 22/10)
 - Ogni video ha la SUA cartella Drive (girato + consegna in `montati/<progetto>` della stessa cartella):
   `GDRIVE_FOLDER_ID=<id> tools/drive_upload.sh <progetto> <file>`. Caricare sempre nella cartella del video.
-- Mercato di Marari (cartella 1X3qkOWu91EZUWqKoVu0pZ3Dd1ipXlGeB): pubblicato da Manuel. Ultimi: trailer v5 e lungo v5
+- Mercato di Marari (cartella 1X3qkOWu91EZUWqKoVu0pZ3Dd1ipXlGeB): pubblicato da Manuel. Trailer e lungo pubblicati partendo da ~8 s
+  ("...oceano indiano"): il gancio iniziale non gli è piaciuto, vedi lezione in regole/montaggio_documentario.md. Ultimi: trailer v5 e lungo v5
   (sigla con pescatore e folla al posto di cane e ragazza). Sottotitoli YouTube it/en in projects/mercato/sottotitoli.
 - Reel "Comunismo in Kerala" (106K5eY6ncJasEhLTzwADIh63bGghvU1x) e "Birra di cocco/kallu"
   (1hYw8CWZyiaxIKnldG86gatwfvmDE8Ll2): consegnati, regole dei reel in tools/reel_kit.py e nei brief dei progetti.

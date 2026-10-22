@@ -171,3 +171,9 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
 - Effetti v4 (21/10, Manuel dopo la v3): "non troppo artificiosa, non come i classici reel: cinematografico ma
   professionale". Pochi effetti sonori, tagli netti, niente whoosh/lampi/zoom a scatto su ogni taglio. Il budget
   di effetti è in `copioni/presentazione_e_sigla.md`.
+- Lezione dal mercato (22/10): Manuel ha pubblicato trailer e lungo facendoli partire da ~8 s, da "...oceano
+  indiano". Non gli è piaciuto per niente il gancio iniziale (raffica di immagini + voce "Immagina di svegliarti
+  alle tre..."), e nei primi secondi c'erano errori. Per i prossimi: il gancio deve partire subito dal momento più
+  forte e già dentro la storia (azione o frase vera che incuriosisce), niente preambolo di raffica + voce.
+  I primi 3-5 secondi si ricontrollano fotogramma per fotogramma e a orecchio (tagli, parole troncate, frasi
+  montate da più tratti) prima di consegnare.
