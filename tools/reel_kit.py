@@ -57,28 +57,42 @@ class Reel:
         return f
 
     # ---------- parlato ----------
-    def narr(self, src, a, b, visuals, words=(), speed=None):
-        """Voce di una clip sopra immagini: visuals = [(funzione, durata o None)]; None si divide il resto."""
+    def narr(self, src, a, b, visuals, words=(), speed=None, cuts=()):
+        """Voce di una clip sopra immagini: visuals = [(funzione, durata o None)]; None si divide il resto.
+        cuts: pause interne da togliere [(da, a)] in tempi della sorgente (la voce diventa più tratti attaccati)."""
         sp = speed or self.SP
         t0 = self.tl.t
-        total = (b - a) / sp + self.GAP
-        self.tl.vos.append(dict(file=src, a=a, b=b, speed=sp, t=t0))
+        ranges, cur = [], a
+        for ca, cb in sorted(cuts):
+            ranges.append((cur, ca)); cur = cb
+        ranges.append((cur, b))
+        t = t0
+        for ra, rb in ranges:
+            self.tl.vos.append(dict(file=src, a=ra, b=rb, speed=sp, t=t))
+            self.words(t, ra, [(w, wt) for w, wt in words if ra - 0.1 <= wt < rb], sp)
+            t += (rb - ra) / sp
+        total = t - t0 + self.GAP
         fixed = sum(d for _, d in visuals if d)
         rest = max(0.2, total - fixed) / max(1, sum(1 for _, d in visuals if not d))
         for fn, d in visuals:
             fn(d or rest)
-        self.words(t0, a, words, sp)
         return t0
 
+    def src_to_out(self, t0, a, t_src, cuts=(), speed=None):
+        """Tempo nel montato di un istante della sorgente, tenendo conto delle pause tolte."""
+        removed = sum(min(cb, t_src) - ca for ca, cb in cuts if t_src > ca)
+        return t0 + (t_src - a - removed) / (speed or self.SP)
+
     def cam(self, src, a, b, words=(), speed=None, cx=None, fx=None, block=None):
-        """Parlato in camera, labiale in sincrono. block: [(a, b, testo)] per sottotitoli a blocco (interviste)."""
+        """Parlato in camera, labiale in sincrono.
+        block: [(a, b, italiano, originale)] per le battute in altra lingua: italiano al centro, originale in basso."""
         sp = speed or self.SP
         t0 = self.tl.t
         self.tl.speech(src, [(a, b)], speed=sp, cx=self.CX if cx is None else cx,
                        fx=fx or dict(zoom=(1.06, 1.0, 0.3)))
         self.words(t0, a, words, sp)
-        for sa, sb, txt in block or ():
-            self.blocks.append((t0 + (sa - a) / sp, t0 + (sb - a) / sp, txt))
+        for sa, sb, it, orig in block or ():
+            self.blocks.append((t0 + (sa - a) / sp, t0 + (sb - a) / sp, it, orig))
         return t0
 
     def title(self, a, b, txt, style="Mid", y=430):
@@ -106,20 +120,24 @@ class Reel:
                 f"Style: Cap,Poppins,{S(58)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,{S(4)},{S(2)},5,0,0,0,1\n"
                 f"Style: Big,Anton,{S(190)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,2,0,1,{S(3)},{S(5)},5,0,0,0,1\n"
                 f"Style: Mid,Anton,{S(96)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,1,0,1,{S(3)},{S(4)},5,0,0,0,1\n"
+                f"Style: Orig,Poppins,{S(44)},&H00E6E6E6,&H00FFFFFF,&H00000000,&H80000000,0,-1,0,0,100,100,0,0,1,{S(3)},{S(2)},5,0,0,0,1\n"
                 f"Style: Small,Poppins,{S(46)},&H004B8AB6,&H00FFFFFF,&H00000000,&H90000000,-1,0,0,0,100,100,1,0,1,{S(3)},{S(2)},5,0,0,0,1\n\n"
                 "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
-        ev, y_cap = [], S(1180)
+        ev, y_cap, y_orig = [], S(1180), S(1440)
         cs = self._chunks(sorted(self.words_, key=lambda x: x[1]))
+        starts = sorted([c[0][1] for c in cs] + [bl[0] for bl in self.blocks])
         for ci, c in enumerate(cs):
-            c_end = cs[ci + 1][0][1] if ci + 1 < len(cs) else end
-            c_end = min(c_end, c[-1][1] + 1.2)
+            nxt = [s for s in starts if s > c[0][1] + 1e-3]
+            c_end = min(nxt[0] if nxt else end, c[-1][1] + 1.0)   # mai due sottotitoli insieme
             for i, (w, t) in enumerate(c):
                 e = c[i + 1][1] if i + 1 < len(c) else c_end
                 parts = [(f"{{\\c{GOLD}}}" if j == i else f"{{\\c{WHITE}}}") + x for j, (x, _) in enumerate(c)]
                 pop = "\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)" if i == 0 else ""
                 ev.append((1, t, e, "Cap", f"{{\\an5\\pos({W // 2},{y_cap}){pop}}}" + " ".join(parts)))
-        for a, b, txt in self.blocks:
-            ev.append((1, a, b, "Cap", f"{{\\an5\\pos({W // 2},{y_cap})\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)}}{txt}"))
+        for a, b, it, orig in self.blocks:
+            ev.append((1, a, b, "Cap", f"{{\\an5\\pos({W // 2},{y_cap})\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)}}{it}"))
+            if orig:
+                ev.append((1, a, b, "Orig", f"{{\\an5\\pos({W // 2},{y_orig})}}{orig}"))
         for a, b, txt, st, y in self.titles:
             tag = (f"{{\\an5\\pos({W // 2},{S(y)})\\fscx125\\fscy125\\alpha&HFF&"
                    f"\\t(0,140,\\fscx100\\fscy100\\alpha&H00&)\\fad(0,120)}}")

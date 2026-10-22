@@ -34,8 +34,8 @@ r.tl.sfx(0.0, sfx_file("boom"), 0.25)
 src = clip("121314")
 a, b = 1.95, 11.55
 sp = r.SP
-t_dentro, t_dir, t_eda = ((t - a) / sp for t in (4.12, 5.72, 7.50))
-t_ferm = (10.38 - a) / sp
+CUTS = [(5.50, 5.70), (7.00, 7.45)]          # pause interne tolte (sorgente)
+t_dentro, t_dir, t_eda = (r.src_to_out(0, a, t, CUTS) for t in (4.12, 5.72, 7.50))
 # palme -> vaso su "dentro una ciotola" -> di nuovo la palma -> insegna (titolo) -> il vaso versa nel bicchiere
 t0 = r.narr(src, a, b, [(r.own(src, 2.0, gain=0.15), t_dentro),
                         (r.own(clip("121448"), 0.05, gain=0.35), t_dir - t_dentro),
@@ -45,22 +45,23 @@ t0 = r.narr(src, a, b, [(r.own(src, 2.0, gain=0.15), t_dentro),
             words=[("Raccolgono", 2.04), ("le", 2.76), ("gocce", 2.84), ("del", 3.32), ("cocco", 3.48), ("dentro", 4.12),
                    ("una", 4.68), ("ciotola", 4.92), ("direttamente", 5.72), ("sulla", 6.28), ("palma.", 6.52),
                    ("E", 7.50), ("da", 7.66), ("lì,", 7.82), ("con", 7.98), ("la", 8.14), ("fermentazione,", 8.22),
-                   ("diventa", 8.94), ("naturalmente", 9.42), ("birra", 10.38), ("di", 10.94), ("cocco.", 11.10)])
+                   ("diventa", 8.94), ("naturalmente", 9.42), ("birra", 10.38), ("di", 10.94), ("cocco.", 11.10)],
+            cuts=CUTS)
 r.title(t0 + t_eda, t0 + t_eda + 1.4, "KALLU", "Big", 560)
 r.title(t0 + t_eda + 0.25, t0 + t_eda + 1.4, "il toddy del Kerala", "Small", 700)
 
-# 3. il gestore conferma (inglese, velocità normale, sottotitolo tradotto)
-r.cam(clip("121336"), 0.6, 2.75, speed=1.0, cx=0.55,
-      block=[(0.7, 2.2, "Lo fate voi?"), (2.25, 2.75, "Sì.")])
+# 3. il gestore conferma (inglese, quasi a velocità normale): italiano al centro, originale in basso
+r.cam(clip("121336"), 0.62, 2.72, speed=1.15, cx=0.5,
+      block=[(0.72, 1.80, "Lo fate voi?", "They do by yourself?"), (2.20, 2.72, "Sì.", "Yes.")])
 
 # 4. bicchieri sul tavolo (suono vero)
-r.own(clip("121118"), 0.1, gain=0.8)(1.3)
+r.own(clip("121118"), 0.3, gain=0.8)(0.9)
 
 # 5-7. l'assaggio
 r.cam(clip("121502"), 0.0, 3.4, words=[("Me", 0.0), ("l'ha", 0.16), ("riempito", 0.40), ("tutto,", 0.88),
                                         ("dicendo", 1.04), ("che", 1.36), ("è", 1.44), ("naturale.", 1.60),
                                         ("Magari", 2.08), ("mi", 2.32), ("ubriaco", 2.40), ("adesso.", 2.96)])
-r.cam(clip("121356"), 0.55, 2.4, words=[("Cheers!", 0.86)])
+r.cam(clip("121356"), 0.6, 1.9, words=[("Cheers!", 0.86)])
 r.cam(clip("121514"), 0.0, 1.3, words=[("Buonissimo,", 0.16), ("oh.", 0.88)])
 
 # 8. "non è come le birre in vetro": inizio in camera, poi il locale
