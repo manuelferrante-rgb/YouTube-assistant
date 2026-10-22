@@ -61,11 +61,13 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Strumenti di riferimento per reel (taglio pause, sottotitoli): repo `manuelferrante-rgb/Video-maker`,
   senza logo e regole specifiche del coaching.
 
-## Ripresa in una nuova sessione (stato al 21/10 sera)
-- Mercato di Marari: reel A, B, C APPROVATI (non toccare). Intro rifatta senza musica con sigla fissa e logo
-  animato (vedi `copioni/presentazione_e_sigla.md`). v3 troppo carica di effetti per Manuel; v4 con effetti sobri:
-  trailer v4 e lungo v4 su Drive (`..._trailer_v4_1080x1920.mp4`, `..._long_v4_3840x2160.mp4`), in attesa del
-  parere di Manuel.
+## Ripresa in una nuova sessione (stato al 22/10)
+- Ogni video ha la SUA cartella Drive (girato + consegna in `montati/<progetto>` della stessa cartella):
+  `GDRIVE_FOLDER_ID=<id> tools/drive_upload.sh <progetto> <file>`. Caricare sempre nella cartella del video.
+- Mercato di Marari (cartella 1X3qkOWu91EZUWqKoVu0pZ3Dd1ipXlGeB): pubblicato da Manuel. Ultimi: trailer v5 e lungo v5
+  (sigla con pescatore e folla al posto di cane e ragazza). Sottotitoli YouTube it/en in projects/mercato/sottotitoli.
+- Reel "Comunismo in Kerala" (106K5eY6ncJasEhLTzwADIh63bGghvU1x) e "Birra di cocco/kallu"
+  (1hYw8CWZyiaxIKnldG86gatwfvmDE8Ll2): consegnati, regole dei reel in tools/reel_kit.py e nei brief dei progetti.
   1. `projects/mercato/fetch.sh` (riscarica girato, musica e clip extra da Drive, rigenera le mappe).
   2. Prova il token: `tools/drive_upload.sh mercato <file piccolo>` prima dei render lunghi.
   3. `python3 projects/mercato/build.py trailer|reelA|reelB|reelC|long` (`--preview` per una prova veloce;
