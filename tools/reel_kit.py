@@ -155,3 +155,35 @@ class Reel:
         print(f"== reel: {len(self.tl.shots)} inquadrature, {self.tl.t:.1f} s")
         self.tl.render(out, crf=crf, preset=preset)
         return out
+
+
+def brush_in(src, out, dur=0.27, seed=3):
+    """Apertura con pennellata: l'immagine si rivela da sinistra con un bordo a setole (dur secondi), resto invariato."""
+    import subprocess, numpy as np, cv2
+    from doc_render import run
+    W, H = (int(v) for v in run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                                 "stream=width,height", "-of", "csv=p=0", src]).strip().split(","))
+    n = max(2, round(dur * 30))
+    rng = np.random.default_rng(seed)
+    yy = np.arange(H, dtype=np.float32)
+    # bordo della pennellata: ondulazione morbida + setole fitte, leggermente inclinato
+    soft = np.convolve(rng.standard_normal(H + 200), np.ones(120) / 120, "same")[100:100 + H] * 9
+    bristle = np.convolve(rng.standard_normal(H + 10), np.ones(3) / 3, "same")[5:5 + H]
+    jitter = (soft * 0.06 + bristle * 0.025) * W
+    tilt = (yy - H / 2) * 0.18
+    mdir = f"{os.path.dirname(out)}/brush_masks"
+    os.makedirs(mdir, exist_ok=True)
+    X = np.arange(W, dtype=np.float32)[None, :]
+    for f in range(n):
+        p = 1 - (1 - (f + 1) / n) ** 2                      # ease-out
+        edge = (p * 1.35 - 0.15) * W + jitter - tilt
+        m = np.clip((edge[:, None] - X) / (0.012 * W) + 0.5, 0, 1)
+        cv2.imwrite(f"{mdir}/m{f:03d}.png", cv2.GaussianBlur((m * 255).astype(np.uint8), (0, 0), 1.2))
+    d = n / 30
+    run(["ffmpeg", "-v", "error", "-y", "-i", src, "-framerate", "30", "-i", f"{mdir}/m%03d.png", "-filter_complex",
+         f"[0:v]split[a][b];[a]trim=end_frame={n},setpts=PTS-STARTPTS[h];[b]trim=start_frame={n},setpts=PTS-STARTPTS[t];"
+         f"[1:v]format=gray,scale={W}:{H}[m];color=black:s={W}x{H}:r=30:d={d:.4f}[k];"
+         f"[h][m]alphamerge[ha];[k][ha]overlay=shortest=1,format=yuv420p[hb];[hb][t]concat=n=2:v=1:a=0,format=yuv420p[v]",
+         "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-crf", "17", "-preset", "medium", "-c:a", "copy",
+         "-movflags", "+faststart", out])
+    return out
