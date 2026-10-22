@@ -179,3 +179,5 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   montate da più tratti) prima di consegnare.
 - Finale (22/10): Manuel accetta una breve riflessione finale se gli somiglia (es. "viaggiare non significa
   soltanto vedere posti nuovi..."), dopo un attacco concreto su quello che si è visto. Niente prediche lunghe.
+- Ogni video è autonomo (Manuel, 22/10): niente richiami a video precedenti (frasi, persone, immagini già usate),
+  salvo che lo chieda lui.
