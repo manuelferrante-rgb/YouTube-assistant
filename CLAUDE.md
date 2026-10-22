@@ -41,6 +41,8 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
   musica (YouTube Audio Library) nella stessa cartella -> montaggio e consegna.
 - Titolo e descrizione YT anche in inglese (traduzioni YouTube).
 - Consegna: lungo 16:9 + 3 verticali + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
+- Lunghi a CAPITOLI (dal 22/10): Intro, Parte 1, 2..., Conclusione (Manuel con voiceover e immagini). Consegnare
+  l'elenco dei minutaggi esatti dal montaggio per la descrizione YT (0:00 primo, min 3 capitoli, ognuno >= 10 s), it+en.
 
 ## Ambiente
 - Logo: `assets/brand/logo_vocivere_originale.png`, scontornati `logo_vocivere_trasparente.png` (testo nero, per
