@@ -32,3 +32,6 @@ del Congresso). Mai il tricolore nazionale al posto di quello del partito.
 
 Decisione finale 22/10: copione LUNGO (il primo corretto, punti 1-5 in alto), tutto il testo resta. Niente
 limite di 19 s: il più breve possibile tagliando SOLO pause e parti morte, voce 1.15-1.2x, B-roll continuo.
+Formato: 9:16 1080x1920 (Shorts/Reel). Sottotitoli SU TUTTO il parlato di Manuel (eccezione voluta da lui per
+questo reel), centrali nella safe zone (fuori da ~250 px in alto, ~500 px in basso e dalla colonna di icone a
+destra), animati parola per parola: 2-4 parole per volta, parola corrente in oro #B68A4B, ingresso con piccolo pop.
