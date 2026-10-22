@@ -282,6 +282,7 @@ class Timeline:
             for a, b, t in sorted(self.subs):
                 f.write(f"Dialogue: 0,{ts(a)},{ts(b)},Sub,,0,0,0,,{t}\n")
 
+        ass = getattr(self, "ass_override", None) or ass   # sottotitoli/titoli animati preparati a parte
         run(["ffmpeg", "-v", "error", "-y", "-i", cut, "-i", mix, "-vf", f"setpts=N/({FPS}*TB),ass={ass}:fontsdir={ROOT}/models", "-r", str(FPS),
              "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", str(crf), "-preset", preset, "-profile:v", "high",
              "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", "-t", f"{total:.3f}", out])
