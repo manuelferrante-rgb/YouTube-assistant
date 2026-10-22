@@ -177,3 +177,5 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   forte e già dentro la storia (azione o frase vera che incuriosisce), niente preambolo di raffica + voce.
   I primi 3-5 secondi si ricontrollano fotogramma per fotogramma e a orecchio (tagli, parole troncate, frasi
   montate da più tratti) prima di consegnare.
+- Finale (22/10): Manuel accetta una breve riflessione finale se gli somiglia (es. "viaggiare non significa
+  soltanto vedere posti nuovi..."), dopo un attacco concreto su quello che si è visto. Niente prediche lunghe.
