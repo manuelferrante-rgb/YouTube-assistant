@@ -1,6 +1,9 @@
 # Mercato del pesce di Marari: testi di pubblicazione
 
-Titolo e copertina: li fa Manuel.
+Titolo (scelto da Manuel, 23/10):
+- IT: «Un posto in pace»: alle 3 di notte in mare | Kerala, India
+- EN: "A peaceful place": at sea by 3 a.m. | Kerala, India
+Copertina: la fa Manuel. Il video è pubblicato partendo da ~8 s: capitoli spostati di 8 s (sotto).
 
 ## Calendario suggerito
 - Venerdì: teaser verticale in stile trailer (Shorts + Reel), con sigla
@@ -20,14 +23,14 @@ un pesce da oltre 50 chili, il ghiaccio spalato nei cesti e una colazione con pa
 
 Voci Vere racconta le persone e i luoghi lontani dalle cartoline, con il loro consenso e con la loro voce.
 
-Capitoli:
-00:00 Il mercato sulla spiaggia
-00:28 Il giorno prima a Marari
-00:55 I pescatori
-02:09 Il Kerala di cui ci parlano
-02:42 Il mercato all'alba
-05:07 Colazione: parotta e chai
-05:43 Si torna
+Capitoli (video pubblicato da ~8 s):
+0:00 Il mercato sulla spiaggia
+0:20 Il giorno prima a Marari
+0:47 I pescatori
+2:01 Il Kerala di cui ci parlano
+2:34 Il mercato all'alba
+4:59 Colazione: parotta e chai
+5:35 Si torna
 
 ## Descrizione YouTube (inglese, per la traduzione YouTube)
 At 3 a.m. the fishermen of Marari, in Kerala, are already at sea. By 8 the catch reaches the beach, where an
