@@ -6,7 +6,8 @@ Tempi in secondi del file. Parola "Ripeti/Ripeto": vale la ripresa successiva.
 - 4  Quanti sono          43.23-46.06 (2002) + 54.26-56.31 ("quest'anno arrivano fino a un milione", ripresa)
                           Senza attribuzione: Manuel conferma il dato "fino a un milione" (23/10), si usa così
 - 5  Chi non cammina      62.48-71.66
-- 6  La storia            81.21-99.97 (ripresa; la prima 75.13-77.13 è scartata)
+- 6  La storia            81.21-96.06 (ripresa; la prima 75.13-77.13 è scartata) + ultima frase da vo_take2.m4a 2.76-5.86
+                          ("Qui lo chiamano ancora Veluthachan", file Ambalappuzha_3.m4a del 23/10)
 - 7  La statua            104.52-114.99
 - 8  Chi cammina          130.90-140.47 (ripresa)
 - 9  L'arrivo             143.53-150.20
