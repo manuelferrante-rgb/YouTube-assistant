@@ -181,3 +181,10 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   soltanto vedere posti nuovi..."), dopo un attacco concreto su quello che si è visto. Niente prediche lunghe.
 - Ogni video è autonomo (Manuel, 22/10): niente richiami a video precedenti (frasi, persone, immagini già usate),
   salvo che lo chieda lui.
+
+## Metodo con Manuel (23/10)
+- Ogni video deve essere migliore del precedente: è il focus.
+- Durante il montaggio mandare in anteprima solo transizioni e soluzioni particolari (effetti sonori in punti
+  precisi, passaggi tra scene, zoom, idee nate dal montato), non pezzo per pezzo. Lui approva o corregge.
+- Effetti sonori: pochi e mirati. Sulla mappa vanno bene un solo whoosh, i tick di un contatore, un ding leggero;
+  troppi whoosh a ogni zoom NO. Zoom delle mappe continui, senza soste a tappe.
