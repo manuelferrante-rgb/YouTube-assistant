@@ -107,17 +107,19 @@ def main():
     tA, tB, D = a.t_a, a.t_b, a.dur
     k_globe, k_india, k_ker, k_route = 1.1, 2.0, 2.9, tA - 0.25
     G = 2 * np.degrees(np.arcsin(1.0)) * (W / (0.84 * H)) / 2   # globo intero alto 84% dello schermo
+    # un solo avvicinamento all'India, poi uno zoom unico e fluido fino alla costa (niente soste sul Kerala)
     cams = [(0.0, 52.0, 8.0, G * 0.97), (k_globe, 76.5, 14.0, G),
-            (k_india, 79.0, 20.0, 40.0), (k_ker, 76.6, 10.3, 5.2), (k_route, rmid[0] + 0.05, rmid[1], 0.40),
-            (D, rmid[0] + 0.045, rmid[1] + 0.006, 0.36)]
+            (k_india, 79.0, 20.0, 40.0), (k_route, rmid[0] + 0.05, rmid[1], 0.40),
+            (D, rmid[0] + 0.048, rmid[1] + 0.003, 0.385)]
 
     def cam(t):
         for (t1, *A), (t2, *B) in zip(cams, cams[1:]):
             if t <= t2:
-                u = ease3((t - t1) / (t2 - t1)) if t2 - t1 < 2.5 else ease((t - t1) / (t2 - t1))
+                u = ease((t - t1) / (t2 - t1)) if t1 == k_india or t2 - t1 >= 2.5 else ease3((t - t1) / (t2 - t1))
                 lw = np.exp(np.log(A[2]) + (np.log(B[2]) - np.log(A[2])) * u)
                 # il centro segue lo zoom in scala log: niente scivolate laterali a zoom stretto
-                v = (np.log(A[2]) - np.log(lw)) / (np.log(A[2]) - np.log(B[2])) if A[2] != B[2] else u
+                # (lo scarto dal punto d'arrivo si riduce con la larghezza: la meta resta sempre in campo)
+                v = (A[2] - lw) / (A[2] - B[2]) if abs(A[2] - B[2]) > 1e-9 else u
                 return A[0] + (B[0] - A[0]) * v, A[1] + (B[1] - A[1]) * v, lw
         return cams[-1][1:]
 
@@ -194,7 +196,7 @@ def main():
         sea = sea + (np.array([165, 135, 90], np.float32) - sea) * cont[..., None] * 0.6
         # entroterra appena più scuro, grana della carta
         sl = cv2.resize(land, (W // hs, H // hs), interpolation=cv2.INTER_AREA)
-        dland = cv2.resize(cv2.distanceTransform((sl > 127).astype(np.uint8), cv2.DIST_L2, 5), (W, H)) * hs
+        dland = np.minimum(cv2.resize(cv2.distanceTransform((sl > 127).astype(np.uint8), cv2.DIST_L2, 5), (W, H)), 1e6) * hs
         inl = np.clip(dland / (500 * s), 0, 1)[..., None]
         paper = PAPER + (PAPER_IN - PAPER) * inl + paper_tex * 3.5
         # India un filo più luminosa dei paesi vicini quando si vede il subcontinente

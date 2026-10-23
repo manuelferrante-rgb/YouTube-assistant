@@ -2,7 +2,8 @@
 """Effetti sonori della mappa (tools/route_map.py, 8 s): proposta da far approvare a Manuel.
 
     python3 projects/arthunkal/map_sfx.py out.wav [--t-a 4.1 --t-b 6.0]
-Globo: aria leggera; zoom: whoosh; puntine: stamp morbido; percorso: matita sulla carta; km: tick fino a 13.
+Versione 2 (indicazioni di Manuel): un solo whoosh avvicinandosi all'India, tick del contachilometri, ding leggero
+all'arrivo. Niente altro.
 """
 import argparse, os, subprocess, sys, wave
 import numpy as np
@@ -34,6 +35,15 @@ def pencil(dur, speed, seed=3):
     return x / (np.abs(x).max() + 1e-9)
 
 
+def ding(d=1.6):
+    """Campanella leggera e pulita (arrivo)."""
+    t = np.arange(int(d * SR)) / SR
+    x = sum(a * np.sin(2 * np.pi * f * t) * np.exp(-t / tau) for f, a, tau in
+            ((1318.5, 1.0, 0.55), (2637.0, 0.35, 0.3), (3951.1, 0.12, 0.18)))
+    x *= np.minimum(1, t / 0.004)
+    return x / np.abs(x).max()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out"); ap.add_argument("--t-a", type=float, default=4.1); ap.add_argument("--t-b", type=float, default=6.0)
@@ -44,23 +54,16 @@ def main():
     def put(x, t, g):
         i = int(t * SR); out[i:i + len(x)] += x[:len(out) - i] * g
 
-    put(load(sfx_file("whoosh_rev")), 0.0, 0.18)          # il globo entra
-    put(load(sfx_file("whoosh")), 1.15, 0.30)             # zoom sull'India
-    put(load(sfx_file("whoosh")), 2.25, 0.22)             # zoom sul Kerala
-    put(load(sfx_file("whoosh_short")), a.t_a - 0.9, 0.30)  # giù fino alla costa
-    put(load(sfx_file("stamp")), a.t_a - 0.15, 0.30)      # puntina Kalavoor
+    put(load(sfx_file("whoosh")), 0.75, 0.30)             # unico whoosh: ci si avvicina all'India
     tA, tB = a.t_a, a.t_b
-    vel = lambda t: np.clip(np.sin(np.pi * np.clip((t) / (tB - tA), 0, 1)), 0, 1) ** 0.6
-    put(pencil(tB - tA, vel), tA, 0.16)                   # il tratto si disegna
     tick = load(sfx_file("tick"))
     ease3 = lambda u: 4 * u ** 3 if u < 0.5 else 1 - (-2 * u + 2) ** 3 / 2
     us = np.linspace(0, 1, 2000)
-    for km in range(1, a.km + 1):                         # un tick per ogni km, a tempo col contatore
+    for km in range(1, a.km + 1):                         # contachilometri: un tick per ogni km
         u = km / a.km
         t = tA + (tB - tA) * us[np.searchsorted([ease3(v) for v in us], u - 0.5 / a.km)]
         put(tick, t, 0.10 + 0.06 * (km == a.km))
-    put(load(sfx_file("stamp")), tB, 0.36)                # puntina Arthunkal
-    put(load(sfx_file("shimmer")), tB + 0.05, 0.10)
+    put(ding(), tB, 0.22)                                 # arrivo ad Arthunkal: ding leggero
     out = out[:int(a.dur * SR)]
     out *= 0.89 / max(np.abs(out).max(), 1e-9) if np.abs(out).max() > 0.89 else 1.0
     with wave.open(a.out, "wb") as w:
