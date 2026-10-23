@@ -28,6 +28,9 @@ dl() {  # dl URL DEST
 dl https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf "$M/Anton-Regular.ttf"
 # font dei sottotitoli e delle etichette della mappa
 dl https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/Poppins-Medium.ttf "$M/Poppins-Medium.ttf"
+# font della mappa "carta nautica" (tools/route_map.py)
+dl "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf" "$M/PlayfairDisplay.ttf"
+dl "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/PlayfairDisplay-Italic%5Bwght%5D.ttf" "$M/PlayfairDisplay-Italic.ttf"
 # dati cartografici reali per la mappa animata (Natural Earth)
 mkdir -p "$M/geo"
 dl https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson "$M/geo/admin0_50m.geojson"
