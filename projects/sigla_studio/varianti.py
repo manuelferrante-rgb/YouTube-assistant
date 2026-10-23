@@ -270,3 +270,59 @@ if __name__ == "__main__":
         encode("B_pellicola", gen_B, [VO, ("whoosh_rev", T_VOCI - 0.75, 0.22), ("shimmer", T_VOCI, 0.22)])
     if "C" in which:
         encode("C_onda", gen_C, [VO, ("whoosh_rev", T_VOCI - 0.8, 0.18), ("hit", T_VOCI + 0.25, 0.22)])
+
+
+# ---------- D: scelta di Manuel (23/10) ----------
+# immagini con il look della B (grana, colori un po' spenti, dissolvenze) ma a tutto schermo 16:9 (niente bande),
+# l'onda della C che entra solo da "Questo è" e si chiude nell'icona del logo su "Voci", logo su sfondo sfocato (B),
+# suono della A.
+T_QUESTO = V0 + 3.98 - FA          # attacco di "Questo è" (2.58 s)
+
+
+def gen_D(t, f):
+    t_close = T_VOCI - 0.1
+    if t < t_close:
+        fr, i = piece_at(t, push=0.03)
+        tl = (i + 1) * SEG - t
+        if tl < 0.12 and i + 1 < len(PIECES):
+            a = 1 - tl / 0.12
+            fr = fr * (1 - a) + PF[i + 1][0] * a
+        fr = film(fr, f, bars=False)
+        if t >= T_QUESTO - 0.1:
+            k = np.clip((t - (T_QUESTO - 0.1)) / 0.25, 0, 1)
+            bh, bw_ = int(H * 0.16), int(W * 0.62)
+            b = bars_img(t, f, bw_, bh, 0.9) * k
+            glow = cv2.GaussianBlur(b, (0, 0), 8) * 0.6
+            rgbb = np.ones((bh, bw_, 3), np.float32) * GOLD * 1.6
+            over(fr, rgbb, np.clip(b + glow, 0, 1), (W - bw_) // 2, int(H * 0.70))
+        return fr
+    bg = film(cv2.GaussianBlur(PF[-1][-1], (0, 0), 25) * 0.4, f, bars=False)
+    u = (t - t_close) / 0.35
+    y_t0, y_t1 = BANDS[0]; y_w0, y_w1 = BANDS[1]
+    if u < 1:
+        e = ease(u)
+        bw_ = int(W * 0.62 * (1 - e) + LW * 0.18 * e)
+        bh = int(H * 0.16 * (1 - e) + (y_w1 - y_w0) * e)
+        cy = int(H * 0.70 + bh / 2) * (1 - e) + (LY + (y_w0 + y_w1) / 2) * e
+        b = bars_img(t, f, max(8, bw_), max(8, bh), 0.9)
+        rgbb = np.ones(b.shape + (3,), np.float32) * GOLD * 1.6
+        over(bg, rgbb, b, (W - b.shape[1]) // 2, int(cy - b.shape[0] / 2))
+        return bg
+    v = t - (t_close + 0.35)
+    al = LOGO[..., 3].copy(); rgb = LOGO[..., :3]
+    mid = al.copy(); mid[:y_w0] = 0; mid[y_w1:] = 0
+    over(bg, rgb, mid, LX, LY)
+    txt = al.copy(); txt[y_t1 + 2:] = 0
+    e = ease(v / 0.45)
+    sx = 1.25 - 0.25 * e
+    M = np.float32([[sx, 0, LW / 2 * (1 - sx)], [0, 1, 0]])
+    tr = cv2.warpAffine(rgb, M, (LW, LH)); ta = cv2.warpAffine(txt, M, (LW, LH)) * np.clip(v / 0.25, 0, 1)
+    over(bg, tr, ta, LX, LY)
+    pay = al.copy(); pay[:y_w1 + 2] = 0
+    over(bg, rgb, pay * np.clip((v - 0.5) / 0.5, 0, 1), LX, LY)
+    return bg
+
+
+if __name__ == "__main__" and "D" in sys.argv[1:]:
+    encode("D_scelta", gen_D, [(VX, V0, 1.0), ("riser_long", T_VOCI - 2.6, 0.12), ("boom", T_VOCI - 0.05, 0.35),
+                               ("shimmer", T_VOCI + 0.2, 0.10)])
