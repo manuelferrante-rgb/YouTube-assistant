@@ -30,3 +30,10 @@ nel video (solo minutaggi per la descrizione); VO finale in 10 blocchi (8 chi ca
 riflessione "viaggiare non significa soltanto..."); durata dettata dal materiale (8-9 min se regge, mai allungare).
 Musica: brani YouTube Audio Library calmi se Manuel li carica, altrimenti solo suoni veri. Sigla fissa dopo l'intro.
 Cartella Drive: 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX ("Festa pellegrinaggio Kerala").
+
+Metodo di lavoro (Manuel, 23/10): durante il montaggio gli mando PER APPROVAZIONE, a pezzi:
+- gli effetti sonori (audio/anteprime con sfx in punti precisi), lui approva o chiede modifiche;
+- transizioni naturali, zoom leggeri e passaggi tra scene per rendere il video dinamico.
+Mappa (tools/route_map.py, carta nautica chiara, globo -> India -> Kerala -> percorso con km): APPROVATA 23/10.
+Effetti della mappa: projects/arthunkal/map_sfx.py (proposta, in attesa di ok).
+Girato del 23/10 (spiaggia vuota, Manuel in camera) = il "prima"; del VO blocco 1 solo l'ultima frase.
