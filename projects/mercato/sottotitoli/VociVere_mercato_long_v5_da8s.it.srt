@@ -1,292 +1,286 @@
 1
-00:00:02,800 --> 00:00:05,500
-Immagina di svegliarti
-alle tre del mattino,
+00:00:00,000 --> 00:00:01,450
+...nell'oceano indiano a pescare.
 
 2
-00:00:05,500 --> 00:00:09,450
-alle quattro dover già andare
-nell'oceano indiano a pescare.
-
-3
-00:00:12,870 --> 00:00:15,400
+00:00:04,870 --> 00:00:07,400
 Quello enorme pesava 50-55 chili.
 
-4
-00:00:15,400 --> 00:00:16,970
+3
+00:00:07,400 --> 00:00:08,970
 Quindi veramente come una persona.
 
-5
-00:00:24,200 --> 00:00:26,400
+4
+00:00:16,200 --> 00:00:18,400
 Il mondo, raccontato da chi lo vive.
 
-6
-00:00:26,400 --> 00:00:28,200
+5
+00:00:18,400 --> 00:00:20,200
 Questo è Voci Vere.
 
-7
-00:00:30,200 --> 00:00:32,200
+6
+00:00:22,200 --> 00:00:24,200
 Il giorno prima siamo
 sulla spiaggia di Marari:
 
-8
-00:00:32,200 --> 00:00:34,800
+7
+00:00:24,200 --> 00:00:26,800
 barche tirate a secco,
 reti stese sui teli.
 
-9
-00:00:34,850 --> 00:00:37,000
+8
+00:00:26,850 --> 00:00:29,000
 Qui il lavoro non finisce
 quando si torna a riva.
 
-10
-00:00:49,250 --> 00:00:52,000
+9
+00:00:41,250 --> 00:00:44,000
 Immagina di svegliarti
 alle tre del mattino,
 
-11
-00:00:52,000 --> 00:00:55,700
+10
+00:00:44,000 --> 00:00:47,700
 alle quattro dover già andare
 nell'oceano indiano a pescare,
 
-12
-00:00:55,750 --> 00:00:57,670
+11
+00:00:47,750 --> 00:00:49,670
 per poi portare il pesce
 alle otto al mercato.
 
-13
-00:00:57,920 --> 00:01:00,170
+12
+00:00:49,920 --> 00:00:52,170
 Sta preparando le reti per
 la prossima uscita in mare.
 
-14
-00:01:32,780 --> 00:01:35,200
+13
+00:01:24,780 --> 00:01:27,200
 Poco più avanti, un pescatore
 è seduto sulla sua barca.
 
-15
-00:01:35,200 --> 00:01:37,040
+14
+00:01:27,200 --> 00:01:29,040
 Fa questo lavoro da trent'anni.
 
-16
-00:01:54,850 --> 00:01:57,950
+15
+00:01:46,850 --> 00:01:49,950
 La giornata comincia nel cuore della
 notte e finisce quando il pesce è venduto.
 
-17
-00:01:58,050 --> 00:01:59,710
+16
+00:01:50,050 --> 00:01:51,710
 Ma per lui non è l'unico lavoro.
 
-18
-00:02:11,580 --> 00:02:15,090
+17
+00:02:03,580 --> 00:02:07,090
 Prima di salutarci, ci tiene a dirci
 una cosa sul posto in cui vive.
 
-19
-00:02:34,600 --> 00:02:35,850
+18
+00:02:26,600 --> 00:02:27,850
 E ci racconta della festa:
 
-20
-00:02:35,850 --> 00:02:39,480
+19
+00:02:27,850 --> 00:02:31,480
 per due giorni niente pesca, e il
 cibo è gratis per chiunque arrivi.
 
-21
-00:02:44,380 --> 00:02:47,380
+20
+00:02:36,380 --> 00:02:39,380
 La mattina dopo andiamo a vedere
 dove finisce tutto quel lavoro.
 
-22
-00:02:50,400 --> 00:02:52,730
+21
+00:02:42,400 --> 00:02:44,730
 Direzione: mercato del pesce di Marari.
 
-23
-00:02:53,000 --> 00:02:55,400
+22
+00:02:45,000 --> 00:02:47,400
 Ci accompagna l'host che ci ospita.
 
-24
-00:02:55,700 --> 00:02:58,000
+23
+00:02:47,700 --> 00:02:50,000
 Al ritorno useremo un tuk-tuk.
 
-25
-00:02:58,000 --> 00:03:02,400
+24
+00:02:50,000 --> 00:02:54,400
 Il mercato del pesce di Mararikulam non è
 una classica struttura commerciale coperta.
 
-26
-00:03:02,500 --> 00:03:08,200
+25
+00:02:54,500 --> 00:03:00,200
 Infatti rappresenta una tradizione singolare di aste
 ittiche all'aperto, direttamente sulla spiaggia.
 
-27
-00:03:08,800 --> 00:03:13,400
+26
+00:03:00,800 --> 00:03:05,400
 Tutti che aspettano... arriva la barca
 con il pesce e si mettono a fare l'asta.
 
-28
-00:03:28,900 --> 00:03:34,300
+27
+00:03:20,900 --> 00:03:26,300
 Le barche arrivano, e il pesce passa di mano in
 mano: nelle ceste, sulle teste, sulle bilance.
 
-29
-00:03:34,550 --> 00:03:36,770
+28
+00:03:26,550 --> 00:03:28,770
 Queste immagino siano delle
 bilance per pesare il pesce.
 
-30
-00:03:36,770 --> 00:03:38,370
+29
+00:03:28,770 --> 00:03:30,370
 Il punto di partenza,
 poi, per le trattative.
 
-31
-00:03:38,370 --> 00:03:41,630
+30
+00:03:30,370 --> 00:03:33,630
 Cerco di non farmi vedere, ma proprio
 qua c'è una trattativa in corso. Bene.
 
-32
-00:03:43,230 --> 00:03:45,100
+31
+00:03:35,230 --> 00:03:37,100
 Mi sa che hanno pescato...
 
-33
-00:03:45,150 --> 00:03:47,600
+32
+00:03:37,150 --> 00:03:39,600
 Vediamo se riesco a farla vedere.
 
-34
-00:03:47,600 --> 00:03:51,200
+33
+00:03:39,600 --> 00:03:43,200
 Sono tutti qua per vederla,
 per cercare di comprarla.
 
-35
-00:03:53,800 --> 00:03:56,050
+34
+00:03:45,800 --> 00:03:48,050
 Mi hanno appena detto
 che il pesce di prima,
 
-36
-00:03:56,050 --> 00:03:58,700
+35
+00:03:48,050 --> 00:03:50,700
 quello enorme, pesava 50-55 chili.
 
-37
-00:03:58,950 --> 00:04:00,470
+36
+00:03:50,950 --> 00:03:52,470
 Quindi veramente come una persona.
 
-38
-00:04:11,270 --> 00:04:15,100
+37
+00:04:03,270 --> 00:04:07,100
 Il ragazzo che ci ha portato
 qua ha detto che, ovviamente,
 
-39
-00:04:15,600 --> 00:04:19,400
+38
+00:04:07,600 --> 00:04:11,400
 questo è uno dei maggiori lavori che
 fanno qui, dove siamo noi, a Marari,
 
-40
-00:04:20,500 --> 00:04:21,800
+39
+00:04:12,500 --> 00:04:13,800
 ma comunque in tutto il Kerala.
 
-41
-00:04:21,800 --> 00:04:24,800
+40
+00:04:13,800 --> 00:04:16,800
 Sai, questo pesce gigante
 varrà un sacco di rupie.
 
-42
-00:04:24,800 --> 00:04:29,200
+41
+00:04:16,800 --> 00:04:21,200
 E invece mi spiegava che ci sono barche più
 grandi, che rimangono addirittura due giorni
 
-43
-00:04:29,200 --> 00:04:32,650
+42
+00:04:21,200 --> 00:04:24,650
 nell'oceano indiano. Qua lo
 chiamano mare arabico. Arabian Sea.
 
-44
-00:04:32,700 --> 00:04:35,750
+43
+00:04:24,700 --> 00:04:27,750
 E ci sono queste altre
 barche, invece, più piccoline,
 
-45
-00:04:35,750 --> 00:04:37,100
+44
+00:04:27,750 --> 00:04:29,100
 che vanno e tornano tutti i giorni,
 
-46
-00:04:37,100 --> 00:04:39,000
+45
+00:04:29,100 --> 00:04:31,000
 come i pescatori di ieri che ci dicevano:
 
-47
-00:04:39,000 --> 00:04:42,400
+46
+00:04:31,000 --> 00:04:34,400
 si alzano alle tre, alle quattro
 vanno a pescare, alle otto sono qua.
 
-48
-00:04:42,400 --> 00:04:44,470
+47
+00:04:34,400 --> 00:04:36,470
 E invece l'altra rimane
 più giorni nell'oceano.
 
-49
-00:04:52,400 --> 00:04:54,400
+48
+00:04:44,400 --> 00:04:46,400
 Questo l'hanno venduto.
 
-50
-00:04:56,600 --> 00:04:57,800
+49
+00:04:48,600 --> 00:04:49,800
 Il ghiaccio per il pesce.
 
-51
-00:04:58,050 --> 00:05:00,780
+50
+00:04:50,050 --> 00:04:52,780
 Tutto va veloce: il pesce
 deve partire finché è fresco.
 
-52
-00:05:09,250 --> 00:05:10,670
+51
+00:05:01,250 --> 00:05:02,670
 E ovviamente qua mangiano.
 
-53
-00:05:11,100 --> 00:05:14,200
+52
+00:05:03,100 --> 00:05:06,200
 Questa è la pizza del
 Kerala, in India: la parotta.
 
-54
-00:05:20,950 --> 00:05:23,630
+53
+00:05:12,950 --> 00:05:15,630
 E questa è la chai indiana,
 preparata al momento.
 
-55
-00:05:29,150 --> 00:05:32,500
+54
+00:05:21,150 --> 00:05:24,500
 Poi lo spezzi con le mani...
 
-56
-00:05:34,900 --> 00:05:36,970
+55
+00:05:26,900 --> 00:05:28,970
 Un piccolo gattino
 aspetta il pesce avanzato.
 
-57
-00:05:39,200 --> 00:05:41,700
+56
+00:05:31,200 --> 00:05:33,700
 Per chi lavora qui è una
 mattinata come tante.
 
-58
-00:05:41,800 --> 00:05:44,590
+57
+00:05:33,800 --> 00:05:36,590
 Per noi, il modo più diretto
 per capire questa costa.
 
-59
-00:05:50,450 --> 00:05:54,350
+58
+00:05:42,450 --> 00:05:46,350
 Le reti che ieri erano stese sulla
 sabbia, stanotte erano in mare.
 
-60
-00:05:54,450 --> 00:05:56,370
+59
+00:05:46,450 --> 00:05:48,370
 E alle tre di notte, si riparte.
 
-61
-00:05:56,800 --> 00:06:00,260
+60
+00:05:48,800 --> 00:05:52,260
 Non siamo venuti a spiegare questa
 vita. Siamo venuti ad ascoltarla.
 
-62
-00:06:00,800 --> 00:06:04,700
+61
+00:05:52,800 --> 00:05:56,700
 Il viaggio di Voci Vere, per dare voce
 a chi ne ha più bisogno, continua.
 
-63
-00:06:05,200 --> 00:06:08,200
+62
+00:05:57,200 --> 00:06:00,200
 Seguimi per scoprire la prossima storia.
 
