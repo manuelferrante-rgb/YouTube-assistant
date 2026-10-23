@@ -13,7 +13,8 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 sys.path.insert(0, f"{ROOT}/tools")
 from sfx import sfx_file
 
-W, H, FPS, SR = 1920, 1080, 30, 48000
+W, H = int(os.environ.get("SIGLA_W", 1920)), int(os.environ.get("SIGLA_H", 1080))
+FPS, SR = 30, 48000
 S = f"{ROOT}/assets/sigla"
 OUT = f"{ROOT}/work/sigla_studio"
 os.makedirs(OUT, exist_ok=True)
@@ -30,7 +31,7 @@ def frames(path, n, start=0.05):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{start}", "-i", path, "-frames:v", str(n), "-vf",
                           f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS}",
                           "-f", "rawvideo", "-pix_fmt", "bgr24", "-"], capture_output=True, check=True).stdout
-    a = np.frombuffer(raw, np.uint8).reshape(-1, H, W, 3).astype(np.float32) / 255
+    a = np.frombuffer(raw, np.uint8).reshape(-1, H, W, 3)   # 8 bit in memoria (in 4K i float non ci stanno)
     if len(a) < n:
         a = np.concatenate([a, np.repeat(a[-1:], n - len(a), 0)])
     return a
@@ -115,13 +116,13 @@ PF = [frames(f"{S}/{p}", int(SEG * FPS) + 8) for p in PIECES]
 
 def piece_at(t, push=0.05):
     i = min(int(t / SEG), len(PIECES) - 1)
-    fr = PF[i][min(int((t - i * SEG) * FPS), len(PF[i]) - 1)]
+    fr = PF[i][min(int((t - i * SEG) * FPS), len(PF[i]) - 1)].astype(np.float32) / 255
     z = 1 + push * (t - i * SEG) / SEG
     M = np.float32([[z, 0, W / 2 * (1 - z)], [0, z, H / 2 * (1 - z)]])
     return cv2.warpAffine(fr, M, (W, H), borderMode=cv2.BORDER_REFLECT), i
 
 
-LOGO, BANDS = logo(int(W * 0.40))
+LOGO, BANDS = logo(int(W * (0.40 if W > H else 0.66)))
 LH, LW = LOGO.shape[:2]
 LX, LY = (W - LW) // 2, (H - LH) // 2
 yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
@@ -177,11 +178,11 @@ def gen_B(t, f):
         # dissolvenza breve verso il pezzo successivo
         tl = (i + 1) * SEG - t
         if tl < 0.12 and i + 1 < len(PIECES):
-            nx = PF[i + 1][0]
+            nx = (PF[i + 1][0].astype(np.float32) / 255)
             a = 1 - tl / 0.12
             fr = fr * (1 - a) + nx * a
         return film(fr, f)
-    last = PF[-1][-1]
+    last = (PF[-1][-1].astype(np.float32) / 255)
     bg = cv2.GaussianBlur(last, (0, 0), 25) * 0.35
     u = (t - (T_VOCI - 0.15)) / 0.9
     edge = -0.15 + ease(u) * 1.35                           # lama di luce da sinistra a destra
@@ -286,7 +287,7 @@ def gen_D(t, f):
         tl = (i + 1) * SEG - t
         if tl < 0.12 and i + 1 < len(PIECES):
             a = 1 - tl / 0.12
-            fr = fr * (1 - a) + PF[i + 1][0] * a
+            fr = fr * (1 - a) + (PF[i + 1][0].astype(np.float32) / 255) * a
         fr = film(fr, f, bars=False)
         if t >= T_QUESTO - 0.1:
             k = np.clip((t - (T_QUESTO - 0.1)) / 0.25, 0, 1)
@@ -296,7 +297,7 @@ def gen_D(t, f):
             rgbb = np.ones((bh, bw_, 3), np.float32) * GOLD * 1.6
             over(fr, rgbb, np.clip(b + glow, 0, 1), (W - bw_) // 2, int(H * 0.70))
         return fr
-    bg = film(cv2.GaussianBlur(PF[-1][-1], (0, 0), 25) * 0.4, f, bars=False)
+    bg = film(cv2.GaussianBlur((PF[-1][-1].astype(np.float32) / 255), (0, 0), 25) * 0.4, f, bars=False)
     u = (t - t_close) / 0.35
     y_t0, y_t1 = BANDS[0]; y_w0, y_w1 = BANDS[1]
     if u < 1:
@@ -324,5 +325,5 @@ def gen_D(t, f):
 
 
 if __name__ == "__main__" and "D" in sys.argv[1:]:
-    encode("D_scelta", gen_D, [(VX, V0, 1.0), ("riser_long", T_VOCI - 2.6, 0.12), ("boom", T_VOCI - 0.05, 0.35),
+    encode(f"D_scelta_{W}x{H}", gen_D, [(VX, V0, 1.0), ("riser_long", T_VOCI - 2.6, 0.12), ("boom", T_VOCI - 0.05, 0.35),
                                ("shimmer", T_VOCI + 0.2, 0.10)])

@@ -103,6 +103,48 @@ class Timeline:
         self.vos.append(dict(file=vofile, a=a, b=b, speed=speed, t=start + lead))
         return start
 
+    def trim_head(self, T):
+        """Toglie i primi T secondi (multiplo di fotogramma) del montato: inquadrature, voci, effetti, musica."""
+        n_cut = round(T * FPS); T = n_cut / FPS
+        shots = []
+        for s in self.shots:
+            if s["t"] + s["d"] <= T + 1e-6:
+                continue
+            if s["t"] < T - 1e-6:
+                k = round((T - s["t"]) * FPS)
+                s["a"] += k / FPS * s["speed"]; s["dur_src"] -= k / FPS * s["speed"]
+                s["n"] -= k; s["d"] = s["n"] / FPS; s["t"] = 0.0
+            else:
+                s["t"] -= T
+            shots.append(s)
+        self.shots = shots
+        vos = []
+        for v in self.vos:
+            end = v["t"] + (v["b"] - v["a"]) / v["speed"]
+            if end <= T:
+                continue
+            if v["t"] < T:
+                v["a"] += (T - v["t"]) * v["speed"]; v["t"] = 0.0
+            else:
+                v["t"] -= T
+            vos.append(v)
+        self.vos = vos
+        for x in self.sfxs:
+            if x["t"] < T:
+                x["a"] = x.get("a", 0) + T - x["t"]; x["t"] = 0.0
+            else:
+                x["t"] -= T
+        for m in self.musics:
+            if m["t0"] < T:
+                m["offset"] += T - m["t0"]; m["t0"] = 0.0
+            else:
+                m["t0"] -= T
+            m["t1"] -= T
+        self.musics = [m for m in self.musics if m["t1"] > m["t0"]]
+        self.subs = [(max(0, a - T), b - T, t) for a, b, t in self.subs if b - T > 0.15]
+        self.t -= T
+        return T
+
     def music(self, t0, t1, track, offset=0.0, level=0.35, fin=1.0, fout=1.5):
         self.musics.append(dict(t0=t0, t1=t1, track=track, offset=offset, level=level, fin=fin, fout=fout))
 
@@ -242,7 +284,8 @@ class Timeline:
         for j, x in enumerate(self.sfxs):
             inputs += ["-i", x["file"]]
             k = len(inputs) // 2 - 1
-            fc.append(f"[{k}:a]aresample=48000,volume={x['gain']},adelay={int(x['t'] * 1000)}:all=1,"
+            st = f"atrim=start={x['a']:.3f},asetpts=PTS-STARTPTS," if x.get("a") else ""
+            fc.append(f"[{k}:a]{st}aresample=48000,volume={x['gain']},adelay={int(x['t'] * 1000)}:all=1,"
                       f"apad=whole_dur={total:.3f},atrim=end={total:.3f}[fx{j}]")
             fx_labels.append(f"[fx{j}]")
         if fx_labels:  # gli effetti si sommano all'audio originale

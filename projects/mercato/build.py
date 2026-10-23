@@ -11,7 +11,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 sys.path.insert(0, f"{ROOT}/tools")
 from doc_render import Timeline, run, dur_of
 from sfx import sfx_file
-from sigla import sigla as sigla_fissa
+from sigla import sigla as sigla_fissa, sigla_d
 
 R = f"{ROOT}/work/raw"
 VO = f"{ROOT}/work/vo"
@@ -372,9 +372,13 @@ def intro(tl):
 
 
 def trailer(tl):
-    """Intro + sigla fissa: apre il lungo ed è anche il verticale teaser."""
+    """Intro + sigla fissa: apre il lungo ed è anche il verticale teaser.
+    v6 (23/10): Manuel taglia i primi 7.70 s (si parte da "oceano indiano") e la sigla è la variante D."""
     intro(tl)
-    sigla_fissa(tl, OUT)
+    tl.trim_head(7.70)
+    # ponte sonoro: il brusio del mercato sfuma sotto l'attacco della sigla (che parte con 0.4 s senza voce)
+    tl.sfx(max(0, tl.t - 0.2), ambient(raw("0117"), 4.0, 1.0), 0.45)
+    sigla_d(tl, OUT)
 
 
 def reel_A(tl):

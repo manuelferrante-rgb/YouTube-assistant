@@ -46,3 +46,17 @@ def sigla(tl, workdir):
         if name in gains:
             tl.sfx(t_logo + t, sfx_file(name), gains[name])
     return t_s
+
+
+
+def sigla_d(tl, workdir):
+    """Sigla fissa scelta da Manuel il 23/10 (variante D di projects/sigla_studio/varianti.py): clip già montata
+    con la frase, l'onda e il suono, nelle dimensioni del montaggio."""
+    import subprocess
+    out = f"{ROOT}/work/sigla_studio/sigla_D_scelta_{tl.W}x{tl.H}.mp4"
+    if not os.path.exists(out):
+        env = dict(os.environ, SIGLA_W=str(tl.W), SIGLA_H=str(tl.H))
+        subprocess.run(["python3", f"{ROOT}/projects/sigla_studio/varianti.py", "D"], env=env, check=True)
+    t_s = tl.t
+    tl.clip(out, audio=True)
+    return t_s
