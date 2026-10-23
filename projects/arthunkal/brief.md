@@ -37,3 +37,9 @@ pezzo; lui approva o chiede modifiche. Obiettivo dichiarato: ogni video migliore
 Mappa (tools/route_map.py, carta nautica chiara, globo -> India -> Kerala -> percorso con km): APPROVATA 23/10.
 Effetti della mappa v2 (projects/arthunkal/map_sfx.py): un whoosh verso l'India, tick dei km, ding leggero.
 Girato del 23/10 (spiaggia vuota, Manuel in camera) = il "prima"; del VO blocco 1 solo l'ultima frase.
+Note di Manuel sulla mappa v2 (23/10), da sistemare in montaggio (non serve rimandargliela):
+- all'inizio l'immagine sembra bloccata: niente fermo immagine prima del globo (nell'anteprima c'era 1.9 s di
+  frame clonato), il globo deve già muoversi dal primo fotogramma e la mappa deve partire a tempo con la voce;
+- "13 km" compare prima che lui dica "tredici chilometri": il contachilometri deve arrivare a 13 sulla parola
+  "Tredici" (togliere la pausa nel VO tra "Arthunkal." e "Tredici" e/o far contare i km fino a quel momento);
+- in generale sistemare script e parlato in montaggio perché il video non risulti morto (ritmo, pause tolte).
