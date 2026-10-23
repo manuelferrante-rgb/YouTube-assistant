@@ -3,7 +3,9 @@
 Titolo (scelto da Manuel, 23/10):
 - IT: «Un posto in pace»: alle 3 di notte in mare | Kerala, India
 - EN: "A peaceful place": at sea by 3 a.m. | Kerala, India
-Copertina: la fa Manuel. Il video è pubblicato partendo da ~8 s: capitoli spostati di 8 s (sotto).
+Copertina: la fa Manuel. Versione da pubblicare: v6 (trailer e lungo partono da "oceano indiano", 7.70 s; sigla D).
+Pubblicazione (Manuel): trailer giovedì 29/10, lungo domenica 1/11.
+Sottotitoli YouTube: projects/mercato/sottotitoli/VociVere_mercato_long_v6.it.srt / .en.srt.
 
 ## Calendario suggerito
 - Venerdì: teaser verticale in stile trailer (Shorts + Reel), con sigla
@@ -23,7 +25,7 @@ un pesce da oltre 50 chili, il ghiaccio spalato nei cesti e una colazione con pa
 
 Voci Vere racconta le persone e i luoghi lontani dalle cartoline, con il loro consenso e con la loro voce.
 
-Capitoli (video pubblicato da ~8 s):
+Capitoli (lungo v6: parte da "oceano indiano", sigla D):
 0:00 Il mercato sulla spiaggia
 0:20 Il giorno prima a Marari
 0:47 I pescatori
@@ -31,6 +33,15 @@ Capitoli (video pubblicato da ~8 s):
 2:34 Il mercato all'alba
 4:59 Colazione: parotta e chai
 5:35 Si torna
+
+Capitoli in inglese:
+0:00 The market on the beach
+0:20 The day before in Marari
+0:47 The fishermen
+2:01 The Kerala they tell us about
+2:34 The market at dawn
+4:59 Breakfast: parotta and chai
+5:35 Heading back
 
 ## Descrizione YouTube (inglese, per la traduzione YouTube)
 At 3 a.m. the fishermen of Marari, in Kerala, are already at sea. By 8 the catch reaches the beach, where an

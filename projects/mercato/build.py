@@ -163,6 +163,8 @@ def teaser(tl):
 
 def long_video(tl):
     trailer(tl)
+    # ponte sonoro dopo il logo: la sigla sfuma, le barche sulla spiaggia (senza voci) portano al capitolo dopo
+    tl.sfx(max(0, tl.t - 0.5), ambient(raw("0123"), 0.5, 1.3), 0.4)
 
     # ---- il giorno prima ----
     t0 = vo(tl, "vo_04", [(mimo("143640"), 0.0), (mimo("142648"), 12.0), (mimo("142648"), 3.0)  # TODO: dji_143748 non piu su Drive (21/10): sostituito con altro tratto di 142648
