@@ -48,3 +48,5 @@ Indicazioni di Manuel sul girato del 24/10:
   la domanda si può anche togliere se dalle risposte si capisce. Manuel farà anche parlato suo in camera.
 - Riprese delle 2:30 di notte (più clip, Manuel non parla perché stanco): piccolo montaggio con scritta in
   sovrimpressione grande e centrale, che entra in modo discreto: "2:30 di notte" (tutto in italiano).
+- Parlato in camera spezzato (Manuel pensa a cosa dire e scandisce): tagliare le pause lunghe tra una frase e
+  l'altra, tenendo il respiro naturale; dove il salto si vede, coprire con B-roll invece di un jump cut secco.
