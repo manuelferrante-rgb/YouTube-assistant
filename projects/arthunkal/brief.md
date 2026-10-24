@@ -43,3 +43,8 @@ Note di Manuel sulla mappa v2 (23/10), da sistemare in montaggio (non serve rima
 - "13 km" compare prima che lui dica "tredici chilometri": il contachilometri deve arrivare a 13 sulla parola
   "Tredici" (togliere la pausa nel VO tra "Arthunkal." e "Tredici" e/o far contare i km fino a quel momento);
 - in generale sistemare script e parlato in montaggio perché il video non risulti morto (ritmo, pause tolte).
+Indicazioni di Manuel sul girato del 24/10:
+- Interviste: la stessa domanda fatta a più persone si mette UNA volta sola, poi le risposte di tutti in fila;
+  la domanda si può anche togliere se dalle risposte si capisce. Manuel farà anche parlato suo in camera.
+- Riprese delle 2:30 di notte (più clip, Manuel non parla perché stanco): piccolo montaggio con scritta in
+  sovrimpressione grande e centrale, che entra in modo discreto: "2:30 di notte" (tutto in italiano).
