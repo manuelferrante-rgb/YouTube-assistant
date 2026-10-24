@@ -61,3 +61,7 @@ Indicazioni di Manuel sul girato del 24/10:
   girata più avanti, solo se quella in chiesa proprio non si sente.
 - Regola per tutto il video: dove c'è confusione ma la voce si capisce, tenerla e mettere i sottotitoli in
   italiano, stesso stile delle traduzioni (vale anche per il parlato di Manuel in quei punti).
+- 24/10: transizione zoom->nero un filo più veloce; linea del tempo più rapida (ogni data quando la dice, poi
+  riparte da lì alla data successiva: approvata l'idea). Effetti sonori: Manuel li vuole NATURALI e professionali,
+  non sintetici "forzati": lista proposta in chat, si usano suoni veri (girato, YouTube Audio Library caricati da
+  Manuel su Drive). Pixabay/Freesound non raggiungibili dall'ambiente.
