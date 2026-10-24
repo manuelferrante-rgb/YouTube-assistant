@@ -188,3 +188,6 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   precisi, passaggi tra scene, zoom, idee nate dal montato), non pezzo per pezzo. Lui approva o corregge.
 - Effetti sonori: pochi e mirati. Sulla mappa vanno bene un solo whoosh, i tick di un contatore, un ding leggero;
   troppi whoosh a ogni zoom NO. Zoom delle mappe continui, senza soste a tappe.
+- Audio rumoroso ma comprensibile (anche il parlato di Manuel): si tiene la ripresa migliore e si aggiungono
+  sottotitoli in italiano, stesso stile di quelli delle interviste (eccezione alla regola "niente sottotitoli
+  sulle parti di Manuel", decisa da lui il 24/10).

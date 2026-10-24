@@ -57,3 +57,7 @@ Indicazioni di Manuel sul girato del 24/10:
   effetto sonoro (prova: work/arthunkal/gfx/transizione_zoom_nero.mp4); cambi scena veloci, lenti dove serve.
 - Grafiche storiche oltre alla mappa: linea del tempo (52 d.C. tradizione, 1584 Fenicio, 1647 statua da Milano;
   2002 prima edizione nel blocco 4), stesso stile carta nautica della mappa.
+- Conclusione in camera girata due volte: preferita quella IN CHIESA (rumore di fondo ma si capisce); l'altra,
+  girata più avanti, solo se quella in chiesa proprio non si sente.
+- Regola per tutto il video: dove c'è confusione ma la voce si capisce, tenerla e mettere i sottotitoli in
+  italiano, stesso stile delle traduzioni (vale anche per il parlato di Manuel in quei punti).
