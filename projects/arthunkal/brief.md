@@ -52,3 +52,8 @@ Indicazioni di Manuel sul girato del 24/10:
   l'altra, tenendo il respiro naturale; dove il salto si vede, coprire con B-roll invece di un jump cut secco.
 - FINALE: voiceover del blocco 10 (vo_take1 162.42-182.33, al singolare) sulle immagini che Manuel indicherà,
   poi Manuel in camera che dice il claim finale su Voci Vere (lo gira lui).
+- Finale: le immagini nell'ORDINE in cui Manuel le carica.
+- STILE (24/10): più cinematografico e professionale. Transizioni zoom -> nero breve -> nuova scena dal nero con
+  effetto sonoro (prova: work/arthunkal/gfx/transizione_zoom_nero.mp4); cambi scena veloci, lenti dove serve.
+- Grafiche storiche oltre alla mappa: linea del tempo (52 d.C. tradizione, 1584 Fenicio, 1647 statua da Milano;
+  2002 prima edizione nel blocco 4), stesso stile carta nautica della mappa.
