@@ -6,7 +6,8 @@ Terra color carta, mare blu petrolio con linee di profondità, percorso oro che 
 che camminano, contatore dei km. Tempi agganciati al parlato:
     python3 tools/route_map.py out.mp4 --route "Kalavoor|9.55|76.307|santuario di Kreupasanam;Marari|9.62646|76.296;
         Arthunkal|9.6611|76.3008|basilica di Sant'Andrea" --km 13 --t-a 4.1 --t-b 6.0 --dur 8 [--w 3840 --h 2160]
---t-a: compare il punto di partenza (la parola "Kalavoor"); --t-b: si arriva (la parola "Arthunkal").
+--t-a: compare il punto di partenza (la parola "Kalavoor"); --t-b: si arriva (la parola "Arthunkal");
+--t-km: il contachilometri arriva al totale (la parola "tredici"), anche dopo che la linea è arrivata.
 """
 import argparse, json, os, subprocess
 import numpy as np, cv2
@@ -76,6 +77,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out"); ap.add_argument("--route", required=True); ap.add_argument("--km", default="13")
     ap.add_argument("--t-a", type=float, default=4.1); ap.add_argument("--t-b", type=float, default=6.0)
+    ap.add_argument("--t-km", type=float, default=None)   # il contatore arriva al totale qui (la parola "tredici")
     ap.add_argument("--dur", type=float, default=8.0); ap.add_argument("--fps", type=int, default=30)
     ap.add_argument("--w", type=int, default=3840); ap.add_argument("--h", type=int, default=2160)
     a = ap.parse_args()
@@ -304,13 +306,14 @@ def main():
                     r = rg * s
                     d.ellipse([head[0] - r, head[1] - r, head[0] + r, head[1] + r], fill=GOLD_RGB + (aa,))
             # contatore km accanto alla testa, poi fisso a metà percorso
-            km = float(a.km) * u
+            tkm = a.t_km or tB
+            km = float(a.km) * ease3((t - tA) / (tkm - tA))
             ca = ease((t - tA - 0.15) / 0.3)
             if u < 1:
                 text((head[0] - 70 * s, head[1]), f"{km:.0f} km", F["km"], INK_RGB, "rm", stroke=(236, 242, 244), sw=5, alpha=ca)
             else:
                 mid = pts[len(pts) // 2]
-                text((pts[:, 0].min() - 80 * s, mid[1]), f"{a.km} km", F["km"], INK_RGB, "rm", stroke=(236, 242, 244), sw=5)
+                text((pts[:, 0].min() - 80 * s, mid[1]), f"{km:.0f} km", F["km"], INK_RGB, "rm", stroke=(236, 242, 244), sw=5)
         for si, (name, la, lo, sub) in enumerate(stops):
             first, last = si == 0, si == len(stops) - 1
             t_in = tA - 0.15 if first else (tB if last else tA + (tB - tA) * stop_frac[si])

@@ -47,6 +47,7 @@ def ding(d=1.6):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out"); ap.add_argument("--t-a", type=float, default=4.1); ap.add_argument("--t-b", type=float, default=6.0)
+    ap.add_argument("--t-km", type=float, default=None)
     ap.add_argument("--dur", type=float, default=8.0); ap.add_argument("--km", type=int, default=13)
     a = ap.parse_args()
     out = np.zeros(int(a.dur * SR) + SR)
@@ -61,7 +62,7 @@ def main():
     us = np.linspace(0, 1, 2000)
     for km in range(1, a.km + 1):                         # contachilometri: un tick per ogni km
         u = km / a.km
-        t = tA + (tB - tA) * us[np.searchsorted([ease3(v) for v in us], u - 0.5 / a.km)]
+        t = tA + ((a.t_km or tB) - tA) * us[np.searchsorted([ease3(v) for v in us], u - 0.5 / a.km)]
         put(tick, t, 0.10 + 0.06 * (km == a.km))
     put(ding(), tB, 0.22)                                 # arrivo ad Arthunkal: ding leggero
     out = out[:int(a.dur * SR)]
