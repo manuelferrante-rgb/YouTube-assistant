@@ -162,3 +162,10 @@ e pesce grande sfumati nel mare in basso a sinistra, senza cornice. Manuel a des
 2. Archivo Black: PESAVA / COME UNA / PERSONA
 3. Anton: SVEGLIA / ALLE 3 (fascia gialla) / MERCATO ALLE 8
 4. Bebas Neue: SENZA TETTO / NÉ BANCHI / E UN PESCE DA 50 KG
+
+### Miniatura scelta da Manuel (25/10): la 4, font Bebas Neue
+Stessa composizione della v2_4, cambia solo la scritta, più larga:
+- v3_4a_bebas_grande.jpg: righe più grandi, tutte della stessa larghezza.
+- v3_4b_bebas_larga.jpg: come la 4a, con le lettere allargate in orizzontale.
+Abbinamento consigliato col titolo 3 o 1 (la miniatura dice già "senza tetto né banchi"):
+Un pesce da 50 chili all'asta sulla spiaggia: il mercato di Marari | Kerala, India
