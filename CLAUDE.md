@@ -17,14 +17,15 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Stile: diretto, concreto, niente retorica. Mai il trattino lungo.
 
 ## Chat di lavoro (dal 25/10)
-Il lavoro è diviso in 4 chat. Ogni chat legge questo file all'avvio e si occupa solo della sua area.
+Il lavoro è diviso in 5 chat. Ogni chat legge questo file all'avvio e si occupa solo della sua area.
 Le chat non si parlano: la memoria comune sono i file del repo. Ogni decisione di Manuel che conta anche per
 altre chat va scritta subito nel file giusto, poi commit e push sul branch della sessione (prima un pull).
 
 | Chat | Fa | Scrive in |
 |---|---|---|
 | Pianificazione | idee per luogo, ricerca dei fatti con fonti, lista riprese, voiceover da registrare, piano editoriale e calendario uscite | `piano/` (`piano/calendario.md`, un file per video in preparazione) e il copione in `projects/<video>/` |
-| Montaggio | lunghi, verticali, grafiche, suoni, sottotitoli, minutaggi dei capitoli, consegna su Drive | `projects/<video>/`, `regole/montaggio_documentario.md`, `tools/` |
+| Montaggio | lunghi, verticali, grafiche, sottotitoli, minutaggi dei capitoli, consegna su Drive; inserisce i suoni della chat Audio e le chiede gli effetti con `projects/<video>/audio_cue.md` | `projects/<video>/`, `regole/montaggio_documentario.md`, `tools/` |
+| Audio | sound design: effetti (veri, di libreria CC0 o costruiti dal girato), kit sonoro di Voci Vere, pulizia voce, scelta musica, mix | `audio/` (kit e catalogo con licenze), `projects/<video>/audio/`, `regole/audio.md` |
 | Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura | `copioni/<video>_testi.md` |
 | Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
@@ -35,7 +36,9 @@ Regole tra chat:
 - Una chat non riscrive i file delle altre aree: se serve una modifica, la segnala a Manuel o la aggiunge in fondo
   al file come nota datata ("Nota da Insights, 25/10: ...").
 - Le lezioni confermate dagli insights diventano regole: montaggio in `regole/montaggio_documentario.md`, copy in
-  `regole/copy.md`, pianificazione in `regole/pianificazione.md`.
+  `regole/copy.md`, pianificazione in `regole/pianificazione.md`, audio in `regole/audio.md`.
+- Ogni chat ha il suo computer: i file in `work/` NON si vedono dalle altre. Tutto ciò che passa tra chat va nel
+  repo (file piccoli, es. effetti sonori) o su Drive (file grandi), e si indica il percorso nel file di scambio.
 
 ## Compiti
 1. Idee di contenuto in base al luogo.
