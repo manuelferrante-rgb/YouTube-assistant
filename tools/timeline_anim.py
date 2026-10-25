@@ -41,7 +41,7 @@ def main():
     ap.add_argument("--w", type=int, default=3840); ap.add_argument("--h", type=int, default=2160)
     a = ap.parse_args()
     W, H, fps, D = a.w, a.h, a.fps, a.dur
-    s = W / 3840
+    s = max(W, H) / 3840 if H > W else W / 3840          # verticale: testi in proporzione all'altezza
     prev = [p.strip() for p in a.prev.split(";") if p.strip()]
     ev = []
     for x in a.events.split(";"):
@@ -60,7 +60,7 @@ def main():
     yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
     vign = (1 - 0.16 * np.clip(((xx - W / 2) / (W * 0.62)) ** 2 + ((yy - H / 2) / (H * 0.70)) ** 2, 0, 1) ** 1.3)[..., None]
     base = PAPER + tex * 3.5
-    Y = H * 0.56                                         # quota della linea
+    Y = H * 0.56 if W > H else H * 0.36                  # quota della linea (in verticale sopra i sottotitoli)
 
     def cam_x(t):
         # la camera segue l'ultima data comparsa (scorrimento morbido), con una lenta deriva continua

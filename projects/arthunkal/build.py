@@ -304,6 +304,7 @@ def long_video(W, H):
     e.say(C("080217"), [(0.5, 2.6), (3.4, 8.55)], cover={1: (C("080133"), 0.5)})   # prima in strada, poi in spiaggia
 
     # 7. CHI CAMMINA: il blocco 8 sui volti, poi la domanda una volta sola e le risposte
+    t_c = e.t
     f, d = VO("8b", [(134.6, 140.55)])
     e.vo(f, d, [(C("085345"), 0.0), (C("090348"), 0.5), (C("085613"), 0.0), (C("073335"), 3.0)], lead=0.3, music=0.0)
     e.say(C("071857"), [(15.85, 17.15)], subs=[(15.85, 17.15, "Che cosa significa per te?")])
@@ -387,7 +388,7 @@ def long_video(W, H):
     tl.shots[-1]["fx"] = dict(black_out=0.25)
 
     chapters = [(0.0, "Prima dell'alba"), (t_prima, "Il giorno prima"), (t_n, "2:30 di notte"),
-                (t_a, "L'alba sulla spiaggia"), (t_o, "Chi non cammina"), (t_r, "L'arrivo ad Arthunkal"),
+                (t_a, "L'alba sulla spiaggia"), (t_c, "Chi cammina"), (t_o, "Chi non cammina"), (t_r, "L'arrivo ad Arthunkal"),
                 (t6, "La storia"), (t_f, "Il ritorno")]
     out = f"{OUT}/VociVere_arthunkal_long_{W}x{H}.mp4"
     e.render(out)
@@ -403,3 +404,170 @@ if __name__ == "__main__":
     for w in what:
         if w == "long":
             long_video(W, H)
+
+
+# ================= VERTICALI (9:16, regole in fondo a regole/montaggio_documentario.md) =================
+from reel_kit import Reel, brush_in
+
+_W24 = json.load(open(f"{WORK}/trans24.json")) if os.path.exists(f"{WORK}/trans24.json") else {}
+_WVO = json.load(open(f"{WORK}/vo/vo_take1.json")) if os.path.exists(f"{WORK}/vo/vo_take1.json") else {}
+FIX = {"Carra": "Kerala", "Artunkal": "Arthunkal", "Artunkal.": "Arthunkal.", "Artunkal,": "Arthunkal,",
+       "d.C.": "dopo Cristo.", "Calavor": "Kalavoor,", "Akanda": "Akhanda", "Giapamala,": "Japamala,",
+       "l'Apostolo": "l'apostolo", "antico.": "è antico."}
+
+
+def words(src_json, key_part, a, b):
+    """Parole (testo corretto, tempo) di una clip o del voiceover nell'intervallo [a, b)."""
+    out = []
+    for k, segs in src_json.items():
+        if key_part in os.path.basename(k):
+            for s in segs:
+                out += [(FIX.get(w, w), t) for w, t in s["words"] if a - 0.05 <= t < b]
+    return out
+
+
+W_BASILICA = [("Questa", 0.0), ("chiesa", 0.51), ("l'ha", 1.01), ("ricostruita", 1.22), ("nel", 2.03), ("1584", 2.33),
+              ("un", 4.76), ("gesuita", 5.07), ("italiano,", 5.98), ("padre", 7.2), ("Giacomo", 7.91), ("Fenicio.", 8.72),
+              ("Qui", 12.67), ("lo", 13.07), ("chiamano", 13.28), ("ancora", 14.09), ("Veluthachan,", 15.61),
+              ("il", 17.23), ("padre", 17.33), ("bianco.", 17.84), ("Nel", 19.15), ("1647", 19.46), ("arrivò", 21.18),
+              ("da", 21.69), ("Milano", 21.89), ("una", 22.4), ("statua", 22.6), ("di", 23.11), ("San", 23.21),
+              ("Sebastiano.", 23.51)]
+
+
+def vreel(tag):
+    W, H = (540, 960) if PREVIEW else (1080, 1920)
+    return Reel(f"{OUT}/{tag}_{W}_work", W, H, cx_cam=0.5), W, H
+
+
+def vfinish(r, tag, W, H):
+    base = r.render(f"{OUT}/{tag}_base_{W}x{H}.mp4", crf=18 if W == 1080 else 24,
+                    preset="medium" if W == 1080 else "veryfast")
+    out = f"{OUT}/VociVere_arthunkal_{tag}_{W}x{H}.mp4"
+    brush_in(base, out, dur=0.27)
+    return out
+
+
+def hook(r, txt, d=2.2):
+    r.title(0.0, d, txt, "Mid", 820)
+
+
+def v1():
+    """TEASER (prima del lungo): la notte, il cammino, nessun arrivo. Chiude su "Perché?"."""
+    r, W, H = vreel("v1_teaser")
+    tl = r.tl
+    r.own(C("023744"), 0.0, gain=0.8, grade=NIGHT)(2.2)
+    hook(r, "2:30 di notte.\\NTutti in cammino.")
+    t = r.t
+    r.own(C("023356"), 0.5, gain=0.8, grade=NIGHT)(1.8)
+    r.own(C("023628"), 0.6, gain=0.8, grade=NIGHT)(1.5)
+    r.title(t + 0.2, t + 3.2, "Costa del Kerala, India", "Small", 400)
+    t = r.narr(VO1, 31.7, 39.9, [(r.own(C("023818"), 0.0, gain=0.0, grade=NIGHT), None),
+                                 (r.own(C("023529"), 0.2, gain=0.0, grade=NIGHT), None),
+                                 (r.own(C("023510"), 0.0, gain=0.0, grade=NIGHT), None)],
+               words=words(_WVO, "", 31.7, 39.9), cuts=[(34.3, 34.7), (38.4, 39.25)])
+    r.title(t + 0.3, t + 2.8, "Pregano camminando", "Small", 400)
+    if MUSIC_V:
+        tl.music(0, r.t, MUSIC_V, offset=0.0, level=0.5, fin=0.3, fout=0.8)
+    # la sua voce all'alba sopra la folla sulla spiaggia (nella clip la camera guarda il cielo)
+    r.narr(C("072327"), 0.75, 4.45, [(r.own(C("072504"), 0.0, gain=0.0), None)],
+           words=words(_W24, "072327", 0.75, 4.45))
+    r.narr(C("072327"), 5.0, 10.1, [(r.own(C("075231"), 1.0, gain=0.0), None), (r.own(C("072504"), 1.6, gain=0.0), None)],
+           words=words(_W24, "072327", 5.0, 10.1), cuts=[(7.6, 8.35)])
+    t = r.t
+    r.own(C("085345"), 0.0, gain=0.6)(1.8)
+    r.own(C("075231"), 6.0, gain=0.6)(1.4)
+    r.title(t + 1.0, r.t, "Perché?", "Mid", 820)
+    if MUSIC_V:
+        tl.music(t - 0.2, r.t, MUSIC_V, offset=30.0, level=0.45, fin=0.4, fout=0.5)
+    return vfinish(r, "v1_teaser", W, H)
+
+
+def v2():
+    """LA STATUA DI MILANO: 52 d.C., il gesuita italiano, il padre bianco, la statua del 1647."""
+    r, W, H = vreel("v2_statua")
+    r.own(C("091255"), 0.9, gain=0.5)(2.2)
+    hook(r, "Scolpita a Milano.\\NNel 1647.")
+    t = r.narr(VO1, 81.0, 88.2, [(r.own(C("090825"), 0.0, gain=0.25, cx=0.5), 2.0), (r.own(C("091540"), 1.0, gain=0.25), None)],
+               words=words(_WVO, "", 81.0, 88.2), cuts=[(83.0, 83.45)])
+    r.title(t + 0.2, t + 2.6, "Arthunkal, Kerala, India", "Small", 400)
+    sB = storia(W, H, "Bv", "1584|padre Giacomo Fenicio|gesuita italiano|0.2", 4.5, prev="52 d.C.")
+    sC = storia(W, H, "Cv", "1647|la statua di San Sebastiano|arriva da Milano|0.3", 5.0, prev="1584")
+    sp = r.SP
+    src = C("091658")
+    r.narr(src, 0.0, 24.2, [(r.own(src, 0.0, speed=sp, gain=0.0), 3.2 / sp), (r.gen(sB), 5.0 / sp),
+                            (r.own(src, 12.5, speed=sp, gain=0.0), 5.8 / sp), (r.gen(sC), None)],
+           words=W_BASILICA, cuts=[(3.2, 4.6), (9.6, 12.5), (18.3, 19.0)])
+    r.narr(VO1, 109.25, 115.05, [(r.own(C("091540"), 3.0, gain=0.2), None), (r.own(C("091405"), 0.5, gain=0.2), None),
+                                 (r.own(C("090903"), 8.0, gain=0.2), None)],
+           words=words(_WVO, "", 109.25, 115.05))
+    r.own(C("090825"), 0.0, gain=0.4)(1.5)
+    if MUSIC_V:
+        r.tl.music(0, r.t, MUSIC_V, offset=0.0, level=0.35, fin=0.3, fout=0.8)
+    return vfinish(r, "v2_statua", W, H)
+
+
+def v3():
+    """UNA PERSONA: una pellegrina risponde a "che cosa significa per te?"."""
+    r, W, H = vreel("v3_persona")
+    src = C("085034")
+    r.own(C("085345"), 0.0, gain=0.6)(2.1)
+    hook(r, "13 km a piedi,\\Ndi notte.")
+    r.cam(C("072327"), 0.75, 4.45, words=words(_W24, "072327", 0.75, 4.45))
+    r.cam(C("072327"), 5.0, 7.6, words=words(_W24, "072327", 5.0, 7.6))
+    t = r.cam(src, 30.75, 33.7, speed=1.05, cx=0.68,
+              block=[(30.8, 32.1, "È la prima volta per te?", "For you is the first time?"), (33.1, 33.7, "No.", "No.")])
+    r.title(t, t + 2.6, "Arthunkal, Kerala", "Small", 300)
+    r.cam(src, 43.4, 44.85, speed=1.05, cx=0.68, block=[(43.45, 44.85, "Che cosa significa per te?", "What does it mean for you?")])
+    r.cam(src, 45.7, 57.0, speed=1.05, cx=0.68,
+          block=[(45.75, 47.0, "È fede, è credere.", "This is a faith and belief."),
+                 (47.35, 49.3, "Lì succedono tanti miracoli.", "There are so many miracles happening there."),
+                 (51.3, 55.5, "Chi partecipa ci trova qualcosa.", "Those who are taking part in this, they have something in that."),
+                 (56.0, 57.0, "Un po' di felicità.", "Some happiness.")])
+    return vfinish(r, "v3_persona", W, H)
+
+
+def v4():
+    """COME FUNZIONA: il nome, la mappa, la spiaggia al posto della strada, la notte, chi aiuta, il 2002."""
+    r, W, H = vreel("v4_come_funziona")
+    sp = r.SP
+    r.own(C("072504"), 0.0, gain=0.6)(2.2)
+    hook(r, "13 km pregando.\\NSenza mai smettere.")
+    lead = 1.4
+    seg = [(16.2, 19.25), (19.75, 24.85), (25.75, 29.3)]
+
+    def out_t(x):
+        t, acc = 0.0, 0.0
+        for a, b in seg:
+            if x < b:
+                return acc + (x - a) / sp
+            acc += (b - a) / sp
+        return acc
+    tA, tB, tkm = out_t(22.12) - lead, out_t(23.96) - lead, out_t(25.8) - lead + 0.3
+    mdur = round(out_t(27.24) - lead + 0.6, 2)
+    mp, msnd = mappa(W, H, round(tA, 2), round(tB, 2), round(tkm, 2), mdur)
+    t0 = r.narr(VO1, 16.2, 29.3, [(r.own(C("075747"), 1.2, gain=0.0), lead), (r.gen(mp), None)],
+                words=words(_WVO, "", 16.2, 29.3), cuts=[(19.25, 19.75), (24.85, 25.75)])
+    r.tl.sfx(t0 + lead, msnd, 0.8)
+    r.cam(C("080217"), 0.5, 2.6, words=words(_W24, "080217", 0.5, 2.6))
+    r.cam(C("080217"), 3.4, 8.55, words=words(_W24, "080217", 3.4, 8.55))
+    t = r.t
+    r.own(C("023744"), 0.0, gain=0.8, grade=NIGHT)(2.0)
+    r.own(C("023356"), 0.5, gain=0.8, grade=NIGHT)(1.6)
+    r.title(t + 0.2, r.t, "Si parte di notte", "Small", 400)
+    r.narr(VO1, 62.4, 71.75, [(r.own(C("073357"), 0.3, gain=0.0), None), (r.own(C("075956"), 0.0, gain=0.0), None),
+                              (r.own(C("080046"), 0.0, gain=0.0), None)],
+           words=words(_WVO, "", 62.4, 71.75))
+    r.narr(C("075747"), 1.0, 6.1, [(r.own(C("075747"), 1.0, speed=sp, gain=0.0), None)],
+           words=words(_W24, "075747", 1.0, 6.1))
+    r.narr(C("072327"), 10.8, 18.3, [(r.own(C("072504"), 2.6, gain=0.0), None), (r.own(C("085345"), 0.0, gain=0.0), None)],
+           words=words(_W24, "072327", 10.8, 18.3), cuts=[(12.95, 14.4)])
+    r.own(C("075231"), 2.0, gain=0.6)(2.0)
+    if MUSIC_V:
+        r.tl.music(0, r.t, MUSIC_V, offset=10.0, level=0.3, fin=0.3, fout=0.8)
+    return vfinish(r, "v4_come_funziona", W, H)
+
+
+if __name__ == "__main__":
+    for w in [a for a in sys.argv[1:] if not a.startswith("--")]:
+        if w in ("v1", "v2", "v3", "v4"):
+            globals()[w]()
