@@ -133,3 +133,32 @@ parla al mercato (fotogramma 3:47 del lungo v6), foto della folla o del pesce gr
 - F, Bebas Neue: "UN POSTO / IN PACE" (bianco + oro del logo), folla + pesce.
 Note per la versione finale: lo scontorno è automatico (qualche ciocca va rifinita a mano nell'editor); max 3-4
 parole grandi; il volto resta il punto più grande e luminoso; controllare la leggibilità a misura di telefono.
+
+## Revisione del 25/10 (dopo il riscontro di Manuel)
+Manuel: lo scontorno della prima serie lasciava il bianco tra i ricci; le foto vanno sfumate nello sfondo, non in
+cornice; il gancio che resta è il pesce da 50 chili, da tenere insieme a mercato senza tetto, sveglia alle 3,
+posto in pace (che da solo non porta click).
+
+### Titoli (quadra tra i temi)
+1. Mercato senza tetto né banchi: all'asta un pesce da 50 chili | Kerala, India
+   EN: A market with no roof and no stalls: a 50-kilo fish up for auction | Kerala, India
+2. Sveglia alle 3, mercato alle 8: all'asta un pesce da 50 chili | Kerala, India
+   EN: Up at 3, market at 8: a 50-kilo fish up for auction | Kerala, India
+3. Un pesce da 50 chili all'asta sulla spiaggia: il mercato di Marari | Kerala, India
+   EN: A 50-kilo fish auctioned on the beach: the Marari market | Kerala, India
+"Un posto in pace" resta nella descrizione e nel Reel C, dove funziona perché la frase la dice il pescatore.
+
+Abbinamenti (titolo e miniatura si completano):
+- Titolo 1 + miniatura 3 SVEGLIA ALLE 3 / MERCATO ALLE 8: tiene dentro tre temi su quattro. Prima scelta.
+- Titolo 2 + miniatura 2 PESAVA COME UNA PERSONA.
+- Titolo 3 + miniatura 4 SENZA TETTO NÉ BANCHI.
+Il pesce da 50 chili è un fatto del mercato detto nel video (Manuel riporta quanto gli hanno detto), e il video
+resta sulle persone: il titolo nomina sempre il mercato e il luogo.
+
+### Miniature v2 (copioni/mercato_miniature/v2_*.jpg, 00_tutte_v2.jpg)
+Scontorno rifatto (matte.py): ricci presi uno a uno sul cielo, senza alone bianco. Sfondo mare con barche; folla
+e pesce grande sfumati nel mare in basso a sinistra, senza cornice. Manuel a destra mentre parla al mercato.
+1. Anton: 50 CHILI / ALL'ASTA IN SPIAGGIA
+2. Archivo Black: PESAVA / COME UNA / PERSONA
+3. Anton: SVEGLIA / ALLE 3 (fascia gialla) / MERCATO ALLE 8
+4. Bebas Neue: SENZA TETTO / NÉ BANCHI / E UN PESCE DA 50 KG
