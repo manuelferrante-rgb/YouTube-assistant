@@ -71,3 +71,9 @@ più forti (salita caotica sul treno, interni); un'inquadratura-simbolo del luog
 (il cartello del treno); poi la mappa del percorso e si torna a lei che cammina. Da prendere: ritmo, promessa
 detta in camera, inquadratura-simbolo, mappa subito dopo il gancio. Da NON prendere: il treno 3D generato
 (niente scene IA), la mappa satellitare (la nostra carta nautica è già approvata).
+
+Nota da Insights, 25/10 (approvata da Manuel): per arthunkal 4 verticali, teaser + 3 dopo il lungo (nuova regola
+in CLAUDE.md). Angoli proposti dall'analisi dei competitor, dettagli in `analisi/competitor/pattern.md`:
+teaser "2:30 di notte" con domanda aperta senza l'arrivo; statua scolpita a Milano nel 1647 e il gesuita
+"padre bianco"; un solo pellegrino che risponde a "perché cammini?"; come funziona il rosario ininterrotto
+(Kalavoor -> Arthunkal, 13 km, dal 2002). Ognuno autonomo, 30-60 s, titolo = la curiosità.

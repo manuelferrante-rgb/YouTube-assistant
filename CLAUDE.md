@@ -55,11 +55,13 @@ Regole tra chat:
 ## Formati
 - YouTube lungo: 16:9, 1920x1080 (o 4K).
 - Shorts YT e Reel IG: 9:16, 1080x1920, testi nella safe zone. Su Instagram niente orizzontale.
-- Ogni video lungo esce nel fine settimana (orientativamente). Per ognuno 3 Shorts/Reel dallo stesso girato,
-  ognuno autonomo e con un angolo diverso:
+- Ogni video lungo esce nel fine settimana (orientativamente). Per ognuno 4 Shorts/Reel dallo stesso girato
+  (decisione di Manuel, 25/10), ognuno autonomo e con un angolo diverso:
   - 1 teaser prima del lungo: aggancia senza svelare il finale.
-  - 2 dopo il lungo: niente scritte di rimando nel video. Solo un rimando breve nel testo (tipo "video fuori",
+  - 3 dopo il lungo: niente scritte di rimando nel video. Solo un rimando breve nel testo (tipo "video fuori",
     proporre varianti). Link su IG e "video correlato" su YT li mette Manuel.
+  - Ogni verticale è una curiosità completa che sta in piedi da sola (un fatto, una persona o un "come funziona"),
+    non un pezzo del lungo: è lo schema che fa girare gli Shorts nei competitor (`analisi/competitor/pattern.md`).
 - Lingua: tutto in italiano per ora (si rivaluta con Analytics dopo 6-8 lunghi). Voiceover italiano registrato da
   Manuel sul copione che scrivo io. Sottotitoli solo sulle interviste (tradotti in italiano, fedeli), mai sulle
   parti di Manuel o sul voiceover, tranne dove l'audio è rumoroso ma si capisce (allora anche Manuel). Stile: giallo tenue, ombra leggera, font semplice, max 2 righe, in basso nel
@@ -68,7 +70,7 @@ Regole tra chat:
 - Flusso per video: girato su Drive -> analisi e copione voiceover -> Manuel carica registrazioni voiceover e
   musica (YouTube Audio Library) nella stessa cartella -> montaggio e consegna.
 - Titolo e descrizione YT anche in inglese (traduzioni YouTube).
-- Consegna: lungo 16:9 + 3 verticali + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
+- Consegna: lungo 16:9 + 4 verticali (teaser + 3 dopo) + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
 - Lunghi a CAPITOLI (dal 22/10): consegnare l'elenco dei minutaggi esatti dal montaggio per la descrizione YT
   (0:00 primo, min 3 capitoli, ognuno >= 10 s), it+en. Solo il titolo del capitolo (niente "Parte 1").
   NIENTE scritte dei capitoli nel montato.

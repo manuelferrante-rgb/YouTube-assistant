@@ -54,7 +54,7 @@ Ipotesi dai dati dei competitor (`elenco.md`). Diventano lezioni solo se le conf
    chiedere a Manuel dopo mercato. Ipotesi dai competitor: lo Short porta al lungo quando è una curiosità
    completa che apre una domanda più grande, non quando è un trailer.
 
-## Proposte per i 3 verticali di arthunkal (da approvare da Manuel, poi a Montaggio e Copy)
+## Proposte per i 4 verticali di arthunkal (approvate da Manuel il 25/10: teaser + 3 dopo il lungo)
 - **Teaser (prima del lungo):** notte, scritta "2:30 di notte", folla che cammina con il rosario sulla costa.
   Domanda aperta, senza mostrare l'arrivo: perché in 100.000 camminano 13 km pregando senza fermarsi?
   Cifra attribuita alla fonte.
@@ -62,3 +62,6 @@ Ipotesi dai dati dei competitor (`elenco.md`). Diventano lezioni solo se le conf
   statua scolpita a Milano nel 1647", poi il gesuita italiano che chiamano "padre bianco". Un fatto, 30-45 s.
 - **Dopo 2, una persona (schema Santenello/Baldr):** una sola risposta a "perché cammini?", con sottotitoli,
   sul suo volto. Niente musica triste, la persona protagonista.
+- **Dopo 3, "come funziona" (schema Progetto Happiness/Balini):** il rosario ininterrotto. Si parte da
+  Kalavoor a mezzanotte e si arriva alla basilica di Arthunkal, 13 km lungo la costa, senza smettere mai di
+  pregare. La prima edizione, nel 2002, era di poche centinaia di persone. Con il girato della marcia e la mappa.
