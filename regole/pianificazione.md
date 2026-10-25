@@ -17,3 +17,8 @@
 - Divisione con Copy (dal 25/10, decisione di Manuel): per ogni video nuovo apro `piano/<video>.md` con i fatti
   verificati e le fonti, la lista riprese e il calendario. Le domande alle persone e la parte di storia da dire in
   camera le scrive Copy da quei fatti, in `copioni/<video>_testi.md` ("DA DIRE E DA CHIEDERE"). Io non le duplico.
+- Lezione da Arthunkal (Montaggio, 25/10). Ha funzionato: Manuel in camera dentro l'azione, con l'ora e i numeri
+  detti a voce; il prima e dopo nello stesso posto; le registrazioni del solo ambiente. È mancato: l'audio
+  pulito, 30 s a microfono vicino e senza voce di Manuel, del suono che identifica l'evento (lì il rosario a
+  botta e risposta); una ripresa dall'alto della folla (tetto, balcone, muretto). Nelle liste riprese vanno
+  sempre tutti e due.
