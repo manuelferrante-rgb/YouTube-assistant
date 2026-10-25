@@ -22,6 +22,8 @@ AUD = f"{ROOT}/projects/arthunkal/audio"          # suoni e musica forniti dalla
 VO1, VO2 = f"{WORK}/vo/vo_take1.m4a", f"{WORK}/vo/vo_take2.m4a"
 os.makedirs(OUT, exist_ok=True); os.makedirs(GFX, exist_ok=True)
 
+MUSIC = next(iter(glob.glob(f"{WORK}/musica_orig/musica_voiceover.wav")), None)   # musica originale (chat Audio)
+MUSIC_V = next(iter(glob.glob(f"{WORK}/musica_orig/musica_verticali.wav")), None)
 NIGHT = "eq=brightness=0.03:gamma=1.12:contrast=1.04:saturation=1.08"
 DEF = "eq=contrast=1.03:saturation=1.05"
 
@@ -127,10 +129,14 @@ class Edit:
                 if hi - lo > 0.15:
                     self.tl.subs.append((t0 + (lo - a) / speed, t0 + (hi - a) / speed, txt))
 
-    def vo(self, file, d, shots, lead=0.2, tail=0.3, weights=None):
-        return self.tl.vo(file, 0, d, shots, speed=1.0, lead=lead, tail=tail, nat=0.18, weights=weights)
+    def vo(self, file, d, shots, lead=0.2, tail=0.3, weights=None, music=None):
+        """Voiceover sopra immagini; music = offset nella musica originale (solo sotto il voiceover)."""
+        t0 = self.tl.vo(file, 0, d, shots, speed=1.0, lead=lead, tail=tail, nat=0.18, weights=weights)
+        if music is not None and MUSIC:
+            self.tl.music(t0, self.t, MUSIC, offset=music, level=0.42, fin=0.6, fout=0.9)
+        return t0
 
-    def to_black(self, z=1.16, T=0.55, gap=0.22):
+    def to_black(self, z=1.16, T=0.55, gap=0.22, strong=False):
         """Fine scena: spinta che accelera e va nel nero, breve nero, suono d'ingresso nel nero."""
         last = self.tl.shots[-1]
         fx = dict(last.get("fx") or {}); fx.pop("zoom", None)
@@ -138,8 +144,9 @@ class Edit:
         last["fx"] = fx
         t_end = self.t
         snd = aud("transizione_nero_in", ambient(M23("140234"), 9.2, 0.9))
-        self.tl.sfx(max(0, t_end - 0.6), snd, 0.55)
+        self.tl.sfx(max(0, t_end - dur_of(snd)), snd, 0.55)            # il taglio del suono cade sul primo nero
         self.tl._add(self.black, 0, gap, audio=False, grade="null")
+        self.strong = strong
 
     def from_black(self):
         """Inizio scena dal nero: l'ultima inquadratura aggiunta rientra dal nero allargandosi; il suo suono
@@ -148,8 +155,9 @@ class Edit:
         sh["fx"] = dict(black_in=0.35, zoom=(1.08, 1.0, 0.8))
         self.tl.sfx(max(0, sh["t"] - 0.45), ambient(sh["src"], sh["a"] - 0.45, 0.6), 0.35 if sh["gain"] else 0.0)
         snd = aud("transizione_nero_out")
-        if snd:
-            self.tl.sfx(sh["t"], snd, 0.4)
+        if snd and getattr(self, "strong", False):                      # solo nei 2-3 cambi forti
+            self.tl.sfx(sh["t"], snd, 0.45)
+        self.strong = False
 
     def label(self, text, t0, d=2.6):
         self.labels.append((t0, t0 + d, text))
@@ -270,13 +278,14 @@ def long_video(W, H):
           cover={1: (M23("140104"), 0.3), 3: (M23("140912"), 0.2), 4: (M23("140104"), 2.2), 6: (M23("140234"), 11.0)})
     f, d = VO("1c", [(9.6, 12.45)])                                  # "Nessuno avrebbe detto che di notte..."
     e.vo(f, d, [(M23("140234"), 5.5), (D23, 39.0)], lead=0.4, tail=0.5)
-    e.to_black()
+    e.to_black(strong=True)
 
     # 5. 2:30 DI NOTTE: niente voce, solo il suono vero; poi il blocco 3
     t_n = e.t
     e.b(C("023744"), 0.0, 3.4, gain=0.8, grade=NIGHT)
     e.from_black()
     e.title("2:30 di notte", t_n + 0.5, 3.6)
+    e.label("Lungo la costa, 2:30 di notte", t_n + 4.6, 2.6)
     e.b(C("023529"), 0.2, 3.0, gain=0.8, grade=NIGHT)
     e.b(C("023356"), 0.5, 3.6, gain=0.8, grade=NIGHT)
     f, d = VO("3", [(31.8, 34.5), (34.9, 40.2)])
@@ -289,15 +298,14 @@ def long_video(W, H):
     e.b(C("072327"), 13.0, 2.4, gain=0.7)
     e.from_black()
     e.label("Marari, 7 del mattino", t_a + 0.4, 2.6)
+    tl.sfx(t_a, ambient(C("072504"), 0.0, 3.4), 0.45)               # la spiaggia all'alba: passi e voci lontane
     e.say(C("072327"), [(10.8, 12.95), (14.4, 15.95), (16.7, 18.3)], cover={1: (C("072504"), 1.0), 2: (C("072504"), 2.6)})
     e.say(C("075209"), [(0.5, 3.15), (3.8, 5.1)])                    # "Siamo a Marari... da qui passa il cammino"
     e.say(C("080217"), [(0.5, 2.6), (3.4, 8.55)], cover={1: (C("080133"), 0.5)})   # prima in strada, poi in spiaggia
-    tl.music(t_a - 0.3, e.t + 0.5, aud("musica_lungo", f"{WORK}/musica/Turn In The Sun - Simon Herody.mp3"),
-             offset=8.0, level=0.22, fin=1.5, fout=1.2)
 
     # 7. CHI CAMMINA: il blocco 8 sui volti, poi la domanda una volta sola e le risposte
     f, d = VO("8b", [(134.6, 140.55)])
-    e.vo(f, d, [(C("085345"), 0.0), (C("090348"), 0.5), (C("085613"), 0.0), (C("073335"), 3.0)], lead=0.3)
+    e.vo(f, d, [(C("085345"), 0.0), (C("090348"), 0.5), (C("085613"), 0.0), (C("073335"), 3.0)], lead=0.3, music=0.0)
     e.say(C("071857"), [(15.85, 17.15)], subs=[(15.85, 17.15, "Che cosa significa per te?")])
     e.say(C("071857"), [(17.55, 20.4), (21.05, 25.7), (55.8, 59.7), (61.9, 64.45)], speed=1.0,
           cover={2: (C("072504"), 0.0)},
@@ -320,13 +328,11 @@ def long_video(W, H):
     e.from_black()
     f, d = VO("5", [(62.4, 71.75)])
     e.vo(f, d, [(C("074113"), 0.0), (C("075956"), 0.0), (C("080046"), 0.0), (C("023356"), 1.0, .5, NIGHT),
-                (C("075826"), 0.2)], lead=0.2)
+                (C("075826"), 0.2)], lead=0.2, music=25.0)
     e.say(C("075124"), [(3.1, 7.75)])
     e.say(C("075419"), [(1.4, 4.0)])
     e.say(C("075747"), [(1.0, 6.1)])
     e.say(C("075826"), [(0.6, 2.9)])
-    tl.music(t_o - 0.4, e.t + 0.4, aud("musica_lungo", f"{WORK}/musica/Turn In The Sun - Simon Herody.mp3"),
-             offset=60.0, level=0.2, fin=1.5, fout=1.2)
 
     # 9. IN STRADA VERSO ARTHUNKAL
     e.say(C("080017"), [(0.0, 3.3), (5.1, 6.4)])                      # "Proviamo per un pezzettino ad unirci a loro"
@@ -338,21 +344,21 @@ def long_video(W, H):
         e.b(src, a, dd, gain=0.6)
     f, d = VO("jc", [(195.55, 197.55)])
     e.vo(f, d, [(C("085613"), 0.3), (C("090348"), 2.0)], lead=0.3, tail=0.4)
-    e.to_black()
+    e.to_black(strong=True)
 
     # 10. L'ARRIVO: la basilica, il suono vero della folla e degli altoparlanti
     t_r = e.t
     e.b(C("090733"), 0.0, 6.8, gain=0.75)
     e.from_black()
     tl.subs.append((t_r + 0.05, t_r + 1.9, "E dopo chilometri di cammino!"))   # audio coperto dalla folla
-    e.label("Arthunkal, basilica di Sant'Andrea", t_r + 3.8, 2.8)
+    e.label("Basilica di Arthunkal", t_r + 3.8, 2.8)
     for src, a, dd in [(C("090813"), 0.0, 2.6), (C("091255"), 0.9, 2.3), (C("090903"), 4.0, 3.0),
                        (C("091540"), 1.0, 3.0), (C("091405"), 0.0, 2.6)]:
         e.b(src, a, dd, gain=0.6)
 
     # 11. LA STORIA: 52 d.C. (voiceover), poi Manuel davanti alla basilica con la linea del tempo
     f, d = VO("6a", [(81.0, 88.2)])
-    sA = storia(W, H, "A", "52 d.C.|l'apostolo Tommaso|secondo la tradizione|1.45", 3.6)
+    sA = storia(W, H, "A", "52 d.C.|San Tommaso|secondo la tradizione|1.45", 3.6)
     t6 = e.t
     tl.vos.append(dict(file=f, a=0, b=d, speed=1.0, t=t6 + 0.2))
     e.b(C("091453"), 0.0, 2.0, gain=0.25)
@@ -360,7 +366,7 @@ def long_video(W, H):
     t_sa = e.t
     tl._add(sA, 0, (t6 + 0.2 + d + 0.35) - e.t, audio=False, grade="null")
     tl.sfx(t_sa, ambient(C("091540"), 4.0, e.t - t_sa + 0.2), 0.15)
-    sB = storia(W, H, "B", "1584|padre Giacomo Fenicio|gesuita italiano|0.55", 6.0, prev="52 d.C.")
+    sB = storia(W, H, "B", "1584|padre Giacomo Fenicio|gesuita italiano, ricostruisce la chiesa|0.55", 6.0, prev="52 d.C.")
     sC = storia(W, H, "C", "1647|la statua di San Sebastiano|arriva da Milano|0.4", 4.9, prev="52 d.C.;1584")
     subs = [(0.0, 3.2, "Questa chiesa l'ha ricostruita nel 1584"), (4.6, 9.6, "un gesuita italiano, padre Giacomo Fenicio."),
             (12.5, 15.2, "Qui lo chiamano ancora Veluthachan,"), (15.2, 18.3, "il padre bianco."),
@@ -368,17 +374,15 @@ def long_video(W, H):
     e.say(C("091658"), [(0.0, 1.6), (1.6, 3.2), (4.6, 9.6), (12.5, 18.3), (19.0, 24.2)],
           cover={1: (sB, 0.0), 2: (sB, 1.45), 4: (sC, 0.0)}, subs=subs)
     f, d = VO("7b", [(109.25, 115.05)])
-    e.vo(f, d, [(C("091540"), 3.0), (C("091405"), 0.5), (C("090903"), 8.0)], lead=0.3, tail=0.5)
-    e.to_black()
+    e.vo(f, d, [(C("091540"), 3.0), (C("091405"), 0.5), (C("090903"), 8.0)], lead=0.3, tail=0.5, music=60.0)
+    e.to_black(strong=True)
 
     # 12. FINALE: il blocco 10 sulle immagini del ritorno (in ordine di ripresa), poi il claim di Manuel
     f, d = VO("10", [(162.3, 164.65), (166.4, 173.3), (174.15, 182.45)], src=VO1)
     t_f = e.t
     e.vo(f, d, [(C("092219"), 0.0), (C("092151"), 0.0), (C("092756"), 0.0), (C("094758"), 0.0),
-                (C("095400"), 0.0), (C("095730"), 0.0), (C("101618"), 1.0), (C("101821"), 0.0)], lead=0.6, tail=0.8)
+                (C("095400"), 0.0), (C("095730"), 0.0), (C("101618"), 1.0), (C("101821"), 0.0)], lead=0.6, tail=0.8, music=90.0)
     tl.shots[[i for i, s in enumerate(tl.shots) if s["t"] >= t_f - 1e-6][0]]["fx"] = dict(black_in=0.4, zoom=(1.06, 1.0, 1.0))
-    tl.music(t_f - 0.3, e.t + 0.3, aud("musica_lungo", f"{WORK}/musica/Turn In The Sun - Simon Herody.mp3"),
-             offset=120.0, level=0.26, fin=2.0, fout=1.0)
     e.say(C("093832"), [(0.45, 2.75), (3.6, 5.95)])
     tl.shots[-1]["fx"] = dict(black_out=0.25)
 
