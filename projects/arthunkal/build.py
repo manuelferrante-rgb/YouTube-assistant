@@ -497,6 +497,9 @@ def vfinish(r, tag, W, H):
 
 def hook(r, txt, d=2.2):
     r.title(0.0, d, txt, "Mid", 820)
+    hit = aud("transizione_nero_out")                               # colpo basso fatto con un'onda vera (chat Audio)
+    if hit:
+        r.tl.sfx(0.0, hit, 0.35)
 
 
 def v1():
