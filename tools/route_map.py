@@ -82,7 +82,7 @@ def main():
     ap.add_argument("--w", type=int, default=3840); ap.add_argument("--h", type=int, default=2160)
     a = ap.parse_args()
     W, H, fps = a.w, a.h, a.fps
-    s = W / 3840
+    s = max(W, H) / 3840 if H > W else W / 3840          # verticale: testi in proporzione all'altezza
     stops = []
     for x in a.route.split(";"):
         f = x.strip().split("|")
@@ -108,7 +108,7 @@ def main():
     # ---- camera: (t, lon0, lat0, larghezza vista in gradi) ----
     tA, tB, D = a.t_a, a.t_b, a.dur
     k_globe, k_india, k_ker, k_route = 1.1, 2.0, 2.9, tA - 0.25
-    G = 2 * np.degrees(np.arcsin(1.0)) * (W / (0.84 * H)) / 2   # globo intero alto 84% dello schermo
+    G = 2 * np.degrees(np.arcsin(1.0)) * (W / (0.84 * H)) / 2 if W > H else 2 * 90 / 0.9   # globo alto 84% (16:9) o largo 90% (9:16)
     # un solo avvicinamento all'India, poi uno zoom unico e fluido fino alla costa (niente soste sul Kerala)
     cams = [(0.0, 52.0, 8.0, G * 0.97), (k_globe, 76.5, 14.0, G),
             (k_india, 79.0, 20.0, 40.0), (k_route, rmid[0] + 0.05, rmid[1], 0.40),
