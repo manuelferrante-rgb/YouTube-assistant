@@ -65,7 +65,8 @@ Regole tra chat:
 - Lingua: tutto in italiano per ora (si rivaluta con Analytics dopo 6-8 lunghi). Voiceover italiano registrato da
   Manuel sul copione che scrivo io. Sottotitoli solo sulle interviste (tradotti in italiano, fedeli), mai sulle
   parti di Manuel o sul voiceover, tranne dove l'audio è rumoroso ma si capisce (allora anche Manuel). Stile: giallo tenue, ombra leggera, font semplice, max 2 righe, in basso nel
-  lungo, più in alto nei verticali sopra l'interfaccia dell'app.
+  lungo. Nei VERTICALI invece (Manuel, 25/10): sottotitoli su tutto il parlato, centrali nella safe zone, parola per
+  parola (formato in `regole/montaggio_documentario.md`, nota Insights 25/10).
 - Regole di montaggio complete: `regole/montaggio_documentario.md` (leggerle prima di ogni montaggio).
 - Flusso per video: girato su Drive -> analisi e copione voiceover -> Manuel carica registrazioni voiceover e
   musica (YouTube Audio Library) nella stessa cartella -> montaggio e consegna.

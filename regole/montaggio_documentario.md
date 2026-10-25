@@ -191,3 +191,22 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
 - Audio rumoroso ma comprensibile (anche il parlato di Manuel): si tiene la ripresa migliore e si aggiungono
   sottotitoli in italiano, stesso stile di quelli delle interviste (eccezione alla regola "niente sottotitoli
   sulle parti di Manuel", decisa da lui il 24/10).
+
+Nota da Insights, 25/10 (decisione di Manuel + analisi dei competitor, `analisi/competitor/pattern.md`).
+Prevale sulla riga "Verticali: 3 per ogni lungo" e sulla sezione 11.
+FORMATO DEI VERTICALI: 4 per ogni lungo (1 teaser prima, 3 dopo). Formato classico virale IG/YT, ma naturale e
+semplice:
+- Ognuno è UNA curiosità completa che sta in piedi da sola (un fatto, una persona, un "come funziona"), non un
+  ritaglio del lungo. Negli Shorts dei competitor è questo che separa 300 K-3 M visualizzazioni da 20-30 K.
+- Durata: teaser 20-35 s; dopo il lungo 30-60 s (i migliori dei competitor stanno tra 38 e 90 s). Mai allungare.
+- 0-2 s, hook: primo fotogramma già nell'azione (la persona che parla, il gesto, il suono forte), con la scritta
+  di gancio grande e centrale di 4-7 parole data da Copy. Niente logo, sigla o preambolo in apertura.
+- Corpo: una sola idea, tagli ogni 1,5-3 s sui momenti fermi, B-roll di Manuel sopra il parlato, Manuel in camera
+  ogni tanto. Pause tagliate, respiro naturale tenuto.
+- Fine: payoff chiaro negli ultimi secondi (il prezzo, la risposta, il fatto). Il teaser invece chiude su una
+  domanda aperta senza mostrare il finale. Niente scritte di rimando nei 3 dopo il lungo.
+- Sottotitoli su tutto il parlato (anche Manuel e voiceover), centrali nella safe zone, 2-4 parole per riga,
+  parola corrente in oro, non troppo grandi (come `tools/reel_kit.py`). Interviste tradotte in italiano, fedeli.
+- Suono: prima il suono vero del posto. Pochi effetti, solo dove servono: un colpo o whoosh sull'hook, un "ding"
+  leggero sulla rivelazione di un numero o di un prezzo. Musica bassa e solo dove non c'è parlato originale,
+  scelta con la chat Audio. Niente lampi, zoom a scatto o effetti su ogni taglio, colori naturali.
