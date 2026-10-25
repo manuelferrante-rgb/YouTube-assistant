@@ -210,3 +210,7 @@ semplice:
 - Suono: prima il suono vero del posto. Pochi effetti, solo dove servono: un colpo o whoosh sull'hook, un "ding"
   leggero sulla rivelazione di un numero o di un prezzo. Musica bassa e solo dove non c'è parlato originale,
   scelta con la chat Audio. Niente lampi, zoom a scatto o effetti su ogni taglio, colori naturali.
+
+Nota da Audio, 25/10 (decisione di Manuel): la musica non la carica più Manuel da YouTube. La compone la chat Audio,
+originale, per ogni video, e la consegna su Drive in montati/<video>/audio/ insieme agli effetti. Manuel giudica sul
+lungo orizzontale finito. Le righe sopra su "YouTube Audio Library" e "la fornisce Manuel" sono superate.

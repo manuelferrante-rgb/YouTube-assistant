@@ -16,8 +16,10 @@ Valgono insieme ai limiti di `CLAUDE.md` (niente retorica, niente salvatore bian
 - Chiusura della descrizione YouTube (scelta di Manuel, 25/10): "Voci Vere racconta le persone e i luoghi lontani
   dalle cartoline, dando voce a chi ne ha più bisogno." EN: "Voci Vere tells the stories of people and places far
   from the postcards, giving a voice to those who need it most." Niente formula sul consenso nella descrizione.
-- Titolo YouTube: il paese ("India") e il gancio nei primi ~40 caratteri, perché l'anteprima taglia lì (25/10,
-  mercato: si leggeva solo fino a "sulla"). Il resto (località, dettagli) va dopo.
+- Titolo YouTube (regola di Manuel, 25/10, vale sopra gli schemi dei competitor): nelle anteprime si leggono solo
+  le prime parole (mercato: si leggeva fino a "sulla", ~45 caratteri). Quindi gancio + paese ("India") nei primi
+  ~40 caratteri; località e dettagli dopo. Gli schemi di Insights ("DENTRO + luogo", bandiera alla fine) si usano
+  solo se rispettano questo. Riferimento: il titolo del mercato messo da Manuel, "Sveglia alle 3 in India 🇮🇳 ...".
 
 Nota da Insights, 25/10 (decisione di Manuel + analisi dei competitor, `analisi/competitor/pattern.md`).
 TESTI DEI VERTICALI (4 per lungo: 1 teaser prima, 3 dopo). Per ognuno Copy consegna:
@@ -33,3 +35,10 @@ TESTI DEI VERTICALI (4 per lungo: 1 teaser prima, 3 dopo). Per ognuno Copy conse
 - Descrizione dello Short YT: 1-2 righe che raccontano la storia e chiudono su una domanda (schema di Harald Baldr).
 - Angoli che rendono: un "come funziona" spiegato da dentro, una persona del posto protagonista, il legame con
   l'Italia. Da evitare: "il più povero/pericoloso/sporco", il tono da beneficenza, i superlativi non verificabili.
+
+Ruolo di Copy allargato (Manuel, 25/10):
+- Testi a schermo per Montaggio, nella sezione "PER MONTAGGIO" di `copioni/<video>_testi.md`: etichette sui B-roll
+  del lungo (luogo/ora), testi delle grafiche, e per ogni verticale gancio dei primi 2 s + scritte sulle immagini +
+  quale audio già registrato usare. Si scrivono sul girato e sul VO che ci sono, non su cose da girare.
+- Per i prossimi video, prima delle riprese: le domande da fare alle persone e la parte di storia da dire in camera
+  (fatti con fonti dalla chat Pianificazione), nella sezione "DA DIRE E DA CHIEDERE" dello stesso file.

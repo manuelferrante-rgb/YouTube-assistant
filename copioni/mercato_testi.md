@@ -178,7 +178,7 @@ La miniatura dice "senza tetto né banchi e un pesce da 50 kg"; il titolo aggiun
 
 Titolo IT: Sveglia alle 3 in India 🇮🇳 il mercato del pesce 🐟 sulla spiaggia di Marari, Kerala
 Titolo EN: Up at 3 a.m. in India 🇮🇳 the beach fish market 🐟 of Marari, Kerala
-(rifatto il 25/10: nell'anteprima si leggeva solo fino a "sulla", ora "India" sta nei primi 25 caratteri)
+(Manuel lo lascia così, 25/10; rifatto perché nell'anteprima si leggeva solo fino a "sulla", ora "India" sta nei primi 25 caratteri)
 
 ### Descrizione IT DEFINITIVA (sistemata da Manuel, 25/10)
 Sveglia alle tre, in mare alle quattro, al mercato alle otto. È la giornata dei pescatori di Marari, in Kerala.

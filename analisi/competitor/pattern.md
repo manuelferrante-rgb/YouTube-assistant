@@ -29,6 +29,9 @@ Ipotesi dai dati dei competitor (`elenco.md`). Diventano lezioni solo se le conf
 ## Titoli dei lunghi (cosa ricorre negli outlier)
 - Italiani: "DENTRO + luogo + cosa succede", un fatto preciso, la bandiera alla fine (🇮🇳). Maiuscolo su 1-2
   parole, non su tutto. I superlativi solo se veri e verificabili, mai sulla sofferenza.
+- Vincolo nostro (Manuel, 25/10, `regole/copy.md`): gancio + paese nei primi ~40 caratteri, perché l'anteprima
+  taglia lì. Gli schemi sopra valgono solo dentro questo limite. Nelle analisi del CTR controllare cosa si legge
+  nei primi 40 caratteri.
 - Inglesi: domanda o affermazione su un fatto ("How Do People Survive in The World's Narrowest City?").
 
 ## Shorts e Reel
