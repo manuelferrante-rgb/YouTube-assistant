@@ -171,6 +171,7 @@ Abbinamento consigliato col titolo 3 o 1 (la miniatura dice già "senza tetto n�
 Un pesce da 50 chili all'asta sulla spiaggia: il mercato di Marari | Kerala, India
 
 ## DA PUBBLICARE (25/10): titolo, descrizione e capitoli per la miniatura 4
+Video caricato da Manuel (privato, 25/10): https://youtu.be/LW4zO_0oSgQ
 Miniatura DEFINITIVA (scelta di Manuel, 25/10): copioni/mercato_miniature/v3_4a_bebas_grande.jpg
 La miniatura dice "senza tetto né banchi e un pesce da 50 kg"; il titolo aggiunge le persone e l'orario.
 
