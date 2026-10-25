@@ -16,6 +16,27 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
   consenso c'è sempre, non chiederlo.
 - Stile: diretto, concreto, niente retorica. Mai il trattino lungo.
 
+## Chat di lavoro (dal 25/10)
+Il lavoro è diviso in 4 chat. Ogni chat legge questo file all'avvio e si occupa solo della sua area.
+Le chat non si parlano: la memoria comune sono i file del repo. Ogni decisione di Manuel che conta anche per
+altre chat va scritta subito nel file giusto, poi commit e push sul branch della sessione (prima un pull).
+
+| Chat | Fa | Scrive in |
+|---|---|---|
+| Pianificazione | idee per luogo, ricerca dei fatti con fonti, lista riprese, voiceover da registrare, piano editoriale e calendario uscite | `piano/` (`piano/calendario.md`, un file per video in preparazione) e il copione in `projects/<video>/` |
+| Montaggio | lunghi, verticali, grafiche, suoni, sottotitoli, minutaggi dei capitoli, consegna su Drive | `projects/<video>/`, `regole/montaggio_documentario.md`, `tools/` |
+| Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura | `copioni/<video>_testi.md` |
+| Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
+
+Regole tra chat:
+- Ogni video ha un nome breve uguale ovunque (es. `arthunkal`): `projects/arthunkal/`, `copioni/arthunkal_testi.md`.
+- Stato di ogni video (pianificato, girato, in montaggio, consegnato, pubblicato, data) in `piano/calendario.md`:
+  ogni chat lo aggiorna quando chiude la sua parte.
+- Una chat non riscrive i file delle altre aree: se serve una modifica, la segnala a Manuel o la aggiunge in fondo
+  al file come nota datata ("Nota da Insights, 25/10: ...").
+- Le lezioni confermate dagli insights diventano regole: montaggio in `regole/montaggio_documentario.md`, copy in
+  `regole/copy.md`, pianificazione in `regole/pianificazione.md`.
+
 ## Compiti
 1. Idee di contenuto in base al luogo.
 2. Script e voice-over per le parti dove Manuel non parla, nel suo stile.
@@ -34,7 +55,7 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
     proporre varianti). Link su IG e "video correlato" su YT li mette Manuel.
 - Lingua: tutto in italiano per ora (si rivaluta con Analytics dopo 6-8 lunghi). Voiceover italiano registrato da
   Manuel sul copione che scrivo io. Sottotitoli solo sulle interviste (tradotti in italiano, fedeli), mai sulle
-  parti di Manuel o sul voiceover. Stile: giallo tenue, ombra leggera, font semplice, max 2 righe, in basso nel
+  parti di Manuel o sul voiceover, tranne dove l'audio è rumoroso ma si capisce (allora anche Manuel). Stile: giallo tenue, ombra leggera, font semplice, max 2 righe, in basso nel
   lungo, più in alto nei verticali sopra l'interfaccia dell'app.
 - Regole di montaggio complete: `regole/montaggio_documentario.md` (leggerle prima di ogni montaggio).
 - Flusso per video: girato su Drive -> analisi e copione voiceover -> Manuel carica registrazioni voiceover e
@@ -76,5 +97,8 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
   2. Prova il token: `tools/drive_upload.sh mercato <file piccolo>` prima dei render lunghi.
   3. `python3 projects/mercato/build.py trailer|reelA|reelB|reelC|long` (`--preview` per una prova veloce;
      il lungo 4K richiede ~2 ore).
+- Arthunkal (cartella 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX, "Festa pellegrinaggio Kerala"): prossimo lungo, in
+  montaggio. Tutto in `projects/arthunkal/` (brief.md con le decisioni di Manuel, vo_blocchi.md, copione.md).
+  Grafiche: `tools/route_map.py` (mappa approvata), `tools/timeline_anim.py` (linea del tempo).
 - I processi in background si fermano quando la sessione va in pausa: tenere il turno attivo con attese in
   primo piano (cicli di attesa) finché i render non finiscono.
