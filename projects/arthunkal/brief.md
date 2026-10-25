@@ -65,3 +65,9 @@ Indicazioni di Manuel sul girato del 24/10:
   riparte da lì alla data successiva: approvata l'idea). Effetti sonori: Manuel li vuole NATURALI e professionali,
   non sintetici "forzati": lista proposta in chat, si usano suoni veri (girato, YouTube Audio Library caricati da
   Manuel su Drive). Pixabay/Freesound non raggiungibili dall'ambiente.
+Riferimento per l'INTRO (25/10, registrazioni schermo di Manuel: "Inside India's longest train", @kk.create, primi
+30 s): lei in camera che cammina e lancia la promessa del video nei primi secondi; stacchi veloci (~1 s) sui momenti
+più forti (salita caotica sul treno, interni); un'inquadratura-simbolo del luogo tenuta in mano/in primo piano
+(il cartello del treno); poi la mappa del percorso e si torna a lei che cammina. Da prendere: ritmo, promessa
+detta in camera, inquadratura-simbolo, mappa subito dopo il gancio. Da NON prendere: il treno 3D generato
+(niente scene IA), la mappa satellitare (la nostra carta nautica è già approvata).
