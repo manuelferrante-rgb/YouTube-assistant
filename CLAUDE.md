@@ -26,7 +26,7 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Pianificazione | idee per luogo, ricerca dei fatti con fonti, lista riprese, voiceover da registrare, piano editoriale e calendario uscite | `piano/` (`piano/calendario.md`, un file per video in preparazione) e il copione in `projects/<video>/` |
 | Montaggio | lunghi, verticali, grafiche, sottotitoli, minutaggi dei capitoli, consegna su Drive; inserisce i suoni della chat Audio e le chiede gli effetti con `projects/<video>/audio_cue.md` | `projects/<video>/`, `regole/montaggio_documentario.md`, `tools/` |
 | Audio | sound design: effetti (veri, di libreria CC0 o costruiti dal girato), kit sonoro di Voci Vere, pulizia voce, scelta musica, mix | `audio/` (kit e catalogo con licenze), `projects/<video>/audio/`, `regole/audio.md` |
-| Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura; testi a schermo per Montaggio (scritte sui B-roll del lungo, gancio e scritte dei 4 verticali, sul girato già registrato); dal 25/10 per i prossimi video anche le domande da fare alle persone e la parte di storia da dire in camera | `copioni/<video>_testi.md` |
+| Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura, carosello di ogni lungo, sottotitoli it/en del lungo; testi a schermo per Montaggio (scritte sui B-roll del lungo, gancio e scritte dei 4 verticali, sul girato già registrato); dal 25/10 per i prossimi video anche le domande da fare alle persone e la parte di storia da dire in camera | `copioni/<video>_testi.md` |
 | Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
 Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01KEDq5A1Lbd16j3T84vmbGj,
@@ -71,7 +71,10 @@ Regole tra chat:
 - Flusso per video: girato su Drive -> analisi e copione voiceover -> Manuel carica registrazioni voiceover e
   (dal 25/10 niente musica di YouTube: la musica è originale, composta dalla chat Audio) -> montaggio e consegna.
 - Titolo e descrizione YT anche in inglese (traduzioni YouTube).
-- Consegna: lungo 16:9 + 4 verticali (teaser + 3 dopo) + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
+- PACCHETTO DI OGNI LUNGO (Manuel, 25/10), sempre dopo l'analisi incrociata tra le chat (Insights, Pianificazione,
+  Copy, Montaggio, Audio): 1 lungo 16:9 + 1 teaser verticale + 3 reel verticali dopo il lungo + 1 carosello
+  (IG e post YouTube, 7-8 immagini 4:5, lo fa Copy: `copioni/caroselli/`, regole in `regole/copy.md`).
+  Con titoli, descrizioni, capitoli, sottotitoli it/en, miniatura, didascalie, giorni di uscita suggeriti, analisi.
 - Lunghi a CAPITOLI (dal 22/10): consegnare l'elenco dei minutaggi esatti dal montaggio per la descrizione YT
   (0:00 primo, min 3 capitoli, ognuno >= 10 s), it+en. Solo il titolo del capitolo (niente "Parte 1").
   NIENTE scritte dei capitoli nel montato.

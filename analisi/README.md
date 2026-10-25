@@ -19,3 +19,6 @@ salvatore bianco): di un competitor si prende la struttura (hook, ritmo, packagi
   miniatura, come i brevi portano al lungo.
 - `analisi/competitor/pattern.md`: schemi ricorrenti nei contenuti che vanno meglio, con esempi. Quelli che
   funzionano anche nei nostri dati diventano lezioni in `analisi/lezioni.md` e poi regole.
+- Metodo (Manuel, 25/10): YouTube dei competitor si analizza online (yt-dlp e pagine dei canali, anche i post);
+  Instagram non si vede senza login, quindi ricerca web generica + screenshot che manda Manuel.
+  Note su cosa conta su IG: `analisi/competitor/instagram.md`.

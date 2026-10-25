@@ -68,3 +68,16 @@ Ipotesi dai dati dei competitor (`elenco.md`). Diventano lezioni solo se le conf
 - **Dopo 3, "come funziona" (schema Progetto Happiness/Balini):** il rosario ininterrotto. Si parte da
   Kalavoor a mezzanotte e si arriva alla basilica di Arthunkal, 13 km lungo la costa, senza smettere mai di
   pregare. La prima edizione, nel 2002, era di poche centinaia di persone. Con il girato della marcia e la mappa.
+
+## Ritenzione di un lungo di 7-9 minuti (ipotesi, mandate a Montaggio per arthunkal il 25/10)
+Le curve di fidelizzazione dei competitor non sono pubbliche: sono schemi ricorrenti più prassi YouTube, da
+verificare sulle nostre curve (prima mercato).
+- Domanda aperta nei primi 30 s, chiusa solo nel climax. Sigla entro 20-30 s.
+- Gancio interno ogni 60-90 s, sui cambi di capitolo: una frase concreta che guarda avanti, mai retorica.
+- Cambio di ritmo ogni 30-45 s tra 4 registri: Manuel in camera, VO su B-roll, intervista, suono vero puro
+  (quest'ultimo mai oltre 8-10 s di fila).
+- Interviste: risposta più forte per prima, 15-30 s ciascuna.
+- Informazioni storiche (linee del tempo): max 20-25 s, subito prima del punto dove si ripagano.
+- Climax verso l'80% della durata, poi chiusura entro 60-75 s; il finale richiama la domanda d'apertura.
+- Tagliare: azioni ripetute senza informazione nuova, panoramiche oltre 4 s senza evento sonoro, concetti detti
+  due volte.

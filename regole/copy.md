@@ -42,3 +42,18 @@ Ruolo di Copy allargato (Manuel, 25/10):
   quale audio già registrato usare. Si scrivono sul girato e sul VO che ci sono, non su cose da girare.
 - Per i prossimi video, prima delle riprese: le domande da fare alle persone e la parte di storia da dire in camera
   (fatti con fonti dalla chat Pianificazione), nella sezione "DA DIRE E DA CHIEDERE" dello stesso file.
+
+Consegna di Copy per ogni lungo, appena Montaggio chiude il montato (Manuel, 25/10), in quest'ordine:
+1. Trascrivere il lungo finito (parakeet, `models/`) e scrivere i due file di sottotitoli per YouTube, italiano e
+   inglese (`.srt` con tempi, tutto il parlato: Manuel, voiceover e interviste tradotte fedeli), in
+   `projects/<video>/sottotitoli/` e caricati su Drive nella cartella del video (`montati/<video>`).
+2. Titolo it/en (gancio + paese nei primi ~40 caratteri), descrizione it/en con i capitoli da
+   `projects/<video>/capitoli.md`, miniatura (prove + scelta di Manuel).
+
+Carosello di ogni lungo (Manuel, 25/10): 7-8 immagini 4:5 (1080x1350) dal girato vero, logo Voci Vere piccolo in
+alto a sinistra, testo e logo dentro il quadrato centrale 1080x1080 (YouTube ritaglia a quadrato). Slide 1: foto
+forte + gancio di 3-7 parole + "Scorri"; slide 2 che regge da sola; slide interne: un fatto per slide (titolo 2-5
+parole + una riga, max ~15 parole); ultima: domanda specifica da commentare + "il video completo è uscito sul canale".
+Didascalia IG + testo del post YouTube + posizione (luogo) in `copioni/caroselli/testi_caroselli.md`. Immagini su
+Drive in `montati/<video>/carosello/`. Generatore: `copioni/caroselli/carosello.py`. Schemi dei competitor:
+`analisi/competitor/caroselli.md`.
