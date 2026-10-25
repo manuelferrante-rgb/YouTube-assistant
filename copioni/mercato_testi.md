@@ -169,3 +169,55 @@ Stessa composizione della v2_4, cambia solo la scritta, più larga:
 - v3_4b_bebas_larga.jpg: come la 4a, con le lettere allargate in orizzontale.
 Abbinamento consigliato col titolo 3 o 1 (la miniatura dice già "senza tetto né banchi"):
 Un pesce da 50 chili all'asta sulla spiaggia: il mercato di Marari | Kerala, India
+
+## DA PUBBLICARE (25/10): titolo, descrizione e capitoli per la miniatura 4
+La miniatura dice "senza tetto né banchi e un pesce da 50 kg"; il titolo aggiunge le persone e l'orario.
+
+Titolo IT: Sveglia alle 3 di notte: il mercato del pesce sulla spiaggia di Marari | Kerala, India
+Titolo EN: Up at 3 a.m.: the beach fish market of Marari | Kerala, India
+
+### Descrizione IT (da incollare così com'è, capitoli compresi)
+Sveglia alle tre, in mare alle quattro, al mercato alle otto. È la giornata dei pescatori di Marari, in Kerala.
+Il loro mercato non ha tetto né banchi: le barche arrivano a riva e il pesce si vende all'asta sulla sabbia.
+Quella mattina ne arriva uno da 50-55 chili.
+
+Il giorno prima abbiamo incontrato due pescatori sulla spiaggia: ci hanno raccontato i loro orari, trent'anni di
+lavoro in mare, il secondo lavoro come guida in kayak tra i canali, e perché per loro questo è "un posto in pace",
+dove induisti, cristiani e musulmani vivono insieme. La mattina dopo siamo andati al mercato con il nostro host,
+tra ceste, bilance e ghiaccio, e abbiamo chiuso con parotta e chai.
+
+Voci Vere racconta le persone e i luoghi lontani dalle cartoline, con il loro consenso e con la loro voce.
+
+Capitoli
+0:00 Il mercato sulla spiaggia
+0:20 Il giorno prima a Marari
+0:47 I pescatori
+2:01 Il Kerala di cui ci parlano
+2:34 Il mercato all'alba
+4:59 Colazione: parotta e chai
+5:35 Si torna
+
+#Kerala #India #VociVere
+
+### Descrizione EN (traduzione YouTube)
+Up at three, at sea by four, at the market by eight. This is the day of the fishermen of Marari, in Kerala.
+Their market has no roof and no stalls: boats come ashore and the catch is auctioned right on the sand.
+That morning, one fish weighs 50 to 55 kilos.
+
+The day before, we met two fishermen on the beach. They told us about their hours, thirty years at sea, a second
+job as a kayak guide in the canals, and why to them this is "a peaceful place", where Hindus, Christians and Muslims
+live together. The next morning we went to the market with our host, among baskets, scales and ice, and ended with
+parotta and chai.
+
+Voci Vere tells the stories of people and places far from the postcards, with their consent and in their own words.
+
+Chapters
+0:00 The market on the beach
+0:20 The day before in Marari
+0:47 The fishermen
+2:01 The Kerala they tell us about
+2:34 The market at dawn
+4:59 Breakfast: parotta and chai
+5:35 Heading back
+
+#Kerala #India #VociVere
