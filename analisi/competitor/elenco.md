@@ -1,33 +1,25 @@
-# Competitor: elenco (bozza del 25/10)
+# Competitor: elenco (dati del 25/10/2026)
 
-Prima selezione fatta da Insights con ricerca web. Numeri da tracker pubblici, da verificare con i dati diretti
-(YouTube non è raggiungibile da questo ambiente: serve `YOUTUBE_API_KEY` o il dominio sbloccato, vedi sotto).
+Dati presi da YouTube con yt-dlp: ultimi 60 lunghi e ultimi 60 Shorts di ogni canale. "Mediana" = visualizzazioni
+del video tipico. Un outlier è un video che fa molte volte la mediana del suo canale: è lì che si capisce cosa
+funziona. Titoli dei canali italiani a volte riportati nella traduzione inglese di YouTube.
 
-## Internazionali, taglio vicino al nostro (voce alle persone comuni)
-| Canale | Perché | Numeri noti | Attenzione al tono |
-|---|---|---|---|
-| Peter Santenello (@petersantenello) | Il più vicino a Voci Vere: comunità ignorate dai media, lascia parlare le persone a lungo, apolitico | ~4,3 M iscritti, ~880 M visualizzazioni (vidIQ, 17/10/2026) | Basso |
-| Harald Baldr (@haraldbaldr) | Avventura + storia, anche India; lunghi con forte narrazione | ~2,39 M iscritti (CreatorDB, 31/08/2026) | Medio: a volte titoli "pericolosi" |
-| Indigo Traveller | Paesi poco visitati, persone del posto | da verificare | Medio: titoli sul pericolo |
-| Joe HaTTab | Paesi poco visitati, ritmo alto | da verificare | Medio: titoli sensazionalistici |
-| Drew Binsky (@drewbinsky) | Riferimento per Shorts virali e packaging, non per il tono | da verificare | Alto: patinato, "ogni paese del mondo" |
+| Canale | Lingua | Iscritti | Mediana lunghi | Durata tipica | Mediana Shorts | Vicinanza a noi |
+|---|---|---|---|---|---|---|
+| Progetto Happiness | it | 3,26 M | 3,2 M | 28 min | 27,5 K | Alta sui temi (India, lavoro, tribù), tono a volte sensazionalista |
+| Nicolò Balini (Human Safari) | it | 1,44 M | 757 K | 30 min | 382 K | Media: geografia, curiosità, posti poco turistici |
+| Alessandro Della Giusta (aledellagiusta) | it | 1,64 M | 1,5 M | 28 min | 23,5 K | Bassa: "infiltrato", sesso, droga. Da non imitare |
+| Wanna Walk | it/en | 338 K | 147 K | 20 min | 13,8 K | Media: camminate senza parlato |
+| Leo in giro | it | 19 K | 59 K | 52 min | nessuno | Media, canale piccolo |
+| Peter Santenello | en | 4,31 M | 1,8 M | 60 min | nessuno | Altissima: persone del posto lasciate parlare |
+| Harald Baldr | en | 2,39 M | 422 K | 72 min | 36,5 K | Media: mercati, trattative, India |
+| Indigo Traveller | en | 2,07 M | 972 K | 26 min | nessuno | Bassa: vive sul pericolo e sulle baraccopoli |
+| Drew Binsky | en | 7,51 M | 4,1 M | 32 min | 230 K | Bassa sul tono, utile per il packaging |
+| Joe HaTTab | en | 21,3 M | 16 M | 18 min | 2,1 M | Bassa sul tono, utile per gli Shorts visivi |
+| Operazione Giro del Mondo | it | 39 K | 1 K | 8 min | 0,5 K | Esempio di cosa non funziona |
 
-## Italiani
-| Canale | Perché | Numeri noti | Attenzione al tono |
-|---|---|---|---|
-| Human Safari (Nicolò Balini) | Il travel vlogger italiano più grande, posti poco turistici, anche Africa | oltre 1 M iscritti (fonte 2026), dato da verificare | Basso |
-| Vaghi per il mondo | Documentari e reportage su tradizioni e storie locali | da verificare | Basso |
-| Autore dei video "Dentro la baraccopoli più grande dell'Africa/dell'Asia" (Kibera, Dharavi) | Stesso pubblico italiano, stessi temi | canale da identificare | Alto: titoli "dentro la baraccopoli" |
+Video italiani sul Kerala trovati (ITALO BE LOCAL, BEYOND THE TRIP): 2-8 K visualizzazioni. Sul Kerala in
+italiano non c'è nessun canale forte: lo spazio è libero.
 
-## Da escludere come modello di tono (utili solo per capire cosa non fare)
-- Filone "viaggio estremo / paese più povero / più pericoloso": cresce sulla sofferenza e sul rischio, contro i
-  nostri limiti. Si guarda solo per hook e ritmo.
-
-## Mancano
-- Account Instagram di Reel di viaggio con numeri alti, in italiano: nessuna classifica affidabile trovata.
-  Servono nomi da Manuel o una ricerca a mano sull'app.
-
-## Accesso ai dati
-- www.youtube.com, socialblade.com e vidiq.com sono bloccati dalla rete di questo ambiente.
-- L'API YouTube Data v3 risponde, ma serve una chiave: `YOUTUBE_API_KEY` nei segreti dell'ambiente.
-  Con la chiave: iscritti, visualizzazioni, durata e data di ogni video e Short, per trovare gli outlier.
+Da aggiungere: account Instagram di Reel di viaggio in italiano (dati non pubblici, servono nomi o screenshot da
+Manuel).
