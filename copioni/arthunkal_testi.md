@@ -197,3 +197,11 @@ Da verificare (audio coperto, testo ricostruito): 85-87 s "Per chilometri", 195-
 ATTENZIONE contenuto (per Manuel e Montaggio): a 0:42 Manuel in camera dice "Milioni di persone radunate,
 percorrendo decine di chilometri lungo la costa". Le fonti dicono ~100.000 (2025), l'organizzatore 400.000, il
 percorso è 13-14 km. I sottotitoli restano fedeli all'audio, ma la frase andrebbe tagliata o corretta nel montato.
+
+## Miniatura del lungo: prove (Copy, 25/10) in copioni/arthunkal_miniature/
+Manuel scontornato all'alba sulla spiaggia (DJI_20261024072415_0244), font Bebas Neue come il mercato.
+- A: 2:30 DI NOTTE / 13 KM PREGANDO (bancarelle di tè al buio)
+- B: UNA STATUA / DI MILANO / SULLA COSTA DELL'INDIA (folla e arco davanti alla basilica)   (consigliata)
+- C: 13 KM / SENZA MAI FERMARSI (folla e basilica nera)
+Abbinamento: titolo 1 ("Di notte sulla spiaggia in India: 13 km di rosario senza fermarsi") + miniatura B, così
+titolo e miniatura non si ripetono e la miniatura usa il legame con l'Italia (schema che rende nei competitor).
