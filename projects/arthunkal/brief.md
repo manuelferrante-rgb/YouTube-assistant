@@ -85,3 +85,6 @@ in CLAUDE.md). Angoli proposti dall'analisi dei competitor, dettagli in `analisi
 teaser "2:30 di notte" con domanda aperta senza l'arrivo; statua scolpita a Milano nel 1647 e il gesuita
 "padre bianco"; un solo pellegrino che risponde a "perché cammini?"; come funziona il rosario ininterrotto
 (Kalavoor -> Arthunkal, 13 km, dal 2002). Ognuno autonomo, 30-60 s, titolo = la curiosità.
+
+Nota da Audio, 25/10 (Manuel): niente musica di YouTube (Manuel toglie "Turn In The Sun" e "inner_outer" da Drive);
+la musica di Arthunkal la compone la chat Audio sul montato. Manuel valuta direttamente il lungo orizzontale finale.

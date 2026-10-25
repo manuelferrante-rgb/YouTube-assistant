@@ -69,7 +69,7 @@ Regole tra chat:
   parola (formato in `regole/montaggio_documentario.md`, nota Insights 25/10).
 - Regole di montaggio complete: `regole/montaggio_documentario.md` (leggerle prima di ogni montaggio).
 - Flusso per video: girato su Drive -> analisi e copione voiceover -> Manuel carica registrazioni voiceover e
-  musica (YouTube Audio Library) nella stessa cartella -> montaggio e consegna.
+  (dal 25/10 niente musica di YouTube: la musica è originale, composta dalla chat Audio) -> montaggio e consegna.
 - Titolo e descrizione YT anche in inglese (traduzioni YouTube).
 - Consegna: lungo 16:9 + 4 verticali (teaser + 3 dopo) + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
 - Lunghi a CAPITOLI (dal 22/10): consegnare l'elenco dei minutaggi esatti dal montaggio per la descrizione YT
