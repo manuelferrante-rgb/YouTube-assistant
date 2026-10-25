@@ -72,3 +72,43 @@ Alternativa: "Voci Vere. Storie di chi di solito non viene ascoltato."
 
 ## Musica
 Una nota o un colpo di musica che sale dall'inquadratura 1 e chiude sulla scritta. La prendo dai brani che carichi.
+
+---
+
+# Intro + sigla: struttura standard (dal 21/10, v4, riferimento: cold open di Progetto Happiness)
+
+Ogni video si apre con due blocchi attaccati. Niente musica: solo audio originale, voce e pochi effetti brevi
+generati da `tools/sfx.py`. Cinematografico ma professionale, NON stile reel (feedback di Manuel sulla v3):
+tagli netti, niente whoosh/lampo/zoom a scatto su ogni taglio. Budget indicativo: intro 2 colpi bassi
+(apertura + un momento chiave) e 1 whoosh (ingresso nella mappa); sigla 1 lampo all'ingresso, riser basso,
+2 colpi della V, luccichio tenue su "Vere". Sotto la voce fuori campo sempre un letto d'ambiente basso.
+
+## 1. Intro (VARIABILE, ~20-25 s, si riscrive per ogni video)
+Copy fatto SOLO di parlato vero preso dal girato (Manuel e le persone), nei momenti di maggiore impatto.
+- 0-3 s: raffica di 4-5 immagini forti e veloci (0.4-0.6 s), tagli netti; zoom a scatto solo sulla prima,
+  le altre con una lenta spinta in avanti. Mai un'inquadratura lenta come prima immagine. Colpo basso sul primo
+  fotogramma.
+- Gancio di Manuel (voce sopra immagini, avvicinamento lento): una frase che mette lo spettatore nei panni di chi
+  vive lì.
+- Risposta di una persona del posto (in camera, sottotitolata): conferma o ribalta il gancio.
+- Seconda raffica breve, poi il dato più forte (detto in camera).
+- Mappa animata (sola grafica ammessa).
+- Ultima frase: una persona del posto che apre la domanda e passa la parola alla sigla.
+
+Mercato di Marari:
+  [raffica: pesce, ghiaccio, ceste in testa, ceste, il pesce grande]
+  MANUEL: "Immagina di svegliarti alle tre del mattino, alle quattro dover già andare nell'oceano indiano a pescare."
+  PESCATORE: "Di notte. Alle tre si comincia."
+  [raffica sul mercato]
+  MANUEL: "Quello enorme pesava 50-55 chili. Quindi veramente come una persona."
+  [mappa: Marari]
+  PESCATORE: "Cristiani, induisti, musulmani. ... È un posto in pace."
+
+## 2. Sigla (FISSA, ~5.8 s, identica in ogni video, `tools/sigla.py`)
+  MANUEL: "Il mondo, raccontato da chi lo vive. Questo è Voci Vere."
+- Sotto "Il mondo, raccontato da chi lo vive": 6 lampi di viaggio da 0.5 s (assets/sigla/0N_*.mp4), tagli netti,
+  un solo lampo bianco leggero all'ingresso.
+- Su "Voci": la V si stampa in due colpi, "OCI" scritto veloce (senza suono); su "Vere": VERE si rivela in oro con una luce
+  che la attraversa, poi linee, onda sonora e payoff (`tools/logo_anim.py`).
+Collegamento: l'ultima frase dell'intro è sempre una voce del posto; la sigla risponde con "il mondo,
+raccontato da chi lo vive".

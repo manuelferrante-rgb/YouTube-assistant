@@ -16,6 +16,30 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
   consenso c'è sempre, non chiederlo.
 - Stile: diretto, concreto, niente retorica. Mai il trattino lungo.
 
+## Chat di lavoro (dal 25/10)
+Il lavoro è diviso in 5 chat. Ogni chat legge questo file all'avvio e si occupa solo della sua area.
+Le chat non si parlano: la memoria comune sono i file del repo. Ogni decisione di Manuel che conta anche per
+altre chat va scritta subito nel file giusto, poi commit e push sul branch della sessione (prima un pull).
+
+| Chat | Fa | Scrive in |
+|---|---|---|
+| Pianificazione | idee per luogo, ricerca dei fatti con fonti, lista riprese, voiceover da registrare, piano editoriale e calendario uscite | `piano/` (`piano/calendario.md`, un file per video in preparazione) e il copione in `projects/<video>/` |
+| Montaggio | lunghi, verticali, grafiche, sottotitoli, minutaggi dei capitoli, consegna su Drive; inserisce i suoni della chat Audio e le chiede gli effetti con `projects/<video>/audio_cue.md` | `projects/<video>/`, `regole/montaggio_documentario.md`, `tools/` |
+| Audio | sound design: effetti (veri, di libreria CC0 o costruiti dal girato), kit sonoro di Voci Vere, pulizia voce, scelta musica, mix | `audio/` (kit e catalogo con licenze), `projects/<video>/audio/`, `regole/audio.md` |
+| Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura | `copioni/<video>_testi.md` |
+| Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
+
+Regole tra chat:
+- Ogni video ha un nome breve uguale ovunque (es. `arthunkal`): `projects/arthunkal/`, `copioni/arthunkal_testi.md`.
+- Stato di ogni video (pianificato, girato, in montaggio, consegnato, pubblicato, data) in `piano/calendario.md`:
+  ogni chat lo aggiorna quando chiude la sua parte.
+- Una chat non riscrive i file delle altre aree: se serve una modifica, la segnala a Manuel o la aggiunge in fondo
+  al file come nota datata ("Nota da Insights, 25/10: ...").
+- Le lezioni confermate dagli insights diventano regole: montaggio in `regole/montaggio_documentario.md`, copy in
+  `regole/copy.md`, pianificazione in `regole/pianificazione.md`, audio in `regole/audio.md`.
+- Ogni chat ha il suo computer: i file in `work/` NON si vedono dalle altre. Tutto ciò che passa tra chat va nel
+  repo (file piccoli, es. effetti sonori) o su Drive (file grandi), e si indica il percorso nel file di scambio.
+
 ## Compiti
 1. Idee di contenuto in base al luogo.
 2. Script e voice-over per le parti dove Manuel non parla, nel suo stile.
@@ -34,13 +58,16 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
     proporre varianti). Link su IG e "video correlato" su YT li mette Manuel.
 - Lingua: tutto in italiano per ora (si rivaluta con Analytics dopo 6-8 lunghi). Voiceover italiano registrato da
   Manuel sul copione che scrivo io. Sottotitoli solo sulle interviste (tradotti in italiano, fedeli), mai sulle
-  parti di Manuel o sul voiceover. Stile: giallo tenue, ombra leggera, font semplice, max 2 righe, in basso nel
+  parti di Manuel o sul voiceover, tranne dove l'audio è rumoroso ma si capisce (allora anche Manuel). Stile: giallo tenue, ombra leggera, font semplice, max 2 righe, in basso nel
   lungo, più in alto nei verticali sopra l'interfaccia dell'app.
 - Regole di montaggio complete: `regole/montaggio_documentario.md` (leggerle prima di ogni montaggio).
 - Flusso per video: girato su Drive -> analisi e copione voiceover -> Manuel carica registrazioni voiceover e
   musica (YouTube Audio Library) nella stessa cartella -> montaggio e consegna.
 - Titolo e descrizione YT anche in inglese (traduzioni YouTube).
 - Consegna: lungo 16:9 + 3 verticali + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
+- Lunghi a CAPITOLI (dal 22/10): consegnare l'elenco dei minutaggi esatti dal montaggio per la descrizione YT
+  (0:00 primo, min 3 capitoli, ognuno >= 10 s), it+en. Solo il titolo del capitolo (niente "Parte 1").
+  NIENTE scritte dei capitoli nel montato.
 
 ## Ambiente
 - Logo: `assets/brand/logo_vocivere_originale.png`, scontornati `logo_vocivere_trasparente.png` (testo nero, per
@@ -61,13 +88,20 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Strumenti di riferimento per reel (taglio pause, sottotitoli): repo `manuelferrante-rgb/Video-maker`,
   senza logo e regole specifiche del coaching.
 
-## Ripresa in una nuova sessione (stato al 21/10)
-- Mercato di Marari v2: i 4 verticali (trailer + reel A, B, C) sono APPROVATI da Manuel così come sono; il
-  lungo v2 (con il trailer in apertura) Manuel non l'ha ancora visto. Da rifare i render dal codice (identici)
-  e caricarli su Drive. Questa è l'unica chat attiva del progetto: la precedente è stata chiusa.
-  1. `projects/mercato/fetch.sh` (riscarica girato e musica da Drive, rigenera le mappe).
+## Ripresa in una nuova sessione (stato al 22/10)
+- Ogni video ha la SUA cartella Drive (girato + consegna in `montati/<progetto>` della stessa cartella):
+  `GDRIVE_FOLDER_ID=<id> tools/drive_upload.sh <progetto> <file>`. Caricare sempre nella cartella del video.
+- Mercato di Marari (cartella 1X3qkOWu91EZUWqKoVu0pZ3Dd1ipXlGeB): versione da pubblicare v6 (trailer e lungo partono da
+  "oceano indiano" = 7.70 s, sigla D fissa da tools/sigla.py sigla_d). Uscita: trailer gio 29/10, lungo dom 1/11.
+  Su Drive solo v6 + reel A/B/C + sottotitoli v6. Titolo, capitoli it/en e testi in copioni/mercato_testi.md.
+- Reel "Comunismo in Kerala" (106K5eY6ncJasEhLTzwADIh63bGghvU1x) e "Birra di cocco/kallu"
+  (1hYw8CWZyiaxIKnldG86gatwfvmDE8Ll2): consegnati, regole dei reel in tools/reel_kit.py e nei brief dei progetti.
+  1. `projects/mercato/fetch.sh` (riscarica girato, musica e clip extra da Drive, rigenera le mappe).
   2. Prova il token: `tools/drive_upload.sh mercato <file piccolo>` prima dei render lunghi.
-  3. `python3 projects/mercato/build.py trailer|reelA|reelB|reelC|long` (il lungo 4K richiede ~2 ore).
-  4. Carica i 5 file con `tools/drive_upload.sh mercato ...`.
+  3. `python3 projects/mercato/build.py trailer|reelA|reelB|reelC|long` (`--preview` per una prova veloce;
+     il lungo 4K richiede ~2 ore).
+- Arthunkal (cartella 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX, "Festa pellegrinaggio Kerala"): prossimo lungo, in
+  montaggio. Tutto in `projects/arthunkal/` (brief.md con le decisioni di Manuel, vo_blocchi.md, copione.md).
+  Grafiche: `tools/route_map.py` (mappa approvata), `tools/timeline_anim.py` (linea del tempo).
 - I processi in background si fermano quando la sessione va in pausa: tenere il turno attivo con attese in
   primo piano (cicli di attesa) finché i render non finiscono.

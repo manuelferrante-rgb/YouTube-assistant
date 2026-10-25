@@ -4,3 +4,4 @@ work/
 *.mov
 *.mp4
 *.MOV
+__pycache__/

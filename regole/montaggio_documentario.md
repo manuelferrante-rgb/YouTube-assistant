@@ -162,3 +162,32 @@ Decisioni di Manuel (prevalgono sulle sezioni sopra):
   - Mai `pkill -f "<testo>"` con un testo che compare nello stesso comando: uccide anche la shell che lo lancia.
     Usare il PID (ps aux | grep ...) e kill.
   - Font Poppins e dati della mappa li installa l'hook di avvio (.claude/hooks/session-start.sh).
+- Intro e sigla v3 (21/10, feedback di Manuel sul riferimento Progetto Happiness; prevale su teaser, sigla
+  cumulativa e musica del teaser sopra): intro VARIABILE senza musica, solo parlato vero nei momenti più forti,
+  immagini veloci e persuasive, effetti brevi e non artificiali (zoom a scatto, lampi, whoosh, colpi: `tools/sfx.py`,
+  `fx=` in doc_render). Prima immagine mai lenta. Poi sigla FISSA (`tools/sigla.py`, logo animato
+  `tools/logo_anim.py`). Struttura e copy in `copioni/presentazione_e_sigla.md`. I pezzi della sigla sono in
+  `assets/sigla/` (nel repo, perché il girato su Drive viene cancellato).
+- Effetti v4 (21/10, Manuel dopo la v3): "non troppo artificiosa, non come i classici reel: cinematografico ma
+  professionale". Pochi effetti sonori, tagli netti, niente whoosh/lampi/zoom a scatto su ogni taglio. Il budget
+  di effetti è in `copioni/presentazione_e_sigla.md`.
+- Lezione dal mercato (22/10): Manuel ha pubblicato trailer e lungo facendoli partire da ~8 s, da "...oceano
+  indiano". Non gli è piaciuto per niente il gancio iniziale (raffica di immagini + voce "Immagina di svegliarti
+  alle tre..."), e nei primi secondi c'erano errori. Per i prossimi: il gancio deve partire subito dal momento più
+  forte e già dentro la storia (azione o frase vera che incuriosisce), niente preambolo di raffica + voce.
+  I primi 3-5 secondi si ricontrollano fotogramma per fotogramma e a orecchio (tagli, parole troncate, frasi
+  montate da più tratti) prima di consegnare.
+- Finale (22/10): Manuel accetta una breve riflessione finale se gli somiglia (es. "viaggiare non significa
+  soltanto vedere posti nuovi..."), dopo un attacco concreto su quello che si è visto. Niente prediche lunghe.
+- Ogni video è autonomo (Manuel, 22/10): niente richiami a video precedenti (frasi, persone, immagini già usate),
+  salvo che lo chieda lui.
+
+## Metodo con Manuel (23/10)
+- Ogni video deve essere migliore del precedente: è il focus.
+- Durante il montaggio mandare in anteprima solo transizioni e soluzioni particolari (effetti sonori in punti
+  precisi, passaggi tra scene, zoom, idee nate dal montato), non pezzo per pezzo. Lui approva o corregge.
+- Effetti sonori: pochi e mirati. Sulla mappa vanno bene un solo whoosh, i tick di un contatore, un ding leggero;
+  troppi whoosh a ogni zoom NO. Zoom delle mappe continui, senza soste a tappe.
+- Audio rumoroso ma comprensibile (anche il parlato di Manuel): si tiene la ripresa migliore e si aggiungono
+  sottotitoli in italiano, stesso stile di quelli delle interviste (eccezione alla regola "niente sottotitoli
+  sulle parti di Manuel", decisa da lui il 24/10).

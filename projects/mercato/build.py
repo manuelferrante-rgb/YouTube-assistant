@@ -10,6 +10,8 @@ import numpy as np
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 sys.path.insert(0, f"{ROOT}/tools")
 from doc_render import Timeline, run, dur_of
+from sfx import sfx_file
+from sigla import sigla as sigla_fissa, sigla_d
 
 R = f"{ROOT}/work/raw"
 VO = f"{ROOT}/work/vo"
@@ -83,6 +85,18 @@ def has_voice(src, a, b):
     return any(sg["start"] < b and sg["end"] > a for sg in segs)
 
 
+def prep_cuts(name, src, ranges, speed=1.1, gap=0.2):
+    """Voce da più tratti della stessa clip, uniti con respiri di `gap` secondi (a 1.1x)."""
+    out = f"{OUT}/{name}.wav"
+    if not os.path.exists(out):
+        fc = "".join(f"[0:a]atrim={a}:{b},asetpts=PTS-STARTPTS,atempo={speed},aresample=48000,"
+                     f"afade=t=in:d=0.03,afade=t=out:st={(b - a) / speed - 0.05:.3f}:d=0.05,apad=pad_dur={gap}[p{i}];"
+                     for i, (a, b) in enumerate(ranges))
+        fc += "".join(f"[p{i}]" for i in range(len(ranges))) + f"concat=n={len(ranges)}:v=0:a=1,atrim=end={sum((b - a) / speed + gap for a, b in ranges) - gap:.3f}[o]"
+        run(["ffmpeg", "-v", "error", "-y", "-i", src, "-filter_complex", fc, "-map", "[o]", "-ac", "1", "-ar", "48000", out])
+    return out, dur_of(out)
+
+
 def vo(tl, key, shots, **kw):
     tl.voice_check = has_voice
     f, d = prep_vo(key)
@@ -149,9 +163,12 @@ def teaser(tl):
 
 def long_video(tl):
     trailer(tl)
+    # ponte sonoro dopo il logo: la sigla sfuma, le barche sulla spiaggia (senza voci) portano al capitolo dopo
+    tl.sfx(max(0, tl.t - 0.5), ambient(raw("0123"), 0.5, 1.3), 0.4)
 
     # ---- il giorno prima ----
-    t0 = vo(tl, "vo_04", [(mimo("143640"), 0.0), (mimo("143748"), 0.5), (mimo("142648"), 3.0),
+    t0 = vo(tl, "vo_04", [(mimo("143640"), 0.0), (mimo("142648"), 12.0), (mimo("142648"), 3.0)  # TODO: dji_143748 non piu su Drive (21/10): sostituito con altro tratto di 142648
+                          ,
                           (mimo("143050"), 1.0)])
     tl.broll(mimo("144938"), 0.5, 2.2, gain=0.35)
     tl.broll(mimo("145004"), 3.0, 2.4, gain=0.35)
@@ -304,27 +321,66 @@ def montage(tl, shots, beats):
         tl.broll(src, a, _to_beat(tl, nb), gain=0.0, cx=cx)
 
 
-def trailer(tl):
-    """Un solo suono per volta: musica sui montaggi, una voce per volta, poi sigla con la frase di Manuel."""
-    montage(tl, [(raw("0117"), 3.0, .5), (raw("0119"), 0.3, .45), (raw("0086"), 20.0, .5), (raw("0121"), 0.5, .5)],
-            [2, 2, 2, 2])
-    tl.speech(raw("0076"), [(26.45, 28.35)], subs=[(26.45, 28.35, "Di notte. Alle tre si comincia.")], cx=0.45)
-    montage(tl, [(raw("0085"), 0.3, .5), (raw("0093"), 25.0, .5), (raw("0123"), 0.5, .4), (raw("0109"), 5.0, .5)],
-            [2, 2, 1, 1])
+def ambient(src, a, d):
+    """Audio d'ambiente di una clip come traccia a sé (sotto la mappa, che non ha suono)."""
+    out = f"{OUT}/amb_{os.path.basename(src)}_{a:.1f}_{d:.1f}.wav"
+    if not os.path.exists(out):
+        run(["ffmpeg", "-v", "error", "-y", "-ss", f"{a}", "-t", f"{d}", "-i", src, "-vn", "-ac", "2", "-ar", "48000",
+             "-af", f"afade=t=in:d=0.2,afade=t=out:st={d - 0.3}:d=0.3", out])
+    return out
+
+
+def intro(tl):
+    """Intro v3 (parte variabile, cambia a ogni video): stile cold open, niente musica.
+    Raffica di immagini forti -> Manuel: "Immagina di svegliarti alle tre..." -> il pescatore: "Alle tre si comincia"
+    -> il pesce da 50 chili -> mappa -> "Cristiani, induisti, musulmani. È un posto in pace." -> sigla fissa."""
+    # v4 (feedback di Manuel): pochi effetti, cinematografico ma sobrio. Tagli netti, niente whoosh/flash a ogni
+    # taglio; colpi bassi solo nei 2 momenti chiave, un solo whoosh (ingresso nella mappa).
+    push = dict(zoom=(1.0, 1.04, None))
+    # 1. apertura: il pesce passa di mano in mano, subito
+    tl.sfx(0, sfx_file("boom"), 0.35)
+    for i, (src, a, cx, nf) in enumerate([(raw("0122"), 2.2, .5, 18), (raw("0109"), 2.0, .5, 14),
+                                          (raw("0119"), 0.3, .45, 14), (raw("0121"), 0.8, .5, 14),
+                                          (raw("0086"), 12.0, .5, 18)]):
+        tl.broll(src, a, nf / 30, gain=0.55, cx=cx, fade=0.02, fx=dict(zoom=(1.10, 1.0, 0.35)) if i == 0 else push)
+    # 2. Manuel, su barche e mare: lento avvicinamento
+    n0 = len(tl.shots)
+    tl.voice_check = has_voice
+    f, d = prep_cuts("vo_immagina", mimo("143504"), [(1.0, 4.15), (4.85, 7.85), (8.75, 9.6)])
+    tl.vo(f, 0, d, [(raw("0094"), 3.0, .5), (raw("0093"), 21.0, .5), (raw("0123"), 1.0, .4), (raw("0085"), 3.0, .5)],
+          speed=1.0, lead=0.15, tail=0.15)
+    for sh in tl.shots[n0:]:
+        sh["fx"] = dict(zoom=(1.0, 1.07, None))
+    # letto d'ambiente basso sotto la voce (le clip qui sotto hanno l'audio azzerato: mai silenzio digitale)
+    t_v0 = tl.shots[n0]["t"]
+    tl.sfx(t_v0, ambient(raw("0117"), 2.0, tl.t - t_v0 + 0.3), 0.3)
+    # 3. il pescatore conferma
+    tl.sfx(tl.t, sfx_file("boom"), 0.22)
+    tl.speech(raw("0076"), [(26.45, 28.35)], subs=[(26.45, 28.35, "Di notte. Alle tre si comincia.")], cx=0.45,
+              fx=dict(zoom=(1.12, 1.0, 0.3)))
+    # 4. raffica sul mercato
+    for src, a, cx in [(raw("0126"), 6.0, .5), (raw("0118"), 2.0, .5), (raw("0110"), 2.0, .5)]:
+        tl.broll(src, a, 13 / 30, gain=0.55, cx=cx, fade=0.02, fx=push)
+    # 5. il pesce da 50 chili
+    tl.speech(raw("0091"), [(3.3, 7.8)], speed=1.1, fx=dict(zoom=(1.0, 1.05, None)))
+    # 6. mappa (sola grafica ammessa), con l'ambiente del mercato sotto
+    t_m = tl.t
+    tl.sfx(t_m - 0.45, sfx_file("whoosh_rev"), 0.25)
+    tl._add(maps(tl.W, tl.H), 0, 4.5, speed=2.0, audio=False, grade="null")
+    tl.sfx(t_m, ambient(raw("0117"), 10.0, tl.t - t_m + 0.3), 0.5)
+    # 7. chiusura variabile, che passa la parola alla sigla
     tl.speech(raw("0076"), [(316.0, 319.1), (343.3, 345.1)], cx=0.45,
               subs=[(316.0, 319.1, "Cristiani, induisti, musulmani."), (343.3, 345.1, "È un posto in pace.")])
-    montage(tl, [(raw("0086"), 27.0, .5), (raw("0089"), 3.5, .5), (raw("0120"), 3.0, .5), (raw("0118"), 12.0, .62),
-                 (raw("0124"), 1.6, .42), (raw("0126"), 10.0, .5)], [1, 1, 1, 1, 1, 1])
-    tl.speech(raw("0091"), [(3.3, 7.8)], speed=1.1)
-    tl._add(maps(tl.W, tl.H), 0, 4.5, speed=1.8, audio=False, grade="null")
-    # sigla: lampi sotto "Il mondo, raccontato da chi lo vive", logo su "Questo è Voci Vere"
-    t_s = tl.t
-    tl.vos.append(dict(file=SIGLA_VO, a=1.70, b=5.75, speed=1.0, t=t_s + 0.05))
-    montage(tl, [(raw("0122"), 1.0, .5), (raw("0076"), 40.0, .42), (raw("0081"), 95.0, .5), (raw("0117"), 15.0, .5),
-                 (raw("0143"), 3.0, .5)], [1, 1, 1, 1, 1])
-    tl.clip(logo_card(raw("0143"), 3.4, 2.9, tl.W, tl.H, f"{OUT}/sigla_logo2_{tl.W}x{tl.H}.mp4"))
-    tl.music(0, tl.t, M_FLIGHT, offset=M_OFF, level=0.8, fin=0.05, fout=1.2)
 
+
+def trailer(tl):
+    """Intro + sigla fissa: apre il lungo ed è anche il verticale teaser.
+    v6 (23/10): Manuel taglia i primi 7.70 s (si parte da "oceano indiano") e la sigla è la variante D."""
+    intro(tl)
+    tl.trim_head(7.70)
+    # ponte sonoro: il brusio del mercato sfuma sotto l'attacco della sigla (che parte con 0.4 s senza voce)
+    tl.sfx(max(0, tl.t - 0.2), ambient(raw("0117"), 4.0, 1.0), 0.45)
+    sigla_d(tl, OUT)
 
 
 def reel_A(tl):

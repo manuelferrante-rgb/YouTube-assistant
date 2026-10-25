@@ -42,7 +42,7 @@ class Timeline:
     def __init__(self, w, h, workdir, sub_size=None, sub_margin=None):
         self.W, self.H, self.dir = w, h, workdir
         os.makedirs(workdir, exist_ok=True)
-        self.shots, self.vos, self.musics, self.subs = [], [], [], []
+        self.shots, self.vos, self.musics, self.subs, self.sfxs = [], [], [], [], []
         self.t = 0.0
         self.vertical = h > w
         k = h / 1080 if not self.vertical else w / 1080
@@ -53,25 +53,34 @@ class Timeline:
 
     # ---------- elementi ----------
     def _add(self, src, a, dur_src, speed=1.0, gain=1.0, cx=0.5, zoom=1.0, grade=GRADE_DEFAULT, norm=False,
-             fade=0.02, audio=True, still=False):
+             fade=0.02, audio=True, still=False, fx=None, cy=0.5):
         n = max(1, round(dur_src / speed * FPS))
         d = n / FPS
-        self.shots.append(dict(src=src, a=a, dur_src=dur_src, speed=speed, gain=gain, cx=cx, zoom=zoom, grade=grade,
-                               norm=norm, fade=fade, audio=audio, n=n, d=d, t=self.t, still=still))
+        sh = dict(src=src, a=a, dur_src=dur_src, speed=speed, gain=gain, cx=cx, zoom=zoom, grade=grade,
+                  norm=norm, fade=fade, audio=audio, n=n, d=d, t=self.t, still=still)
+        if fx:
+            sh["fx"] = fx
+        if cy != 0.5:
+            sh["cy"] = cy
+        self.shots.append(sh)
         self.t += d
         return self.t - d
 
-    def speech(self, src, ranges, speed=1.0, subs=(), cx=0.5, zoom=1.0, grade=GRADE_DEFAULT, gain=1.0):
+    def speech(self, src, ranges, speed=1.0, subs=(), cx=0.5, zoom=1.0, grade=GRADE_DEFAULT, gain=1.0, fx=None):
         """Parlato con audio originale; ogni range è un taglio. subs: (a, b, testo) in tempi della sorgente."""
         for a, b in ranges:
-            t0 = self._add(src, a, b - a, speed=speed, gain=gain, cx=cx, zoom=zoom, grade=grade, norm=True)
+            t0 = self._add(src, a, b - a, speed=speed, gain=gain, cx=cx, zoom=zoom, grade=grade, norm=True, fx=fx)
             for sa, sb, txt in subs:
                 lo, hi = max(sa, a), min(sb, b)
                 if hi - lo > 0.15:
                     self.subs.append((t0 + (lo - a) / speed, t0 + (hi - a) / speed, txt))
 
-    def broll(self, src, a, dur, gain=0.3, cx=0.5, zoom=1.0, grade=GRADE_DEFAULT, speed=1.0):
-        self._add(src, a, dur * speed, speed=speed, gain=gain, cx=cx, zoom=zoom, grade=grade, fade=0.25)
+    def broll(self, src, a, dur, gain=0.3, cx=0.5, zoom=1.0, grade=GRADE_DEFAULT, speed=1.0, fx=None, cy=0.5, fade=0.25):
+        self._add(src, a, dur * speed, speed=speed, gain=gain, cx=cx, zoom=zoom, grade=grade, fade=fade, fx=fx, cy=cy)
+
+    def sfx(self, t, path, gain=0.5):
+        """Effetto sonoro (file wav) al tempo t del montato: non si abbassa sotto la voce."""
+        self.sfxs.append(dict(file=path, t=t, gain=gain))
 
     def clip(self, path, cx=0.5, audio=False, grade="null"):
         """Clip già pronta (mappa, sigla, cartello finale)."""
@@ -94,6 +103,48 @@ class Timeline:
         self.vos.append(dict(file=vofile, a=a, b=b, speed=speed, t=start + lead))
         return start
 
+    def trim_head(self, T):
+        """Toglie i primi T secondi (multiplo di fotogramma) del montato: inquadrature, voci, effetti, musica."""
+        n_cut = round(T * FPS); T = n_cut / FPS
+        shots = []
+        for s in self.shots:
+            if s["t"] + s["d"] <= T + 1e-6:
+                continue
+            if s["t"] < T - 1e-6:
+                k = round((T - s["t"]) * FPS)
+                s["a"] += k / FPS * s["speed"]; s["dur_src"] -= k / FPS * s["speed"]
+                s["n"] -= k; s["d"] = s["n"] / FPS; s["t"] = 0.0
+            else:
+                s["t"] -= T
+            shots.append(s)
+        self.shots = shots
+        vos = []
+        for v in self.vos:
+            end = v["t"] + (v["b"] - v["a"]) / v["speed"]
+            if end <= T:
+                continue
+            if v["t"] < T:
+                v["a"] += (T - v["t"]) * v["speed"]; v["t"] = 0.0
+            else:
+                v["t"] -= T
+            vos.append(v)
+        self.vos = vos
+        for x in self.sfxs:
+            if x["t"] < T:
+                x["a"] = x.get("a", 0) + T - x["t"]; x["t"] = 0.0
+            else:
+                x["t"] -= T
+        for m in self.musics:
+            if m["t0"] < T:
+                m["offset"] += T - m["t0"]; m["t0"] = 0.0
+            else:
+                m["t0"] -= T
+            m["t1"] -= T
+        self.musics = [m for m in self.musics if m["t1"] > m["t0"]]
+        self.subs = [(max(0, a - T), b - T, t) for a, b, t in self.subs if b - T > 0.15]
+        self.t -= T
+        return T
+
     def music(self, t0, t1, track, offset=0.0, level=0.35, fin=1.0, fout=1.5):
         self.musics.append(dict(t0=t0, t1=t1, track=track, offset=offset, level=level, fin=fin, fout=fout))
 
@@ -107,13 +158,36 @@ class Timeline:
         elif s["zoom"] != 1.0:
             z = s["zoom"]
             f.append(f"crop=iw/{z}:ih/{z}:'max(0,min(iw-iw/{z},iw*{s['cx']}-iw/{z}/2))':'(ih-ih/{z})*0.4'")
-        f.append(f"scale={W}:{H}:flags=lanczos:force_original_aspect_ratio=increase,crop={W}:{H}")
+        f.append(f"scale={W}:{H}:flags=lanczos:force_original_aspect_ratio=increase,"
+                 f"crop={W}:{H}:(iw-ow)/2:(ih-oh)*{s.get('cy', 0.5)}")
         if s["grade"] and s["grade"] != "null":
             f.append(s["grade"])
         f.append(f"setpts=(PTS-STARTPTS)/{s['speed']}")
         f.append(f"fps={FPS},tpad=stop_mode=clone:stop_duration=2,trim=end_frame={s['n']},setpts=PTS-STARTPTS")
+        f += self._fx(s)
         f.append("format=yuv420p")
         return ",".join(f)
+
+    def _fx(self, s):
+        """Effetti visivi dell'inquadratura (intro e sigla).
+        fx = dict(zoom=(z0, z1, T): zoom da z0 a z1 in T secondi (ease-out; T=None: per tutta la durata),
+                  flash=D: lampo bianco all'attacco che si spegne in D secondi,
+                  black_in=D / black_out=D: dissolvenza dal/al nero)"""
+        fx = s.get("fx") or {}
+        W, H, d = self.W, self.H, s["d"]
+        f = []
+        if "zoom" in fx:
+            z0, z1, T = fx["zoom"]
+            T = T or d
+            z = f"({z0}+({z1}-{z0})*(1-pow(1-min(1\\,t/{T})\\,3)))" if T < d else f"({z0}+({z1}-{z0})*t/{d:.3f})"
+            f.append(f"scale=w='trunc({W}*{z}/2)*2':h='trunc({H}*{z}/2)*2':eval=frame:flags=bicubic,crop={W}:{H}")
+        if "flash" in fx:
+            f.append(f"eq=brightness='0.3*max(0\\,1-t/{fx['flash']})':contrast='1-0.25*max(0\\,1-t/{fx['flash']})':eval=frame")
+        if "black_in" in fx:
+            f.append(f"fade=t=in:st=0:d={fx['black_in']}")
+        if "black_out" in fx:
+            f.append(f"fade=t=out:st={d - fx['black_out']:.3f}:d={fx['black_out']}")
+        return f
 
     def _af(self, s):
         d = s["d"]
@@ -206,7 +280,19 @@ class Timeline:
                       f"afade=t=in:d={m['fin']},afade=t=out:st={max(0, d - m['fout']):.3f}:d={m['fout']},"
                       f"adelay={int(m['t0'] * 1000)}:all=1,apad=whole_dur={total:.3f}[mu{j}]")
             mu_labels.append(f"[mu{j}]")
-        fc.append(f"[0:a]asplit=2[nat][natk]")
+        fx_labels = []
+        for j, x in enumerate(self.sfxs):
+            inputs += ["-i", x["file"]]
+            k = len(inputs) // 2 - 1
+            st = f"atrim=start={x['a']:.3f},asetpts=PTS-STARTPTS," if x.get("a") else ""
+            fc.append(f"[{k}:a]{st}aresample=48000,volume={x['gain']},adelay={int(x['t'] * 1000)}:all=1,"
+                      f"apad=whole_dur={total:.3f},atrim=end={total:.3f}[fx{j}]")
+            fx_labels.append(f"[fx{j}]")
+        if fx_labels:  # gli effetti si sommano all'audio originale
+            fc.append(f"[0:a]{''.join(fx_labels)}amix=inputs={len(fx_labels) + 1}:normalize=0[natfx]")
+            fc.append(f"[natfx]asplit=2[nat][natk]")
+        else:
+            fc.append(f"[0:a]asplit=2[nat][natk]")
         if vo_labels:
             fc.append(f"{''.join(vo_labels)}amix=inputs={len(vo_labels)}:normalize=0,asplit=2[vo][vok]")
         else:
@@ -216,6 +302,7 @@ class Timeline:
             fc.append(f"[vok]anullsink;[natk]anullsink")
             fc.append(f"[nat][vo][mus]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1:LRA=9,aresample=48000[a]")
         else:
+            fc.append(f"[vok]anullsink;[natk]anullsink")
             fc.append(f"[nat][vo]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1:LRA=9,aresample=48000[a]")
         mix = f"{self.dir}/mix.wav"
         run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(fc), "-map", "[a]",
@@ -238,6 +325,7 @@ class Timeline:
             for a, b, t in sorted(self.subs):
                 f.write(f"Dialogue: 0,{ts(a)},{ts(b)},Sub,,0,0,0,,{t}\n")
 
+        ass = getattr(self, "ass_override", None) or ass   # sottotitoli/titoli animati preparati a parte
         run(["ffmpeg", "-v", "error", "-y", "-i", cut, "-i", mix, "-vf", f"setpts=N/({FPS}*TB),ass={ass}:fontsdir={ROOT}/models", "-r", str(FPS),
              "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", str(crf), "-preset", preset, "-profile:v", "high",
              "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", "-t", f"{total:.3f}", out])
