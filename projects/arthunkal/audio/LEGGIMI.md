@@ -17,3 +17,13 @@ Musica originale (bozza 25/10, `audio/musica/compose.py`), su Drive in montati/a
 - `musica_bozza_arrivo.wav` (1:04): arrivo alla basilica e finale.
 Sono bozze: appena c'è il montato le taglio a misura sulle scene e faccio il mix. Se nel frattempo le metti nel montato,
 tienile basse (circa -22/-26 dB sotto la voce) e mai sotto le interviste con voci nel girato.
+
+## Consegna per la chat Montaggio (25/10, nomi richiesti), in questa cartella
+- `transizione_nero_in.wav` (0.6 s): il taglio è l'ultimo campione, mettilo sul primo fotogramma nero.
+- `transizione_nero_out.wav` (1.3 s): colpo basso morbido + onda, parte sul primo fotogramma dopo il nero; solo 2-3 cambi forti.
+- `tick_km.wav` (0.1 s), `ding_arrivo.wav` (1.6 s, PROVVISORIO: nel girato non c'è una campana; lo sostituisco appena
+  Manuel registra un bicchiere d'acciaio o la campana), `tick_data.wav` (0.1 s, penna leggera, -6 dB rispetto al tick_km).
+- Per la mappa puoi anche usare direttamente `mappa_sfx_v3.wav` (8 s, tutto già a tempo, tick alternati).
+- Musica ORIGINALE (niente più "Turn In The Sun" e "inner_outer", decisione di Manuel): su Drive montati/arthunkal/audio/
+  `musica_voiceover.wav` (3:30, calma, piano rado e archi: sotto il voiceover a circa -24 dB rispetto alla voce) e
+  `musica_verticali.wav` (60 s, con il passo delle corde dall'inizio). Mai sotto interviste o voci del girato.

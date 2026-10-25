@@ -119,6 +119,49 @@ def ding_mappa(src):
     return _reverb(x, dur=0.8, mix=0.12, bright=6000)[:len(ir)]
 
 
+def nero_in(src, dur=0.6):
+    """Versione corta dello zoom nel nero (0.6 s): onda che monta e taglio secco, senza silenzio dopo."""
+    x = load(src, "mimo_140234", 9.85 - dur, dur)
+    x = sweep(x, 350, 3200)
+    t = np.arange(len(x)) / SR
+    env = (t / t[-1]) ** 2.2
+    env[-int(0.012 * SR):] *= np.linspace(1, 0, int(0.012 * SR))
+    return x * env[:, None]
+
+
+def nero_out(src):
+    """Colpo basso morbido per i cambi forti (1.3 s): il fondo di un'onda vera che si rompe (sotto i 160 Hz),
+    con sopra l'onda che arriva da lontano, più bassa."""
+    w = load(src, "mimo_140234", 9.70, 1.3)
+    low = per_ch(w, lambda c: _stft_filter(c, lambda tt, f: 1 / np.sqrt(1 + (f / 160) ** 6)))
+    t = np.arange(len(low)) / SR
+    hit = low * (np.minimum(1, t / 0.015) * np.exp(-t / 0.45))[:, None]
+    hit /= np.abs(hit).max() + 1e-9
+    air = uscita_nero(src)[:len(hit)]
+    air /= np.abs(air).max() + 1e-9
+    return hit + 0.35 * air
+
+
+def tick_data(src):
+    """Tocco di penna su carta per la linea del tempo: il click vero di 0247, più morbido (2-6 kHz)."""
+    x = click(src, "0247", 8.580)
+    x = _stft_filter(x, lambda tt, f: np.exp(-0.5 * (np.log2(np.maximum(f, 1) / 3500) / 0.9) ** 2), n=256, hop=64)
+    return np.pad(x, (0, int(0.1 * SR) - len(x)))
+
+
+def consegna_arthunkal(src):
+    """File con i nomi chiesti dalla chat Montaggio (25/10), in projects/arthunkal/audio/."""
+    global OUT
+    keep, OUT = OUT, f"{ROOT}/projects/arthunkal/audio"
+    os.makedirs(OUT, exist_ok=True)
+    save("transizione_nero_in", nero_in(src))
+    save("transizione_nero_out", nero_out(src))
+    save("tick_km", np.pad(click(src, "0224", 31.294), (0, int(0.055 * SR))), peak_db=-3)
+    save("ding_arrivo", ding_mappa(src), peak_db=-3)
+    save("tick_data", tick_data(src), peak_db=-9)
+    OUT = keep
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", default=f"{ROOT}/work/arthunkal/girato/wav")
@@ -130,6 +173,7 @@ def main():
     for k, (n, t) in enumerate(CLICKS, 1):
         save(f"tick_km_{k}", click(a.src, n, t), peak_db=-3)
     save("ding_mappa_provvisorio", ding_mappa(a.src), peak_db=-3)
+    consegna_arthunkal(a.src)
 
 
 if __name__ == "__main__":

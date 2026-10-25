@@ -3,7 +3,7 @@
 
     python3 audio/musica/compose.py <brano> <out.wav> [--dur S]
     brani: cammino (passo leggero, re maggiore, 72 bpm), storia (piano rado per la linea del tempo),
-           arrivo (apertura piena sulla basilica)
+           arrivo (apertura piena sulla basilica), verticale (il cammino col passo da subito, 60 s)
 Strumenti: tappeto di archi sintetici morbidi, piano (parziali leggermente inarmoniche + martelletto),
 corde pizzicate (Karplus-Strong), riverbero di sala. Niente scale o strumenti "etnici" da cartolina.
 """
@@ -93,7 +93,10 @@ class Track:
         self.x = np.zeros((int((dur + 6) * SR), 2)); self.dur = dur
 
     def add(self, sig, t, gain=1.0, pan=0.0):
-        i = int(max(0.0, t) * SR); sig = sig[:len(self.x) - i] * gain
+        i = int(max(0.0, t) * SR)
+        if i >= len(self.x):
+            return
+        sig = sig[:len(self.x) - i] * gain
         l, r = np.cos((pan + 1) * np.pi / 4), np.sin((pan + 1) * np.pi / 4)
         self.x[i:i + len(sig), 0] += sig * l * 1.414
         self.x[i:i + len(sig), 1] += sig * r * 1.414
@@ -113,7 +116,7 @@ CHORDS = {
 }
 
 
-def cammino(dur):
+def cammino(dur, pulse_from=2):
     bpm = 72; beat = 60 / bpm; bar = 4 * beat
     prog = ["D", "Bm", "G", "Asus"]
     T = Track(dur); t = 0.0; k = 0
@@ -123,7 +126,7 @@ def cammino(dur):
         for j, n in enumerate(ch[1:5]):
             T.add(pad_note(n, L + 3.0, 1400 + 300 * (k % 3)), t - 0.8, 0.10, pan=-0.5 + j * 0.33)
         T.add(pad_note(ch[0] - 12 if ch[0] > 45 else ch[0], L + 3.0, 500), t - 0.8, 0.11)      # basso
-        if k >= 2:                      # il passo entra dopo il primo giro
+        if k >= pulse_from:             # il passo entra dopo il primo giro (subito nei verticali)
             arp = [ch[2], ch[3], ch[4], ch[3]]
             for s in range(16):
                 vel = 0.5 + 0.15 * (s % 4 == 0)
@@ -170,11 +173,12 @@ def arrivo(dur):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("brano", choices=["cammino", "storia", "arrivo"]); ap.add_argument("out")
+    ap.add_argument("brano", choices=["cammino", "storia", "arrivo", "verticale"]); ap.add_argument("out")
     ap.add_argument("--dur", type=float, default=0)
     a = ap.parse_args()
-    dur = a.dur or {"cammino": 120, "storia": 64, "arrivo": 64}[a.brano]
-    x = {"cammino": cammino, "storia": storia, "arrivo": arrivo}[a.brano](dur)
+    dur = a.dur or {"cammino": 120, "storia": 64, "arrivo": 64, "verticale": 60}[a.brano]
+    x = {"cammino": cammino, "storia": storia, "arrivo": arrivo,
+         "verticale": lambda d: cammino(d, pulse_from=0)}[a.brano](dur)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f64le", "-ar", str(SR), "-ac", "2", "-i", "-",
                     "-c:a", "pcm_s24le", a.out], input=x.astype("<f8").tobytes(), check=True)
 
