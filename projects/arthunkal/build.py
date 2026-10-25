@@ -79,7 +79,7 @@ def ambient(src, a, d, name=None):
 
 def aud(name, fallback=None):
     """Suono della chat Audio se c'è, altrimenti il ripiego (suono vero del girato)."""
-    for ext in ("wav", "mp3", "m4a"):
+    for ext in ("wav", "flac", "mp3", "m4a"):
         p = f"{AUD}/{name}.{ext}"
         if os.path.exists(p):
             return p
@@ -103,17 +103,20 @@ class Edit:
     def t(self):
         return self.tl.t
 
-    def b(self, src, a, d, gain=0.35, cx=0.5, grade=DEF, fx=None, speed=1.0, bed=None):
+    def b(self, src, a, d, gain=0.35, cx=0.5, grade=DEF, fx=None, speed=1.0, bed=None, extra=None):
         """B-roll con il suo suono vero. Se nella clip c'è parlato l'audio si azzera e sotto va un letto d'ambiente
         vero preso da una clip senza voci (bed = (clip, inizio)), così non resta mai un buco di silenzio."""
+        gain = min(1.0, gain * 1.4)                                  # ambiente un po' più presente (mix v2)
+        if extra:                                                    # clip quasi muta: ambiente vero di rinforzo
+            self.tl.sfx(self.t, ambient(extra[0], extra[1], d + 0.3), extra[2])
         if gain and has_voice(src, a, a + d * speed):
             gain = 0.0
             b_src, b_a = bed or (C("085422"), 0.0)
-            self.tl.sfx(self.t, ambient(b_src, b_a, d + 0.3), 0.32)
+            self.tl.sfx(self.t, ambient(b_src, b_a, d + 0.3), 0.55)
         self.tl.broll(src, a, d, gain=gain, cx=cx, grade=grade, fx=fx or dict(zoom=(1.0, 1.04, None)), speed=speed,
                       fade=0.12)
 
-    def say(self, src, ranges, speed=1.1, cx=0.5, cover=None, subs=(), grade=DEF):
+    def say(self, src, ranges, speed=1.1, cx=0.5, cover=None, subs=(), grade=DEF, gain=1.0):
         """Parlato in camera tagliato sulle pause; cover = {indice: (clip, a, gain)} copre quel tratto con un'altra
         immagine mentre la voce continua (salti di montaggio nascosti). subs in tempi della sorgente."""
         cover = cover or {}
@@ -126,7 +129,7 @@ class Edit:
                              audio=not g, fx=None if g else dict(zoom=(1.0, 1.04, None)))
                 self.tl.vos.append(dict(file=src, a=a, b=b, speed=speed, t=t0))
             else:
-                self.tl.speech(src, [(a, b)], speed=speed, cx=cx, grade=grade)
+                self.tl.speech(src, [(a, b)], speed=speed, cx=cx, grade=grade, gain=gain)
             for sa, sb, txt in subs:
                 lo, hi = max(sa, a), min(sb, b)
                 if hi - lo > 0.15:
@@ -161,6 +164,15 @@ class Edit:
         if snd and getattr(self, "strong", False):                      # solo nei 2-3 cambi forti
             self.tl.sfx(sh["t"], snd, 0.45)
         self.strong = False
+
+    def bed(self, t0, t1, src, a=0.0, gain=0.16):
+        """Letto d'ambiente vero e basso sotto una scena intera: niente buchi di quasi silenzio tra i tagli."""
+        d, n = t1 - t0, dur_of(src) - a - 0.3
+        t = t0
+        while t < t1 - 0.1:
+            seg = min(n, t1 - t + 0.3)
+            self.tl.sfx(t, ambient(src, a, seg), gain)
+            t += seg - 0.3
 
     def label(self, text, t0, d=2.6):
         self.labels.append((t0, t0 + d, text))
@@ -246,11 +258,12 @@ def long_video(W, H):
 
     # 1. GANCIO: la spiaggia piena all'alba, la sua voce; raffica dei momenti più forti; poi i numeri
     e.say(C("072327"), [(0.75, 4.45)], cx=0.5)                     # "Sono le sette del mattino... da mezzanotte."
-    tl.sfx(e.t - 0.2, ambient(C("072504"), 0.0, 6.4), 0.45)         # letto di folla sotto la raffica
+    tl.sfx(e.t - 0.2, ambient(C("072504"), 0.0, 6.4), 0.7)          # letto di folla sotto la raffica
     for src, a, d, g, gr in [(C("091255"), 0.35, 1.3, 0.5, DEF), (C("075747"), 1.0, 1.0, 0.0, DEF),
                              (C("023744"), 0.3, 1.1, 0.4, NIGHT), (C("075231"), 2.0, 1.0, 0.4, DEF),
                              (C("090733"), 4.0, 1.4, 0.5, DEF)]:
-        e.b(src, a, d, gain=g, grade=gr, fx=dict(zoom=(1.06, 1.0, 0.4)))
+        e.b(src, a, d, gain=g, grade=gr, fx=dict(zoom=(1.06, 1.0, 0.4)),
+            extra=(C("085422"), 1.0, 0.4) if g < 0.45 else None)
     e.say(C("072327"), [(5.0, 7.6), (8.4, 10.1)], cover={1: (C("072504"), 0.2)})   # 13 km... senza mai fermarsi
     # anello aperto col legame italiano (Insights): la statua arrivata da Milano, sciolto nella parte sulla storia
     e.say(C("091658"), [(21.0, 24.25)], subs=[(21.0, 24.25, "arrivò da Milano una statua di San Sebastiano.")],
@@ -284,10 +297,11 @@ def long_video(W, H):
     e.say(D23, [(7.8, 11.75), (13.3, 14.85), (17.7, 18.65), (20.25, 22.45), (28.4, 30.85), (31.65, 33.3),
                 (35.2, 36.1), (37.1, 38.2)],
           cover={1: (M23("140104"), 0.3), 3: (M23("140912"), 3.5), 4: (M23("140104"), 2.2), 6: (M23("140234"), 11.0)})
-    e.b(M23("141012"), 0.0, 3.4, gain=0.6)                           # ghirlande, barche a secco
+    e.b(M23("141012"), 0.0, 3.4, gain=0.6, extra=(M23("140234"), 6.0, 0.4))   # ghirlande, barche a secco
     e.say(M23("140626"), [(0.8, 2.5), (3.5, 4.5), (5.15, 6.2), (7.25, 8.75), (11.2, 13.2), (14.1, 16.1), (17.75, 19.7)],
           cover={2: (M23("140234"), 14.0), 3: (M23("141012"), 3.4), 5: (D23, 1.5)},
           subs=[(7.25, 8.75, "alla Beata Vergine.")])
+    e.bed(t_prima, e.t, M23("140234"), 0.5)                         # onde del giorno prima sotto i tagli
     f, d = VO("1c", [(9.6, 12.45)])                                  # "Nessuno avrebbe detto che di notte..."
     e.vo(f, d, [(M23("140234"), 5.5), (D23, 39.0)], lead=0.4, tail=0.6)
     e.to_black(strong=True)
@@ -320,30 +334,31 @@ def long_video(W, H):
     e.say(C("072415"), [(0.3, 4.6)])                                 # "Come ci hanno raccontato si parte... Kalavoor"
     e.say(C("072430"), [(0.0, 3.6)])                                 # "Per 13-14 km fino ad Arthunkal."
     e.b(C("072504"), 0.0, 3.0, gain=0.6)
-    e.b(C("072327"), 18.6, 2.2, gain=0.6)
+    e.b(C("075231"), 4.0, 2.2, gain=0.6)                             # passi sulla sabbia (stessa durata: tempi invariati)
     e.say(C("075209"), [(0.5, 3.15), (3.8, 5.1)])                    # "Siamo a Marari... da qui passa il cammino"
     e.say(C("080217"), [(0.5, 2.6), (3.4, 8.55)], cover={1: (C("080133"), 0.5)})   # prima in strada, poi in spiaggia
     e.say(C("080133"), [(0.6, 2.35)], cover={0: (C("072504"), 1.4)})              # "e lì si riprende sulla spiaggia"
 
+    e.bed(t_a, e.t, M23("140234"), 2.0, 0.12)                       # mare sotto l'alba
     # 7. CHI CAMMINA: il blocco 8 sui volti, poi la domanda una volta sola e le risposte
     t_c = e.t
     f, d = VO("8b", [(134.6, 140.55)])
     e.vo(f, d, [(C("085345"), 0.0), (C("074032"), 9.0), (C("090348"), 0.5), (C("085613"), 0.0)], lead=0.3, music=0.0)
     e.say(C("071857"), [(15.85, 17.15)], subs=[(15.85, 17.15, "Che cosa significa per te?")])
-    e.say(C("071857"), [(17.55, 20.4), (21.05, 25.7), (55.8, 59.7), (61.9, 64.45)], speed=1.0,
+    e.say(C("071857"), [(17.55, 20.4), (21.05, 25.7), (55.8, 59.7), (61.9, 64.45)], speed=1.0, gain=2.2,
           cover={2: (C("072504"), 0.0)},
           subs=[(17.55, 20.4, "È una marcia che si fa ogni anno."),
                 (21.05, 25.7, "Nasce da un'apparizione di Maria, qui ad Alappuzha."),
                 (55.8, 59.7, "Ottobre è il mese di Maria: lo dedichiamo a questa marcia."),
                 (61.9, 64.45, "Partecipano circa quattrocentomila persone.")])
     e.b(C("074032"), 17.5, 2.6, gain=0.5, bed=(C("085422"), 2.0))
-    e.say(C("074350"), [(12.2, 14.95), (18.35, 21.3), (21.8, 23.1), (30.6, 31.6), (32.3, 33.1)], speed=1.0,
+    e.say(C("074350"), [(12.2, 14.95), (18.35, 21.3), (21.8, 23.1), (30.6, 31.6), (32.3, 33.1)], speed=1.0, gain=2.2,
           subs=[(12.2, 14.95, "È un atto di devozione alla Madonna."),
                 (18.35, 21.3, "Mi ha dato tante benedizioni nella vita."),
                 (21.8, 23.1, "Attraverso Gesù Cristo."), (30.6, 31.6, "Ho ventisei anni."),
                 (32.3, 33.1, "È la prima volta qui.")])
-    e.b(C("085345"), 1.5, 2.5, gain=0.5)
-    e.say(C("085034"), [(30.75, 32.2), (33.0, 33.7), (45.5, 51.0), (51.4, 57.3)], speed=1.0,
+    e.b(C("085345"), 1.5, 2.5, gain=0.5, extra=(C("085422"), 3.0, 0.45))
+    e.say(C("085034"), [(30.75, 32.2), (33.0, 33.7), (45.5, 51.0), (51.4, 57.3)], speed=1.0, gain=2.2,
           subs=[(30.75, 32.2, "È la prima volta per te?"), (33.0, 33.7, "No."),
                 (45.5, 48.2, "È fede, è credere."), (48.2, 51.0, "Lì succedono tanti miracoli."),
                 (51.4, 55.9, "Chi partecipa ci trova qualcosa."), (55.9, 57.3, "Un po' di felicità.")])
@@ -357,13 +372,14 @@ def long_video(W, H):
     e.vo(f, d, [(C("074113"), 0.0), (C("075956"), 0.0), (C("080046"), 0.0), (C("023356"), 1.0, .5, NIGHT),
                 (C("075826"), 0.2)], lead=0.2, music=25.0)
     e.say(C("075124"), [(3.1, 7.75)])
-    e.b(C("073357"), 6.0, 3.0, gain=0.7, bed=(C("085208"), 1.0))
+    e.b(C("073357"), 6.0, 3.0, gain=0.7, bed=(C("085208"), 1.0), extra=(C("085208"), 6.0, 0.3))
     e.say(C("080133"), [(2.6, 6.05)])                                # "Questa è stata una sosta interna per bere e mangiare"
     e.say(C("075419"), [(1.4, 4.0)])
     e.say(C("075747"), [(1.0, 6.1)])
     e.say(C("075441"), [(1.2, 2.6)], subs=[(1.2, 2.6, "Sta arrivando l'ambulanza.")])
     e.b(C("075441"), 3.0, 3.0, gain=0.6, bed=(C("085208"), 5.0))
     e.say(C("075826"), [(0.6, 2.9)])
+    e.bed(t_o, e.t, C("085208"), 1.0, 0.14)                          # folla lungo la strada sotto chi offre
 
     # 9. IN STRADA VERSO ARTHUNKAL
     t_s = e.t
@@ -381,14 +397,14 @@ def long_video(W, H):
 
     # 10. L'ARRIVO: la basilica, il suono vero della folla e degli altoparlanti
     t_r = e.t
-    e.b(C("090733"), 0.0, 6.8, gain=0.75)
+    e.b(C("090733"), 0.0, 6.8, gain=0.38)                          # folla e altoparlanti: forti ma non oltre
     e.from_black()
     tl.subs.append((t_r + 0.05, t_r + 1.9, "E dopo chilometri di cammino!"))   # audio coperto dalla folla
     e.label("Basilica di Arthunkal", t_r + 3.8, 2.8)
     for src, a, dd in [(C("090813"), 0.0, 3.0), (C("090903"), 0.5, 4.5), (C("091255"), 0.9, 2.3),
                        (C("090951"), 0.0, 2.0), (C("091540"), 1.0, 4.0), (C("091405"), 0.0, 3.0),
                        (C("091505"), 0.0, 1.5), (C("090903"), 8.5, 4.5), (C("090813"), 0.5, 2.5)]:
-        e.b(src, a, dd, gain=0.6)
+        e.b(src, a, dd, gain=0.33)
 
     # 11. LA STORIA: 52 d.C. (voiceover), poi Manuel davanti alla basilica con la linea del tempo
     f, d = VO("6a", [(81.0, 88.2)])
@@ -420,11 +436,12 @@ def long_video(W, H):
         e.b(src, a, dd, gain=0.6)
     e.say(C("094735"), [(0.55, 1.5), (2.25, 3.2), (4.9, 6.2)])     # "Fa caldissimo. Un sacco umido. Si sente un sacco."
     tl.sfx(e.t, ambient(C("085208"), 9.0, 1.7), 0.3)                # la clip del bus fermo è quasi muta
-    e.b(C("094640"), 0.0, 1.4, gain=0.6, bed=(C("085208"), 9.0))
+    e.b(C("094640"), 0.0, 1.4, gain=0.6, bed=(C("085208"), 9.0), extra=(C("085422"), 5.0, 0.45))
     e.b(C("101618"), 0.0, 5.5, gain=0.7, bed=(C("101821"), 0.0))
     f, d = VO("10", [(162.3, 164.65), (166.4, 173.3), (174.15, 182.45)], src=VO1)
     e.vo(f, d, [(C("092756"), 0.0), (C("094758"), 0.0), (C("095400"), 0.0), (C("095653"), 0.0),
                 (C("095730"), 0.0), (C("101821"), 0.0)], lead=0.6, tail=0.8, music=90.0)
+    e.bed(t_f, e.t, C("085208"), 3.0, 0.12)
     e.say(C("093832"), [(0.45, 2.75), (3.6, 5.95)])
     tl.shots[-1]["fx"] = dict(black_out=0.25)
 
@@ -497,6 +514,9 @@ def vfinish(r, tag, W, H):
 
 def hook(r, txt, d=2.2):
     r.title(0.0, d, txt, "Mid", 820)
+    hit = aud("transizione_nero_out")                               # colpo basso fatto con un'onda vera (chat Audio)
+    if hit:
+        r.tl.sfx(0.0, hit, 0.35)
 
 
 def v1():
