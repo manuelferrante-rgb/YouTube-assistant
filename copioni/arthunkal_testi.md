@@ -31,7 +31,7 @@ Immagini: solo la notte e il cammino. NON mostrare l'arrivo alla basilica.
 - poi, una per volta sulle immagini:
   "Costa del Kerala, India"
   "Pregano camminando"
-  "13 km, senza fermarsi"
+  "13 km sulla spiaggia, senza fermarsi"
 - ultima scritta, sull'ultima immagine della folla: "Perché?"
 
 ### Verticale 2: dopo il lungo, LA STATUA DI MILANO (30-45 s)
@@ -66,8 +66,8 @@ V1 teaser
 - Titolo Short / prima riga IG: In migliaia a piedi alle 2:30 di notte, pregando 🇮🇳
 - Didascalia IG:
   In migliaia a piedi alle 2:30 di notte, pregando 🇮🇳
-  Costa del Kerala, India. Si parte da Kalavoor e si cammina fino alla basilica di Arthunkal: 13 km recitando il
-  rosario, senza interromperlo mai.
+  Costa del Kerala, India. Si parte da Kalavoor a mezzanotte e si cammina sulla spiaggia fino alla basilica di
+  Arthunkal: 13 km recitando il rosario, senza interromperlo mai.
   Domenica il video completo.
   #kerala #india #vocivere #arthunkal #pellegrinaggio
 - Descrizione Short YT: Di notte, sulla costa del Kerala, migliaia di persone camminano 13 km pregando senza
@@ -100,6 +100,55 @@ V4 come funziona
   #kerala #india #vocivere #arthunkal #rosario
 - Descrizione Short YT: Dal 2002 una preghiera che non si interrompe mai attraversa 13 km di costa del Kerala.
   Come si fa a non fermarsi?
+
+## Lungo: titolo e descrizione (bozza 25/10, capitoli quando arriva projects/arthunkal/capitoli.md)
+Fatti aggiunti da Montaggio (25/10, dal girato): si cammina sulla spiaggia (prima in strada, spostata per il
+traffico), partenza da mezzanotte, Manuel dalle 2:30 all'arrivo verso le 9; bancarelle di tè e acqua al buio;
+volontari induisti alla festa cattolica; un organizzatore dice che nasce da un'apparizione di Maria e parla di
+circa 4 lakh (400.000) persone: numero solo attribuito a lui, mai nel titolo né a schermo.
+
+Titolo IT (gancio + India nei primi ~40 caratteri):
+1. Di notte sulla spiaggia in India: 13 km di rosario senza fermarsi 🇮🇳   (consigliato)
+2. Alle 2:30 di notte in India: in cammino verso Arthunkal, pregando 🇮🇳
+Titolo EN:
+1. All night on an Indian beach: a 13 km rosary that never stops 🇮🇳
+2. 2:30 a.m. in India: walking to Arthunkal, praying all the way 🇮🇳
+
+Descrizione IT:
+Mezzanotte, Kalavoor, costa del Kerala. Da qui parte un rosario che non si interrompe mai: si recita camminando
+sulla spiaggia per 13 km, fino alla basilica di Arthunkal.
+
+Noi ci siamo dalle 2:30 di notte. Al buio ci sono già le bancarelle di tè e acqua, all'alba la folla riempie il
+bagnasciuga. A dare una mano alla festa cattolica ci sono anche volontari induisti. Uno degli organizzatori ci
+racconta come è nato il cammino, e quanti sono.
+
+Ad Arthunkal la chiesa la ricostruisce nel 1584 un gesuita italiano, padre Giacomo Fenicio: qui lo chiamano
+ancora Veluthachan, il padre bianco. La statua di San Sebastiano arriva da Milano nel 1647.
+
+Voci Vere racconta le persone e i luoghi lontani dalle cartoline, dando voce a chi ne ha più bisogno.
+
+Capitoli
+(da projects/arthunkal/capitoli.md)
+
+#Kerala #India #VociVere
+
+Descrizione EN:
+Midnight, Kalavoor, on the coast of Kerala. A rosary that never stops starts here: it is prayed while walking
+along the beach for 13 km, all the way to the basilica of Arthunkal.
+
+We joined at 2:30 a.m. In the dark there are already stalls handing out tea and water; at dawn the crowd fills the
+shoreline. Hindu volunteers help out at the Catholic feast too. One of the organisers tells us how the walk began,
+and how many people come.
+
+In Arthunkal the church was rebuilt in 1584 by an Italian Jesuit, Father Giacomo Fenicio: locals still call him
+Veluthachan, the white father. The statue of Saint Sebastian arrived from Milan in 1647.
+
+Voci Vere tells the stories of people and places far from the postcards, giving a voice to those who need it most.
+
+Chapters
+(from projects/arthunkal/capitoli.md)
+
+#Kerala #India #VociVere
 
 ## Da fare (Copy)
 - Titolo, descrizione it/en, capitoli (dai minutaggi del montato), miniatura del lungo: dopo il montato.
