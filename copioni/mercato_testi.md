@@ -3,7 +3,7 @@
 Titolo (scelto da Manuel, 23/10):
 - IT: «Un posto in pace»: alle 3 di notte in mare | Kerala, India
 - EN: "A peaceful place": at sea by 3 a.m. | Kerala, India
-Copertina: la fa Manuel. Versione da pubblicare: v6 (trailer e lungo partono da "oceano indiano", 7.70 s; sigla D).
+Copertina: definitiva copioni/mercato_miniature/v3_4a_bebas_grande.jpg (scelta di Manuel il 25/10). Versione da pubblicare: v6 (trailer e lungo partono da "oceano indiano", 7.70 s; sigla D).
 Pubblicazione (Manuel): trailer giovedì 29/10, lungo domenica 1/11.
 Sottotitoli YouTube: projects/mercato/sottotitoli/VociVere_mercato_long_v6.it.srt / .en.srt.
 
@@ -171,6 +171,7 @@ Abbinamento consigliato col titolo 3 o 1 (la miniatura dice già "senza tetto n�
 Un pesce da 50 chili all'asta sulla spiaggia: il mercato di Marari | Kerala, India
 
 ## DA PUBBLICARE (25/10): titolo, descrizione e capitoli per la miniatura 4
+Miniatura DEFINITIVA (scelta di Manuel, 25/10): copioni/mercato_miniature/v3_4a_bebas_grande.jpg
 La miniatura dice "senza tetto né banchi e un pesce da 50 kg"; il titolo aggiunge le persone e l'orario.
 
 Titolo IT: Sveglia alle 3 di notte: il mercato del pesce sulla spiaggia di Marari | Kerala, India
