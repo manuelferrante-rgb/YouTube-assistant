@@ -27,3 +27,19 @@ tienile basse (circa -22/-26 dB sotto la voce) e mai sotto le interviste con voc
 - Musica ORIGINALE (niente più "Turn In The Sun" e "inner_outer", decisione di Manuel): su Drive montati/arthunkal/audio/
   `musica_voiceover.wav` (3:30, calma, piano rado e archi: sotto il voiceover a circa -24 dB rispetto alla voce) e
   `musica_verticali.wav` (60 s, con il passo delle corde dall'inizio). Mai sotto interviste o voci del girato.
+
+## Montato v2 (25/10, 5:41)
+- `musica_voiceover_lungo.flac` (qui, 8 MB) = `musica_voiceover_lungo.wav` su Drive (montati/arthunkal/audio/): 5:40.93,
+  allineata a 0:00 del lungo, silenzio fuori dai tratti. Sostituisce i quattro pezzi di musica_voiceover.
+  Tratti (da `musica_lungo.json`, rigenerabile con `audio/musica/sul_montato.py` se cambiano i tempi):
+  0:21-0:34 vo_2 | 1:05-1:30 vo_1c + notte + vo_3 + vo_jb (ponte sulla notte, senza voci) | 2:07-2:13 vo_8b |
+  2:56-3:12 vo_5 e Manuel su chi offre | 3:35-3:51 In strada (col passo delle corde, si chiude quando esplode la folla) |
+  4:25-4:56 La storia (scende di 5 dB sotto Manuel tra la folla, 4:32-4:50) | 5:13-5:41 finale, apertura "arrivo" fino al saluto.
+  Picco -6 dBFS: livello indicativo -22/-24 dB sotto la voce.
+- Note sul mix dell'anteprima (misure di loudness a 3 s):
+  1. Arrivo 3:52-3:58 a -12/-13 LUFS contro -17/-18 del resto: 5 dB sopra. Folla e altoparlanti devono colpire, ma
+     abbassare di circa 3 dB (picchi verso -15) per non far saltare il volume sui telefoni.
+  2. Interviste più basse della voce di Manuel (2:27-2:32 a -25, 2:41-2:45 a -27): alzarle di 3-4 dB.
+  3. Buchi brevi di quasi silenzio (0:55, 1:53-1:55, 3:15, 3:29, 5:04 a -30/-36): coprire con l'ambiente della scena
+     dopo che entra prima (J-cut) o con la coda della precedente. Sono i "momenti vuoti" da evitare.
+  4. tick_data: d'accordo a non usarlo. Ding provvisorio: tenerlo basso, nessun altro effetto da aggiungere.

@@ -1,0 +1,10 @@
+{"durata": 340.93, "note": "montato v2 del 25/10 (5:41), tempi da projects/arthunkal/audio_cue.md e dalla trascrizione dell'anteprima",
+ "tratti": [
+  {"da": 22.03, "a": 33.07, "dopo": 33.68, "brano": "storia"},
+  {"da": 65.80, "a": 89.80, "dopo": 90.53, "pre": 0.3, "brano": "storia"},
+  {"da": 127.70, "a": 133.11, "dopo": 133.49, "pre": 0.4, "brano": "storia"},
+  {"da": 176.60, "a": 191.70, "dopo": 195.00, "pre": 0.5, "brano": "storia"},
+  {"da": 215.77, "a": 230.45, "dopo": 232.00, "coda": 1.5, "brano": "cammino"},
+  {"da": 265.40, "a": 295.34, "dopo": 297.00, "ponti": [[272.0, 290.0, 0.55]], "brano": "storia"},
+  {"da": 319.50, "a": 339.40, "dopo": 341.00, "pre": 6.0, "entrata": 3.0, "coda": 1.5, "brano": "arrivo", "offset": -294.0}
+ ]}
