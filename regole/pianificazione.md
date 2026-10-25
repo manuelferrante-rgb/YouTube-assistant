@@ -10,3 +10,7 @@
   se la scena esiste nel girato.
 - Il copione va in `projects/<video>/copione.md`, le decisioni in `projects/<video>/brief.md`, lo stato in
   `piano/calendario.md`.
+- Calendario uscite (dal 25/10, decisione di Manuel): per ogni lungo 4 verticali, 1 teaser prima (es. giovedì)
+  e 3 dopo il lungo, in 3 slot distinti nei giorni seguenti. Ogni lista riprese prevede materiale per 4 angoli.
+- Idee di contenuto: partire dagli schemi che rendono di più in `analisi/competitor/pattern.md` ("come funziona"
+  e legame con l'Italia).
