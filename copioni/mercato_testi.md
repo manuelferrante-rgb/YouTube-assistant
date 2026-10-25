@@ -69,3 +69,67 @@ Reel A, Alle tre di notte:
 Alle tre di notte è già in mare. Da trent'anni. Video fuori, storia completa su YouTube.
 
 Varianti per il rimando: "Video fuori." / "Il video completo è sul canale." / "La storia intera è su YouTube, link in bio."
+
+## Proposte del 25/10 (chat Copy): titolo, descrizione, miniatura
+
+### Titoli (titolo e scritta in miniatura si completano, non si ripetono)
+1. Sveglia alle 3, mercato alle 8: i pescatori di Marari | Kerala, India
+   EN: Up at 3, at the market by 8: the fishermen of Marari | Kerala, India
+2. Un pesce da 50 chili all'asta sulla spiaggia | Kerala, India
+   EN: A 50-kilo fish auctioned on the beach | Kerala, India
+3. Il mercato del pesce senza tetto né banchi | Kerala, India
+   EN: A fish market with no roof and no stalls | Kerala, India
+4. (attuale) «Un posto in pace»: alle 3 di notte in mare | Kerala, India
+
+Abbinamenti consigliati:
+- Titolo 1 + miniatura C "PESAVA COME UNA PERSONA" (il titolo dà la storia, la miniatura la curiosità). Prima scelta.
+- Titolo 2 + miniatura A "SVEGLIA ALLE 3 DI NOTTE".
+- Titolo 4 (attuale) + miniatura B "PESCE DA 50 CHILI" (la E ripeterebbe il titolo).
+Fatti: "50-55 chili" e "come una persona" li dice Manuel nel video riportando quanto gli hanno detto al mercato.
+
+### Descrizione YouTube (italiano), apertura forte per le prime due righe
+Sveglia alle tre, in mare alle quattro, al mercato alle otto. È la giornata dei pescatori di Marari, in Kerala.
+E al mercato sulla spiaggia, quella mattina, arriva un pesce da 50-55 chili.
+
+Il mercato del pesce di Mararikulam non ha banchi né tetto: le barche arrivano a riva e il pesce si vende all'asta
+direttamente sulla sabbia, poi passa nelle ceste, sulle teste, sulle bilance e riparte nel ghiaccio.
+
+Il giorno prima abbiamo incontrato due pescatori sulla spiaggia: ci hanno raccontato i loro orari, trent'anni di
+lavoro in mare, il secondo lavoro come guida in kayak tra i canali, e com'è vivere in un posto dove induisti,
+cristiani e musulmani convivono in pace. La mattina dopo siamo andati al mercato con il nostro host, e abbiamo chiuso
+con parotta e chai.
+
+Voci Vere racconta le persone e i luoghi lontani dalle cartoline, con il loro consenso e con la loro voce.
+
+(capitoli: quelli sopra, invariati)
+
+#Kerala #India #VociVere
+
+### Descrizione YouTube (inglese)
+Up at three, at sea by four, at the market by eight. This is the day of the fishermen of Marari, in Kerala.
+And that morning, a 50 to 55 kilo fish lands on the beach market.
+
+The Mararikulam fish market has no stalls and no roof: boats come ashore and the catch is auctioned right on the
+sand, then moves into baskets, onto heads, onto scales, and leaves again packed in ice.
+
+The day before, we met two fishermen on the beach. They told us about their hours, thirty years at sea, a second job
+as a kayak guide in the canals, and what it means to live in a place where Hindus, Christians and Muslims live
+together in peace. The next morning we went to the market with our host, and ended with parotta and chai.
+
+Voci Vere tells the stories of people and places far from the postcards, with their consent and in their own words.
+
+(chapters: as above)
+
+#Kerala #India #VociVere
+
+### Miniatura: prove in copioni/mercato_miniature/ (00_tutte.jpg = tutte insieme)
+Base comune: sfondo mare (barche a riva o onda, scurito a sinistra per il testo), Manuel scontornato a destra mentre
+parla al mercato (fotogramma 3:47 del lungo v6), foto della folla o del pesce grande in cornice bianca in basso a sinistra.
+- A, Anton: SVEGLIA / ALLE 3 / DI NOTTE (bianco + giallo), foto folla.
+- B, Bebas Neue: PESCE DA / 50 CHILI / ALL'ALBA, foto del pesce grande.
+- C, Archivo Black: PESAVA / COME UNA / PERSONA, foto del pesce grande.
+- D, Oswald: IL MERCATO / SENZA TETTO / NÉ BANCHI, folla + pesce.
+- E, Anton: ALLE 3 (nero su fascia gialla) / IN MARE, sfondo onda, foto folla.
+- F, Bebas Neue: "UN POSTO / IN PACE" (bianco + oro del logo), folla + pesce.
+Note per la versione finale: lo scontorno è automatico (qualche ciocca va rifinita a mano nell'editor); max 3-4
+parole grandi; il volto resta il punto più grande e luminoso; controllare la leggibilità a misura di telefono.
