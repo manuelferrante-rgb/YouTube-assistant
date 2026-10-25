@@ -13,3 +13,8 @@ Valgono insieme ai limiti di `CLAUDE.md` (niente retorica, niente salvatore bian
 - Ogni video sta in piedi da solo: niente richiami ai video precedenti.
 - Testi di un video in `copioni/<video>_testi.md`: titolo it/en, descrizione it/en, capitoli it/en, didascalie
   dei 3 verticali, idee di miniatura, giorni di uscita.
+- Chiusura della descrizione YouTube (scelta di Manuel, 25/10): "Voci Vere racconta le persone e i luoghi lontani
+  dalle cartoline, dando voce a chi ne ha più bisogno." EN: "Voci Vere tells the stories of people and places far
+  from the postcards, giving a voice to those who need it most." Niente formula sul consenso nella descrizione.
+- Titolo YouTube: il paese ("India") e il gancio nei primi ~40 caratteri, perché l'anteprima taglia lì (25/10,
+  mercato: si leggeva solo fino a "sulla"). Il resto (località, dettagli) va dopo.

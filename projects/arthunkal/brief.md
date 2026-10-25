@@ -79,3 +79,9 @@ subito dopo (già nella nostra mappa), etichette discrete in corsivo nell'angolo
 2:30 di notte") oltre alla scritta grande centrale già decisa per le 2:30.
 Registrazioni dei due riferimenti (con audio, utili alla chat Audio per il sound design) su Drive:
 cartella del video -> montati/riferimenti (treno_kkcreate_a/b.mov, nave_ruhicenet_a/b.mov).
+
+Nota da Insights, 25/10 (approvata da Manuel): per arthunkal 4 verticali, teaser + 3 dopo il lungo (nuova regola
+in CLAUDE.md). Angoli proposti dall'analisi dei competitor, dettagli in `analisi/competitor/pattern.md`:
+teaser "2:30 di notte" con domanda aperta senza l'arrivo; statua scolpita a Milano nel 1647 e il gesuita
+"padre bianco"; un solo pellegrino che risponde a "perché cammini?"; come funziona il rosario ininterrotto
+(Kalavoor -> Arthunkal, 13 km, dal 2002). Ognuno autonomo, 30-60 s, titolo = la curiosità.

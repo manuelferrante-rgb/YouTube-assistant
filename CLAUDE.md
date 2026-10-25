@@ -27,7 +27,7 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Montaggio | lunghi, verticali, grafiche, sottotitoli, minutaggi dei capitoli, consegna su Drive; inserisce i suoni della chat Audio e le chiede gli effetti con `projects/<video>/audio_cue.md` | `projects/<video>/`, `regole/montaggio_documentario.md`, `tools/` |
 | Audio | sound design: effetti (veri, di libreria CC0 o costruiti dal girato), kit sonoro di Voci Vere, pulizia voce, scelta musica, mix | `audio/` (kit e catalogo con licenze), `projects/<video>/audio/`, `regole/audio.md` |
 | Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura | `copioni/<video>_testi.md` |
-| Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
+| Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
 Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01KEDq5A1Lbd16j3T84vmbGj,
 Pianificazione session_01Fqy57TezeLj7Pn7MFpweey, Copy session_01NyVAZXcjQG4pUS9Hfqt7Ga,
@@ -55,11 +55,13 @@ Regole tra chat:
 ## Formati
 - YouTube lungo: 16:9, 1920x1080 (o 4K).
 - Shorts YT e Reel IG: 9:16, 1080x1920, testi nella safe zone. Su Instagram niente orizzontale.
-- Ogni video lungo esce nel fine settimana (orientativamente). Per ognuno 3 Shorts/Reel dallo stesso girato,
-  ognuno autonomo e con un angolo diverso:
+- Ogni video lungo esce nel fine settimana (orientativamente). Per ognuno 4 Shorts/Reel dallo stesso girato
+  (decisione di Manuel, 25/10), ognuno autonomo e con un angolo diverso:
   - 1 teaser prima del lungo: aggancia senza svelare il finale.
-  - 2 dopo il lungo: niente scritte di rimando nel video. Solo un rimando breve nel testo (tipo "video fuori",
+  - 3 dopo il lungo: niente scritte di rimando nel video. Solo un rimando breve nel testo (tipo "video fuori",
     proporre varianti). Link su IG e "video correlato" su YT li mette Manuel.
+  - Ogni verticale è una curiosità completa che sta in piedi da sola (un fatto, una persona o un "come funziona"),
+    non un pezzo del lungo: è lo schema che fa girare gli Shorts nei competitor (`analisi/competitor/pattern.md`).
 - Lingua: tutto in italiano per ora (si rivaluta con Analytics dopo 6-8 lunghi). Voiceover italiano registrato da
   Manuel sul copione che scrivo io. Sottotitoli solo sulle interviste (tradotti in italiano, fedeli), mai sulle
   parti di Manuel o sul voiceover, tranne dove l'audio è rumoroso ma si capisce (allora anche Manuel). Stile: giallo tenue, ombra leggera, font semplice, max 2 righe, in basso nel
@@ -68,7 +70,7 @@ Regole tra chat:
 - Flusso per video: girato su Drive -> analisi e copione voiceover -> Manuel carica registrazioni voiceover e
   musica (YouTube Audio Library) nella stessa cartella -> montaggio e consegna.
 - Titolo e descrizione YT anche in inglese (traduzioni YouTube).
-- Consegna: lungo 16:9 + 3 verticali + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
+- Consegna: lungo 16:9 + 4 verticali (teaser + 3 dopo) + titoli, descrizioni, didascalie, giorni di uscita suggeriti, analisi.
 - Lunghi a CAPITOLI (dal 22/10): consegnare l'elenco dei minutaggi esatti dal montaggio per la descrizione YT
   (0:00 primo, min 3 capitoli, ognuno >= 10 s), it+en. Solo il titolo del capitolo (niente "Parte 1").
   NIENTE scritte dei capitoli nel montato.
