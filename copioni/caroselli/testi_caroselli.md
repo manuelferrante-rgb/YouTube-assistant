@@ -3,7 +3,10 @@ Formato 4:5, 1080x1350, 8 immagini. File: copioni/caroselli/mercato/01-08.jpg e 
 Rigenerare: `python3 copioni/caroselli/carosello.py` (foto in work/car/, tolte dal lungo v6 e dal girato su Drive).
 Schema: 1 copertina-gancio con "Scorri", 6 slide con un fatto ciascuna (titolo di 2-5 parole + una riga),
 8 domanda nei commenti + video uscito. Logo in alto a sinistra, numero della slide in alto a destra.
-Da rivedere quando Insights manda gli schemi dei caroselli dei competitor.
+Aggiornato con gli schemi di Insights (analisi/competitor/caroselli.md, 25/10): testo e logo dentro il quadrato
+centrale 1080x1080 (YouTube ritaglia i post a quadrato), slide 2 che regge da sola, ultima slide con una domanda
+specifica. Alternativa proposta da Insights, da far scegliere a Manuel: schema Progetto Happiness (fotogrammi veri
+con le frasi vere delle persone come sottotitoli, CTA solo in didascalia).
 
 ## Mercato (dopo l'uscita del lungo, dom 1/11)
 Posizione IG/YT: Marari Beach, Mararikulam (Alappuzha, Kerala)
@@ -24,9 +27,9 @@ Didascalia IG:
 13 km pregando, senza mai fermarsi 🇮🇳
 Si parte a mezzanotte dal santuario di Kreupasanam, a Kalavoor, e si cammina lungo la costa del Kerala fino
 alla basilica di Arthunkal, recitando un rosario che non si interrompe mai. Noi c'eravamo dalle 2:30.
-Tu l'avresti fatto? Scrivi SÌ o NO nei commenti.
+Cammineresti 13 km di notte pregando? Scrivi SÌ o NO nei commenti.
 Il video completo è uscito sul canale, link in bio.
 #kerala #india #vocivere #arthunkal #pellegrinaggio
 Post YouTube (scheda Community):
 13 km pregando, senza mai fermarsi 🇮🇳 Di notte, sulla costa del Kerala, fino alla basilica di Arthunkal.
-Tu l'avresti fatto? Scrivi SÌ o NO nei commenti. Il video completo è sul canale.
+Cammineresti 13 km di notte pregando? Scrivi SÌ o NO nei commenti. Il video completo è sul canale.

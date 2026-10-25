@@ -4,6 +4,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance, ImageFilter
 import numpy as np
 W,H=1080,1350
+SAFE=135  # YouTube ritaglia i post a quadrato: testo e logo dentro il quadrato centrale 1080x1080
 BEBAS='/root/fonts/bebas-neue-latin-400-normal.woff'
 INTER='/usr/share/fonts/opentype/inter/Inter-SemiBold.otf'
 INTERB='/usr/share/fonts/opentype/inter/Inter-Bold.otf'
@@ -17,7 +18,7 @@ def crop45(path,cx=.5,cy=.5,zoom=1.0,maxh=1.0):
 
 def shade(im,top=0.35,bottom=0.85):
     g=np.zeros((H,W),np.float32); y=np.arange(H)[:,None]/H
-    g+=np.clip((0.22-y)/0.22,0,1)*top            # in alto per il logo
+    g+=np.clip((0.30-y)/0.30,0,1)*top            # in alto per il logo
     g+=np.clip((y-0.42)/0.58,0,1)**1.2*bottom    # in basso per il testo
     m=Image.fromarray((np.clip(g,0,1)*255).astype('uint8'))
     return Image.composite(Image.new('RGB',(W,H),(0,0,0)),im,m)
@@ -49,15 +50,15 @@ def slide(out,photo,title,body='',n=None,tot=None,cover=False,crop=(.5,.5,1.0,1.
     im=(shade_top(im) if top else shade(im,0.45,0.9 if body or cover else 0.75)).convert('RGBA')
     d=ImageDraw.Draw(im); M=70
     l=Image.open(LOGO).convert('RGBA'); l=l.crop(l.getbbox()); lw=230 if cover else 170
-    l=l.resize((lw,int(l.height*lw/l.width)),Image.LANCZOS); im.alpha_composite(l,(M-6,56))
+    l=l.resize((lw,int(l.height*lw/l.width)),Image.LANCZOS); im.alpha_composite(l,(M-6,SAFE+20))
     if n and not cover:
-        f=ImageFont.truetype(INTER,30); t=f'{n}/{tot}'; d.text((W-M-d.textlength(t,font=f),66),t,font=f,fill=(255,255,255,210))
+        f=ImageFont.truetype(INTER,30); t=f'{n}/{tot}'; d.text((W-M-d.textlength(t,font=f),SAFE+30),t,font=f,fill=(255,255,255,210))
     tsize=150 if cover else 112
     ft=ImageFont.truetype(BEBAS,tsize); fb=ImageFont.truetype(INTER,40 if not cover else 42); fk=ImageFont.truetype(INTERB,32)
     tl=wrap(d,title,ft,W-2*M); bl=wrap(d,body,fb,W-2*M) if body else []
     th=len(tl)*int(tsize*0.92); bh=len(bl)*54
-    y=H-M-(70 if cover else 0)-bh-(28 if bl else 0)-th-(56 if kicker else 0)
-    if top: y=56+int(lw*l.height/l.width)+50
+    y=H-SAFE-40-(70 if cover else 0)-bh-(28 if bl else 0)-th-(56 if kicker else 0)
+    if top: y=SAFE+20+int(lw*l.height/l.width)+50
     if kicker:
         kw=d.textlength(kicker,font=fk); d.rounded_rectangle((M,y,M+kw+32,y+46),radius=8,fill=GOLD); d.text((M+16,y+5),kicker,font=fk,fill=WHITE); y+=62
     for i,t in enumerate(tl):
@@ -69,7 +70,7 @@ def slide(out,photo,title,body='',n=None,tot=None,cover=False,crop=(.5,.5,1.0,1.
     for t in bl:
         yy=y; drop(im,lambda dd,c,o,t=t,yy=yy: dd.text((M+o//2,yy+o//2),t,font=fb,fill=c or WHITE),6,170); y+=54
     if cover:
-        f=ImageFont.truetype(INTERB,34); t='Scorri  →'; d.text((W-M-d.textlength(t,font=f),H-M-40),t,font=f,fill=YEL)
+        f=ImageFont.truetype(INTERB,34); t='Scorri  →'; d.text((W-M-d.textlength(t,font=f),H-SAFE-60),t,font=f,fill=YEL)
     im.convert('RGB').save(out,quality=92)
 
 def build(name,slides):
@@ -115,6 +116,6 @@ build('arthunkal',[
       body='L\'arrivo, la mattina, davanti alla basilica di Sant\'Andrea.'),
  dict(photo=C+'a/a_090825_0298.jpg',crop=(.47,.5,1.0,1.0),title='Un pezzo d\'Italia',hl=YEL,
       body='La chiesa la ricostruisce nel 1584 un gesuita italiano, il «padre bianco». La statua di San Sebastiano arriva da Milano nel 1647.'),
- dict(photo=C+'a/a_093557_0316.jpg',crop=(.45,.5,1.0,1.0),title='Tu l\'avresti fatto?',hl=YEL,
+ dict(photo=C+'a/a_093557_0316.jpg',crop=(.45,.5,1.0,1.0),title='Cammineresti 13 km di notte pregando?',hl=YEL,
       body='Scrivi SÌ o NO nei commenti.\nIl video completo è uscito sul canale.'),
 ])
