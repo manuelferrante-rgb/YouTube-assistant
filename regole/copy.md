@@ -35,3 +35,10 @@ TESTI DEI VERTICALI (4 per lungo: 1 teaser prima, 3 dopo). Per ognuno Copy conse
 - Descrizione dello Short YT: 1-2 righe che raccontano la storia e chiudono su una domanda (schema di Harald Baldr).
 - Angoli che rendono: un "come funziona" spiegato da dentro, una persona del posto protagonista, il legame con
   l'Italia. Da evitare: "il più povero/pericoloso/sporco", il tono da beneficenza, i superlativi non verificabili.
+
+Ruolo di Copy allargato (Manuel, 25/10):
+- Testi a schermo per Montaggio, nella sezione "PER MONTAGGIO" di `copioni/<video>_testi.md`: etichette sui B-roll
+  del lungo (luogo/ora), testi delle grafiche, e per ogni verticale gancio dei primi 2 s + scritte sulle immagini +
+  quale audio già registrato usare. Si scrivono sul girato e sul VO che ci sono, non su cose da girare.
+- Per i prossimi video, prima delle riprese: le domande da fare alle persone e la parte di storia da dire in camera
+  (fatti con fonti dalla chat Pianificazione), nella sezione "DA DIRE E DA CHIEDERE" dello stesso file.
