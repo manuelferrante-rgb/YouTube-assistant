@@ -71,3 +71,11 @@ più forti (salita caotica sul treno, interni); un'inquadratura-simbolo del luog
 (il cartello del treno); poi la mappa del percorso e si torna a lei che cammina. Da prendere: ritmo, promessa
 detta in camera, inquadratura-simbolo, mappa subito dopo il gancio. Da NON prendere: il treno 3D generato
 (niente scene IA), la mappa satellitare (la nostra carta nautica è già approvata).
+Secondo riferimento per l'INTRO (25/10): "30 Days on a Death Ship" (@ruhicenetdocs), primi ~50 s. Apre sul momento
+più spettacolare (onde che si abbattono sulla prua), poi la persona dentro la scena, poi la tensione con le persone
+(equipaggio), poi il GLOBO che individua il luogo, poi stacchi veloci con piccole etichette in corsivo nell'angolo
+che dicono cosa si vede ("Emergency Drill"). Da prendere: apertura sul colpo d'occhio più forte (la folla), globo
+subito dopo (già nella nostra mappa), etichette discrete in corsivo nell'angolo per luoghi/ore (es. "Kalavoor,
+2:30 di notte") oltre alla scritta grande centrale già decisa per le 2:30.
+Registrazioni dei due riferimenti (con audio, utili alla chat Audio per il sound design) su Drive:
+cartella del video -> montati/riferimenti (treno_kkcreate_a/b.mov, nave_ruhicenet_a/b.mov).
