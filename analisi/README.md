@@ -8,3 +8,14 @@ Dati che Manuel manda (screenshot o esportazioni di YouTube Studio e Instagram) 
 - `analisi/lezioni.md`: lezioni confermate da più video. Quando una lezione è confermata, diventa una regola nel
   file dell'area (`regole/montaggio_documentario.md`, `regole/copy.md`, `regole/pianificazione.md`).
 - Da rivalutare dopo 6-8 lunghi: lingua (solo italiano o anche inglese), durata, giorno di uscita.
+
+## Competitor (dal 25/10)
+Analisi di canali simili per lunghi, Shorts e Reel, per capire cosa li fa girare e portarlo nei nostri formati
+brevi che rimandano al lungo. Sempre dentro i limiti di Voci Vere (niente sofferenza per engagement, niente
+salvatore bianco): di un competitor si prende la struttura (hook, ritmo, packaging), non il tono se è sbagliato.
+
+- `analisi/competitor/elenco.md`: canali seguiti, perché, numeri pubblici (iscritti, media visualizzazioni).
+- `analisi/competitor/<canale>.md`: video migliori e peggiori a confronto, hook dei primi 3 s, durata, titolo,
+  miniatura, come i brevi portano al lungo.
+- `analisi/competitor/pattern.md`: schemi ricorrenti nei contenuti che vanno meglio, con esempi. Quelli che
+  funzionano anche nei nostri dati diventano lezioni in `analisi/lezioni.md` e poi regole.

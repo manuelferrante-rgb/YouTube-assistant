@@ -27,7 +27,7 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Montaggio | lunghi, verticali, grafiche, sottotitoli, minutaggi dei capitoli, consegna su Drive; inserisce i suoni della chat Audio e le chiede gli effetti con `projects/<video>/audio_cue.md` | `projects/<video>/`, `regole/montaggio_documentario.md`, `tools/` |
 | Audio | sound design: effetti (veri, di libreria CC0 o costruiti dal girato), kit sonoro di Voci Vere, pulizia voce, scelta musica, mix | `audio/` (kit e catalogo con licenze), `projects/<video>/audio/`, `regole/audio.md` |
 | Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura | `copioni/<video>_testi.md` |
-| Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
+| Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
 Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01KEDq5A1Lbd16j3T84vmbGj,
 Pianificazione session_01Fqy57TezeLj7Pn7MFpweey, Copy session_01NyVAZXcjQG4pUS9Hfqt7Ga,
