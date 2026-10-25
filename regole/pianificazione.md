@@ -14,3 +14,6 @@
   e 3 dopo il lungo, in 3 slot distinti nei giorni seguenti. Ogni lista riprese prevede materiale per 4 angoli.
 - Idee di contenuto: partire dagli schemi che rendono di più in `analisi/competitor/pattern.md` ("come funziona"
   e legame con l'Italia).
+- Divisione con Copy (dal 25/10, decisione di Manuel): per ogni video nuovo apro `piano/<video>.md` con i fatti
+  verificati e le fonti, la lista riprese e il calendario. Le domande alle persone e la parte di storia da dire in
+  camera le scrive Copy da quei fatti, in `copioni/<video>_testi.md` ("DA DIRE E DA CHIEDERE"). Io non le duplico.
