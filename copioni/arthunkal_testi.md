@@ -120,7 +120,7 @@ sulla spiaggia per 13 km, fino alla basilica di Arthunkal.
 
 Noi ci siamo dalle 2:30 di notte. Al buio ci sono già le bancarelle di tè e acqua, all'alba la folla riempie il
 bagnasciuga. A dare una mano alla festa cattolica ci sono anche volontari induisti. Uno degli organizzatori ci
-racconta come è nato il cammino, e quanti sono.
+racconta come è nato il cammino; Elizabeth, 26 anni, lo fa per la prima volta.
 
 Ad Arthunkal la chiesa la ricostruisce nel 1584 un gesuita italiano, padre Giacomo Fenicio: qui lo chiamano
 ancora Veluthachan, il padre bianco. La statua di San Sebastiano arriva da Milano nel 1647.
@@ -128,7 +128,16 @@ ancora Veluthachan, il padre bianco. La statua di San Sebastiano arriva da Milan
 Voci Vere racconta le persone e i luoghi lontani dalle cartoline, dando voce a chi ne ha più bisogno.
 
 Capitoli
-(da projects/arthunkal/capitoli.md)
+0:00 Prima dell'alba
+0:33 Il giorno prima
+1:09 2:30 di notte
+1:36 L'alba sulla spiaggia
+2:07 Chi cammina
+2:56 Chi non cammina
+3:31 In strada
+3:51 L'arrivo ad Arthunkal
+4:25 La storia
+4:56 Il ritorno
 
 #Kerala #India #VociVere
 
@@ -137,8 +146,8 @@ Midnight, Kalavoor, on the coast of Kerala. A rosary that never stops starts her
 along the beach for 13 km, all the way to the basilica of Arthunkal.
 
 We joined at 2:30 a.m. In the dark there are already stalls handing out tea and water; at dawn the crowd fills the
-shoreline. Hindu volunteers help out at the Catholic feast too. One of the organisers tells us how the walk began,
-and how many people come.
+shoreline. Hindu volunteers help out at the Catholic feast too. One of the organisers tells us how the walk began;
+Elizabeth, 26, is doing it for the first time.
 
 In Arthunkal the church was rebuilt in 1584 by an Italian Jesuit, Father Giacomo Fenicio: locals still call him
 Veluthachan, the white father. The statue of Saint Sebastian arrived from Milan in 1647.
@@ -146,7 +155,16 @@ Veluthachan, the white father. The statue of Saint Sebastian arrived from Milan 
 Voci Vere tells the stories of people and places far from the postcards, giving a voice to those who need it most.
 
 Chapters
-(from projects/arthunkal/capitoli.md)
+0:00 Before dawn
+0:33 The day before
+1:09 2:30 a.m.
+1:36 Dawn on the beach
+2:07 Those who walk
+2:56 Those who don't walk
+3:31 On the road
+3:51 Arriving in Arthunkal
+4:25 The history
+4:56 The way back
 
 #Kerala #India #VociVere
 
@@ -170,3 +188,12 @@ Chapters
   le etichette "Kreupasanam Akhanda Japamala" (sul rosario, quando la voce dice il nome) e "Marari, 7 del mattino".
   Il 2002 nel lungo lo dice Manuel in camera all'alba, non è nella linea del tempo.
 - Minutaggi dei capitoli: projects/arthunkal/capitoli.md.
+
+## Sottotitoli YouTube del lungo (Copy, 25/10)
+projects/arthunkal/sottotitoli/VociVere_arthunkal_long.it.srt e .en.srt (78 righe, tempi del montato v2 5:41,
+dall'anteprima; stessi minutaggi del 4K finale). Su Drive: montati/arthunkal/sottotitoli/.
+Da verificare (audio coperto, testo ricostruito): 85-87 s "Per chilometri", 195-206 s sosta e volontari induisti,
+243 s "ci siamo arrivati", 258 s "Adesso che è finito tutto il pellegrinaggio".
+ATTENZIONE contenuto (per Manuel e Montaggio): a 0:42 Manuel in camera dice "Milioni di persone radunate,
+percorrendo decine di chilometri lungo la costa". Le fonti dicono ~100.000 (2025), l'organizzatore 400.000, il
+percorso è 13-14 km. I sottotitoli restano fedeli all'audio, ma la frase andrebbe tagliata o corretta nel montato.
