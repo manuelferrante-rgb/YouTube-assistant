@@ -181,6 +181,10 @@ class Timeline:
             T = T or d
             z = f"({z0}+({z1}-{z0})*(1-pow(1-min(1\\,t/{T})\\,3)))" if T < d else f"({z0}+({z1}-{z0})*t/{d:.3f})"
             f.append(f"scale=w='trunc({W}*{z}/2)*2':h='trunc({H}*{z}/2)*2':eval=frame:flags=bicubic,crop={W}:{H}")
+        if "push_out" in fx:   # (z1, T): spinta che accelera negli ultimi T secondi (verso il nero)
+            z1, T = fx["push_out"]
+            z = f"(1+{z1 - 1}*pow(max(0\\,(t-{d - T:.3f})/{T})\\,2))"
+            f.append(f"scale=w='trunc({W}*{z}/2)*2':h='trunc({H}*{z}/2)*2':eval=frame:flags=bicubic,crop={W}:{H}")
         if "flash" in fx:
             f.append(f"eq=brightness='0.3*max(0\\,1-t/{fx['flash']})':contrast='1-0.25*max(0\\,1-t/{fx['flash']})':eval=frame")
         if "black_in" in fx:

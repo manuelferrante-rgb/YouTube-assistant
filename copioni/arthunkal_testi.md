@@ -155,3 +155,18 @@ Chapters
   titolo, descrizione it/en con capitoli (projects/arthunkal/capitoli.md) e miniatura.
 - Uscite: le decide il calendario (`piano/calendario.md`); proposta: teaser giovedì, lungo nel fine settimana
   dopo il mercato (sabato 7 o domenica 8/11), poi i 3 verticali distanziati di 2 giorni.
+
+## Nota da Montaggio, 25/10 (scritte adattate all'audio)
+- V3: frase scelta (pellegrina sulla strada verso Arthunkal, risponde a "Che cosa significa per te?"):
+  "È fede, è credere. Lì succedono tanti miracoli. Chi partecipa ci trova qualcosa. Un po' di felicità."
+  Prima, alla domanda "È la prima volta per te?", risponde "No."
+- V1: tolta la scritta "13 km sulla spiaggia, senza fermarsi": la dice Manuel a voce ("13 chilometri lungo la
+  costa del Kerala, pregando il rosario senza mai fermarsi"), con i sottotitoli. Le altre scritte ci sono.
+- V2: "1584: un gesuita italiano ricostruisce la chiesa" e "padre bianco" non come scritte: li dice Manuel davanti
+  alla basilica (sottotitoli parola per parola) mentre scorre la linea del tempo con 1584 e 1647.
+- V4: "Kalavoor -> Arthunkal" è nella mappa; "2002: la prima volta, poche centinaia" lo dice Manuel a voce,
+  quindi niente scritta. "Si parte di notte" c'è.
+- Lungo: nessuna clip girata a Kalavoor, quindi niente etichetta "Kalavoor, santuario di Kreupasanam". Aggiunte
+  le etichette "Kreupasanam Akhanda Japamala" (sul rosario, quando la voce dice il nome) e "Marari, 7 del mattino".
+  Il 2002 nel lungo lo dice Manuel in camera all'alba, non è nella linea del tempo.
+- Minutaggi dei capitoli: projects/arthunkal/capitoli.md.

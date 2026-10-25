@@ -2,8 +2,8 @@
 """Effetti sonori della mappa (tools/route_map.py, 8 s): proposta da far approvare a Manuel.
 
     python3 projects/arthunkal/map_sfx.py out.wav [--t-a 4.1 --t-b 6.0]
-Versione 2 (indicazioni di Manuel): un solo whoosh avvicinandosi all'India, tick del contachilometri, ding leggero
-all'arrivo. Niente altro.
+Versione 3: stessi tempi, suoni veri del kit della chat Audio (audio/kit). Un solo whoosh avvicinandosi all'India,
+tick del contachilometri (fino a "tredici" con --t-km), ding leggero all'arrivo.
 """
 import argparse, os, subprocess, sys, wave
 import numpy as np
@@ -47,6 +47,7 @@ def ding(d=1.6):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out"); ap.add_argument("--t-a", type=float, default=4.1); ap.add_argument("--t-b", type=float, default=6.0)
+    ap.add_argument("--t-km", type=float, default=None)
     ap.add_argument("--dur", type=float, default=8.0); ap.add_argument("--km", type=int, default=13)
     a = ap.parse_args()
     out = np.zeros(int(a.dur * SR) + SR)
@@ -54,16 +55,19 @@ def main():
     def put(x, t, g):
         i = int(t * SR); out[i:i + len(x)] += x[:len(out) - i] * g
 
-    put(load(sfx_file("whoosh")), 0.75, 0.30)             # unico whoosh: ci si avvicina all'India
+    # suoni veri del kit della chat Audio (audio/kit): whoosh, tre click alternati, ding
+    kit = lambda n: load(f"{ROOT}/audio/kit/{n}.wav")
+    put(kit("whoosh_mappa"), 0.55, 0.35)                  # unico whoosh: ci si avvicina all'India
     tA, tB = a.t_a, a.t_b
-    tick = load(sfx_file("tick"))
+    ticks = [kit(f"tick_km_{k}") for k in (1, 2, 3)]
+    rng = np.random.default_rng(13)
     ease3 = lambda u: 4 * u ** 3 if u < 0.5 else 1 - (-2 * u + 2) ** 3 / 2
     us = np.linspace(0, 1, 2000)
-    for km in range(1, a.km + 1):                         # contachilometri: un tick per ogni km
+    for km in range(1, a.km + 1):                         # contachilometri: un tick per km, a tempo col contatore
         u = km / a.km
-        t = tA + (tB - tA) * us[np.searchsorted([ease3(v) for v in us], u - 0.5 / a.km)]
-        put(tick, t, 0.10 + 0.06 * (km == a.km))
-    put(ding(), tB, 0.22)                                 # arrivo ad Arthunkal: ding leggero
+        t = tA + ((a.t_km or tB) - tA) * us[np.searchsorted([ease3(v) for v in us], u - 0.5 / a.km)]
+        put(ticks[(km - 1) % 3], t, (0.16 + 0.08 * (km == a.km)) * 10 ** (rng.uniform(-1.5, 1.5) / 20))
+    put(kit("ding_mappa_provvisorio"), tB, 0.5)           # arrivo ad Arthunkal: ding leggero
     out = out[:int(a.dur * SR)]
     out *= 0.89 / max(np.abs(out).max(), 1e-9) if np.abs(out).max() > 0.89 else 1.0
     with wave.open(a.out, "wb") as w:
