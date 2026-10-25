@@ -151,6 +151,7 @@ Chapters
 #Kerala #India #VociVere
 
 ## Da fare (Copy)
-- Titolo, descrizione it/en, capitoli (dai minutaggi del montato), miniatura del lungo: dopo il montato.
+- Appena il montato è finito: trascrivere, sottotitoli .srt it + en caricati su Drive (montati/arthunkal), poi
+  titolo, descrizione it/en con capitoli (projects/arthunkal/capitoli.md) e miniatura.
 - Uscite: le decide il calendario (`piano/calendario.md`); proposta: teaser giovedì, lungo nel fine settimana
   dopo il mercato (sabato 7 o domenica 8/11), poi i 3 verticali distanziati di 2 giorni.
