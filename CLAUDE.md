@@ -29,6 +29,10 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura | `copioni/<video>_testi.md` |
 | Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
+Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01KEDq5A1Lbd16j3T84vmbGj,
+Pianificazione session_01Fqy57TezeLj7Pn7MFpweey, Copy session_01NyVAZXcjQG4pUS9Hfqt7Ga,
+Insights session_014MyMgDdVNV6hNQ62MjZ3US, Audio session_01JWXQfdSqnvMjMDdAY1qUHS.
+
 Regole tra chat:
 - Ogni video ha un nome breve uguale ovunque (es. `arthunkal`): `projects/arthunkal/`, `copioni/arthunkal_testi.md`.
 - Stato di ogni video (pianificato, girato, in montaggio, consegnato, pubblicato, data) in `piano/calendario.md`:
