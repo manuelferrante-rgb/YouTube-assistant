@@ -3,10 +3,10 @@
 Richiesta di Copy (caroselli IG + post YouTube su mercato e arthunkal).
 
 ## Cosa si è potuto vedere
-- Instagram è bloccato dalla rete di questo ambiente: i caroselli IG dei competitor (copertine, testo per slide,
-  CTA) NON si vedono. Servono screenshot da Manuel. Quello che segue sotto "Instagram" è prassi nota, non un dato.
-- Post della scheda "Post" di YouTube: testo, numero di immagini, like e commenti si vedono. Le immagini no
-  (dominio delle immagini bloccato), quindi niente analisi delle copertine.
+- Instagram: il dominio ora è raggiungibile (Manuel, 25/10), ma senza un account collegato ogni pagina rimanda al
+  login e l'API risponde "require_login". I caroselli IG dei competitor non si vedono: servono screenshot da Manuel.
+- Post della scheda "Post" di YouTube: si vedono testo, immagini (da yt3.ggpht.com, sbloccato il 25/10), like e
+  commenti.
 
 ## Dati dai post YouTube
 - I caroselli sono rari: su 10 post recenti per canale, Progetto Happiness ne ha 1, Balini 1, Baldr 3-4,
@@ -30,11 +30,28 @@ Richiesta di Copy (caroselli IG + post YouTube su mercato e arthunkal).
 - Drew Binsky: i post personali ("Home until October" 22 K like) fanno 2-4 volte gli annunci "nuovo video" (5-10 K).
   L'annuncio da solo è il formato più debole.
 
+## Come sono fatte le immagini (visto il 25/10)
+- Progetto Happiness, crioconservazione: 10 immagini quadrate 1080x1080.
+  - Slide 1: locandina da film. Titolo enorme in 2 righe ("FROZEN TO LIVE FOREVER"), il protagonista al centro,
+    crediti piccoli in basso, logo piccolo nell'angolo.
+  - Slide 2-10: ogni quadrato contiene DUE fotogrammi 16:9 del documentario uno sopra l'altro, ciascuno con una
+    riga di dialogo come un sottotitolo (5-9 parole). Domande in giallo, risposte in bianco: il carosello è una
+    conversazione a botta e risposta ("Don't you think it's death..." / "...that gives life meaning?"). Tutto
+    girato loro, nessuna grafica, nessuna lista.
+  - Ultima slide: chiude su una battuta forte del dialogo ("...but only as happy as we are now."). Niente CTA
+    nell'immagine: la CTA sta nella didascalia.
+- Balini (Cina, 3,9 K like): 3 foto dal telefono senza testo (selfie davanti ai grattacieli e al tempio, piatto
+  di street food, tempio). Formato 3:4. Effetto diario di viaggio, la didascalia fa tutto il lavoro.
+- Harald Baldr (chicha, 1,3 K like): 2 foto 4:3 senza testo, lui e la signora del birrificio con i bicchieri in
+  mano. La persona del posto è nella foto, la storia è nella didascalia.
+
 ## Indicazioni per i nostri caroselli (7-8 immagini)
 - Copertina: la foto più forte con una persona o un'azione, più una frase-gancio di 3-7 parole, un fatto o una
   domanda concreta. Stesso schema delle scritte di gancio dei verticali (`regole/copy.md`). Logo piccolo,
   non al centro.
-- Slide interne: una foto e una riga per slide, al massimo circa 15 parole. Una sequenza che racconta: luogo,
+- Slide interne: lo schema Progetto Happiness è perfetto per noi: fotogrammi veri del girato con le frasi vere
+  delle persone come sottotitoli (giallo tenue, come nei nostri sottotitoli). Una frase per fotogramma, 5-12
+  parole, due fotogrammi per slide oppure uno in 4:5. Una sequenza che racconta: luogo,
   persone, come funziona, momento forte. I numeri vanno bene se verificati o attribuiti ("100.000 persone
   secondo...", "13 km", "1647"). Liste e numerazioni non compaiono nei dati dei competitor: meglio una storia
   in sequenza.
