@@ -10,3 +10,10 @@ Tutti i file sono anche su Drive: cartella del video -> montati/arthunkal/audio/
   se cambiano i tempi (il 13 deve cadere su "Tredici").
 - Il ding è PROVVISORIO (nel girato non ci sono campane): verrà sostituito.
 Anteprime per Manuel: anteprima_mappa_suoni_veri.mp4, anteprima_transizione_zoom_nero.mp4 (stessa cartella Drive).
+
+Musica originale (bozza 25/10, `audio/musica/compose.py`), su Drive in montati/arthunkal/audio/:
+- `musica_bozza_cammino.wav` (2:00): cammino, interviste, cibo. Ci sono le corde pizzicate che danno il passo.
+- `musica_bozza_storia.wav` (1:04): mappa e linea del tempo, piano rado.
+- `musica_bozza_arrivo.wav` (1:04): arrivo alla basilica e finale.
+Sono bozze: appena c'è il montato le taglio a misura sulle scene e faccio il mix. Se nel frattempo le metti nel montato,
+tienile basse (circa -22/-26 dB sotto la voce) e mai sotto le interviste con voci nel girato.
