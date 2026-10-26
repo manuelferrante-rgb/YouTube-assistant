@@ -13,7 +13,7 @@ animati parola per parola (parola corrente in oro), non troppo grandi; titoli an
     r.render(out)
 """
 import os
-from doc_render import Timeline, ts
+from doc_render import Timeline, ts, dur_of
 
 GOLD, WHITE = "&H004B8AB6&", "&H00FFFFFF&"
 
@@ -62,6 +62,9 @@ class Reel:
         cuts: pause interne da togliere [(da, a)] in tempi della sorgente (la voce diventa più tratti attaccati)."""
         sp = speed or self.SP
         t0 = self.tl.t
+        # margini per non mangiare le parole: 0.06 s prima, 0.12 s dopo (anche ai bordi delle pause tolte)
+        a, b = max(0.0, a - 0.06), min(b + 0.12, dur_of(src) - 0.05)
+        cuts = [(ca + 0.12, cb - 0.06) for ca, cb in cuts if cb - ca > 0.3]
         ranges, cur = [], a
         for ca, cb in sorted(cuts):
             ranges.append((cur, ca)); cur = cb
@@ -88,6 +91,7 @@ class Reel:
         block: [(a, b, italiano, originale)] per le battute in altra lingua: italiano al centro, originale in basso."""
         sp = speed or self.SP
         t0 = self.tl.t
+        a, b = max(0.0, a - 0.06), min(b + 0.12, dur_of(src) - 0.05)   # margini sulle parole
         self.tl.speech(src, [(a, b)], speed=sp, cx=self.CX if cx is None else cx,
                        fx=fx or dict(zoom=(1.06, 1.0, 0.3)))
         self.words(t0, a, words, sp)
@@ -151,6 +155,7 @@ class Reel:
         return p
 
     def render(self, out, crf=18, preset="medium"):
+        self.tl.fix_freezes()
         self.tl.ass_override = self.ass(self.tl.t)
         print(f"== reel: {len(self.tl.shots)} inquadrature, {self.tl.t:.1f} s")
         self.tl.render(out, crf=crf, preset=preset)

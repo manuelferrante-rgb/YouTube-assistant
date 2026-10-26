@@ -70,6 +70,8 @@ def piece(name, src, ranges, speed=1.1, gap=0.2):
 
 
 def ambient(src, a, d, name=None):
+    if has_voice(src, a, a + d):                                    # mai voci sotto altre voci o sotto la mappa
+        print(f"ATTENZIONE ambiente con parlato: {os.path.basename(src)} {a:.1f}-{a + d:.1f}", flush=True)
     out = f"{OUT}/amb_{os.path.basename(src)[:30]}_{a:.2f}_{d:.2f}.wav"
     if not os.path.exists(out):
         run(["ffmpeg", "-v", "error", "-y", "-ss", f"{max(0, a):.3f}", "-t", f"{d:.3f}", "-i", src, "-vn", "-ac", "2",
@@ -84,6 +86,15 @@ def aud(name, fallback=None):
         if os.path.exists(p):
             return p
     return fallback
+
+
+_DUR = {}
+
+
+def clip_dur(src):
+    if src not in _DUR:
+        _DUR[src] = dur_of(src)
+    return _DUR[src]
 
 
 class Edit:
@@ -120,7 +131,14 @@ class Edit:
         """Parlato in camera tagliato sulle pause; cover = {indice: (clip, a, gain)} copre quel tratto con un'altra
         immagine mentre la voce continua (salti di montaggio nascosti). subs in tempi della sorgente."""
         cover = cover or {}
+        D = clip_dur(src)
+        # margini per non mangiare le parole: 0.06 s prima e 0.12 s dopo (senza sovrapporre il tratto successivo)
+        padded = []
         for i, (a, b) in enumerate(ranges):
+            nxt = ranges[i + 1][0] if i + 1 < len(ranges) else D
+            prv = padded[-1][1] if padded else 0.0
+            padded.append((max(prv, a - 0.06, 0.0), min(b + 0.12, nxt, D - 0.05)))
+        for i, (a, b) in enumerate(padded):
             t0 = self.t
             if i in cover:
                 src2, a2 = cover[i][:2]
@@ -209,7 +227,21 @@ class Edit:
                 f.write(f"Dialogue: {layer},{ts(a)},{ts(b)},{st},,0,0,0,,{txt}\n")
         return p
 
+    def finalize(self, xin=0.3):
+        """Prima del render: niente fermo immagine (inizio anticipato o leggero rallentatore se la clip è corta)
+        e dissolvenze brevi tra immagini senza parlato (mai sul parlato in camera, sul nero o sulle grafiche)."""
+        GFXLIKE = lambda sh: sh["src"].startswith(GFX) or sh["src"] == self.black or "sigla" in sh["src"]
+        self.tl.fix_freezes()
+        for prev, sh in zip(self.tl.shots, self.tl.shots[1:]):
+            if prev["norm"] or sh["norm"] or GFXLIKE(prev) or GFXLIKE(sh):
+                continue
+            if "black_out" in (prev.get("fx") or {}) or "black_in" in (sh.get("fx") or {}):
+                continue
+            if sh["d"] > 2 * xin and prev["d"] > xin:
+                sh["xin"] = xin
+
     def render(self, out):
+        self.finalize()
         self.tl.ass_override = self.ass()
         print(f"== {os.path.basename(out)}: {len(self.tl.shots)} inquadrature, {self.t:.1f} s", flush=True)
         if PREVIEW:
@@ -251,33 +283,39 @@ def VO(name, ranges, src=VO1):
 
 
 # ================= LUNGO =================
+WAVES = (M23("140234"), 0.5)                                         # onde del 23/10: ambiente senza voci
+
+
 def long_video(W, H):
-    """Lungo v2 (25/10, Manuel lo vuole più lungo): tutto il girato utile, ~7-8 minuti, niente riempitivi."""
+    """Lungo v3 (26/10, note di Manuel): gancio dei primi 30 s in linea con titolo e miniatura (13 km di rosario,
+    la statua da Milano), tutte le interviste complete con la domanda e B-roll in mezzo, grafiche a pezzi sulla
+    voce, dissolvenze tra le immagini senza parlato, niente fermo immagine, niente voci sotto la mappa."""
     e = Edit(W, H, "long")
     tl = e.tl
 
-    # 1. GANCIO: la spiaggia piena all'alba, la sua voce; raffica dei momenti più forti; poi i numeri
-    e.say(C("072327"), [(0.75, 4.45)], cx=0.5)                     # "Sono le sette del mattino... da mezzanotte."
-    tl.sfx(e.t - 0.2, ambient(C("072504"), 0.0, 6.4), 0.7)          # letto di folla sotto la raffica
-    for src, a, d, g, gr in [(C("091255"), 0.35, 1.3, 0.5, DEF), (C("075747"), 1.0, 1.0, 0.0, DEF),
-                             (C("023744"), 0.3, 1.1, 0.4, NIGHT), (C("075231"), 2.0, 1.0, 0.4, DEF),
-                             (C("090733"), 4.0, 1.4, 0.5, DEF)]:
-        e.b(src, a, d, gain=g, grade=gr, fx=dict(zoom=(1.06, 1.0, 0.4)),
-            extra=(C("085422"), 1.0, 0.4) if g < 0.45 else None)
-    e.say(C("072327"), [(5.0, 7.6), (8.4, 10.1)], cover={1: (C("072504"), 0.2)})   # 13 km... senza mai fermarsi
-    # anello aperto col legame italiano (Insights): la statua arrivata da Milano, sciolto nella parte sulla storia
-    e.say(C("091658"), [(21.0, 24.25)], subs=[(21.0, 24.25, "arrivò da Milano una statua di San Sebastiano.")],
-          cover={0: (C("091255"), 0.9)})
-    tl.sfx(max(0, e.t - 0.4), ambient(C("072504"), 0.5, 2.0), 0.45)   # ponte sonoro sull'attacco della sigla
+    # 1. GANCIO (0-20 s): la promessa del titolo e la curiosità della miniatura, suono vero, niente colpi
+    e.say(C("072327"), [(0.75, 4.45)])                               # "Sono le sette del mattino... da mezzanotte."
+    e.say(C("072327"), [(5.0, 7.6), (8.4, 10.1)], cover={1: (C("075747"), 1.0)})  # 13 km... il rosario in mano
+    e.b(C("023744"), 0.2, 4.5, gain=0.8, grade=NIGHT)               # la notte, solo suono vero, tenuta 4-5 s
+    f, d = VO("7a", [(104.3, 108.45)])                               # "Nel 1647 arriva da Milano una statua..."
+    t_st = e.t
+    e.vo(f, d, [(C("090903"), 1.0), (C("091540"), 1.0)], lead=0.25, tail=0.35)   # facciata da lontano, poi la statua
+    e.title("Da Milano, 1647", t_st + 0.3, 3.2)                       # testo di Copy, unica scritta del gancio
+    gancio = aud("letto_gancio")                                     # letto della chat Audio: onde + rosario lontano
+    if gancio:
+        tl.sfx(0.0, ambient(gancio, 0.0, e.t + 0.3), 0.2)
+    else:
+        e.bed(0.0, e.t, WAVES[0], 1.0, 0.18)
+    tl.sfx(max(0, e.t - 0.4), ambient(C("072504"), 0.5, 2.0), 0.4)   # ponte sull'attacco della sigla
     # 2. SIGLA
     sigla_d(tl, OUT if not PREVIEW else f"{OUT}/sigla_prev")
 
-    # 3. LA MAPPA sul blocco 2 (pausa tolta tra "Arthunkal" e "Tredici")
+    # 3. LA MAPPA sul blocco 2 (sotto solo le onde: nessuna voce)
     f, d = VO("2", [(16.2, 19.25), (19.75, 24.85), (25.75, 29.3)])
-    lead = 1.4                                                       # "Si chiama Akhanda Japamala" sul rosario
+    lead = 1.4
     t0 = e.t
     tl.vos.append(dict(file=f, a=0, b=d, speed=1.0, t=t0))
-    tl.sfx(max(0, t0 - 0.6), ambient(C("072504"), 1.0, lead + 1.0), 0.3)   # ponte sull'uscita della sigla
+    tl.sfx(max(0, t0 - 0.6), ambient(C("072504"), 1.0, lead + 1.0), 0.3)
     e.b(C("075747"), 1.2, lead, gain=0.0)
     e.label("Kreupasanam Akhanda Japamala", t0 + 0.1, 2.4)
     tA, tB, tkm = 5.12 - lead, 6.80 - lead, 7.86 - lead + 0.3
@@ -286,10 +324,10 @@ def long_video(W, H):
     tm = e.t
     tl._add(mp, 0, mdur, audio=False, grade="null")
     tl.sfx(tm, msnd, 0.8)
-    tl.sfx(tm, ambient(C("072327"), 13.0, mdur), 0.18)
+    tl.sfx(tm, ambient(WAVES[0], 3.0, mdur), 0.22)
     e.b(C("072504"), 0.0, max(1.6, t0 + d + 0.3 - e.t))              # "...e la preghiera non si ferma mai"
 
-    # 4. IL GIORNO PRIMA: la costa vuota, il santuarietto con le ghirlande, le sue parole sul posto
+    # 4. IL GIORNO PRIMA
     t_prima = e.t
     e.say(M23("140912"), [(0.8, 3.45)])                               # "Sono lungo la costa dell'oceano Indiano, in Kerala."
     e.label("Marari, il giorno prima", t_prima + 0.3, 2.6)
@@ -301,70 +339,95 @@ def long_video(W, H):
     e.say(M23("140626"), [(0.8, 2.5), (3.5, 4.5), (5.15, 6.2), (7.25, 8.75), (11.2, 13.2), (14.1, 16.1), (17.75, 19.7)],
           cover={2: (M23("140234"), 14.0), 3: (M23("141012"), 3.4), 5: (D23, 1.5)},
           subs=[(7.25, 8.75, "alla Beata Vergine.")])
-    e.bed(t_prima, e.t, M23("140234"), 0.5)                         # onde del giorno prima sotto i tagli
+    e.bed(t_prima, e.t, M23("140234"), 0.5)
     f, d = VO("1c", [(9.6, 12.45)])                                  # "Nessuno avrebbe detto che di notte..."
     e.vo(f, d, [(M23("140234"), 5.5), (D23, 39.0)], lead=0.4, tail=0.6)
     e.to_black(strong=True)
 
-    # 5. 2:30 DI NOTTE: niente voce, solo il suono vero; poi il blocco 3 e il jolly b
+    # 5. 2:30 DI NOTTE
     t_n = e.t
     e.b(C("023744"), 0.0, 3.8, gain=0.8, grade=NIGHT)
     e.from_black()
     e.title("2:30 di notte", t_n + 0.5, 3.6)
     e.label("Lungo la costa, 2:30 di notte", t_n + 4.6, 2.6)
     e.b(C("023529"), 0.0, 2.6, gain=0.8, grade=NIGHT)
-    e.b(C("023356"), 0.3, 3.0, gain=0.8, grade=NIGHT)            # solo suono vero: mai oltre ~10 s di fila
+    e.b(C("023356"), 0.3, 3.0, gain=0.8, grade=NIGHT)
     f, d = VO("3", [(31.8, 34.5), (34.9, 40.2)])
     e.vo(f, d, [(C("023818"), 0.0, .5, NIGHT), (C("023628"), 0.3, .5, NIGHT), (C("023510"), 0.0, .5, NIGHT),
-                (C("023356"), 5.5, .5, NIGHT)],
-         lead=0.3, tail=0.4)
+                (C("023356"), 5.5, .5, NIGHT)], lead=0.3, tail=0.4)
     f, d = VO("jb", [(190.75, 193.65)])
     e.vo(f, d, [(C("023744"), 2.0, .5, NIGHT), (C("023529"), 2.0, .5, NIGHT)], lead=0.4, tail=0.6)
     e.b(C("023356"), 8.0, 3.0, gain=0.8, grade=NIGHT)
-    e.b(C("023744"), 2.2, 2.4, gain=0.8, grade=NIGHT)
     e.to_black()
 
-    # 6. L'ALBA SULLA SPIAGGIA
+    # 6. L'ALBA SULLA SPIAGGIA: i numeri, da dove si parte, perché si cammina sulla spiaggia
     t_a = e.t
-    e.b(C("072327"), 13.0, 2.4, gain=0.7)
+    e.b(C("072504"), 0.0, 2.6, gain=0.6)
     e.from_black()
     e.label("Sulla spiaggia, 7 del mattino", t_a + 0.4, 2.6)
-    tl.sfx(t_a, ambient(C("072504"), 0.0, 3.4), 0.45)               # la spiaggia all'alba: passi e voci lontane
-    e.say(C("072327"), [(10.8, 12.95), (14.4, 15.95), (16.7, 18.3)], cover={1: (C("072504"), 1.0), 2: (C("072504"), 2.6)})
+    e.say(C("072327"), [(10.8, 12.95), (14.4, 15.95), (16.7, 18.3)], cover={1: (C("072504"), 1.0), 2: (C("075231"), 4.0)})
     e.say(C("072415"), [(0.3, 4.6)])                                 # "Come ci hanno raccontato si parte... Kalavoor"
     e.say(C("072430"), [(0.0, 3.6)])                                 # "Per 13-14 km fino ad Arthunkal."
-    e.b(C("072504"), 0.0, 3.0, gain=0.6)
-    e.b(C("075231"), 4.0, 2.2, gain=0.6)                             # passi sulla sabbia (stessa durata: tempi invariati)
-    e.say(C("075209"), [(0.5, 3.15), (3.8, 5.1)])                    # "Siamo a Marari... da qui passa il cammino"
     e.say(C("080217"), [(0.5, 2.6), (3.4, 8.55)], cover={1: (C("080133"), 0.5)})   # prima in strada, poi in spiaggia
-    e.say(C("080133"), [(0.6, 2.35)], cover={0: (C("072504"), 1.4)})              # "e lì si riprende sulla spiaggia"
+    e.bed(t_a, e.t, WAVES[0], 2.0, 0.12)
 
-    e.bed(t_a, e.t, M23("140234"), 2.0, 0.12)                       # mare sotto l'alba
-    # 7. CHI CAMMINA: il blocco 8 sui volti, poi la domanda una volta sola e le risposte
+    # 7. CHI CAMMINA: tutte le interviste, con la domanda di Manuel e B-roll in mezzo
     t_c = e.t
     f, d = VO("8b", [(134.6, 140.55)])
     e.vo(f, d, [(C("085345"), 0.0), (C("074032"), 9.0), (C("090348"), 0.5), (C("085613"), 0.0)], lead=0.3, music=0.0)
-    e.say(C("071857"), [(15.85, 17.15)], subs=[(15.85, 17.15, "Che cosa significa per te?")])
-    e.say(C("071857"), [(17.55, 20.4), (21.05, 25.7), (55.8, 59.7), (61.9, 64.45)], speed=1.0, gain=2.2,
-          cover={2: (C("072504"), 0.0)},
+    # l'organizzatore (sulla spiaggia, badge al collo)
+    e.say(C("071857"), [(15.85, 17.1)], subs=[(15.85, 17.1, "Che cosa significa per te?")])
+    e.say(C("071857"), [(17.55, 20.4), (21.05, 24.3), (24.75, 25.65), (26.05, 28.9), (29.75, 30.9), (31.55, 35.45),
+                        (36.05, 42.75), (43.3, 45.45), (48.1, 52.0), (55.8, 59.75)], speed=1.0, gain=2.2,
+          cover={1: (C("071617"), 0.0), 4: (C("072504"), 0.4), 6: (C("075747"), 2.0), 8: (C("091540"), 2.0)},
           subs=[(17.55, 20.4, "È una marcia che si fa ogni anno."),
-                (21.05, 25.7, "Nasce da un'apparizione di Maria, qui ad Alappuzha."),
-                (55.8, 59.7, "Ottobre è il mese di Maria: lo dedichiamo a questa marcia."),
-                (61.9, 64.45, "Partecipano circa quattrocentomila persone.")])
-    e.b(C("074032"), 17.5, 2.6, gain=0.5, bed=(C("085422"), 2.0))
-    e.say(C("074350"), [(12.2, 14.95), (18.35, 21.3), (21.8, 23.1), (30.6, 31.6), (32.3, 33.1)], speed=1.0, gain=2.2,
-          subs=[(12.2, 14.95, "È un atto di devozione alla Madonna."),
-                (18.35, 21.3, "Mi ha dato tante benedizioni nella vita."),
-                (21.8, 23.1, "Attraverso Gesù Cristo."), (30.6, 31.6, "Ho ventisei anni."),
-                (32.3, 33.1, "È la prima volta qui.")])
-    e.b(C("085345"), 1.5, 2.5, gain=0.5, extra=(C("085422"), 3.0, 0.45))
-    e.say(C("085034"), [(30.75, 32.2), (33.0, 33.7), (45.5, 51.0), (51.4, 57.3)], speed=1.0, gain=2.2,
+                (21.05, 24.3, "Nasce da un'apparizione di Maria"), (24.75, 25.65, "qui ad Alappuzha."),
+                (26.05, 28.9, "È successo a dicembre del 2004,"), (29.75, 30.9, "il 7 dicembre, credo,"),
+                (31.55, 35.45, "alle due e mezza del pomeriggio: un'apparizione di Maria."),
+                (36.05, 42.75, "Ottobre è il mese del rosario, per Maria."),
+                (43.3, 45.45, "Per questo facciamo una grande marcia."),
+                (48.1, 52.0, "Finisce alla basilica di Sant'Andrea."),
+                (55.8, 59.75, "Ottobre è il mese di Maria: lo dedichiamo a questa marcia.")])
+    e.say(C("071857"), [(61.85, 64.45), (64.55, 65.8), (65.95, 68.2)], speed=1.0, gain=2.2,
+          cover={2: (C("085345"), 1.5)},
+          subs=[(61.85, 64.45, "Partecipano circa quattrocentomila persone."), (64.55, 65.8, "Quante persone?"),
+                (65.95, 68.2, "Quattro lakh. Quasi quattrocentomila.")])
+    # i ragazzi sulla spiaggia
+    e.b(C("072504"), 0.3, 2.0, gain=0.6)
+    e.say(C("072623"), [(3.1, 7.7), (10.0, 13.25), (14.8, 19.5)], speed=1.0, gain=2.2,
+          subs=[(3.1, 7.7, "Puoi dirmi perché lo fai?"), (10.0, 13.25, "È come una preghiera a Gesù, il mio amore."),
+                (14.8, 16.45, "È come... per un anno."), (17.0, 19.5, "Una volta.")])
+    e.say(C("072658"), [(0.05, 2.2), (6.75, 10.4), (11.0, 12.25)], speed=1.0, gain=2.2,
+          subs=[(0.05, 2.2, "Perché tornate ogni anno?"), (6.75, 10.4, "Per la Madre, Maria."),
+                (11.0, 12.25, "Veniamo sempre.")])
+    e.say(C("072719"), [(0.0, 1.8), (2.35, 3.65), (4.15, 7.3)], speed=1.0, gain=2.2,
+          subs=[(0.0, 1.8, "Ci sono cristiani..."), (2.35, 3.65, "Sì."), (4.15, 7.3, "Musulmani.")])
+    e.b(C("073335"), 3.0, 2.4, gain=0.5, bed=(C("085422"), 2.0))
+    # Elizabeth
+    e.say(C("074350"), [(3.0, 4.5), (5.6, 7.45), (8.95, 9.9)], speed=1.0, gain=2.2,
+          subs=[(3.0, 4.5, "È la prima volta qui per te?"), (5.6, 6.2, "Come ti chiami?"), (6.4, 7.45, "Elizabeth."),
+                (8.95, 9.9, "Che cosa significa per te?")])
+    e.say(C("074350"), [(11.8, 15.0), (18.35, 21.35), (21.8, 23.1), (24.1, 28.3), (29.3, 31.6), (32.3, 33.1),
+                        (33.35, 38.8)], speed=1.0, gain=2.2,
+          cover={1: (C("075747"), 3.5), 4: (C("074032"), 17.5)},
+          subs=[(11.8, 15.0, "È un atto di devozione alla Madonna."),
+                (18.35, 21.35, "Mi ha dato tante benedizioni nella vita."), (21.8, 23.1, "Attraverso Gesù Cristo."),
+                (24.1, 26.0, "Quindi sei cristiana, certo."), (26.2, 28.3, "Sei cristiana. Sì."),
+                (29.3, 30.3, "Quanti anni hai?"), (30.7, 31.6, "Ventisei."), (32.3, 33.1, "È la prima volta qui."),
+                (33.35, 35.0, "Sei del Kerala?"), (37.9, 38.8, "Vengo da Malappuram.")])
+    # la pellegrina sulla strada
+    e.b(C("085345"), 1.5, 2.2, gain=0.5, extra=(C("085422"), 3.0, 0.45))
+    e.say(C("085034"), [(30.75, 32.2), (33.0, 33.7), (38.05, 39.5), (40.15, 41.75), (43.4, 44.7)], speed=1.0, gain=2.2,
           subs=[(30.75, 32.2, "È la prima volta per te?"), (33.0, 33.7, "No."),
-                (45.5, 48.2, "È fede, è credere."), (48.2, 51.0, "Lì succedono tanti miracoli."),
-                (51.4, 55.9, "Chi partecipa ci trova qualcosa."), (55.9, 57.3, "Un po' di felicità.")])
+                (38.05, 39.5, "Abbiamo camminato sulla spiaggia."), (40.15, 41.75, "E ora siamo in strada."),
+                (43.4, 44.7, "Che cosa significa per te?")])
+    e.say(C("085034"), [(45.6, 49.2), (49.3, 51.2), (51.25, 55.4), (55.9, 57.1)], speed=1.0, gain=2.2,
+          cover={1: (C("085422"), 1.0)},
+          subs=[(45.6, 47.0, "È fede, è credere."), (47.3, 49.2, "Lì succedono tanti miracoli."),
+                (51.25, 55.4, "Chi partecipa ci trova qualcosa."), (55.9, 57.1, "Un po' di felicità.")])
     e.to_black()
 
-    # 8. CHI NON CAMMINA: cibo, acqua, volontari (anche induisti), l'ambulanza
+    # 8. CHI NON CAMMINA
     t_o = e.t
     e.b(C("073357"), 0.3, 2.4, gain=0.7)
     e.from_black()
@@ -379,64 +442,67 @@ def long_video(W, H):
     e.say(C("075441"), [(1.2, 2.6)], subs=[(1.2, 2.6, "Sta arrivando l'ambulanza.")])
     e.b(C("075441"), 3.0, 3.0, gain=0.6, bed=(C("085208"), 5.0))
     e.say(C("075826"), [(0.6, 2.9)])
-    e.bed(t_o, e.t, C("085208"), 1.0, 0.14)                          # folla lungo la strada sotto chi offre
+    e.bed(t_o, e.t, C("085208"), 1.0, 0.14)
 
-    # 9. IN STRADA VERSO ARTHUNKAL
+    # 9. IN STRADA
     t_s = e.t
     e.say(C("080017"), [(0.0, 3.3), (5.1, 6.4)])                      # "Proviamo per un pezzettino ad unirci a loro"
     f, d = VO("ja", [(186.9, 189.2)])
     e.vo(f, d, [(C("083552"), 0.2), (C("085153"), 0.3)], lead=0.3, tail=0.3)
-    tl.sfx(e.t, ambient(C("085422"), 0.0, 8.0), 0.3)                # letto di strada sotto la sequenza
-    tl.sfx(e.t + 8.0, ambient(C("085345"), 0.0, 9.0), 0.3)
+    tl.sfx(e.t, ambient(C("085422"), 0.0, 8.0), 0.3)
     for src, a, dd in [(C("084510"), 0.5, 2.6), (C("085208"), 0.5, 2.4), (C("085422"), 1.0, 3.0),
-                       (C("090224"), 0.5, 2.2)]:                    # niente camminate ripetute (Insights)
+                       (C("090224"), 0.5, 2.2)]:
         e.b(src, a, dd, gain=0.6)
+    e.bed(t_s, e.t, C("085422"), 0.0, 0.16)                          # niente buchi tra i passi in strada
     f, d = VO("jc", [(195.55, 197.55)])
     e.vo(f, d, [(C("085613"), 0.3), (C("090348"), 2.0)], lead=0.3, tail=0.4)
     e.to_black(strong=True)
 
-    # 10. L'ARRIVO: la basilica, il suono vero della folla e degli altoparlanti
+    # 10. L'ARRIVO
     t_r = e.t
-    e.b(C("090733"), 0.0, 6.8, gain=0.38)                          # folla e altoparlanti: forti ma non oltre
+    e.b(C("090733"), 1.9, 4.8, gain=0.38)
     e.from_black()
-    tl.subs.append((t_r + 0.05, t_r + 1.9, "E dopo chilometri di cammino!"))   # audio coperto dalla folla
-    e.label("Basilica di Arthunkal", t_r + 3.8, 2.8)
+    e.label("Basilica di Arthunkal", t_r + 1.6, 2.8)
     for src, a, dd in [(C("090813"), 0.0, 3.0), (C("090903"), 0.5, 4.5), (C("091255"), 0.9, 2.3),
-                       (C("090951"), 0.0, 2.0), (C("091540"), 1.0, 4.0), (C("091405"), 0.0, 3.0),
-                       (C("091505"), 0.0, 1.5), (C("090903"), 8.5, 4.5), (C("090813"), 0.5, 2.5)]:
+                       (C("090951"), 0.0, 2.0), (C("091540"), 3.5, 3.6), (C("091405"), 0.0, 3.0),
+                       (C("090903"), 8.5, 4.5)]:
         e.b(src, a, dd, gain=0.33)
 
-    # 11. LA STORIA: 52 d.C. (voiceover), poi Manuel davanti alla basilica con la linea del tempo
-    f, d = VO("6a", [(81.0, 88.2)])
-    sA = storia(W, H, "A", "52 d.C.|San Tommaso|secondo la tradizione|1.45", 3.6)
+    # 11. LA STORIA: la grafica compare quando la data viene detta, poi si torna a Manuel e alla basilica
     t6 = e.t
+    f, d = VO("6a", [(81.0, 88.2)])                                  # ... "nel 52 dopo Cristo" a ~5.15 s
+    sA = storia(W, H, "A", "52 d.C.|San Tommaso|secondo la tradizione|0.25", 3.0)
     tl.vos.append(dict(file=f, a=0, b=d, speed=1.0, t=t6 + 0.2))
     e.b(C("091453"), 0.0, 2.0, gain=0.25)
-    e.b(C("090825"), 0.0, 0.9, gain=0.25)
+    e.b(C("091505"), 0.0, 1.0, gain=0.25)
+    e.b(C("090825"), 0.0, 0.4, gain=0.25)
+    e.b(C("091540"), 0.5, (t6 + 0.2 + 5.0) - e.t, gain=0.25)
     t_sa = e.t
-    tl._add(sA, 0, (t6 + 0.2 + d + 0.35) - e.t, audio=False, grade="null")
-    tl.sfx(t_sa, ambient(C("091540"), 4.0, e.t - t_sa + 0.2), 0.15)
-    sB = storia(W, H, "B", "1584|padre Giacomo Fenicio|gesuita italiano, ricostruisce la chiesa|0.55", 6.0, prev="52 d.C.")
-    sC = storia(W, H, "C", "1647|la statua di San Sebastiano|arriva da Milano|0.4", 4.9, prev="52 d.C.;1584")
-    subs = [(0.0, 3.2, "Questa chiesa l'ha ricostruita nel 1584"), (4.6, 9.6, "un gesuita italiano, padre Giacomo Fenicio."),
-            (12.5, 15.2, "Qui lo chiamano ancora Veluthachan,"), (15.2, 18.3, "il padre bianco."),
-            (19.0, 21.0, "Nel 1647"), (21.0, 24.2, "arrivò da Milano una statua di San Sebastiano.")]
-    e.say(C("091658"), [(0.0, 1.6), (1.6, 3.2), (4.6, 9.6), (12.5, 18.3), (19.0, 24.2)],
-          cover={1: (sB, 0.0), 2: (sB, 1.45), 4: (sC, 0.0)}, subs=subs)
+    tl._add(sA, 0, 3.0, audio=False, grade="null")
+    tl.sfx(t_sa, ambient(C("091540"), 4.0, 3.2), 0.15)
+    sB = storia(W, H, "B", "1584|padre Giacomo Fenicio|gesuita italiano, ricostruisce la chiesa|0.15", 3.0, prev="52 d.C.")
+    sC = storia(W, H, "C", "1647|la statua di San Sebastiano|arriva da Milano|0.15", 3.6, prev="52 d.C.;1584")
+    subs = [(0.0, 3.3, "Questa chiesa l'ha ricostruita nel 1584"), (4.55, 9.7, "un gesuita italiano, padre Giacomo Fenicio."),
+            (12.4, 15.2, "Qui lo chiamano ancora Veluthachan,"), (15.2, 18.4, "il padre bianco."),
+            (18.9, 21.0, "Nel 1647"), (21.0, 24.3, "arrivò da Milano una statua di San Sebastiano.")]
+    # Manuel -> 1584 (grafica) -> Manuel -> basilica -> Manuel -> 1647 (grafica) -> mani alzate
+    e.say(C("091658"), [(0.0, 2.2), (2.2, 3.3), (4.55, 6.0), (6.0, 9.7), (12.4, 15.0), (15.0, 18.4), (18.9, 19.4),
+                        (19.4, 22.6), (22.6, 24.3)],
+          cover={1: (sB, 0.0), 2: (sB, 1.0), 5: (C("091540"), 5.0), 7: (sC, 0.0), 8: (C("091405"), 0.5)}, subs=subs)
     f, d = VO("7b", [(109.25, 115.05)])
-    e.vo(f, d, [(C("091540"), 3.0), (C("091405"), 0.5), (C("090903"), 8.0)], lead=0.3, tail=0.5, music=60.0)
+    e.vo(f, d, [(C("090903"), 4.0), (C("091405"), 1.8), (C("090813"), 0.3)], lead=0.3, tail=0.5, music=60.0)
     e.to_black(strong=True)
 
-    # 12. IL RITORNO (immagini in ordine di ripresa), poi il blocco 10 e il claim di Manuel
+    # 12. IL RITORNO, poi il blocco 10 e il saluto di Manuel
     t_f = e.t
-    e.b(C("091748"), 0.0, 3.4, gain=0.6)
+    e.b(C("091748"), 0.0, 3.0, gain=0.6)
     e.from_black()
-    for src, a, dd in [(C("092013"), 0.0, 1.4), (C("092151"), 0.0, 1.6), (C("092219"), 0.0, 3.0),
+    for src, a, dd in [(C("092013"), 0.0, 1.0), (C("092151"), 0.0, 1.2), (C("092219"), 0.0, 3.0),
                        (C("093848"), 0.5, 3.6)]:
         e.b(src, a, dd, gain=0.6)
     e.say(C("094735"), [(0.55, 1.5), (2.25, 3.2), (4.9, 6.2)])     # "Fa caldissimo. Un sacco umido. Si sente un sacco."
-    tl.sfx(e.t, ambient(C("085208"), 9.0, 1.7), 0.3)                # la clip del bus fermo è quasi muta
-    e.b(C("094640"), 0.0, 1.4, gain=0.6, bed=(C("085208"), 9.0), extra=(C("085422"), 5.0, 0.45))
+    tl.sfx(e.t, ambient(C("085208"), 9.0, 1.4), 0.3)
+    e.b(C("094640"), 0.0, 1.0, gain=0.6, extra=(C("085422"), 5.0, 0.45))
     e.b(C("101618"), 0.0, 5.5, gain=0.7, bed=(C("101821"), 0.0))
     f, d = VO("10", [(162.3, 164.65), (166.4, 173.3), (174.15, 182.45)], src=VO1)
     e.vo(f, d, [(C("092756"), 0.0), (C("094758"), 0.0), (C("095400"), 0.0), (C("095653"), 0.0),
@@ -448,11 +514,11 @@ def long_video(W, H):
     chapters = [(0.0, "Prima dell'alba"), (t_prima, "Il giorno prima"), (t_n, "2:30 di notte"),
                 (t_a, "L'alba sulla spiaggia"), (t_c, "Chi cammina"), (t_o, "Chi non cammina"),
                 (t_s, "In strada"), (t_r, "L'arrivo ad Arthunkal"), (t6, "La storia"), (t_f, "Il ritorno")]
-    ml = aud("musica_voiceover_lungo")                              # musica già a misura dalla chat Audio
-    if ml:
+    ml = aud("musica_voiceover_lungo")                              # musica a misura (se i tempi sono quelli)
+    if ml and abs(dur_of(ml) - tl.t) < 0.5:
         tl.musics = [dict(t0=0.0, t1=tl.t, track=ml, offset=0.0, level=0.42, fin=0.05, fout=0.5)]
     out = f"{OUT}/VociVere_arthunkal_long_{W}x{H}.mp4"
-    with open(f"{OUT}/voiceover_{W}x{H}.txt", "w") as fh:          # inizio e fine dei soli voiceover (per la musica)
+    with open(f"{OUT}/voiceover_{W}x{H}.txt", "w") as fh:
         for v in tl.vos:
             if os.path.basename(v["file"]).startswith("vo_"):
                 fh.write(f"{v['t']:.2f}\t{v['t'] + (v['b'] - v['a']) / v['speed']:.2f}\t{os.path.basename(v['file'])}\n")
@@ -508,15 +574,12 @@ def vfinish(r, tag, W, H):
     base = r.render(f"{OUT}/{tag}_base_{W}x{H}.mp4", crf=18 if W == 1080 else 24,
                     preset="medium" if W == 1080 else "veryfast")
     out = f"{OUT}/VociVere_arthunkal_{tag}_{W}x{H}.mp4"
-    brush_in(base, out, dur=0.27)
+    os.replace(base, out)                                            # niente animazione d'apertura (Manuel, 26/10)
     return out
 
 
 def hook(r, txt, d=2.2):
     r.title(0.0, d, txt, "Mid", 820)
-    hit = aud("transizione_nero_out")                               # colpo basso fatto con un'onda vera (chat Audio)
-    if hit:
-        r.tl.sfx(0.0, hit, 0.35)
 
 
 def v1():
@@ -547,6 +610,9 @@ def v1():
     r.title(t + 1.0, r.t, "Perché?", "Mid", 820)
     if MUSIC_V:
         tl.music(t - 0.2, r.t, MUSIC_V, offset=30.0, level=0.45, fin=0.4, fout=0.5)
+    # mini sigla di chiusura: l'onda che diventa il logo, "Questo è Voci Vere" (coda della sigla D)
+    tl._add(f"{ROOT}/work/sigla_studio/sigla_D_scelta_{W}x{H}.mp4" if W == 1080 else
+            f"{ROOT}/work/sigla_studio/sigla_D_scelta_1080x1920.mp4", 2.5, 3.5, audio=True, grade="null", fade=0.05)
     return vfinish(r, "v1_teaser", W, H)
 
 
@@ -555,7 +621,7 @@ def v2():
     r, W, H = vreel("v2_statua")
     r.own(C("091255"), 0.9, gain=0.5)(2.2)
     hook(r, "Scolpita a Milano.\\NNel 1647.")
-    t = r.narr(VO1, 81.0, 88.2, [(r.own(C("090825"), 0.0, gain=0.25, cx=0.5), 2.0), (r.own(C("091540"), 1.0, gain=0.25), None)],
+    t = r.narr(VO1, 81.0, 88.2, [(r.own(C("090813"), 0.0, gain=0.25, cx=0.5), 2.0), (r.own(C("091540"), 1.0, gain=0.25), None)],
                words=words(_WVO, "", 81.0, 88.2), cuts=[(83.0, 83.45)])
     r.title(t + 0.2, t + 2.6, "Arthunkal, Kerala, India", "Small", 400)
     sB = storia(W, H, "Bv", "1584|padre Giacomo Fenicio|gesuita italiano|0.2", 4.5, prev="52 d.C.")
@@ -568,7 +634,7 @@ def v2():
     r.narr(VO1, 109.25, 115.05, [(r.own(C("091540"), 3.0, gain=0.2), None), (r.own(C("091405"), 0.5, gain=0.2), None),
                                  (r.own(C("090903"), 8.0, gain=0.2), None)],
            words=words(_WVO, "", 109.25, 115.05))
-    r.own(C("090825"), 0.0, gain=0.4)(1.5)
+    r.own(C("090813"), 1.8, gain=0.4)(1.5)
     if MUSIC_V:
         r.tl.music(0, r.t, MUSIC_V, offset=0.0, level=0.35, fin=0.3, fout=0.8)
     return vfinish(r, "v2_statua", W, H)
