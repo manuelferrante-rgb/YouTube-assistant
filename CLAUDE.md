@@ -37,12 +37,17 @@ FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
 1. Pianificazione (fatti, riprese), Copy (domande, parti in camera, voiceover, testi a schermo), Insights (cosa
    funziona), Audio (suoni e musica) consegnano a Montaggio.
 2. Montaggio, quando ha tutto, monta e dà a Manuel il lungo 16:9 e i 4 verticali.
-3. Quando Manuel approva, Montaggio lo comunica a TUTTE le chat (file finale su Drive e minutaggi dei capitoli).
+3. Quando Manuel approva, Montaggio lo scrive in `piano/calendario.md` (file finale su Drive e minutaggi dei capitoli).
 4. Copy genera subito il pacchetto: sottotitoli it/en, titolo, descrizione e capitoli it/en, miniatura, carosello,
    didascalie e testi dei verticali (regole in `regole/copy.md`).
 5. Pianificazione decide i giorni di uscita in `piano/calendario.md` (di solito lo schema fisso: teaser prima, lungo
    nel fine settimana, 3 verticali dopo, carosello in un giorno separato dal lungo: Manuel 26/10, regola in
    `regole/pianificazione.md`).
+
+RISPARMIO DI UTILIZZO (Manuel, 26/10): le chat NON si mandano messaggi tra loro e non ricontrollano il lavoro
+delle altre, salvo quando lo chiede Manuel. Tutto passa dai file del repo (CLAUDE.md, piano/, copioni/, projects/),
+che ogni chat legge quando inizia. Il lavoro pesante sul girato (download, provini, trascrizione) lo fa solo
+Montaggio e lo scrive in `projects/<video>/girato.md`; le altre chat leggono quel file invece di rifarlo.
 
 Regole tra chat:
 - Ogni video ha un nome breve uguale ovunque (es. `arthunkal`): `projects/arthunkal/`, `copioni/arthunkal_testi.md`.

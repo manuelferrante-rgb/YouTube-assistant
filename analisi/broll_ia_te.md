@@ -83,3 +83,22 @@ push-in"
 | 12 | Tè nelle tazze nel mondo, sacchi in partenza | IA realistica o Pixabay | "cups of tea served in different countries: a glass of chai, a porcelain cup, a clay kulhad, hands without faces" / "jute sacks of black tea stacked in a warehouse, a truck being loaded, no logos" |
 
 Per ogni scena 2-3 varianti, poi si sceglie la migliore. Durata di ogni clip: 5-8 s.
+
+## Decisione e alternative gratuite (26/10)
+Manuel: per ora si rinuncia ai B-roll IA in "te" (linea del tempo + panorami veri + Pixabay). Alternative gratuite
+da provare in futuro direttamente da qui. Video IA gratis via API non esiste (Veo e Kling via API sono a
+pagamento): si generano IMMAGINI illustrate e le si anima in montaggio (zoom e parallasse lenti), cosa che si
+adatta proprio allo stile "incisione".
+1. **Cloudflare Workers AI**, consigliato: FLUX.1 schnell gratis entro una quota giornaliera (10K o 100K
+   "neurons" al giorno a seconda della fonte, da verificare). Servono un account gratuito, i segreti
+   `CLOUDFLARE_ACCOUNT_ID` e `CLOUDFLARE_API_TOKEN` (permesso Workers AI) e il dominio `api.cloudflare.com`.
+2. **Hugging Face:** account gratuito con credito mensile per i modelli FLUX. Segreto `HF_TOKEN`, domini
+   `huggingface.co` e `router.huggingface.co`.
+3. **Pollinations.ai:** gratis senza chiave ma con limiti, filigrana senza account, nessuna garanzia.
+   Dominio `image.pollinations.ai`. Buono per una prova veloce.
+4. **Google Gemini API:** la quota gratuita per le immagini è contraddittoria nel 2026 (secondo alcune fonti
+   non c'è più). Imagen e Veo richiedono la fatturazione. Gratis resta l'app Gemini, a mano.
+Stato al 26/10: tutti e tre i domini sono bloccati dalla rete dell'ambiente (provato).
+Fonti: https://www.edenai.co/post/top-free-image-generation-tools-apis-and-open-source-models ,
+https://apiframe.ai/blog/free-ai-image-generation-api-2026 ,
+https://blog.laozhang.ai/en/posts/gemini-image-generation-free-limit-2026
