@@ -1,6 +1,6 @@
 # Piantagioni di tè e colonialismo britannico (nome breve: `te`)
 
-Stato: IDEA, in ricerca (26/10). Non ancora approvata da Manuel. Niente script né voiceover finché non approva:
+Stato: IDEA, in ricerca (26/10). Decisioni di Manuel 26/10: lungo + 4 verticali; ripresa oggi 26/10, se serve altro domani 27/10; posto ancora da comunicare (link Maps non leggibile da qui). Non ancora approvata da Manuel. Niente script né voiceover finché non approva:
 poi Copy scrive "DA DIRE E DA CHIEDERE" in `copioni/te_testi.md` partendo da questi fatti.
 
 ## Da sapere da Manuel (blocca la scelta del posto)
@@ -60,5 +60,5 @@ Non trovato: condizioni attuali delle case dei lavoratori e salario giornaliero 
 8. Parlato finale in camera.
 
 ## Prossimi passi (aspettano Manuel)
-1. Posto di partenza, giorno di ripresa e se vuole il lungo o solo un verticale.
+1. Nome o coordinate del posto (decisi: lungo + 4 verticali, ripresa 26-27/10).
 2. Approvazione dell'angolo. Poi Copy per script e domande.
