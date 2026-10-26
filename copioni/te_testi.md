@@ -420,3 +420,11 @@ braccia aperte sulla collina (115233_0358 a circa 25%, cielo dietro, si scontorn
 all'orizzonte e la scritta "TUTTO QUESTO PER 3.000 RUPIE?" (piccolo sotto: "1877"). Alternative: primo piano
 di Manuel stupito (120307_0372) + "3.000 RUPIE" enorme; contrasto illustrazione d'epoca IA (solo per questo
 video) a sinistra e collina di oggi a destra.
+
+## Ganci dei 4 verticali (scritti da Montaggio il 26/10, controllati da Copy: vanno bene così)
+- v1 teaser: "Affittate per 3.000 rupie l'anno. Nel 1877." + finale "E oggi, di chi sono?" (domanda aperta, giusta
+  per un teaser).
+- v2 raccolta: "Si prendono solo due, tre foglie."
+- v3 giornata: "Quanto tè raccoglie una persona al giorno?" (i numeri solo nei sottotitoli di Sadish).
+- v4 chai: "Il chai di Munnar si fa così."
+Didascalie e titoli degli Short dopo l'ok di Manuel ai montati (v1 su Drive in montati/te, 26/10 sera).
