@@ -59,16 +59,19 @@ B. "Nel 1877 un raja della famiglia di Poonjar affitta queste colline a John Dan
 C. "All'inizio qui si provano caffè, cardamomo, china. Il primo tè si pianta nel 1880, su una cinquantina di acri."
 D. "Nel 1895 arriva una compagnia scozzese di Glasgow, la Finlay Muir, e compra 33 piantagioni. Due anni dopo nasce
    la Kannan Devan Hills Produce Company: il nome che si legge ancora sui cartelli qui intorno."
-E. "Dal 1901 si taglia la foresta su larga scala. In dieci anni il tè copre circa 6.500 ettari."
+E. "Dal 1901 si taglia la foresta su larga scala. Nel 1911 il tè copre circa 6.500 ettari."
 F. "A raccoglierlo vengono portati lavoratori tamil. Molti di quelli che lavorano qui oggi sono i loro discendenti."
    (La seconda frase dilla solo se te lo confermano le persone che intervisti.)
 G. "Nel 1971 una legge del Kerala riprende il controllo delle terre. Dal 2005 la maggior parte dell'azienda è dei
-   suoi dipendenti, circa tredicimila: la prima azienda di piantagioni in India a funzionare così."
+   suoi dipendenti, circa tredicimila. Secondo Tata, è la prima azienda di piantagioni in India a funzionare così."
 H. "Nel 2015 migliaia di raccoglitrici bloccano Munnar per nove giorni, senza sindacati né partiti. Si chiamano
    Pombilai Orumai, unità delle donne. Chiedono un salario più alto e ottengono il bonus al 20%."
 I. Per chiudere un pezzo: "Le colline sono le stesse di centocinquant'anni fa. Le mani che raccolgono sono cambiate
    di proprietario, non di gesto." (Solo se ti suona tua, altrimenti lascia.)
-Dove va il tè e chi lo produce (dati non ancora verificati: chiederli sul posto, risposte attribuite a chi parla):
+J. "L'India è la seconda produttrice di tè al mondo, dopo la Cina."
+K. "Questa azienda produce circa 25 milioni di chili di tè all'anno. Gran parte la vende all'ingrosso ad altri
+   marchi." (Fonte: piano/te.md. Aste, acquirenti ed export non verificati: si chiedono.)
+Dove va il tè (chiederlo sul posto, risposte attribuite a chi parla):
 - Ai lavoratori o al capo squadra: "Where does this tea go after you pick it? Which factory?" (Dove va questo tè dopo
   la raccolta? In quale fabbrica?)
 - Alla guida o in fabbrica: "Who buys this tea? Does it stay in India or go abroad? Which brands?" (Chi compra
@@ -99,7 +102,7 @@ SOLO i blocchi la cui scena hai girato oggi (scritta tra parentesi); gli altri s
    (Se la guida o una targa ti dice l'età delle macchine, puoi aggiungerla tu in camera.)
 8. (museo o paesaggio)
    Nel 1971 una legge del Kerala riprende il controllo delle terre. Dal 2005 la maggior parte dell'azienda è dei suoi
-   dipendenti, circa tredicimila: è la prima azienda di piantagioni in India a funzionare così.
+   dipendenti, circa tredicimila. Secondo Tata, è la prima azienda di piantagioni in India a funzionare così.
 9. (raccoglitrici o strade di Munnar; DA REGISTRARE DOPO se non hai immagini adatte)
    Nel 2015 migliaia di raccoglitrici bloccano Munnar per nove giorni, senza sindacati né partiti. Si fanno chiamare
    Pombilai Orumai: unità delle donne. Chiedono più salario e un bonus più alto. Il bonus lo ottengono.
