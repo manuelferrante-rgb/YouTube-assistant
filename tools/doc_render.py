@@ -206,19 +206,70 @@ class Timeline:
         f.append(f"apad,atrim=end={d:.4f},afade=t=in:d={fd:.3f},afade=t=out:st={d - fd:.4f}:d={fd:.3f}")
         return ",".join(f)
 
+    def fix_freezes(self):
+        """Niente fermo immagine: se un'inquadratura chiede più girato di quanto la clip ne abbia, si anticipa
+        l'inizio; se la clip è proprio corta, leggero rallentatore (fino a 0.5x). Non tocca parlato né grafiche."""
+        durs = {}
+        for sh in self.shots:
+            if sh["norm"] or not sh["audio"]:
+                continue
+            if sh["src"] not in durs:
+                durs[sh["src"]] = dur_of(sh["src"])
+            D = durs[sh["src"]] - 0.06
+            if sh["a"] + sh["dur_src"] > D:
+                sh["a"] = max(0.0, D - sh["dur_src"])
+                if sh["dur_src"] > D:
+                    sp = max(0.5, D / sh["d"])
+                    sh["speed"], sh["dur_src"], sh["a"] = sp, sh["d"] * sp, 0.0
+                    if sp * sh["d"] > D + 0.01:
+                        print(f"ATTENZIONE fermo immagine: {os.path.basename(sh['src'])} {sh['d']:.2f}s", flush=True)
+
+    def _tail(self, i):
+        """Coda dell'inquadratura precedente per la dissolvenza della i-esima (s["xin"] secondi)."""
+        if i == 0:
+            return None
+        prev, s = self.shots[i - 1], self.shots[i]
+        X = s["xin"]
+        n = max(1, round(X * FPS))
+        tail = dict(prev)
+        tail.update(a=prev["a"] + prev["dur_src"], dur_src=n / FPS * prev["speed"], n=n, d=n / FPS)
+        fx = dict(prev.get("fx") or {})
+        for k in ("black_in", "black_out", "flash", "push_out"):
+            fx.pop(k, None)
+        if "zoom" in fx:                                   # la coda resta all'ingrandimento finale, senza scatti
+            z1 = fx["zoom"][1]
+            fx["zoom"] = (z1, z1, None)
+        tail["fx"] = fx
+        return tail
+
     def render(self, out, reuse=True, crf=19, preset="medium"):
         parts = []
         for i, s in enumerate(self.shots):
             p = f"{self.dir}/shot_{i:03d}.mkv"
             key = json.dumps({k: v for k, v in s.items() if k != "t"}, sort_keys=True) + f"{self.W}x{self.H}"
             kp = p + ".key"
+            tail = self._tail(i) if s.get("xin") else None
+            if tail:
+                key += json.dumps({k: v for k, v in tail.items() if k != "t"}, sort_keys=True)
             if not (reuse and os.path.exists(p) and os.path.exists(kp) and open(kp).read() == key):
                 cmd = ["ffmpeg", "-v", "error", "-y", "-ss", f"{s['a']:.3f}", "-t", f"{s['dur_src'] + 1:.3f}", "-i", s["src"]]
-                if s["audio"]:
-                    cmd += ["-map", "0:v:0", "-map", "0:a:0", "-af", self._af(s)]
+                if tail:
+                    # dissolvenza in entrata: la coda dell'inquadratura precedente sfuma nella nuova (durata invariata)
+                    cmd += ["-ss", f"{tail['a']:.3f}", "-t", f"{tail['dur_src'] + 1:.3f}", "-i", tail["src"]]
+                    fc = (f"[1:v]{self._vf(tail)}[pv];[0:v]{self._vf(s)}[cv];"
+                          f"[pv][cv]xfade=transition=fade:duration={tail['d']:.3f}:offset=0,format=yuv420p[v]")
+                    cmd += ["-filter_complex", fc, "-map", "[v]"]
+                    if s["audio"]:
+                        cmd += ["-map", "0:a:0", "-af", self._af(s)]
+                    else:
+                        cmd += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "2:a:0"]
                 else:
-                    cmd += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v:0", "-map", "1:a:0"]
-                cmd += ["-vf", self._vf(s), "-t", f"{s['d']:.4f}", "-c:v", "libx264", "-crf", "15", "-preset", "veryfast",
+                    if s["audio"]:
+                        cmd += ["-map", "0:v:0", "-map", "0:a:0", "-af", self._af(s)]
+                    else:
+                        cmd += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v:0", "-map", "1:a:0"]
+                    cmd += ["-vf", self._vf(s)]
+                cmd += ["-t", f"{s['d']:.4f}", "-c:v", "libx264", "-crf", "15", "-preset", "veryfast",
                         "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", p]
                 run(cmd)
                 open(kp, "w").write(key)
