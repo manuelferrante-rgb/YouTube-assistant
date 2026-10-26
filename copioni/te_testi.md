@@ -38,6 +38,21 @@ Al capo squadra, se c'è: "How does a working day work here? Who weighs the leav
 qui? Chi pesa le foglie?)
 Da girare anche: mani e foglie da vicino, il cesto, la pesata se c'è, 30 secondi di audio senza la tua voce.
 
+### Kolukkumalai Tea Estate (26/10, tappa decisa da Manuel, prima del museo)
+Fonti rapide di Copy (siti turistici, da far verificare a Pianificazione): munnar.com, Kerala Tourism, The Better
+India, History of Ceylon Tea. Tutto detto come "si presenta come / dicono", mai come fatto certo.
+- Si trova appena oltre il confine, in Tamil Nadu, vicino a Munnar. NON risulta della KDHP: qui non dire le frasi
+  sull'azienda dei dipendenti (G, K, blocco 8), valgono per le tenute di Munnar e per il museo.
+- In camera: "Kolukkumalai si presenta come la piantagione di tè più alta del mondo: siamo a circa 2.400 metri."
+- In fabbrica: "La fabbrica, dicono, è degli anni Trenta. Qui il tè si lavora ancora con il metodo ortodosso, non
+  con le macchine CTC." (Dilla solo se te lo confermano lì.)
+Domande da fare lì:
+- Who owns this estate today? When was it started, and by whom? (Di chi è la tenuta oggi? Quando è nata e da chi?)
+- How old is this factory and these machines? (Quanti anni hanno questa fabbrica e queste macchine?)
+- How many people work here? Where do they live? (Quante persone lavorano qui? Dove vivono?)
+- Where does this tea go? Who buys it? (Dove va questo tè? Chi lo compra?)
+- Agli operai o alle raccoglitrici: le stesse domande della Tappa 1.
+
 ### Tappa 2: Tea Museum KDHP, Nullatanni
 Chiedi alla biglietteria se puoi filmare dentro. In camera:
 4. All'ingresso: "Qui c'è la storia di come il tè è arrivato su queste colline. E di chi sono, oggi."
