@@ -347,3 +347,11 @@ SOLO i blocchi la cui scena hai girato oggi (scritta tra parentesi); gli altri s
 Fuori dal voiceover perché incerti (piano/te.md): l'anno della prima visita di Munro, l'origine del nome Kannan
 Devan (solo se lo racconta la guida), la quota dei lavoratori nell'azienda, l'esito del salario dopo il 2015.
 
+
+## Reel extra: la signora che lava i panni (idea di Manuel, 26/10, fuori dai 4 verticali)
+Manuel lo vuole un po' clickbait. Testi a schermo proposti (gancio nei primi 2 s), lei protagonista e capace,
+mai "povera":
+1. "POV: non hai la lavatrice (e non ti serve) 🇮🇳"   (consigliato: tiene l'idea di Manuel e la ribalta)
+2. "POV: la tua lavatrice è una pietra 🇮🇳"   (solo se nel girato batte i panni su una pietra)
+3. "Lavatrice? Qui a Munnar si fa così 🇮🇳"
+Didascalia e testo definitivo dopo aver visto il girato.
