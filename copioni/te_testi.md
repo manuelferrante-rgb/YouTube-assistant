@@ -353,5 +353,7 @@ Manuel lo vuole un po' clickbait. Testi a schermo proposti (gancio nei primi 2 s
 mai "povera":
 1. "POV: non hai la lavatrice (e non ti serve) 🇮🇳"   (consigliato: tiene l'idea di Manuel e la ribalta)
 2. "POV: la tua lavatrice è una pietra 🇮🇳"   (solo se nel girato batte i panni su una pietra)
-3. "Lavatrice? Qui a Munnar si fa così 🇮🇳"
+3. "Lavatrice? Qui si fa così 🇮🇳"
+Manuel (26/10): per questo reel il clickbait va bene, gli altri contenuti restano seri. Il reel è scollegato
+da Munnar e dal video del tè: niente Munnar nei testi, il luogo preciso da chiedere a Manuel.
 Didascalia e testo definitivo dopo aver visto il girato.
