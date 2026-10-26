@@ -78,7 +78,50 @@ Il luogo preciso a Munnar lo dice Manuel quando lo scopre; fino ad allora in cam
 [CAMERA] chiusura di Voci Vere come sempre ("Il viaggio di Voci Vere, per dar voce a chi ne ha più bisogno,
 continua...").
 
-## VOICEOVER (v2): da registrare stasera 26/10
+## VOICEOVER v3 (26/10 sera, da registrare): sostituisce v1 e v2
+Decisioni di Manuel (26/10): girato ridotto (ottime riprese + un paio di interviste), video di almeno 6 minuti;
+SOLO per questo video si usano anche B-roll generati con IA, ben fatti e a tema, per mostrare quello che non è stato
+girato (Insights li cerca, poi passa la lista ad Audio e Montaggio). Quindi i blocchi non dipendono più dalle scene
+girate: si registrano tutti. Fatti controllati da Pianificazione (piano/te.md).
+Come registrare: numero detto a voce, 2 s di pausa, testo. Ritmo calmo.
+
+1. Queste colline hanno una storia che comincia con un contratto d'affitto.
+2. Nel 1877 un raja della famiglia di Poonjar affitta queste colline a John Daniel Munro, un britannico che lavora per
+   il regno di Travancore. Circa centotrentaseimila acri, per tremila rupie l'anno.
+3. All'inizio si provano caffè, cardamomo, china. Il primo tè si pianta nel 1880, su una cinquantina di acri.
+4. Nel 1895 arriva una compagnia scozzese di Glasgow, la Finlay Muir, e compra trentatré piantagioni. Due anni dopo
+   nasce la Kannan Devan Hills Produce Company.
+5. Dal 1901 la foresta viene tagliata su larga scala. Nel 1911 il tè copre circa seimilacinquecento ettari.
+6. A lavorarci vengono portati lavoratori tamil. Prima di loro, su queste colline vivevano i Muthuvan e i Malayarayan.
+7. In India, a raccogliere il tè sono soprattutto donne. Le foglie si staccano a mano, filare dopo filare.
+8. Poi le foglie vanno in fabbrica. Con il metodo ortodosso vengono appassite, arrotolate, fatte ossidare e seccate.
+   Solo l'appassimento dura quasi un giorno.
+9. Nel 1971 il Kerala approva una legge sulle terre di queste colline.
+10. Dal 2005 la maggior parte dell'azienda è dei suoi dipendenti, circa tredicimila. Secondo Tata, è la prima azienda
+   di piantagioni in India a funzionare così.
+11. Nel 2015 migliaia di raccoglitrici bloccano Munnar per nove giorni, senza sindacati né partiti. Si fanno chiamare
+   Pombilai Orumai: unità delle donne. Chiedono un salario più alto. Il bonus al venti per cento lo ottengono.
+12. L'India è la seconda produttrice di tè al mondo, dopo la Cina. L'azienda di queste colline ne produceva circa
+   venticinque milioni di chili l'anno, secondo un dato del 2019, e gran parte la vende ad altri marchi.
+13. (chiusura, versione A) Il tè che beviamo arriva da colline come queste. Oggi abbiamo provato ad ascoltare chi lo
+   raccoglie.
+14. (chiusura, versione B) La prossima volta che beviamo un tè, vale la pena ricordare da dove arriva. E chi lo
+   raccoglie.
+Registrale tutte e due; dopo aver visto le interviste scelgo con Montaggio la chiusura che si lega meglio.
+
+## B-roll IA (solo per questo video, decisione di Manuel 26/10): limiti di Copy
+- Mai persone generate che possano sembrare quelle intervistate o lavoratori reali riconoscibili.
+- Mai "foto d'archivio" finte spacciate per vere: le scene storiche vanno in uno stile riconoscibile come
+  ricostruzione (es. illustrazione, toni seppia stilizzati), senza date o firme inventate.
+- Su YouTube va attivata la dichiarazione "contenuti alterati o sintetici" se le scene IA sembrano realistiche.
+- Scene che servono al voiceover: contratto d'affitto e colline del 1877 (blocchi 1-2), prime piantagioni e
+  coltivazioni di caffè/cardamomo (3), uffici di una compagnia britannica e piantagioni d'epoca (4), foresta tagliata
+  e colline spoglie (5), arrivo dei lavoratori dalle pianure in stile illustrato (6), mani che raccolgono (7),
+  fabbrica: appassimento, arrotolatura, ossidazione, essiccazione (8), carte e documenti di legge (9), tè nelle tazze
+  nel mondo e sacchi in partenza (12). Per lo sciopero del 2015 (11) meglio niente IA realistica: grafica con la data
+  e il nome Pombilai Orumai.
+
+## VOICEOVER v2 (superato dalla v3)
 Dici il numero ("Uno"), 2 secondi di pausa, poi il testo. Ritmo calmo. Registra solo i blocchi la cui scena hai
 girato oggi; quelli marcati DOPO si registrano quando c'è la scena o quando ho visto le interviste.
 
