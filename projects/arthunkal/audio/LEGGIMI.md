@@ -58,3 +58,7 @@ tienile basse (circa -22/-26 dB sotto la voce) e mai sotto le interviste con voc
   5:28-6:02 La storia (giù di 5 dB tra 5:36 e 5:56) | 6:22-6:45 finale fino al saluto.
   vo_7a (0:12) nel gancio resta senza musica: sotto c'è il letto_gancio. Senza anteprima v3, le code dopo i voiceover
   sono corte (0.4-0.7 s) per non finire sotto interviste nuove.
+
+## Montato v4 (26/10, 6:49.40)
+- `musica_voiceover_lungo.flac` rigenerata su `musica_lungo_v4.json`, 409.40 s. Il finale ("arrivo") entra a 6:20,
+  continua sotto il saluto di Manuel (399.9-405.9) e si chiude sul logo: dissolvenza 407.4-409.4.

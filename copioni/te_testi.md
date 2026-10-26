@@ -357,6 +357,7 @@ mai "povera":
 3. "Lavatrice? Qui si fa così 🇮🇳"
 Manuel (26/10): per questo reel il clickbait va bene, gli altri contenuti restano seri. Il reel è scollegato
 da Munnar e dal video del tè: niente Munnar nei testi, il luogo preciso da chiedere a Manuel.
+Durata: circa 7 secondi (Manuel, 26/10). Girato: DJI_20261026105047_0333, 105115_0334, 105040_0332.
 Didascalia e testo definitivo dopo aver visto il girato.
 
 ## GIRATO DEL 26/10: cosa c'è (Copy, dalla trascrizione di tutte le 74 clip, cartella Drive del video)

@@ -1,0 +1,10 @@
+{"durata": 409.40, "note": "montato v4 del 26/10 (6:49.4), tempi da vo_tempi_v3.txt (intestazione v4); finale sotto il saluto e chiusura sul logo (405.9-409.4)",
+ "tratti": [
+  {"da": 23.17, "a": 34.24, "dopo": 34.85, "brano": "storia"},
+  {"da": 69.70, "a": 92.50, "dopo": 93.20, "pre": 0.3, "brano": "storia"},
+  {"da": 113.63, "a": 119.04, "dopo": 119.40, "pre": 0.4, "brano": "storia"},
+  {"da": 248.47, "a": 257.10, "dopo": 257.70, "pre": 0.5, "brano": "storia"},
+  {"da": 287.60, "a": 302.28, "dopo": 303.80, "coda": 1.5, "brano": "cammino"},
+  {"da": 330.83, "a": 360.34, "dopo": 360.95, "ponti": [[337.9, 354.5, 0.55]], "brano": "storia"},
+  {"da": 383.37, "a": 407.40, "dopo": 410.00, "pre": 3.0, "entrata": 2.5, "coda": 2.0, "brano": "arrivo", "offset": -360.4}
+ ]}
