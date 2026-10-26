@@ -1,9 +1,9 @@
 # te: interviste tradotte (Montaggio, 26/10; da rivedere da Copy)
 
-Tempi in secondi della clip, testo dei sottotitoli italiani usati nel lungo (fedeli, puliti dalle esitazioni).
-Le domande sono di Manuel (in inglese), le risposte di Sadish (o di Shaharon nel chiosco).
+Tempi in secondi della clip, sottotitoli italiani del lungo (fedeli, puliti dalle esitazioni).
+Domande di Manuel (in inglese), risposte di Sadish (o di Shaharon nel chiosco).
 
-## 115233
+## 133721
 - 5.3-9.7: Questa è Munnar. Molto, molto bella. Questa è la piantagione di tè.
 - 10.0-13.6: Tutte le montagne che vedi, ovunque, sono tè.
 - 13.6-16.4: Verde. Coperte verdi.
@@ -17,7 +17,7 @@ Le domande sono di Manuel (in inglese), le risposte di Sadish (o di Shaharon nel
 ## 133721
 - 55.4-56.6: Solo acqua piovana.
 
-## 134852
+## 133721
 - 57.4-63.9: Queste foglie si raccolgono ogni dieci, quindici giorni.
 - 69.5-74.6: Questo è il metodo di raccolta: due, tre foglie.
 - 76.0-80.3: Due, tre foglie: sono quelle di buona qualità.
@@ -32,7 +32,7 @@ Le domande sono di Manuel (in inglese), le risposte di Sadish (o di Shaharon nel
 - 119.5-123.5: Oggi raccolgo qui, domani vado su un'altra collina.
 - 124.0-131.2: Poi il mese dopo si torna qui. È un giro.
 
-## 135758
+## 134520
 - 6.2-11.2: Normalmente, al giorno, una persona raccoglie
 - 12.2-16.5: da ventisei a ventinove chili al giorno.
 - 17.0-17.6: In media.
@@ -57,7 +57,7 @@ Le domande sono di Manuel (in inglese), le risposte di Sadish (o di Shaharon nel
 - 13.0-19.4: aiuto, casa, cure mediche, trasporto.
 - 20.1-22.4: L'azienda dà tutto gratis.
 
-## 135136
+## 134639
 - 0.1-7.0: Sai che l'India è il secondo produttore di tè al mondo, dopo la Cina?
 - 8.1-9.3: Sì, l'India è seconda.
 - 12.2-14.8: Qui è una cultura molto profonda.
