@@ -13,7 +13,7 @@ l'azienda del tè è di proprietà dei suoi dipendenti. Titolo e miniatura parti
 
 ### Tappa 1: piantagioni, 2nd Mile View Point (Munnar Bypass)
 In camera (a parole tue, anche più corte):
-1. Arrivo, davanti ai filari: "Sono a Munnar, in Kerala. Tutto quello che vedete è tè. Nel 1877
+1. Arrivo, davanti ai filari: "Sono a Munnar, in Kerala, a oltre 1.500 metri. Tutto quello che vedete è tè. Nel 1877
    queste colline sono state affittate a un britannico per 3.000 rupie l'anno. Oggi voglio capire chi lo raccoglie."
 2. Mentre scendi verso chi lavora: "Le foglie si raccolgono ancora a mano. Proviamo a chiedere a chi lo fa."
 3. Dopo le interviste, una frase tua, vera, su quello che hai sentito. Niente morale.
@@ -39,8 +39,8 @@ Da girare anche: mani e foglie da vicino, il cesto, la pesata se c'è, 30 second
 ### Tappa 2: Tea Museum KDHP, Nullatanni
 Chiedi alla biglietteria se puoi filmare dentro. In camera:
 4. All'ingresso: "Qui c'è la storia di come il tè è arrivato su queste colline. E di chi sono, oggi."
-5. Davanti ai macchinari o alle foto d'epoca, a parole tue: "Queste macchine lavoravano il tè più di cento anni fa.
-   Le foglie le raccoglievano lavoratori tamil, portati qui dalle pianure."
+5. Davanti ai macchinari o alle foto d'epoca, a parole tue: "Queste macchine raccontano come si lavorava il tè.
+   (Se la guida o una targa ti dice l'anno, dillo.) Le foglie le raccoglievano lavoratori tamil, portati qui a lavorare."
 Domande alla guida del museo (in inglese):
 - When did tea arrive in Munnar, and who planted it? (Quando arriva il tè a Munnar e chi lo pianta?)
 - Who worked in the plantations at the beginning? Where did they come from?
@@ -61,20 +61,21 @@ SOLO i blocchi la cui scena hai girato oggi (scritta tra parentesi); gli altri s
    Nel 1877 un raja della famiglia di Poonjar affitta queste colline a un britannico, John Daniel Munro. Circa
    centotrentaseimila acri, per tremila rupie l'anno.
 3. (museo: foto d'epoca, macchinari)
-   Il primo tè viene piantato nel 1880. Nel 1895 la Finlay Muir compra trentatré piantagioni, e nel 1897 nasce la
+   Il primo tè viene piantato nel 1880. Nel 1895 un'azienda scozzese, la Finlay Muir, compra trentatré piantagioni, e nel 1897 nasce la
    Kannan Devan Hills Produce Company.
 4. (filari, colline senza alberi)
    Dal 1901 i boschi vengono tagliati su larga scala. Nel 1911 il tè copre già circa seimilacinquecento ettari.
 5. (raccoglitrici al lavoro, mani e foglie)
-   A raccoglierlo vengono portati lavoratori tamil, dalle pianure. Prima di loro, su queste colline vivevano i
+   A raccoglierlo vengono portati lavoratori tamil. Prima di loro, su queste colline vivevano i
    Muthuvan e i Malayarayan.
 6. (raccolta a mano, solo se l'hai girata)
    La raccolta qui si fa ancora a mano. Ma chi lo fa, lo racconta meglio di me.
 7. (museo: macchinari, meridiana)
-   Queste macchine lavoravano il tè più di cento anni fa. Il museo è dentro una delle tenute della stessa azienda.
+   Il museo è dentro una delle tenute della stessa azienda.
+   (Se la guida o una targa ti dice l'età delle macchine, puoi aggiungerla tu in camera.)
 8. (museo o paesaggio)
-   Nel 1971 una legge del Kerala riprende le terre. Dal 2005 l'azienda è dei suoi dipendenti, circa tredicimila:
-   è la prima azienda di piantagioni in India a funzionare così.
+   Nel 1971 una legge del Kerala riprende il controllo delle terre. Dal 2005 la maggior parte dell'azienda è dei suoi
+   dipendenti, circa tredicimila: è la prima azienda di piantagioni in India a funzionare così.
 9. (raccoglitrici o strade di Munnar; DA REGISTRARE DOPO se non hai immagini adatte)
    Nel 2015 migliaia di raccoglitrici bloccano Munnar per nove giorni, senza sindacati né partiti. Si fanno chiamare
    Pombilai Orumai: unità delle donne. Chiedono più salario e un bonus più alto. Il bonus lo ottengono.
