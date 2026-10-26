@@ -10,3 +10,4 @@ consegnato, programmato, pubblicato.
 | comunismo | reel | consegnato | da decidere | `projects/comunismo/` |
 | kallu | reel | consegnato | da decidere | `projects/kallu/` |
 | arthunkal | lungo + teaser + 3 verticali | consegnato 25/10 (lungo v2 5:41 in 4K + 4 verticali su Drive, montati/arthunkal), in attesa dell'ok di Manuel | da decidere (fine settimana) | capitoli in `projects/arthunkal/capitoli.md`, `projects/arthunkal/` |
+| te | lungo + 4 verticali | pianificato, 26/10 View Point (Munnar), 27/10 Tea Museum (chiuso il lunedì) | da decidere | `piano/te.md`, in attesa di approvazione di Manuel |
