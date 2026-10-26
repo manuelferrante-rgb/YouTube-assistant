@@ -311,7 +311,9 @@ class Edit:
         print(f"== {os.path.basename(out)}: {len(self.tl.shots)} inquadrature, {self.t:.1f} s", flush=True)
         if PREVIEW:
             return self.tl.render(out, crf=26, preset="veryfast")
-        return self.tl.render(out, crf=17, preset="medium")
+        self.tl.drop_shots = True                                   # disco stretto: consegna diretta per Drive
+        self.tl.final_opts = ["-maxrate", "38M", "-bufsize", "76M"]
+        return self.tl.render(out, crf=20, preset="medium")
 
 
 # ---------- grafiche (stile carta nautica, approvate da Manuel) ----------
@@ -378,7 +380,8 @@ def mappa(W, H, tA, tB, dur):
 
 SIGLA_CLIPS = [(C("115803"), 0.5), (C("133721"), 70.0), (C("115958"), 1.0), (C("142447"), 18.0), (C("135033"), 1.0),
                (C("114701"), 4.0)]                                  # sigla a tema: filari, raccolta, cesto, chai
-QUIET = (C("135012"), 0.0)                                          # vento tra i filari, senza voci
+QUIET = (C("135012"), 0.0)
+PX = lambda i: f"{WORK}/stock/px_{i}.mp4"                           # Pixabay: solo immagini generiche, senza persone                                          # vento tra i filari, senza voci
 
 
 def vo_over(e, name, ranges, items, lead=0.3, tail=0.4, music=None):
@@ -413,7 +416,7 @@ def long_video(W, H):
 
     # 0. GANCIO: prima l'azione (mani che raccolgono, suono vero), poi la curiosità del titolo detta da Manuel
     e.b(C("133703"), 1.0, 1.8, gain=0.7)
-    e.say(C("115233"), [(36.5, 39.6), (41.4, 47.8)], cover={1: (C("115803"), 0.3)})
+    e.say(C("115233"), [(36.5, 39.6), (41.4, 44.55), (44.55, 47.8)], cover={1: (C("115803"), 0.3), 2: (C("132930"), 1.0)})
     e.title("1877 · 3.000 rupie l'anno", e.t - 3.6, 3.4)               # la cifra del titolo, con "l'anno" (Insights)
     vo_over(e, "1", [(2.0, 5.42)], [(C("115728"), 0.5, None), (C("113517"), 0.5, None)], lead=0.2, tail=0.3)
     e.say(C("120307"), [(0.8, 2.95), (3.6, 6.0)], cover={0: (C("133721"), 69.6)})   # "raccolte a mano": la mano vera
@@ -437,7 +440,8 @@ def long_video(W, H):
     tl.sfx(tm, ambient(QUIET[0], 1.0, mdur), 0.25)
     e.b(C("114701"), 0.5, 3.2, gain=0.5)
     vo_over(e, "2", [(6.6, 17.95)], [(G("1877", "1877|John Daniel Munro|affitta le colline dal raja di Poonjar|0.55", 3.8),
-                                     None, 3.8), (C("132930"), 0.5, None), (C("134442"), 0.3, None)], music=0.0)
+                                     None, 3.8), (PX(41146), 2.0, 2.6), (C("132930"), 0.5, None), (C("134442"), 0.3, None)],
+             music=0.0)
     vo_over(e, "3", [(18.75, 24.69)], [(C("115553"), 0.5, 3.0),
                                        (G("1880", "1880|il primo tè|su una cinquantina di acri|0.65", 3.0, "1877"), None, 3.0),
                                        (C("132727"), 0.5, None)], music=11.0)
@@ -458,9 +462,10 @@ def long_video(W, H):
           **I)
     e.b(C("115728"), 0.5, 2.4, gain=0.6)
     e.say(C("133721"), [(55.4, 56.6)], subs=[(55.4, 56.6, "Solo acqua piovana.")], **I)
+    e.b(PX(92994), 3.0, 2.0, gain=0.0, extra=(QUIET[0], 4.0, 0.5))    # la pioggia sulle foglie (Pixabay, muta)
     e.say(C("134852"), tight(C("134852"), [(0.3, 10.5)]))            # Manuel riporta Sadish: tutto organico
     e.say(C("133721"), [(57.4, 63.9), (69.5, 74.6), (76.0, 80.3), (81.1, 83.9), (85.0, 89.9)],
-          cover={0: (C("115958"), 0.5)},
+          cover={0: (C("135012"), 4.0)},
           subs=[(57.4, 63.9, "Queste foglie si raccolgono ogni dieci, quindici giorni."),
                 (69.5, 74.6, "Questo è il metodo di raccolta: due, tre foglie."),
                 (76.0, 80.3, "Due, tre foglie: sono quelle di buona qualità."),
@@ -507,7 +512,7 @@ def long_video(W, H):
              (C("132930"), 3.0, None)], music=35.0)
     vo_over(e, "5", [(37.16, 43.93)],
             [(G("1901", "1901|la foresta tagliata|su larga scala|0.6;1911|il tè copre|circa 6.500 ettari|3.35", 5.0,
-                "1895;1897"), None, 5.0), (C("115803"), 0.5, None)], music=47.0)
+                "1895;1897"), None, 5.0), (C("132930"), 0.5, None)], music=47.0)
     vo_over(e, "6", [(44.82, 51.63)], [(C("114701"), 6.0, None), (C("181247"), 0.3, None)], music=54.0)
     e.say(C("134136"), [(0.1, 7.6), (8.2, 22.4)], cover={1: (C("132655"), 2.0)},
           subs=[(0.1, 7.6, "Com'è il rapporto tra questa grande azienda e chi vive qui?"),
@@ -515,7 +520,8 @@ def long_video(W, H):
                 (13.0, 19.4, "aiuto, casa, cure mediche, trasporto."),
                 (20.1, 22.4, "L'azienda dà tutto gratis.")], **I)
     vo_over(e, "9", [(88.16, 92.16)],
-            [(G("1971", "1971|legge del Kerala|sulle terre di queste colline|0.5", 3.6, "1901;1911"), None, None)],
+            [(G("1971", "1971|legge del Kerala|sulle terre di queste colline|0.5", 3.0, "1901;1911"), None, 3.0),
+             (PX(349087), 2.0, None)],
             music=62.0)
     vo_over(e, "10", [(92.92, 101.25)],
             [(G("2005", "2005|l'azienda ai dipendenti|circa tredicimila|0.6", 3.6, "1911;1971"), None, 3.6),
@@ -530,7 +536,7 @@ def long_video(W, H):
                 (8.1, 9.3, "Sì, l'India è seconda."),
                 (12.2, 14.8, "Qui è una cultura molto profonda."),
                 (16.3, 19.0, "La produzione migliore dell'India. Buona qualità.")], **I)
-    vo_over(e, "12", [(130.44, 131.72), (131.88, 138.23)], [(C("132655"), 3.0, None), (C("132930"), 1.0, None)],
+    vo_over(e, "12", [(130.44, 131.72), (131.88, 138.23)], [(PX(70333), 2.0, None), (C("132655"), 3.0, None), (C("132930"), 1.0, None)],
             music=90.0)
     e.to_black(strong=True)
 
@@ -553,7 +559,7 @@ def long_video(W, H):
 
     # 5. CHIUSURA: VO 14 sulla sera e la nebbia, logo Voci Vere
     t_f = e.t
-    vo_over(e, "14", [(155.36, 160.21)], [(C("181123"), 0.5, None), (C("181247"), 0.5, None), (C("115803"), 0.3, None)],
+    vo_over(e, "14", [(155.36, 160.21)], [(C("181123"), 0.5, None), (C("181247"), 0.5, None), (C("135012"), 8.0, None)],
             lead=0.6, tail=1.0, music=100.0)
     tl._add(logo_card(C("115803"), 2.5, 3.5, W, H, f"{OUT}/fine_logo_{W}x{H}.mp4"), 0, 3.5, audio=False,
             grade="null", fade=0.05)
@@ -561,6 +567,7 @@ def long_video(W, H):
     if MUSIC:
         tl.music(t_f, e.t, MUSIC, offset=100.0, level=0.42, fin=0.6, fout=1.6)
 
+    e.bed(0.0, e.t, QUIET[0], 0.0, 0.16)                             # vento tra i filari sotto tutto: mai silenzi
     chapters = [(0.0, "Le colline del tè"), (t_m, "Munnar"), (t_s, "Con Sadish tra i filari"),
                 (t_h, "La storia e chi ci lavora"), (t_c, "Il tè del chai master"), (t_f, "Chiusura")]
     out = f"{OUT}/VociVere_te_long_{W}x{H}.mp4"
@@ -575,9 +582,168 @@ def long_video(W, H):
     return out
 
 
+# ================= REEL DEL BUCATO (a parte dai 4 verticali, Manuel 26/10) =================
+from reel_kit import Reel
+
+
+def bucato():
+    """~7 s in loop: lava al rubinetto, strizza, si gira verso la camera. Gancio in sovrimpressione dall'inizio,
+    solo suono vero dell'acqua, niente etichetta di luogo (testi di Copy in copioni/te_testi.md)."""
+    W, H = (540, 960) if PREVIEW else (1080, 1920)
+    r = Reel(f"{OUT}/bucato_{W}_work", W, H, cx_cam=0.4)
+    # i colpi dei panni (0.9, 1.5, 2.2 s in 105047; 2.1 s in 105115) mostrati più volte: è lei la "lavatrice"
+    Z = dict(zoom=(1.3, 1.3, None))
+    r.own(C("105047"), 0.2, cx=0.36, gain=1.0)(1.5)
+    r.own(C("105115"), 1.6, cx=0.42, gain=1.0)(1.0)
+    r.own(C("105047"), 1.8, cx=0.36, gain=1.0, fx=Z)(0.8)
+    r.own(C("105115"), 0.6, cx=0.42, gain=1.0)(0.8)
+    r.own(C("105047"), 0.3, cx=0.36, gain=1.0, fx=Z)(0.8)
+    r.own(C("105047"), 4.2, cx=0.45, gain=1.0)(2.0)
+    r.title(0.0, r.t, "POV: non hai la lavatrice\\N(e non ti serve)", "Mid", 1320)   # emoji solo nel testo del post
+    out = r.render(f"{OUT}/VociVere_te_bucato_{W}x{H}.mp4", crf=18 if W == 1080 else 24,
+                   preset="medium" if W == 1080 else "veryfast")
+    return out
+
+
+# ================= VERTICALI (teaser + 3 dopo il lungo; regole in regole/montaggio_documentario.md) =================
+def vwords(tag, a, b, src_json=None):
+    """Parole (testo, tempo) di una clip nell'intervallo [a, b) dalla trascrizione."""
+    segs = _SEG.get(os.path.basename(C(tag)), []) if src_json is None else src_json
+    return [(w, t) for s_ in segs for w, t in s_["words"] if a - 0.05 <= t < b]
+
+
+_WVO = next(iter(json.load(open(f"{WORK}/vo/rajmala.json")).values())) if os.path.exists(f"{WORK}/vo/rajmala.json") else []
+FIXW = {"Moonar": "Munnar", "Monar": "Munnar", "te": "tè", "te.": "tè.", "Sadice": "Sadish"}
+
+
+# parole riascoltate a pezzi (la trascrizione automatica di queste clip era sbagliata)
+W_143318 = [("Ho", 0.56), ("provato", 0.88), ("a", 1.28), ("fare", 1.36), ("qualche", 1.6), ("domanda", 2.0), ("al", 2.96),
+            ("master,", 3.28), ("lo", 3.84), ("chiamano", 4.0), ("così,", 4.32), ("del", 4.56), ("tè,", 4.8), ("e", 5.2),
+            ("lui", 5.36), ("si", 5.52), ("è", 5.6), ("rifiutato.", 5.76), ("Forse", 9.04), ("proprio", 9.64), ("qua", 9.98),
+            ("è", 10.38), ("l'essenza", 10.62), ("dell'India.", 11.46), ("Fare", 12.8), ("le", 13.2), ("cose", 13.36),
+            ("senza", 13.68), ("apprezzamento", 14.0), ("altrui,", 14.66), ("farle", 15.28), ("semplicemente", 15.6),
+            ("perché", 16.0), ("ti", 16.24), ("piace", 16.4), ("farle.", 16.88)]
+W_143138 = [("In", 0.48), ("conclusione", 0.72), ("assaggiamo", 1.28), ("questo", 1.92), ("tè.", 2.24)]
+W_141707 = [("E", 0.24), ("ora", 0.48), ("è", 0.72), ("il", 0.8), ("momento", 0.88), ("di", 1.2), ("provare", 1.36),
+            ("questo", 1.92), ("tè", 2.4), ("tradizionale,", 2.8), ("direttamente.", 4.08)]
+
+
+def fixw(ws):
+    return [(FIXW.get(w, w), t) for w, t in ws]
+
+
+def vreel(tag):
+    W, H = (540, 960) if PREVIEW else (1080, 1920)
+    return Reel(f"{OUT}/{tag}_{W}_work", W, H, cx_cam=0.5), W, H
+
+
+def vfinish(r, tag, W, H):
+    t = 0.0                                                         # vento tra i filari sotto tutto: mai silenzi
+    while t < r.t - 0.1:
+        d = min(14.5, r.t - t + 0.3)
+        r.tl.sfx(t, ambient(QUIET[0], 0.5, d), 0.10)
+        t += d - 0.3
+    out = f"{OUT}/VociVere_te_{tag}_{W}x{H}.mp4"
+    return r.render(out, crf=18 if W == 1080 else 24, preset="medium" if W == 1080 else "veryfast")
+
+
+def vhook(r, txt, d=2.2):
+    r.title(0.0, d, txt, "Mid", 820)
+
+
+def mini_sigla(r, W, H):
+    """Chiusura del teaser: coda della sigla a tema tè (l'onda che diventa il logo, "Questo è Voci Vere")."""
+    sig = Timeline(W, H, f"{OUT}/sigla_v_work")
+    sigla_d(sig, OUT, clips=SIGLA_CLIPS, tag="te")
+    r.tl._add(sig.shots[-1]["src"], 2.5, 3.5, audio=True, grade="null", fade=0.05)
+
+
+def v1():
+    """TEASER: le colline affittate per 3.000 rupie l'anno; la domanda resta aperta (di chi sono oggi?)."""
+    r, W, H = vreel("v1_teaser")
+    r.own(C("133703"), 1.0, gain=0.7)(2.0)
+    vhook(r, "Affittate per 3.000 rupie\\Nl'anno. Nel 1877.")
+    r.cam(C("115233"), 36.5, 39.6, words=fixw(vwords("115233", 36.5, 39.6)), cx=0.5)
+    r.narr(C("115233"), 41.4, 47.8, [(r.own(C("115803"), 0.3, gain=0.0), None), (r.own(C("132930"), 1.0, gain=0.0), None)],
+           words=fixw(vwords("115233", 41.4, 47.8)))
+    r.narr(VO1, 2.0, 5.42, [(r.own(C("115728"), 0.5, gain=0.0), None)], words=vwords("", 2.0, 5.42, _WVO))
+    r.cam(C("120307"), 0.8, 2.95, words=fixw(vwords("120307", 0.8, 2.95)))
+    r.cam(C("133721"), 10.0, 16.4, speed=1.05, cx=0.55,
+          block=[(10.0, 13.6, "Tutte le montagne che vedi sono tè.", "Mountain you see everywhere also tea."),
+                 (13.6, 16.4, "Coperte verdi.", "Green blankets.")])
+    t = r.t
+    r.own(C("114701"), 1.0, gain=0.5)(2.6)
+    r.title(t + 0.2, r.t, "E oggi, di chi sono?", "Mid", 820)
+    if MUSIC:
+        r.tl.music(0, r.t, MUSIC, offset=0.0, level=0.3, fin=0.3, fout=0.5)
+    mini_sigla(r, W, H)
+    return vfinish(r, "v1_teaser", W, H)
+
+
+def v2():
+    """COME SI RACCOGLIE: Sadish spiega quali foglie si prendono e ogni quanto si torna sulla stessa collina."""
+    r, W, H = vreel("v2_raccolta")
+    r.own(C("133703"), 3.0, gain=0.7)(2.0)
+    vhook(r, "Si prendono solo\\Ndue, tre foglie.")
+    blk = lambda a, b, it, en: r.cam(C("133721"), a, b, speed=1.05, cx=0.55, block=[(a, b, it, en)])
+    blk(69.5, 74.6, "Questo è il metodo di raccolta: due, tre foglie.", "This is the plucking method for the two, three leaves.")
+    blk(76.0, 80.3, "Due, tre foglie: sono quelle di buona qualità.", "Two three leaves the good quality.")
+    blk(81.1, 83.9, "Queste, le buone, vanno in fabbrica.", "Then this leaves good to the factory.")
+    blk(85.0, 89.9, "Queste scure, nere, sono cattive. Non si usano.", "This type dark, the black, bad leaves. Not use.")
+    blk(57.4, 63.9, "Queste foglie si raccolgono ogni dieci, quindici giorni.", "This leaves maybe ten, fifteen days the plucking.")
+    r.cam(C("133721"), 119.5, 131.2, speed=1.05, cx=0.55,
+          block=[(119.5, 123.5, "Oggi raccolgo qui, domani vado su un'altra collina.", "Today I will pluck here, tomorrow another mountain."),
+                 (124.0, 131.2, "Il mese dopo si torna qui. È un giro.", "Next month come to here. The circle.")])
+    r.own(C("135033"), 1.0, gain=0.5)(1.8)
+    return vfinish(r, "v2_raccolta", W, H)
+
+
+def v3():
+    """UNA GIORNATA DI LAVORO: quanto si raccoglie, l'orario, chi raccoglie (parole di Sadish, riportate)."""
+    r, W, H = vreel("v3_giornata")
+    r.own(C("115958"), 0.5, gain=0.6)(2.0)
+    vhook(r, "Quanto tè raccoglie\\Nuna persona al giorno?")
+    r.cam(C("134520"), 6.2, 11.25, speed=1.05, cx=0.55,
+          block=[(6.2, 11.2, "Normalmente, al giorno, una persona raccoglie", "Normally per day people")])
+    r.cam(C("134520"), 12.15, 17.6, speed=1.05, cx=0.55,
+          block=[(12.2, 16.5, "da ventisei a ventinove chili al giorno.", "Twenty six to twenty-nine kilograms per day."),
+                 (17.0, 17.6, "In media.", "Average.")])
+    r.cam(C("134520"), 26.8, 30.5, speed=1.05, cx=0.55,
+          block=[(26.8, 29.5, "E chi raccoglie di più?", "More than a kilogram people are also plucking?"),
+                 (29.6, 30.5, "Soldi in più.", "Extra money.")])
+    rg = tight(C("134231"), [(0.0, 12.8)])
+    r.narr(C("134231"), rg[0][0], rg[-1][1], [(r.own(C("134231"), rg[0][0], speed=r.SP, gain=0.0), None)],
+           words=vwords("134231", 0.0, 12.8), cuts=[(rg[i][1], rg[i + 1][0]) for i in range(len(rg) - 1)])
+    r.cam(C("133721"), 107.5, 111.7, speed=1.05, cx=0.55,
+          block=[(107.5, 108.4, "Chi raccoglie?", "Who picks?"), (108.4, 111.7, "Tutti: donne e uomini.", "All people, ladies and men.")])
+    r.own(C("135922"), 0.3, gain=0.5)(1.8)
+    return vfinish(r, "v3_giornata", W, H)
+
+
+def v4():
+    """IL CHAI MASTER: il tè tirato a Munnar, il maestro che non vuole parlare, l'assaggio."""
+    r, W, H = vreel("v4_chai")
+    r.own(C("142447"), 2.0, gain=0.8)(2.2)
+    vhook(r, "Il chai di Munnar\\Nsi fa così.")
+    r.cam(C("141707"), 0.1, 4.9, words=W_141707)
+    r.own(C("142433"), 0.5, gain=0.8)(2.4)
+    r.own(C("142545"), 2.0, gain=0.8)(3.0)
+    rg = tight(C("143318"), [(0.4, 6.4), (8.9, 17.4)])
+    r.narr(C("143318"), rg[0][0], rg[-1][1], [(r.own(C("142447"), 8.0, gain=0.0), None), (r.own(C("142545"), 6.0, gain=0.0), None),
+                                              (r.own(C("143318"), 9.0, gain=0.0), None)],
+           words=W_143318, cuts=[(rg[i][1], rg[i + 1][0]) for i in range(len(rg) - 1)])
+    r.cam(C("143138"), 0.4, 2.6, words=W_143138)
+    r.own(C("143138"), 20.0, gain=0.6)(1.8)
+    return vfinish(r, "v4_chai", W, H)
+
+
 if __name__ == "__main__":
     what = [a for a in sys.argv[1:] if not a.startswith("--")] or ["long"]
     W, H = (960, 540) if PREVIEW else (3840, 2160)
     for w in what:
         if w == "long":
             long_video(W, H)
+        elif w == "bucato":
+            bucato()
+        elif w in ("v1", "v2", "v3", "v4"):
+            globals()[w]()
