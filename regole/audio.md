@@ -21,3 +21,7 @@
 - Scambio con il montaggio: il montaggio scrive `projects/<video>/audio_cue.md` (tempo nel montato, cosa succede,
   che suono serve); la chat Audio risponde con i file in `projects/<video>/audio/` (wav 48 kHz) o su Drive e
   compila la colonna "file" del cue.
+- Gancio (Manuel, 26/10, dopo aver visto il lungo di Arthunkal): primi 30 s calmi, solo suono vero, niente colpi né
+  whoosh né cambi rumorosi. Li tiene insieme un letto naturale continuo (onde, canto o folla lontani, dal girato).
+- Ambienti di riempimento (J-cut, buchi): solo da clip SENZA parlato (controllare con la trascrizione): sotto la
+  mappa di Arthunkal si sentiva una voce presa da un ambiente con Manuel che parlava.

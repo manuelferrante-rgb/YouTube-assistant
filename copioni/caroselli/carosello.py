@@ -98,8 +98,7 @@ build('mercato',[
       body='Ghiaccio nei cesti: il pesce deve partire finché è fresco.'),
  dict(photo=C+'m/m_136.jpg',crop=(.43,0,1.0,0.86),title='«Un posto in pace»',hl=YEL,
       body='Cristiani, induisti, musulmani: qui vivono insieme, ci racconta.'),
- dict(photo='work/thumb/m_3m47.5.jpg',crop=(.5,.5,1.0,1.0),title='Tu ti alzeresti alle 3?',hl=YEL,
-      body='Scrivilo nei commenti.\nIl video completo è uscito sul canale.'),
+ dict(photo='work/thumb/m_3m47.5.jpg',crop=(.5,.5,1.0,1.0),title='Fuori ora il video su YouTube',hl=YEL),
 ])
 build('arthunkal',[
  dict(photo=C+'a/a_090733_0296.jpg',cover=True,crop=(.75,.5,1.0,1.0),title='13 km pregando, senza mai fermarsi',hl=YEL,
@@ -116,6 +115,5 @@ build('arthunkal',[
       body='L\'arrivo, la mattina, davanti alla basilica di Sant\'Andrea.'),
  dict(photo=C+'a/a_090825_0298.jpg',crop=(.47,.5,1.0,1.0),title='Un pezzo d\'Italia',hl=YEL,
       body='La chiesa la ricostruisce nel 1584 un gesuita italiano, il «padre bianco». La statua di San Sebastiano arriva da Milano nel 1647.'),
- dict(photo=C+'a/a_093557_0316.jpg',crop=(.45,.5,1.0,1.0),title='Cammineresti 13 km di notte pregando?',hl=YEL,
-      body='Scrivi SÌ o NO nei commenti.\nIl video completo è uscito sul canale.'),
+ dict(photo=C+'a/a_093557_0316.jpg',crop=(.45,.5,1.0,1.0),title='Fuori ora il video su YouTube',hl=YEL),
 ])

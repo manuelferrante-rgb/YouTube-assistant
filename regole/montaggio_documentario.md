@@ -214,3 +214,8 @@ semplice:
 Nota da Audio, 25/10 (decisione di Manuel): la musica non la carica più Manuel da YouTube. La compone la chat Audio,
 originale, per ogni video, e la consegna su Drive in montati/<video>/audio/ insieme agli effetti. Manuel giudica sul
 lungo orizzontale finito. Le righe sopra su "YouTube Audio Library" e "la fornisce Manuel" sono superate.
+
+Nota da Copy, 26/10 (regola di Manuel): titolo e miniatura sono la curiosità più forte del video, e i primi 30 s
+del lungo devono riprenderla, così lo spettatore trova subito quello che si aspettava. Il gancio iniziale si
+decide insieme a Copy. Quando Manuel dà l'ok al montato, avvisare Copy: solo allora fa sottotitoli it/en, titolo,
+descrizione, capitoli e miniatura.

@@ -17,3 +17,6 @@
 | `projects/arthunkal/audio/tick_data.wav` | girato Manuel, click 0247 8.58 s filtrato 2-6 kHz (tocco di penna) | Manuel Ferrante | propria | idem | Arthunkal: date della linea del tempo, molto basso |
 | Drive `montati/arthunkal/audio/musica_voiceover.wav` | `musica/compose.py storia --dur 210` | Voci Vere | propria | - | Arthunkal: sotto il voiceover del lungo (3:30) |
 | Drive `montati/arthunkal/audio/musica_verticali.wav` | `musica/compose.py verticale` | Voci Vere | propria | - | Arthunkal: verticali (60 s, passo da subito) |
+| `projects/arthunkal/audio/letto_onde.flac` | girato Manuel, mimo_140234 + mimo_140104 (onde, Marari 23/10), in giro con dissolvenze | Manuel Ferrante | propria | Drive 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX | Arthunkal: letto del gancio calmo (26/10) |
+| `projects/arthunkal/audio/rosario_lontano.flac` | girato Manuel, 0264 (rosario cantato) + 0234 (mormorio della notte), passa-basso 1.5 kHz + riverbero | Manuel Ferrante | propria | idem | Arthunkal: rosario lontano sotto il gancio, da abbassare sotto le voci |
+| `projects/arthunkal/audio/letto_gancio.flac` | i due sopra insieme (rosario -14 dB) | Manuel Ferrante | propria | idem | Arthunkal: letto pronto per i primi 30-40 s |
