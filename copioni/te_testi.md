@@ -1,5 +1,7 @@
 # Tè di Munnar: testi (chat Copy)
 
+Cartella Drive del video (girato + montati/te): 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw (Manuel, 26/10).
+
 Fatti solo da `piano/te.md` (Pianificazione, con fonti). Le condizioni di oggi (salari, kg, case) le dicono solo
 le persone intervistate, mai Manuel o il voiceover.
 
