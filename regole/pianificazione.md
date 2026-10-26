@@ -24,3 +24,6 @@
   pulito, 30 s a microfono vicino e senza voce di Manuel, del suono che identifica l'evento (lì il rosario a
   botta e risposta); una ripresa dall'alto della folla (tetto, balcone, muretto). Nelle liste riprese vanno
   sempre tutti e due.
+- Giorni di uscita (flusso del 26/10): li decido io in `piano/calendario.md` solo dopo che Montaggio comunica
+  l'approvazione di Manuel. Schema di base: teaser il giovedì, lungo nel fine settimana (domenica), carosello con il
+  lungo, 3 verticali nei giorni dopo (uno ogni 2 giorni circa). Le date le conferma Manuel.
