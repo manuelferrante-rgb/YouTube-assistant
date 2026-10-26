@@ -113,7 +113,10 @@ Registrale tutte e due; dopo aver visto le interviste scelgo con Montaggio la ch
 - Mai persone generate che possano sembrare quelle intervistate o lavoratori reali riconoscibili.
 - Mai "foto d'archivio" finte spacciate per vere: le scene storiche vanno in uno stile riconoscibile come
   ricostruzione (es. illustrazione, toni seppia stilizzati), senza date o firme inventate.
-- Su YouTube va attivata la dichiarazione "contenuti alterati o sintetici" se le scene IA sembrano realistiche.
+- Su YouTube va attivata la dichiarazione "contenuti alterati o sintetici" (ci sono scene realistiche di fabbrica e
+  tazze, Insights 26/10). In descrizione it/en una riga: "Alcune scene storiche e di lavorazione sono ricostruzioni
+  generate con IA." / "Some historical and processing scenes are AI-generated reconstructions."
+- Ricerca e lista delle scene IA: analisi/broll_ia_te.md (Insights).
 - Scene che servono al voiceover: contratto d'affitto e colline del 1877 (blocchi 1-2), prime piantagioni e
   coltivazioni di caffè/cardamomo (3), uffici di una compagnia britannica e piantagioni d'epoca (4), foresta tagliata
   e colline spoglie (5), lavoratori tamil in stile illustrato, senza luoghi di partenza inventati (6), mani che raccolgono (7),
