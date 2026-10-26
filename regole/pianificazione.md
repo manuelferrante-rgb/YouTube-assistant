@@ -24,8 +24,7 @@
   pulito, 30 s a microfono vicino e senza voce di Manuel, del suono che identifica l'evento (lì il rosario a
   botta e risposta); una ripresa dall'alto della folla (tetto, balcone, muretto). Nelle liste riprese vanno
   sempre tutti e due.
-- Giorni di uscita (flusso del 26/10): li decido io in `piano/calendario.md` solo dopo che Montaggio comunica
-  l'approvazione di Manuel. Schema di base: teaser il giovedì, lungo nel fine settimana (domenica), 3 verticali nei
-  giorni dopo (uno ogni 2 giorni circa). Il carosello MAI lo stesso giorno del lungo (Manuel, 26/10): giorno
-  separato, di default il lunedì dopo il lungo (l'ultima slide dice "Fuori ora il video su YouTube", quindi il
-  lungo deve essere già uscito), da confermare con Manuel. Le date le conferma lui.
+- Giorni di uscita (schema di Manuel, 26/10; decido io le date in `piano/calendario.md` dopo che Montaggio comunica
+  l'approvazione). Settimana tipo: domenica lungo, lunedì reel 1, martedì reel 2, mercoledì carosello, giovedì
+  reel 3, venerdì niente, sabato teaser del lungo successivo (che esce la domenica dopo). Il carosello mai nello
+  stesso giorno del lungo. Eccezione solo per il primo giovedì (29/10): teaser del mercato già programmato.
