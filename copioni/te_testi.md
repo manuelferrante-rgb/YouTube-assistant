@@ -406,4 +406,8 @@ gancio). Bozze:
    nell'anteprima)
    EN: India's tea hills, once leased for 3,000 rupees 🇮🇳
 2. In India il tè si raccoglie ancora a mano: chi c'è dietro 🇮🇳
-Miniatura: Manuel con i filari dietro (115233_0358 o 120307_0372) + "3.000 RUPIE" grande, "1877" piccolo.
+Miniatura: Manuel la vuole PIÙ FORTE (26/10); si fa dopo l'ok al montato. Idea da provare per prima: Manuel a
+braccia aperte sulla collina (115233_0358 a circa 25%, cielo dietro, si scontorna bene) con i filari fino
+all'orizzonte e la scritta "TUTTO QUESTO PER 3.000 RUPIE?" (piccolo sotto: "1877"). Alternative: primo piano
+di Manuel stupito (120307_0372) + "3.000 RUPIE" enorme; contrasto illustrazione d'epoca IA (solo per questo
+video) a sinistra e collina di oggi a destra.
