@@ -20,6 +20,9 @@ OUT = f"{ROOT}/work/sigla_studio"
 os.makedirs(OUT, exist_ok=True)
 PIECES = ["01_strada_tuktuk.mp4", "02_marari_pescatori.mp4", "03_marari_pescatore.mp4", "04_kerala_chai.mp4",
           "05_marari_folla.mp4", "06_marari_mare.mp4"]
+# sigla a tema del video (Manuel, 26/10): SIGLA_CLIPS="clip@inizio;..." (6 pezzi) e SIGLA_TAG per il nome del file
+CLIPS = [(c.split("@")[0], float(c.split("@")[1])) for c in os.environ.get("SIGLA_CLIPS", "").split(";") if c]
+TAG = os.environ.get("SIGLA_TAG", "")
 FRASE, FA, FB = f"{S}/frase_sigla_manuel.m4a", 1.70, 5.75
 V0 = 0.30                     # inizio della frase nella sigla
 T_VOCI = V0 + 4.88 - FA       # attacco di "Voci" (3.48 s)
@@ -111,7 +114,8 @@ def encode(name, gen, events):
 
 # pezzi: 6 x 0.53 s fino a poco prima di "Voci"
 SEG = (T_VOCI - 0.15) / len(PIECES)
-PF = [frames(f"{S}/{p}", int(SEG * FPS) + 8) for p in PIECES]
+PF = ([frames(c, int(SEG * FPS) + 8, a) for c, a in CLIPS] if CLIPS else
+      [frames(f"{S}/{p}", int(SEG * FPS) + 8) for p in PIECES])
 
 
 def piece_at(t, push=0.05):
@@ -325,5 +329,5 @@ def gen_D(t, f):
 
 
 if __name__ == "__main__" and "D" in sys.argv[1:]:
-    encode(f"D_scelta_{W}x{H}", gen_D, [(VX, V0, 1.0), ("riser_long", T_VOCI - 2.6, 0.12), ("boom", T_VOCI - 0.05, 0.35),
+    encode(f"D_{TAG}_{W}x{H}" if TAG else f"D_scelta_{W}x{H}", gen_D, [(VX, V0, 1.0), ("riser_long", T_VOCI - 2.6, 0.12), ("boom", T_VOCI - 0.05, 0.35),
                                ("shimmer", T_VOCI + 0.2, 0.10)])
