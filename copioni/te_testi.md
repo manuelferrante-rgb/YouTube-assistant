@@ -51,6 +51,30 @@ Domande alla guida del museo (in inglese):
 - Is there a story about the name Kannan Devan? (C'è una storia sul nome Kannan Devan?) Se risponde, è sua.
 Da girare: la meridiana del 1913, la rullatrice (Rotorvane), foto d'epoca, cartelli con le date.
 
+### In più sulle colline (26/10, contesto storico da dire in camera)
+Frasi brevi, una per inquadratura, tutte da piano/te.md. Dille a parole tue camminando tra i filari.
+A. "Prima del tè, su queste colline vivevano i Muthuvan e i Malayarayan. Il tè arriva con i britannici."
+B. "Nel 1877 un raja della famiglia di Poonjar affitta queste colline a John Daniel Munro, un britannico che lavora
+   per il regno di Travancore. Circa 136.000 acri, per 3.000 rupie l'anno."
+C. "All'inizio qui si provano caffè, cardamomo, china. Il primo tè si pianta nel 1880, su una cinquantina di acri."
+D. "Nel 1895 arriva una compagnia scozzese di Glasgow, la Finlay Muir, e compra 33 piantagioni. Due anni dopo nasce
+   la Kannan Devan Hills Produce Company: il nome che si legge ancora sui cartelli qui intorno."
+E. "Dal 1901 si taglia la foresta su larga scala. In dieci anni il tè copre circa 6.500 ettari."
+F. "A raccoglierlo vengono portati lavoratori tamil. Molti di quelli che lavorano qui oggi sono i loro discendenti."
+   (La seconda frase dilla solo se te lo confermano le persone che intervisti.)
+G. "Nel 1971 una legge del Kerala riprende il controllo delle terre. Dal 2005 la maggior parte dell'azienda è dei
+   suoi dipendenti, circa tredicimila: la prima azienda di piantagioni in India a funzionare così."
+H. "Nel 2015 migliaia di raccoglitrici bloccano Munnar per nove giorni, senza sindacati né partiti. Si chiamano
+   Pombilai Orumai, unità delle donne. Chiedono un salario più alto e ottengono il bonus al 20%."
+I. Per chiudere un pezzo: "Le colline sono le stesse di centocinquant'anni fa. Le mani che raccolgono sono cambiate
+   di proprietario, non di gesto." (Solo se ti suona tua, altrimenti lascia.)
+Dove va il tè e chi lo produce (dati non ancora verificati: chiederli sul posto, risposte attribuite a chi parla):
+- Ai lavoratori o al capo squadra: "Where does this tea go after you pick it? Which factory?" (Dove va questo tè dopo
+  la raccolta? In quale fabbrica?)
+- Alla guida o in fabbrica: "Who buys this tea? Does it stay in India or go abroad? Which brands?" (Chi compra
+  questo tè? Resta in India o va all'estero? Con quali marchi?)
+- In camera, come domanda aperta: "Da qui le foglie vanno in fabbrica. E poi? Proviamo a scoprire dove finisce."
+
 ## VOICEOVER da registrare stasera (26/10)
 Come registrare: dici il numero del blocco ("Uno"), 2 secondi di pausa, poi il testo. Ritmo calmo. Registra
 SOLO i blocchi la cui scena hai girato oggi (scritta tra parentesi); gli altri saltali, si registrano dopo.
