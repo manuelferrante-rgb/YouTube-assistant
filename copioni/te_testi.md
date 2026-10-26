@@ -404,7 +404,7 @@ Curiosità più forte con il girato in mano: 1877, colline affittate per 3.000 r
 gancio). Bozze:
 1. Colline del tè in India, affittate per 3.000 rupie 🇮🇳   (scelto da Manuel, riordinato perché "India" si legga
    nell'anteprima)
-   EN: India's tea hills, once leased for 3,000 rupees 🇮🇳
+   EN: India's tea hills, leased for 3,000 rupees 🇮🇳   (Manuel: senza "once", 26/10)
 2. In India il tè si raccoglie ancora a mano: chi c'è dietro 🇮🇳
 Miniatura: Manuel la vuole PIÙ FORTE (26/10); si fa dopo l'ok al montato. Idea da provare per prima: Manuel a
 braccia aperte sulla collina (115233_0358 a circa 25%, cielo dietro, si scontorna bene) con i filari fino
