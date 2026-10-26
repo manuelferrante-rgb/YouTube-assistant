@@ -53,7 +53,7 @@ Consegna di Copy per ogni lungo, appena Montaggio chiude il montato (Manuel, 25/
 Carosello di ogni lungo (Manuel, 25/10): 7-8 immagini 4:5 (1080x1350) dal girato vero, logo Voci Vere piccolo in
 alto a sinistra, testo e logo dentro il quadrato centrale 1080x1080 (YouTube ritaglia a quadrato). Slide 1: foto
 forte + gancio di 3-7 parole + "Scorri"; slide 2 che regge da sola; slide interne: un fatto per slide (titolo 2-5
-parole + una riga, max ~15 parole); ultima: domanda specifica da commentare + "il video completo è uscito sul canale".
+parole + una riga, max ~15 parole); ultima: solo "Fuori ora il video su YouTube" (Manuel, 26/10), niente altro; la domanda da commentare va nella didascalia.
 Didascalia IG + testo del post YouTube + posizione (luogo) in `copioni/caroselli/testi_caroselli.md`. Immagini su
 Drive in `montati/<video>/carosello/`. Generatore: `copioni/caroselli/carosello.py`. Schemi dei competitor:
 `analisi/competitor/caroselli.md`.
