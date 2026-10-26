@@ -64,18 +64,8 @@ Mappa: India, Kerala, Munnar. Nessun testo da dire.
 - Is there a story about the name Kannan Devan? (C'è una storia sul nome Kannan Devan?) Se risponde, è sua.
 - What is this machine? How old is it? (Cos'è questa macchina? Quanti anni ha?)
 
-### 6. KOLUKKUMALAI (6:00-7:10)
-Attenzione: la proprietà non è confermata e non risulta della KDHP. Qui niente frasi sull'azienda dei dipendenti.
-[GIRA] La salita, i filari in alto, la fabbrica d'epoca, le macchine con le scritte in inglese.
-[CAMERA] "Kolukkumalai si presenta come la piantagione di tè più alta del mondo: siamo a oltre 2.000 metri, in
-Tamil Nadu, sul confine con il Kerala."
-[CAMERA] in fabbrica: "È una fabbrica d'epoca britannica. Qui il tè si lavora ancora con il metodo ortodosso, in gran
-parte a mano." (L'anno solo se lo leggi su una targa.)
-[DOMANDE]
-- Who owns this estate today? When was it started? (Di chi è oggi? Quando è nata?)
-- How many people work here? Where do they live? (Quante persone ci lavorano? Dove vivono?)
-- Where does this tea go? (Dove va questo tè?)
-[VO 10] sulle macchine e sulla lavorazione.
+### 6. (tolto il 26/10) Kolukkumalai: Manuel non ci va. Al suo posto più tempo con Sadish e le raccoglitrici.
+Il luogo preciso a Munnar lo dice Manuel quando lo scopre; fino ad allora in camera solo "qui a Munnar".
 
 ### 7. DI CHI È OGGI (7:10-8:10)
 [GIRA] Cartelli KDHP, fabbrica o uffici visti da fuori, raccoglitrici al lavoro, strade di Munnar.
@@ -115,7 +105,7 @@ girato oggi; quelli marcati DOPO si registrano quando c'è la scena o quando ho 
    Malayarayan.
 9. (macchinari del museo, meridiana; solo se la scena mostra targhe, macchine o nomi d'epoca)
    Le macchine, i nomi delle tenute, le strade: qui molto porta ancora il segno dell'epoca britannica.
-10. (Kolukkumalai: macchine e lavorazione)
+10. (fabbrica o museo: macchine e lavorazione; solo se le hai girate)
    Qui il tè si lavora ancora con il metodo ortodosso: le foglie vengono appassite, arrotolate, fatte ossidare e
    seccate.
    (Le fasi solo se le hai filmate o te le ha spiegate la guida; altrimenti tieni solo la prima frase.)
