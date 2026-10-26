@@ -101,7 +101,7 @@ V4 come funziona
 - Descrizione Short YT: Dal 2002 una preghiera che non si interrompe mai attraversa 13 km di costa del Kerala.
   Come si fa a non fermarsi?
 
-## Lungo: titolo e descrizione (bozza 25/10, capitoli quando arriva projects/arthunkal/capitoli.md)
+## Lungo: titolo e descrizione (BOZZA, si chiude solo dopo l'ok di Manuel al montato; bozza 25/10, capitoli quando arriva projects/arthunkal/capitoli.md)
 Fatti aggiunti da Montaggio (25/10, dal girato): si cammina sulla spiaggia (prima in strada, spostata per il
 traffico), partenza da mezzanotte, Manuel dalle 2:30 all'arrivo verso le 9; bancarelle di tè e acqua al buio;
 volontari induisti alla festa cattolica; un organizzatore dice che nasce da un'apparizione di Maria e parla di
@@ -189,15 +189,9 @@ Chapters
   Il 2002 nel lungo lo dice Manuel in camera all'alba, non è nella linea del tempo.
 - Minutaggi dei capitoli: projects/arthunkal/capitoli.md.
 
-## Sottotitoli YouTube del lungo (Copy, 25/10)
-projects/arthunkal/sottotitoli/VociVere_arthunkal_long.it.srt e .en.srt (78 righe, tempi del montato v2 5:41,
-dall'anteprima; stessi minutaggi del 4K finale). Su Drive: montati/arthunkal/sottotitoli/.
-Da verificare (audio coperto, testo ricostruito): 85-87 s "Per chilometri", 195-206 s sosta e volontari induisti,
-243 s "ci siamo arrivati", 258 s "Adesso che è finito tutto il pellegrinaggio".
-ATTENZIONE contenuto (per Manuel e Montaggio): a 0:42 Manuel in camera dice "Milioni di persone radunate,
-percorrendo decine di chilometri lungo la costa". Le fonti dicono ~100.000 (2025), l'organizzatore 400.000, il
-percorso è 13-14 km. Manuel l'ha valutata il 23/10 e la tiene ("numeri simili, va bene"): resta, sottotitoli
-fedeli all'audio. Il 4K finale ha gli stessi minutaggi dell'anteprima v2 (Montaggio, 25/10): .srt validi.
+## Sottotitoli YouTube del lungo
+Eliminati il 26/10 su richiesta di Manuel (repo e Drive): si rifanno solo dopo il suo ok al montato. Lo script
+resta in projects/arthunkal/sottotitoli/make_srt.py come base (testi e traduzioni delle interviste già allineati).
 
 ## Miniatura del lungo: prove (Copy, 25/10) in copioni/arthunkal_miniature/
 Manuel scontornato all'alba sulla spiaggia (DJI_20261024072415_0244), font Bebas Neue come il mercato.

@@ -57,3 +57,10 @@ parole + una riga, max ~15 parole); ultima: solo "Fuori ora il video su YouTube"
 Didascalia IG + testo del post YouTube + posizione (luogo) in `copioni/caroselli/testi_caroselli.md`. Immagini su
 Drive in `montati/<video>/carosello/`. Generatore: `copioni/caroselli/carosello.py`. Schemi dei competitor:
 `analisi/competitor/caroselli.md`.
+
+Regole di Manuel (26/10):
+- Sottotitoli it/en, titolo, descrizione, capitoli e miniatura del lungo si fanno SOLO dopo che Manuel ha dato l'ok
+  a Montaggio sul montato sistemato (Montaggio avvisa Copy). Prima, al massimo bozze: niente file su Drive.
+- Titolo e miniatura = la curiosità più forte del video. I primi 30 secondi del video devono riprendere proprio
+  quella curiosità, così lo spettatore trova subito quello che si aspettava e resta. Copy sceglie la curiosità con
+  Montaggio prima di chiudere il gancio iniziale.
