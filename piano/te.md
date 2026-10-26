@@ -3,6 +3,8 @@
 Stato: APPROVATO da Manuel il 26/10 (angolo, lungo + 4 verticali, pacchetto completo con carosello). Decisioni di Manuel 26/10: lungo + 4 verticali; ripresa oggi 26/10, se serve altro domani 27/10; posto ancora da comunicare (link Maps non leggibile da qui). Non ancora approvata da Manuel. Niente script né voiceover finché non approva:
 poi Copy scrive "DA DIRE E DA CHIEDERE" in `copioni/te_testi.md` partendo da questi fatti.
 
+Cartella Drive del video (girato e consegna in `montati/te`): 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw
+
 ## Dove si trova Manuel (26/10)
 - Maliyeckal Homestay, Anaviratty, Mankadavu Road, vicino alla scuola GLPS Anaviratty, Munnar 685561.
 - Anaviratty è a circa 20 km dal centro di Munnar e dal Tata Tea Museum, sulla strada NH85 verso Kochi (fonte:
