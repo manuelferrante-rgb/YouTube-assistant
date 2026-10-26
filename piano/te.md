@@ -1,7 +1,9 @@
 # Piantagioni di tè e colonialismo britannico (nome breve: `te`)
 
-Stato: IDEA, in ricerca (26/10). Decisioni di Manuel 26/10: lungo + 4 verticali; ripresa oggi 26/10, se serve altro domani 27/10; posto ancora da comunicare (link Maps non leggibile da qui). Non ancora approvata da Manuel. Niente script né voiceover finché non approva:
+Stato: APPROVATO da Manuel il 26/10 (angolo, lungo + 4 verticali, pacchetto completo con carosello). Decisioni di Manuel 26/10: lungo + 4 verticali; ripresa oggi 26/10, se serve altro domani 27/10; posto ancora da comunicare (link Maps non leggibile da qui). Non ancora approvata da Manuel. Niente script né voiceover finché non approva:
 poi Copy scrive "DA DIRE E DA CHIEDERE" in `copioni/te_testi.md` partendo da questi fatti.
+
+Cartella Drive del video (girato e consegna in `montati/te`): 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw
 
 ## Dove si trova Manuel (26/10)
 - Maliyeckal Homestay, Anaviratty, Mankadavu Road, vicino alla scuola GLPS Anaviratty, Munnar 685561.
@@ -39,8 +41,51 @@ Munnar (Kannan Devan Hills, KDH):
   Rights Resource Centre, Madhyamam, Outlook, Open Magazine.
 - Luglio 2026 (South First): la maggior parte dei lavoratori tamil di Munnar resta bracciante a giornata, senza
   terra né casa propria. Da verificare e citare solo attribuito alla testata.
+- Altitudine di Munnar: di solito circa 1.600 m (Wikipedia, Kerala Tourism, Forest Department), ma la scheda
+  Wikipedia dà 1.532 m e altre fonti 1.470 m. In frase: "oltre 1.500 metri". Dintorni da 1.450 a 2.695 m (Anamudi,
+  la cima più alta dell'India del sud).
+- Finlay Muir & Co: sì, scozzese. Ramo indiano della James Finlay & Co di Glasgow (fondata nel 1750, prima tessile).
+  In India dal 1862 a Bombay, dal 1870 come Finlay Muir; nel tè dal 1882 circa; a Munnar compra 33 tenute nel
+  1895 (una fonte turistica dice 1893-95). Dal 2000 è di John Swire & Son. Fonti: Wikipedia "James Finlay & Co",
+  Archives Hub, Glasgow Life Museums.
+- Dove va il tè di KDHP (Deccan Chronicle, 2019): produzione circa 25 milioni di kg l'anno, per la maggior parte
+  venduta all'ingrosso ad altri marchi; nel 2019 circa 8,5 milioni di kg con marchio proprio (Ripple). Il marchio
+  "Tata Tea Kanan Devan" è di Tata Consumer Products, non della KDHP (Tata Consumer, ri-lancio in Kerala). NON
+  trovato: aste di Kochi, acquirenti, quota export. Non dirlo: chiederlo alla guida e attribuirlo.
+- India nel tè: seconda produttrice al mondo dopo la Cina (più fonti: Drishti IAS, IBEF). Volumi discordanti:
+  1.285 milioni di kg nel 2024 (una fonte), 1.203 milioni di kg nell'anno fiscale 2025 (IBEF, aprile-gennaio, non
+  confrontabile). Posto nell'export: fonti discordanti (2º o 3º): non dirlo. Kerala: unico dato trovato è del
+  2011, 68,35 milioni di kg su 988,33 (Lok Sabha), cioè circa il 7% (calcolo mio): troppo vecchio, non dirlo in
+  voce. Il Sud dell'India (Tamil Nadu, Kerala, Karnataka) fa circa il 17%.
+- Discendenti dei tamil: sì, secondo South First (luglio e settembre 2026) e la ricerca universitaria sono alla
+  quarta o quinta generazione; il libro "Plantation Crisis" (OAPEN) parla di forza lavoro tamil dalit i cui
+  antenati furono portati nell'Ottocento. Il numero di generazioni cambia per fonte: dire "molti sono discendenti",
+  non una cifra. Le accuse su certificati di casta e trattamento sono accuse riportate dalla testata, il governo del
+  Kerala risponde che sono motivi legali e tecnici: se si citano, attribuire a South First.
 Non trovato: condizioni attuali delle case dei lavoratori e salario giornaliero attuale. Chiederli alle persone
 (attribuiti a loro, regola del 23/10), non cercarli in rete a caso.
+
+## Tappe decise da Manuel (26/10)
+1. 2nd Mile View Point, Munnar Bypass (22RQ+HP7). Punto panoramico sul tè: poche informazioni verificate (orari e
+   ingresso non trovati). Serve per ripresa dall'alto e per incontrare chi lavora nei filari.
+2. Tea Museum KDHP, Nullatanni, NH 49, Munnar. CHIUSO IL LUNEDI (più fonti): oggi 26/10 è lunedì, quindi il museo
+   va fatto martedì 27/10. Orario 9-17 o 10-17 per fonti diverse: telefonare. Dentro: macchinari storici, foto
+   d'epoca, mobili coloniali, Rotorvane (rullatrice CTC), meridiana del 1913, un documentario di circa 30 minuti,
+   guide in inglese, hindi e malayalam, dimostrazione e assaggio a pagamento. Divieti di ripresa non trovati:
+   chiedere alla biglietteria prima di filmare dentro.
+   Aggiornamento di Manuel (26/10): il museo per lui è aperto oggi (l'ha visto aperto), ci va oggi. Il View Point
+   sono piantagioni di tè vere, da girare.
+
+## Per Copy (26/10): cosa serve a Manuel e quando
+- Script del girato: domande da fare alle persone e parti da dire in camera, per le due tappe (piantagioni del
+  View Point e Tea Museum). Servono PRIMA delle riprese di oggi.
+- Voiceover: Manuel lo registra stasera 26/10. Blocchi numerati, numero detto a voce prima di ogni blocco, 2 s di
+  pausa. Regola: registrare solo i blocchi per cui la scena esiste nel girato. Se una scena manca stasera, il
+  blocco resta fuori o va marcato "da registrare dopo".
+- Fatti: solo quelli di questo file, con la fonte e l'attribuzione indicate. I punti segnati come incerti
+  (anno della visita di Munro, origine del nome Kannan Devan, quota dei lavoratori, esito del salario 2015) o si
+  dicono come "si racconta" o si lasciano fuori. Salari, kg e condizioni attuali: solo come parole delle persone
+  intervistate.
 
 ## Posti per vedere e filmare
 - Tata Tea Museum (KDHP), tenuta Nallathanni, Munnar. Chiuso il lunedì e il Venerdì Santo; orario indicativo

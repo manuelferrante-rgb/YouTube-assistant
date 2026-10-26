@@ -51,3 +51,10 @@ tienile basse (circa -22/-26 dB sotto la voce) e mai sotto le interviste con voc
   il voiceover della statua: si deve sentire nelle pause, non sopra le parole.
 - `letto_gancio.flac` (40 s): i due già insieme, se preferisci un file solo (allora ducking sotto la voce).
 - Wav uguali su Drive in montati/arthunkal/audio/. Niente colpi né whoosh nel gancio; il primo effetto è la mappa.
+
+## Montato v3 (26/10, 6:46.40)
+- `musica_voiceover_lungo.flac` rigenerata su `musica_lungo_v3.json` (tempi di vo_tempi_v3.txt), 406.40 s, allineata
+  a 0:00. Tratti: 0:22-0:34 | 1:08-1:34 (ponte sulla notte) | 1:59-2:05 | 4:07-4:17 | 4:45-5:02 In strada |
+  5:28-6:02 La storia (giù di 5 dB tra 5:36 e 5:56) | 6:22-6:45 finale fino al saluto.
+  vo_7a (0:12) nel gancio resta senza musica: sotto c'è il letto_gancio. Senza anteprima v3, le code dopo i voiceover
+  sono corte (0.4-0.7 s) per non finire sotto interviste nuove.

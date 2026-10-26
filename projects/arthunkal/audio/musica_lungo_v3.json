@@ -1,0 +1,10 @@
+{"durata": 406.40, "note": "montato v3 del 26/10 (6:46), tempi da projects/arthunkal/vo_tempi_v3.txt; vo_7a nel gancio resta senza musica (c'è il letto)",
+ "tratti": [
+  {"da": 22.67, "a": 33.70, "dopo": 34.30, "brano": "storia"},
+  {"da": 69.00, "a": 93.00, "dopo": 93.70, "pre": 0.3, "brano": "storia"},
+  {"da": 119.43, "a": 124.84, "dopo": 125.20, "pre": 0.4, "brano": "storia"},
+  {"da": 247.97, "a": 256.47, "dopo": 257.10, "pre": 0.5, "brano": "storia"},
+  {"da": 286.23, "a": 300.92, "dopo": 302.50, "coda": 1.5, "brano": "cammino"},
+  {"da": 329.47, "a": 361.67, "dopo": 362.30, "ponti": [[336.6, 355.8, 0.55]], "brano": "storia"},
+  {"da": 384.63, "a": 404.90, "dopo": 407.00, "pre": 3.0, "entrata": 2.5, "coda": 1.5, "brano": "arrivo", "offset": -361.6}
+ ]}
