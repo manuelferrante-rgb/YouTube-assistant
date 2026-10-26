@@ -100,8 +100,7 @@ girato oggi; quelli marcati DOPO si registrano quando c'è la scena o quando ho 
 3. (panorami, filari)
    All'inizio si provano caffè, cardamomo, china. Il primo tè si pianta nel 1880, su una cinquantina di acri.
 4. (raccoglitrici al lavoro, ponte tra le interviste)
-   A raccogliere il tè, da più di un secolo, sono soprattutto le donne. Le foglie si staccano a mano, filare dopo
-   filare.
+   A raccogliere il tè, qui, sono soprattutto donne. Le foglie si staccano a mano, filare dopo filare.
    (Registralo solo se oggi hai visto che raccolgono soprattutto donne; altrimenti DOPO, lo adatto.)
 5. (sacchi, pesata, trasporto)
    Le foglie raccolte vengono pesate e partono per la fabbrica in giornata.
@@ -115,8 +114,7 @@ girato oggi; quelli marcati DOPO si registrano quando c'è la scena o quando ho 
    A lavorarci vengono portati lavoratori tamil. Prima di loro, su queste colline vivevano i Muthuvan e i
    Malayarayan.
 9. (macchinari del museo, meridiana)
-   Il tè di queste colline è nato per il mercato dell'impero. Le macchine, i nomi, le strade: tutto qui porta ancora
-   il segno di quel periodo.
+   Le macchine, i nomi delle tenute, le strade: qui molto porta ancora il segno dell'epoca britannica.
 10. (Kolukkumalai: macchine e lavorazione)
    Qui il tè si lavora ancora con il metodo ortodosso: le foglie vengono appassite, arrotolate, fatte ossidare e
    seccate.
