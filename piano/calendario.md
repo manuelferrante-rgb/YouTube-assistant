@@ -9,8 +9,8 @@ consegnato, programmato, pubblicato.
 | mercato | lungo + trailer + 3 reel | programmato su YT e IG (Manuel, 25/10) | trailer gio 29/10 (YT Shorts + IG), lungo dom 1/11 (YT) | testi in `copioni/mercato_testi.md`; lungo caricato su YT (privato) https://youtu.be/LW4zO_0oSgQ, testi e miniatura 4a pronti (Copy, 25/10) |
 | comunismo | reel | consegnato | da decidere | `projects/comunismo/` |
 | kallu | reel | consegnato | da decidere | `projects/kallu/` |
-| arthunkal | lungo + teaser + 3 verticali | consegnato 26/10 v3 (lungo 6:46 in 4K con tutte le interviste + 4 verticali rifatti, Drive montati/arthunkal), in attesa dell'ok di Manuel | da decidere (fine settimana) | capitoli in `projects/arthunkal/capitoli.md`, `projects/arthunkal/` |
-| te | lungo (almeno 6 min) + 4 verticali + carosello | in ripresa (26/10) con Sadish, persona del posto, a Munnar; girato ridotto; voiceover v3 in 14 blocchi | da decidere | approvato 26/10; `piano/te.md`, `copioni/te_testi.md`; B-roll IA solo per questo video (decisione di Manuel riferita da Copy); cartella Drive: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw |
+| arthunkal | lungo + teaser + 3 verticali | consegnato 26/10 sera v4 (lungo 6:49 in 4K + 4 verticali rifatti con le correzioni di Manuel, Drive montati/arthunkal), in attesa dell'ok di Manuel | da decidere (fine settimana) | capitoli in `projects/arthunkal/capitoli.md`, `projects/arthunkal/` |
+| te | lungo (almeno 6 min) + 4 verticali + carosello | in montaggio 26/10 sera: lungo v1 (~7:18 4K), 4 verticali e reel del bucato (consegnato) su Drive montati/te per domattina, da rivedere con Manuel | da decidere | approvato 26/10; `piano/te.md`, `copioni/te_testi.md`; B-roll IA solo per questo video (decisione di Manuel riferita da Copy); cartella Drive: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw |
 
 ## Schema settimanale (Manuel, 26/10)
 Domenica lungo, lunedì reel 1, martedì reel 2, mercoledì carosello, giovedì reel 3, venerdì libero, sabato teaser del

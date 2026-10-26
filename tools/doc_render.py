@@ -294,6 +294,11 @@ class Timeline:
                 need = s["n"] * 1600 * 4
                 pcm = pcm[:need] + b"\0" * max(0, need - len(pcm))
                 wf.writeframes(pcm)
+        if getattr(self, "drop_shots", False):   # disco stretto: dopo cut.mkv e nat.wav le inquadrature non servono
+            for p in parts:
+                for x in (p, p + ".key"):
+                    if os.path.exists(x):
+                        os.remove(x)
 
         # ---- audio: ambiente/parlato + voiceover + musica in ducking ----
         inputs = ["-i", nat]
@@ -384,7 +389,7 @@ class Timeline:
 
         ass = getattr(self, "ass_override", None) or ass   # sottotitoli/titoli animati preparati a parte
         run(["ffmpeg", "-v", "error", "-y", "-i", cut, "-i", mix, "-vf", f"setpts=N/({FPS}*TB),ass={ass}:fontsdir={ROOT}/models", "-r", str(FPS),
-             "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", str(crf), "-preset", preset, "-profile:v", "high",
+             "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", str(crf), *getattr(self, "final_opts", []), "-preset", preset, "-profile:v", "high",
              "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", "-t", f"{total:.3f}", out])
         self.check(out)
         return out
