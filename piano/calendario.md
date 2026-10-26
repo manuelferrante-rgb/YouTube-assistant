@@ -16,7 +16,7 @@ consegnato, programmato, pubblicato.
 Domenica lungo, lunedì reel 1, martedì reel 2, mercoledì carosello, giovedì reel 3, venerdì libero, sabato teaser del
 lungo successivo. Fa eccezione il primo giovedì (29/10): teaser del mercato, già programmato.
 
-## Date proposte (da confermare con Manuel; ogni lungo solo dopo l'approvazione e il via di Montaggio)
+## Date confermate da Manuel il 26/10 (ogni lungo solo dopo l'approvazione e il via di Montaggio)
 | Giorno | Uscita |
 |---|---|
 | gio 29/10 | mercato: teaser (già programmato, YT Shorts + IG) |
