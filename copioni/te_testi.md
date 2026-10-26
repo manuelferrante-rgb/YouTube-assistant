@@ -385,14 +385,15 @@ Nomi file abbreviati: DJI_20261026<ora>_<n>_D.MP4.
 - Munnar città, chai: 142433-142545 (chai preparato), 142726_0414 (il chai master Shaharon: non lavora nel tè),
   143138_0415 e 143318_0416 (Manuel assaggia il tè: "uno dei più buoni", "l'essenza dell'India").
 - Fiori, tempio, mucche, sera: 152338-190117.
-Non ci sono interviste a raccoglitrici: la parte "chi lavora" la portano Sadish e il voiceover.
+Non ci sono interviste a raccoglitrici: la parte "chi lavora" la portano Sadish (Manuel: la sua testimonianza vale
+come quella di un lavoratore del posto) e il voiceover.
 
 ### Da sistemare in montaggio (fatti)
 - 135758_0401: Manuel dice che le foglie vengono "bollite a 150 gradi" e poi filtrate per fare la polvere: non è
   il processo (metodo ortodosso: appassimento, arrotolatura, ossidazione, essiccazione; voiceover 8). Tagliare quel
   pezzo e tenere solo la parte sulle foglie scelte e scartate.
-- 134852_0395: "tutto organico, nessun pesticida" lo dice Manuel come fatto, ma non è verificato. Tenere solo se
-  attribuito a Sadish (lui dice "rainwater only", solo acqua piovana), oppure tagliare.
+- 134852_0395: "tutto organico, nessun pesticida": Manuel conferma (26/10) che la fonte è Sadish e si tiene. Montarlo
+  subito dopo Sadish che dice "rainwater only", così si capisce che lo riporta da lui.
 - 135136_0398 e 134136_0388 ("trattati bene", "tutto gratis"): restano come parole di Sadish, attribuite. Il voiceover
   11 (sciopero 2015) dà l'altra parte senza commenti.
 - Numeri di Sadish (26-29 kg, ogni 15 giorni, pianta di oltre 100 anni): solo come parole sue, mai a schermo come
@@ -401,6 +402,8 @@ Non ci sono interviste a raccoglitrici: la parte "chi lavora" la portano Sadish 
 ### Titolo e miniatura (aggiornati con il girato, da chiudere dopo l'ok al montato)
 Curiosità più forte con il girato in mano: 1877, colline affittate per 3.000 rupie (Manuel lo dice in camera nel
 gancio). Bozze:
-1. Affittate per 3.000 rupie: le colline del tè in India 🇮🇳
+1. Colline del tè in India, affittate per 3.000 rupie 🇮🇳   (scelto da Manuel, riordinato perché "India" si legga
+   nell'anteprima)
+   EN: India's tea hills, once leased for 3,000 rupees 🇮🇳
 2. In India il tè si raccoglie ancora a mano: chi c'è dietro 🇮🇳
 Miniatura: Manuel con i filari dietro (115233_0358 o 120307_0372) + "3.000 RUPIE" grande, "1877" piccolo.
