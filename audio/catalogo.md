@@ -20,3 +20,4 @@
 | `projects/arthunkal/audio/letto_onde.flac` | girato Manuel, mimo_140234 + mimo_140104 (onde, Marari 23/10), in giro con dissolvenze | Manuel Ferrante | propria | Drive 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX | Arthunkal: letto del gancio calmo (26/10) |
 | `projects/arthunkal/audio/rosario_lontano.flac` | girato Manuel, 0264 (rosario cantato) + 0234 (mormorio della notte), passa-basso 1.5 kHz + riverbero | Manuel Ferrante | propria | idem | Arthunkal: rosario lontano sotto il gancio, da abbassare sotto le voci |
 | `projects/arthunkal/audio/letto_gancio.flac` | i due sopra insieme (rosario -14 dB) | Manuel Ferrante | propria | idem | Arthunkal: letto pronto per i primi 30-40 s |
+| `musica/compose.py colline` | composizione originale (mi minore, 64 bpm, archi + piano rado + corde lontane) | Voci Vere | propria | - | Tè di Munnar: bozza del fondale (26/10), Drive montati/te/audio/musica_colline.wav |

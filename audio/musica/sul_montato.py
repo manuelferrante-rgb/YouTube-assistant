@@ -29,7 +29,8 @@ def main():
     for tr in cfg["tratti"]:
         b = tr.get("brano", "storia")
         if b not in beds:
-            beds[b] = {"storia": compose.storia, "cammino": compose.cammino, "arrivo": compose.arrivo}[b](D + 8)
+            beds[b] = {"storia": compose.storia, "cammino": compose.cammino, "arrivo": compose.arrivo,
+                      "colline": compose.colline}[b](D + 8)
         bed = beds[b]
         t0 = max(0.0, tr["da"] - tr.get("pre", 0.8))
         tail = min(tr.get("coda", 1.6), max(0.25, tr.get("dopo", D) - tr["a"] - 0.1))

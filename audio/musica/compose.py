@@ -113,7 +113,32 @@ class Track:
 CHORDS = {
     "D": [50, 57, 62, 66, 69, 76], "Bm": [47, 54, 62, 66, 69, 74], "G": [43, 50, 59, 62, 66, 71],
     "Asus": [45, 52, 59, 62, 64, 69], "Em": [40, 52, 59, 62, 67, 71], "Gadd9": [43, 55, 62, 66, 69, 74],
+    "Em9": [40, 52, 55, 59, 62, 66], "Cmaj7": [36, 48, 55, 59, 64, 67], "D/F#": [42, 50, 57, 62, 66, 69],
 }
+
+
+def colline(dur):
+    """Tè di Munnar (26/10): colline e nebbia, mi minore, 64 bpm. Più raccolta di "cammino": tappeto, un piano che
+    pensa (poche note, molto spazio) e un passo di corde lontano che entra a metà."""
+    beat = 60 / 64; bar = 4 * beat
+    prog = ["Em9", "Cmaj7", "G", "D/F#"]
+    T = Track(dur); t = 0.0; k = 0
+    phrases = [[71, 69, 67], [67, 66, 64, 62], [74, 71], [69, 67, 66]]
+    while t < dur:
+        ch = CHORDS[prog[k % 4]]; L = 2 * bar
+        for j, n in enumerate(ch[1:5]):
+            T.add(pad_note(n, L + 3.0, 1100 + 200 * (k % 2)), t - 0.8, 0.095, pan=-0.45 + j * 0.3)
+        T.add(pad_note(ch[0], L + 3.0, 380), t - 0.8, 0.12)
+        ph = phrases[k % 4]
+        if k % 2 == 1 or k >= 8:
+            for s_, n in enumerate(ph):
+                T.add(piano_note(n, beat * 1.8, 0.42), t + 0.5 + s_ * beat * 2, 0.11, pan=0.12)
+        if k >= 4:                          # passo lontano dalla seconda metà del primo minuto
+            arp = [ch[2], ch[3], ch[4], ch[3]]
+            for s_ in range(8):
+                T.add(pluck(arp[s_ % 4], beat * 1.6, 0.993, 0.2), t + s_ * beat, 0.045, pan=-0.3 if s_ % 2 else 0.3)
+        t += L; k += 1
+    return T.render(fade_in=3.0, fade_out=5.0, rev=0.4)
 
 
 def cammino(dur, pulse_from=2):
@@ -173,12 +198,12 @@ def arrivo(dur):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("brano", choices=["cammino", "storia", "arrivo", "verticale"]); ap.add_argument("out")
+    ap.add_argument("brano", choices=["cammino", "storia", "arrivo", "verticale", "colline"]); ap.add_argument("out")
     ap.add_argument("--dur", type=float, default=0)
     a = ap.parse_args()
-    dur = a.dur or {"cammino": 120, "storia": 64, "arrivo": 64, "verticale": 60}[a.brano]
+    dur = a.dur or {"cammino": 120, "storia": 64, "arrivo": 64, "verticale": 60, "colline": 240}[a.brano]
     x = {"cammino": cammino, "storia": storia, "arrivo": arrivo,
-         "verticale": lambda d: cammino(d, pulse_from=0)}[a.brano](dur)
+         "verticale": lambda d: cammino(d, pulse_from=0), "colline": colline}[a.brano](dur)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f64le", "-ar", str(SR), "-ac", "2", "-i", "-",
                     "-c:a", "pcm_s24le", a.out], input=x.astype("<f8").tobytes(), check=True)
 
