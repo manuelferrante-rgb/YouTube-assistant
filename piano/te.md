@@ -77,6 +77,14 @@ Munnar (Kannan Devan Hills, KDH):
     britannica", con la data solo se la legge su una targa.
   * Lavorazione: ortodossa e non CTC, in gran parte a mano (più fonti). Strada sterrata stretta per salire.
   Fonti: Tripadvisor, Sterling Holidays, The Better India, siti di tour di Munnar. Verificare con il personale.
+- Metodo ortodosso (UPASI Tea Research Institute e fonti di settore, non il Tea Board): appassimento delle foglie
+  (in media 18-20 ore nel Sud dell'India), rullatura (la foglia resta in gran parte intera, a differenza del CTC),
+  ossidazione (detta anche fermentazione) in ambiente umido, essiccazione che la ferma, poi selezione per
+  grandezza. Le quattro fasi "appassire, arrotolare, ossidare, seccare" sono corrette in sintesi.
+- Donne tra i raccoglitori: le fonti danno il 58% della forza lavoro del tè in India (una), oltre il 50% (una
+  ricerca), circa il 70% (Open Democracy, sul Kerala); per Munnar un reportage descrive le donne come grande
+  maggioranza dei circa 13.000 addetti ai campi. Nessun dato ufficiale del Kerala trovato: "soprattutto donne" va
+  bene se lo vedi, senza percentuale.
 Non trovato: condizioni attuali delle case dei lavoratori e salario giornaliero attuale. Chiederli alle persone
 (attribuiti a loro, regola del 23/10), non cercarli in rete a caso.
 
