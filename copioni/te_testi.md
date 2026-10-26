@@ -358,3 +358,49 @@ mai "povera":
 Manuel (26/10): per questo reel il clickbait va bene, gli altri contenuti restano seri. Il reel è scollegato
 da Munnar e dal video del tè: niente Munnar nei testi, il luogo preciso da chiedere a Manuel.
 Didascalia e testo definitivo dopo aver visto il girato.
+
+## GIRATO DEL 26/10: cosa c'è (Copy, dalla trascrizione di tutte le 74 clip, cartella Drive del video)
+Nomi file abbreviati: DJI_20261026<ora>_<n>_D.MP4.
+- Bucato (reel extra POV): 105047_0333 e 105115_0334, la signora al rubinetto con il secchio.
+- Viaggio (bus, strade, cartelli, uova): 105322-114701; si può tagliare (Manuel).
+- Gancio in camera: 115233_0358 "Sono a Munnar, in Kerala, a oltre 1500 metri. Dietro di me una piantagione immensa
+  di tè. Qui nel 1877 vennero affittate per 3.000 rupie a un britannico." (prendere le riprese buone dopo i "Ripeto")
+- 120307_0372 + 120356_0373: "Le foglie di tè vengono ancora raccolte a mano... la storia..."
+- 133625_0383: "Sadish è di qui, ci porta dove la gente del posto raccoglie il tè. Non il panorama ma il lavoro."
+- Sadish (inglese, sottotitoli in italiano):
+  * 133721_0385: Munnar tutta coperta di tè; prima di lui padre e madre lavoravano nel tè; "questa pianta ha più di
+    cento anni"; solo acqua piovana; raccolta ogni 10-15 giorni; si prendono due-tre foglie, le migliori; le foglie
+    scure e rovinate non si usano; raccolgono donne e uomini; oggi qui, domani su un'altra collina.
+  * 133946_0386: la storia come la sa lui (1877, inglesi, dopo il 1950 gli indiani; Kannan Devan Hills per circa 40
+    km intorno). Le date sono sue e approssimative: le date giuste le dà il voiceover.
+  * 134136_0388: rapporto con l'azienda: "casa, cure mediche, trasporto, tutto gratis" (parole sue, attribuite).
+  * 134520_0392: chi pesa le foglie; "26-29 chili al giorno in media, d'inverno"; chi raccoglie di più prende soldi
+    in più; le foglie vanno alle fabbriche vicine, a 20-30 km.
+  * 134639_0393: conferma che l'India è la seconda produttrice dopo la Cina.
+  * 135527_0400: foglia con il ragno rosso, scartata.
+- Manuel in camera: 134231_0389 (orari: 8-12, pausa di un'ora e mezza, poi fino alle 17 circa, "come ci ha detto");
+  134852_0395 ("tutto organico, niente pesticidi, solo pioggia"); 135136_0398 ("vengono trattati bene, come ci ha
+  detto Sadish"); 135758_0401 (tipi di foglie e lavorazione).
+- Assaggio della foglia: 135758_0401.
+- Munnar città, chai: 142433-142545 (chai preparato), 142726_0414 (il chai master Shaharon: non lavora nel tè),
+  143138_0415 e 143318_0416 (Manuel assaggia il tè: "uno dei più buoni", "l'essenza dell'India").
+- Fiori, tempio, mucche, sera: 152338-190117.
+Non ci sono interviste a raccoglitrici: la parte "chi lavora" la portano Sadish e il voiceover.
+
+### Da sistemare in montaggio (fatti)
+- 135758_0401: Manuel dice che le foglie vengono "bollite a 150 gradi" e poi filtrate per fare la polvere: non è
+  il processo (metodo ortodosso: appassimento, arrotolatura, ossidazione, essiccazione; voiceover 8). Tagliare quel
+  pezzo e tenere solo la parte sulle foglie scelte e scartate.
+- 134852_0395: "tutto organico, nessun pesticida" lo dice Manuel come fatto, ma non è verificato. Tenere solo se
+  attribuito a Sadish (lui dice "rainwater only", solo acqua piovana), oppure tagliare.
+- 135136_0398 e 134136_0388 ("trattati bene", "tutto gratis"): restano come parole di Sadish, attribuite. Il voiceover
+  11 (sciopero 2015) dà l'altra parte senza commenti.
+- Numeri di Sadish (26-29 kg, ogni 15 giorni, pianta di oltre 100 anni): solo come parole sue, mai a schermo come
+  dati.
+
+### Titolo e miniatura (aggiornati con il girato, da chiudere dopo l'ok al montato)
+Curiosità più forte con il girato in mano: 1877, colline affittate per 3.000 rupie (Manuel lo dice in camera nel
+gancio). Bozze:
+1. Affittate per 3.000 rupie: le colline del tè in India 🇮🇳
+2. In India il tè si raccoglie ancora a mano: chi c'è dietro 🇮🇳
+Miniatura: Manuel con i filari dietro (115233_0358 o 120307_0372) + "3.000 RUPIE" grande, "1877" piccolo.
