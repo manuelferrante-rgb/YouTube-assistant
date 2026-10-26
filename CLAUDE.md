@@ -33,6 +33,16 @@ Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio 
 Pianificazione session_01Fqy57TezeLj7Pn7MFpweey, Copy session_01NyVAZXcjQG4pUS9Hfqt7Ga,
 Insights session_014MyMgDdVNV6hNQ62MjZ3US, Audio session_01JWXQfdSqnvMjMDdAY1qUHS.
 
+FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
+1. Pianificazione (fatti, riprese), Copy (domande, parti in camera, voiceover, testi a schermo), Insights (cosa
+   funziona), Audio (suoni e musica) consegnano a Montaggio.
+2. Montaggio, quando ha tutto, monta e dà a Manuel il lungo 16:9 e i 4 verticali.
+3. Quando Manuel approva, Montaggio lo comunica a TUTTE le chat (file finale su Drive e minutaggi dei capitoli).
+4. Copy genera subito il pacchetto: sottotitoli it/en, titolo, descrizione e capitoli it/en, miniatura, carosello,
+   didascalie e testi dei verticali (regole in `regole/copy.md`).
+5. Pianificazione decide i giorni di uscita in `piano/calendario.md` (di solito lo schema fisso: teaser prima, lungo
+   nel fine settimana, 3 verticali dopo, carosello con il lungo).
+
 Regole tra chat:
 - Ogni video ha un nome breve uguale ovunque (es. `arthunkal`): `projects/arthunkal/`, `copioni/arthunkal_testi.md`.
 - Stato di ogni video (pianificato, girato, in montaggio, consegnato, pubblicato, data) in `piano/calendario.md`:
