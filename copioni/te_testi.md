@@ -351,7 +351,8 @@ Devan (solo se lo racconta la guida), la quota dei lavoratori nell'azienda, l'es
 ## Reel extra: la signora che lava i panni (idea di Manuel, 26/10, fuori dai 4 verticali)
 Manuel lo vuole un po' clickbait. Testi a schermo proposti (gancio nei primi 2 s), lei protagonista e capace,
 mai "povera":
-1. "POV: non hai la lavatrice (e non ti serve) 🇮🇳"   (consigliato: tiene l'idea di Manuel e la ribalta)
+1. "POV: non hai la lavatrice (e non ti serve) 🇮🇳"   SCELTO da Manuel (26/10). Audio vero della signora che sbatte i
+   panni; montato da Montaggio.
 2. "POV: la tua lavatrice è una pietra 🇮🇳"   (solo se nel girato batte i panni su una pietra)
 3. "Lavatrice? Qui si fa così 🇮🇳"
 Manuel (26/10): per questo reel il clickbait va bene, gli altri contenuti restano seri. Il reel è scollegato
