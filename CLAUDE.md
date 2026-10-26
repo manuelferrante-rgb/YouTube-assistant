@@ -41,7 +41,8 @@ FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
 4. Copy genera subito il pacchetto: sottotitoli it/en, titolo, descrizione e capitoli it/en, miniatura, carosello,
    didascalie e testi dei verticali (regole in `regole/copy.md`).
 5. Pianificazione decide i giorni di uscita in `piano/calendario.md` (di solito lo schema fisso: teaser prima, lungo
-   nel fine settimana, 3 verticali dopo, carosello con il lungo).
+   nel fine settimana, 3 verticali dopo, carosello in un giorno separato dal lungo: Manuel 26/10, regola in
+   `regole/pianificazione.md`).
 
 Regole tra chat:
 - Ogni video ha un nome breve uguale ovunque (es. `arthunkal`): `projects/arthunkal/`, `copioni/arthunkal_testi.md`.
