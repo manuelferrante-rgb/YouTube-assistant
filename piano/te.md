@@ -62,6 +62,21 @@ Munnar (Kannan Devan Hills, KDH):
   antenati furono portati nell'Ottocento. Il numero di generazioni cambia per fonte: dire "molti sono discendenti",
   non una cifra. Le accuse su certificati di casta e trattamento sono accuse riportate dalla testata, il governo del
   Kerala risponde che sono motivi legali e tecnici: se si citano, attribuire a South First.
+- Kolukkumalai Tea Estate (verifica del 26/10, SOLO fonti turistiche e giornalistiche, nessuna fonte primaria):
+  * Distretto: Theni, Tamil Nadu (villaggio Kottagudi, taluk di Bodinayakanur), sul confine con il Kerala. Le fonti
+    concordano. Tenuta di circa 81 ettari.
+  * Altitudine: 7.130 piedi (circa 2.170 m), "circa 7.000" o "circa 8.000" piedi (circa 2.440 m) a seconda della
+    fonte. "Circa 2.400 m" è il valore più alto: dire "oltre 2.000 metri" e "si presenta come la più alta del
+    mondo", attribuito a chi lo dice (cartelli, guida). Non è un dato ufficiale verificato.
+  * Proprietario oggi: NON confermato. Le fonti dicono gestita da Kottagudi Plantations, oppure A.J. Group del Tamil
+    Nadu, e una cita Harrisons Malayalam per le operazioni. Non dirlo in voce: chiederlo sul posto.
+  * Fondazione: discordante. Una fonte (The Better India) parla di un piantatore scozzese nei primi del Novecento;
+    altre di coltivazione dal 1927 con l'aiuto dei fratelli Chettiar di Bodinayakanur (che l'avrebbero gestita 1935-71).
+  * Fabbrica: anni Trenta per le schede turistiche (1930, 1935 o 1938 a seconda della fonte). I macchinari
+    avrebbero ancora etichette di produttori inglesi con date degli anni Quaranta. Dire "una fabbrica d'epoca
+    britannica", con la data solo se la legge su una targa.
+  * Lavorazione: ortodossa e non CTC, in gran parte a mano (più fonti). Strada sterrata stretta per salire.
+  Fonti: Tripadvisor, Sterling Holidays, The Better India, siti di tour di Munnar. Verificare con il personale.
 Non trovato: condizioni attuali delle case dei lavoratori e salario giornaliero attuale. Chiederli alle persone
 (attribuiti a loro, regola del 23/10), non cercarli in rete a caso.
 
