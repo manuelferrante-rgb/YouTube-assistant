@@ -358,7 +358,13 @@ mai "povera":
 Manuel (26/10): per questo reel il clickbait va bene, gli altri contenuti restano seri. Il reel è scollegato
 da Munnar e dal video del tè: niente Munnar nei testi, il luogo preciso da chiedere a Manuel.
 Durata: circa 7 secondi (Manuel, 26/10). Girato: DJI_20261026105047_0333, 105115_0334, 105040_0332.
-Didascalia e testo definitivo dopo aver visto il girato.
+Montato: montati/te/VociVere_te_bucato_1080x1920.mp4 (7 s, in loop; Montaggio 26/10).
+Didascalia IG / titolo Short:
+POV: non hai la lavatrice (e non ti serve) 🇮🇳
+Kerala, India. Rubinetto, secchio, due mani. E un sorriso alla fine.
+#kerala #india #vocivere #vitaquotidiana
+Descrizione Short YT: Rubinetto, secchio e due mani: il bucato in Kerala. Tu sapresti farlo così?
+(Il luogo preciso, se Manuel lo dice, al posto di "Kerala".)
 
 ## GIRATO DEL 26/10: cosa c'è (Copy, dalla trascrizione di tutte le 74 clip, cartella Drive del video)
 Nomi file abbreviati: DJI_20261026<ora>_<n>_D.MP4.
