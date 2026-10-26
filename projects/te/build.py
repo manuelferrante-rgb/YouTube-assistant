@@ -380,7 +380,7 @@ def mappa(W, H, tA, tB, dur):
 
 SIGLA_CLIPS = [(C("115803"), 0.5), (C("133721"), 70.0), (C("115958"), 1.0), (C("142447"), 18.0), (C("135033"), 1.0),
                (C("114701"), 4.0)]                                  # sigla a tema: filari, raccolta, cesto, chai
-QUIET = (C("135012"), 0.0)
+QUIET = (C("114701"), 0.0)                                          # panorama tra i filari: ambiente vero, senza voci
 PX = lambda i: f"{WORK}/stock/px_{i}.mp4"                           # Pixabay: solo immagini generiche, senza persone                                          # vento tra i filari, senza voci
 
 
@@ -640,7 +640,7 @@ def vreel(tag):
 def vfinish(r, tag, W, H):
     t = 0.0                                                         # vento tra i filari sotto tutto: mai silenzi
     while t < r.t - 0.1:
-        d = min(14.5, r.t - t + 0.3)
+        d = min(9.0, r.t - t + 0.3)
         r.tl.sfx(t, ambient(QUIET[0], 0.5, d), 0.10)
         t += d - 0.3
     out = f"{OUT}/VociVere_te_{tag}_{W}x{H}.mp4"
