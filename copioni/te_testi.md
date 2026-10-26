@@ -118,13 +118,14 @@ Tempi in secondi del file, dalla trascrizione parakeet. Manuel non dice i numeri
 - 5  37.31-43.93
 - 6  44.97-51.63 (dice "vivono" al presente: va bene, tutto il racconto è al presente)
 - 7  53.59-58.38
-- 8  77.12-86.10 (terza ripresa, quella buona con "dalle diciotto alle venti ore"). Da sentire a orecchio: la
+- 8  VERIFICATO da Montaggio (26/10): la terza ripresa è mangiata; si usa l'elenco dalla seconda e l'ultima
+     frase dalla terza. Dettaglio: 77.12-86.10 (terza ripresa, quella buona con "dalle diciotto alle venti ore"). Da sentire a orecchio: la
      trascrizione legge "rotolate" e "fatte sedare" invece di "arrotolate" e "fatte ossidare". Se è così, prendere
      "appassite, arrotolate, fatte ossidare e seccate" dalla seconda ripresa (64.09-73.16, circa 67-71 s) e solo
      l'ultima frase dalla terza (circa 81.5-86.1). Scartare 59.48-63.59 e la frase "quasi un giorno".
 - 9  88.31-92.16
 - 10 93.07-101.25 ("circa tredicimila", confermato)
-- 11 102.13-114.92. Da sentire: l'inizio può essere "Dal 2015" invece di "Nel 2015". "Dal" cambierebbe il senso
+- 11 102.13-114.92. VERIFICATO da Montaggio (26/10): dice "Nel 2015", ok. Prima: poteva essere "Dal 2015" invece di "Nel 2015". "Dal" cambierebbe il senso
      (sembrerebbe che blocchino Munnar ogni anno): se è "Dal", tagliare la parola o far ridire il blocco.
 - 12 seconda ripresa 127.16-138.23 (da "l'India è la seconda produttrice..."); togliere il "ne" ripetuto a 131.72-131.88.
      Scartare 116.51-126.6.
@@ -346,3 +347,67 @@ SOLO i blocchi la cui scena hai girato oggi (scritta tra parentesi); gli altri s
 Fuori dal voiceover perché incerti (piano/te.md): l'anno della prima visita di Munro, l'origine del nome Kannan
 Devan (solo se lo racconta la guida), la quota dei lavoratori nell'azienda, l'esito del salario dopo il 2015.
 
+
+## Reel extra: la signora che lava i panni (idea di Manuel, 26/10, fuori dai 4 verticali)
+Manuel lo vuole un po' clickbait. Testi a schermo proposti (gancio nei primi 2 s), lei protagonista e capace,
+mai "povera":
+1. "POV: non hai la lavatrice (e non ti serve) 🇮🇳"   SCELTO da Manuel (26/10). Audio vero della signora che sbatte i
+   panni; montato da Montaggio.
+2. "POV: la tua lavatrice è una pietra 🇮🇳"   (solo se nel girato batte i panni su una pietra)
+3. "Lavatrice? Qui si fa così 🇮🇳"
+Manuel (26/10): per questo reel il clickbait va bene, gli altri contenuti restano seri. Il reel è scollegato
+da Munnar e dal video del tè: niente Munnar nei testi, il luogo preciso da chiedere a Manuel.
+Didascalia e testo definitivo dopo aver visto il girato.
+
+## GIRATO DEL 26/10: cosa c'è (Copy, dalla trascrizione di tutte le 74 clip, cartella Drive del video)
+Nomi file abbreviati: DJI_20261026<ora>_<n>_D.MP4.
+- Bucato (reel extra POV): 105047_0333 e 105115_0334, la signora al rubinetto con il secchio.
+- Viaggio (bus, strade, cartelli, uova): 105322-114701; si può tagliare (Manuel).
+- Gancio in camera: 115233_0358 "Sono a Munnar, in Kerala, a oltre 1500 metri. Dietro di me una piantagione immensa
+  di tè. Qui nel 1877 vennero affittate per 3.000 rupie a un britannico." (prendere le riprese buone dopo i "Ripeto")
+- 120307_0372 + 120356_0373: "Le foglie di tè vengono ancora raccolte a mano... la storia..."
+- 133625_0383: "Sadish è di qui, ci porta dove la gente del posto raccoglie il tè. Non il panorama ma il lavoro."
+- Sadish (inglese, sottotitoli in italiano):
+  * 133721_0385: Munnar tutta coperta di tè; prima di lui padre e madre lavoravano nel tè; "questa pianta ha più di
+    cento anni"; solo acqua piovana; raccolta ogni 10-15 giorni; si prendono due-tre foglie, le migliori; le foglie
+    scure e rovinate non si usano; raccolgono donne e uomini; oggi qui, domani su un'altra collina.
+  * 133946_0386: la storia come la sa lui (1877, inglesi, dopo il 1950 gli indiani; Kannan Devan Hills per circa 40
+    km intorno). Le date sono sue e approssimative: le date giuste le dà il voiceover.
+  * 134136_0388: rapporto con l'azienda: "casa, cure mediche, trasporto, tutto gratis" (parole sue, attribuite).
+  * 134520_0392: chi pesa le foglie; "26-29 chili al giorno in media, d'inverno"; chi raccoglie di più prende soldi
+    in più; le foglie vanno alle fabbriche vicine, a 20-30 km.
+  * 134639_0393: conferma che l'India è la seconda produttrice dopo la Cina.
+  * 135527_0400: foglia con il ragno rosso, scartata.
+- Manuel in camera: 134231_0389 (orari: 8-12, pausa di un'ora e mezza, poi fino alle 17 circa, "come ci ha detto");
+  134852_0395 ("tutto organico, niente pesticidi, solo pioggia"); 135136_0398 ("vengono trattati bene, come ci ha
+  detto Sadish"); 135758_0401 (tipi di foglie e lavorazione).
+- Assaggio della foglia: 135758_0401.
+- Munnar città, chai: 142433-142545 (chai preparato), 142726_0414 (il chai master Shaharon: non lavora nel tè),
+  143138_0415 e 143318_0416 (Manuel assaggia il tè: "uno dei più buoni", "l'essenza dell'India").
+- Fiori, tempio, mucche, sera: 152338-190117.
+Non ci sono interviste a raccoglitrici: la parte "chi lavora" la portano Sadish (Manuel: la sua testimonianza vale
+come quella di un lavoratore del posto) e il voiceover.
+
+### Da sistemare in montaggio (fatti)
+- 135758_0401: Manuel dice che le foglie vengono "bollite a 150 gradi" e poi filtrate per fare la polvere: non è
+  il processo (metodo ortodosso: appassimento, arrotolatura, ossidazione, essiccazione; voiceover 8). Tagliare quel
+  pezzo e tenere solo la parte sulle foglie scelte e scartate.
+- 134852_0395: "tutto organico, nessun pesticida": Manuel conferma (26/10) che la fonte è Sadish e si tiene. Montarlo
+  subito dopo Sadish che dice "rainwater only", così si capisce che lo riporta da lui.
+- 135136_0398 e 134136_0388 ("trattati bene", "tutto gratis"): restano come parole di Sadish, attribuite. Il voiceover
+  11 (sciopero 2015) dà l'altra parte senza commenti.
+- Numeri di Sadish (26-29 kg, ogni 15 giorni, pianta di oltre 100 anni): solo come parole sue, mai a schermo come
+  dati.
+
+### Titolo e miniatura (aggiornati con il girato, da chiudere dopo l'ok al montato)
+Curiosità più forte con il girato in mano: 1877, colline affittate per 3.000 rupie (Manuel lo dice in camera nel
+gancio). Bozze:
+1. Colline del tè in India, affittate per 3.000 rupie 🇮🇳   (scelto da Manuel, riordinato perché "India" si legga
+   nell'anteprima)
+   EN: India's tea hills, leased for 3,000 rupees 🇮🇳   (Manuel: senza "once", 26/10)
+2. In India il tè si raccoglie ancora a mano: chi c'è dietro 🇮🇳
+Miniatura: Manuel la vuole PIÙ FORTE (26/10); si fa dopo l'ok al montato. Idea da provare per prima: Manuel a
+braccia aperte sulla collina (115233_0358 a circa 25%, cielo dietro, si scontorna bene) con i filari fino
+all'orizzonte e la scritta "TUTTO QUESTO PER 3.000 RUPIE?" (piccolo sotto: "1877"). Alternative: primo piano
+di Manuel stupito (120307_0372) + "3.000 RUPIE" enorme; contrasto illustrazione d'epoca IA (solo per questo
+video) a sinistra e collina di oggi a destra.

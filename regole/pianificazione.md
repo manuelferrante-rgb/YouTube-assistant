@@ -24,3 +24,7 @@
   pulito, 30 s a microfono vicino e senza voce di Manuel, del suono che identifica l'evento (lì il rosario a
   botta e risposta); una ripresa dall'alto della folla (tetto, balcone, muretto). Nelle liste riprese vanno
   sempre tutti e due.
+- Giorni di uscita (schema di Manuel, 26/10; decido io le date in `piano/calendario.md` dopo che Montaggio comunica
+  l'approvazione). Settimana tipo: domenica lungo, lunedì reel 1, martedì reel 2, mercoledì carosello, giovedì
+  reel 3, venerdì niente, sabato teaser del lungo successivo (che esce la domenica dopo). Il carosello mai nello
+  stesso giorno del lungo. Eccezione solo per il primo giovedì (29/10): teaser del mercato già programmato.

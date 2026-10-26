@@ -64,3 +64,9 @@ Regole di Manuel (26/10):
 - Titolo e miniatura = la curiosità più forte del video. I primi 30 secondi del video devono riprendere proprio
   quella curiosità, così lo spettatore trova subito quello che si aspettava e resta. Copy sceglie la curiosità con
   Montaggio prima di chiudere il gancio iniziale.
+
+Automatico dopo l'ok (Manuel, 26/10, vale per i video in corso e per i prossimi): quando Montaggio scrive a Copy che
+Manuel ha approvato il montato, Copy prepara subito tutto il pacchetto senza aspettare altre richieste:
+sottotitoli .srt it/en del lungo, titolo it/en, descrizione it/en con capitoli, miniatura (prove + consigliata),
+carosello (8 immagini + didascalia IG + post YouTube + posizione), didascalie e testi dei 4 verticali e degli
+eventuali reel extra. Tutto su Drive in montati/<video>/ e nel repo; poi un solo messaggio riassuntivo a Manuel.
