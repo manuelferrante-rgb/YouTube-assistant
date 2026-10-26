@@ -49,3 +49,10 @@ Cartella Drive del video: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw. I file grandi vanno
 - Non fatti, di proposito: accette e alberi che cadono (5) e passi lontani (6): nel girato non ci sono e costruiti
   suonerebbero finti. Lì basta ambiente_colline più la musica.
 - Musica: `musica_colline.wav` su Drive; la taglio sui tempi dei voiceover appena c'è l'anteprima (come Arthunkal).
+
+## Musica sul lungo v1 (26/10 sera, 7:17.90)
+- `musica_voiceover_lungo.flac` (qui, 437.90 s, allineata a 0:00; wav uguale su Drive in montati/te/audio/), da
+  `musica_lungo_v1.json`: una sola musica "colline" che entra solo sotto i voiceover: 0:45-1:03 (2-3) | 3:48-4:02 (7-8) |
+  4:27-4:53 (4-5-6) | 5:14-5:28 (9-10) | 5:41-5:54 (11) | 6:10-6:20 (12) | 7:06-7:38 (14 e logo, dissolvenza finale).
+  Il gancio (VO 1) resta senza musica, come in Arthunkal. Code corte (0.6 s) per non finire sotto le interviste.
+  Livello come Arthunkal: circa 23 dB sotto la voce, con ducking. Se cambiano i tempi si rigenera in pochi minuti.
