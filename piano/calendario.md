@@ -10,4 +10,4 @@ consegnato, programmato, pubblicato.
 | comunismo | reel | consegnato | da decidere | `projects/comunismo/` |
 | kallu | reel | consegnato | da decidere | `projects/kallu/` |
 | arthunkal | lungo + teaser + 3 verticali | consegnato 26/10 v3 (lungo 6:46 in 4K con tutte le interviste + 4 verticali rifatti, Drive montati/arthunkal), in attesa dell'ok di Manuel | da decidere (fine settimana) | capitoli in `projects/arthunkal/capitoli.md`, `projects/arthunkal/` |
-| te | lungo + 4 verticali | pianificato, 26/10 View Point (Munnar), 27/10 Tea Museum (chiuso il lunedì) | da decidere | `piano/te.md`, in attesa di approvazione di Manuel; cartella Drive del video: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw (Manuel, 26/10) |
+| te | lungo (almeno 6 min) + 4 verticali + carosello | in ripresa (26/10) con Sadish, persona del posto, a Munnar; girato ridotto; voiceover v3 in 14 blocchi | da decidere | approvato 26/10; `piano/te.md`, `copioni/te_testi.md`; B-roll IA solo per questo video (decisione di Manuel riferita da Copy); cartella Drive: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw |
