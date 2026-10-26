@@ -39,6 +39,13 @@ Munnar (Kannan Devan Hills, KDH):
   Rights Resource Centre, Madhyamam, Outlook, Open Magazine.
 - Luglio 2026 (South First): la maggior parte dei lavoratori tamil di Munnar resta bracciante a giornata, senza
   terra né casa propria. Da verificare e citare solo attribuito alla testata.
+- Altitudine di Munnar: di solito circa 1.600 m (Wikipedia, Kerala Tourism, Forest Department), ma la scheda
+  Wikipedia dà 1.532 m e altre fonti 1.470 m. In frase: "oltre 1.500 metri". Dintorni da 1.450 a 2.695 m (Anamudi,
+  la cima più alta dell'India del sud).
+- Finlay Muir & Co: sì, scozzese. Ramo indiano della James Finlay & Co di Glasgow (fondata nel 1750, prima tessile).
+  In India dal 1862 a Bombay, dal 1870 come Finlay Muir; nel tè dal 1882 circa; a Munnar compra 33 tenute nel
+  1895 (una fonte turistica dice 1893-95). Dal 2000 è di John Swire & Son. Fonti: Wikipedia "James Finlay & Co",
+  Archives Hub, Glasgow Life Museums.
 Non trovato: condizioni attuali delle case dei lavoratori e salario giornaliero attuale. Chiederli alle persone
 (attribuiti a loro, regola del 23/10), non cercarli in rete a caso.
 
