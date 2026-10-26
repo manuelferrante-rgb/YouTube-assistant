@@ -27,4 +27,5 @@
 - Giorni di uscita (flusso del 26/10): li decido io in `piano/calendario.md` solo dopo che Montaggio comunica
   l'approvazione di Manuel. Schema di base: teaser il giovedì, lungo nel fine settimana (domenica), 3 verticali nei
   giorni dopo (uno ogni 2 giorni circa). Il carosello MAI lo stesso giorno del lungo (Manuel, 26/10): giorno
-  separato, di default il sabato prima del lungo, da confermare con Manuel. Le date le conferma lui.
+  separato, di default il lunedì dopo il lungo (l'ultima slide dice "Fuori ora il video su YouTube", quindi il
+  lungo deve essere già uscito), da confermare con Manuel. Le date le conferma lui.
