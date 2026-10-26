@@ -48,6 +48,9 @@ RISPARMIO DI UTILIZZO (Manuel, 26/10): le chat NON si mandano messaggi tra loro 
 delle altre, salvo quando lo chiede Manuel. Tutto passa dai file del repo (CLAUDE.md, piano/, copioni/, projects/),
 che ogni chat legge quando inizia. Il lavoro pesante sul girato (download, provini, trascrizione) lo fa solo
 Montaggio e lo scrive in `projects/<video>/girato.md`; le altre chat leggono quel file invece di rifarlo.
+CHAT NUOVE PER OGNI VIDEO (Manuel, 26/10): dal prossimo video Manuel apre chat nuove, una per area, con il nome del
+video (es. "Copy - <video>"). La prima frase: "Sei la chat <area> di Voci Vere per il video <video>, leggi CLAUDE.md".
+Ogni chat, quando Manuel parla di un video nuovo o la conversazione è molto lunga, gli ricorda di aprirne una nuova.
 
 Regole tra chat:
 - Ogni video ha un nome breve uguale ovunque (es. `arthunkal`): `projects/arthunkal/`, `copioni/arthunkal_testi.md`.

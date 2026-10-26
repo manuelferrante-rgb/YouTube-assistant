@@ -134,7 +134,9 @@ Tempi in secondi del file, dalla trascrizione parakeet. Manuel non dice i numeri
      scelta col montato.
 - Scarti: 151.20-154.39 (commenti), tutte le parole "Ripeto".
 
-## B-roll IA (solo per questo video, decisione di Manuel 26/10): limiti di Copy
+## B-roll IA: ANNULLATO per "te" (Manuel, 26/10: niente IA in questo video, si riprova dal prossimo). Niente riga IA in
+## descrizione e niente toggle YouTube. Sotto, i limiti restano validi per quando si userà.
+### Limiti di Copy per i B-roll IA
 - Mai persone generate che possano sembrare quelle intervistate o lavoratori reali riconoscibili.
 - Mai "foto d'archivio" finte spacciate per vere: le scene storiche vanno in uno stile riconoscibile come
   ricostruzione (es. illustrazione, toni seppia stilizzati), senza date o firme inventate.
