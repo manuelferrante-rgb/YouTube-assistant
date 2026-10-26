@@ -1,6 +1,6 @@
 # Piantagioni di tè e colonialismo britannico (nome breve: `te`)
 
-Stato: IDEA, in ricerca (26/10). Decisioni di Manuel 26/10: lungo + 4 verticali; ripresa oggi 26/10, se serve altro domani 27/10; posto ancora da comunicare (link Maps non leggibile da qui). Non ancora approvata da Manuel. Niente script né voiceover finché non approva:
+Stato: APPROVATO da Manuel il 26/10 (angolo, lungo + 4 verticali, pacchetto completo con carosello). Decisioni di Manuel 26/10: lungo + 4 verticali; ripresa oggi 26/10, se serve altro domani 27/10; posto ancora da comunicare (link Maps non leggibile da qui). Non ancora approvata da Manuel. Niente script né voiceover finché non approva:
 poi Copy scrive "DA DIRE E DA CHIEDERE" in `copioni/te_testi.md` partendo da questi fatti.
 
 ## Dove si trova Manuel (26/10)
@@ -50,6 +50,19 @@ Non trovato: condizioni attuali delle case dei lavoratori e salario giornaliero 
    d'epoca, mobili coloniali, Rotorvane (rullatrice CTC), meridiana del 1913, un documentario di circa 30 minuti,
    guide in inglese, hindi e malayalam, dimostrazione e assaggio a pagamento. Divieti di ripresa non trovati:
    chiedere alla biglietteria prima di filmare dentro.
+   Aggiornamento di Manuel (26/10): il museo per lui è aperto oggi (l'ha visto aperto), ci va oggi. Il View Point
+   sono piantagioni di tè vere, da girare.
+
+## Per Copy (26/10): cosa serve a Manuel e quando
+- Script del girato: domande da fare alle persone e parti da dire in camera, per le due tappe (piantagioni del
+  View Point e Tea Museum). Servono PRIMA delle riprese di oggi.
+- Voiceover: Manuel lo registra stasera 26/10. Blocchi numerati, numero detto a voce prima di ogni blocco, 2 s di
+  pausa. Regola: registrare solo i blocchi per cui la scena esiste nel girato. Se una scena manca stasera, il
+  blocco resta fuori o va marcato "da registrare dopo".
+- Fatti: solo quelli di questo file, con la fonte e l'attribuzione indicate. I punti segnati come incerti
+  (anno della visita di Munro, origine del nome Kannan Devan, quota dei lavoratori, esito del salario 2015) o si
+  dicono come "si racconta" o si lasciano fuori. Salari, kg e condizioni attuali: solo come parole delle persone
+  intervistate.
 
 ## Posti per vedere e filmare
 - Tata Tea Museum (KDHP), tenuta Nallathanni, Munnar. Chiuso il lunedì e il Venerdì Santo; orario indicativo
