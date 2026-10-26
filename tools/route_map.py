@@ -309,7 +309,9 @@ def main():
             tkm = a.t_km or tB
             km = float(a.km) * ease3((t - tA) / (tkm - tA))
             ca = ease((t - tA - 0.15) / 0.3)
-            if u < 1:
+            if float(a.km) <= 0:                         # --km 0: niente contachilometri
+                pass
+            elif u < 1:
                 text((head[0] - 70 * s, head[1]), f"{km:.0f} km", F["km"], INK_RGB, "rm", stroke=(236, 242, 244), sw=5, alpha=ca)
             else:
                 mid = pts[len(pts) // 2]

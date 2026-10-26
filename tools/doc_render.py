@@ -256,13 +256,15 @@ class Timeline:
                 if tail:
                     # dissolvenza in entrata: la coda dell'inquadratura precedente sfuma nella nuova (durata invariata)
                     cmd += ["-ss", f"{tail['a']:.3f}", "-t", f"{tail['dur_src'] + 1:.3f}", "-i", tail["src"]]
+                    if not s["audio"]:                   # gli input prima delle opzioni di uscita
+                        cmd += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo"]
                     fc = (f"[1:v]{self._vf(tail)}[pv];[0:v]{self._vf(s)}[cv];"
                           f"[pv][cv]xfade=transition=fade:duration={tail['d']:.3f}:offset=0,format=yuv420p[v]")
                     cmd += ["-filter_complex", fc, "-map", "[v]"]
                     if s["audio"]:
                         cmd += ["-map", "0:a:0", "-af", self._af(s)]
                     else:
-                        cmd += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "2:a:0"]
+                        cmd += ["-map", "2:a:0"]
                 else:
                     if s["audio"]:
                         cmd += ["-map", "0:v:0", "-map", "0:a:0", "-af", self._af(s)]
