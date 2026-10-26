@@ -43,9 +43,11 @@ Fonti rapide di Copy (siti turistici, da far verificare a Pianificazione): munna
 India, History of Ceylon Tea. Tutto detto come "si presenta come / dicono", mai come fatto certo.
 - Si trova appena oltre il confine, in Tamil Nadu, vicino a Munnar. NON risulta della KDHP: qui non dire le frasi
   sull'azienda dei dipendenti (G, K, blocco 8), valgono per le tenute di Munnar e per il museo.
-- In camera: "Kolukkumalai si presenta come la piantagione di tè più alta del mondo: siamo a circa 2.400 metri."
-- In fabbrica: "La fabbrica, dicono, è degli anni Trenta. Qui il tè si lavora ancora con il metodo ortodosso, non
-  con le macchine CTC." (Dilla solo se te lo confermano lì.)
+- In camera: "Kolukkumalai si presenta come la piantagione di tè più alta del mondo: siamo a oltre 2.000 metri,
+  in Tamil Nadu, sul confine con il Kerala."
+- In fabbrica: "È una fabbrica d'epoca britannica. Qui il tè si lavora ancora con il metodo ortodosso, in gran
+  parte a mano, non con le macchine CTC." (L'anno solo se lo leggi su una targa. Proprietario e fondazione: non
+  confermati, solo come domanda.)
 Domande da fare lì:
 - Who owns this estate today? When was it started, and by whom? (Di chi è la tenuta oggi? Quando è nata e da chi?)
 - How old is this factory and these machines? (Quanti anni hanno questa fabbrica e queste macchine?)
