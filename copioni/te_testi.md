@@ -118,13 +118,14 @@ Tempi in secondi del file, dalla trascrizione parakeet. Manuel non dice i numeri
 - 5  37.31-43.93
 - 6  44.97-51.63 (dice "vivono" al presente: va bene, tutto il racconto è al presente)
 - 7  53.59-58.38
-- 8  77.12-86.10 (terza ripresa, quella buona con "dalle diciotto alle venti ore"). Da sentire a orecchio: la
+- 8  VERIFICATO da Montaggio (26/10): la terza ripresa è mangiata; si usa l'elenco dalla seconda e l'ultima
+     frase dalla terza. Dettaglio: 77.12-86.10 (terza ripresa, quella buona con "dalle diciotto alle venti ore"). Da sentire a orecchio: la
      trascrizione legge "rotolate" e "fatte sedare" invece di "arrotolate" e "fatte ossidare". Se è così, prendere
      "appassite, arrotolate, fatte ossidare e seccate" dalla seconda ripresa (64.09-73.16, circa 67-71 s) e solo
      l'ultima frase dalla terza (circa 81.5-86.1). Scartare 59.48-63.59 e la frase "quasi un giorno".
 - 9  88.31-92.16
 - 10 93.07-101.25 ("circa tredicimila", confermato)
-- 11 102.13-114.92. Da sentire: l'inizio può essere "Dal 2015" invece di "Nel 2015". "Dal" cambierebbe il senso
+- 11 102.13-114.92. VERIFICATO da Montaggio (26/10): dice "Nel 2015", ok. Prima: poteva essere "Dal 2015" invece di "Nel 2015". "Dal" cambierebbe il senso
      (sembrerebbe che blocchino Munnar ogni anno): se è "Dal", tagliare la parola o far ridire il blocco.
 - 12 seconda ripresa 127.16-138.23 (da "l'India è la seconda produttrice..."); togliere il "ne" ripetuto a 131.72-131.88.
      Scartare 116.51-126.6.
