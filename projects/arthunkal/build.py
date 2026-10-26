@@ -621,7 +621,7 @@ def v2():
     r, W, H = vreel("v2_statua")
     r.own(C("091255"), 0.9, gain=0.5)(2.2)
     hook(r, "Scolpita a Milano.\\NNel 1647.")
-    t = r.narr(VO1, 81.0, 88.2, [(r.own(C("090825"), 0.0, gain=0.25, cx=0.5), 2.0), (r.own(C("091540"), 1.0, gain=0.25), None)],
+    t = r.narr(VO1, 81.0, 88.2, [(r.own(C("090813"), 0.0, gain=0.25, cx=0.5), 2.0), (r.own(C("091540"), 1.0, gain=0.25), None)],
                words=words(_WVO, "", 81.0, 88.2), cuts=[(83.0, 83.45)])
     r.title(t + 0.2, t + 2.6, "Arthunkal, Kerala, India", "Small", 400)
     sB = storia(W, H, "Bv", "1584|padre Giacomo Fenicio|gesuita italiano|0.2", 4.5, prev="52 d.C.")
@@ -634,7 +634,7 @@ def v2():
     r.narr(VO1, 109.25, 115.05, [(r.own(C("091540"), 3.0, gain=0.2), None), (r.own(C("091405"), 0.5, gain=0.2), None),
                                  (r.own(C("090903"), 8.0, gain=0.2), None)],
            words=words(_WVO, "", 109.25, 115.05))
-    r.own(C("090825"), 0.0, gain=0.4)(1.5)
+    r.own(C("090813"), 1.8, gain=0.4)(1.5)
     if MUSIC_V:
         r.tl.music(0, r.t, MUSIC_V, offset=0.0, level=0.35, fin=0.3, fout=0.8)
     return vfinish(r, "v2_statua", W, H)
