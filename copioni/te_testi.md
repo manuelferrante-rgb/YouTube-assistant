@@ -109,6 +109,30 @@ Come registrare: numero detto a voce, 2 s di pausa, testo. Ritmo calmo.
    raccoglie.
 Registrale tutte e due; dopo aver visto le interviste scelgo con Montaggio la chiusura che si lega meglio.
 
+## VOICEOVER REGISTRATO (Rajmala.m4a, 164 s, cartella Drive del video): tagli da usare (Copy, 26/10)
+Tempi in secondi del file, dalla trascrizione parakeet. Manuel non dice i numeri dei blocchi: l'ordine è quello della v3.
+- 1  2.15-5.42
+- 2  6.76-17.95
+- 3  18.90-24.69
+- 4  25.50-36.19 (pausa naturale a 29.9-30.5, si può stringere)
+- 5  37.31-43.93
+- 6  44.97-51.63 (dice "vivono" al presente: va bene, tutto il racconto è al presente)
+- 7  53.59-58.38
+- 8  77.12-86.10 (terza ripresa, quella buona con "dalle diciotto alle venti ore"). Da sentire a orecchio: la
+     trascrizione legge "rotolate" e "fatte sedare" invece di "arrotolate" e "fatte ossidare". Se è così, prendere
+     "appassite, arrotolate, fatte ossidare e seccate" dalla seconda ripresa (64.09-73.16, circa 67-71 s) e solo
+     l'ultima frase dalla terza (circa 81.5-86.1). Scartare 59.48-63.59 e la frase "quasi un giorno".
+- 9  88.31-92.16
+- 10 93.07-101.25 ("circa tredicimila", confermato)
+- 11 102.13-114.92. Da sentire: l'inizio può essere "Dal 2015" invece di "Nel 2015". "Dal" cambierebbe il senso
+     (sembrerebbe che blocchino Munnar ogni anno): se è "Dal", tagliare la parola o far ridire il blocco.
+- 12 seconda ripresa 127.16-138.23 (da "l'India è la seconda produttrice..."); togliere il "ne" ripetuto a 131.72-131.88.
+     Scartare 116.51-126.6.
+- 13 141.32-146.18 (chiusura A)
+- 14 155.51-160.21 (chiusura B). Manuel a voce: "forse mi piace più la quattordici" -> chiusura B, salvo diversa
+     scelta col montato.
+- Scarti: 151.20-154.39 (commenti), tutte le parole "Ripeto".
+
 ## B-roll IA (solo per questo video, decisione di Manuel 26/10): limiti di Copy
 - Mai persone generate che possano sembrare quelle intervistate o lavoratori reali riconoscibili.
 - Mai "foto d'archivio" finte spacciate per vere: le scene storiche vanno in uno stile riconoscibile come
