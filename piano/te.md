@@ -46,6 +46,20 @@ Munnar (Kannan Devan Hills, KDH):
   In India dal 1862 a Bombay, dal 1870 come Finlay Muir; nel tè dal 1882 circa; a Munnar compra 33 tenute nel
   1895 (una fonte turistica dice 1893-95). Dal 2000 è di John Swire & Son. Fonti: Wikipedia "James Finlay & Co",
   Archives Hub, Glasgow Life Museums.
+- Dove va il tè di KDHP (Deccan Chronicle, 2019): produzione circa 25 milioni di kg l'anno, per la maggior parte
+  venduta all'ingrosso ad altri marchi; nel 2019 circa 8,5 milioni di kg con marchio proprio (Ripple). Il marchio
+  "Tata Tea Kanan Devan" è di Tata Consumer Products, non della KDHP (Tata Consumer, ri-lancio in Kerala). NON
+  trovato: aste di Kochi, acquirenti, quota export. Non dirlo: chiederlo alla guida e attribuirlo.
+- India nel tè: seconda produttrice al mondo dopo la Cina (più fonti: Drishti IAS, IBEF). Volumi discordanti:
+  1.285 milioni di kg nel 2024 (una fonte), 1.203 milioni di kg nell'anno fiscale 2025 (IBEF, aprile-gennaio, non
+  confrontabile). Posto nell'export: fonti discordanti (2º o 3º): non dirlo. Kerala: unico dato trovato è del
+  2011, 68,35 milioni di kg su 988,33 (Lok Sabha), cioè circa il 7% (calcolo mio): troppo vecchio, non dirlo in
+  voce. Il Sud dell'India (Tamil Nadu, Kerala, Karnataka) fa circa il 17%.
+- Discendenti dei tamil: sì, secondo South First (luglio e settembre 2026) e la ricerca universitaria sono alla
+  quarta o quinta generazione; il libro "Plantation Crisis" (OAPEN) parla di forza lavoro tamil dalit i cui
+  antenati furono portati nell'Ottocento. Il numero di generazioni cambia per fonte: dire "molti sono discendenti",
+  non una cifra. Le accuse su certificati di casta e trattamento sono accuse riportate dalla testata, il governo del
+  Kerala risponde che sono motivi legali e tecnici: se si citano, attribuire a South First.
 Non trovato: condizioni attuali delle case dei lavoratori e salario giornaliero attuale. Chiederli alle persone
 (attribuiti a loro, regola del 23/10), non cercarli in rete a caso.
 
