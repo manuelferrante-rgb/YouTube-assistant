@@ -26,9 +26,9 @@ Mappa: India, Kerala, Munnar. Nessun testo da dire.
 [CAMERA] "Sono a Munnar, in Kerala, a oltre 1.500 metri. Questa terra, prima del tè, era foresta."
 [VO 2] e [VO 3] sui panorami.
 
-### 3. CON [NOME] TRA I FILARI (1:50-3:40): il cuore del video
+### 3. CON SADISH TRA I FILARI (1:50-3:40): il cuore del video
 [GIRA] Il percorso con lui (dietro e davanti), l'arrivo dove raccolgono, mani e foglie da vicino, cesto o sacco.
-[CAMERA] "[Nome] è di qui. Ci porta dove la gente del posto raccoglie il tè. Non il panorama: il lavoro."
+[CAMERA] "Sadish è di qui. Ci porta dove la gente del posto raccoglie il tè. Non il panorama: il lavoro."
 [DOMANDE] alla persona del posto (lui spiega, tu chiedi poco):
 - What's your name? Do you work in tea, or does your family? (Come ti chiami? Tu o la tua famiglia lavorate nel tè?)
 - Who picks the leaves here? Women, men, families? (Chi raccoglie qui? Donne, uomini, famiglie?)
@@ -193,7 +193,7 @@ Domande da fare lì:
 
 ### Cambio di programma (26/10): con una persona del posto dove raccolgono le foglie
 In camera:
-1. In auto o camminando, presentazione (è l'accesso che rende di più nei competitor): "Cambio di programma. [Nome]
+1. In auto o camminando, presentazione (è l'accesso che rende di più nei competitor): "Cambio di programma. Sadish
    è di qui e ci porta dove la gente del posto raccoglie il tè. Non il panorama: il lavoro."
 2. Arrivati, prima di parlare con nessuno: "Ecco i filari. Adesso chiediamo a chi ci lavora."
 3. Chiusura del pezzo, una frase tua su quello che hai visto o sentito.
