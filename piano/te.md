@@ -42,6 +42,15 @@ Munnar (Kannan Devan Hills, KDH):
 Non trovato: condizioni attuali delle case dei lavoratori e salario giornaliero attuale. Chiederli alle persone
 (attribuiti a loro, regola del 23/10), non cercarli in rete a caso.
 
+## Tappe decise da Manuel (26/10)
+1. 2nd Mile View Point, Munnar Bypass (22RQ+HP7). Punto panoramico sul tè: poche informazioni verificate (orari e
+   ingresso non trovati). Serve per ripresa dall'alto e per incontrare chi lavora nei filari.
+2. Tea Museum KDHP, Nullatanni, NH 49, Munnar. CHIUSO IL LUNEDI (più fonti): oggi 26/10 è lunedì, quindi il museo
+   va fatto martedì 27/10. Orario 9-17 o 10-17 per fonti diverse: telefonare. Dentro: macchinari storici, foto
+   d'epoca, mobili coloniali, Rotorvane (rullatrice CTC), meridiana del 1913, un documentario di circa 30 minuti,
+   guide in inglese, hindi e malayalam, dimostrazione e assaggio a pagamento. Divieti di ripresa non trovati:
+   chiedere alla biglietteria prima di filmare dentro.
+
 ## Posti per vedere e filmare
 - Tata Tea Museum (KDHP), tenuta Nallathanni, Munnar. Chiuso il lunedì e il Venerdì Santo; orario indicativo
   9-17, biglietto 75-125 rupie (fonti discordanti). Telefonare prima. Macchinari storici (ruote Pelton, rullatrici)
