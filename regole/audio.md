@@ -25,3 +25,7 @@
   whoosh né cambi rumorosi. Li tiene insieme un letto naturale continuo (onde, canto o folla lontani, dal girato).
 - Ambienti di riempimento (J-cut, buchi): solo da clip SENZA parlato (controllare con la trascrizione): sotto la
   mappa di Arthunkal si sentiva una voce presa da un ambiente con Manuel che parlava.
+- Internet Archive (verificato 26/10): molte raccolte di effetti marcate "CC0" o "public domain" sono librerie commerciali
+  ricaricate da utenti (Sound Ideas, Disney, Warner, Lucasfilm): licenza falsa, rischio Content ID. Da lì solo
+  registrazioni con autore e provenienza chiari; per gli effetti, prima il girato e le registrazioni "wild" di Manuel.
+- Audio generato insieme ai B-roll IA (Veo): non si usa mai; i suoni delle scene IA li fa la chat Audio (Insights, 26/10).

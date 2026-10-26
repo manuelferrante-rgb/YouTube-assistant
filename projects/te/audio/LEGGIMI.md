@@ -21,3 +21,14 @@ Cartella Drive del video: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw. I file grandi vanno
   a vapore). Bastano la musica e un leggero fruscio di carta sui documenti (contratto 1877, legge 1971).
 - Fabbrica (blocco 8): se Manuel non gira una fabbrica vera, niente rumori di macchinari finti; musica e voce.
 - Sciopero 2015 (blocco 11, grafica): nessun suono di folla ricostruito.
+
+## Richieste di Insights (26/10, analisi/broll_ia_te.md) e come le copro
+- Audio di Veo: non si usa. Tutti i suoni delle scene IA li faccio io.
+- Storiche illustrate (1-6, 9): musica calma + pochi suoni discreti. Carta e penna (1-2), timbro e fogli (9): dalle
+  registrazioni wild di Manuel se arrivano, altrimenti costruiti dal fruscio vero e dai click del girato. Vento sulle
+  colline (1-3): girato di Munnar. Ufficio vittoriano con orologio (4): tick dell'orologio costruito dai click veri,
+  lontano. Accette e alberi lontani (5): solo se suonano veri a distanza, altrimenti niente. Passi lontani (6): passi
+  veri del girato (sabbia o sentiero), filtrati e lontani.
+- Fabbrica realistica (8): meglio registrare le macchine vere (al Tea Museum di Munnar c'è una piccola lavorazione
+  dimostrativa). Altrimenti aria calda e ventole costruite e un ronzio basso, molto bassi sotto la voce.
+- Tazze e sacchi (12): versare il tè, tazza sul piattino, sacchi di juta e camion: dal girato o wild dal chiosco.
