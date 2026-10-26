@@ -55,6 +55,26 @@ Domande da fare lì:
 - Where does this tea go? Who buys it? (Dove va questo tè? Chi lo compra?)
 - Agli operai o alle raccoglitrici: le stesse domande della Tappa 1.
 
+### Cambio di programma (26/10): con una persona del posto dove raccolgono le foglie
+In camera:
+1. In auto o camminando, presentazione (è l'accesso che rende di più nei competitor): "Cambio di programma. [Nome]
+   è di qui e ci porta dove la gente del posto raccoglie il tè. Non il panorama: il lavoro."
+2. Arrivati, prima di parlare con nessuno: "Ecco i filari. Adesso chiediamo a chi ci lavora."
+3. Chiusura del pezzo, una frase tua su quello che hai visto o sentito.
+Alla persona del posto (lui spiega, tu chiedi poco e lasci parlare):
+- What's your name? Do you work in tea, or does your family? (Come ti chiami? Tu o la tua famiglia lavorate nel tè?)
+- Who picks the leaves here? Women, men, families? (Chi raccoglie qui? Donne, uomini, famiglie?)
+- How does picking work: which leaves, how many times a month? (Come funziona la raccolta: quali foglie, ogni quanto?)
+- Who owns this land? A company or small farmers? (Di chi è questa terra? Di un'azienda o di piccoli coltivatori?)
+- Where do the leaves go after picking? Who buys them? (Dove vanno le foglie dopo la raccolta? Chi le compra?)
+- Is life here different from your parents' time? (La vita qui è diversa da quella dei tuoi genitori?)
+Alle raccoglitrici (lui può tradurre; prima chiedi se puoi filmare): le domande della Tappa 1, scegline 3-4:
+da quanto lavorate, i genitori lavoravano qui, quanti chili al giorno, pagate a giornata o a chilo, cosa vorresti
+per i figli.
+Da girare: il percorso con lui (dietro e davanti), mani e foglie da vicino, il cesto o il sacco, la pesata se c'è,
+volti solo con consenso, 30 secondi di audio senza la tua voce. Se ti spiega qualcosa sulla storia, è sua: lo
+citiamo come "ci racconta".
+
 ### Tappa 2: Tea Museum KDHP, Nullatanni
 Chiedi alla biglietteria se puoi filmare dentro. In camera:
 4. All'ingresso: "Qui c'è la storia di come il tè è arrivato su queste colline. E di chi sono, oggi."
