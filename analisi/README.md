@@ -22,6 +22,6 @@ salvatore bianco): di un competitor si prende la struttura (hook, ritmo, packagi
 - Metodo (Manuel, 25/10): YouTube dei competitor si analizza online (yt-dlp e pagine dei canali, anche i post);
   Instagram non si vede senza login, quindi ricerca web generica + screenshot che manda Manuel.
   Note su cosa conta su IG: `analisi/competitor/instagram.md`.
-- Quando chiedere i dati (Manuel, 26/10): 48 ore dopo l'uscita del lungo (controllo veloce), 7 giorni (analisi
-  principale), 28 giorni (facoltativo). Lungo, teaser, 3 reel e carosello, YT e IG. Insights tiene i promemoria
-  e li chiede a Manuel. Programmati per mercato: 3/11, 8/11, 29/11 (mattina in India).
+- Quando chiedere i dati (Manuel, 26/10): 48 ore dopo l'uscita del lungo (controllo veloce) e 7 giorni (analisi
+  principale). A 28 giorni no. Lungo, teaser, 3 reel e carosello, YT e IG. Insights tiene i promemoria
+  e li chiede a Manuel. Programmati per mercato: 3/11 e 8/11 (mattina in India).
