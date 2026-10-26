@@ -3,9 +3,13 @@
 Stato: IDEA, in ricerca (26/10). Decisioni di Manuel 26/10: lungo + 4 verticali; ripresa oggi 26/10, se serve altro domani 27/10; posto ancora da comunicare (link Maps non leggibile da qui). Non ancora approvata da Manuel. Niente script né voiceover finché non approva:
 poi Copy scrive "DA DIRE E DA CHIEDERE" in `copioni/te_testi.md` partendo da questi fatti.
 
-## Da sapere da Manuel (blocca la scelta del posto)
-- Dove si trova ora. Il link Maps non si apre da qui (rete bloccata): serve il nome del posto o le coordinate.
-- Le piantagioni di tè del Kerala sono in collina (Munnar, Peermade/Idukki, Vagamon, Wayanad), lontane da Alappuzha.
+## Dove si trova Manuel (26/10)
+- Maliyeckal Homestay, Anaviratty, Mankadavu Road, vicino alla scuola GLPS Anaviratty, Munnar 685561.
+- Anaviratty è a circa 20 km dal centro di Munnar e dal Tata Tea Museum, sulla strada NH85 verso Kochi (fonte:
+  munnar.com, schede dei homestay). Non ho verificato quali piantagioni e fabbriche siano vicine all'homestay:
+  chiedere all'host e guardare sulla mappa il verde del tè.
+- Fabbriche di tè nella zona di Munnar citate dalle fonti: Lockhart (Devikulam, museo con fabbrica del 1936) e
+  Madupatty (KDHP). Non sono verificate come vicine ad Anaviratty né aperte al pubblico.
 
 ## Angolo proposto
 Un "come funziona": chi raccoglie il tè, chi ci vive, come ci è arrivato (storia coloniale) e di chi è oggi.
