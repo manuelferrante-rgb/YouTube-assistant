@@ -1,0 +1,10 @@
+{"durata": 437.90, "note": "te lungo v1 del 26/10 (7:17.9), tempi VO da Montaggio; gancio (VO 1) senza musica come Arthunkal; finale sotto VO 14 e chiusura sul logo (434.4-437.9)",
+ "tratti": [
+  {"da": 45.63, "a": 62.15, "dopo": 62.80, "brano": "colline"},
+  {"da": 228.60, "a": 241.88, "dopo": 242.50, "pre": 0.6, "brano": "colline"},
+  {"da": 268.17, "a": 292.09, "dopo": 292.70, "pre": 0.6, "brano": "colline"},
+  {"da": 315.20, "a": 327.18, "dopo": 327.80, "pre": 0.6, "brano": "colline"},
+  {"da": 342.03, "a": 353.69, "dopo": 354.30, "pre": 0.6, "brano": "colline"},
+  {"da": 371.30, "a": 379.74, "dopo": 380.35, "pre": 0.6, "brano": "colline"},
+  {"da": 428.87, "a": 435.90, "dopo": 438.50, "pre": 3.0, "entrata": 2.5, "coda": 2.0, "brano": "colline"}
+ ]}
