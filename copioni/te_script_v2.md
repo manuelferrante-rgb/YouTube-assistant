@@ -47,7 +47,7 @@ Mappa: India, Kerala, Munnar. Nessun testo da dire.
 [CAMERA] "Da qui le foglie vanno in fabbrica. E poi?"
 [VO 5] sul trasporto delle foglie.
 
-### 5. LA STORIA COLONIALE (4:40-6:00)
+### 5. LA STORIA COLONIALE (4:40-6:00) (museo forse no, Manuel 26/10: la storia la porta il voiceover sulle colline)
 [GIRA] Al museo: foto d'epoca, documenti, macchinari, la meridiana del 1913, la rullatrice; fuori, i filari.
 [CAMERA] all'ingresso del museo: "Qui c'è la storia di come il tè è arrivato su queste colline. E di chi sono, oggi."
 [VO 6], [VO 7], [VO 8], [VO 9] su foto d'epoca, macchinari e colline.
