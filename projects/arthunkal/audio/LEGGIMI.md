@@ -43,3 +43,11 @@ tienile basse (circa -22/-26 dB sotto la voce) e mai sotto le interviste con voc
   3. Buchi brevi di quasi silenzio (0:55, 1:53-1:55, 3:15, 3:29, 5:04 a -30/-36): coprire con l'ambiente della scena
      dopo che entra prima (J-cut) o con la coda della precedente. Sono i "momenti vuoti" da evitare.
   4. tick_data: d'accordo a non usarlo. Ding provvisorio: tenerlo basso, nessun altro effetto da aggiungere.
+
+## Gancio calmo (26/10, dopo la visione di Manuel)
+- `letto_onde.flac` (40 s): onde vere di Marari, continue, entrata 1.5 s e uscita 2.5 s. Base dei primi 30 s.
+- `rosario_lontano.flac` (40 s): il rosario cantato sul cammino (0264) e il mormorio della notte (0234), lontani
+  (passa-basso e riverbero). Tenerlo circa 14 dB sotto le onde e abbassarlo di altri 8-10 dB sotto la voce di Manuel e
+  il voiceover della statua: si deve sentire nelle pause, non sopra le parole.
+- `letto_gancio.flac` (40 s): i due già insieme, se preferisci un file solo (allora ducking sotto la voce).
+- Wav uguali su Drive in montati/arthunkal/audio/. Niente colpi né whoosh nel gancio; il primo effetto è la mappa.
