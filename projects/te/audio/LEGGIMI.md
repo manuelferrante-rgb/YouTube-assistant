@@ -32,3 +32,20 @@ Cartella Drive del video: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw. I file grandi vanno
 - Fabbrica realistica (8): meglio registrare le macchine vere (al Tea Museum di Munnar c'è una piccola lavorazione
   dimostrativa). Altrimenti aria calda e ventole costruite e un ronzio basso, molto bassi sotto la voce.
 - Tazze e sacchi (12): versare il tè, tazza sul piattino, sacchi di juta e camion: dal girato o wild dal chiosco.
+
+## Consegna per Montaggio (26/10 sera), in questa cartella (flac 48 kHz) e su Drive
+- Voiceover ripulito: Drive montati/te/audio/vo_te_pulito.wav = Rajmala.m4a con gli stessi tempi (164.1 s), passa-alto
+  75 Hz, de-esser leggero, compressione dolce, -20.6 LUFS. I tagli per blocco fatti su Rajmala valgono uguali.
+  Nota: il blocco 8 è registrato tre volte (59.5, 64.1, 77.1 s: buona la terza) e il 12 due volte (116.5, 128.5);
+  per la chiusura Manuel dice "forse mi piace più la quattordici" (155.5-160.2).
+- `ambiente_colline.flac` (60 s): aria tra i filari da 132930 e 132655 (vento sul microfono tolto sotto 180 Hz).
+  Sotto le panoramiche, le scene IA all'aperto (colline, foresta, raccolta) e i buchi. Nessuna voce.
+- `chai_tirato.flac` (27 s): 142545, il chai master che tira il tè, nessuno parla. Chiosco e tazze (blocco 12).
+- `motore_camion.flac` (10 s): motore del bus (110437). Sacchi e camion in partenza (blocco 12), basso.
+- `carta.flac`, `penna.flac` (costruiti, bassi): contratto 1877 (1-2), documenti e legge 1971 (9). Uno per scena.
+- `orologio_lontano.flac` (12 s): tic-tac lontano con stanza, dai click veri: ufficio della compagnia (4).
+- `fabbrica_provvisorio.flac` (20 s, costruito): ventole dell'appassimento e ronzio a 50 Hz, molto basso sotto il
+  blocco 8. Niente colpi di macchine inventati. Si sostituisce se Manuel registra una fabbrica vera.
+- Non fatti, di proposito: accette e alberi che cadono (5) e passi lontani (6): nel girato non ci sono e costruiti
+  suonerebbero finti. Lì basta ambiente_colline più la musica.
+- Musica: `musica_colline.wav` su Drive; la taglio sui tempi dei voiceover appena c'è l'anteprima (come Arthunkal).
