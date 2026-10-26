@@ -296,12 +296,16 @@ def long_video(W, H):
     # 1. GANCIO (0-20 s): la promessa del titolo e la curiosità della miniatura, suono vero, niente colpi
     e.say(C("072327"), [(0.75, 4.45)])                               # "Sono le sette del mattino... da mezzanotte."
     e.say(C("072327"), [(5.0, 7.6), (8.4, 10.1)], cover={1: (C("075747"), 1.0)})  # 13 km... il rosario in mano
-    e.bed(0.0, e.t, WAVES[0], 1.0, 0.18)                             # onde sotto la sua voce, unisce i tagli
-    e.b(C("023744"), 0.2, 2.8, gain=0.8, grade=NIGHT)               # la notte, solo suono vero
+    e.b(C("023744"), 0.2, 4.5, gain=0.8, grade=NIGHT)               # la notte, solo suono vero, tenuta 4-5 s
     f, d = VO("7a", [(104.3, 108.45)])                               # "Nel 1647 arriva da Milano una statua..."
-    e.vo(f, d, [(C("091540"), 1.0), (C("091255"), 0.9)], lead=0.25, tail=0.35)
-    e.say(C("090733"), [(0.0, 1.75)], subs=[(0.0, 1.75, "E dopo chilometri di cammino!")])
-    e.b(C("090733"), 1.9, 2.4, gain=0.4)                             # l'arco e la basilica, folla vera
+    t_st = e.t
+    e.vo(f, d, [(C("090903"), 1.0), (C("091540"), 1.0)], lead=0.25, tail=0.35)   # facciata da lontano, poi la statua
+    e.title("Da Milano, 1647", t_st + 0.3, 3.2)                       # testo di Copy, unica scritta del gancio
+    gancio = aud("letto_gancio")                                     # letto della chat Audio: onde + rosario lontano
+    if gancio:
+        tl.sfx(0.0, ambient(gancio, 0.0, e.t + 0.3), 0.2)
+    else:
+        e.bed(0.0, e.t, WAVES[0], 1.0, 0.18)
     tl.sfx(max(0, e.t - 0.4), ambient(C("072504"), 0.5, 2.0), 0.4)   # ponte sull'attacco della sigla
     # 2. SIGLA
     sigla_d(tl, OUT if not PREVIEW else f"{OUT}/sigla_prev")
@@ -449,6 +453,7 @@ def long_video(W, H):
     for src, a, dd in [(C("084510"), 0.5, 2.6), (C("085208"), 0.5, 2.4), (C("085422"), 1.0, 3.0),
                        (C("090224"), 0.5, 2.2)]:
         e.b(src, a, dd, gain=0.6)
+    e.bed(t_s, e.t, C("085422"), 0.0, 0.16)                          # niente buchi tra i passi in strada
     f, d = VO("jc", [(195.55, 197.55)])
     e.vo(f, d, [(C("085613"), 0.3), (C("090348"), 2.0)], lead=0.3, tail=0.4)
     e.to_black(strong=True)
@@ -575,9 +580,6 @@ def vfinish(r, tag, W, H):
 
 def hook(r, txt, d=2.2):
     r.title(0.0, d, txt, "Mid", 820)
-    hit = aud("transizione_nero_out")                               # colpo basso fatto con un'onda vera (chat Audio)
-    if hit:
-        r.tl.sfx(0.0, hit, 0.35)
 
 
 def v1():

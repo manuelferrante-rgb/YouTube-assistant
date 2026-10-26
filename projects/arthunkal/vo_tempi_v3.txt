@@ -1,0 +1,13 @@
+# Lungo v3 arthunkal, durata 406.40 s. inizio fine file (s)
+12.52	16.29	vo_7a.wav
+22.67	33.70	vo_2.wav
+69.00	71.59	vo_1c.wav
+82.13	89.61	vo_3.wav
+90.37	93.00	vo_jb.wav
+119.43	124.84	vo_8b.wav
+247.97	256.47	vo_5.wav
+286.23	288.32	vo_ja.wav
+299.10	300.92	vo_jc.wav
+329.47	336.01	vo_6a.wav
+356.40	361.67	vo_7b.wav
+384.63	400.99	vo_10.wav
