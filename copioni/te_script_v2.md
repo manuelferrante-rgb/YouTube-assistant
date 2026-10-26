@@ -86,7 +86,7 @@ Dici il numero ("Uno"), 2 secondi di pausa, poi il testo. Ritmo calmo. Registra 
 girato oggi; quelli marcati DOPO si registrano quando c'è la scena o quando ho visto le interviste.
 
 1. (gancio: cartello Kannan Devan, filari)
-   Queste colline hanno un nome inglese, e una storia che comincia con un contratto d'affitto.
+   Queste colline hanno una storia che comincia con un contratto d'affitto.
 2. (panorami)
    Nel 1877 un raja della famiglia di Poonjar affitta queste colline a John Daniel Munro, un britannico che lavora
    per il regno di Travancore. Circa centotrentaseimila acri, per tremila rupie l'anno.
@@ -106,14 +106,14 @@ girato oggi; quelli marcati DOPO si registrano quando c'è la scena o quando ho 
 8. (raccoglitrici, foto d'epoca)
    A lavorarci vengono portati lavoratori tamil. Prima di loro, su queste colline vivevano i Muthuvan e i
    Malayarayan.
-9. (macchinari del museo, meridiana)
+9. (macchinari del museo, meridiana; solo se la scena mostra targhe, macchine o nomi d'epoca)
    Le macchine, i nomi delle tenute, le strade: qui molto porta ancora il segno dell'epoca britannica.
 10. (Kolukkumalai: macchine e lavorazione)
    Qui il tè si lavora ancora con il metodo ortodosso: le foglie vengono appassite, arrotolate, fatte ossidare e
    seccate.
    (Le fasi solo se le hai filmate o te le ha spiegate la guida; altrimenti tieni solo la prima frase.)
 11. (cartelli KDHP, strade di Munnar)
-   Nel 1971 una legge del Kerala riprende il controllo delle terre.
+   Nel 1971 il Kerala approva una legge sulle terre di queste colline.
 12. (raccoglitrici, uffici o fabbrica KDHP)
    Dal 2005 la maggior parte dell'azienda è dei suoi dipendenti, circa tredicimila. Secondo Tata, è la prima
    azienda di piantagioni in India a funzionare così.
@@ -121,8 +121,8 @@ girato oggi; quelli marcati DOPO si registrano quando c'è la scena o quando ho 
    Nel 2015 migliaia di raccoglitrici bloccano Munnar per nove giorni, senza sindacati né partiti. Si fanno chiamare
    Pombilai Orumai: unità delle donne. Chiedono un salario più alto. Il bonus al venti per cento lo ottengono.
 14. (paesaggio, tè nel bicchiere)
-   L'India è la seconda produttrice di tè al mondo, dopo la Cina. L'azienda di queste colline ne produce circa
-   venticinque milioni di chili l'anno, e gran parte la vende ad altri marchi.
+   L'India è la seconda produttrice di tè al mondo, dopo la Cina. L'azienda di queste colline ne produceva circa
+   venticinque milioni di chili l'anno, secondo un dato del 2019, e gran parte la vende ad altri marchi.
 15. (chiusura: DOPO, la scrivo quando ho visto le interviste, con le parole di chi raccoglie)
 
 Fuori dal video perché incerti: anno della prima visita di Munro, origine del nome Kannan Devan (solo se la
