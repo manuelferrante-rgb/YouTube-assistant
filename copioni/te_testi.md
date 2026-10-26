@@ -95,7 +95,7 @@ Come registrare: numero detto a voce, 2 s di pausa, testo. Ritmo calmo.
 6. A lavorarci vengono portati lavoratori tamil. Prima di loro, su queste colline vivevano i Muthuvan e i Malayarayan.
 7. In India, a raccogliere il tè sono soprattutto donne. Le foglie si staccano a mano, filare dopo filare.
 8. Poi le foglie vanno in fabbrica. Con il metodo ortodosso vengono appassite, arrotolate, fatte ossidare e seccate.
-   Solo l'appassimento dura quasi un giorno.
+   L'appassimento dura in media dalle diciotto alle venti ore.
 9. Nel 1971 il Kerala approva una legge sulle terre di queste colline.
 10. Dal 2005 la maggior parte dell'azienda è dei suoi dipendenti, circa tredicimila. Secondo Tata, è la prima azienda
    di piantagioni in India a funzionare così.
@@ -116,7 +116,7 @@ Registrale tutte e due; dopo aver visto le interviste scelgo con Montaggio la ch
 - Su YouTube va attivata la dichiarazione "contenuti alterati o sintetici" se le scene IA sembrano realistiche.
 - Scene che servono al voiceover: contratto d'affitto e colline del 1877 (blocchi 1-2), prime piantagioni e
   coltivazioni di caffè/cardamomo (3), uffici di una compagnia britannica e piantagioni d'epoca (4), foresta tagliata
-  e colline spoglie (5), arrivo dei lavoratori dalle pianure in stile illustrato (6), mani che raccolgono (7),
+  e colline spoglie (5), lavoratori tamil in stile illustrato, senza luoghi di partenza inventati (6), mani che raccolgono (7),
   fabbrica: appassimento, arrotolatura, ossidazione, essiccazione (8), carte e documenti di legge (9), tè nelle tazze
   nel mondo e sacchi in partenza (12). Per lo sciopero del 2015 (11) meglio niente IA realistica: grafica con la data
   e il nome Pombilai Orumai.
