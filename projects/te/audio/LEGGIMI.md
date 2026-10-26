@@ -3,7 +3,7 @@
 Cartella Drive del video: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw. I file grandi vanno in montati/te/audio/.
 
 ## Musica (originale, `audio/musica/compose.py colline`)
-- `musica_bozza_colline.wav` (4:00, su Drive): mi minore, 64 bpm, tappeto, piano rado che "pensa", passo di corde lontano
+- `musica_colline.wav` (4:00, su Drive in montati/te/audio/): mi minore, 64 bpm, tappeto, piano rado che "pensa", passo di corde lontano
   dal secondo minuto. Più raccolta di Arthunkal: la storia coloniale e il lavoro chiedono rispetto, non epica.
 - Sul montato: `audio/musica/sul_montato.py` con un json dei tratti (solo sotto voiceover e momenti senza voci), come
   per Arthunkal. Mai sotto le interviste.
