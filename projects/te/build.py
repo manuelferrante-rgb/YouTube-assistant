@@ -183,6 +183,19 @@ def aud(name, fallback=None):
     return fallback
 
 
+def cue(tl, t, name, d, gain=0.7, fout=0.5):
+    """Segno melodico della chat Audio (solo sui B-roll senza nessuno che parla, Manuel 27/10 sera): dura d secondi
+    e si spegne in fout, così la coda finisce sotto l'attacco della voce dopo e non ci resta sopra."""
+    src = aud(name)
+    if not src:
+        return
+    out = f"{OUT}/cue_{name}_{d:.2f}.wav"
+    if not os.path.exists(out):
+        run(["ffmpeg", "-v", "error", "-y", "-i", src, "-t", f"{d:.3f}", "-af", f"afade=t=out:st={d - fout:.3f}:d={fout}",
+             "-ac", "2", "-ar", "48000", out])
+    tl.sfx(t, out, gain)
+
+
 _DUR = {}
 
 
@@ -445,7 +458,8 @@ def long_video(W, H):
     e.say(C("120307"), [(0.82, 2.95), (3.6, 5.95)], cover={0: (C("133721"), 69.6)}, pad=(0.03, 0.04))
     e.say(C("120356"), tight(C("120356"), [(1.97, 6.6)], min_gap=0.15, keep=0.05), pad=(0.03, 0.04))
     t_q = e.t
-    e.b(C("114701"), 1.0, 1.8)                                        # breve: sotto non c'è suono (27/10 sera)
+    e.b(C("114701"), 1.0, 1.8)                                        # breve: sotto solo il segno della domanda
+    cue(tl, t_q, "cue_domanda", 2.0, fout=0.5)                         # la coda si spegne sotto l'attacco della sigla
     e.title("E oggi, di chi sono queste colline?", t_q - 0.5, 2.3)      # domanda aperta, la risposta è al blocco 10
     sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="te")
 
@@ -510,6 +524,7 @@ def long_video(W, H):
     t_h = e.t
     e.b(C("134442"), 0.0, 1.2)
     e.from_black()
+    cue(tl, t_h, "cue_storia", 1.6, fout=0.5)                          # si entra nella storia; via quando parla Sadish
     e.say(C("133946"), [(0.1, 1.2), (32.6, 34.2), (42.7, 43.7), (54.7, 64.8), (65.5, 72.8)],
           cover={3: (C("135012"), 2.0)},
           subs=[(0.1, 1.2, "Conosci la storia?"), (32.6, 34.2, "1877."), (42.7, 43.7, "Era un inglese."),
@@ -681,9 +696,9 @@ def v1():
               block=[(10.0, 13.6, "Tutte le montagne che vedi sono tè.", "Mountain you see everywhere also tea."),
                      (13.6, 16.4, "Coperte verdi.", "Green blankets.")])
     r.title(r.t - 1.2, r.t + 1.2, "E oggi, di chi sono?", "Mid", 820)   # la domanda entra sulle ultime parole
+    t_q = r.t
     r.own(C("114701"), 1.0)(1.2)
-    if MUSIC:
-        r.tl.music(0, r.t, MUSIC, offset=0.0, level=0.3, fin=0.3, fout=0.5)
+    cue(r.tl, t_q, "cue_domanda", 1.3, fout=0.4)                       # la domanda resta sospesa, poi la sigla
     mini_sigla(r, W, H)
     return vfinish(r, "v1_teaser", W, H)
 

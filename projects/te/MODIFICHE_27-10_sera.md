@@ -67,3 +67,10 @@ Regole nuove di Manuel (27/10 sera):
 - Verticali: battute tradotte spezzate in pezzi su una riga (`one_line` in `tools/reel_kit.py`, larghezza misurata
   sul font, al massimo l'84% dello schermo anche al picco dell'animazione); titoli rimpiccioliti se non ci stanno.
   Fotogrammi controllati a ogni sottotitolo.
+- Suoni melodici di Audio (arrivati durante il lavoro, branch claude/te-audio-melodico, unito): `cue_domanda` sul B-roll
+  dopo il gancio (lungo, 1.8 s + coda sfumata sotto l'attacco della sigla) e sulla domanda finale del teaser;
+  `cue_storia` sull'ingresso nella storia (134442 dopo il nero, sfumato quando parla Sadish). Non messi: `cue_citta`
+  (B-roll di 1.2 s, sotto 1.5 s Audio dice niente), `cue_chai` (il chai ora si vede solo sotto il parlato).
+  Musica nuova `musica_te_luce` sotto i voiceover NON messa: Audio scrive "se Manuel la vuole", si chiede a lui.
+  Lungo: l'immagine non cambia, quindi il nuovo mix (dall'anteprima, stessi tempi, scarto 0 misurato) è stato rimontato
+  sul 4K già codificato invece di rifare 2 ore di render.
