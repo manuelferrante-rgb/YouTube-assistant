@@ -2,9 +2,8 @@
 
 - Fatti storici e numeri solo da fonti verificate, elencate in fondo al copione. I numeri detti da un host o da
   una persona si attribuiscono a lui, a meno che Manuel decida diversamente (come per Arthunkal, 23/10).
-- Niente scene generate con IA nei documentari: solo girato di Manuel, mappe e grafiche. UNICA ECCEZIONE: il video
-  `te` (26/10, girato ridotto, decisione di Manuel riferita da Copy): B-roll IA solo come ricostruzione
-  riconoscibile, mai persone reali né "foto d'archivio" finte. Non vale per i video successivi.
+- Niente scene generate con IA nei documentari: solo girato di Manuel, mappe e grafiche (Manuel, 27/10: nessuna
+  eccezione, nemmeno per `te`; Cloudflare Workers AI non si configura).
 - Il gancio parte dal momento più forte: va previsto in lista riprese (Manuel in camera dentro l'azione).
 - Lista riprese per ogni video: prima e dopo nello stesso punto, dettagli, dall'alto, audio ambiente pulito 20-30 s,
   2-3 interviste brevi (stessa domanda a più persone), parlato finale in camera.

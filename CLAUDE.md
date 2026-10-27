@@ -30,8 +30,8 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
 Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01KEDq5A1Lbd16j3T84vmbGj,
-Pianificazione session_01Fqy57TezeLj7Pn7MFpweey, Copy session_01Htfbh2yWc665ptbLq1HQGA,
-Insights session_014MyMgDdVNV6hNQ62MjZ3US, Audio session_01JWXQfdSqnvMjMDdAY1qUHS.
+Pianificazione session_01Htfbh37ofyBziQBzS9CPVv, Copy session_01Htfbh2yWc665ptbLq1HQGA,
+Insights session_01HtfbgyzAxUCZDsgATkknE1, Audio session_01Htfbh294YyTetVQFpycFfc (dal 27/10).
 
 FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
 1. Pianificazione (fatti, riprese), Copy (domande, parti in camera, voiceover, testi a schermo), Insights (cosa
