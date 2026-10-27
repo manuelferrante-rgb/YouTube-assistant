@@ -221,3 +221,5 @@ Chapters
 5:35 Heading back
 
 #Kerala #India #VociVere
+
+Nota Copy, 27/10: il pane si scrive "porotta" (correzione di Manuel). La descrizione YouTube la corregge Manuel; il voiceover registrato resta "parotta".
