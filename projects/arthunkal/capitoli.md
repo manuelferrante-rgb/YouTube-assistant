@@ -1,4 +1,4 @@
-# Arthunkal: minutaggi dei capitoli del lungo (montato v4 del 26/10 sera, 6:49)
+# Arthunkal: minutaggi dei capitoli del lungo (montato v4 del 26/10 sera, 6:49, APPROVATO da Manuel il 27/10)
 
 Minutaggi esatti dal montaggio (`projects/arthunkal/build.py`). I titoli sono di lavoro: quelli definitivi it/en
 li scrive la chat Copy. Nel video non ci sono scritte dei capitoli. Ogni capitolo dura almeno 10 s.
