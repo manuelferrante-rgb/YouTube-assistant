@@ -1,13 +1,14 @@
 ## PACCHETTO DEFINITIVO (27/10, montato v4 6:49 approvato da Manuel)
 Tutto su Drive, cartella "Festa pellegrinaggio Kerala" -> montati/arthunkal/: sottotitoli/ (.it.srt, .en.srt),
-miniatura/ (A, B, C; consigliata B), carosello/ (01-08). Uscite (Pianificazione): teaser sab 7/11, lungo dom 8/11,
+miniatura/ (DEFINITIVA_D_mezzanotte.jpg, scelta di Manuel 27/10), carosello/ (01-08). Uscite (Pianificazione): teaser sab 7/11, lungo dom 8/11,
 reel lun-gio con il carosello mercoledì.
 
 ### Titolo
 IT: Di notte sulla spiaggia in India: 13 km di rosario senza fermarsi 🇮🇳
 EN: All night on an Indian beach: a 13 km rosary that never stops 🇮🇳
-Miniatura consigliata: B "UNA STATUA DI MILANO SULLA COSTA DELL'INDIA" (i primi 30 s hanno sia i 13 km di rosario
-sia "Da Milano, 1647", quindi titolo e miniatura sono mantenuti subito).
+Miniatura DEFINITIVA (Manuel, 27/10): D "DA MEZZANOTTE / 13 KM A PIEDI" (folla di notte), file
+copioni/arthunkal_miniature/D_mezzanotte.jpg e Drive montati/arthunkal/miniatura/DEFINITIVA_D_mezzanotte.jpg.
+I primi 30 s del lungo partono proprio da "camminano da mezzanotte" e dai 13 km: la promessa è mantenuta subito.
 
 ### Descrizione IT
 Mezzanotte, Kalavoor, costa del Kerala. Da qui parte un rosario che non si interrompe mai: si recita camminando
