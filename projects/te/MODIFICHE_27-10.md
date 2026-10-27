@@ -3,7 +3,7 @@
 Leggi prima CLAUDE.md e `regole/montaggio_documentario.md` (in fondo le regole nuove di Manuel del 26-27/10).
 
 ## Stato
-- 27/10 mattina: TUTTE le 13 modifiche sotto applicate in `build.py` (v2). Lungo 4K 6:43 e 4 verticali ricaricati su
+- 27/10 mattina: TUTTE le 13 modifiche sotto applicate in `build.py` (v2). 27/10 sera (v3): audio pulito, tolti il letto ambiente_colline sotto tutto (sembrava un camion), carta/penna, orologio e fabbrica; aria solo nei buchi (`tl.fill`), passa-alto sul suono delle clip (`tl.nat_af`). Lungo 4K 6:43 e 4 verticali ricaricati su
   Drive montati/te con gli stessi nomi (i vecchi sono sovrascritti). Capitoli in `capitoli.md`. In attesa dell'ok di Manuel.
   Note tecniche: `snap_w` limita i tagli alla parola dopo/prima della trascrizione; il "ne ne" del VO 12 si toglie
   con tagli fissi sulla forma d'onda (130.30-131.63 + 131.735-138.3, `exact=True`, senza respiro), verificato con

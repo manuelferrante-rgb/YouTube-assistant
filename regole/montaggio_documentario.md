@@ -237,3 +237,17 @@ descrizione, capitoli e miniatura.
 - Trascrizioni automatiche: nelle clip rumorose sbagliano parole e tempi. Prima di fare sottotitoli o tagli
   su quelle clip si ritrascrive a pezzi e si controlla (in arthunkal i tempi scritti a mano erano sbagliati di 1-3 s).
 - Suoni della chat Audio: si mettono sempre, insieme ai suoni originali del girato (non al loro posto).
+
+## Audio pulito e controllo prima di consegnare (Manuel, 27/10 sera, dopo la v2 del tè): vale per ogni video
+- La voce delle persone che parlano (Manuel, interviste, voiceover) deve sentirsi pulita. MAI letti d'ambiente continui
+  sotto tutto il video: nella v2 del tè `ambiente_colline` steso sotto tutto si sentiva come un camion per tutto il video.
+- I suoni della chat Audio si usano solo dove servono e con un contesto (il chai tirato mentre si vede il chai), oppure
+  nei momenti vuoti senza parlato. Niente fruscii di carta/penna sulle grafiche della linea del tempo, niente ronzii o
+  ticchettii sotto il voiceover.
+- Il suono delle clip e degli effetti passa da un passa-alto (`tl.nat_af = "highpass=f=90"` in `tools/doc_render.py`)
+  per togliere rombo e vento; la voce non si tocca.
+- CONTROLLO OBBLIGATORIO prima di ogni consegna (Manuel non deve trovare lui queste cose):
+  1. `python3 tools/audio_check.py <video>`: fondo nelle pause tra le parole e bassi sotto 70 Hz ogni 5 s; ogni finestra
+     segnalata va spiegata (es. strada vera dell'intervista) o corretta.
+  2. Trascrizione del montato (`tools/transcribe_segments.py`): nessuna parola tagliata o ripetuta, nessun vuoto.
+  3. Fotogrammi dei punti cambiati e dei primi 5 s; controllo dei suoni aggiunti uno per uno (dove, quanto forte, perché).
