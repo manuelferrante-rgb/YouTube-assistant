@@ -3,6 +3,12 @@
 Leggi prima CLAUDE.md e `regole/montaggio_documentario.md` (in fondo le regole nuove di Manuel del 26-27/10).
 
 ## Stato
+- 27/10 mattina: TUTTE le 13 modifiche sotto applicate in `build.py` (v2). Lungo 4K 6:43 e 4 verticali ricaricati su
+  Drive montati/te con gli stessi nomi (i vecchi sono sovrascritti). Capitoli in `capitoli.md`. In attesa dell'ok di Manuel.
+  Note tecniche: `snap_w` limita i tagli alla parola dopo/prima della trascrizione; il "ne ne" del VO 12 si toglie
+  con tagli fissi sulla forma d'onda (130.30-131.63 + 131.735-138.3, `exact=True`, senza respiro), verificato con
+  parakeet ("colline ne produceva"). Musica: si usa ancora `musica_colline.wav` a tratti sotto i VO; il file
+  `musica_voiceover_lungo` di Audio (tempi v1) non vale più per la v2.
 - Pellegrinaggio (arthunkal): APPROVATO da Manuel il 27/10, file finali e capitoli in `piano/calendario.md`. Fatto.
 - Tè (te): v1 consegnata su Drive (cartella 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw, montati/te): lungo 4K 7:18
   `VociVere_te_long_4K.mp4`, verticali `VociVere_te_v1_teaser`, `v2_raccolta`, `v3_giornata`, `v4_chai`

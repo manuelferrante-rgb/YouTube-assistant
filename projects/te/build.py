@@ -20,7 +20,7 @@ R = f"{WORK}/raw"
 OUT = f"{WORK}/out"
 GFX = f"{WORK}/gfx"
 AUD = f"{ROOT}/projects/te/audio"          # suoni e musica forniti dalla chat Audio
-VO1 = f"{WORK}/vo/Rajmala.m4a"
+VO1 = f"{WORK}/vo/vo_te_pulito.wav"                # VO ripulito da Audio (stessi tempi di Rajmala.m4a)
 os.makedirs(OUT, exist_ok=True); os.makedirs(GFX, exist_ok=True)
 
 MUSIC = next(iter(glob.glob(f"{WORK}/musica/musica_colline.wav")), None)   # musica originale (chat Audio)
@@ -47,6 +47,9 @@ def has_voice(src, a, b):
     """C'è parlato vero in [a, b]? (le parole isolate come "Yeah", "Uh" sono quasi sempre rumore di folla)"""
     return any(s["start"] < b and s["end"] > a and len(s.get("words", [])) >= 2 and s["end"] - s["start"] >= 0.8
                for s in _SEG.get(os.path.basename(src), []))
+
+_WVO = ([w for s_ in next(iter(json.load(open(f"{WORK}/vo/rajmala.json")).values())) for w in s_["words"]]
+        if os.path.exists(f"{WORK}/vo/rajmala.json") else [])
 
 # ---------- mai parole mangiate: i tagli seguono la voce vera (energia), non solo la trascrizione ----------
 _VOICED = {}
@@ -109,9 +112,27 @@ def tight(src, ranges, min_gap=0.32, keep=0.1):
     return out
 
 
-def piece(name, src, ranges, speed=1.1, gap=0.2):
-    """Voce da uno o più tratti di un file, uniti con respiri di `gap` s e accelerata. -> (file, durata)."""
-    ranges = [snap(src, a, b) for a, b in ranges]
+def words_of(src):
+    """Parole (testo, inizio) della trascrizione di una clip o del voiceover."""
+    if src == VO1:
+        return _WVO
+    return [w for s_ in _SEG.get(os.path.basename(src), []) for w in s_["words"]]
+
+
+def snap_w(src, a, b):
+    """snap limitato dalla trascrizione: la fine non entra nella parola successiva e l'inizio non torna nella
+    parola precedente (così un "ne ne" tolto non rientra, Manuel 27/10)."""
+    st = sorted(t for _, t in words_of(src))
+    nxt = [t for t in st if t > b - 0.03]
+    prv = [t for t in st if t <= a + 0.08]
+    return snap(src, a, b, lim_a=(prv[-1] - 0.06) if prv else 0.0, lim_b=(nxt[0] - 0.02) if nxt else 1e9)
+
+
+def piece(name, src, ranges, speed=1.1, gap=0.2, exact=False):
+    """Voce da uno o più tratti di un file, uniti con respiri di `gap` s e accelerata. -> (file, durata).
+    exact: tagli già misurati sulla forma d'onda, senza snap (es. una parola ripetuta tolta)."""
+    if not exact:
+        ranges = [snap_w(src, a, b) for a, b in ranges]
     out = f"{OUT}/{name}_{abs(hash(tuple(ranges))) % 10**8}.wav"
     if not os.path.exists(out):
         fc = "".join(f"[0:a]atrim={a}:{b},asetpts=PTS-STARTPTS,atempo={speed},aresample=48000,"
@@ -181,12 +202,12 @@ class Edit:
         self.tl.broll(src, a, d, gain=gain, cx=cx, grade=grade, fx=fx or dict(zoom=(1.0, 1.04, None)), speed=speed,
                       fade=0.12)
 
-    def say(self, src, ranges, speed=1.1, cx=0.5, cover=None, subs=(), grade=DEF, gain=1.0, cut_gaps=False):
+    def say(self, src, ranges, speed=1.1, cx=0.5, cover=None, subs=(), grade=DEF, gain=1.0, cut_gaps=False, pad=(0.06, 0.12)):
         """Parlato in camera tagliato sulle pause; cover = {indice: (clip, a, gain)} copre quel tratto con un'altra
         immagine mentre la voce continua (salti di montaggio nascosti). subs in tempi della sorgente."""
         cover = cover or {}
         D = clip_dur(src)
-        ranges = [snap(src, a, b) for a, b in ranges]                # la parola in corso finisce sempre
+        ranges = [snap_w(src, a, b) for a, b in ranges]              # la parola in corso finisce sempre
         if cut_gaps:                                                # niente vuoti dentro le frasi (Manuel, 26/10)
             assert not cover, "cut_gaps con cover: gli indici cambierebbero"
             ranges = tight(src, ranges)
@@ -197,12 +218,13 @@ class Edit:
             else:
                 merged.append((a, b))
         ranges = merged
-        # margini per non mangiare le parole: 0.06 s prima e 0.12 s dopo (senza sovrapporre il tratto successivo)
+        # margini per non mangiare le parole: 0.06 s prima e 0.12 s dopo (senza sovrapporre il tratto successivo);
+        # più stretti dove la frase deve suonare unica
         padded = []
         for i, (a, b) in enumerate(ranges):
             nxt = ranges[i + 1][0] if i + 1 < len(ranges) else D
             prv = padded[-1][1] if padded else 0.0
-            padded.append((max(prv, a - 0.06, 0.0), min(b + 0.12, nxt, D - 0.05)))
+            padded.append((max(prv, a - pad[0], 0.0), min(b + pad[1], nxt, D - 0.05)))
         for i, (a, b) in enumerate(padded):
             t0 = self.t
             if i in cover:
@@ -330,8 +352,8 @@ def storia(W, H, name, events, dur, prev=""):
 
 
 # ---------- voiceover (vo_take1, tempi in vo_blocchi.md) ----------
-def VO(name, ranges, src=VO1):
-    return piece(f"vo_{name}", src, ranges)
+def VO(name, ranges, src=VO1, **kw):
+    return piece(f"vo_{name}", src, ranges, **kw)
 
 
 LOGO_W = f"{ROOT}/assets/brand/logo_vocivere_trasparente_chiaro.png"
@@ -358,10 +380,6 @@ def logo_card(src, t, dur, W, H, out, cx=0.5):
 # ================= LUNGO =================
 # sigla a tema (Manuel, 26/10): 6 pezzi del pellegrinaggio al posto di quelli del mercato
 
-def VO(name, ranges, src=VO1):
-    return piece(f"vo_{name}", src, ranges)
-
-
 ROUTE = "Marari|9.62646|76.296|la costa;Munnar|10.0889|77.0595|le colline del tè"
 
 
@@ -381,25 +399,29 @@ def mappa(W, H, tA, tB, dur):
 SIGLA_CLIPS = [(C("115803"), 0.5), (C("133721"), 70.0), (C("115958"), 1.0), (C("142447"), 18.0), (C("135033"), 1.0),
                (C("114701"), 4.0)]                                  # sigla a tema: filari, raccolta, cesto, chai
 QUIET = (C("114701"), 0.0)                                          # panorama tra i filari: ambiente vero, senza voci
-PX = lambda i: f"{WORK}/stock/px_{i}.mp4"                           # Pixabay: solo immagini generiche, senza persone                                          # vento tra i filari, senza voci
+PX = lambda i: f"{WORK}/stock/px_{i}.mp4"                           # Pixabay: solo immagini generiche, senza persone
+AMB = aud("ambiente_colline", QUIET[0])                             # aria tra i filari (chat Audio), senza voci
+AMB_G = 0.06                                                        # ~10 dB più forte del vento del girato
 
 
-def vo_over(e, name, ranges, items, lead=0.3, tail=0.4, music=None):
+def vo_over(e, name, ranges, items, lead=0.3, tail=0.4, music=None, **kw):
     """Voiceover sopra immagini e grafiche: items = [(clip, inizio, durata) | (grafica, None, durata)];
     durata None = si divide il resto. -> (t0 della voce, durata della voce)."""
-    f, d = VO(name, ranges)
+    f, d = VO(name, ranges, **kw)
     t0 = e.t
     e.tl.vos.append(dict(file=f, a=0, b=d, speed=1.0, t=t0 + lead))
     total = lead + d + tail
     fixed = sum(x[2] for x in items if x[2])
     rest = max(0.8, total - fixed) / max(1, sum(1 for x in items if not x[2]))
+    e.starts = []                                                 # inizio di ogni immagine (per i suoni di Audio)
     for src, a, dd in items:
         dd = dd or rest
+        e.starts.append(e.t)
         if a is None:
             e.tl._add(src, 0, dd, audio=False, grade="null")
         elif has_voice(src, a, a + dd):                           # parlato nella clip: muta, sotto il vento
             e.tl.broll(src, a, dd, gain=0.0, grade=DEF, fx=dict(zoom=(1.0, 1.04, None)), fade=0.12)
-            e.tl.sfx(e.t - dd, ambient(QUIET[0], 2.0, dd + 0.3), 0.12)
+            e.tl.sfx(e.t - dd, ambient(AMB, 2.0, dd + 0.3), 0.04)
         else:
             e.b(src, a, dd, gain=0.14)
     if music is not None and MUSIC:
@@ -414,17 +436,16 @@ def long_video(W, H):
     tl = e.tl
     G = lambda name, ev, dur, prev="": storia(W, H, name, ev, dur, prev)
 
-    # 0. GANCIO: prima l'azione (mani che raccolgono, suono vero), poi la curiosità del titolo detta da Manuel
-    e.b(C("133703"), 1.0, 1.8, gain=0.7)
-    e.say(C("115233"), [(36.5, 39.6), (41.4, 44.55), (44.55, 47.8)], cover={1: (C("115803"), 0.3), 2: (C("132930"), 1.0)})
+    # 0. GANCIO (Manuel 27/10): si parte da Manuel tra i filari; mentre dice dell'affitto del 1877 si vede Sadish
+    e.say(C("115233"), [(36.5, 39.6), (41.4, 44.55), (44.55, 47.8)], cover={1: (C("133703"), 1.0), 2: (C("133703"), 4.5)})
     e.title("1877 · 3.000 rupie l'anno", e.t - 3.6, 3.4)               # la cifra del titolo, con "l'anno" (Insights)
     vo_over(e, "1", [(2.0, 5.42)], [(C("115728"), 0.5, None), (C("113517"), 0.5, None)], lead=0.2, tail=0.3)
-    e.say(C("120307"), [(0.8, 2.95), (3.6, 6.0)], cover={0: (C("133721"), 69.6)})   # "raccolte a mano": la mano vera
-    e.say(C("120356"), [(1.6, 6.6)])
+    # una frase sola, senza nessun vuoto (Manuel 27/10): pause tolte anche tra "E la storia." e "nella raccolta"
+    e.say(C("120307"), [(0.82, 2.95), (3.6, 5.95)], cover={0: (C("133721"), 69.6)}, pad=(0.03, 0.04))
+    e.say(C("120356"), tight(C("120356"), [(1.97, 6.6)], min_gap=0.15, keep=0.05), pad=(0.03, 0.04))
     t_q = e.t
     e.b(C("114701"), 1.0, 2.8, gain=0.5)
     e.title("E oggi, di chi sono queste colline?", t_q + 0.2, 2.5)      # domanda aperta, la risposta è al blocco 10
-    e.bed(0.0, e.t, QUIET[0], 1.0, 0.16)
     tl.sfx(max(0, e.t - 0.4), ambient(C("115803"), 0.0, 2.0), 0.4)
     sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="te")
 
@@ -432,27 +453,22 @@ def long_video(W, H):
     t_m = e.t
     e.say(C("115233"), [(12.0, 15.3)])                               # "Sono a Munnar, in Kerala, a oltre 1500 metri."
     e.label("Munnar, Kerala", t_m + 0.3, 2.6)
-    mdur = 6.0
-    mp, msnd = mappa(W, H, 1.2, 4.2, mdur)
-    tm = e.t
-    tl._add(mp, 0, mdur, audio=False, grade="null")
-    tl.sfx(tm, msnd, 0.8)
-    tl.sfx(tm, ambient(QUIET[0], 1.0, mdur), 0.25)
-    e.b(C("114701"), 0.5, 3.2, gain=0.5)
+    e.b(C("132930"), 0.5, 1.5, gain=0.5)                             # solo un attimo di colline, niente mappa (27/10)
     vo_over(e, "2", [(6.6, 17.95)], [(G("1877", "1877|John Daniel Munro|affitta le colline dal raja di Poonjar|0.55", 3.8),
-                                     None, 3.8), (PX(41146), 2.0, 2.6), (C("132930"), 0.5, None), (C("134442"), 0.3, None)],
-             music=0.0)
-    vo_over(e, "3", [(18.75, 24.69)], [(C("115553"), 0.5, 3.0),
-                                       (G("1880", "1880|il primo tè|su una cinquantina di acri|0.65", 3.0, "1877"), None, 3.0),
-                                       (C("132727"), 0.5, None)], music=11.0)
+                                     None, 3.8), (PX(41146), 2.0, 2.6), (C("132655"), 1.0, None), (C("133703"), 6.0, None)],
+             tail=0.15, music=0.0)
+    tl.sfx(e.starts[0] + 0.5, aud("carta"), 0.5)                    # il contratto del 1877
+    tl.sfx(e.starts[1], aud("penna"), 0.5)                          # il pennino
+    vo_over(e, "3", [(18.75, 24.69)], [(G("1880", "1880|il primo tè|su una cinquantina di acri|0.65", 3.0, "1877"), None, 3.0),
+                                       (C("132727"), 0.5, None)], lead=0.15, tail=0.2, music=11.0)
 
     # 2. CON SADISH TRA I FILARI
     t_s = e.t
     e.say(C("133625"), [(1.0, 6.7)])                                 # "Sadish è di qui... non il panorama, ma il lavoro."
     I = dict(speed=1.0, gain=1.3)
-    e.say(C("133721"), [(5.3, 9.7), (10.0, 16.4), (17.2, 18.8), (19.6, 24.9), (30.3, 38.6), (39.5, 47.2)],
+    e.say(C("133721"), [(8.2, 9.7), (10.0, 16.4), (17.2, 18.8), (19.6, 24.9), (30.3, 38.6), (39.5, 47.2)],
           cover={1: (C("134442"), 0.5), 3: (C("132655"), 1.0), 5: (C("133703"), 3.0)},
-          subs=[(5.3, 9.7, "Questa è Munnar. Molto, molto bella. Questa è la piantagione di tè."),
+          subs=[(8.2, 9.7, "Questa è la piantagione di tè."),
                 (10.0, 13.6, "Tutte le montagne che vedi, ovunque, sono tè."), (13.6, 16.4, "Verde. Coperte verdi."),
                 (17.2, 18.8, "Coprono tutte le montagne."),
                 (19.6, 24.9, "A Munnar quasi tutti lavorano nel tè."),
@@ -460,9 +476,7 @@ def long_video(W, H):
                 (34.4, 38.6, "lavoravano nel tè: per il governo, per le compagnie, nelle piantagioni."),
                 (39.5, 44.0, "Una pianta di tè vive più di cent'anni."), (44.5, 47.2, "Questa pianta ha più di cent'anni.")],
           **I)
-    e.b(C("115728"), 0.5, 2.4, gain=0.6)
-    e.say(C("133721"), [(55.4, 56.6)], subs=[(55.4, 56.6, "Solo acqua piovana.")], **I)
-    e.b(PX(92994), 3.0, 2.0, gain=0.0, extra=(QUIET[0], 4.0, 0.5))    # la pioggia sulle foglie (Pixabay, muta)
+    e.say(C("133721"), [(55.4, 56.6)], subs=[(55.4, 56.6, "Solo acqua piovana.")], cover={0: (PX(92994), 3.0)}, **I)
     e.say(C("134852"), tight(C("134852"), [(0.3, 10.5)]))            # Manuel riporta Sadish: tutto organico
     e.say(C("133721"), [(57.4, 63.9), (69.5, 74.6), (76.0, 80.3), (81.1, 83.9), (85.0, 89.9)],
           cover={0: (C("135012"), 4.0)},
@@ -471,15 +485,14 @@ def long_video(W, H):
                 (76.0, 80.3, "Due, tre foglie: sono quelle di buona qualità."),
                 (81.1, 83.9, "Queste, le buone, vanno in fabbrica."),
                 (85.0, 89.9, "Queste scure, nere, sono foglie cattive. Non si usano.")], **I)
-    e.say(C("133721"), [(107.5, 111.7), (112.5, 116.6), (119.5, 131.2)],
-          cover={2: (C("135033"), 0.5)},
+    e.say(C("133721"), [(107.5, 111.7), (119.5, 131.2)],
+          cover={1: (C("135033"), 0.5)},
           subs=[(107.5, 108.4, "Chi raccoglie?"), (108.4, 111.7, "Tutti: donne e uomini."),
-                (112.5, 113.5, "Ogni quanto?"), (113.7, 116.6, "Ogni quindici giorni."),
                 (119.5, 123.5, "Oggi raccolgo qui, domani vado su un'altra collina."),
                 (124.0, 131.2, "Poi il mese dopo si torna qui. È un giro.")], **I)
     # Manuel: le foglie in mano, l'orario di lavoro
-    e.say(C("135758"), tight(C("135758"), [(0.0, 20.5)]))
-    e.b(C("135922"), 0.3, 2.4, gain=0.6)
+    rg = tight(C("135758"), [(0.0, 18.2)]) + [(18.3, 20.5)]            # "in generale c'è un processo": Sadish cammina
+    e.say(C("135758"), rg, cover={len(rg) - 1: (C("135922"), 0.3)})
     e.say(C("134231"), tight(C("134231"), [(0.0, 12.8)]), cover={1: (C("133703"), 6.0)})
     # quanto si raccoglie, dove vanno le foglie
     e.say(C("134520"), [(6.2, 17.6), (26.8, 30.5), (50.8, 57.6), (58.2, 70.2)],
@@ -492,7 +505,8 @@ def long_video(W, H):
                 (62.0, 70.2, "Qui intorno ce ne sono tre, quattro: a venti, venticinque, trenta chilometri.")], **I)
     vo_over(e, "7", [(53.44, 58.38)], [(C("133703"), 1.0, None), (C("133721"), 70.0, None)], music=20.0)
     vo_over(e, "8", [(64.9, 70.6), (83.4, 86.1)], [(C("135758"), 3.5, None), (C("142433"), 1.0, None),
-                                                   (C("142447"), 3.0, None)], music=27.0)
+                                                   (C("142447"), 3.0, None)], tail=0.25, music=27.0)
+    tl.sfx(tl.vos[-1]["t"], ambient(aud("fabbrica_provvisorio"), 1.0, tl.vos[-1]["b"] + 0.3), 0.12)   # molto basso
     e.to_black()
 
     # 3. LA STORIA E DI CHI SONO OGGI LE COLLINE
@@ -510,19 +524,21 @@ def long_video(W, H):
              (C("113517"), 1.5, 3.0),
              (G("1897", "1897|Kannan Devan Hills Produce Company|0.6", 3.6, "1880;1895"), None, 3.6),
              (C("132930"), 3.0, None)], music=35.0)
+    tl.sfx(tl.vos[-1]["t"], ambient(aud("orologio_lontano"), 0.0, min(11.5, tl.vos[-1]["b"] + 0.3)), 0.25)   # basso
     vo_over(e, "5", [(37.16, 43.93)],
             [(G("1901", "1901|la foresta tagliata|su larga scala|0.6;1911|il tè copre|circa 6.500 ettari|3.35", 5.0,
                 "1895;1897"), None, 5.0), (C("132930"), 0.5, None)], music=47.0)
-    vo_over(e, "6", [(44.82, 51.63)], [(C("114701"), 6.0, None), (C("181247"), 0.3, None)], music=54.0)
+    vo_over(e, "6", [(44.82, 51.63)], [(C("132655"), 4.0, None), (C("115553"), 0.0, None)], tail=0.2, music=54.0)
     e.say(C("134136"), [(0.1, 7.6), (8.2, 22.4)], cover={1: (C("132655"), 2.0)},
           subs=[(0.1, 7.6, "Com'è il rapporto tra questa grande azienda e chi vive qui?"),
                 (8.2, 13.0, "Sono trattati bene. Un ottimo rapporto,"),
                 (13.0, 19.4, "aiuto, casa, cure mediche, trasporto."),
                 (20.1, 22.4, "L'azienda dà tutto gratis.")], **I)
-    vo_over(e, "9", [(88.16, 92.16)],
-            [(G("1971", "1971|legge del Kerala|sulle terre di queste colline|0.5", 3.0, "1901;1911"), None, 3.0),
-             (PX(349087), 2.0, None)],
-            music=62.0)
+    vo_over(e, "9", [(88.16, 92.16)],                               # anno breve, poi subito le carte (27/10)
+            [(G("1971b", "1971|legge del Kerala|sulle terre di queste colline|0.35", 1.9, "1901;1911"), None, 1.9),
+             (PX(349087), 2.0, None)], tail=0.1, music=62.0)
+    tl.sfx(e.starts[0] + 0.3, aud("carta"), 0.5)
+    tl.sfx(e.starts[1] + 0.2, aud("penna"), 0.45)
     vo_over(e, "10", [(92.92, 101.25)],
             [(G("2005", "2005|l'azienda ai dipendenti|circa tredicimila|0.6", 3.6, "1911;1971"), None, 3.6),
              (C("132727"), 1.0, None), (C("135922"), 0.5, None)], music=66.0)
@@ -536,38 +552,41 @@ def long_video(W, H):
                 (8.1, 9.3, "Sì, l'India è seconda."),
                 (12.2, 14.8, "Qui è una cultura molto profonda."),
                 (16.3, 19.0, "La produzione migliore dell'India. Buona qualità.")], **I)
-    vo_over(e, "12", [(130.44, 131.72), (131.88, 138.23)], [(PX(70333), 2.0, None), (C("132655"), 3.0, None), (C("132930"), 1.0, None)],
-            music=90.0)
+    # "colline ne ne produceva": il primo "ne" (131.64-131.73) si toglie sulla forma d'onda, senza respiro (27/10)
+    vo_over(e, "12", [(130.30, 131.63), (131.735, 138.3)],
+            [(PX(70333), 2.0, None), (C("132655"), 3.0, None), (C("132930"), 1.0, None)],
+            tail=0.2, music=90.0, gap=0.0, exact=True)
+    tl.sfx(e.starts[0], ambient(aud("chai_tirato"), 2.0, e.starts[1] - e.starts[0] + 0.3), 0.6)   # il chai
     e.to_black(strong=True)
 
     # 4. IL TÈ IN CITTÀ: il chai master, l'assaggio
     t_c = e.t
-    e.b(C("141843"), 0.0, 3.0, gain=0.6)
+    e.b(C("141843"), 0.0, 2.2, gain=0.6)
     e.from_black()
     e.label("Munnar", t_c + 0.4, 2.4)
-    e.b(C("141109"), 0.5, 2.2, gain=0.6)
+    e.b(C("141109"), 0.5, 1.6, gain=0.6)
     e.say(C("141707"), [(0.1, 4.9)])                                 # "E ora è il momento di provare questo tè tradizionale"
-    e.b(C("142433"), 0.5, 3.0, gain=0.7)
-    e.b(C("142447"), 2.0, 4.0, gain=0.7)
+    e.b(C("142433"), 0.5, 2.4, gain=0.7)
+    e.b(C("142447"), 2.0, 3.0, gain=0.7)
     e.say(C("142726"), [(0.8, 2.8), (43.4, 49.2)], speed=1.0, gain=1.3,
           subs=[(0.8, 1.4, "Come ti chiami?"), (2.1, 2.8, "Shaharon."),
                 (43.4, 46.0, "Lui è il chai master."), (46.3, 49.2, "Io servo.")])
-    e.b(C("142545"), 2.0, 4.5, gain=0.7)
+    e.b(C("142545"), 2.0, 3.5, gain=0.7)
     e.say(C("143138"), [(0.4, 2.6), (12.1, 14.0)], cover={1: (C("143138"), 20.0)})
     e.say(C("143318"), tight(C("143318"), [(0.4, 6.4), (8.9, 17.4)]))
     e.bed(t_c, e.t, C("142433"), 0.0, 0.12)
 
     # 5. CHIUSURA: VO 14 sulla sera e la nebbia, logo Voci Vere
     t_f = e.t
-    vo_over(e, "14", [(155.36, 160.21)], [(C("181123"), 0.5, None), (C("181247"), 0.5, None), (C("135012"), 8.0, None)],
-            lead=0.6, tail=1.0, music=100.0)
+    vo_over(e, "14", [(155.36, 160.21)], [(C("160612"), 0.5, None), (C("152338"), 0.5, None)],   # niente bus (27/10)
+            lead=0.4, tail=0.6, music=100.0)
     tl._add(logo_card(C("115803"), 2.5, 3.5, W, H, f"{OUT}/fine_logo_{W}x{H}.mp4"), 0, 3.5, audio=False,
             grade="null", fade=0.05)
     tl.shots[-1]["fx"] = dict(black_out=0.4)
     if MUSIC:
         tl.music(t_f, e.t, MUSIC, offset=100.0, level=0.42, fin=0.6, fout=1.6)
 
-    e.bed(0.0, e.t, QUIET[0], 0.0, 0.16)                             # vento tra i filari sotto tutto: mai silenzi
+    e.bed(0.0, e.t, AMB, 0.0, AMB_G)                                 # ambiente_colline (Audio) sotto tutto: mai silenzi
     chapters = [(0.0, "Le colline del tè"), (t_m, "Munnar"), (t_s, "Con Sadish tra i filari"),
                 (t_h, "La storia e chi ci lavora"), (t_c, "Il tè del chai master"), (t_f, "Chiusura")]
     out = f"{OUT}/VociVere_te_long_{W}x{H}.mp4"
@@ -612,7 +631,6 @@ def vwords(tag, a, b, src_json=None):
     return [(w, t) for s_ in segs for w, t in s_["words"] if a - 0.05 <= t < b]
 
 
-_WVO = next(iter(json.load(open(f"{WORK}/vo/rajmala.json")).values())) if os.path.exists(f"{WORK}/vo/rajmala.json") else []
 FIXW = {"Moonar": "Munnar", "Monar": "Munnar", "te": "tè", "te.": "tè.", "Sadice": "Sadish"}
 
 
@@ -638,10 +656,10 @@ def vreel(tag):
 
 
 def vfinish(r, tag, W, H):
-    t = 0.0                                                         # vento tra i filari sotto tutto: mai silenzi
+    t = 0.0                                                         # ambiente_colline sotto tutto: mai silenzi
     while t < r.t - 0.1:
         d = min(9.0, r.t - t + 0.3)
-        r.tl.sfx(t, ambient(QUIET[0], 0.5, d), 0.10)
+        r.tl.sfx(t, ambient(AMB, 0.5, d), 0.035)
         t += d - 0.3
     out = f"{OUT}/VociVere_te_{tag}_{W}x{H}.mp4"
     return r.render(out, crf=18 if W == 1080 else 24, preset="medium" if W == 1080 else "veryfast")
@@ -661,19 +679,19 @@ def mini_sigla(r, W, H):
 def v1():
     """TEASER: le colline affittate per 3.000 rupie l'anno; la domanda resta aperta (di chi sono oggi?)."""
     r, W, H = vreel("v1_teaser")
-    r.own(C("133703"), 1.0, gain=0.7)(2.0)
+    # 27/10: si parte subito da Manuel che parla (niente immagini mute prima), Sadish sull'affitto del 1877
     vhook(r, "Affittate per 3.000 rupie\\Nl'anno. Nel 1877.")
     r.cam(C("115233"), 36.5, 39.6, words=fixw(vwords("115233", 36.5, 39.6)), cx=0.5)
-    r.narr(C("115233"), 41.4, 47.8, [(r.own(C("115803"), 0.3, gain=0.0), None), (r.own(C("132930"), 1.0, gain=0.0), None)],
+    r.narr(C("115233"), 41.4, 47.8, [(r.own(C("133703"), 1.0, cx=0.8, gain=0.0), None), (r.own(C("133703"), 4.5, cx=0.62, gain=0.0), None)],
            words=fixw(vwords("115233", 41.4, 47.8)))
-    r.narr(VO1, 2.0, 5.42, [(r.own(C("115728"), 0.5, gain=0.0), None)], words=vwords("", 2.0, 5.42, _WVO))
+    r.narr(VO1, 2.0, 5.42, [(r.own(C("115728"), 0.5, gain=0.0), None)], words=vwords("", 2.0, 5.42, [dict(words=_WVO)]))
     r.cam(C("120307"), 0.8, 2.95, words=fixw(vwords("120307", 0.8, 2.95)))
     r.cam(C("133721"), 10.0, 16.4, speed=1.05, cx=0.55,
           block=[(10.0, 13.6, "Tutte le montagne che vedi sono tè.", "Mountain you see everywhere also tea."),
                  (13.6, 16.4, "Coperte verdi.", "Green blankets.")])
     t = r.t
-    r.own(C("114701"), 1.0, gain=0.5)(2.6)
-    r.title(t + 0.2, r.t, "E oggi, di chi sono?", "Mid", 820)
+    r.own(C("114701"), 1.0, gain=0.5)(2.0)
+    r.title(t + 0.1, r.t, "E oggi, di chi sono?", "Mid", 820)
     if MUSIC:
         r.tl.music(0, r.t, MUSIC, offset=0.0, level=0.3, fin=0.3, fout=0.5)
     mini_sigla(r, W, H)
@@ -683,7 +701,6 @@ def v1():
 def v2():
     """COME SI RACCOGLIE: Sadish spiega quali foglie si prendono e ogni quanto si torna sulla stessa collina."""
     r, W, H = vreel("v2_raccolta")
-    r.own(C("133703"), 3.0, gain=0.7)(2.0)
     vhook(r, "Si prendono solo\\Ndue, tre foglie.")
     blk = lambda a, b, it, en: r.cam(C("133721"), a, b, speed=1.05, cx=0.55, block=[(a, b, it, en)])
     blk(69.5, 74.6, "Questo è il metodo di raccolta: due, tre foglie.", "This is the plucking method for the two, three leaves.")
@@ -694,14 +711,13 @@ def v2():
     r.cam(C("133721"), 119.5, 131.2, speed=1.05, cx=0.55,
           block=[(119.5, 123.5, "Oggi raccolgo qui, domani vado su un'altra collina.", "Today I will pluck here, tomorrow another mountain."),
                  (124.0, 131.2, "Il mese dopo si torna qui. È un giro.", "Next month come to here. The circle.")])
-    r.own(C("135033"), 1.0, gain=0.5)(1.8)
+    r.own(C("135033"), 1.0, gain=0.5)(0.7)
     return vfinish(r, "v2_raccolta", W, H)
 
 
 def v3():
     """UNA GIORNATA DI LAVORO: quanto si raccoglie, l'orario, chi raccoglie (parole di Sadish, riportate)."""
     r, W, H = vreel("v3_giornata")
-    r.own(C("115958"), 0.5, gain=0.6)(2.0)
     vhook(r, "Quanto tè raccoglie\\Nuna persona al giorno?")
     r.cam(C("134520"), 6.2, 11.25, speed=1.05, cx=0.55,
           block=[(6.2, 11.2, "Normalmente, al giorno, una persona raccoglie", "Normally per day people")])
@@ -716,24 +732,24 @@ def v3():
            words=vwords("134231", 0.0, 12.8), cuts=[(rg[i][1], rg[i + 1][0]) for i in range(len(rg) - 1)])
     r.cam(C("133721"), 107.5, 111.7, speed=1.05, cx=0.55,
           block=[(107.5, 108.4, "Chi raccoglie?", "Who picks?"), (108.4, 111.7, "Tutti: donne e uomini.", "All people, ladies and men.")])
-    r.own(C("135922"), 0.3, gain=0.5)(1.8)
+    r.own(C("135922"), 0.3, gain=0.5)(0.7)
     return vfinish(r, "v3_giornata", W, H)
 
 
 def v4():
     """IL CHAI MASTER: il tè tirato a Munnar, il maestro che non vuole parlare, l'assaggio."""
     r, W, H = vreel("v4_chai")
-    r.own(C("142447"), 2.0, gain=0.8)(2.2)
+    r.own(C("142447"), 2.0, gain=0.8)(1.8)                         # gancio sul gesto e sul suono vero del chai
     vhook(r, "Il chai di Munnar\\Nsi fa così.")
     r.cam(C("141707"), 0.1, 4.9, words=W_141707)
-    r.own(C("142433"), 0.5, gain=0.8)(2.4)
-    r.own(C("142545"), 2.0, gain=0.8)(3.0)
     rg = tight(C("143318"), [(0.4, 6.4), (8.9, 17.4)])
-    r.narr(C("143318"), rg[0][0], rg[-1][1], [(r.own(C("142447"), 8.0, gain=0.0), None), (r.own(C("142545"), 6.0, gain=0.0), None),
+    t0n = r.narr(C("143318"), rg[0][0], rg[-1][1], [(r.own(C("142433"), 0.5, gain=0.0), None), (r.own(C("142447"), 8.0, gain=0.0), None),
+                                              (r.own(C("142545"), 2.0, gain=0.0), None), (r.own(C("142545"), 6.0, gain=0.0), None),
                                               (r.own(C("143318"), 9.0, gain=0.0), None)],
            words=W_143318, cuts=[(rg[i][1], rg[i + 1][0]) for i in range(len(rg) - 1)])
+    r.tl.sfx(t0n, ambient(aud("chai_tirato"), 0.0, r.t - t0n), 0.3)   # il chai tirato sotto la voce (Audio)
     r.cam(C("143138"), 0.4, 2.6, words=W_143138)
-    r.own(C("143138"), 20.0, gain=0.6)(1.8)
+    r.own(C("143138"), 20.0, gain=0.6)(1.2)
     return vfinish(r, "v4_chai", W, H)
 
 
