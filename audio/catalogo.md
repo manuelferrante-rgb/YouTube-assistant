@@ -20,11 +20,16 @@
 | `projects/arthunkal/audio/letto_onde.flac` | girato Manuel, mimo_140234 + mimo_140104 (onde, Marari 23/10), in giro con dissolvenze | Manuel Ferrante | propria | Drive 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX | Arthunkal: letto del gancio calmo (26/10) |
 | `projects/arthunkal/audio/rosario_lontano.flac` | girato Manuel, 0264 (rosario cantato) + 0234 (mormorio della notte), passa-basso 1.5 kHz + riverbero | Manuel Ferrante | propria | idem | Arthunkal: rosario lontano sotto il gancio, da abbassare sotto le voci |
 | `projects/arthunkal/audio/letto_gancio.flac` | i due sopra insieme (rosario -14 dB) | Manuel Ferrante | propria | idem | Arthunkal: letto pronto per i primi 30-40 s |
-| `musica/compose.py colline` | composizione originale (mi minore, 64 bpm, archi + piano rado + corde lontane) | Voci Vere | propria | - | Tè di Munnar: bozza del fondale (26/10), Drive montati/te/audio/musica_colline.wav |
-| `projects/te/audio/ambiente_colline.flac` | girato Manuel 26/10, 132930 + 132655 (aria tra i filari), passa-alto 180 Hz | Manuel Ferrante | propria | Drive 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw | Tè: panoramiche e scene IA all'aperto |
-| `projects/te/audio/chai_tirato.flac` | girato Manuel 26/10, 142545 (chai master al chiosco) | Manuel Ferrante | propria | idem | Tè: chiosco, tazze |
-| `projects/te/audio/motore_camion.flac` | girato Manuel 26/10, 110437 (bus verso Munnar) | Manuel Ferrante | propria | idem | Tè: sacchi e camion |
-| `projects/te/audio/carta.flac`, `penna.flac` | costruiti (rumore filtrato a grani) | Voci Vere | propria | - | Tè: documenti storici |
-| `projects/te/audio/orologio_lontano.flac` | click veri di Arthunkal (0224, 0247) a tempo di pendolo, riverbero di stanza | Manuel Ferrante | propria | Drive 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX | Tè: ufficio della compagnia (scena IA) |
-| `projects/te/audio/fabbrica_provvisorio.flac` | costruito (aria filtrata, pale, ronzio 50 Hz) | Voci Vere | propria | - | Tè: fabbrica IA, PROVVISORIO |
+| `musica/compose.py colline` | composizione originale (mi minore, 64 bpm, archi + piano rado + corde lontane) | Voci Vere | propria | - | Tè: DISMESSA 27/10 (tappeto scuro, 28% dell'energia sotto 150 Hz), Drive montati/te/audio/vecchi/musica_colline_scura_26-10.wav |
+| `projects/te/audio/dismessi/ambiente_colline.flac` (DISMESSO 27/10) | girato Manuel 26/10, 132930 + 132655 (aria tra i filari), passa-alto 180 Hz | Manuel Ferrante | propria | Drive 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw | Tè: panoramiche e scene IA all'aperto |
+| `projects/te/audio/dismessi/chai_tirato.flac` (DISMESSO 27/10) | girato Manuel 26/10, 142545 (chai master al chiosco) | Manuel Ferrante | propria | idem | Tè: chiosco, tazze |
+| `projects/te/audio/dismessi/motore_camion.flac` (DISMESSO 27/10) | girato Manuel 26/10, 110437 (bus verso Munnar) | Manuel Ferrante | propria | idem | Tè: sacchi e camion |
+| `projects/te/audio/dismessi/carta.flac`, `penna.flac` (DISMESSI 27/10) | costruiti (rumore filtrato a grani) | Voci Vere | propria | - | Tè: documenti storici |
+| `projects/te/audio/dismessi/orologio_lontano.flac` (DISMESSO 27/10) | click veri di Arthunkal (0224, 0247) a tempo di pendolo, riverbero di stanza | Manuel Ferrante | propria | Drive 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX | Tè: ufficio della compagnia (scena IA) |
+| `projects/te/audio/dismessi/fabbrica_provvisorio.flac` (DISMESSO 27/10) | costruito (aria filtrata, pale, ronzio 50 Hz) | Voci Vere | propria | - | Tè: fabbrica IA, PROVVISORIO |
 | Drive `montati/te/audio/vo_te_pulito.wav` | voiceover di Manuel (Rajmala.m4a) ripulito | Manuel Ferrante | propria | idem | Tè: voiceover |
+| `projects/te/audio/musica_te_luce.flac` = Drive `montati/te/audio/musica_colline.wav` | `musica/compose.py te_luce` (sol maggiore, 72 bpm, piano melodico + pizzicato + archi alti a respiri, passa-alto 160 Hz), -20 LUFS | Voci Vere | propria | - | Tè: musica nuova (27/10 sera) sotto i B-roll e, molto bassa, sotto i voiceover |
+| `projects/te/audio/cue_domanda.flac` | `musica/compose.py cue_domanda` (piano che sale e resta sospeso), -18 LUFS | Voci Vere | propria | - | Tè: B-roll con "E oggi, di chi sono queste colline?" (lungo e teaser) |
+| `projects/te/audio/cue_storia.flac` | `musica/compose.py cue_storia` (tre note che scendono, mi minore) | Voci Vere | propria | - | Tè: entrata nel capitolo della storia |
+| `projects/te/audio/cue_citta.flac` | `musica/compose.py cue_citta` (arpeggio pizzicato che sale) | Voci Vere | propria | - | Tè: arrivo a Munnar città |
+| `projects/te/audio/cue_chai.flac` | `musica/compose.py cue_chai` (pizzicato in semicrome + melodia) | Voci Vere | propria | - | Tè: B-roll del chai (lungo) e gancio del v4 |

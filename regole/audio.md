@@ -1,5 +1,15 @@
 # Regole dell'audio (sound design, musica, mix)
 
+- REGOLA PRINCIPALE (Manuel, 27/10 sera, dopo il rumore di camion nel tè; vale per tutti i video da ora e prevale
+  sulle regole più vecchie qui sotto):
+  1. niente suoni presi dal girato e niente ambienti (vento, aria, onde, strada, motori, letti, J-cut d'ambiente);
+  2. solo musica e segni melodici a tema del video, composti dalla chat Audio, autore Voci Vere;
+  3. solo nei momenti di solo B-roll, senza nessuno che parla, e non forzati: se un momento non ne ha bisogno, niente.
+     Sotto chi parla (Manuel, interviste, voiceover) niente, o al massimo la musica molto bassa;
+  4. musica leggera e melodica, senza tappeto basso continuo; passa-alto deciso (160 Hz, ripido) su tutto;
+  5. prima di consegnare, `python3 audio/kit/bande.py <file>`: niente rombo sotto 150 Hz (deve dire OK).
+  Le regole sotto su suoni veri, letti, ambienti e J-cut restano solo come storia (Arthunkal): non si applicano più.
+
 - Suoni NATURALI e professionali, mai "forzati" (Manuel, 24/10). Ordine delle fonti:
   1. suoni veri del girato di Manuel (onde, vento, passi, voci, campane, pentole) e registrazioni "wild" che
      Manuel fa apposta (20-30 s di ambiente o di un gesto, senza parlare);
