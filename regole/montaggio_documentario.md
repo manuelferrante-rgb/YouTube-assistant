@@ -263,3 +263,8 @@ descrizione, capitoli e miniatura.
   `python3 tools/sync_check.py plan.json` (0 problemi).
 - Verticali: sottotitoli sempre su una riga, pezzi brevi che scorrono col parlato (`tools/reel_kit.py` misura la
   larghezza sul font); controllare i fotogrammi a ogni sottotitolo.
+- Voce pulita con RNNoise (`tools/voice_clean.py`, 27/10 sera): la riduzione spettrale non bastava sul vento/motore
+  del gancio del tè. Musica di sottofondo (quando Manuel la chiede): solo i brani della chat Audio, bassissima e a
+  volume costante (circa 23 dB sotto la voce, `Timeline.music(..., duck=False, norm=False)`), sotto voiceover e B-roll,
+  mai sotto le interviste. Prima di usare un file di musica controllare che sia quello dell'ultima consegna di Audio
+  (le vecchie versioni stanno in `dismessi/` o `vecchi/` e non si usano).
