@@ -89,3 +89,14 @@ Regole nuove di Manuel (27/10 sera):
 - Teaser rifatto come l'intro del lungo, più veloce: 115233, 1877 su Sadish, VO 1, "le foglie... raccolte a mano"
   (mani che raccolgono, poi Manuel), la frase sulla storia, "E oggi, di chi sono?" con `cue_domanda`, mini sigla.
   Musica di Audio bassissima sotto tutto fino alla domanda.
+
+## v6 (27/10 sera): intro e teaser rifatti da zero (Manuel)
+- ~20 s: Manuel tra i filari solo con le sue parole ("Dietro di me una piantagione immensa di tè", niente scritte né
+  musica), "affittate per 3.000 rupie" (R_AFFITTATE 44.12-45.78, tagli esatti: prima entrava il "-ro" di "vennero",
+  dopo la "a" di "a un britannico") su Sadish muto ~1.5 s, VO 1 sulle colline (via la camminata 115728), "Le foglie di
+  tè vengono ancora raccolte a mano" sulle mani, "Scoprirò l'arte che si cela dietro questo lavoro" attaccato a "e la
+  storia nella raccolta del tè..." senza pause, "E oggi, di chi sono?" con cue_domanda, sigla. Teaser 18.8 s.
+- Nei primi 4 s si sente solo la voce di Manuel (verificato sul piano: Sadish muto, niente musica né effetti); il
+  leggero gracchiato rimasto è il vento/motore registrato sotto le parole, che RNNoise non può togliere mentre parla.
+- Lungo: l'intro nuova (16.63 s) è stata resa in 4K da sola e attaccata alla v5 dalla sigla in poi (frame 635), con
+  il mix completo nuovo: niente da rifare dopo la sigla. Lungo 6:19.

@@ -237,12 +237,14 @@ class Edit:
         self.tl.broll(src, a, d, gain=0.0, cx=cx, grade=grade, fx=fx or dict(zoom=(1.0, 1.04, None)), speed=speed,
                       fade=0.12)
 
-    def say(self, src, ranges, speed=1.1, cx=0.5, cover=None, subs=(), grade=DEF, gain=1.0, cut_gaps=False, pad=(0.06, 0.12)):
+    def say(self, src, ranges, speed=1.1, cx=0.5, cover=None, subs=(), grade=DEF, gain=1.0, cut_gaps=False, pad=(0.06, 0.12),
+            exact=False):
         """Parlato in camera tagliato sulle pause; cover = {indice: (clip, a, gain)} copre quel tratto con un'altra
         immagine mentre la voce continua (salti di montaggio nascosti). subs in tempi della sorgente."""
         cover = cover or {}
         D = clip_dur(src)
-        ranges = [snap_w(src, a, b) for a, b in ranges]              # la parola in corso finisce sempre
+        if not exact:
+            ranges = [snap_w(src, a, b) for a, b in ranges]          # la parola in corso finisce sempre
         if cut_gaps:                                                # niente vuoti dentro le frasi (Manuel, 26/10)
             assert not cover, "cut_gaps con cover: gli indici cambierebbero"
             ranges = tight(src, ranges)
@@ -455,17 +457,18 @@ def long_video(W, H):
     tl = e.tl
     G = lambda name, ev, dur, prev="": storia(W, H, name, ev, dur, prev)
 
-    # 0. GANCIO (Manuel 27/10): si parte da Manuel tra i filari; mentre dice dell'affitto del 1877 si vede Sadish
-    e.say(C("115233"), [(36.5, 39.6), (41.4, 44.55), (44.55, 47.2)], cover={1: (C("133703"), 1.0), 2: (C("133703"), 4.5)})
-    e.title("1877 · 3.000 rupie l'anno", e.t - 3.6, 3.4)               # la cifra del titolo, con "l'anno" (Insights)
-    vo_over(e, "1", [(2.08, 5.42)], [(C("115728"), 0.5, None), (C("113517"), 0.5, None)], lead=0.0, tail=0.1)
-    # una frase sola, senza nessun vuoto (Manuel 27/10): pause tolte anche tra "E la storia." e "nella raccolta"
-    e.say(C("120307"), [(0.82, 2.95), (3.6, 5.95)], cover={0: (C("133721"), 69.6)}, pad=(0.03, 0.04))
-    e.say(C("120356"), tight(C("120356"), [(1.97, 6.6)], min_gap=0.15, keep=0.05), pad=(0.03, 0.04))
+    # 0. INTRO (Manuel 27/10 sera, rifatta da zero, ~20 s con la sigla): Manuel tra i filari solo con le sue parole,
+    # niente scritte né musica; "affittate per 3.000 rupie" su Sadish (2 s, muto); VO 1 sulle colline (via la
+    # camminata); le foglie, "scoprirò l'arte... e la storia..." attaccati senza pause; la domanda, la nota, la sigla.
+    e.say(C("115233"), [R_DIETRO])
+    e.say(C("115233"), [R_AFFITTATE], cover={0: (C("133703"), 1.0)}, exact=True, pad=(0.0, 0.0))
+    vo_over(e, "1", [(2.08, 5.42)], [(C("113517"), 0.5, None)], lead=0.0, tail=0.05)
+    e.say(C("120307"), [(0.82, 2.9), (3.6, 5.95)], cover={0: (C("133721"), 69.6)}, pad=(0.03, 0.03))
+    e.say(C("120356"), tight(C("120356"), [(1.92, 6.6)], min_gap=0.12, keep=0.04), pad=(0.02, 0.04))
     t_q = e.t
-    e.b(C("114701"), 1.0, 1.8)                                        # breve: sotto solo il segno della domanda
-    cue(tl, t_q, "cue_domanda", 2.0, fout=0.5)                         # la coda si spegne sotto l'attacco della sigla
-    e.title("E oggi, di chi sono queste colline?", t_q - 0.5, 2.3)      # domanda aperta, la risposta è al blocco 10
+    e.b(C("114701"), 1.0, 1.3)                                        # breve: sotto solo il segno della domanda
+    e.title("E oggi, di chi sono queste colline?", t_q - 0.3, 1.9)      # domanda aperta, la risposta è al blocco 10
+    cue(tl, t_q, "cue_domanda", 1.5, fout=0.4)                         # la coda si spegne sotto l'attacco della sigla
     sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="te")
 
     # 1. MUNNAR: dove siamo, la mappa, le colline e l'affitto del 1877
@@ -663,6 +666,10 @@ W_141707 = [("E", 0.24), ("ora", 0.48), ("è", 0.72), ("il", 0.8), ("momento", 0
 CUT_141707 = gap_at(C("141707"), 1.70, 2.20)                         # tra "provare" e "questo"
 # clip rumorose (strada): tight() non vede le pause, tagli misurati sull'energia e sulle parole riascoltate (27/10 sera)
 R_141707 = [(0.1, CUT_141707), (CUT_141707, 3.62), (4.2, 4.9)]       # via la pausa prima di "direttamente"
+R_DIETRO = (36.4, 39.55)                                            # "Dietro di me una piantagione immensa di tè"
+# "affittate per 3.000 rupie": attaccato a "vennero" e ad "a un britannico", tagli esatti sui due cali di energia
+# (misurati a 10 ms sulla voce pulita e riascoltati con la trascrizione), senza snap né margini
+R_AFFITTATE = (44.12, 45.78)
 R_143318 = [(0.4, 2.55), (2.9, 6.4), (8.9, 12.2), (12.75, 17.4)]     # via le pause dopo "domanda" e "dell'India."
 
 
@@ -694,25 +701,23 @@ def mini_sigla(r, W, H):
 
 
 def v1():
-    """TEASER (rifatto il 27/10 sera, Manuel): come l'intro del lungo ma più veloce. Manuel tra i filari, l'affitto
-    del 1877 su Sadish, il voiceover, la frase sulle foglie raccolte a mano e la storia, la domanda aperta.
-    Sotto: solo le voci pulite e la musica nuova di Audio bassissima e costante; il segno della domanda prima della sigla."""
+    """TEASER = intro del lungo (Manuel 27/10 sera, ~20 s): solo le parole di Manuel tra i filari, "affittate per 3.000
+    rupie" su Sadish muto, VO 1 sulle colline, le foglie e "scoprirò l'arte... e la storia" senza pause, la domanda con
+    la nota di Audio, la sigla. Niente musica sotto, niente scritte oltre ai sottotitoli e alla domanda finale."""
     r, W, H = vreel("v1_teaser")
-    vhook(r, "Affittate per 3.000 rupie\\Nl'anno. Nel 1877.")
-    r.cam(C("115233"), 36.5, 39.6, words=fixw(vwords("115233", 36.5, 39.6)), cx=0.5)
-    r.narr(C("115233"), 41.4, 47.2, [(r.own(C("133703"), 1.0, cx=0.8), None), (r.own(C("133703"), 4.5, cx=0.62), None)],
-           words=fixw(vwords("115233", 41.4, 47.2)))
-    r.narr(VO1, 2.08, 5.42, [(r.own(C("115728"), 0.5), None)], words=vwords("", 2.0, 5.42, [dict(words=_WVO)]))
-    # "Le foglie di tè vengono ancora raccolte a mano": le mani che raccolgono, poi Manuel in camera
-    r.narr(C("120307"), 0.82, 2.95, [(r.own(C("133721"), 69.6, cx=0.55), None)], words=fixw(vwords("120307", 0.8, 2.95)))
-    r.cam(C("120307"), 3.6, 5.95, words=fixw(vwords("120307", 3.6, 5.95)), pad=(0.03, 0.04))
-    for a, b in tight(C("120356"), [(1.97, 6.6)], min_gap=0.15, keep=0.05):   # una frase sola, senza vuoti
-        r.cam(C("120356"), a, b, words=fixw(vwords("120356", a, b)), pad=(0.03, 0.04))
+    r.cam(C("115233"), *R_DIETRO, words=fixw(vwords("115233", *R_DIETRO)), cx=0.5)
+    r.narr(C("115233"), *R_AFFITTATE, [(r.own(C("133703"), 1.0, cx=0.8), None)], words=[(w + "." if w == "rupie" else w, t) for w, t in fixw(vwords("115233", 44.0, 45.7))],
+           pad=(0.0, 0.0))
+    r.narr(VO1, 2.08, 5.42, [(r.own(C("113517"), 0.5), None)], words=vwords("", 2.0, 5.42, [dict(words=_WVO)]))
+    r.narr(C("120307"), 0.82, 2.9, [(r.own(C("133721"), 69.6, cx=0.55), None)], words=fixw(vwords("120307", 0.8, 2.9)),
+           pad=(0.03, 0.03))
+    r.cam(C("120307"), 3.6, 5.95, words=fixw(vwords("120307", 3.6, 5.95)), pad=(0.03, 0.03))
+    for a, b in tight(C("120356"), [(1.92, 6.6)], min_gap=0.12, keep=0.04):   # una frase sola, senza vuoti
+        r.cam(C("120356"), a, b, words=fixw(vwords("120356", a, b)), pad=(0.02, 0.04))
     t_q = r.t
-    r.title(t_q - 0.4, t_q + 1.6, "E oggi, di chi sono?", "Mid", 820)
-    r.own(C("114701"), 1.0)(1.3)
-    bg(r.tl, 0.0, t_q + 0.3, 0.0, fin=0.4, fout=0.5)                  # musica sotto tutto, si chiude sulla domanda
-    cue(r.tl, t_q, "cue_domanda", 1.4, fout=0.4)
+    r.title(t_q - 0.3, t_q + 1.4, "E oggi, di chi sono?", "Mid", 820)
+    r.own(C("114701"), 1.0)(1.1)
+    cue(r.tl, t_q, "cue_domanda", 1.3, fout=0.4)                       # la musichetta prima della sigla
     mini_sigla(r, W, H)
     return vfinish(r, "v1_teaser", W, H)
 
