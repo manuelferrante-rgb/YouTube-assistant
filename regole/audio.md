@@ -29,3 +29,10 @@
   ricaricate da utenti (Sound Ideas, Disney, Warner, Lucasfilm): licenza falsa, rischio Content ID. Da lì solo
   registrazioni con autore e provenienza chiari; per gli effetti, prima il girato e le registrazioni "wild" di Manuel.
 - Audio generato insieme ai B-roll IA (Veo): non si usa mai; i suoni delle scene IA li fa la chat Audio (Insights, 26/10).
+
+Nota da Montaggio, 27/10 (decisione di Manuel dopo la v2 del tè, vale per ogni video):
+- Voce pulita prima di tutto. Niente letti d'ambiente sotto tutto il video: `ambiente_colline` (molto basso sotto i
+  200 Hz) steso sotto tutto il lungo del tè suonava come un camion in sottofondo. Gli ambienti servono solo per i momenti
+  vuoti senza parlato, con un contesto, e vanno consegnati già senza rombo (passa-alto almeno 90-120 Hz).
+- Niente fruscii (carta, penna) sulle grafiche della linea del tempo, niente ronzii o ticchettii sotto il voiceover.
+- Gli effetti si usano solo dove l'immagine li giustifica (es. il chai tirato mentre si vede il chai).

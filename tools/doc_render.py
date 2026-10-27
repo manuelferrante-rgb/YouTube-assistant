@@ -350,11 +350,13 @@ class Timeline:
             fc.append(f"[{k}:a]{st}aresample=48000,volume={x['gain']},adelay={int(x['t'] * 1000)}:all=1,"
                       f"apad=whole_dur={total:.3f},atrim=end={total:.3f}[fx{j}]")
             fx_labels.append(f"[fx{j}]")
+        naf = getattr(self, "nat_af", "")  # filtro sul suono delle clip ed effetti (es. highpass contro il rombo)
+        naf = f"{naf}," if naf else ""
         if fx_labels:  # gli effetti si sommano all'audio originale
             fc.append(f"[0:a]{''.join(fx_labels)}amix=inputs={len(fx_labels) + 1}:normalize=0[natfx]")
-            fc.append(f"[natfx]asplit=2[nat][natk]")
+            fc.append(f"[natfx]{naf}asplit=2[nat][natk]")
         else:
-            fc.append(f"[0:a]asplit=2[nat][natk]")
+            fc.append(f"[0:a]{naf}asplit=2[nat][natk]")
         if vo_labels:
             fc.append(f"{''.join(vo_labels)}amix=inputs={len(vo_labels)}:normalize=0,asplit=2[vo][vok]")
         else:
@@ -369,6 +371,25 @@ class Timeline:
         mix = f"{self.dir}/mix.wav"
         run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(fc), "-map", "[a]",
              "-c:a", "pcm_s16le", "-ar", "48000", "-t", f"{total:.3f}", mix])
+
+        fill = getattr(self, "fill", None)  # (file, guadagno): aria vera solo nei buchi di silenzio, non sotto tutto
+        if fill:
+            holes = self.holes(mix, min_len=0.3)
+            if holes:
+                ins, parts = ["-i", mix], []
+                for j, (h0, hd) in enumerate(holes):
+                    t0, d = max(0.0, h0 - 0.15), hd + 0.3
+                    off = (j * 3.7) % max(0.1, dur_of(fill[0]) - d - 0.5)
+                    ins += ["-i", fill[0]]
+                    parts.append(f"[{j + 1}:a]atrim={off:.3f}:{off + d:.3f},asetpts=PTS-STARTPTS,aresample=48000,"
+                                 f"highpass=f=150,volume={fill[1]},afade=t=in:d=0.12,afade=t=out:st={d - 0.15:.3f}:d=0.15,"
+                                 f"adelay={int(t0 * 1000)}:all=1,apad=whole_dur={total:.3f}[h{j}]")
+                fcx = ";".join(parts) + ";[0:a]" + "".join(f"[h{j}]" for j in range(len(holes))) + \
+                    f"amix=inputs={len(holes) + 1}:normalize=0,atrim=end={total:.3f}[a]"
+                run(["ffmpeg", "-v", "error", "-y", *ins, "-filter_complex", fcx, "-map", "[a]", "-c:a", "pcm_s16le",
+                     "-ar", "48000", f"{self.dir}/mix_f.wav"])
+                os.replace(f"{self.dir}/mix_f.wav", mix)
+                print(f"buchi riempiti con aria vera: {len(holes)}", flush=True)
 
         if os.environ.get("MIXONLY"):  # controllo rapido del mix prima della codifica finale
             self.check(mix); return mix
@@ -392,6 +413,23 @@ class Timeline:
              "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", str(crf), *getattr(self, "final_opts", []), "-preset", preset, "-profile:v", "high",
              "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", "-t", f"{total:.3f}", out])
         self.check(out)
+        return out
+
+    @staticmethod
+    def holes(path, min_len=0.4, thr=-50):
+        """Tratti di silenzio (sotto thr dB) più lunghi di min_len s -> [(inizio, durata)]."""
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-ac", "1", "-ar", "8000", "-f", "f32le", "-"],
+                             capture_output=True).stdout
+        x = np.frombuffer(raw, np.float32); hop = 80; n = len(x) // hop
+        db = 20 * np.log10(np.sqrt(np.mean(x[:n * hop].reshape(n, hop) ** 2, axis=1)) + 1e-9)
+        out, s = [], None
+        for i, q in enumerate(list(db < thr) + [False]):
+            if q and s is None:
+                s = i
+            if not q and s is not None:
+                if (i - s) * 0.01 > min_len:
+                    out.append((round(s * 0.01, 2), round((i - s) * 0.01, 2)))
+                s = None
         return out
 
     def check(self, out):

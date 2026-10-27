@@ -56,3 +56,8 @@ Cartella Drive del video: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw. I file grandi vanno
   4:27-4:53 (4-5-6) | 5:14-5:28 (9-10) | 5:41-5:54 (11) | 6:10-6:20 (12) | 7:06-7:38 (14 e logo, dissolvenza finale).
   Il gancio (VO 1) resta senza musica, come in Arthunkal. Code corte (0.6 s) per non finire sotto le interviste.
   Livello come Arthunkal: circa 23 dB sotto la voce, con ducking. Se cambiano i tempi si rigenera in pochi minuti.
+
+## Nota da Montaggio, 27/10 sera (Manuel)
+Nella v2 il letto `ambiente_colline` sotto tutto il video si sentiva come un camion: tolto, come carta/penna sulle
+grafiche 1877 e 1971 (fruscio), orologio_lontano e fabbrica_provvisorio sotto i voiceover. Resta solo chai_tirato sotto
+l'immagine del chai. Regola generale in `regole/audio.md` e `regole/montaggio_documentario.md`.

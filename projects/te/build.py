@@ -401,7 +401,6 @@ SIGLA_CLIPS = [(C("115803"), 0.5), (C("133721"), 70.0), (C("115958"), 1.0), (C("
 QUIET = (C("114701"), 0.0)                                          # panorama tra i filari: ambiente vero, senza voci
 PX = lambda i: f"{WORK}/stock/px_{i}.mp4"                           # Pixabay: solo immagini generiche, senza persone
 AMB = aud("ambiente_colline", QUIET[0])                             # aria tra i filari (chat Audio), senza voci
-AMB_G = 0.06                                                        # ~10 dB più forte del vento del girato
 
 
 def vo_over(e, name, ranges, items, lead=0.3, tail=0.4, music=None, **kw):
@@ -419,9 +418,8 @@ def vo_over(e, name, ranges, items, lead=0.3, tail=0.4, music=None, **kw):
         e.starts.append(e.t)
         if a is None:
             e.tl._add(src, 0, dd, audio=False, grade="null")
-        elif has_voice(src, a, a + dd):                           # parlato nella clip: muta, sotto il vento
+        elif has_voice(src, a, a + dd):                           # parlato nella clip: muta (sotto c'è la voce)
             e.tl.broll(src, a, dd, gain=0.0, grade=DEF, fx=dict(zoom=(1.0, 1.04, None)), fade=0.12)
-            e.tl.sfx(e.t - dd, ambient(AMB, 2.0, dd + 0.3), 0.04)
         else:
             e.b(src, a, dd, gain=0.14)
     if music is not None and MUSIC:
@@ -457,8 +455,6 @@ def long_video(W, H):
     vo_over(e, "2", [(6.6, 17.95)], [(G("1877", "1877|John Daniel Munro|affitta le colline dal raja di Poonjar|0.55", 3.8),
                                      None, 3.8), (PX(41146), 2.0, 2.6), (C("132655"), 1.0, None), (C("133703"), 6.0, None)],
              tail=0.15, music=0.0)
-    tl.sfx(e.starts[0] + 0.5, aud("carta"), 0.5)                    # il contratto del 1877
-    tl.sfx(e.starts[1], aud("penna"), 0.5)                          # il pennino
     vo_over(e, "3", [(18.75, 24.69)], [(G("1880", "1880|il primo tè|su una cinquantina di acri|0.65", 3.0, "1877"), None, 3.0),
                                        (C("132727"), 0.5, None)], lead=0.15, tail=0.2, music=11.0)
 
@@ -506,7 +502,6 @@ def long_video(W, H):
     vo_over(e, "7", [(53.44, 58.38)], [(C("133703"), 1.0, None), (C("133721"), 70.0, None)], music=20.0)
     vo_over(e, "8", [(64.9, 70.6), (83.4, 86.1)], [(C("135758"), 3.5, None), (C("142433"), 1.0, None),
                                                    (C("142447"), 3.0, None)], tail=0.25, music=27.0)
-    tl.sfx(tl.vos[-1]["t"], ambient(aud("fabbrica_provvisorio"), 1.0, tl.vos[-1]["b"] + 0.3), 0.12)   # molto basso
     e.to_black()
 
     # 3. LA STORIA E DI CHI SONO OGGI LE COLLINE
@@ -524,7 +519,6 @@ def long_video(W, H):
              (C("113517"), 1.5, 3.0),
              (G("1897", "1897|Kannan Devan Hills Produce Company|0.6", 3.6, "1880;1895"), None, 3.6),
              (C("132930"), 3.0, None)], music=35.0)
-    tl.sfx(tl.vos[-1]["t"], ambient(aud("orologio_lontano"), 0.0, min(11.5, tl.vos[-1]["b"] + 0.3)), 0.25)   # basso
     vo_over(e, "5", [(37.16, 43.93)],
             [(G("1901", "1901|la foresta tagliata|su larga scala|0.6;1911|il tè copre|circa 6.500 ettari|3.35", 5.0,
                 "1895;1897"), None, 5.0), (C("132930"), 0.5, None)], music=47.0)
@@ -537,8 +531,6 @@ def long_video(W, H):
     vo_over(e, "9", [(88.16, 92.16)],                               # anno breve, poi subito le carte (27/10)
             [(G("1971b", "1971|legge del Kerala|sulle terre di queste colline|0.35", 1.9, "1901;1911"), None, 1.9),
              (PX(349087), 2.0, None)], tail=0.1, music=62.0)
-    tl.sfx(e.starts[0] + 0.3, aud("carta"), 0.5)
-    tl.sfx(e.starts[1] + 0.2, aud("penna"), 0.45)
     vo_over(e, "10", [(92.92, 101.25)],
             [(G("2005", "2005|l'azienda ai dipendenti|circa tredicimila|0.6", 3.6, "1911;1971"), None, 3.6),
              (C("132727"), 1.0, None), (C("135922"), 0.5, None)], music=66.0)
@@ -556,7 +548,7 @@ def long_video(W, H):
     vo_over(e, "12", [(130.30, 131.63), (131.735, 138.3)],
             [(PX(70333), 2.0, None), (C("132655"), 3.0, None), (C("132930"), 1.0, None)],
             tail=0.2, music=90.0, gap=0.0, exact=True)
-    tl.sfx(e.starts[0], ambient(aud("chai_tirato"), 2.0, e.starts[1] - e.starts[0] + 0.3), 0.6)   # il chai
+    tl.sfx(e.starts[0], ambient(aud("chai_tirato"), 2.0, e.starts[1] - e.starts[0] + 0.3), 0.35)  # il chai, solo sotto la sua immagine
     e.to_black(strong=True)
 
     # 4. IL TÈ IN CITTÀ: il chai master, l'assaggio
@@ -574,7 +566,6 @@ def long_video(W, H):
     e.b(C("142545"), 2.0, 3.5, gain=0.7)
     e.say(C("143138"), [(0.4, 2.6), (12.1, 14.0)], cover={1: (C("143138"), 20.0)})
     e.say(C("143318"), tight(C("143318"), [(0.4, 6.4), (8.9, 17.4)]))
-    e.bed(t_c, e.t, C("142433"), 0.0, 0.12)
 
     # 5. CHIUSURA: VO 14 sulla sera e la nebbia, logo Voci Vere
     t_f = e.t
@@ -586,7 +577,10 @@ def long_video(W, H):
     if MUSIC:
         tl.music(t_f, e.t, MUSIC, offset=100.0, level=0.42, fin=0.6, fout=1.6)
 
-    e.bed(0.0, e.t, AMB, 0.0, AMB_G)                                 # ambiente_colline (Audio) sotto tutto: mai silenzi
+    # 27/10 sera (Manuel): niente letti continui sotto la voce (ambiente_colline sotto tutto suonava come un camion),
+    # niente fruscii sulle grafiche; voce pulita, i suoni di Audio solo dove servono. Bassi tolti dal suono delle clip.
+    tl.nat_af = "highpass=f=90"
+    tl.fill = (AMB, 0.09)                                            # aria (senza bassi) solo nei buchi di silenzio
     chapters = [(0.0, "Le colline del tè"), (t_m, "Munnar"), (t_s, "Con Sadish tra i filari"),
                 (t_h, "La storia e chi ci lavora"), (t_c, "Il tè del chai master"), (t_f, "Chiusura")]
     out = f"{OUT}/VociVere_te_long_{W}x{H}.mp4"
@@ -656,11 +650,8 @@ def vreel(tag):
 
 
 def vfinish(r, tag, W, H):
-    t = 0.0                                                         # ambiente_colline sotto tutto: mai silenzi
-    while t < r.t - 0.1:
-        d = min(9.0, r.t - t + 0.3)
-        r.tl.sfx(t, ambient(AMB, 0.5, d), 0.035)
-        t += d - 0.3
+    r.tl.nat_af = "highpass=f=90"                                   # voce pulita: niente letti sotto, niente rombo
+    r.tl.fill = (AMB, 0.09)                                         # aria solo nei buchi di silenzio
     out = f"{OUT}/VociVere_te_{tag}_{W}x{H}.mp4"
     return r.render(out, crf=18 if W == 1080 else 24, preset="medium" if W == 1080 else "veryfast")
 
@@ -747,7 +738,7 @@ def v4():
                                               (r.own(C("142545"), 2.0, gain=0.0), None), (r.own(C("142545"), 6.0, gain=0.0), None),
                                               (r.own(C("143318"), 9.0, gain=0.0), None)],
            words=W_143318, cuts=[(rg[i][1], rg[i + 1][0]) for i in range(len(rg) - 1)])
-    r.tl.sfx(t0n, ambient(aud("chai_tirato"), 0.0, r.t - t0n), 0.3)   # il chai tirato sotto la voce (Audio)
+    r.tl.sfx(t0n, ambient(aud("chai_tirato"), 0.0, r.t - t0n), 0.2)   # il chai tirato sotto la voce (Audio)
     r.cam(C("143138"), 0.4, 2.6, words=W_143138)
     r.own(C("143138"), 20.0, gain=0.6)(1.2)
     return vfinish(r, "v4_chai", W, H)
