@@ -12,6 +12,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 sys.path.insert(0, f"{ROOT}/tools")
 from doc_render import Timeline, run, dur_of, ts
 from sigla import sigla_d
+from voice_clean import cleaned
 
 PREVIEW = "--preview" in sys.argv
 W_ = os.path.join
@@ -23,7 +24,9 @@ AUD = f"{ROOT}/projects/te/audio"          # suoni e musica forniti dalla chat A
 VO1 = f"{WORK}/vo/vo_te_pulito.wav"                # VO ripulito da Audio (stessi tempi di Rajmala.m4a)
 os.makedirs(OUT, exist_ok=True); os.makedirs(GFX, exist_ok=True)
 
-MUSIC = next(iter(glob.glob(f"{WORK}/musica/musica_colline.wav")), None)   # musica originale (chat Audio)
+# 27/10 sera (Manuel): musica_colline tolta (fondo scuro 60-250 Hz, suonava come un motore). Sotto il voiceover va
+# solo la musica nuova della chat Audio: MUSIC=<file> quando arriva in projects/te/audio/.
+MUSIC = os.environ.get("MUSIC") or None
 NIGHT = "eq=brightness=0.03:gamma=1.12:contrast=1.04:saturation=1.08"
 DEF = "eq=contrast=1.03:saturation=1.05"
 
@@ -41,6 +44,12 @@ for jf in (f"{WORK}/trans.json",):
     if os.path.exists(jf):
         for k, v in json.load(open(jf)).items():
             _SEG[os.path.basename(k)] = v
+
+
+def clean_voices(tl):
+    """Chi parla si sente con la sua voce pulita (rombo e fondo tolti, tools/voice_clean.py), 27/10 sera."""
+    used = {sh["src"] for sh in tl.shots if sh["norm"]} | {v["file"] for v in tl.vos}
+    tl.audio_map = {f: cleaned(f, f"{WORK}/voce") for f in used if f.startswith(R)}
 
 
 def has_voice(src, a, b):
@@ -110,6 +119,17 @@ def tight(src, ranges, min_gap=0.32, keep=0.1):
             i += 1
         out.append((cur, b))
     return out
+
+
+def gap_at(src, lo, hi):
+    """Istante più silenzioso di [lo, hi] (passo 10 ms): il punto dove spezzare una frase tra due parole."""
+    import numpy as np
+    x = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{lo:.3f}", "-t", f"{hi - lo:.3f}", "-i", src,
+                                      "-map", "0:a:0", "-ac", "1", "-ar", "16000", "-af", "highpass=f=100", "-f", "f32le",
+                                      "-"], capture_output=True).stdout, np.float32)
+    n = len(x) // 160
+    e = np.convolve((x[:n * 160].reshape(n, 160) ** 2).mean(1), np.ones(3) / 3, mode="same")
+    return round(lo + int(np.argmin(e)) / 100, 2)
 
 
 def words_of(src):
@@ -189,17 +209,10 @@ class Edit:
     def t(self):
         return self.tl.t
 
-    def b(self, src, a, d, gain=0.35, cx=0.5, grade=DEF, fx=None, speed=1.0, bed=None, extra=None):
-        """B-roll con il suo suono vero. Se nella clip c'è parlato l'audio si azzera e sotto va un letto d'ambiente
-        vero preso da una clip senza voci (bed = (clip, inizio)), così non resta mai un buco di silenzio."""
-        gain = min(1.0, gain * 1.4)                                  # ambiente un po' più presente (mix v2)
-        if extra:                                                    # clip quasi muta: ambiente vero di rinforzo
-            self.tl.sfx(self.t, ambient(extra[0], extra[1], d + 0.3), extra[2])
-        if gain and has_voice(src, a, a + d * speed):
-            gain = 0.0
-            b_src, b_a = bed or (C("135012"), 0.0)
-            self.tl.sfx(self.t, ambient(b_src, b_a, d + 0.3), 0.55)
-        self.tl.broll(src, a, d, gain=gain, cx=cx, grade=grade, fx=fx or dict(zoom=(1.0, 1.04, None)), speed=speed,
+    def b(self, src, a, d, cx=0.5, grade=DEF, fx=None, speed=1.0):
+        """B-roll muto (Manuel, 27/10 sera): mai rumori del girato, né sotto chi parla né da soli. Nei tratti senza
+        parlato vanno solo, se servono, i suoni melodici della chat Audio; altrimenti il B-roll si tiene breve."""
+        self.tl.broll(src, a, d, gain=0.0, cx=cx, grade=grade, fx=fx or dict(zoom=(1.0, 1.04, None)), speed=speed,
                       fade=0.12)
 
     def say(self, src, ranges, speed=1.1, cx=0.5, cover=None, subs=(), grade=DEF, gain=1.0, cut_gaps=False, pad=(0.06, 0.12)):
@@ -253,9 +266,6 @@ class Edit:
         fx = dict(last.get("fx") or {}); fx.pop("zoom", None)
         fx.update(push_out=(z, T), black_out=0.3)
         last["fx"] = fx
-        t_end = self.t
-        snd = aud("transizione_nero_in", ambient(C("135012"), 9.0, 0.9))
-        self.tl.sfx(max(0, t_end - dur_of(snd)), snd, 0.55)            # il taglio del suono cade sul primo nero
         self.tl._add(self.black, 0, gap, audio=False, grade="null")
         self.strong = strong
 
@@ -263,12 +273,7 @@ class Edit:
         """Inizio scena dal nero: l'ultima inquadratura aggiunta rientra dal nero allargandosi; il suo suono
         parte mezzo secondo prima dell'immagine (J-cut)."""
         sh = self.tl.shots[-1]
-        sh["fx"] = dict(black_in=0.35, zoom=(1.08, 1.0, 0.8))
-        self.tl.sfx(max(0, sh["t"] - 0.45), ambient(sh["src"], sh["a"] - 0.45, 0.6), 0.35 if sh["gain"] else 0.0)
-        snd = aud("transizione_nero_out")
-        if snd and getattr(self, "strong", False):                      # solo nei 2-3 cambi forti
-            self.tl.sfx(sh["t"], snd, 0.45)
-        self.strong = False
+        sh["fx"] = dict(black_in=0.35, zoom=(1.08, 1.0, 0.8))   # niente ambienti di transizione (27/10 sera)
 
     def bed(self, t0, t1, src, a=0.0, gain=0.16):
         """Letto d'ambiente vero e basso sotto una scena intera: niente buchi di quasi silenzio tra i tagli."""
@@ -330,6 +335,7 @@ class Edit:
     def render(self, out):
         self.finalize()
         self.tl.ass_override = self.ass()
+        clean_voices(self.tl)
         print(f"== {os.path.basename(out)}: {len(self.tl.shots)} inquadrature, {self.t:.1f} s", flush=True)
         if PREVIEW:
             return self.tl.render(out, crf=26, preset="veryfast")
@@ -400,10 +406,9 @@ SIGLA_CLIPS = [(C("115803"), 0.5), (C("133721"), 70.0), (C("115958"), 1.0), (C("
                (C("114701"), 4.0)]                                  # sigla a tema: filari, raccolta, cesto, chai
 QUIET = (C("114701"), 0.0)                                          # panorama tra i filari: ambiente vero, senza voci
 PX = lambda i: f"{WORK}/stock/px_{i}.mp4"                           # Pixabay: solo immagini generiche, senza persone
-AMB = aud("ambiente_colline", QUIET[0])                             # aria tra i filari (chat Audio), senza voci
 
 
-def vo_over(e, name, ranges, items, lead=0.3, tail=0.4, music=None, **kw):
+def vo_over(e, name, ranges, items, lead=0.15, tail=0.25, music=None, **kw):
     """Voiceover sopra immagini e grafiche: items = [(clip, inizio, durata) | (grafica, None, durata)];
     durata None = si divide il resto. -> (t0 della voce, durata della voce)."""
     f, d = VO(name, ranges, **kw)
@@ -418,10 +423,8 @@ def vo_over(e, name, ranges, items, lead=0.3, tail=0.4, music=None, **kw):
         e.starts.append(e.t)
         if a is None:
             e.tl._add(src, 0, dd, audio=False, grade="null")
-        elif has_voice(src, a, a + dd):                           # parlato nella clip: muta (sotto c'è la voce)
-            e.tl.broll(src, a, dd, gain=0.0, grade=DEF, fx=dict(zoom=(1.0, 1.04, None)), fade=0.12)
-        else:
-            e.b(src, a, dd, gain=0.14)
+        else:                                                     # muta: sotto il voiceover solo la voce
+            e.b(src, a, dd)
     if music is not None and MUSIC:
         e.tl.music(t0, e.t, MUSIC, offset=music, level=0.42, fin=0.6, fout=0.9)
     return t0 + lead, d
@@ -442,16 +445,15 @@ def long_video(W, H):
     e.say(C("120307"), [(0.82, 2.95), (3.6, 5.95)], cover={0: (C("133721"), 69.6)}, pad=(0.03, 0.04))
     e.say(C("120356"), tight(C("120356"), [(1.97, 6.6)], min_gap=0.15, keep=0.05), pad=(0.03, 0.04))
     t_q = e.t
-    e.b(C("114701"), 1.0, 2.8, gain=0.5)
-    e.title("E oggi, di chi sono queste colline?", t_q + 0.2, 2.5)      # domanda aperta, la risposta è al blocco 10
-    tl.sfx(max(0, e.t - 0.4), ambient(C("115803"), 0.0, 2.0), 0.4)
+    e.b(C("114701"), 1.0, 1.8)                                        # breve: sotto non c'è suono (27/10 sera)
+    e.title("E oggi, di chi sono queste colline?", t_q - 0.5, 2.3)      # domanda aperta, la risposta è al blocco 10
     sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="te")
 
     # 1. MUNNAR: dove siamo, la mappa, le colline e l'affitto del 1877
     t_m = e.t
     e.say(C("115233"), [(12.0, 15.3)])                               # "Sono a Munnar, in Kerala, a oltre 1500 metri."
     e.label("Munnar, Kerala", t_m + 0.3, 2.6)
-    e.b(C("132930"), 0.5, 1.5, gain=0.5)                             # solo un attimo di colline, niente mappa (27/10)
+    e.b(C("132930"), 0.5, 1.5)                             # solo un attimo di colline, niente mappa (27/10)
     vo_over(e, "2", [(6.6, 17.95)], [(G("1877", "1877|John Daniel Munro|affitta le colline dal raja di Poonjar|0.55", 3.8),
                                      None, 3.8), (PX(41146), 2.0, 2.6), (C("132655"), 1.0, None), (C("133703"), 6.0, None)],
              tail=0.15, music=0.0)
@@ -506,7 +508,7 @@ def long_video(W, H):
 
     # 3. LA STORIA E DI CHI SONO OGGI LE COLLINE
     t_h = e.t
-    e.b(C("134442"), 0.0, 2.2, gain=0.5)
+    e.b(C("134442"), 0.0, 1.2)
     e.from_black()
     e.say(C("133946"), [(0.1, 1.2), (32.6, 34.2), (42.7, 43.7), (54.7, 64.8), (65.5, 72.8)],
           cover={3: (C("135012"), 2.0)},
@@ -548,24 +550,19 @@ def long_video(W, H):
     vo_over(e, "12", [(130.30, 131.63), (131.735, 138.3)],
             [(PX(70333), 2.0, None), (C("132655"), 3.0, None), (C("132930"), 1.0, None)],
             tail=0.2, music=90.0, gap=0.0, exact=True)
-    tl.sfx(e.starts[0], ambient(aud("chai_tirato"), 2.0, e.starts[1] - e.starts[0] + 0.3), 0.35)  # il chai, solo sotto la sua immagine
     e.to_black(strong=True)
 
-    # 4. IL TÈ IN CITTÀ: il chai master, l'assaggio
+    # 4. IL TÈ IN CITTÀ (Manuel 27/10 sera): prima parte veloce, poche scene, subito al master che non vuole parlare.
+    # Il B-roll del chai copre il parlato mentre se ne parla; ogni ritorno in camera ha voce e immagine dello stesso tratto.
     t_c = e.t
-    e.b(C("141843"), 0.0, 2.2, gain=0.6)
+    e.b(C("141843"), 0.0, 1.2)
     e.from_black()
-    e.label("Munnar", t_c + 0.4, 2.4)
-    e.b(C("141109"), 0.5, 1.6, gain=0.6)
-    e.say(C("141707"), [(0.1, 4.9)])                                 # "E ora è il momento di provare questo tè tradizionale"
-    e.b(C("142433"), 0.5, 2.4, gain=0.7)
-    e.b(C("142447"), 2.0, 3.0, gain=0.7)
-    e.say(C("142726"), [(0.8, 2.8), (43.4, 49.2)], speed=1.0, gain=1.3,
-          subs=[(0.8, 1.4, "Come ti chiami?"), (2.1, 2.8, "Shaharon."),
-                (43.4, 46.0, "Lui è il chai master."), (46.3, 49.2, "Io servo.")])
-    e.b(C("142545"), 2.0, 3.5, gain=0.7)
-    e.say(C("143138"), [(0.4, 2.6), (12.1, 14.0)], cover={1: (C("143138"), 20.0)})
-    e.say(C("143318"), tight(C("143318"), [(0.4, 6.4), (8.9, 17.4)]))
+    e.label("Munnar", t_c + 0.3, 2.4)
+    e.say(C("141707"), R_141707, cover={1: (C("142447"), 2.0)})      # il chai si vede su "questo tè tradizionale"
+    e.say(C("142726"), [(43.4, 46.0), (46.3, 49.2)], speed=1.0, gain=1.3, cover={0: (C("142545"), 2.0)},
+          subs=[(43.4, 46.0, "Lui è il chai master."), (46.3, 49.2, "Io servo.")])
+    e.say(C("143138"), [(0.4, 2.6)])                                 # "In conclusione assaggiamo questo tè."
+    e.say(C("143318"), R_143318, cover={1: (C("142545"), 2.0)})      # il master mentre Manuel dice "al master"
 
     # 5. CHIUSURA: VO 14 sulla sera e la nebbia, logo Voci Vere
     t_f = e.t
@@ -580,9 +577,8 @@ def long_video(W, H):
     # 27/10 sera (Manuel): niente letti continui sotto la voce (ambiente_colline sotto tutto suonava come un camion),
     # niente fruscii sulle grafiche; voce pulita, i suoni di Audio solo dove servono. Bassi tolti dal suono delle clip.
     tl.nat_af = "highpass=f=90"
-    tl.fill = (AMB, 0.09)                                            # aria (senza bassi) solo nei buchi di silenzio
     chapters = [(0.0, "Le colline del tè"), (t_m, "Munnar"), (t_s, "Con Sadish tra i filari"),
-                (t_h, "La storia e chi ci lavora"), (t_c, "Il tè del chai master"), (t_f, "Chiusura")]
+                (t_h, "La storia e chi ci lavora"), (t_c, "Il tè del chai master")]   # chiusura < 10 s: nel capitolo del chai
     out = f"{OUT}/VociVere_te_long_{W}x{H}.mp4"
     with open(f"{OUT}/voiceover_{W}x{H}.txt", "w") as fh:
         for v in tl.vos:
@@ -638,6 +634,10 @@ W_143318 = [("Ho", 0.56), ("provato", 0.88), ("a", 1.28), ("fare", 1.36), ("qual
 W_143138 = [("In", 0.48), ("conclusione", 0.72), ("assaggiamo", 1.28), ("questo", 1.92), ("tè.", 2.24)]
 W_141707 = [("E", 0.24), ("ora", 0.48), ("è", 0.72), ("il", 0.8), ("momento", 0.88), ("di", 1.2), ("provare", 1.36),
             ("questo", 1.92), ("tè", 2.4), ("tradizionale,", 2.8), ("direttamente.", 4.08)]
+CUT_141707 = gap_at(C("141707"), 1.70, 2.20)                         # tra "provare" e "questo"
+# clip rumorose (strada): tight() non vede le pause, tagli misurati sull'energia e sulle parole riascoltate (27/10 sera)
+R_141707 = [(0.1, CUT_141707), (CUT_141707, 3.62), (4.2, 4.9)]       # via la pausa prima di "direttamente"
+R_143318 = [(0.4, 2.55), (2.9, 6.4), (8.9, 12.2), (12.75, 17.4)]     # via le pause dopo "domanda" e "dell'India."
 
 
 def fixw(ws):
@@ -646,12 +646,12 @@ def fixw(ws):
 
 def vreel(tag):
     W, H = (540, 960) if PREVIEW else (1080, 1920)
-    return Reel(f"{OUT}/{tag}_{W}_work", W, H, cx_cam=0.5), W, H
+    return Reel(f"{OUT}/{tag}_{W}_work", W, H, cx_cam=0.5, amb=0.0), W, H     # B-roll muti (27/10 sera)
 
 
 def vfinish(r, tag, W, H):
     r.tl.nat_af = "highpass=f=90"                                   # voce pulita: niente letti sotto, niente rombo
-    r.tl.fill = (AMB, 0.09)                                         # aria solo nei buchi di silenzio
+    clean_voices(r.tl)
     out = f"{OUT}/VociVere_te_{tag}_{W}x{H}.mp4"
     return r.render(out, crf=18 if W == 1080 else 24, preset="medium" if W == 1080 else "veryfast")
 
@@ -668,21 +668,20 @@ def mini_sigla(r, W, H):
 
 
 def v1():
-    """TEASER: le colline affittate per 3.000 rupie l'anno; la domanda resta aperta (di chi sono oggi?)."""
+    """TEASER: le colline affittate per 3.000 rupie l'anno; la domanda resta aperta (di chi sono oggi?).
+    Solo il girato di chi parla e il voiceover, niente suoni sotto (Manuel 27/10 sera)."""
     r, W, H = vreel("v1_teaser")
-    # 27/10: si parte subito da Manuel che parla (niente immagini mute prima), Sadish sull'affitto del 1877
     vhook(r, "Affittate per 3.000 rupie\\Nl'anno. Nel 1877.")
     r.cam(C("115233"), 36.5, 39.6, words=fixw(vwords("115233", 36.5, 39.6)), cx=0.5)
-    r.narr(C("115233"), 41.4, 47.8, [(r.own(C("133703"), 1.0, cx=0.8, gain=0.0), None), (r.own(C("133703"), 4.5, cx=0.62, gain=0.0), None)],
+    r.narr(C("115233"), 41.4, 47.8, [(r.own(C("133703"), 1.0, cx=0.8), None), (r.own(C("133703"), 4.5, cx=0.62), None)],
            words=fixw(vwords("115233", 41.4, 47.8)))
-    r.narr(VO1, 2.0, 5.42, [(r.own(C("115728"), 0.5, gain=0.0), None)], words=vwords("", 2.0, 5.42, [dict(words=_WVO)]))
+    r.narr(VO1, 2.0, 5.42, [(r.own(C("115728"), 0.5), None)], words=vwords("", 2.0, 5.42, [dict(words=_WVO)]))
     r.cam(C("120307"), 0.8, 2.95, words=fixw(vwords("120307", 0.8, 2.95)))
-    r.cam(C("133721"), 10.0, 16.4, speed=1.05, cx=0.55,
-          block=[(10.0, 13.6, "Tutte le montagne che vedi sono tè.", "Mountain you see everywhere also tea."),
-                 (13.6, 16.4, "Coperte verdi.", "Green blankets.")])
-    t = r.t
-    r.own(C("114701"), 1.0, gain=0.5)(2.0)
-    r.title(t + 0.1, r.t, "E oggi, di chi sono?", "Mid", 820)
+    t = r.cam(C("133721"), 10.0, 16.4, speed=1.05, cx=0.55,
+              block=[(10.0, 13.6, "Tutte le montagne che vedi sono tè.", "Mountain you see everywhere also tea."),
+                     (13.6, 16.4, "Coperte verdi.", "Green blankets.")])
+    r.title(r.t - 1.2, r.t + 1.2, "E oggi, di chi sono?", "Mid", 820)   # la domanda entra sulle ultime parole
+    r.own(C("114701"), 1.0)(1.2)
     if MUSIC:
         r.tl.music(0, r.t, MUSIC, offset=0.0, level=0.3, fin=0.3, fout=0.5)
     mini_sigla(r, W, H)
@@ -702,7 +701,7 @@ def v2():
     r.cam(C("133721"), 119.5, 131.2, speed=1.05, cx=0.55,
           block=[(119.5, 123.5, "Oggi raccolgo qui, domani vado su un'altra collina.", "Today I will pluck here, tomorrow another mountain."),
                  (124.0, 131.2, "Il mese dopo si torna qui. È un giro.", "Next month come to here. The circle.")])
-    r.own(C("135033"), 1.0, gain=0.5)(0.7)
+    r.own(C("135033"), 1.0)(0.5)
     return vfinish(r, "v2_raccolta", W, H)
 
 
@@ -718,29 +717,35 @@ def v3():
     r.cam(C("134520"), 26.8, 30.5, speed=1.05, cx=0.55,
           block=[(26.8, 29.5, "E chi raccoglie di più?", "More than a kilogram people are also plucking?"),
                  (29.6, 30.5, "Soldi in più.", "Extra money.")])
-    rg = tight(C("134231"), [(0.0, 12.8)])
-    r.narr(C("134231"), rg[0][0], rg[-1][1], [(r.own(C("134231"), rg[0][0], speed=r.SP, gain=0.0), None)],
-           words=vwords("134231", 0.0, 12.8), cuts=[(rg[i][1], rg[i + 1][0]) for i in range(len(rg) - 1)])
+    # Manuel riporta l'orario: in camera a ogni tratto (voce e immagine dello stesso istante), il secondo sui filari
+    for i, (a, b) in enumerate(tight(C("134231"), [(0.0, 12.8)])):
+        ws = vwords("134231", a, b)
+        if i == 1:
+            r.narr(C("134231"), a, b, [(r.own(C("133703"), 6.0), None)], words=ws)
+        else:
+            r.cam(C("134231"), a, b, words=ws)
     r.cam(C("133721"), 107.5, 111.7, speed=1.05, cx=0.55,
           block=[(107.5, 108.4, "Chi raccoglie?", "Who picks?"), (108.4, 111.7, "Tutti: donne e uomini.", "All people, ladies and men.")])
-    r.own(C("135922"), 0.3, gain=0.5)(0.7)
+    r.own(C("135922"), 0.3)(0.5)
     return vfinish(r, "v3_giornata", W, H)
 
 
 def v4():
-    """IL CHAI MASTER: il tè tirato a Munnar, il maestro che non vuole parlare, l'assaggio."""
+    """IL CHAI MASTER: il tè tirato a Munnar, il maestro che non vuole parlare (Manuel 27/10 sera: si arriva subito
+    lì, poche scene). Il chai si vede mentre se ne parla; Manuel in camera solo con la sua voce dello stesso istante."""
     r, W, H = vreel("v4_chai")
-    r.own(C("142447"), 2.0, gain=0.8)(1.8)                         # gancio sul gesto e sul suono vero del chai
     vhook(r, "Il chai di Munnar\\Nsi fa così.")
-    r.cam(C("141707"), 0.1, 4.9, words=W_141707)
-    rg = tight(C("143318"), [(0.4, 6.4), (8.9, 17.4)])
-    t0n = r.narr(C("143318"), rg[0][0], rg[-1][1], [(r.own(C("142433"), 0.5, gain=0.0), None), (r.own(C("142447"), 8.0, gain=0.0), None),
-                                              (r.own(C("142545"), 2.0, gain=0.0), None), (r.own(C("142545"), 6.0, gain=0.0), None),
-                                              (r.own(C("143318"), 9.0, gain=0.0), None)],
-           words=W_143318, cuts=[(rg[i][1], rg[i + 1][0]) for i in range(len(rg) - 1)])
-    r.tl.sfx(t0n, ambient(aud("chai_tirato"), 0.0, r.t - t0n), 0.2)   # il chai tirato sotto la voce (Audio)
-    r.cam(C("143138"), 0.4, 2.6, words=W_143138)
-    r.own(C("143138"), 20.0, gain=0.6)(1.2)
+    # gancio: il gesto del chai sulla voce di Manuel (141707 è la salita delle scale, lui fuori campo)
+    r.narr(C("141707"), R_141707[0][0], R_141707[-1][1], [(r.own(C("142447"), 2.0), None), (r.own(C("142433"), 0.5), None)],
+           words=W_141707, cuts=[(R_141707[1][1], R_141707[2][0])])
+    r.cam(C("142726"), 43.4, 49.2, speed=1.05,
+          block=[(43.4, 46.0, "Lui è il chai master.", ""), (46.3, 49.2, "Io servo.", "")])
+    rg = R_143318
+    first = [x for x in rg if x[1] <= 6.6]                        # "Ho provato a fare domanda al master... rifiutato."
+    r.narr(C("143318"), first[0][0], first[-1][1], [(r.own(C("142545"), 2.0), None), (r.own(C("142447"), 8.0), None)],
+           words=W_143318, cuts=[(first[i][1], first[i + 1][0]) for i in range(len(first) - 1)])
+    for a, b in rg[len(first):]:                                  # "Forse proprio qua è l'essenza dell'India..."
+        r.cam(C("143318"), a, b, words=[w for w in W_143318 if a - 0.1 <= w[1] < b])
     return vfinish(r, "v4_chai", W, H)
 
 

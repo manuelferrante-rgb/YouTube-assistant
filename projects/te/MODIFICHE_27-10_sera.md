@@ -48,3 +48,22 @@ Regole nuove di Manuel (27/10 sera):
   Drive al posto dei vecchi, segnare in `piano/calendario.md`, commit, PR su master e merge. Riassunto breve a Manuel.
 - I suoni nuovi di Audio arriveranno in `projects/te/audio/` (vedi `LEGGIMI.md`): se non ci sono ancora, consegnare senza
   (voce pulita e basta) e aggiungerli dopo.
+
+## Fatto (Montaggio, 27/10 sera): v4
+- Camion: la fonte era il suono stesso delle clip in cui si parla, soprattutto 115233 (gancio e "Sono a Munnar": fondo
+  di vento/motore solo ~10 dB sotto la voce, tra 60 e 500 Hz) e la strada del chiosco (143318, 142726). In più il
+  loudnorm dinamico finale alzava il fondo nelle pause. Ora: `tools/voice_clean.py` pulisce la voce di ogni clip parlata
+  (passa-alto 100 Hz + riduzione spettrale del fondo stimato clip per clip, forte se voce/fondo < 22 dB), passa-alto
+  90 Hz doppio su voce e voiceover, normalizzazione finale lineare (guadagno fisso + limiter). Fondo nelle pause tra
+  le parole: da ~-27 a -50/-77 dB; resta solo la strada vera al chiosco (-36/-45 dB sotto la voce di Manuel).
+- Tolti del tutto: suono vero dei B-roll (anche da soli), letti, `tl.fill`, ambienti di transizione, chai_tirato,
+  musica_colline (scura). Musica: nessuna finché Audio non consegna quella nuova (`MUSIC=<file>` in build.py).
+- Labiale: due errori veri trovati con `tools/sync_check.py` (PLAN=plan.json): nel lungo 143138 copriva il parlato
+  con sé stessa 8 s dopo, nel v4 143318 si vedeva a 9 s mentre la voce era a 16 s. Tolti. In più `afftdn` ritardava la
+  voce di 25 ms (1200 campioni): compensato in `tools/doc_render.py` (AFFTDN_FIX).
+- Chai (lungo e v4): scale (141707, voce fuori campo) -> chai mentre dice "questo tè tradizionale" -> Shaharon
+  "Lui è il chai master. Io servo." con il master sopra -> assaggio -> 143318 (master che non parla, l'India), con il
+  master sopra "al master". Pause tagliate a mano dove la strada copre la voce (R_141707, R_143318).
+- Verticali: battute tradotte spezzate in pezzi su una riga (`one_line` in `tools/reel_kit.py`, larghezza misurata
+  sul font, al massimo l'84% dello schermo anche al picco dell'animazione); titoli rimpiccioliti se non ci stanno.
+  Fotogrammi controllati a ogni sottotitolo.
