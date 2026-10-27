@@ -20,6 +20,8 @@ import numpy as np
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 FPS = 30
 GRADE_DEFAULT = "eq=contrast=1.03:saturation=1.05"
+# afftdn ritarda l'audio di 1200 campioni a 48 kHz (25 ms, misurato il 27/10): si tolgono, così il labiale resta esatto
+AFFTDN_FIX = "atrim=start_sample=1200,asetpts=PTS-STARTPTS"
 
 
 def run(cmd):
@@ -50,6 +52,7 @@ class Timeline:
         # verticali: sottotitoli alti, quasi centrali, fuori dall'interfaccia delle app (richiesta di Manuel)
         self.sub_margin = sub_margin or (int(110 * k) if not self.vertical else int(780 * h / 1920))
         self.voice_check = None  # funzione(src, a, b) -> True se nell'audio originale c'è una voce
+        self.audio_map = {}      # clip -> wav con la sua voce pulita (stessi tempi): sostituisce l'audio della clip
 
     # ---------- elementi ----------
     def _add(self, src, a, dur_src, speed=1.0, gain=1.0, cx=0.5, zoom=1.0, grade=GRADE_DEFAULT, norm=False,
@@ -200,7 +203,7 @@ class Timeline:
             f.append(f"atempo={s['speed']}")
         f.append("aresample=48000")
         if s["norm"]:
-            f.append("highpass=f=80,afftdn=nf=-28,loudnorm=I=-17:TP=-2:LRA=7,aresample=48000")
+            f.append(f"highpass=f=90,highpass=f=90,afftdn=nf=-28,{AFFTDN_FIX},loudnorm=I=-17:TP=-2:LRA=7,aresample=48000")
         f.append(f"volume={s['gain']}")
         fd = min(s["fade"], d / 3)
         f.append(f"apad,atrim=end={d:.4f},afade=t=in:d={fd:.3f},afade=t=out:st={d - fd:.4f}:d={fd:.3f}")
@@ -243,16 +246,25 @@ class Timeline:
         return tail
 
     def render(self, out, reuse=True, crf=19, preset="medium"):
+        if os.environ.get("PLAN"):   # solo il piano (inquadrature, voci) per i controlli di labiale, senza render
+            json.dump(dict(shots=self.shots, vos=self.vos, subs=self.subs, total=self.t),
+                      open(os.environ["PLAN"], "w"), indent=0, default=str)
+            return out
         parts = []
         for i, s in enumerate(self.shots):
             p = f"{self.dir}/shot_{i:03d}.mkv"
-            key = json.dumps({k: v for k, v in s.items() if k != "t"}, sort_keys=True) + f"{self.W}x{self.H}"
+            key = json.dumps({k: v for k, v in s.items() if k != "t"}, sort_keys=True) + f"{self.W}x{self.H}" + \
+                str(self.audio_map.get(s["src"]) if s["norm"] else "")
             kp = p + ".key"
             tail = self._tail(i) if s.get("xin") else None
             if tail:
                 key += json.dumps({k: v for k, v in tail.items() if k != "t"}, sort_keys=True)
             if not (reuse and os.path.exists(p) and os.path.exists(kp) and open(kp).read() == key):
                 cmd = ["ffmpeg", "-v", "error", "-y", "-ss", f"{s['a']:.3f}", "-t", f"{s['dur_src'] + 1:.3f}", "-i", s["src"]]
+                amap = self.audio_map.get(s["src"]) if s["norm"] and not tail else None
+                if amap:               # parlato: voce pulita della stessa clip, stesso istante
+                    cmd += ["-ss", f"{s['a']:.3f}", "-t", f"{s['dur_src'] + 1:.3f}", "-i", amap]
+                ai = "1:a:0" if amap else "0:a:0"
                 if tail:
                     # dissolvenza in entrata: la coda dell'inquadratura precedente sfuma nella nuova (durata invariata)
                     cmd += ["-ss", f"{tail['a']:.3f}", "-t", f"{tail['dur_src'] + 1:.3f}", "-i", tail["src"]]
@@ -262,12 +274,12 @@ class Timeline:
                           f"[pv][cv]xfade=transition=fade:duration={tail['d']:.3f}:offset=0,format=yuv420p[v]")
                     cmd += ["-filter_complex", fc, "-map", "[v]"]
                     if s["audio"]:
-                        cmd += ["-map", "0:a:0", "-af", self._af(s)]
+                        cmd += ["-map", ai, "-af", self._af(s)]
                     else:
                         cmd += ["-map", "2:a:0"]
                 else:
                     if s["audio"]:
-                        cmd += ["-map", "0:v:0", "-map", "0:a:0", "-af", self._af(s)]
+                        cmd += ["-map", "0:v:0", "-map", ai, "-af", self._af(s)]
                     else:
                         cmd += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v:0", "-map", "1:a:0"]
                     cmd += ["-vf", self._vf(s)]
@@ -304,11 +316,11 @@ class Timeline:
         inputs = ["-i", nat]
         fc, vo_labels = [], []
         for j, v in enumerate(self.vos):
-            inputs += ["-i", v["file"]]
+            inputs += ["-i", self.audio_map.get(v["file"], v["file"])]
             k = len(inputs) // 2 - 1
             dvo = (v["b"] - v["a"]) / v["speed"]
             fc.append(f"[{k}:a]atrim={v['a']:.3f}:{v['b']:.3f},asetpts=PTS-STARTPTS,atempo={v['speed']},aresample=48000,"
-                      f"highpass=f=80,afftdn=nf=-30,loudnorm=I=-16:TP=-2:LRA=6,aresample=48000,"
+                      f"highpass=f=90,highpass=f=90,afftdn=nf=-30,{AFFTDN_FIX},loudnorm=I=-16:TP=-2:LRA=6,aresample=48000,"
                       f"afade=t=in:d=0.04,afade=t=out:st={dvo - 0.08:.3f}:d=0.08,"
                       f"adelay={int(v['t'] * 1000)}:all=1,apad=whole_dur={total:.3f}[vo{j}]")
             vo_labels.append(f"[vo{j}]")
@@ -364,10 +376,10 @@ class Timeline:
         if mu_labels:
             fc.append(f"{''.join(mu_labels)}amix=inputs={len(mu_labels)}:normalize=0[mus]")
             fc.append(f"[vok]anullsink;[natk]anullsink")
-            fc.append(f"[nat][vo][mus]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1:LRA=9,aresample=48000[a]")
+            fc.append(f"[nat][vo][mus]amix=inputs=3:normalize=0[a]")
         else:
             fc.append(f"[vok]anullsink;[natk]anullsink")
-            fc.append(f"[nat][vo]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1:LRA=9,aresample=48000[a]")
+            fc.append(f"[nat][vo]amix=inputs=2:normalize=0[a]")
         stem = os.environ.get("STEM")  # diagnosi: solo una traccia (nat = clip+effetti, vo, mus) senza loudnorm
         if stem:
             fc = [c for c in fc if not c.startswith("[nat][vo]")]
@@ -376,8 +388,16 @@ class Timeline:
                      "mus": "[nat]anullsink;[vo]anullsink"}[stem]
             fc.append(f"[{stem}]anull[a];{other}")
         mix = f"{self.dir}/mix.wav" if not stem else f"{self.dir}/stem_{stem}.wav"
+        pre = mix if stem else f"{self.dir}/premix.wav"
         run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(fc), "-map", "[a]",
-             "-c:a", "pcm_s16le", "-ar", "48000", "-t", f"{total:.3f}", mix])
+             "-c:a", "pcm_f32le", "-ar", "48000", "-t", f"{total:.3f}", pre])
+        if not stem:   # -14 LUFS in modo lineare (27/10): il loudnorm dinamico alzava il fondo nelle pause
+            m = json.loads(subprocess.run(["ffmpeg", "-hide_banner", "-i", pre, "-af",
+                                           "loudnorm=I=-14:TP=-1:LRA=11:print_format=json", "-f", "null", "-"],
+                                          capture_output=True, text=True).stderr.split("[Parsed_loudnorm")[-1].split("\n", 1)[1])
+            run(["ffmpeg", "-v", "error", "-y", "-i", pre, "-af",
+                 f"volume={-14 - float(m['input_i']):.2f}dB,alimiter=limit=0.85:attack=2:release=60:level=false,"
+                 f"aresample=48000", "-c:a", "pcm_s16le", "-ar", "48000", "-t", f"{total:.3f}", mix])
 
         fill = getattr(self, "fill", None)  # (file, guadagno): aria vera solo nei buchi di silenzio, non sotto tutto
         if fill:

@@ -251,3 +251,15 @@ descrizione, capitoli e miniatura.
      segnalata va spiegata (es. strada vera dell'intervista) o corretta.
   2. Trascrizione del montato (`tools/transcribe_segments.py`): nessuna parola tagliata o ripetuta, nessun vuoto.
   3. Fotogrammi dei punti cambiati e dei primi 5 s; controllo dei suoni aggiunti uno per uno (dove, quanto forte, perché).
+
+## Voce pulita e labiale (Manuel, 27/10 sera, v4 del tè): vale per ogni video
+- Il rumore "da camion" può stare nella clip stessa di chi parla (vento, motori, strada), non solo nei letti: ogni clip
+  parlata passa da `tools/voice_clean.py` (in build: `tl.audio_map`, vedi `clean_voices` in `projects/te/build.py`).
+  La normalizzazione finale è lineare: il loudnorm dinamico alzava il fondo nelle pause.
+- Sotto chi parla solo la sua voce. B-roll muti, niente letti, niente ambienti di transizione. Nei tratti di solo
+  B-roll solo suoni melodici di Audio se servono; altrimenti B-roll brevi (1-2 s).
+- Mai mostrare la clip di chi parla mentre si sente un altro istante della stessa clip (bocca su parole diverse).
+  Controllo obbligatorio prima di consegnare: `PLAN=plan.json python3 projects/<video>/build.py <pezzo>` e
+  `python3 tools/sync_check.py plan.json` (0 problemi).
+- Verticali: sottotitoli sempre su una riga, pezzi brevi che scorrono col parlato (`tools/reel_kit.py` misura la
+  larghezza sul font); controllare i fotogrammi a ogni sottotitolo.

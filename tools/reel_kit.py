@@ -16,6 +16,31 @@ import os
 from doc_render import Timeline, ts, dur_of
 
 GOLD, WHITE = "&H004B8AB6&", "&H00FFFFFF&"
+FONTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "models")
+_FONT = {}
+
+
+def text_w(txt, font, size):
+    """Larghezza in pixel di una riga (senza tag ASS), per tenere ogni scritta dentro la safe zone."""
+    from PIL import ImageFont
+    import re
+    if (font, size) not in _FONT:
+        _FONT[(font, size)] = ImageFont.truetype(f"{FONTS}/{font}", size)
+    return _FONT[(font, size)].getlength(re.sub(r"{[^}]*}", "", txt))
+
+
+def one_line(txt, fit):
+    """Spezza una battuta in pezzi brevi su UNA riga: fit(testo) -> True se il pezzo ci sta."""
+    out, cur = [], []
+    for w in txt.split():
+        if cur and not fit(" ".join(cur + [w])):
+            out.append(" ".join(cur)); cur = []
+        cur.append(w)
+        if (w[-1] in ".?!" and len(" ".join(cur)) >= 8) or (w[-1] in ",:;" and len(" ".join(cur)) >= 14):  # pausa: pezzo nuovo
+            out.append(" ".join(cur)); cur = []
+    if cur:
+        out.append(" ".join(cur))
+    return out
 
 
 class Reel:
@@ -57,13 +82,13 @@ class Reel:
         return f
 
     # ---------- parlato ----------
-    def narr(self, src, a, b, visuals, words=(), speed=None, cuts=()):
+    def narr(self, src, a, b, visuals, words=(), speed=None, cuts=(), pad=(0.06, 0.12)):
         """Voce di una clip sopra immagini: visuals = [(funzione, durata o None)]; None si divide il resto.
         cuts: pause interne da togliere [(da, a)] in tempi della sorgente (la voce diventa più tratti attaccati)."""
         sp = speed or self.SP
         t0 = self.tl.t
         # margini per non mangiare le parole: 0.06 s prima, 0.12 s dopo (anche ai bordi delle pause tolte)
-        a, b = max(0.0, a - 0.06), min(b + 0.12, dur_of(src) - 0.05)
+        a, b = max(0.0, a - pad[0]), min(b + pad[1], dur_of(src) - 0.05)
         cuts = [(ca + 0.12, cb - 0.06) for ca, cb in cuts if cb - ca > 0.3]
         ranges, cur = [], a
         for ca, cb in sorted(cuts):
@@ -86,12 +111,12 @@ class Reel:
         removed = sum(min(cb, t_src) - ca for ca, cb in cuts if t_src > ca)
         return t0 + (t_src - a - removed) / (speed or self.SP)
 
-    def cam(self, src, a, b, words=(), speed=None, cx=None, fx=None, block=None):
+    def cam(self, src, a, b, words=(), speed=None, cx=None, fx=None, block=None, pad=(0.06, 0.12)):
         """Parlato in camera, labiale in sincrono.
         block: [(a, b, italiano, originale)] per le battute in altra lingua: italiano al centro, originale in basso."""
         sp = speed or self.SP
         t0 = self.tl.t
-        a, b = max(0.0, a - 0.06), min(b + 0.12, dur_of(src) - 0.05)   # margini sulle parole
+        a, b = max(0.0, a - pad[0]), min(b + pad[1], dur_of(src) - 0.05)   # margini sulle parole
         self.tl.speech(src, [(a, b)], speed=sp, cx=self.CX if cx is None else cx,
                        fx=fx or dict(zoom=(1.06, 1.0, 0.3)))
         self.words(t0, a, words, sp)
@@ -103,15 +128,36 @@ class Reel:
         self.titles.append((a, b, txt, style, y))
 
     # ---------- sottotitoli animati e titoli ----------
-    @staticmethod
-    def _chunks(ws):
+    def fits(self, txt, font="Poppins-Medium.ttf", size=58, scale=1.12):
+        """La riga sta nella safe zone (84% della larghezza) anche al picco dell'animazione (scale)?
+        Il grassetto sintetico allarga il Poppins di circa il 6%."""
+        return text_w(txt, font, int(round(size * self.K))) * scale * 1.06 <= 0.84 * self.W
+
+    def _chunks(self, ws):
         out, cur = [], []
         for w, t in ws:
+            if cur and not self.fits(" ".join(x for x, _ in cur + [(w, t)])):
+                out.append(cur); cur = []
             cur.append((w, t))
             if len(cur) >= 3 or len(" ".join(x for x, _ in cur)) >= 16 or w[-1] in ".,?!":
                 out.append(cur); cur = []
         if cur:
             out.append(cur)
+        return out
+
+    def _split_blocks(self):
+        """Battute tradotte (block) in pezzi brevi su una riga che scorrono col parlato: ogni pezzo dura in
+        proporzione alle sue lettere (Manuel 27/10 sera: prima uscivano dallo schermo)."""
+        out = []
+        for a, b, it, orig in self.blocks:
+            its = one_line(it, self.fits)
+            ors = one_line(orig, lambda x: self.fits(x, size=44, scale=1.0)) if orig else []
+            for parts, kind in ((its, "it"), (ors, "orig")):
+                tot = sum(len(x) + 3 for x in parts)
+                t = a
+                for x in parts:
+                    d = (b - a) * (len(x) + 3) / tot
+                    out.append((t, t + d, x, kind)); t += d
         return out
 
     def ass(self, end):
@@ -129,7 +175,8 @@ class Reel:
                 "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
         ev, y_cap, y_orig = [], S(1180), S(1440)
         cs = self._chunks(sorted(self.words_, key=lambda x: x[1]))
-        starts = sorted([c[0][1] for c in cs] + [bl[0] for bl in self.blocks])
+        blk = self._split_blocks()
+        starts = sorted([c[0][1] for c in cs] + [x[0] for x in blk if x[3] == "it"])
         for ci, c in enumerate(cs):
             nxt = [s for s in starts if s > c[0][1] + 1e-3]
             c_end = min(nxt[0] if nxt else end, c[-1][1] + 1.0)   # mai due sottotitoli insieme
@@ -138,12 +185,18 @@ class Reel:
                 parts = [(f"{{\\c{GOLD}}}" if j == i else f"{{\\c{WHITE}}}") + x for j, (x, _) in enumerate(c)]
                 pop = "\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)" if i == 0 else ""
                 ev.append((1, t, e, "Cap", f"{{\\an5\\pos({W // 2},{y_cap}){pop}}}" + " ".join(parts)))
-        for a, b, it, orig in self.blocks:
-            ev.append((1, a, b, "Cap", f"{{\\an5\\pos({W // 2},{y_cap})\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)}}{it}"))
-            if orig:
-                ev.append((1, a, b, "Orig", f"{{\\an5\\pos({W // 2},{y_orig})}}{orig}"))
+        for a, b, txt, kind in blk:
+            if kind == "it":
+                ev.append((1, a, b, "Cap", f"{{\\an5\\pos({W // 2},{y_cap})\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)}}{txt}"))
+            else:
+                ev.append((1, a, b, "Orig", f"{{\\an5\\pos({W // 2},{y_orig})}}{txt}"))
         for a, b, txt, st, y in self.titles:
-            tag = (f"{{\\an5\\pos({W // 2},{S(y)})\\fscx125\\fscy125\\alpha&HFF&"
+            # titolo: se una riga non ci sta (anche al 125% dell'entrata) si rimpicciolisce il carattere
+            size = {"Big": 190, "Mid": 96, "Small": 46}.get(st, 96)
+            font = "Poppins-Medium.ttf" if st == "Small" else "Anton-Regular.ttf"
+            wmax = max(text_w(x, font, S(size)) for x in txt.split("\\N")) * 1.25
+            fs = f"\\fs{int(S(size) * 0.86 * W / wmax)}" if wmax > 0.86 * W else ""
+            tag = (f"{{\\an5\\pos({W // 2},{S(y)}){fs}\\fscx125\\fscy125\\alpha&HFF&"
                    f"\\t(0,140,\\fscx100\\fscy100\\alpha&H00&)\\fad(0,120)}}")
             ev.append((2, a, b, st, tag + txt))
         ev += self.raw_ass
