@@ -129,8 +129,8 @@ Regole tra chat:
   2. Prova il token: `tools/drive_upload.sh mercato <file piccolo>` prima dei render lunghi.
   3. `python3 projects/mercato/build.py trailer|reelA|reelB|reelC|long` (`--preview` per una prova veloce;
      il lungo 4K richiede ~2 ore).
-- Arthunkal (cartella 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX, "Festa pellegrinaggio Kerala"): consegnato il 25/10 su Drive
-  in montati/arthunkal (lungo v2 5:41 4K `VociVere_arthunkal_long_4K.mp4` + 4 verticali), in attesa dell'ok di Manuel.
+- Arthunkal (cartella 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX, "Festa pellegrinaggio Kerala"): APPROVATO da Manuel il 27/10
+  (v4: lungo 6:49 4K `VociVere_arthunkal_long_4K.mp4` + 4 verticali in montati/arthunkal; capitoli in piano/calendario.md).
   Rifare: `python3 projects/arthunkal/build.py long|v1|v2|v3|v4` (girato in work/arthunkal/raw da Drive con rclone). Tutto in `projects/arthunkal/` (brief.md con le decisioni di Manuel, vo_blocchi.md, copione.md).
   Grafiche: `tools/route_map.py` (mappa approvata), `tools/timeline_anim.py` (linea del tempo).
 - I processi in background si fermano quando la sessione va in pausa: tenere il turno attivo con attese in
