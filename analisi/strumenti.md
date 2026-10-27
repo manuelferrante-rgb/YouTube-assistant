@@ -26,3 +26,5 @@ uno scopo chiaro. Si aggiorna a ogni revisione.
 
 ## Prossime revisioni
 - Dopo i dati di mercato a 7 giorni (8/11) e poi a fine viaggio in Kerala: cosa è servito davvero e cosa togliere.
+
+Nota da Pianificazione, 27/10: Manuel ha deciso di NON usare immagini IA (Cloudflare Workers AI incluso), nemmeno per `te`. Voce "Da valutare" chiusa.
