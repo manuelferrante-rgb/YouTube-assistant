@@ -368,7 +368,14 @@ class Timeline:
         else:
             fc.append(f"[vok]anullsink;[natk]anullsink")
             fc.append(f"[nat][vo]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1:LRA=9,aresample=48000[a]")
-        mix = f"{self.dir}/mix.wav"
+        stem = os.environ.get("STEM")  # diagnosi: solo una traccia (nat = clip+effetti, vo, mus) senza loudnorm
+        if stem:
+            fc = [c for c in fc if not c.startswith("[nat][vo]")]
+            other = {"nat": "[vo]anullsink;[mus]anullsink" if mu_labels else "[vo]anullsink",
+                     "vo": "[nat]anullsink;[mus]anullsink" if mu_labels else "[nat]anullsink",
+                     "mus": "[nat]anullsink;[vo]anullsink"}[stem]
+            fc.append(f"[{stem}]anull[a];{other}")
+        mix = f"{self.dir}/mix.wav" if not stem else f"{self.dir}/stem_{stem}.wav"
         run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(fc), "-map", "[a]",
              "-c:a", "pcm_s16le", "-ar", "48000", "-t", f"{total:.3f}", mix])
 
@@ -391,6 +398,8 @@ class Timeline:
                 os.replace(f"{self.dir}/mix_f.wav", mix)
                 print(f"buchi riempiti con aria vera: {len(holes)}", flush=True)
 
+        if stem:
+            return mix
         if os.environ.get("MIXONLY"):  # controllo rapido del mix prima della codifica finale
             self.check(mix); return mix
 
