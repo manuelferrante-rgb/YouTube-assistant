@@ -14,6 +14,25 @@ import numpy as np, soundfile as sf
 SR, N, HOP = 48000, 2048, 512
 
 
+RNN_URL = "https://raw.githubusercontent.com/GregorR/rnnoise-models/master/conjoined-burgers-2018-08-28/cb.rnnn"
+RNN = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "rnnoise", "cb.rnnn")
+
+
+def clean_rnn(src, out):
+    """RNNoise (rete neurale addestrata sul parlato, filtro arnndn di ffmpeg): toglie vento, motori e strada molto più
+    della riduzione spettrale (gancio 115233, 27/10 sera: pause da -27 a -59 dB, voce intatta). Il filtro ritarda di
+    480 campioni a 48 kHz (10 ms, misurato): si tolgono, così il labiale non cambia."""
+    if not os.path.exists(RNN):
+        os.makedirs(os.path.dirname(RNN), exist_ok=True)
+        subprocess.run(["curl", "-sSfL", "-o", RNN, RNN_URL], check=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-map", "0:a:0", "-ar", str(SR), "-af",
+                    f"aformat=channel_layouts=mono,highpass=f=100,highpass=f=100,arnndn=m={RNN},"
+                    "atrim=start_sample=480,asetpts=PTS-STARTPTS,pan=stereo|c0=c0|c1=c0", "-c:a", "pcm_s16le", out],
+                   check=True)
+    print(f"voce pulita (RNNoise) {os.path.basename(src)}", flush=True)
+    return out
+
+
 def clean(src, out, floor=None, alpha=None):
     """floor/alpha None: forza scelta dal rapporto voce/fondo della clip (misurato 27/10 sul gancio 115233:
     fondo nelle pause -12 dB con 0.06/4, voce -4 dB prima della normalizzazione per inquadratura)."""
@@ -59,11 +78,11 @@ def clean(src, out, floor=None, alpha=None):
 
 def cleaned(src, workdir):
     os.makedirs(workdir, exist_ok=True)
-    out = f"{workdir}/voce_{os.path.splitext(os.path.basename(src))[0]}.wav"
+    out = f"{workdir}/voce_rnn_{os.path.splitext(os.path.basename(src))[0]}.wav"
     if not os.path.exists(out):
-        clean(src, out)
+        clean_rnn(src, out)
     return out
 
 
 if __name__ == "__main__":
-    clean(sys.argv[1], sys.argv[2])
+    clean_rnn(sys.argv[1], sys.argv[2])

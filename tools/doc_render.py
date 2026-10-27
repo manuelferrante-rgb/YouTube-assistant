@@ -148,8 +148,11 @@ class Timeline:
         self.t -= T
         return T
 
-    def music(self, t0, t1, track, offset=0.0, level=0.35, fin=1.0, fout=1.5):
-        self.musics.append(dict(t0=t0, t1=t1, track=track, offset=offset, level=level, fin=fin, fout=fout))
+    def music(self, t0, t1, track, offset=0.0, level=0.35, fin=1.0, fout=1.5, duck=True, norm=True):
+        """duck=False: volume costante anche sotto la voce; norm=False: il brano entra com'è (solo guadagno fisso),
+        per la musica già masterizzata dalla chat Audio (Manuel 27/10: bassissima, stesso volume, senza perdere nulla)."""
+        self.musics.append(dict(t0=t0, t1=t1, track=track, offset=offset, level=level, fin=fin, fout=fout, duck=duck,
+                                norm=norm))
 
     # ---------- render ----------
     def _vf(self, s):
@@ -349,8 +352,10 @@ class Timeline:
             inputs += ["-i", m["track"]]
             k = len(inputs) // 2 - 1
             d = m["t1"] - m["t0"]
+            ln = "loudnorm=I=-18:TP=-2,aresample=48000," if m.get("norm", True) else ""
+            dk = f"volume='{duck_expr(m['t0'])}':eval=frame," if m.get("duck", True) else ""
             fc.append(f"[{k}:a]atrim={m['offset']:.3f}:{m['offset'] + d:.3f},asetpts=PTS-STARTPTS,aresample=48000,"
-                      f"loudnorm=I=-18:TP=-2,aresample=48000,volume={m['level']},volume='{duck_expr(m['t0'])}':eval=frame,"
+                      f"{ln}volume={m['level']},{dk}"
                       f"afade=t=in:d={m['fin']},afade=t=out:st={max(0, d - m['fout']):.3f}:d={m['fout']},"
                       f"adelay={int(m['t0'] * 1000)}:all=1,apad=whole_dur={total:.3f}[mu{j}]")
             mu_labels.append(f"[mu{j}]")

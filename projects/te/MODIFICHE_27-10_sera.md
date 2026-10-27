@@ -74,3 +74,18 @@ Regole nuove di Manuel (27/10 sera):
   Musica nuova `musica_te_luce` sotto i voiceover NON messa: Audio scrive "se Manuel la vuole", si chiede a lui.
   Lungo: l'immagine non cambia, quindi il nuovo mix (dall'anteprima, stessi tempi, scarto 0 misurato) è stato rimontato
   sul 4K già codificato invece di rifare 2 ore di render.
+
+## v5 (27/10 sera, dopo il teaser v4: Manuel sentiva ancora il rumore all'inizio)
+- Il rumore era ancora quello della clip 115233 (vento/motore registrato insieme alla voce), non musica: nella v4 non
+  c'era nessuna musica. Ora `tools/voice_clean.py` usa RNNoise (`arnndn` di ffmpeg, modello cb scaricato in
+  work/rnnoise): nel gancio il fondo tra le parole va da -27 a -57 dB (v4: -36), voce intatta, ritardo di 480 campioni
+  compensato (labiale invariato). Anche `voiced()` in build.py legge la voce pulita: i tagli non scambiano più il fondo
+  per parole (il gancio non ha più 0.9 s di coda vuota dopo "britannico").
+- Musica: SOLO `projects/te/audio/musica_te_luce.flac` (la nuova di Audio, = Drive montati/te/audio/musica_colline.wav
+  del 27/10). La vecchia scura non c'è più nemmeno in work/. Bassissima e costante (`bg()`, level 0.1, circa 23 dB sotto
+  la voce, niente ducking né loudnorm sul brano), dove l'ha chiesta Manuel: dal paesaggio dopo "Sono a Munnar" fino alla
+  fine del VO 3 (si ferma quando parla Sadish), sotto la storia (VO 4-6, 9-10, 11). Niente sotto le interviste, la
+  raccolta e le statistiche (VO 7, 8, 12), né nel gancio del lungo. Il brano continua da un tratto all'altro (offset).
+- Teaser rifatto come l'intro del lungo, più veloce: 115233, 1877 su Sadish, VO 1, "le foglie... raccolte a mano"
+  (mani che raccolgono, poi Manuel), la frase sulla storia, "E oggi, di chi sono?" con `cue_domanda`, mini sigla.
+  Musica di Audio bassissima sotto tutto fino alla domanda.
