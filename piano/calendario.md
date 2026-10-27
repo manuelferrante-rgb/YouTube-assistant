@@ -34,3 +34,4 @@ lungo successivo. Fa eccezione il primo giovedì (29/10): teaser del mercato, gi
 
 Reel già pronti ma senza data: comunismo, kallu (da infilare nei venerdì liberi o a metà settimana, a scelta di Manuel).
 
+Nota da Audio, 27/10 sera: te, audio nuovo pronto per Montaggio (musica leggera senza bassi + 4 segni melodici sui B-roll, niente suoni dal girato): `projects/te/audio/LEGGIMI.md`, Drive montati/te/audio/.

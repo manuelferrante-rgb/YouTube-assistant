@@ -2,6 +2,11 @@
 
 Leggi prima CLAUDE.md, poi questo file, `regole/audio.md` e `audio/catalogo.md`. Si risponde in italiano.
 
+## REGOLA NUOVA (Manuel, 27/10 sera): prevale su tutto quello che segue
+Niente suoni dal girato né ambienti; solo musica e segni melodici composti da noi, solo sui momenti di solo B-roll e se
+servono; sotto chi parla niente o musica molto bassa; niente tappeto basso, passa-alto 160 Hz; controllo con
+`audio/kit/bande.py` (niente sotto 150 Hz) prima di consegnare. Dettagli in `regole/audio.md`.
+
 ## Come lavora la chat Audio (decisioni di Manuel)
 - Sound design naturale e professionale, mai forzato. Fonti in quest'ordine: suoni veri del girato di Manuel
   (cartella Drive del video); registrazioni "wild" di Manuel (20-30 s senza parlare); sintesi solo per suoni astratti,
@@ -40,7 +45,9 @@ Leggi prima CLAUDE.md, poi questo file, `regole/audio.md` e `audio/catalogo.md`.
   (json: `musica_lungo_v4.json`), integrata da Montaggio. Kit, letto del gancio, transizioni in `projects/arthunkal/audio/`.
   In sospeso: il ding della mappa è PROVVISORIO (nessuna campana nel girato): sostituirlo se Manuel registra un bicchiere
   d'acciaio o una campana. Se Manuel segnala un punto della musica, spostarlo nel json e rigenerare.
-- te (tè di Munnar): suoni e voiceover ripulito consegnati (vedi `projects/te/audio/LEGGIMI.md`). Musica sul lungo v1
+- te, 27/10 sera: TUTTO RIFATTO con la regola nuova (vedi `projects/te/audio/LEGGIMI.md`): musica `te_luce` (su Drive
+  con il vecchio nome musica_colline.wav), 4 segni melodici cue_*. I vecchi suoni sono in `projects/te/audio/dismessi/`.
+  Storia precedente: suoni e voiceover ripulito consegnati (vedi `projects/te/audio/LEGGIMI.md`). Musica sul lungo v1
   (437.90 s) in `projects/te/audio/musica_voiceover_lungo.flac` (json `musica_lungo_v1.json`): Montaggio la integra dopo
   l'ok di Manuel sul montaggio; se i tempi cambiano, rigenerarla. `fabbrica_provvisorio` da sostituire se arriva una
   registrazione vera. Il reel del bucato (105047, 105115): suono vero dell'acqua, musica leggera mai triste se serve.
