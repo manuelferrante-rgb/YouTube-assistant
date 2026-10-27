@@ -219,3 +219,21 @@ Nota da Copy, 26/10 (regola di Manuel): titolo e miniatura sono la curiosità pi
 del lungo devono riprenderla, così lo spettatore trova subito quello che si aspettava. Il gancio iniziale si
 decide insieme a Copy. Quando Manuel dà l'ok al montato, avvisare Copy: solo allora fa sottotitoli it/en, titolo,
 descrizione, capitoli e miniatura.
+
+## Regole di Manuel dal montaggio di arthunkal e te (26-27/10): valgono per ogni video e ogni pezzo
+- MAI vuoti: niente B-roll senza nessuno che parla e niente silenzi dentro le frasi. Le frasi spezzate da pause
+  si tagliano e si uniscono in modo che suonino come un'unica frase (anche tra due clip diverse).
+- MAI parole mangiate né ripetute: ogni taglio aspetta la fine della parola (in `projects/arthunkal/build.py`
+  e `projects/te/build.py` c'è `snap`, che segue la voce vera). Dove si toglie una ripetizione ("ne ne") il taglio
+  si ferma prima della parola dopo: controllare a orecchio, o riascoltando con la trascrizione, il punto del taglio.
+- Il B-roll segue il parlato: entra MENTRE la persona dice la cosa (la pioggia mentre dice "solo acqua piovana",
+  la grafica e subito dopo le carte mentre si dice l'anno della legge), poi si torna a chi parla.
+- Si toglie dalle interviste tutto ciò che non serve (saluti, "com'è?", "bella", domande a cui la persona risponde
+  altro): si parte dalla prima frase che conta.
+- Niente scene dal finestrino del bus o con lo specchietto o con il vento forte nel microfono: si usano scene
+  naturali e coerenti con quello che si sta dicendo, con poco suono sotto la voce.
+- Mappa solo quando serve davvero (non nel video del tè); niente troppi panorami verdi di fila: dopo una frase
+  sul luogo basta un attimo di paesaggio, poi si riparte con il racconto.
+- Trascrizioni automatiche: nelle clip rumorose sbagliano parole e tempi. Prima di fare sottotitoli o tagli
+  su quelle clip si ritrascrive a pezzi e si controlla (in arthunkal i tempi scritti a mano erano sbagliati di 1-3 s).
+- Suoni della chat Audio: si mettono sempre, insieme ai suoni originali del girato (non al loro posto).
