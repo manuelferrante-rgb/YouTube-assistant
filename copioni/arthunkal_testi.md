@@ -67,8 +67,13 @@ reel lun-gio con il carosello mercoledì.
 ### Titolo
 IT: Di notte sulla spiaggia in India: 13 km di rosario senza fermarsi 🇮🇳
 EN: All night on an Indian beach: a 13 km rosary that never stops 🇮🇳
-Miniatura consigliata: B "UNA STATUA DI MILANO SULLA COSTA DELL'INDIA" (i primi 30 s hanno sia i 13 km di rosario
-sia "Da Milano, 1647", quindi titolo e miniatura sono mantenuti subito).
+Miniatura: NON Milano (Manuel, 27/10: Milano va bene solo nel reel V2). Il focus è il cammino di notte: si parte a
+mezzanotte e si cammina per chilometri. Nuove prove in copioni/arthunkal_miniature/ e su Drive montati/arthunkal/miniatura:
+D "DA MEZZANOTTE / 13 KM A PIEDI" (folla di notte), E "TUTTA LA NOTTE / A PIEDI, PREGANDO", F "CAMMINANO / DA
+MEZZANOTTE" (alba sulla spiaggia), A "2:30 DI NOTTE / 13 KM PREGANDO". Da far scegliere a Manuel.
+ATTENZIONE fatti: Manuel vorrebbe "tradizione da secoli", ma questo cammino esiste dal 2002 (fonte: santuario).
+Antico è il santuario di Arthunkal (chiesa del 1584, statua del 1647, festa a gennaio). Non scrivere "da secoli"
+riferito al cammino.
 
 ### Descrizione IT
 Mezzanotte, Kalavoor, costa del Kerala. Da qui parte un rosario che non si interrompe mai: si recita camminando
