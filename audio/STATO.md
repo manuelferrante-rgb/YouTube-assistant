@@ -10,6 +10,11 @@ Niente suoni dal girato né ambienti; solo musica e segni melodici composti da n
 servono; sotto chi parla niente o musica molto bassa; niente tappeto basso, passa-alto 160 Hz; controllo con
 `audio/kit/bande.py` (niente sotto 150 Hz) prima di consegnare. Dettagli in `regole/audio.md`.
 
+## In sospeso al 28/10: niente
+Arthunkal e tè sono approvati e chiusi (il ding provvisorio di Arthunkal resta così: con la regola nuova non si
+registrano più suoni veri). Per il prossimo video: musica originale a tema (`audio/musica/compose.py`, un brano nuovo
+per video) e segni melodici `cue_*` solo sui B-roll senza parlato, consegna come in `projects/te/audio/LEGGIMI.md`.
+
 ## Come lavora la chat Audio (decisioni di Manuel)
 - Sound design naturale e professionale, mai forzato. Fonti in quest'ordine: suoni veri del girato di Manuel
   (cartella Drive del video); registrazioni "wild" di Manuel (20-30 s senza parlare); sintesi solo per suoni astratti,
