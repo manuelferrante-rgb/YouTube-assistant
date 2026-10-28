@@ -322,8 +322,9 @@ class Timeline:
             inputs += ["-i", self.audio_map.get(v["file"], v["file"])]
             k = len(inputs) // 2 - 1
             dvo = (v["b"] - v["a"]) / v["speed"]
+            xaf = f"{v['af']}," if v.get("af") else ""   # filtro in più per una sola voce (es. registrazione con più bassi)
             fc.append(f"[{k}:a]atrim={v['a']:.3f}:{v['b']:.3f},asetpts=PTS-STARTPTS,atempo={v['speed']},aresample=48000,"
-                      f"highpass=f=90,highpass=f=90,afftdn=nf=-30,{AFFTDN_FIX},loudnorm=I=-16:TP=-2:LRA=6,aresample=48000,"
+                      f"{xaf}highpass=f=90,highpass=f=90,afftdn=nf=-30,{AFFTDN_FIX},loudnorm=I=-16:TP=-2:LRA=6,aresample=48000,"
                       f"afade=t=in:d=0.04,afade=t=out:st={dvo - 0.08:.3f}:d=0.08,"
                       f"adelay={int(v['t'] * 1000)}:all=1,apad=whole_dur={total:.3f}[vo{j}]")
             vo_labels.append(f"[vo{j}]")

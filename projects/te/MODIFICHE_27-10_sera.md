@@ -100,3 +100,11 @@ Regole nuove di Manuel (27/10 sera):
   leggero gracchiato rimasto è il vento/motore registrato sotto le parole, che RNNoise non può togliere mentre parla.
 - Lungo: l'intro nuova (16.63 s) è stata resa in 4K da sola e attaccata alla v5 dalla sigla in poi (frame 635), con
   il mix completo nuovo: niente da rifare dopo la sigla. Lungo 6:19.
+
+## v7 (28/10): chiusura del canale
+- Manuel ha mandato `Rajmala_3.m4a` (ora in `projects/te/vo/rajmala_3.m4a`): "Il viaggio di Voci Vere, per dar voce a
+  chi ne ha più bisogno, continua. Seguimi per scoprire le prossime storie." Va dopo il VO 14, prima del logo: prima
+  frase sul bus colorato che passa (161012), seconda sulla camminata tra i filari che si apre sulle colline (115728).
+  D'ora in poi è il "tag" di chiusura di ogni video (da preparare nel copione dei prossimi).
+- La chiusura dura 14 s: torna il capitolo "Chiusura" (6:09). Lungo 6:24.
+- Render: solo il finale in 4K (dal VO 14) attaccato alla v6 al frame 11089, con il mix completo nuovo.

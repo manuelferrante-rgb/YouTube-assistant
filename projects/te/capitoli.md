@@ -1,13 +1,14 @@
-# te: minutaggi dei capitoli del lungo (v6 del 27/10 sera, 6:19)
+# te: minutaggi dei capitoli del lungo (v7 del 28/10, 6:24, con la chiusura del canale)
 
 Titoli di lavoro: quelli definitivi it/en li scrive Copy dopo l'ok di Manuel. Nessuna scritta dei capitoli nel video.
-"Chiusura" sta nel capitolo del chai (da sola durerebbe meno di 10 s).
+"Chiusura" torna capitolo: con la frase "Il viaggio di Voci Vere... continua" dura 14 s.
 
 - 0:00 Le colline del tè
 - 0:22 Munnar
 - 0:44 Con Sadish tra i filari
 - 3:28 La storia e chi ci lavora
 - 5:42 Il tè del chai master
+- 6:09 Chiusura
 
 Voiceover (s):
 - 4.57	7.65	vo_1_44577056.wav
@@ -23,3 +24,4 @@ Voiceover (s):
 - 305.65	317.31	vo_11_65956914.wav
 - 334.62	341.79	vo_12_56979152.wav
 - 370.03	374.50	vo_14_93533385.wav
+- 374.73	380.02	vo_tag_16186724.wav
