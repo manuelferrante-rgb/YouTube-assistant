@@ -268,3 +268,7 @@ descrizione, capitoli e miniatura.
   volume costante (circa 23 dB sotto la voce, `Timeline.music(..., duck=False, norm=False)`), sotto voiceover e B-roll,
   mai sotto le interviste. Prima di usare un file di musica controllare che sia quello dell'ultima consegna di Audio
   (le vecchie versioni stanno in `dismessi/` o `vecchi/` e non si usano).
+- Chiusura di ogni lungo (Manuel, 28/10): dopo la riflessione finale e prima del logo, la frase di Manuel "Il viaggio di
+  Voci Vere, per dar voce a chi ne ha più bisogno, continua. Seguimi per scoprire le prossime storie" (registrazione in
+  `projects/te/vo/rajmala_3.m4a`) su B-roll di Manuel a tema viaggio (strada, mezzi che passano, camminata). Con questa
+  la chiusura supera i 10 s e diventa capitolo "Chiusura".

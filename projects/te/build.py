@@ -21,7 +21,8 @@ R = f"{WORK}/raw"
 OUT = f"{WORK}/out"
 GFX = f"{WORK}/gfx"
 AUD = f"{ROOT}/projects/te/audio"          # suoni e musica forniti dalla chat Audio
-VO1 = f"{WORK}/vo/vo_te_pulito.wav"                # VO ripulito da Audio (stessi tempi di Rajmala.m4a)
+VO1 = f"{WORK}/vo/vo_te_pulito.wav"
+VO_TAG = f"{ROOT}/projects/te/vo/rajmala_3.m4a"   # chiusura del canale (Manuel 28/10): "Il viaggio di Voci Vere... continua"                # VO ripulito da Audio (stessi tempi di Rajmala.m4a)
 os.makedirs(OUT, exist_ok=True); os.makedirs(GFX, exist_ok=True)
 
 # 27/10 sera (Manuel): la vecchia musica_colline (scura, 60-250 Hz) non si usa più da nessuna parte.
@@ -430,12 +431,12 @@ QUIET = (C("114701"), 0.0)                                          # panorama t
 PX = lambda i: f"{WORK}/stock/px_{i}.mp4"                           # Pixabay: solo immagini generiche, senza persone
 
 
-def vo_over(e, name, ranges, items, lead=0.15, tail=0.25, music=None, **kw):
+def vo_over(e, name, ranges, items, lead=0.15, tail=0.25, music=None, af=None, **kw):
     """Voiceover sopra immagini e grafiche: items = [(clip, inizio, durata) | (grafica, None, durata)];
     durata None = si divide il resto. -> (t0 della voce, durata della voce)."""
     f, d = VO(name, ranges, **kw)
     t0 = e.t
-    e.tl.vos.append(dict(file=f, a=0, b=d, speed=1.0, t=t0 + lead))
+    e.tl.vos.append(dict(file=f, a=0, b=d, speed=1.0, t=t0 + lead, **({"af": af} if af else {})))
     total = lead + d + tail
     fixed = sum(x[2] for x in items if x[2])
     rest = max(0.8, total - fixed) / max(1, sum(1 for x in items if not x[2]))
@@ -598,7 +599,12 @@ def long_video(W, H):
     # 5. CHIUSURA: VO 14 sulla sera e la nebbia, logo Voci Vere
     t_f = e.t
     vo_over(e, "14", [(155.36, 160.21)], [(C("160612"), 0.5, None), (C("152338"), 0.5, None)],   # niente bus (27/10)
-            lead=0.4, tail=0.6)
+            lead=0.4, tail=0.15)
+    # chiusura del canale (Manuel 28/10, Rajmala_3): "Il viaggio di Voci Vere, per dar voce a chi ne ha più bisogno,
+    # continua" sul bus colorato che passa (161012), "Seguimi per scoprire le prossime storie" sulla camminata tra i
+    # filari che si apre sulle colline (115728); poi il logo
+    vo_over(e, "tag", [(1.22, 4.66), (5.05, 7.2)], [(C("161012"), 1.1, 3.4), (C("115728"), 1.5, None)], src=VO_TAG,
+            lead=0.1, tail=0.4, af="highpass=f=120,highpass=f=120")   # registrata con più bassi del VO pulito da Audio
     tl._add(logo_card(C("115803"), 2.5, 3.5, W, H, f"{OUT}/fine_logo_{W}x{H}.mp4"), 0, 3.5, audio=False,
             grade="null", fade=0.05)
     tl.shots[-1]["fx"] = dict(black_out=0.4)
@@ -607,7 +613,7 @@ def long_video(W, H):
     # niente fruscii sulle grafiche; voce pulita, i suoni di Audio solo dove servono. Bassi tolti dal suono delle clip.
     tl.nat_af = "highpass=f=90"
     chapters = [(0.0, "Le colline del tè"), (t_m, "Munnar"), (t_s, "Con Sadish tra i filari"),
-                (t_h, "La storia e chi ci lavora"), (t_c, "Il tè del chai master")]   # chiusura < 10 s: nel capitolo del chai
+                (t_h, "La storia e chi ci lavora"), (t_c, "Il tè del chai master"), (t_f, "Chiusura")]
     out = f"{OUT}/VociVere_te_long_{W}x{H}.mp4"
     with open(f"{OUT}/voiceover_{W}x{H}.txt", "w") as fh:
         for v in tl.vos:
