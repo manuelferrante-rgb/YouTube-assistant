@@ -45,6 +45,9 @@ servono; sotto chi parla niente o musica molto bassa; niente tappeto basso, pass
   (json: `musica_lungo_v4.json`), integrata da Montaggio. Kit, letto del gancio, transizioni in `projects/arthunkal/audio/`.
   In sospeso: il ding della mappa è PROVVISORIO (nessuna campana nel girato): sostituirlo se Manuel registra un bicchiere
   d'acciaio o una campana. Se Manuel segnala un punto della musica, spostarlo nel json e rigenerare.
+- te: APPROVATO da Manuel (v7, 28/10). Il rumore "camion" era nelle clip di chi parla (115233, strada del chiosco),
+  non nei file di Audio: Montaggio lo toglie con RNNoise (`tools/voice_clean.py`). Usati: musica_te_luce bassissima
+  (dopo "Sono a Munnar" e sotto la storia), cue_domanda, cue_storia. Non usati: cue_citta, cue_chai.
 - te, 27/10 sera: TUTTO RIFATTO con la regola nuova (vedi `projects/te/audio/LEGGIMI.md`): musica `te_luce` (su Drive
   con il vecchio nome musica_colline.wav), 4 segni melodici cue_*. I vecchi suoni sono in `projects/te/audio/dismessi/`.
   Storia precedente: suoni e voiceover ripulito consegnati (vedi `projects/te/audio/LEGGIMI.md`). Musica sul lungo v1
