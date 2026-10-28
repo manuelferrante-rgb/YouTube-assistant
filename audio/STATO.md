@@ -1,11 +1,19 @@
-# Chat Audio: stato e istruzioni per ripartire (passaggio del 27/10)
+# Chat Audio: stato e istruzioni per ripartire (passaggio del 28/10)
 
 Leggi prima CLAUDE.md, poi questo file, `regole/audio.md` e `audio/catalogo.md`. Si risponde in italiano.
 
-## REGOLA NUOVA (Manuel, 27/10 sera): prevale su tutto quello che segue
+## REGOLA NUOVA (Manuel, 27/10 sera e 28/10): prevale su tutto quello che segue
+La chat Audio crea SOLO musiche e suoni melodici originali, a tema del video (autore Voci Vere). Mai rumori esterni,
+librerie o suoni del girato. Il rumore naturale nella clip di chi parla può restare un po' (fa capire dove siamo):
+è di Montaggio, non nostro.
 Niente suoni dal girato né ambienti; solo musica e segni melodici composti da noi, solo sui momenti di solo B-roll e se
 servono; sotto chi parla niente o musica molto bassa; niente tappeto basso, passa-alto 160 Hz; controllo con
 `audio/kit/bande.py` (niente sotto 150 Hz) prima di consegnare. Dettagli in `regole/audio.md`.
+
+## In sospeso al 28/10: niente
+Arthunkal e tè sono approvati e chiusi (il ding provvisorio di Arthunkal resta così: con la regola nuova non si
+registrano più suoni veri). Per il prossimo video: musica originale a tema (`audio/musica/compose.py`, un brano nuovo
+per video) e segni melodici `cue_*` solo sui B-roll senza parlato, consegna come in `projects/te/audio/LEGGIMI.md`.
 
 ## Come lavora la chat Audio (decisioni di Manuel)
 - Sound design naturale e professionale, mai forzato. Fonti in quest'ordine: suoni veri del girato di Manuel
@@ -45,6 +53,9 @@ servono; sotto chi parla niente o musica molto bassa; niente tappeto basso, pass
   (json: `musica_lungo_v4.json`), integrata da Montaggio. Kit, letto del gancio, transizioni in `projects/arthunkal/audio/`.
   In sospeso: il ding della mappa è PROVVISORIO (nessuna campana nel girato): sostituirlo se Manuel registra un bicchiere
   d'acciaio o una campana. Se Manuel segnala un punto della musica, spostarlo nel json e rigenerare.
+- te: APPROVATO da Manuel (v7, 28/10). Il rumore "camion" era nelle clip di chi parla (115233, strada del chiosco),
+  non nei file di Audio: Montaggio lo toglie con RNNoise (`tools/voice_clean.py`). Usati: musica_te_luce bassissima
+  (dopo "Sono a Munnar" e sotto la storia), cue_domanda, cue_storia. Non usati: cue_citta, cue_chai.
 - te, 27/10 sera: TUTTO RIFATTO con la regola nuova (vedi `projects/te/audio/LEGGIMI.md`): musica `te_luce` (su Drive
   con il vecchio nome musica_colline.wav), 4 segni melodici cue_*. I vecchi suoni sono in `projects/te/audio/dismessi/`.
   Storia precedente: suoni e voiceover ripulito consegnati (vedi `projects/te/audio/LEGGIMI.md`). Musica sul lungo v1
