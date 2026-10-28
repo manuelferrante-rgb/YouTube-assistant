@@ -1,8 +1,11 @@
-# Chat Audio: stato e istruzioni per ripartire (passaggio del 27/10)
+# Chat Audio: stato e istruzioni per ripartire (passaggio del 28/10)
 
 Leggi prima CLAUDE.md, poi questo file, `regole/audio.md` e `audio/catalogo.md`. Si risponde in italiano.
 
-## REGOLA NUOVA (Manuel, 27/10 sera): prevale su tutto quello che segue
+## REGOLA NUOVA (Manuel, 27/10 sera e 28/10): prevale su tutto quello che segue
+La chat Audio crea SOLO musiche e suoni melodici originali, a tema del video (autore Voci Vere). Mai rumori esterni,
+librerie o suoni del girato. Il rumore naturale nella clip di chi parla può restare un po' (fa capire dove siamo):
+è di Montaggio, non nostro.
 Niente suoni dal girato né ambienti; solo musica e segni melodici composti da noi, solo sui momenti di solo B-roll e se
 servono; sotto chi parla niente o musica molto bassa; niente tappeto basso, passa-alto 160 Hz; controllo con
 `audio/kit/bande.py` (niente sotto 150 Hz) prima di consegnare. Dettagli in `regole/audio.md`.

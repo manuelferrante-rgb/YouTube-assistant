@@ -8,6 +8,9 @@
      Sotto chi parla (Manuel, interviste, voiceover) niente, o al massimo la musica molto bassa;
   4. musica leggera e melodica, senza tappeto basso continuo; passa-alto deciso (160 Hz, ripido) su tutto;
   5. prima di consegnare, `python3 audio/kit/bande.py <file>`: niente rombo sotto 150 Hz (deve dire OK).
+  Precisazione di Manuel (28/10): un po' di rumore naturale nella clip di chi parla può restare, fa capire dove siamo
+  (lo gestisce Montaggio con la pulizia della voce). La chat Audio invece non prende MAI rumori esterni o del girato:
+  crea solo musiche e suoni melodici originali, a tema del video, autore Voci Vere.
   Le regole sotto su suoni veri, letti, ambienti e J-cut restano solo come storia (Arthunkal): non si applicano più.
 
 - Suoni NATURALI e professionali, mai "forzati" (Manuel, 24/10). Ordine delle fonti:
