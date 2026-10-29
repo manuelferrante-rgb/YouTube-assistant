@@ -79,10 +79,10 @@ def reel():
     r = Reel(f"{OUT}/reel_{W}_work", W, H, speed=SP, gap=0.0, amb=0.0)      # B-roll muti (27/10 sera)
     tl = r.tl
 
-    # 1. GANCIO (Manuel 29/10, v2): il signore già zoomato, un secondo; poi l'elefante di pietra consumato, e la
-    # rotazione (solo il giro, accelerato) sotto la fine della frase, così "Guardatelo oggi" attacca senza pause
+    # 1. GANCIO (Manuel 29/10): il signore già zoomato, un secondo; poi la torre con la folla (v3: scambiata con
+    # l'elefante), e la rotazione (solo il giro, accelerato) sotto la fine della frase: "Guardatelo oggi" senza pause
     say(r, L1, [(r.own(C("182956"), 2.3, grade=NIGHT, fx=dict(zoom=(1.06, 1.14, None))), 1.1),
-                (r.own(C("180328"), 0.0), None),
+                (r.own(C("180356"), 3.0), None),
                 (r.own(C("180606"), 0.85, speed=1.6), 0.25)])
     r.title(0.0, 2.0, "Saccheggiato nel 1310", "Tag", 400)
     r.cap_y.append((0.0, r.t, 560))                               # all'inizio sottotitoli più in alto (piace a Manuel)
@@ -90,17 +90,16 @@ def reel():
     # 2. "Guardatelo oggi" su Manuel con la torre dietro, poi un secondo dall'alto di notte (la camera che si muove)
     t_riv = say(r, L2, [(r.own(C("180606"), 1.25), None)])
     cue(tl, t_riv, "cue_rivelazione", 3.4, 0.24, fout=0.8)
-    # 3. il tempio da vicino; titoli sulle parole: nome del tempio, poi Madurai e Tamil Nadu
-    t3 = say(r, L3, [(r.own(C("181902"), 0.4, speed=1.5), 1.0), (r.own(C("180356"), 3.0), None)])
+    # 3. l'elefante di pietra fino a "in India", poi l'interno; titoli sulle parole: nome del tempio, poi Madurai e Tamil Nadu
+    t3 = say(r, L3, [(r.own(C("181902"), 0.4, speed=1.5), 1.0), (r.own(C("180328"), 0.0), None)])
     r.title(at(t3, L3, 8.99), at(t3, L3, 9.96), "Tempio di Meenakshi", "Tag", 400)
     r.title(at(t3, L3, 9.96), at(t3, L3, 11.86) + 0.3, "Madurai, Tamil Nadu", "Tag", 400)
     say(r, L4, [(r.own(C("174632"), 1.0), 2.0), (r.own(C("180344"), 1.4), None)])
     say(r, L5, [(r.own(C("175530"), 0.1), 1.4), (r.own(C("180356"), 8.6), None)])
-    # 4. una persona che prega, poi di nuovo il tempio con immagini nuove (torre di notte, inizio della carrellata)
+    # 4. una persona che prega, poi l'inizio della carrellata attorno alla torre
     say(r, L6, [(r.own(C("180524"), 5.6), None)])
     t_b = r.t
     r.cap_stop.append(t_b)
-    r.own(C("181916"), 0.5)(1.0)
     r.own(C("180344"), 0.0)(0.9)
     # 5. chiusura sulla signora anziana, 2 secondi (Manuel: non di più), senza voce
     t_sig = r.t
