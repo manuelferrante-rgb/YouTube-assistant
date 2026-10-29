@@ -54,3 +54,6 @@ Se il 17/9/2026 non si conferma: dire solo 2009 e "ogni 12-17 anni circa" (1995,
 7. Chiusura in camera, una riga.
 Niente fedeli in primo piano senza consenso; luogo di culto vissuto, tono di rispetto, mai "esotico".
 Se Manuel poi entra, quello che gira dentro (dove consentito) è un di più, non necessario.
+
+Nota da Copy, 29/10: Manuel non fa il prima e dopo di sera e forse entra, non lo sa. Il verticale si fa di giorno,
+da fuori (dentro solo se si può filmare), con l'angolo B (torri ridipinte). Copione in `copioni/meenakshi_testi.md`.
