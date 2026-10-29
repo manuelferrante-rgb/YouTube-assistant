@@ -37,12 +37,16 @@ Registrare ogni riga 2 volte, con un secondo di silenzio tra una e l'altra (file
   sculture dipinte. Se tra le clip non ci sono torri, dirmelo e cambio la frase.
 - "Guardatelo oggi" cade alla fine della rotazione: la rotazione è il momento della rivelazione.
 - Niente logo o chiusura lunga: si chiude sulla signora.
-- FRASE FINALE A SCHERMO (Copy, 29/10, sul montato da 19.2 s): da 16.4 s all'ultimo fotogramma, stesso formato
-  dei titoli (Anton bianco su riquadro oro), in alto sopra la testa della signora. Due righe:
-      Seguimi per altre
-      storie dall'India
-  (17 + 17 caratteri, 5 parole). Alternative: "Seguimi: / il viaggio continua" (8 + 19), "Tu ci entreresti?"
-  (17, una riga, domanda che porta ai commenti).
+- CHIUSURA CON CTA E LOGO (Copy, 29/10, sul montato da 19.2 s; sostituisce la frase finale data prima).
+  La frase finisce nel logo: il logo è la fine della frase.
+  - 16.4 s: riquadro oro con Anton bianco, in alto sopra la testa della signora, una riga:
+        Altre storie su
+    (15 caratteri, 3 parole)
+  - 16.6 s: subito sotto il riquadro, il logo `assets/brand/logo_vocivere_trasparente_chiaro.png` (testo bianco,
+    senza sfondo), largo circa il 40% del video, sempre sopra la testa della signora: non deve coprirle il viso.
+    Leggera dissolvenza in entrata (0.2 s), niente animazioni.
+  - Fino all'ultimo fotogramma: la signora sfuma al nero, frase e logo restano e sfumano per ultimi.
+  Alternative: "Seguimi su" + logo (10 caratteri); "Il viaggio continua su" + logo (22 caratteri).
 - Durata finale 20-30 s.
 
 ## PER AUDIO (musica già pronta, `projects/meenakshi/audio/LEGGIMI.md`)
