@@ -173,6 +173,7 @@ class Reel:
                 f"Style: Big,Anton,{S(190)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,2,0,1,{S(3)},{S(5)},5,0,0,0,1\n"
                 f"Style: Mid,Anton,{S(96)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,1,0,1,{S(3)},{S(4)},5,0,0,0,1\n"
                 f"Style: Orig,Poppins,{S(44)},&H00E6E6E6,&H00FFFFFF,&H00000000,&H80000000,0,-1,0,0,100,100,0,0,1,{S(3)},{S(2)},5,0,0,0,1\n"
+                f"Style: Tag,Anton,{S(84)},&H00FFFFFF,&H00FFFFFF,&H004B8AB6,&H00000000,0,0,0,0,100,100,1,0,3,{S(16)},0,5,0,0,0,1\n"
                 f"Style: Small,Poppins,{S(46)},&H004B8AB6,&H00FFFFFF,&H00000000,&H90000000,-1,0,0,0,100,100,1,0,1,{S(3)},{S(2)},5,0,0,0,1\n\n"
                 "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
         ev, y_cap, y_orig = [], S(1180), S(1440)
@@ -196,12 +197,14 @@ class Reel:
                 ev.append((1, a, b, "Orig", f"{{\\an5\\pos({W // 2},{y_orig})}}{txt}"))
         for a, b, txt, st, y in self.titles:
             # titolo: se una riga non ci sta (anche al 125% dell'entrata) si rimpicciolisce il carattere
-            size = {"Big": 190, "Mid": 96, "Small": 46}.get(st, 96)
+            size = {"Big": 190, "Mid": 96, "Small": 46, "Tag": 84}.get(st, 96)
             font = "Poppins-Medium.ttf" if st == "Small" else "Anton-Regular.ttf"
             wmax = max(text_w(x, font, S(size)) for x in txt.split("\\N")) * 1.25
             fs = f"\\fs{int(S(size) * 0.86 * W / wmax)}" if wmax > 0.86 * W else ""
             tag = (f"{{\\an5\\pos({W // 2},{S(y)}){fs}\\fscx125\\fscy125\\alpha&HFF&"
                    f"\\t(0,140,\\fscx100\\fscy100\\alpha&H00&)\\fad(0,120)}}")
+            if st == "Tag":   # riquadro oro che compare di colpo (Manuel, 29/10: "bam", senza dissolvenza)
+                tag = f"{{\\an5\\pos({W // 2},{S(y)}){fs}\\fscx118\\fscy118\\t(0,110,\\fscx100\\fscy100)\\fad(0,100)}}"
             ev.append((2, a, b, st, tag + txt))
         ev += self.raw_ass
         p = f"{self.dir}/reel.ass"
