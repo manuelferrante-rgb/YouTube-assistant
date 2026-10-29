@@ -61,7 +61,7 @@ Pacchetto di ogni lungo: teaser (sabato prima), lungo (domenica), 3 reel, 1 caro
 Vincolo che resta: il carosello mai nel giorno del lungo. I verticali "diversi" (comunismo, kallu, meenakshi,
 bucato) sono curiosità autonome, non legate a un lungo.
 
-Reel già pronti da usare: comunismo, kallu, bucato (te), meenakshi (se il girato arriva). Il reel "come stendere
+Reel già pronti da usare: comunismo, kallu, bucato (te), meenakshi (pronto). Il reel "come stendere
 i panni" NON è per Voci Vere (profilo personale di Manuel). Nessun reel di cucina (errore di Manuel, 29/10).
 Da fare con Manuel: elenco del girato non ancora usato per trovare nuovi verticali (Pianificazione propone, Montaggio
 conferma cosa c'è in `projects/<video>/girato.md`).
