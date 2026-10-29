@@ -40,7 +40,10 @@ l'approvazione e il via di Montaggio. Le date sono orientative.
 | mer 2/12 | te: carosello | |
 | ven 4/12 | bucato (te) | |
 | 5/12 - 12/12 | verticali dal girato | settimana senza lungo |
-| dom 13/12 o 20/12 | prossimo lungo (2-3 settimane dopo te) | video da decidere dal girato che resta |
+| dom 20/12 | nuovo lungo A (3 settimane dopo te) | video da decidere dal girato che resta; teaser sab 19/12 |
+| 21/12 - 1/1 | reel, carosello e verticali dal lungo A, più verticali extra | pausa feste: 2 uscite a settimana bastano |
+| dom 10/1 | nuovo lungo B (3 settimane dopo A) | teaser sab 9/1 |
+| 11/1 - 31/1 | reel e carosello del lungo B, poi verticali dal girato in scorta | Manuel parte per il Vietnam il 31/1: le uscite dei giorni di viaggio vanno programmate prima |
 
 Vincolo che resta: il carosello mai nel giorno del lungo. I verticali "diversi" (comunismo, kallu, meenakshi,
 bucato) sono curiosità autonome, non legate a un lungo.
@@ -51,3 +54,7 @@ Da fare con Manuel: elenco del girato non ancora usato per trovare nuovi vertica
 conferma cosa c'è in `projects/<video>/girato.md`).
 
 Nota da Audio, 27/10 sera: te, audio nuovo pronto per Montaggio (musica leggera senza bassi + 4 segni melodici sui B-roll, niente suoni dal girato): `projects/te/audio/LEGGIMI.md`, Drive montati/te/audio/.
+
+Nota da Pianificazione, 29/10 (Manuel): spera di girare altri due lunghi oltre a mercato, arthunkal e te, poi il 31/1 parte
+per il Vietnam. Piano: lunghi 1/11, 15/11, 29/11, 20/12 e 10/1 (date orientative, i due nuovi solo se girati e
+montati). Dal 31/1 il materiale nuovo viene dal Vietnam: tenere una scorta di verticali programmati per i primi giorni.
