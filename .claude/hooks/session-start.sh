@@ -28,6 +28,9 @@ dl() {  # dl URL DEST
 dl https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf "$M/Anton-Regular.ttf"
 # font dei sottotitoli e delle etichette della mappa
 dl https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/Poppins-Medium.ttf "$M/Poppins-Medium.ttf"
+# titoli con riquadro dei verticali (Manuel 29/10): Poppins ExtraBold rinominato "VV Titolo" per non cambiare il
+# grassetto dei sottotitoli in Poppins
+cp -n "$ROOT/assets/fonts/VVTitolo-PoppinsExtraBold.ttf" "$M/" 2>/dev/null || true
 # font della mappa "carta nautica" (tools/route_map.py)
 dl "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf" "$M/PlayfairDisplay.ttf"
 dl "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/PlayfairDisplay-Italic%5Bwght%5D.ttf" "$M/PlayfairDisplay-Italic.ttf"

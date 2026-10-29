@@ -79,11 +79,13 @@ Caroselli e storie (Manuel, 29/10, riferimenti latiumani e Progetto Happiness; p
   citazione). 2-3 slide video con il testo che compare (per il post YouTube il loro fotogramma .jpg).
 - Storie: 3 set da 6 per ogni lungo (non 2 da 10). Solo la domanda, mai la scritta "quiz".
 
-Chiusura dei verticali (Manuel, 29/10, primo esempio: meenakshi in `copioni/meenakshi_testi.md`), vale per i
-prossimi reel:
-- Ultima immagine (persona o luogo): da fine voce, riquadro oro con Anton bianco come i titoli, in alto, senza
-  coprire il viso: **Ascolta altre voci, su** (con la virgola).
-- L'immagine sfuma al nero, la frase resta; sul nero entra il logo `assets/brand/logo_vocivere_trasparente_chiaro.png`
-  (senza sfondo, con il payoff), centrato sotto la frase, ~70% della larghezza, dissolvenza 0.2 s, circa 2 s per
-  leggere il payoff. Musica fino alla fine del logo.
+Chiusura dei verticali (Manuel, 29/10, versione finale approvata sul reel meenakshi), vale per i prossimi reel:
+- Subito dopo l'ultima frase del VO: nel fotogramma in cui sparisce l'ultimo sottotitolo entra **Ascolta altre voci, su**
+  (con la virgola), stesso stile dei titoli: Poppins ExtraBold ORO su riquadro BIANCO, una riga, in alto, senza
+  coprire il viso. Resta fino alla fine.
+- Sotto: un'immagine breve del luogo, poi l'ultima persona ~2 s; la persona continua sotto un velo nero leggero e il
+  logo `assets/brand/logo_vocivere_trasparente_chiaro.png` (con il payoff) sfuma centrato, 70% della larghezza, 2 s.
 - Da evitare: frasi da influencer ("Il viaggio continua", "Seguimi per..."), rimandi a un video completo.
+
+REEL MODELLO (Manuel, 29/10): il reel meenakshi è il modello per tutti i prossimi reel, anche per il copy
+(copione VO, titoli a schermo, frase finale): `regole/formato_reel.md`, sezione "Copy", e `copioni/meenakshi_testi.md`.

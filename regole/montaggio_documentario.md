@@ -275,3 +275,7 @@ descrizione, capitoli e miniatura.
 
 Nota da Copy, 29/10: chiusura standard dei verticali approvata da Manuel ("Ascolta altre voci, su" + logo sul nero
 con il payoff, ~2 s): dettagli in `regole/copy.md`, sezione "Chiusura dei verticali".
+
+FORMATO DEI REEL (Manuel, 29/10, dal reel meenakshi): `regole/formato_reel.md`. Prevale sulle note sui verticali
+sopra dove sono diverse (titoli Poppins ExtraBold oro su bianco, sottotitoli su fascia scura, tutto a 1.1x, nessuna
+pausa tra le frasi, chiusura "Ascolta altre voci, su" + logo su velo leggero).
