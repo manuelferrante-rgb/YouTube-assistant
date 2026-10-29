@@ -15,6 +15,7 @@ animati parola per parola (parola corrente in oro), non troppo grandi; titoli an
 import os
 from doc_render import Timeline, ts, dur_of
 
+POPPINS_LH = 1.762      # (usWinAscent 1135 + usWinDescent 627) / 1000 del Poppins: corpo libass / corpo PIL
 GOLD, WHITE = "&H004B8AB6&", "&H00FFFFFF&"
 FONTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "models")
 _FONT = {}
@@ -44,7 +45,7 @@ def one_line(txt, fit):
 
 
 class Reel:
-    def __init__(self, workdir, W=1080, H=1920, speed=1.2, gap=0.08, amb=0.12, cx_cam=0.5):
+    def __init__(self, workdir, W=1080, H=1920, speed=1.2, gap=0.08, amb=0.12, cx_cam=0.5, cap_box=False):
         self.tl = Timeline(W, H, workdir)
         self.W, self.H, self.K = W, H, W / 1080
         self.SP, self.GAP, self.AMB, self.CX = speed, gap, amb, cx_cam
@@ -52,6 +53,7 @@ class Reel:
         self.blocks = []       # sottotitoli a blocco (interviste tradotte): (inizio, fine, testo)
         self.titles = []       # (inizio, fine, testo, stile, y)
         self.raw_ass = []      # eventi ASS già pronti (contatori ecc.)
+        self.cap_box = cap_box  # sottotitoli su fascia scura semitrasparente (opzione 3 di Manuel, 29/10)
         self.cap_y = []        # (inizio, fine, y): sottotitoli più in basso dove la riga cadrebbe su un viso
         self.cap_stop = []     # tempi in cui i sottotitoli devono sparire (cambio scena dopo l'ultima frase)
         self.dir = workdir
@@ -169,11 +171,13 @@ class Reel:
                 "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, "
                 "Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, "
                 "MarginL, MarginR, MarginV, Encoding\n"
-                f"Style: Cap,Poppins,{S(58)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,{S(4)},{S(2)},5,0,0,0,1\n"
+                + (f"Style: Cap,Poppins,{S(58)},&H00FFFFFF,&H00FFFFFF,&H70000000,&H70000000,-1,0,0,0,100,100,0,0,3,{S(12)},0,5,0,0,0,1\n"
+                   if self.cap_box else
+                   f"Style: Cap,Poppins,{S(58)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,{S(4)},{S(2)},5,0,0,0,1\n") +
                 f"Style: Big,Anton,{S(190)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,2,0,1,{S(3)},{S(5)},5,0,0,0,1\n"
                 f"Style: Mid,Anton,{S(96)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,1,0,1,{S(3)},{S(4)},5,0,0,0,1\n"
                 f"Style: Orig,Poppins,{S(44)},&H00E6E6E6,&H00FFFFFF,&H00000000,&H80000000,0,-1,0,0,100,100,0,0,1,{S(3)},{S(2)},5,0,0,0,1\n"
-                f"Style: Tag,Anton,{S(84)},&H00FFFFFF,&H00FFFFFF,&H004B8AB6,&H00000000,0,0,0,0,100,100,1,0,3,{S(16)},0,5,0,0,0,1\n"
+                f"Style: Tag,VV Titolo,{S(96)},&H004B8AB6,&H004B8AB6,&H00FFFFFF,&H00000000,0,0,0,0,100,100,0,0,3,{S(22)},0,5,0,0,0,1\n"
                 f"Style: Small,Poppins,{S(46)},&H004B8AB6,&H00FFFFFF,&H00000000,&H90000000,-1,0,0,0,100,100,1,0,1,{S(3)},{S(2)},5,0,0,0,1\n\n"
                 "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
         ev, y_cap, y_orig = [], S(1180), S(1440)
@@ -197,14 +201,17 @@ class Reel:
                 ev.append((1, a, b, "Orig", f"{{\\an5\\pos({W // 2},{y_orig})}}{txt}"))
         for a, b, txt, st, y in self.titles:
             # titolo: se una riga non ci sta (anche al 125% dell'entrata) si rimpicciolisce il carattere
-            size = {"Big": 190, "Mid": 96, "Small": 46, "Tag": 84}.get(st, 96)
-            font = "Poppins-Medium.ttf" if st == "Small" else "Anton-Regular.ttf"
-            wmax = max(text_w(x, font, S(size)) for x in txt.split("\\N")) * 1.25
-            fs = f"\\fs{int(S(size) * 0.86 * W / wmax)}" if wmax > 0.86 * W else ""
+            size = {"Big": 190, "Mid": 96, "Small": 46, "Tag": 96}.get(st, 96)
+            font = {"Small": "Poppins-Medium.ttf", "Tag": "VVTitolo-PoppinsExtraBold.ttf"}.get(st, "Anton-Regular.ttf")
+            wmax = max(text_w(x, font, S(size)) for x in txt.split("\\N")) * (1.0 if st == "Tag" else 1.25)
+            lim = W - 2 * S(22) - 2 * S(40) if st == "Tag" else 0.86 * W     # riquadro (Tag) intero dentro lo schermo
+            fs = f"\\fs{int(S(size) * lim / wmax)}" if wmax > lim else ""
+            if st == "Tag":   # libass misura il Poppins su salite+discese (1.76 volte il corpo del PIL): si compensa
+                fs = f"\\fs{int(S(size) * min(1.0, lim / wmax) * POPPINS_LH)}"
             tag = (f"{{\\an5\\pos({W // 2},{S(y)}){fs}\\fscx125\\fscy125\\alpha&HFF&"
                    f"\\t(0,140,\\fscx100\\fscy100\\alpha&H00&)\\fad(0,120)}}")
-            if st == "Tag":   # riquadro oro che compare di colpo (Manuel, 29/10: "bam", senza dissolvenza)
-                tag = f"{{\\an5\\pos({W // 2},{S(y)}){fs}\\fscx118\\fscy118\\t(0,110,\\fscx100\\fscy100)\\fad(0,100)}}"
+            if st == "Tag":   # riquadro bianco con testo oro (opzione E), compare di colpo (Manuel 29/10: "bam")
+                tag = f"{{\\an5\\pos({W // 2},{S(y)}){fs}\\fscx107\\fscy107\\t(0,110,\\fscx100\\fscy100)\\fad(0,100)}}"
             ev.append((2, a, b, st, tag + txt))
         ev += self.raw_ass
         p = f"{self.dir}/reel.ass"

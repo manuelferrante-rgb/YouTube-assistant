@@ -26,7 +26,7 @@ MUSICA = f"{AUD}/musica_meenakshi.flac"
 MUS_LEVEL = 0.08                     # bassissima e costante sotto il VO (circa 23 dB sotto la voce, Manuel 27/10)
 MUS_UP = 0.17                        # sulla signora, senza voce: +7 dB (Copy/Audio 29/10)
 NIGHT = "eq=brightness=0.03:gamma=1.12:contrast=1.04:saturation=1.08"
-CTA = ""                             # frase finale a schermo (la scrive Copy, Manuel 29/10); "\\N" per andare a capo
+CTA = "Ascolta altre voci, su"                             # frase finale a schermo (la scrive Copy, Manuel 29/10); "\\N" per andare a capo
 SP = 1.0                             # voce calma (copione di Copy): niente accelerazione
 
 
@@ -75,9 +75,25 @@ def at(t0, line, t_src):
     return t0 + (t_src - (line[0] - PAD[0])) / SP
 
 
+def logo_card(W, H, d, src, a):
+    """Il logo chiaro (payoff compreso, 70% della larghezza) sfuma sopra la signora che continua sotto un velo nero leggero
+    (Manuel 29/10: "che si veda ancora un po'"); sotto la frase finale."""
+    out = f"{OUT}/logo_card_{W}x{H}.mp4"
+    lw = int(W * 0.7) // 2 * 2
+    run(["ffmpeg", "-v", "error", "-y", "-ss", f"{a:.3f}", "-t", f"{d:.3f}", "-i", src, "-loop", "1", "-t", f"{d:.3f}",
+         "-i", f"{ROOT}/assets/brand/logo_vocivere_trasparente_chiaro.png", "-filter_complex",
+         f"[0:v:0]crop=ih*9/16:ih:(iw-ow)/2:0,scale={W}:{H}:flags=lanczos,fps=30,{NIGHT},"   # come nel reel: 9:16 al centro
+         "null[v0];"
+         f"color=c=black@0.35:s={W}x{H}:r=30:d={d:.3f},format=rgba,fade=t=in:st=0:d=0.5:alpha=1[k];"   # velo nero leggero
+         "[v0][k]overlay=shortest=1[bg];"
+         f"[1]scale={lw}:-1,format=rgba,fade=t=in:st=0:d=0.6:alpha=1[l];[bg][l]overlay=(W-w)/2:(H-h)/2:shortest=1,"
+         "format=yuv420p", "-an", "-r", "30", "-c:v", "libx264", "-crf", "16", out])
+    return out
+
+
 def reel():
     W, H = (540, 960) if PREVIEW else (1080, 1920)
-    r = Reel(f"{OUT}/reel_{W}_work", W, H, speed=SP, gap=0.0, amb=0.0)      # B-roll muti (27/10 sera)
+    r = Reel(f"{OUT}/reel_{W}_work", W, H, speed=SP, gap=0.0, amb=0.0, cap_box=True)      # B-roll muti (27/10 sera)
     tl = r.tl
 
     # 1. GANCIO (Manuel 29/10): il signore già zoomato, un secondo; poi la torre con la folla (v3: scambiata con
@@ -104,9 +120,11 @@ def reel():
     r.own(C("180344"), 0.0)(0.9)
     # 5. chiusura sulla signora anziana, 2 secondi (Manuel: non di più), senza voce
     t_sig = r.t
-    r.own(C("193642"), 0.4, grade=NIGHT, fx=dict(black_out=0.4))(2.0)
-    cue(tl, t_sig - 0.4, "cue_chiusura", 2.4, 0.45, fout=0.9)
-    if CTA:   # frase finale a schermo di Copy, stesso formato dei titoli, sopra la testa della signora
+    r.own(C("193642"), 0.4, grade=NIGHT)(2.0)
+    # 6. logo (Copy/Manuel 29/10): "Ascolta altre voci, su" + logo con il payoff che sfuma sulla signora, 2 s
+    r.gen(logo_card(W, H, 2.0, C("193642"), 2.4))(2.0)
+    cue(tl, t_sig - 0.4, "cue_chiusura", r.t - t_sig + 0.4, 0.45, fout=1.0)   # la coda arriva alla fine del logo
+    if CTA:   # frase finale di Copy, stesso formato dei titoli, sopra la testa della signora e sopra il logo
         r.title(t_b, r.t, CTA, "Tag", 400)                         # entra quando sparisce l'ultimo sottotitolo (cap_stop = t_b)
 
     end = r.t
