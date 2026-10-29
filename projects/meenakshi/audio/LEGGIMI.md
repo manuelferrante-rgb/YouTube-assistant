@@ -22,11 +22,9 @@ niente musica di YouTube, niente campioni. Tutti i file a 48 kHz, controllati co
 | ultima riga in camera e ultima immagine | `cue_chiusura` sull'ultima immagine senza voce; la musica sfuma sotto e finisce con lui | pieno |
 Se un momento senza voci è più corto di 1.5 s, meglio niente. Mix finale del verticale: -14 LUFS, picchi sotto -1 dBTP.
 
-## Audio ambiente del tempio e pulizia voce (in attesa)
-Manuel ha chiesto (29/10) di usare l'ambiente del tempio (campane, canti, folla) se lo registra (lista riprese,
-punto 5 di `piano/meenakshi.md`) e la pulizia voce. In attesa del girato e della conferma di Manuel che vale come
-eccezione alla regola del 27-28/10 (niente suoni del girato da Audio; pulizia voce di Montaggio con
-`tools/voice_clean.py`). Fino ad allora: nessun file di ambiente da Audio.
+## Niente ambiente del tempio, niente pulizia voce (Manuel, 29/10)
+Nessuna eccezione alla regola del 27-28/10: Audio non usa campane, canti o folla del girato e non pulisce la voce.
+L'audio ambiente nelle clip e la pulizia della voce restano di Montaggio (`tools/voice_clean.py`).
 
 ## Rifare i file
 `python3 audio/musica/compose.py meenakshi|cue_gancio|cue_rivelazione|cue_chiusura <out.wav>`, poi
