@@ -135,14 +135,11 @@ build(A,'set2_storie',[
  dict(video=A,t=349,kicker='VELUTHACHAN',title='Il padre bianco',body='Padre Giacomo Fenicio. Lo chiamano ancora così, più di 400 anni dopo.',crop=(.55,1,.5)),
  dict(video=A,t=289,kind='ask',title='Hai mai fatto un pellegrinaggio a piedi?',body='Raccontamelo qui sotto.',hl=0,crop=(.5,1,.5),tsize=130),
 ])
+# te: 3 set da 6 (Manuel 29/10: 2 set da 10 sono troppi)
 build(T,'set1_raccolta',[
  dict(video=T,t=189,kicker='MUNNAR, KERALA',title='Tutto questo è tè',body='Colline fino all\'orizzonte, a oltre 1.500 metri.',crop=(.5,1,.5)),
  dict(video=T,t=101,kind='ask',title='Quante foglie si staccano da ogni rametto?',hl=0,crop=(.45,1,.5),tsize=124),
  dict(video=T,t=105,title='Solo 2-3 foglie',body='Le buone vanno in fabbrica. Le scure non si usano, ci spiega Sadish.',crop=(.35,1,.5)),
- dict(video=T,t=125,kind='ask',title='Ogni quanto si torna sulla stessa pianta?',hl=0,crop=(.5,1,.5),tsize=124),
- dict(video=T,t=121,title='Ogni 10-15 giorni',body='Oggi qui, domani un\'altra collina. Poi si torna: è un giro.',crop=(.5,1,.5)),
- dict(video=T,t=81,kind='ask',title='Quanti anni vive una pianta di tè?',hl=0,crop=(.5,1,.5),tsize=130),
- dict(video=T,t=73,title='Più di cent\'anni',body='"Questa pianta ha più di cent\'anni", ci dice Sadish.',crop=(.6,1,.5)),
  dict(video=T,t=97,kind='ask',title='Quanti chili raccoglie una persona in un giorno?',hl=0,crop=(.8,1,.5),tsize=118),
  dict(video=T,t=161,title='26-29 chili',body='In media, a mano, ci dice Sadish. Dalle 8 alle 5, con la pausa pranzo.',crop=(.75,1,.5)),
  dict(video=T,t=229,kind='ask',title='Che tè bevi tu?',body='Raccontamelo qui sotto. Tutta la storia nel video sul canale.',hl=0,crop=(.5,1,.5),tsize=140),
@@ -154,8 +151,12 @@ build(T,'set2_storia',[
  dict(video=T,t=265,kind='ask',title='Di chi è oggi l\'azienda del tè di queste colline?',hl=0,crop=(.6,1,.5),tsize=118),
  dict(video=T,t=273,kicker='DAL 2005',title='Dei dipendenti',body='Per la maggior parte: circa 13 mila persone.',crop=(.5,1,.5)),
  dict(video=T,t=221,kicker='2015',title='Nove giorni di sciopero',body='Migliaia di raccoglitrici bloccano Munnar. Si chiamano Pombilai Orumai: unità delle donne.',crop=(.5,1,.5)),
- dict(video=T,t=317,kind='ask',title='Chi produce più tè al mondo?',hl=0,crop=(.5,1,.5),tsize=130),
- dict(video=T,t=321,title='La Cina, poi l\'India',body='"L\'India è seconda", ci dice Sadish. "Qui è una cultura molto profonda."',crop=(.8,1,.5)),
+])
+build(T,'set3_piante_chai',[
+ dict(video=T,t=125,kind='ask',title='Ogni quanto si torna sulla stessa pianta?',hl=0,crop=(.5,1,.5),tsize=124),
+ dict(video=T,t=121,title='Ogni 10-15 giorni',body='Oggi qui, domani un\'altra collina. Poi si torna: è un giro.',crop=(.5,1,.5)),
+ dict(video=T,t=81,kind='ask',title='Quanti anni vive una pianta di tè?',hl=0,crop=(.5,1,.5),tsize=130),
+ dict(video=T,t=73,title='Più di cent\'anni',body='"Questa pianta ha più di cent\'anni", ci dice Sadish.',crop=(.6,1,.5)),
  dict(video=T,t=349,title='Il chai master',body='Tira il tè da un bicchiere all\'altro. Gli ho chiesto di parlare: si è rifiutato.',crop=(.42,1,.5)),
  dict(video=T,t=361,kind='ask',title='Hai mai assaggiato il chai?',body='Tutta la storia nel video sul canale.',hl=0,crop=(.45,1,.5),tsize=136),
 ])

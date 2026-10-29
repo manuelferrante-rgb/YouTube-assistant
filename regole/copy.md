@@ -70,3 +70,11 @@ Manuel ha approvato il montato, Copy prepara subito tutto il pacchetto senza asp
 sottotitoli .srt it/en del lungo, titolo it/en, descrizione it/en con capitoli, miniatura (prove + consigliata),
 carosello (8 immagini + didascalia IG + post YouTube + posizione), didascalie e testi dei 4 verticali e degli
 eventuali reel extra. Tutto su Drive in montati/<video>/ e nel repo; poi un solo messaggio riassuntivo a Manuel.
+
+Caroselli e storie (Manuel, 29/10, riferimenti latiumani e Progetto Happiness; primo esempio: copioni/caroselli/carosello_te.py):
+- Slide diverse tra loro: foto piena con il testo a altezze diverse (mai tutto in basso, un po' più alto), mezza
+  slide nera con 2-10 parole grandi e mezza foto (panorama o persona intervistata), due inquadrature una sopra
+  l'altra con le frasi vere come sottotitoli, paragrafo con le parole chiave in grassetto, citazione su nero con
+  le virgolette oro, una foto che continua dalla slide prima (nella seconda: il resto della foto + nero con la
+  citazione). 2-3 slide video con il testo che compare (per il post YouTube il loro fotogramma .jpg).
+- Storie: 3 set da 6 per ogni lungo (non 2 da 10). Solo la domanda, mai la scritta "quiz".

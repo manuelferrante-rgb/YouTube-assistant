@@ -35,7 +35,9 @@ Post YouTube (scheda Community):
 Cammineresti 13 km di notte pregando? Scrivi SÌ o NO nei commenti. Il video completo è sul canale.
 
 ## Te (dopo l'uscita del lungo, mer 18/11)
-Immagini: copioni/caroselli/te/01-08.jpg (`python3 copioni/caroselli/carosello_te.py`), su Drive montati/te/carosello/.
+9 slide, v2 con i riferimenti di Manuel (29/10): 01, 06 e 09 sono video (.mp4, testo animato, senza audio), le altre .jpg.
+File: copioni/caroselli/te/ (`python3 copioni/caroselli/carosello_te.py`), su Drive montati/te/carosello/.
+Post YouTube: solo immagini, al posto dei video si usano 01_YT.jpg, 06_YT.jpg, 09_YT.jpg.
 Posizione IG/YT: Munnar, Kerala
 Didascalia IG:
 Affittate per 3.000 rupie l'anno 🇮🇳
