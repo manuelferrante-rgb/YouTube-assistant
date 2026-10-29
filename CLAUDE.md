@@ -30,7 +30,7 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
 Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01Htfbh2Xp2z2rbRNGYUwBKL (dal 29/10 sera, prossimo video; meenakshi era session_01Htfbh1ny4yyq4niKggdc3h),
-Pianificazione session_01Htfbh2bajkKHUYyPHPM7ru (dal 29/10), Copy session_01Htfbgy1eiu7TFeU3c2xpYH (dal 29/10),
+Pianificazione session_01Htfbh2bajkKHUYyPHPM7ru (dal 29/10), Copy session_01Htfbh1Nj4GDYtGjaz495iT (dal 29/10 sera),
 Insights session_01HtfbgyzAxUCZDsgATkknE1, Audio session_01Htfbh1kXiyxeoJVcNiDrAt (dal 28/10).
 
 FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
