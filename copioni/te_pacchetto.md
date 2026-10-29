@@ -1,12 +1,13 @@
 # Tè di Munnar: PACCHETTO DEFINITIVO (Copy, 29/10, lungo v7 6:24 approvato da Manuel)
-Tutto su Drive, cartella del video -> montati/te/: sottotitoli/ (.it.srt, .en.srt), miniatura/, carosello/ (01-08),
-storie/ (2 set + storie_testi.md). Uscite (calendario): teaser sab 14/11, lungo dom 15/11, reel lun 16, mar 17,
+Tutto su Drive, cartella del video -> montati/te/: sottotitoli/ (.it.srt, .en.srt), miniatura/, carosello/ (9 slide,
+01, 06, 09 video), storie/ (3 set da 6 + storie_testi.md), TESTI_titolo_descrizioni_verticali.txt. Uscite (calendario): teaser sab 14/11, lungo dom 15/11, reel lun 16, mar 17,
 gio 19/11, carosello mer 18/11.
 
 ### Titolo (scelta di Manuel, 1a)
 IT: Colline del tè in India, affittate per 3.000 rupie 🇮🇳
 EN: India's tea hills, leased for 3,000 rupees 🇮🇳
-Miniatura (scelta 2A): "E OGGI / DI CHI SONO?". Il titolo dà l'affitto del 1877, la miniatura apre la domanda e il
+Miniatura DEFINITIVA (Manuel 29/10): copioni/te_miniature/A1_sadish.jpg, "E OGGI / DI CHI SONO?", Manuel che indica
+le colline a destra, Sadish con le foglie in mano che entra nel panorama a sinistra. Il titolo dà l'affitto del 1877, la miniatura apre la domanda e il
 video risponde (dal 2005 l'azienda è per la maggior parte dei dipendenti). I primi 20 s dicono le 3.000 rupie.
 
 ### Descrizione IT
