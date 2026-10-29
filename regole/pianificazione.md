@@ -35,3 +35,5 @@
   reel extra (autonomi, nelle settimane senza lungo). Temi in base al girato e al luogo dove si trova Manuel. Gli
   extra non sono legati al lungo. Stories: i set di Copy erano 3 (regola 29/10 in `regole/copy.md`), ora 2 per
   ogni lungo: lo segnalo a Copy con una nota.
+- Cadenza dei contenuti (Manuel, 29/10): un contenuto (reel, carosello, teaser, lungo) un giorno sì e uno no. Più giorni
+  di fila vanno bene, un giorno vuoto pure. Le stories riempiono i giorni liberi.
