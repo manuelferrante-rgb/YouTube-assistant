@@ -43,16 +43,18 @@ def comp(out,bgframe,cx,person,h,px,dark=0.75,mirror=False,target=600,sadish=Non
     al=Image.new('L',base.size,0); al.paste(m.getchannel('A'),pos); s_=Image.new('RGBA',base.size,(0,0,0,0))
     s_.putalpha(al.filter(ImageFilter.GaussianBlur(30)).point(lambda v:int(v*0.5))); base.alpha_composite(s_); base.alpha_composite(m,pos)
     if sadish:   # Sadish mentre raccoglie (fotogramma 119.2 del lungo), in basso a sinistra, bordi sfumati, niente cornice
-        w_,box,sx=sadish; ph=grade(Image.open(F+'q_119.2.png').convert('RGB').crop(box),1.1,1.15,1.05)
+        w_,box,sx,top=sadish; src=Image.open(F+'q_119.2.png').convert('RGB'); msk=Image.open(F+'cut_q.png').getchannel('A').filter(ImageFilter.MaxFilter(61)).filter(ImageFilter.GaussianBlur(14))
+        src=Image.composite(src,src.filter(ImageFilter.GaussianBlur(28)),msk)   # lui nitido, panorama sfumato
+        ph=grade(src.crop(box),1.1,1.15,1.05)
         ph=ph.resize((w_,int(ph.height*w_/ph.width)),Image.LANCZOS)
         yy,xx=np.mgrid[0:ph.height,0:ph.width].astype(np.float32); f=40.0
         m=np.minimum.reduce([xx/f,(ph.width-1-xx)/f,yy/f,np.full_like(xx,9)]).clip(0,1)   # in basso esce dal bordo
         ph=ph.convert('RGBA'); ph.putalpha(Image.fromarray((m**1.3*255).astype('uint8')))
-        base.alpha_composite(ph,(sx,H-ph.height))
+        base.alpha_composite(ph,(sx,top))
     text(base,[("E OGGI",WHITE,8),("DI CHI SONO?",YEL,0)],44,40 if sadish else 50,target)
     base.convert('RGB').save(out,quality=92)
 comp('copioni/te_miniature/A1_indica.jpg','f_27.png',0.5,'clean_1.5.png',640,560,mirror=True)
-comp('copioni/te_miniature/A1_sadish.jpg','f_27.png',0.5,'clean_1.5.png',640,560,mirror=True,target=470,sadish=(310,(1600,120,2800,1450),30))
+comp('copioni/te_miniature/A1_sadish.jpg','f_27.png',0.5,'clean_1.5.png',640,560,mirror=True,target=450,sadish=(390,(1580,260,2830,1490),20,400))
 comp('copioni/te_miniature/A2_braccia.jpg','f_27.png',0.5,'clean_25.png',660,590,target=520)
 ims=[Image.open(f'copioni/te_miniature/{n}.jpg').resize((640,360)) for n in ('A1_indica','A1_sadish')]
 G=Image.new('RGB',(1300,380),(20,20,20))
