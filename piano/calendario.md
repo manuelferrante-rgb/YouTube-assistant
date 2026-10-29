@@ -24,23 +24,29 @@ Pacchetto di ogni lungo: teaser (sabato prima), lungo (domenica), 3 reel, 1 caro
 |---|---|---|
 | gio 29/10 | mercato: teaser | già programmato (YT Shorts + IG) |
 | dom 1/11 | mercato: lungo | già programmato |
+| lun 2/11 | mercato: stories set 1 | |
 | mar 3/11 | mercato: reel 1 | |
 | gio 5/11 | mercato: reel 2 | |
-| sab 7/11 | mercato: carosello | solo se Copy lo prepara; altrimenti un extra |
+| ven 6/11 | mercato: stories set 2 | |
+| sab 7/11 | mercato: carosello | pronto (Manuel, 29/10) |
 | lun 9/11 | mercato: reel 3 | |
-| mer 11/11 | meenakshi (verticale unico, Madurai) | se il girato è pronto e consegnato; altrimenti kallu |
+| mer 11/11 | meenakshi (verticale unico, Madurai) | già girato da Manuel il 29/10; manca solo il montaggio |
 | gio 12/11 | comunismo (reel pronto) | |
 | sab 14/11 | arthunkal: teaser | |
 | dom 15/11 | arthunkal: lungo (2 settimane dopo il mercato) | pacchetto Copy pronto dal 27/10 |
+| lun 16/11 | arthunkal: stories set 1 | |
 | mar 17/11 | arthunkal: reel 1 | |
 | gio 19/11 | arthunkal: reel 2 | |
+| ven 20/11 | arthunkal: stories set 2 | |
 | sab 21/11 | arthunkal: carosello | |
 | lun 23/11 | arthunkal: reel 3 | |
 | mer 25/11 | kallu (reel pronto) | |
 | sab 28/11 | te: teaser | |
 | dom 29/11 | te: lungo (2 settimane dopo arthunkal) | solo se il montato è approvato |
+| lun 30/11 | te: stories set 1 | |
 | mar 1/12 | te: reel 1 | |
 | gio 3/12 | te: reel 2 | |
+| ven 4/12 | te: stories set 2 | |
 | sab 5/12 | te: carosello | |
 | lun 7/12 | te: reel 3 | |
 | mer 9/12 | bucato (te) | |
@@ -76,3 +82,8 @@ carosello (mar o mer), da confermare con Copy. Nota per Copy: la regola in `rego
 ora dice 2 set. Decidere con Manuel quale vale.
 
 Nota da Pianificazione, 29/10 (Manuel): cadenza dilatata, un contenuto un giorno sì e uno no. Piano completo qui sopra.
+
+Nota da Pianificazione, 29/10 (Manuel): per mercato, arthunkal e te sono già pronti 4 verticali, carosello e 2 set di
+stories ciascuno: nessuna attesa su Copy. Reel extra già pronti: bucato, comunismo, kallu; meenakshi girato il 29/10 e da
+montare. Stendere i panni: sul profilo personale di Manuel. Dal 30/10 Manuel è in un ashram (tono più introspettivo):
+se gira qualcosa, bene, ma non è nel piano. Stories: set 1 il lunedì dopo il lungo, set 2 il venerdì (giorni liberi).
