@@ -37,16 +37,17 @@ Registrare ogni riga 2 volte, con un secondo di silenzio tra una e l'altra (file
   sculture dipinte. Se tra le clip non ci sono torri, dirmelo e cambio la frase.
 - "Guardatelo oggi" cade alla fine della rotazione: la rotazione è il momento della rivelazione.
 - Niente logo o chiusura lunga: si chiude sulla signora.
-- CHIUSURA CON CTA E LOGO (Copy, 29/10, sul montato da 19.2 s; scelta con Manuel: il logo entra sul nero).
+- CHIUSURA CON CTA E LOGO (Copy, 29/10, sul montato da 19.2 s; scelte di Manuel: frase "Il viaggio continua su",
+  logo sul nero, tempo per leggere anche il payoff "la voce di chi ne ha più bisogno" che è dentro il logo).
   - 16.4 s: riquadro oro con Anton bianco, in alto sopra la testa della signora, una riga:
-        Altre storie su
-    (15 caratteri, 3 parole). Sulla signora c'è SOLO questa frase: il viso resta libero.
+        Il viaggio continua su
+    (22 caratteri, 4 parole). Sulla signora c'è SOLO questa frase: il viso resta libero.
   - La signora sfuma al nero come ora; la frase resta.
-  - Sul nero (circa 19.2-20.4 s): entra il logo `assets/brand/logo_vocivere_trasparente_chiaro.png` (testo bianco,
-    senza sfondo), centrato, sotto la frase, largo circa il 50% del video, dissolvenza in entrata 0.2 s. Frase e
-    logo restano circa 1.2 s, poi fine. Il video passa da 19.2 a circa 20.4 s.
+  - Sul nero (circa 19.2-21.2 s): entra il logo `assets/brand/logo_vocivere_trasparente_chiaro.png` (testo bianco,
+    oro, payoff sotto, senza sfondo), centrato sotto la frase, largo circa il 70% del video così il payoff si
+    legge, dissolvenza in entrata 0.2 s. Frase e logo restano circa 2 s (servono per leggere il payoff), poi fine.
+    Il video passa da 19.2 a circa 21.2 s.
   - Audio: `cue_chiusura` e musica arrivano fino alla fine del logo (allungare la coda, niente silenzio sul nero).
-  Alternative alla frase: "Seguimi su" (10 caratteri); "Il viaggio continua su" (22 caratteri).
 - Durata finale 20-30 s.
 
 ## PER AUDIO (musica già pronta, `projects/meenakshi/audio/LEGGIMI.md`)
