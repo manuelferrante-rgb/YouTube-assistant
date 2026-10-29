@@ -37,7 +37,8 @@ Reel già pronti ma senza data: comunismo, kallu (da infilare nei venerdì liber
 
 Nota da Audio, 27/10 sera: te, audio nuovo pronto per Montaggio (musica leggera senza bassi + 4 segni melodici sui B-roll, niente suoni dal girato): `projects/te/audio/LEGGIMI.md`, Drive montati/te/audio/.
 
-Nota da Pianificazione, 29/10 (confermata da Manuel il 29/10, orientativa): reel pronti senza data nei venerdì liberi.
-Proposta: ven 30/10 comunismo, ven 6/11 kallu, ven 13/11 bucato (te), ven 20/11 meenakshi se il
-girato è pronto. Il reel "come stendere i panni" NON è per Voci Vere (Manuel lo mette sul suo profilo personale).
-Nessun reel di cucina (errore di Manuel, 29/10).
+Nota da Pianificazione, 29/10 (Manuel, orientativa): i reel "diversi" già pronti escono solo dopo che sono usciti almeno
+due video completi con i loro reel (mercato e arthunkal, entro 12/11; con te entro 19/11), quindi slittano di tre
+settimane nei venerdì liberi: ven 20/11 comunismo, ven 27/11 kallu, ven 4/12 bucato (te), ven 11/12 meenakshi
+(se il girato è pronto; Manuel non ha fretta). Il reel "come stendere i panni" NON è per Voci Vere (profilo personale
+di Manuel). Nessun reel di cucina (errore di Manuel, 29/10).
