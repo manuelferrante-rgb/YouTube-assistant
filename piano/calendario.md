@@ -36,3 +36,8 @@ lungo successivo. Fa eccezione il primo giovedì (29/10): teaser del mercato, gi
 Reel già pronti ma senza data: comunismo, kallu (da infilare nei venerdì liberi o a metà settimana, a scelta di Manuel).
 
 Nota da Audio, 27/10 sera: te, audio nuovo pronto per Montaggio (musica leggera senza bassi + 4 segni melodici sui B-roll, niente suoni dal girato): `projects/te/audio/LEGGIMI.md`, Drive montati/te/audio/.
+
+Nota da Pianificazione, 29/10 (BOZZA, da confermare con Manuel): reel pronti senza data nei venerdì liberi.
+Proposta: ven 30/10 comunismo, ven 6/11 kallu, ven 13/11 bucato (te) o cucinare, ven 20/11 meenakshi se il
+girato è pronto. Il reel "come stendere i panni" NON è per Voci Vere (Manuel lo mette sul suo profilo personale).
+Il reel di cucina: da chiarire con Manuel luogo, persona e piatto prima di assegnargli una data.
