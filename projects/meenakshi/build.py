@@ -133,7 +133,16 @@ def reel():
     tl.nat_af = "highpass=f=90"
     tl.audio_map = {VO: cleaned(VO, f"{WORK}/voce")}              # voce pulita con RNNoise
     out = f"{OUT}/VociVere_meenakshi_reel_{W}x{H}.mp4"
-    return r.render(out, crf=18 if W == 1080 else 24, preset="medium" if W == 1080 else "veryfast")
+    one = r.render(out.replace(".mp4", "_1x.mp4"), crf=16 if W == 1080 else 24, preset="medium" if W == 1080 else "veryfast")
+    return faster(one, out, 1.1)
+
+
+def faster(src, out, k):
+    """Tutto il video accelerato di k (Manuel 29/10: voce, immagini, titoli e musica a 1.1x; meglio qui che in CapCut)."""
+    run(["ffmpeg", "-v", "error", "-y", "-i", src, "-filter_complex", f"[0:v]setpts=PTS/{k},fps=30[v];[0:a]atempo={k}[a]",
+         "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "16", "-preset", "slow", "-pix_fmt", "yuv420p",
+         "-c:a", "aac", "-b:a", "256k", "-movflags", "+faststart", out])
+    return out
 
 
 if __name__ == "__main__":

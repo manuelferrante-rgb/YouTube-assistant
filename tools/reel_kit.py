@@ -177,6 +177,7 @@ class Reel:
                 f"Style: Big,Anton,{S(190)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,2,0,1,{S(3)},{S(5)},5,0,0,0,1\n"
                 f"Style: Mid,Anton,{S(96)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,1,0,1,{S(3)},{S(4)},5,0,0,0,1\n"
                 f"Style: Orig,Poppins,{S(44)},&H00E6E6E6,&H00FFFFFF,&H00000000,&H80000000,0,-1,0,0,100,100,0,0,1,{S(3)},{S(2)},5,0,0,0,1\n"
+                f"Style: CapT,Poppins,{S(58)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1\n"
                 f"Style: Tag,VV Titolo,{S(96)},&H004B8AB6,&H004B8AB6,&H00FFFFFF,&H00000000,0,0,0,0,100,100,0,0,3,{S(22)},0,5,0,0,0,1\n"
                 f"Style: Small,Poppins,{S(46)},&H004B8AB6,&H00FFFFFF,&H00000000,&H90000000,-1,0,0,0,100,100,1,0,1,{S(3)},{S(2)},5,0,0,0,1\n\n"
                 "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
@@ -193,7 +194,13 @@ class Reel:
                 e = c[i + 1][1] if i + 1 < len(c) else c_end
                 parts = [(f"{{\\c{GOLD}}}" if j == i else f"{{\\c{WHITE}}}") + x for j, (x, _) in enumerate(c)]
                 pop = "\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)" if i == 0 else ""
-                ev.append((1, t, e, "Cap", f"{{\\an5\\pos({W // 2},{yc}){pop}}}" + " ".join(parts)))
+                head_ = f"{{\\an5\\pos({W // 2},{yc}){pop}}}"
+                if self.cap_box:   # una sola fascia per la riga (testo invisibile), sopra le parole colorate senza fascia:
+                    # con i colori dentro la stessa riga libass farebbe una fascia per parola, con stacchi scuri tra le parole
+                    ev.append((1, t, e, "Cap", head_ + "{\\1a&HFF&}" + " ".join(x for x, _ in c)))
+                    ev.append((2, t, e, "CapT", head_ + " ".join(parts)))
+                else:
+                    ev.append((1, t, e, "Cap", head_ + " ".join(parts)))
         for a, b, txt, kind in blk:
             if kind == "it":
                 ev.append((1, a, b, "Cap", f"{{\\an5\\pos({W // 2},{y_cap})\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)}}{txt}"))

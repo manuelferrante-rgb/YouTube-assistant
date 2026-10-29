@@ -32,7 +32,7 @@ Voiceover `Mudakathan.m4a` (26.7 s, ogni riga una volta, frasi a 3.04-6.22, 7.07
 intera sente "tempio e fu"), "i re Nayak", "tra il Cinquecento e il Seicento", "li rifanno ogni consacrazione".
 
 ## Consegnato (29/10, versione finale)
-`montati/meenakshi/VociVere_meenakshi_reel_1080x1920.mp4`, 21.2 s, -14.3 LUFS. Rifare: `python3 projects/meenakshi/build.py`
+`montati/meenakshi/VociVere_meenakshi_reel_1080x1920.mp4`, 19.3 s (tutto a 1.1x, Manuel 29/10), -14.4 LUFS. Rifare: `python3 projects/meenakshi/build.py`
 (`--preview` per la prova; cancellare `work/meenakshi/out/reel_*_work` se cambia un pezzo generato, la cache è per file).
 Scelte di Manuel sul montato: signore già zoomato 1.1 s, torre con folla, rotazione solo nel giro, "Guardatelo oggi",
 1.3 s dall'alto di notte, elefante su "...in India" prima dell'interno, nessuna pausa tra le frasi del VO; tra la donna
