@@ -62,3 +62,8 @@ montati). Dal 31/1 il materiale nuovo viene dal Vietnam: tenere una scorta di ve
 Nota da Pianificazione, 29/10 (Manuel): se riesce a girare tre lunghi nuovi invece di due, il terzo (C) esce
 dom 31/1 o il fine settimana prima (24/1), prima della partenza per il Vietnam. Per ora il piano resta con A (20/12) e B (10/1);
 C si aggiunge solo se girato e montato in tempo.
+
+Nota da Pianificazione, 29/10 (Manuel): pacchetto di ogni lungo = 1 carosello, 2 set di stories, 1 teaser, 3 reel e reel extra,
+con temi in base al girato o al luogo. Stories: set 1 il giorno del lungo o il giorno prima, set 2 il giorno dopo il
+carosello (mar o mer), da confermare con Copy. Nota per Copy: la regola in `regole/copy.md` dice 3 set da 6, Manuel
+ora dice 2 set. Decidere con Manuel quale vale.

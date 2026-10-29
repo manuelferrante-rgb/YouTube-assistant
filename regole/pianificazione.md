@@ -31,3 +31,7 @@
   Shorts, caroselli, storie) portano molti contenuti dallo stesso girato. Nelle settimane senza lungo escono 2-3
   verticali autonomi. Il piano aggiornato è in `piano/calendario.md`. Questo sostituisce lo schema "un lungo ogni
   domenica" del 26/10.
+- Pacchetto di ogni lungo (Manuel, 29/10): 1 lungo, 1 carosello, 2 set di stories, 1 teaser, 3 reel dopo il lungo e
+  reel extra (autonomi, nelle settimane senza lungo). Temi in base al girato e al luogo dove si trova Manuel. Gli
+  extra non sono legati al lungo. Stories: i set di Copy erano 3 (regola 29/10 in `regole/copy.md`), ora 2 per
+  ogni lungo: lo segnalo a Copy con una nota.
