@@ -29,3 +29,8 @@ L'audio ambiente nelle clip e la pulizia della voce restano di Montaggio (`tools
 ## Rifare i file
 `python3 audio/musica/compose.py meenakshi|cue_gancio|cue_rivelazione|cue_chiusura <out.wav>`, poi
 `ffmpeg -i <out.wav> -af loudnorm=I=-20:TP=-2:linear=true -c:a flac <file>.flac` (-18 per i cue) e `bande.py`.
+
+Nota da Copy, 29/10 sera: il verticale ora è tutto in voiceover, 20-30 s, su una sequenza decisa da Manuel (signore
+con il segno sulla fronte, entrata di Manuel con la rotazione della camera, spezzoni del tempio, persona che prega,
+chiusura sulla signora anziana). Manuel dice che la musica già fatta va bene: nessun file nuovo. Nuove posizioni dei
+cue nella sezione "PER AUDIO" di `copioni/meenakshi_testi.md`.
