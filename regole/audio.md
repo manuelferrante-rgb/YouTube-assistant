@@ -49,3 +49,9 @@ Nota da Montaggio, 27/10 (decisione di Manuel dopo la v2 del tè, vale per ogni 
   vuoti senza parlato, con un contesto, e vanno consegnati già senza rombo (passa-alto almeno 90-120 Hz).
 - Niente fruscii (carta, penna) sulle grafiche della linea del tempo, niente ronzii o ticchettii sotto il voiceover.
 - Gli effetti si usano solo dove l'immagine li giustifica (es. il chai tirato mentre si vede il chai).
+
+REEL MODELLO (Manuel, 29/10): il reel meenakshi è il modello per l'audio di tutti i prossimi reel: per ogni reel una
+musica originale a tema (~50 s, leggera, niente sotto 150 Hz) + 3 segni melodici brevi (`cue_gancio`, `cue_rivelazione`,
+`cue_chiusura`), come in `projects/meenakshi/audio/`. Livelli e posizioni li mette Montaggio: musica bassissima e
+costante sotto la voce, segni ~12 dB sotto la voce, chiusura e musica fino alla fine del logo. Dettagli in
+`regole/formato_reel.md`, sezione "Audio".

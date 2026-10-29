@@ -49,6 +49,16 @@ Prevale sulle note più vecchie sui verticali in `regole/montaggio_documentario.
    orizzontale, largo il 70%. 2 s, poi fine. Codice: `logo_card()` in `projects/meenakshi/build.py`.
    Attenzione alle clip orizzontali (es. 3840x2160): ritaglio 9:16 al centro come nel reel, mai schiacciate.
 
+## Copy (modello: `copioni/meenakshi_testi.md`)
+- Un solo fatto forte, niente lista. Copione VO di ~50 parole in 6 frasi brevi, registrato da Manuel una frase per
+  riga (anche una sola presa basta); voce calma, poi il video va a 1.1x.
+- Schema delle frasi: 1) gancio col fatto forte (se le fonti non concordano: "si racconta"); 2) la rivelazione breve
+  ("Guardatelo oggi."); 3) nome e luogo ("Tempio di Meenakshi, Madurai, nel Tamil Nadu, in India."); 4-5) il fatto
+  spiegato in concreto (chi, quando, cosa si vede); 6) una frase umana sul presente ("Secoli dopo, qui si viene ancora
+  a pregare."). Poi la chiusura fissa.
+- Titoli a schermo: 3 (gancio col fatto, nome, luogo), max ~22 caratteri, una riga, legati alla parola detta.
+- Didascalie e titolo dello Short ripetono il gancio ("Saccheggiato nel 1310. Guardatelo oggi").
+
 ## Controlli prima di consegnare (come sempre)
 Fotogrammi a ogni titolo e sottotitolo e dei primi 5 s, trascrizione del montato (nessuna parola tagliata o
 ripetuta; i dubbi si riascoltano a pezzi), `tools/audio_check.py`, ffprobe sul file finito. Se si cambia un pezzo
