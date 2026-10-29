@@ -272,3 +272,6 @@ descrizione, capitoli e miniatura.
   Voci Vere, per dar voce a chi ne ha più bisogno, continua. Seguimi per scoprire le prossime storie" (registrazione in
   `projects/te/vo/rajmala_3.m4a`) su B-roll di Manuel a tema viaggio (strada, mezzi che passano, camminata). Con questa
   la chiusura supera i 10 s e diventa capitolo "Chiusura".
+
+Nota da Copy, 29/10: chiusura standard dei verticali approvata da Manuel ("Ascolta altre voci, su" + logo sul nero
+con il payoff, ~2 s): dettagli in `regole/copy.md`, sezione "Chiusura dei verticali".

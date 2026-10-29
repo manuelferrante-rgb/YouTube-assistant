@@ -37,6 +37,17 @@ Registrare ogni riga 2 volte, con un secondo di silenzio tra una e l'altra (file
   sculture dipinte. Se tra le clip non ci sono torri, dirmelo e cambio la frase.
 - "Guardatelo oggi" cade alla fine della rotazione: la rotazione è il momento della rivelazione.
 - Niente logo o chiusura lunga: si chiude sulla signora.
+- CHIUSURA CON CTA E LOGO (APPROVATA da Manuel, 29/10, sul montato da 19.2 s).
+  - 16.4 s (fine di "pregare"): riquadro oro con Anton bianco, stesso formato dei titoli, in alto sopra la testa
+    della signora, una riga:
+        Ascolta altre voci, su
+    (22 caratteri, con la virgola). Sulla signora c'è SOLO questa frase: il viso resta libero.
+  - 19.2 s: la signora sfuma al nero come ora; la frase resta.
+  - Sul nero (circa 19.2-21.2 s): entra il logo `assets/brand/logo_vocivere_trasparente_chiaro.png` (senza
+    sfondo, con il payoff "la voce di chi ne ha più bisogno"), centrato sotto la frase, largo circa il 70% del
+    video così il payoff si legge, dissolvenza in entrata 0.2 s, niente animazioni. Frase e logo restano circa 2 s,
+    poi fine. Il video passa da 19.2 a circa 21.2 s.
+  - Audio: `cue_chiusura` e musica arrivano fino alla fine del logo (allungare la coda, niente silenzio sul nero).
 - Durata finale 20-30 s.
 
 ## PER AUDIO (musica già pronta, `projects/meenakshi/audio/LEGGIMI.md`)
