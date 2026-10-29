@@ -32,24 +32,25 @@ persone all'ingresso) e con quello che Manuel racconta in camera.
   dell'arte come M. A. Dhaky) e la direttiva del tribunale 2014 sono da una sola fonte debole: non dirle.
 - Legame con l'Italia: nessuno verificato, non forzarlo.
 
-## Angolo proposto (uno, curiosità completa che sta in piedi da sola)
-A (consigliato, se si può filmare la sera o dall'esterno): "Ogni sera, un dio viene portato a dormire dalla moglie".
-Il rito Palliyarai spiegato in 30-40 secondi, con la fila, i fiori, il suono. Hook: la frase detta in camera
-nel punto esatto, con l'ora. Chiusura: "ogni sera, da secoli" solo se la fonte sul posto lo conferma.
-B (ripiego se filmare è vietato): "Queste torri sono rifatte e ridipinte ogni 12-17 anni": le torri colorate come
-cosa viva, non museo; si regge sul fatto del 17/9/2026 (da confermare) e sul saccheggio/ricostruzione.
-Durata: 30-45 s. Un solo fatto forte, niente lista.
+## Aggiornamento 29/10 (Manuel): niente sera, niente interno
+Manuel non fa il prima e dopo di sera e pensa di non entrare. Quindi l'angolo A (rito Palliyarai) cade: non si
+può spiegare un rito che non si vede. Si gira di giorno, fuori, con Manuel in camera.
 
-## Lista riprese (tutto in verticale, per un solo video)
-1. Manuel in camera, dentro l'azione, all'ingresso o in fila: dice dove è, che ora è, quante persone vede (a occhio, "circa").
-2. Una frase in camera sul fatto forte (A o B), a voce, 2 versioni.
-3. Dettagli: fiori e ghirlande vendute fuori, scarpe lasciate all'ingresso, armadietti dei telefoni, lampade, colori
-   delle torri da vicino (sculture), mani che offrono.
-4. Dall'alto o da lontano: la torre intera con la gente sotto (terrazza, ponte, strada).
-5. Audio ambiente pulito 30 s, microfono vicino, senza voce di Manuel (campane, canti, folla): serve ad Audio.
-6. 1-2 interviste brevi, stessa domanda ("Perché venite qui la sera?" / "Che cosa succede stasera?"), solo con il consenso.
-7. Se ammesso: il rito stesso, ripreso senza disturbare. Se vietato, NON insistere: niente.
-8. Il prima e dopo nello stesso punto (ingresso di giorno e di sera, o fila vuota e piena).
-9. Chiusura in camera, una riga.
-Regole: niente primi piani su fedeli senza consenso, nessuna scena presentata come rito segreto; è un luogo di
-culto vissuto, tono di rispetto e curiosità, mai "esotico".
+## Angolo (uno, 30-45 s, tutto girabile da fuori)
+B (consigliato): "Queste torri non sono medievali: sono del Seicento e le ridipingono a ogni consacrazione".
+Fatti: saccheggio 1310 (tradizione storica, Malik Kafur), ricostruzione dei Nayak, ultima consacrazione 2009 e,
+se confermata, 17/9/2026 (poche settimane fa). Immagine: la torre da sotto e da lontano, i colori da vicino.
+C (alternativa o aggiunta di 5 s): "Un tempio dove il telefono non entra": armadietti all'ingresso. Va confermato
+sul cartello o con un addetto (per ora solo recensioni di Maps) prima di dirlo.
+Se il 17/9/2026 non si conferma: dire solo 2009 e "ogni 12-17 anni circa" (1995, 2009, 2026 = intervalli di 14 e 17).
+
+## Lista riprese (solo fuori, di giorno, verticale)
+1. Manuel in camera davanti alla torre, dentro l'azione: dove è, ora, folla (a occhio, "circa").
+2. Il fatto forte in camera, 2 versioni.
+3. Dettagli esterni: sculture colorate da vicino, ghirlande e fiori venduti fuori, scarpe, armadietti dei telefoni, la fila.
+4. La torre intera con la gente sotto, dall'alto o da lontano (terrazza, ponte, strada).
+5. Audio ambiente pulito 30 s, microfono vicino, senza la voce di Manuel.
+6. 1-2 interviste brevi fuori, stessa domanda ("Perché venite qui?"), solo con consenso.
+7. Chiusura in camera, una riga.
+Niente fedeli in primo piano senza consenso; luogo di culto vissuto, tono di rispetto, mai "esotico".
+Se Manuel poi entra, quello che gira dentro (dove consentito) è un di più, non necessario.
