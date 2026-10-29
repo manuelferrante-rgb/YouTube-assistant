@@ -30,7 +30,7 @@ Pacchetto di ogni lungo: teaser (sabato prima), lungo (domenica), 3 reel, 1 caro
 | ven 6/11 | mercato: stories set 2 | |
 | sab 7/11 | mercato: carosello | pronto (Manuel, 29/10) |
 | lun 9/11 | mercato: reel 3 | |
-| mer 11/11 | meenakshi (verticale unico, Madurai) | già girato da Manuel il 29/10; manca solo il montaggio |
+| mer 11/11 | meenakshi (verticale unico, Madurai) | già fatto e pronto (Manuel, 29/10) |
 | gio 12/11 | comunismo (reel pronto) | |
 | sab 14/11 | arthunkal: teaser | |
 | dom 15/11 | arthunkal: lungo (2 settimane dopo il mercato) | pacchetto Copy pronto dal 27/10 |
@@ -84,6 +84,5 @@ ora dice 2 set. Decidere con Manuel quale vale.
 Nota da Pianificazione, 29/10 (Manuel): cadenza dilatata, un contenuto un giorno sì e uno no. Piano completo qui sopra.
 
 Nota da Pianificazione, 29/10 (Manuel): per mercato, arthunkal e te sono già pronti 4 verticali, carosello e 2 set di
-stories ciascuno: nessuna attesa su Copy. Reel extra già pronti: bucato, comunismo, kallu; meenakshi girato il 29/10 e da
-montare. Stendere i panni: sul profilo personale di Manuel. Dal 30/10 Manuel è in un ashram (tono più introspettivo):
+stories ciascuno: nessuna attesa su Copy. Reel extra già pronti: bucato, comunismo, kallu; meenakshi già pronto (girato e montato). Stendere i panni: sul profilo personale di Manuel. Dal 30/10 Manuel è in un ashram (tono più introspettivo):
 se gira qualcosa, bene, ma non è nel piano. Stories: set 1 il lunedì dopo il lungo, set 2 il venerdì (giorni liberi).
