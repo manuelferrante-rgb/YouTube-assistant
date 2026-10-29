@@ -107,7 +107,7 @@ def reel():
     r.own(C("193642"), 0.4, grade=NIGHT, fx=dict(black_out=0.4))(2.0)
     cue(tl, t_sig - 0.4, "cue_chiusura", 2.4, 0.45, fout=0.9)
     if CTA:   # frase finale a schermo di Copy, stesso formato dei titoli, sopra la testa della signora
-        r.title(t_b + 0.1, r.t, CTA, "Tag", 400)
+        r.title(t_b, r.t, CTA, "Tag", 400)                         # entra quando sparisce l'ultimo sottotitolo (cap_stop = t_b)
 
     end = r.t
     tl.music(0.0, t_b + 0.3, MUSICA, offset=0.0, level=MUS_LEVEL, fin=0.05, fout=0.3, duck=False, norm=False)
