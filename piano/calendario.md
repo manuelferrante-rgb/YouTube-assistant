@@ -58,3 +58,7 @@ Nota da Audio, 27/10 sera: te, audio nuovo pronto per Montaggio (musica leggera 
 Nota da Pianificazione, 29/10 (Manuel): spera di girare altri due lunghi oltre a mercato, arthunkal e te, poi il 31/1 parte
 per il Vietnam. Piano: lunghi 1/11, 15/11, 29/11, 20/12 e 10/1 (date orientative, i due nuovi solo se girati e
 montati). Dal 31/1 il materiale nuovo viene dal Vietnam: tenere una scorta di verticali programmati per i primi giorni.
+
+Nota da Pianificazione, 29/10 (Manuel): se riesce a girare tre lunghi nuovi invece di due, il terzo (C) esce
+dom 31/1 o il fine settimana prima (24/1), prima della partenza per il Vietnam. Per ora il piano resta con A (20/12) e B (10/1);
+C si aggiunge solo se girato e montato in tempo.
