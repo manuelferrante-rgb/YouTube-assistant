@@ -3,7 +3,8 @@
 
     python3 audio/musica/compose.py <brano> <out.wav> [--dur S]
     brani: cammino (passo leggero, re maggiore, 72 bpm), storia (piano rado per la linea del tempo),
-           arrivo (apertura piena sulla basilica), verticale (il cammino col passo da subito, 60 s)
+           arrivo (apertura piena sulla basilica), verticale (il cammino col passo da subito, 60 s),
+           meenakshi (verticale del tempio, 50 s) e i segni cue_gancio, cue_rivelazione, cue_chiusura
 Strumenti: tappeto di archi sintetici morbidi, piano (parziali leggermente inarmoniche + martelletto),
 corde pizzicate (Karplus-Strong), riverbero di sala. Niente scale o strumenti "etnici" da cartolina.
 """
@@ -298,16 +299,94 @@ def cue(kind):
     raise ValueError(kind)
 
 
+def campana(n, dur, vel=0.6):
+    """Campanella sintetica melodica (parziali di campana piccola), suonata da noi: nessun campione del girato."""
+    N = int((dur + 3.0) * SR); t = np.arange(N) / SR
+    f = hz(n); x = np.zeros(N)
+    for r_, a, tau in [(1.0, 1.0, 2.6), (2.0, 0.45, 1.6), (2.76, 0.35, 1.1), (5.4, 0.18, 0.5), (8.9, 0.08, 0.25)]:
+        if f * r_ < 12000:
+            x += a * np.sin(2 * np.pi * f * r_ * t + rng.uniform(0, 6)) * np.exp(-t / tau)
+    x *= np.minimum(1, t / 0.002) * vel
+    rel = np.ones(N); i = int(dur * SR); rel[i:] = np.exp(-(t[i:] - dur) / 0.8)
+    return x * rel
+
+
+def meenakshi(dur):
+    """Tempio di Meenakshi, Madurai (verticale 30-45 s, 29/10): sera, curiosità, rispetto. Re dorico, 84 bpm.
+    Pizzicato leggero da subito (il verticale ha bisogno di passo), piano che canta poco, una campanella melodica
+    ogni due giri. Nessun tappeto basso, nessuna nota sotto i 196 Hz, passa-alto a 160 Hz."""
+    beat = 60 / 84; bar = 4 * beat
+    prog = [[62, 65, 69], [60, 64, 67], [59, 62, 67], [60, 65, 69]]                  # Dm  C  G/B  F (voci alte)
+    mel = [
+        [(74, 1), (72, 0.5), (69, 0.5), (71, 2)],
+        [(72, 1), (69, 1), (67, 2)],
+        [(67, 1), (69, 0.5), (71, 0.5), (74, 2)],
+        [(72, 1.5), (69, 0.5), (69, 2)],
+    ]
+    T = Track(dur); t = 0.0; k = 0
+    while t < dur:
+        ch = prog[k % 4]
+        arp = [ch[0], ch[2], ch[1] + 12, ch[2]]
+        for s_ in range(8):
+            T.add(pluck(arp[s_ % 4], beat, 0.993, 0.45), t + s_ * beat / 2,
+                  0.055 * (1.15 if s_ % 4 == 0 else 1.0), pan=0.35 if s_ % 2 else -0.25)
+        if k % 2 == 0:
+            for j, n in enumerate(ch):
+                T.add(swell(n + 12, bar * 1.6), t, 0.03, pan=-0.4 + j * 0.4)
+        if k >= 2 and k % 8 != 7:                             # la melodia entra al terzo giro, poi a frasi
+            ts = t
+            for n, b in mel[k % 4]:
+                T.add(piano_note(n, beat * b * 0.95, 0.5), ts, 0.13, pan=0.1)
+                ts += beat * b
+        if k % 4 == 0:
+            T.add(campana(86, beat * 2, 0.5), t, 0.05, pan=0.3)
+        t += bar; k += 1
+    x = T.render(fade_in=0.6, fade_out=3.0, rev=0.32)
+    return hp_fft(x)
+
+
+def cue_meenakshi(kind):
+    """Segni melodici del verticale di Meenakshi, stessa tavolozza del brano (re dorico)."""
+    beat = 60 / 84
+    if kind == "gancio":             # calmo, niente colpi: due campanelle e un arpeggio che sale e resta aperto
+        T = Track(3.5)
+        T.add(campana(86, beat * 2, 0.45), 0.0, 0.06, pan=0.3)
+        T.add(campana(81, beat * 2, 0.4), beat, 0.05, pan=-0.3)
+        for s_, n in enumerate([62, 69, 74, 76]):
+            T.add(pluck(n, beat * 1.4, 0.994, 0.5), 0.05 + s_ * beat / 2, 0.07, pan=0.35 if s_ % 2 else -0.25)
+        return hp_fft(T.render(fade_in=0.02, fade_out=1.0, rev=0.4))
+    if kind == "rivelazione":        # il fatto forte: accordo sospeso che si apre e si risolve in alto
+        T = Track(4.5)
+        for j, n in enumerate([67, 69, 74]):
+            T.add(swell(n + 12, 3.8), 0.0, 0.035, pan=-0.4 + j * 0.4)
+        for s_, n in enumerate([69, 72, 74, 77]):
+            T.add(piano_note(n, beat * (2.5 if s_ == 3 else 0.8), 0.5), 0.1 + s_ * beat * 0.6, 0.15, pan=0.1)
+        T.add(campana(89, beat * 2, 0.4), 0.1 + 3 * beat * 0.6, 0.04, pan=0.3)
+        return hp_fft(T.render(fade_in=0.03, fade_out=1.3, rev=0.42))
+    if kind == "chiusura":           # chiusura: tre note che scendono sulla tonica, campanella che resta
+        T = Track(5.0)
+        for j, n in enumerate([62, 65, 69]):
+            T.add(swell(n + 12, 4.0), 0.0, 0.03, pan=-0.4 + j * 0.4)
+        for s_, n in enumerate([77, 74, 72, 74]):
+            T.add(piano_note(n, beat * (2.2 if s_ == 3 else 0.9), 0.45), 0.1 + s_ * beat, 0.15, pan=0.1)
+        T.add(campana(86, beat * 3, 0.45), 0.1 + 3 * beat, 0.05, pan=0.3)
+        return hp_fft(T.render(fade_in=0.03, fade_out=1.6, rev=0.42))
+    raise ValueError(kind)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("brano", choices=["cammino", "storia", "arrivo", "verticale", "colline", "te_luce",
-                                    "cue_domanda", "cue_storia", "cue_citta", "cue_chai"]); ap.add_argument("out")
+                                    "cue_domanda", "cue_storia", "cue_citta", "cue_chai", "meenakshi",
+                                    "cue_gancio", "cue_rivelazione", "cue_chiusura"]); ap.add_argument("out")
     ap.add_argument("--dur", type=float, default=0)
     a = ap.parse_args()
-    dur = a.dur or {"cammino": 120, "storia": 64, "arrivo": 64, "verticale": 60, "colline": 240, "te_luce": 240}.get(a.brano, 0)
+    dur = a.dur or {"cammino": 120, "storia": 64, "arrivo": 64, "verticale": 60, "colline": 240, "te_luce": 240, "meenakshi": 50}.get(a.brano, 0)
     x = {"cammino": cammino, "storia": storia, "arrivo": arrivo,
          "verticale": lambda d: cammino(d, pulse_from=0), "colline": colline, "te_luce": te_luce,
-         **{f"cue_{c}": (lambda d, c=c: cue(c)) for c in ("domanda", "storia", "citta", "chai")}}[a.brano](dur)
+         **{f"cue_{c}": (lambda d, c=c: cue(c)) for c in ("domanda", "storia", "citta", "chai")},
+         "meenakshi": meenakshi,
+         **{f"cue_{c}": (lambda d, c=c: cue_meenakshi(c)) for c in ("gancio", "rivelazione", "chiusura")}}[a.brano](dur)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f64le", "-ar", str(SR), "-ac", "2", "-i", "-",
                     "-c:a", "pcm_s24le", a.out], input=x.astype("<f8").tobytes(), check=True)
 

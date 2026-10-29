@@ -33,3 +33,7 @@
 | `projects/te/audio/cue_storia.flac` | `musica/compose.py cue_storia` (tre note che scendono, mi minore) | Voci Vere | propria | - | Tè: entrata nel capitolo della storia |
 | `projects/te/audio/cue_citta.flac` | `musica/compose.py cue_citta` (arpeggio pizzicato che sale) | Voci Vere | propria | - | Tè: arrivo a Munnar città |
 | `projects/te/audio/cue_chai.flac` | `musica/compose.py cue_chai` (pizzicato in semicrome + melodia) | Voci Vere | propria | - | Tè: B-roll del chai (lungo) e gancio del v4 |
+| `projects/meenakshi/audio/musica_meenakshi.flac` | `musica/compose.py meenakshi` (re dorico, 84 bpm, pizzicato da subito + piano a frasi + campanella sintetica, passa-alto 160 Hz), 50 s, -20 LUFS | Voci Vere | propria | - | Meenakshi: musica del verticale |
+| `projects/meenakshi/audio/cue_gancio.flac` | `musica/compose.py cue_gancio` (due campanelle sintetiche + arpeggio che sale), 3.5 s, -18 LUFS | Voci Vere | propria | - | Meenakshi: gancio |
+| `projects/meenakshi/audio/cue_rivelazione.flac` | `musica/compose.py cue_rivelazione` (accordo sospeso che si apre), 4.5 s | Voci Vere | propria | - | Meenakshi: il fatto forte |
+| `projects/meenakshi/audio/cue_chiusura.flac` | `musica/compose.py cue_chiusura` (tre note che scendono sulla tonica), 5 s | Voci Vere | propria | - | Meenakshi: chiusura |
