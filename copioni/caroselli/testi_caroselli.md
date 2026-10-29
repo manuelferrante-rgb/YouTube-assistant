@@ -33,3 +33,18 @@ Il video completo è uscito sul canale, link in bio.
 Post YouTube (scheda Community):
 13 km pregando, senza mai fermarsi 🇮🇳 Di notte, sulla costa del Kerala, fino alla basilica di Arthunkal.
 Cammineresti 13 km di notte pregando? Scrivi SÌ o NO nei commenti. Il video completo è sul canale.
+
+## Te (dopo l'uscita del lungo, mer 18/11)
+Immagini: copioni/caroselli/te/01-08.jpg (`python3 copioni/caroselli/carosello_te.py`), su Drive montati/te/carosello/.
+Posizione IG/YT: Munnar, Kerala
+Didascalia IG:
+Affittate per 3.000 rupie l'anno 🇮🇳
+Nel 1877 le colline di Munnar, in Kerala, vengono affittate a un britannico. Oggi sono coperte di tè fino
+all'orizzonte, raccolto a mano, due, tre foglie alla volta. E dal 2005 l'azienda è per la maggior parte dei suoi
+dipendenti.
+Che tè bevi tu? Scrivilo nei commenti.
+Il video completo è uscito sul canale, link in bio.
+#kerala #india #vocivere #munnar #tè
+Post YouTube (scheda Community):
+Affittate per 3.000 rupie l'anno 🇮🇳 Le colline del tè di Munnar, in Kerala: chi le raccoglie, e di chi sono oggi.
+Che tè bevi tu? Il video completo è sul canale.

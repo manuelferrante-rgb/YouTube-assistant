@@ -47,3 +47,28 @@ Quando: dopo l'uscita del lungo, un set per giorno, nei giorni senza reel o insi
 6. QUIZ "Come chiamano qui quel gesuita italiano?" opzioni: Il padre bianco (giusta) / Il padre del mare / Il santo straniero
 7. Risposta: Veluthachan, il padre bianco (padre Giacomo Fenicio)
 8. BOX DOMANDE "Hai mai fatto un pellegrinaggio a piedi?"
+
+## Te (dopo l'uscita del lungo, dom 15/11)
+### Set 1, la raccolta (`te/set1_raccolta`, 10 storie)
+1. Tutto questo è tè (Munnar, oltre 1.500 metri)
+2. QUIZ "Quante foglie si staccano da ogni rametto?" opzioni: 1 / 2-3 (giusta) / 5
+3. Risposta: solo 2-3 foglie (Sadish)
+4. QUIZ "Ogni quanto si torna sulla stessa pianta?" opzioni: Ogni giorno / Ogni 10-15 giorni (giusta) / Ogni 3 mesi
+5. Risposta: ogni 10-15 giorni, è un giro
+6. QUIZ "Quanti anni vive una pianta di tè?" opzioni: 10 / 50 / Più di 100 (giusta)
+7. Risposta: più di cent'anni (Sadish)
+8. QUIZ "Quanti chili raccoglie una persona in un giorno?" opzioni: 5-10 / 26-29 (giusta) / 60
+9. Risposta: 26-29 chili, in media (Sadish)
+10. BOX DOMANDE "Che tè bevi tu?" (+ link al video)
+
+### Set 2, la storia (`te/set2_storia`, 10 storie)
+1. QUIZ "Nel 1877 queste colline vengono affittate. Per quanto?" opzioni: 3.000 rupie l'anno (giusta) / 3 milioni di rupie / Regalate
+2. Risposta: 3.000 rupie l'anno, circa 136 mila acri, John Daniel Munro
+3. 1880, il primo tè; dal 1901 la foresta tagliata
+4. QUIZ "Di chi è oggi l'azienda del tè di queste colline?" opzioni: Dello Stato / Di una multinazionale / Dei dipendenti (giusta)
+5. Risposta: dal 2005 per la maggior parte dei dipendenti, circa 13 mila
+6. 2015, nove giorni di sciopero, Pombilai Orumai
+7. QUIZ "Chi produce più tè al mondo?" opzioni: India / Cina (giusta) / Sri Lanka
+8. Risposta: la Cina, poi l'India (Sadish)
+9. Il chai master, che non ha voluto parlare
+10. SONDAGGIO "Hai mai assaggiato il chai?" Sì / No (+ link al video)
