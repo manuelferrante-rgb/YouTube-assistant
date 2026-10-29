@@ -58,7 +58,7 @@ def comp(out,bgframe,cx,person,h,px,dark=0.75,mirror=False,target=600,sadish=Non
     text(base,[("E OGGI",WHITE,8),("DI CHI SONO?",YEL,0)],44,40 if sadish else 50,target)
     base.convert('RGB').save(out,quality=92)
 comp('copioni/te_miniature/A1_indica.jpg','f_27.png',0.5,'clean_1.5.png',640,560,mirror=True)
-comp('copioni/te_miniature/A1_sadish.jpg','f_27.png',0.5,'clean_1.5.png',640,560,mirror=True,target=450,sadish=(380,(1450,120,2950,1490),20,425))
+comp('copioni/te_miniature/A1_sadish.jpg','f_27.png',0.5,'clean_1.5.png',640,560,mirror=True,target=450,sadish=(480,(1450,180,2950,1490),130,372))
 comp('copioni/te_miniature/A2_braccia.jpg','f_27.png',0.5,'clean_25.png',660,590,target=520)
 ims=[Image.open(f'copioni/te_miniature/{n}.jpg').resize((640,360)) for n in ('A1_indica','A1_sadish')]
 G=Image.new('RGB',(1300,380),(20,20,20))
