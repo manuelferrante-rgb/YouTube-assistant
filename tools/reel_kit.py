@@ -52,6 +52,8 @@ class Reel:
         self.blocks = []       # sottotitoli a blocco (interviste tradotte): (inizio, fine, testo)
         self.titles = []       # (inizio, fine, testo, stile, y)
         self.raw_ass = []      # eventi ASS già pronti (contatori ecc.)
+        self.cap_y = []        # (inizio, fine, y): sottotitoli più in basso dove la riga cadrebbe su un viso
+        self.cap_stop = []     # tempi in cui i sottotitoli devono sparire (cambio scena dopo l'ultima frase)
         self.dir = workdir
 
     @property
@@ -180,11 +182,13 @@ class Reel:
         for ci, c in enumerate(cs):
             nxt = [s for s in starts if s > c[0][1] + 1e-3]
             c_end = min(nxt[0] if nxt else end, c[-1][1] + 1.0)   # mai due sottotitoli insieme
+            c_end = min([c_end] + [s for s in self.cap_stop if s > c[-1][1]])
+            yc = next((S(y) for a, b, y in self.cap_y if a <= c[0][1] < b), y_cap)
             for i, (w, t) in enumerate(c):
                 e = c[i + 1][1] if i + 1 < len(c) else c_end
                 parts = [(f"{{\\c{GOLD}}}" if j == i else f"{{\\c{WHITE}}}") + x for j, (x, _) in enumerate(c)]
                 pop = "\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)" if i == 0 else ""
-                ev.append((1, t, e, "Cap", f"{{\\an5\\pos({W // 2},{y_cap}){pop}}}" + " ".join(parts)))
+                ev.append((1, t, e, "Cap", f"{{\\an5\\pos({W // 2},{yc}){pop}}}" + " ".join(parts)))
         for a, b, txt, kind in blk:
             if kind == "it":
                 ev.append((1, a, b, "Cap", f"{{\\an5\\pos({W // 2},{y_cap})\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)}}{txt}"))

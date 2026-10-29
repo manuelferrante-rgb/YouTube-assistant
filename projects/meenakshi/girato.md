@@ -16,5 +16,21 @@ Totale: 6 clip, 22.9 s. Trascrizione (`tools/transcribe_segments.py`): NESSUN pa
 
 Torri: sì, ci sono (175458, 175530, 180344, 181902), quindi la riga 3 di Copy ("i colori delle torri") regge.
 
-Mancano rispetto alla sequenza in `copioni/meenakshi_testi.md`: Manuel che entra ruotando la camera, una persona
-che prega, la signora anziana. Mancano anche le registrazioni del voiceover.
+## Secondo caricamento (29/10, 15:20 UTC): 7 clip + voiceover
+| Clip | Durata | Cosa si vede | Uso nel reel |
+|---|---|---|---|
+| 174632 (17:46) | 10.3 s | Sala interna del tempio, soffitto dipinto, colonne, gente e addetti | "Lo ricostruiscono e lo ampliano" |
+| 180356 (18:03) | 11.1 s | Torre all'imbrunire con folla che cammina, luci accese | "Tempio di Meenakshi..." e "...ogni consacrazione" |
+| 180524 (18:05) | 8.4 s | Donna in sari: saluta a mani giunte, poi prega verso il tempio dietro il cancello | "Secoli dopo, qui si viene ancora a pregare" (da 5.6 s) |
+| 180606 (18:06) | 4.9 s | Strada, rotazione della camera (fine a 1.25 s), Manuel davanti alla torre intera | "Guardatelo oggi" a fine rotazione |
+| 181242 (18:12) | 6.3 s | Manuel in selfie in strada al tramonto | non usata |
+| 181916 (18:19) | 7.8 s | Torre illuminata di sera dalla terrazza | non usata |
+| 193642 (19:36) | 5.8 s | Signora anziana a una bancarella, sorride; parla in tamil (non tradotto) | chiusura, muta |
+
+Voiceover `Mudakathan.m4a` (26.7 s, ogni riga una volta, frasi a 3.04-6.22, 7.07-8.01, 8.99-11.86, 12.57-16.52,
+17.12-19.78, 20.62-22.81 sulla voce pulita). Riascoltato a pezzi: "questo tempio fu saccheggiato" (la trascrizione
+intera sente "tempio e fu"), "i re Nayak", "tra il Cinquecento e il Seicento", "li rifanno ogni consacrazione".
+
+## Consegnato (29/10)
+`montati/meenakshi/VociVere_meenakshi_reel_1080x1920.mp4`, 22.2 s, -14.3 LUFS. Rifare: `python3 projects/meenakshi/build.py`
+(`--preview` per la prova). Sequenza e testi da `copioni/meenakshi_testi.md` (PER MONTAGGIO), niente sigla né logo.
