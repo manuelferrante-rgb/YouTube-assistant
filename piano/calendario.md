@@ -13,32 +13,41 @@ consegnato, programmato, pubblicato.
 | te | lungo (almeno 6 min) + 4 verticali + carosello | APPROVATO da Manuel il 27/10 sera, chiusura aggiunta il 28/10 (v7: "Il viaggio di Voci Vere... continua. Seguimi per scoprire le prossime storie" prima del logo; intro e teaser rifatti da zero, ~20 s; voce pulita con RNNoise; musica nuova di Audio bassissima solo dopo "Sono a Munnar" e sotto la storia). File finali su Drive montati/te VociVere_te_long_4K.mp4 (6:24) e VociVere_te_v1_teaser, v2_raccolta, v3_giornata, v4_chai (_1080x1920.mp4); reel del bucato invariato. Copy può fare il pacchetto. PACCHETTO COPY PRONTO 29/10 su Drive montati/te: sottotitoli it/en, miniatura definitiva, carosello v2 (9 slide, 3 video), storie 3x6, TESTI_titolo_descrizioni_verticali.txt (copioni/te_pacchetto.md). Capitoli: 0:00 Le colline del tè, 0:22 Munnar, 0:44 Con Sadish tra i filari, 3:28 La storia e chi ci lavora, 5:42 Il tè del chai master, 6:09 Chiusura (`projects/te/capitoli.md`) | da decidere | approvato 26/10; `piano/te.md`, `copioni/te_testi.md`; niente B-roll IA (Manuel, 27/10); cartella Drive: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw |
 | meenakshi | 1 verticale (Madurai, Tamil Nadu) | pianificato 29/10, Manuel sta andando sul posto | da decidere | `piano/meenakshi.md`; cartella Drive 1Gov2PE4EU32BZPdJW3miH3oYPc68Iv8v |
 
-## Schema settimanale (Manuel, 26/10)
-Domenica lungo, lunedì reel 1, martedì reel 2, mercoledì carosello, giovedì reel 3, venerdì libero, sabato teaser del
-lungo successivo. Fa eccezione il primo giovedì (29/10): teaser del mercato, già programmato.
+## Piano rifatto il 29/10 (Manuel): un lungo ogni 2-3 settimane, più verticali
+Decisione di Manuel 29/10: i lunghi sono pochi (uno ogni 2-3 settimane, siamo all'inizio) e non si sprecano; si
+punta anche sui verticali (reel, Shorts, caroselli, storie) dal tanto girato che c'è. Schema: nelle settimane
+del lungo valgono sab teaser, dom lungo, lun/mar reel, mer carosello, gio reel 3 (Manuel 26/10). Nelle settimane
+senza lungo: 2-3 verticali (lun, gio, a volte ven), mai nel giorno del lungo. Ogni lungo si pubblica solo dopo
+l'approvazione e il via di Montaggio. Le date sono orientative.
 
-## Date confermate da Manuel il 26/10 (ogni lungo solo dopo l'approvazione e il via di Montaggio)
-| Giorno | Uscita |
-|---|---|
-| gio 29/10 | mercato: teaser (già programmato, YT Shorts + IG) |
-| dom 1/11 | mercato: lungo (già programmato) |
-| lun 2/11 | mercato: reel 1 |
-| mar 3/11 | mercato: reel 2 |
-| mer 4/11 | mercato: carosello (solo se Copy lo prepara per il mercato) |
-| gio 5/11 | mercato: reel 3 |
-| sab 7/11 | arthunkal: teaser |
-| dom 8/11 | arthunkal: lungo |
-| lun 9/11 - gio 12/11 | arthunkal: reel 1, reel 2, carosello (mer), reel 3 |
-| sab 14/11 | te: teaser |
-| dom 15/11 | te: lungo |
-| lun 16/11 - gio 19/11 | te: reel 1, reel 2, carosello (mer), reel 3 |
+| Giorno | Uscita | Nota |
+|---|---|---|
+| gio 29/10 | mercato: teaser | già programmato (YT Shorts + IG) |
+| dom 1/11 | mercato: lungo | già programmato |
+| lun 2/11, mar 3/11, gio 5/11 | mercato: reel 1, reel 2, reel 3 | |
+| mer 4/11 | mercato: carosello | solo se Copy lo prepara |
+| ven 6/11 | meenakshi (verticale unico, Madurai) | se Manuel carica il girato e Montaggio lo consegna; altrimenti slitta |
+| lun 9/11 | comunismo (reel pronto) | settimana senza lungo |
+| gio 12/11 | kallu (reel pronto) | |
+| sab 14/11 | arthunkal: teaser | |
+| dom 15/11 | arthunkal: lungo (2 settimane dopo il mercato) | pacchetto Copy pronto dal 27/10 |
+| lun 16/11, mar 17/11, gio 19/11 | arthunkal: reel 1, reel 2, reel 3 | |
+| mer 18/11 | arthunkal: carosello | |
+| ven 20/11 - gio 26/11 | verticali dal girato: ven 20/11 e gio 26/11, da scegliere con Manuel | settimana senza lungo |
+| sab 28/11 | te: teaser | |
+| dom 29/11 | te: lungo (2 settimane dopo arthunkal) | se il montato è approvato |
+| lun 30/11, mar 1/12, gio 3/12 | te: reel 1, reel 2, reel 3 | |
+| mer 2/12 | te: carosello | |
+| ven 4/12 | bucato (te) | |
+| 5/12 - 12/12 | verticali dal girato | settimana senza lungo |
+| dom 13/12 o 20/12 | prossimo lungo (2-3 settimane dopo te) | video da decidere dal girato che resta |
 
-Reel già pronti ma senza data: comunismo, kallu (da infilare nei venerdì liberi o a metà settimana, a scelta di Manuel).
+Vincolo che resta: il carosello mai nel giorno del lungo. I verticali "diversi" (comunismo, kallu, meenakshi,
+bucato) sono curiosità autonome, non legate a un lungo.
+
+Reel già pronti da usare: comunismo, kallu, bucato (te), meenakshi (se il girato arriva). Il reel "come stendere
+i panni" NON è per Voci Vere (profilo personale di Manuel). Nessun reel di cucina (errore di Manuel, 29/10).
+Da fare con Manuel: elenco del girato non ancora usato per trovare nuovi verticali (Pianificazione propone, Montaggio
+conferma cosa c'è in `projects/<video>/girato.md`).
 
 Nota da Audio, 27/10 sera: te, audio nuovo pronto per Montaggio (musica leggera senza bassi + 4 segni melodici sui B-roll, niente suoni dal girato): `projects/te/audio/LEGGIMI.md`, Drive montati/te/audio/.
-
-Nota da Pianificazione, 29/10 (Manuel, orientativa): i reel "diversi" già pronti escono solo dopo che sono usciti almeno
-due video completi con i loro reel (mercato e arthunkal, entro 12/11; con te entro 19/11), quindi slittano di tre
-settimane nei venerdì liberi: ven 20/11 comunismo, ven 27/11 kallu, ven 4/12 bucato (te), ven 11/12 meenakshi
-(se il girato è pronto; Manuel non ha fretta). Il reel "come stendere i panni" NON è per Voci Vere (profilo personale
-di Manuel). Nessun reel di cucina (errore di Manuel, 29/10).

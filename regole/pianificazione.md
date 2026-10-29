@@ -27,3 +27,7 @@
   l'approvazione). Settimana tipo: domenica lungo, lunedì reel 1, martedì reel 2, mercoledì carosello, giovedì
   reel 3, venerdì niente, sabato teaser del lungo successivo (che esce la domenica dopo). Il carosello mai nello
   stesso giorno del lungo. Eccezione solo per il primo giovedì (29/10): teaser del mercato già programmato.
+- Cadenza (Manuel, 29/10): un lungo ogni 2-3 settimane, non di più, perché siamo all'inizio e i verticali (reel,
+  Shorts, caroselli, storie) portano molti contenuti dallo stesso girato. Nelle settimane senza lungo escono 2-3
+  verticali autonomi. Il piano aggiornato è in `piano/calendario.md`. Questo sostituisce lo schema "un lungo ogni
+  domenica" del 26/10.
