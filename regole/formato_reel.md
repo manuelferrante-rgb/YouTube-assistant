@@ -63,4 +63,6 @@ Prevale sulle note più vecchie sui verticali in `regole/montaggio_documentario.
 Fotogrammi a ogni titolo e sottotitolo e dei primi 5 s, trascrizione del montato (nessuna parola tagliata o
 ripetuta; i dubbi si riascoltano a pezzi), `tools/audio_check.py`, ffprobe sul file finito. Se si cambia un pezzo
 generato (logo, scheda), cancellare `work/<video>/out/reel_*_work`: la cache è per nome di file.
-Manuel vuole vedere il reel in chat (SendUserFile) e lo approva prima che si sostituisca il file su Drive.
+Dove mandare le versioni (Manuel, 29/10): lunghi, teaser e reel dei lunghi vanno direttamente su Drive (cartella del
+video), le modifiche si fanno da lì. In chat (SendUserFile) solo i verticali che sono una storia a sé (tipo meenakshi),
+che Manuel approva prima che si sostituisca il file su Drive.

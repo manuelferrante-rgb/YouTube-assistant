@@ -54,5 +54,7 @@ Si risponde sempre in italiano a Manuel, risposte brevi e concrete.
 - Mai `pkill -f` con un testo che compare nello stesso comando (uccide la shell): usare il PID.
 
 ## Consegna
+Dove mandare (Manuel, 29/10): lunghi, teaser e reel dei lunghi direttamente su Drive, le modifiche si fanno da lì.
+In chat solo i verticali che sono una storia a sé (tipo meenakshi).
 `GDRIVE_FOLDER_ID=<cartella del video> tools/drive_upload.sh <video> <file>` (al posto dei vecchi; se si blocca,
 `timeout 290` e riprova). Poi `piano/calendario.md`, commit, PR su master e merge.
