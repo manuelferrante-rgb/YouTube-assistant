@@ -79,7 +79,7 @@ def reel():
     # 2. Manuel che entra ruotando la camera: "Guardatelo oggi" a fine rotazione (la torre ferma dietro di lui)
     r.own(C("180606"), 0.45)(0.8)
     t_riv = say(r, L2, [(r.own(C("180606"), 1.25), None)])
-    cue(tl, t_riv, "cue_rivelazione", 3.4, 0.55, fout=0.8)
+    cue(tl, t_riv, "cue_rivelazione", 3.4, 0.3, fout=0.8)    # -10 dB sotto la voce (Audio 29/10)
     # 3. il tempio: torre e folla, la sala dipinta, la carrellata, le torri da vicino sotto "i colori delle torri"
     t3 = say(r, L3, [(r.own(C("180356"), 3.0), None)])
     r.title(t3 + 0.1, t3 + 2.6, "Madurai, Tamil Nadu", "Small", 400)
