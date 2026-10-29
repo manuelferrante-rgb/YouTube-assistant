@@ -1,4 +1,8 @@
-# Passaggio alla nuova chat Montaggio (29/10)
+# Passaggio alla nuova chat Montaggio (aggiornato 29/10 sera)
+
+PRIMA DI TUTTO, PER OGNI REEL: `regole/formato_reel.md` (formato approvato da Manuel sul reel meenakshi: gancio forte,
+nessuna pausa, tutto a 1.1x, titoli Poppins ExtraBold oro su bianco, sottotitoli su fascia scura, chiusura "Ascolta
+altre voci, su" + logo su velo leggero). Modello pronto: `projects/meenakshi/build.py`.
 
 Leggi prima CLAUDE.md, poi `regole/montaggio_documentario.md` (soprattutto le regole in fondo dal 26/10 in poi), poi questo file.
 Si risponde sempre in italiano a Manuel, risposte brevi e concrete.
@@ -6,6 +10,8 @@ Si risponde sempre in italiano a Manuel, risposte brevi e concrete.
 ## Stato
 - te (tè di Munnar): FINITO e approvato. Su Drive (cartella 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw, montati/te) lungo 4K 6:24
   e 4 verticali; Copy ha già fatto il pacchetto. Non toccarlo salvo richiesta di Manuel.
+- meenakshi (tempio di Madurai): FINITO e approvato 29/10, verticale 19.3 s in montati/meenakshi (cartella Drive
+  1Gov2PE4EU32BZPdJW3miH3oYPc68Iv8v). Non toccarlo salvo richiesta di Manuel.
 - arthunkal, mercato: finiti (vedi `piano/calendario.md`).
 - Prossimo video: lo dice Manuel. Quando carica il girato su Drive, il flusso è quello di CLAUDE.md.
 

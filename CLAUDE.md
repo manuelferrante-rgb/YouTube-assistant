@@ -87,6 +87,8 @@ Regole tra chat:
   lungo. Nei VERTICALI invece (Manuel, 25/10): sottotitoli su tutto il parlato, centrali nella safe zone, parola per
   parola (formato in `regole/montaggio_documentario.md`, nota Insights 25/10).
 - Regole di montaggio complete: `regole/montaggio_documentario.md` (leggerle prima di ogni montaggio).
+- FORMATO DEI REEL (Manuel, 29/10, dal reel meenakshi): `regole/formato_reel.md`. Vale per tutti i verticali e prevale
+  sulle righe più vecchie sui verticali qui e nelle regole (titoli, sottotitoli, velocità 1.1x, chiusura con logo).
 - Flusso per video: girato su Drive -> analisi e copione voiceover -> Manuel carica registrazioni voiceover e
   (dal 25/10 niente musica di YouTube: la musica è originale, composta dalla chat Audio) -> montaggio e consegna.
 - Titolo e descrizione YT anche in inglese (traduzioni YouTube).

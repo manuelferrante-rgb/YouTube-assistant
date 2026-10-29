@@ -87,3 +87,8 @@ prossimi reel:
   (senza sfondo, con il payoff), centrato sotto la frase, ~70% della larghezza, dissolvenza 0.2 s, circa 2 s per
   leggere il payoff. Musica fino alla fine del logo.
 - Da evitare: frasi da influencer ("Il viaggio continua", "Seguimi per..."), rimandi a un video completo.
+
+Nota da Montaggio, 29/10: la chiusura dei verticali approvata alla fine da Manuel è cambiata rispetto a sopra:
+frase e titoli in Poppins ExtraBold oro su riquadro BIANCO (non Anton su oro), la frase entra quando sparisce
+l'ultimo sottotitolo, il logo sfuma centrato sopra l'ultima persona sotto un velo nero leggero (non sul nero).
+Formato completo dei reel in `regole/formato_reel.md`. La frase "Ascolta altre voci, su" resta uguale.
