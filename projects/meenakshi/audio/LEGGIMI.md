@@ -32,5 +32,5 @@ L'audio ambiente nelle clip e la pulizia della voce restano di Montaggio (`tools
 
 Nota da Copy, 29/10 sera: il verticale ora è tutto in voiceover, 20-30 s, su una sequenza decisa da Manuel (signore
 con il segno sulla fronte, entrata di Manuel con la rotazione della camera, spezzoni del tempio, persona che prega,
-chiusura sulla signora anziana). Manuel dice che la musica già fatta va bene: nessun file nuovo. Nuove posizioni dei
+chiusura sulla signora anziana). Manuel pensa che la musica già fatta possa andare bene: per ora nessun file nuovo. Nuove posizioni dei
 cue nella sezione "PER AUDIO" di `copioni/meenakshi_testi.md`.
