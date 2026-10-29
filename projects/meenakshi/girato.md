@@ -31,6 +31,13 @@ Voiceover `Mudakathan.m4a` (26.7 s, ogni riga una volta, frasi a 3.04-6.22, 7.07
 17.12-19.78, 20.62-22.81 sulla voce pulita). Riascoltato a pezzi: "questo tempio fu saccheggiato" (la trascrizione
 intera sente "tempio e fu"), "i re Nayak", "tra il Cinquecento e il Seicento", "li rifanno ogni consacrazione".
 
-## Consegnato (29/10)
-`montati/meenakshi/VociVere_meenakshi_reel_1080x1920.mp4`, 22.2 s, -14.3 LUFS. Rifare: `python3 projects/meenakshi/build.py`
-(`--preview` per la prova). Sequenza e testi da `copioni/meenakshi_testi.md` (PER MONTAGGIO), niente sigla né logo.
+## Consegnato (29/10, versione finale)
+`montati/meenakshi/VociVere_meenakshi_reel_1080x1920.mp4`, 21.2 s, -14.3 LUFS. Rifare: `python3 projects/meenakshi/build.py`
+(`--preview` per la prova; cancellare `work/meenakshi/out/reel_*_work` se cambia un pezzo generato, la cache è per file).
+Scelte di Manuel sul montato: signore già zoomato 1.1 s, torre con folla, rotazione solo nel giro, "Guardatelo oggi",
+1.3 s dall'alto di notte, elefante su "...in India" prima dell'interno, nessuna pausa tra le frasi del VO; tra la donna
+che prega e la signora solo l'inizio della carrellata; signora 2 s; frase di Copy "Ascolta altre voci, su" da quando
+sparisce l'ultimo sottotitolo; logo centrato che sfuma sulla signora sotto un velo nero leggero (35%), 2 s.
+Titoli: Poppins ExtraBold oro su riquadro bianco, una riga grande (stile `Tag` di `tools/reel_kit.py`, font
+`assets/fonts/VVTitolo-PoppinsExtraBold.ttf`). Sottotitoli: fascia scura semitrasparente, parola corrente in oro
+(`Reel(cap_box=True)`), tutti alla stessa altezza.

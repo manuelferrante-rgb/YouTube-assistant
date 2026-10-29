@@ -102,7 +102,6 @@ def reel():
                 (r.own(C("180356"), 3.0), None),
                 (r.own(C("180606"), 0.85, speed=1.6), 0.25)])
     r.title(0.0, 2.0, "Saccheggiato nel 1310", "Tag", 400)
-    r.cap_y.append((0.0, r.t, 560))                               # all'inizio sottotitoli più in alto (piace a Manuel)
     cue(tl, 0.0, "cue_gancio", 3.3, 0.24)                         # circa -12 dB sotto la voce
     # 2. "Guardatelo oggi" su Manuel con la torre dietro, poi un secondo dall'alto di notte (la camera che si muove)
     t_riv = say(r, L2, [(r.own(C("180606"), 1.25), None)])
