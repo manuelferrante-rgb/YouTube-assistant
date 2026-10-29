@@ -37,6 +37,12 @@ Registrare ogni riga 2 volte, con un secondo di silenzio tra una e l'altra (file
   sculture dipinte. Se tra le clip non ci sono torri, dirmelo e cambio la frase.
 - "Guardatelo oggi" cade alla fine della rotazione: la rotazione è il momento della rivelazione.
 - Niente logo o chiusura lunga: si chiude sulla signora.
+- FRASE FINALE A SCHERMO (Copy, 29/10, sul montato da 19.2 s): da 16.4 s all'ultimo fotogramma, stesso formato
+  dei titoli (Anton bianco su riquadro oro), in alto sopra la testa della signora. Due righe:
+      Seguimi per altre
+      storie dall'India
+  (17 + 17 caratteri, 5 parole). Alternative: "Seguimi: / il viaggio continua" (8 + 19), "Tu ci entreresti?"
+  (17, una riga, domanda che porta ai commenti).
 - Durata finale 20-30 s.
 
 ## PER AUDIO (musica già pronta, `projects/meenakshi/audio/LEGGIMI.md`)
