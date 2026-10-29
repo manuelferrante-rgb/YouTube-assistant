@@ -26,6 +26,7 @@ MUSICA = f"{AUD}/musica_meenakshi.flac"
 MUS_LEVEL = 0.08                     # bassissima e costante sotto il VO (circa 23 dB sotto la voce, Manuel 27/10)
 MUS_UP = 0.17                        # sulla signora, senza voce: +7 dB (Copy/Audio 29/10)
 NIGHT = "eq=brightness=0.03:gamma=1.12:contrast=1.04:saturation=1.08"
+CTA = ""                             # frase finale a schermo (la scrive Copy, Manuel 29/10); "\\N" per andare a capo
 SP = 1.0                             # voce calma (copione di Copy): niente accelerazione
 
 
@@ -91,7 +92,7 @@ def reel():
     t_riv = say(r, L2, [(r.own(C("180606"), 1.25), None)])
     cue(tl, t_riv, "cue_rivelazione", 3.4, 0.24, fout=0.8)
     # 3. l'elefante di pietra fino a "in India", poi l'interno; titoli sulle parole: nome del tempio, poi Madurai e Tamil Nadu
-    t3 = say(r, L3, [(r.own(C("181902"), 0.4, speed=1.5), 1.0), (r.own(C("180328"), 0.0), None)])
+    t3 = say(r, L3, [(r.own(C("181902"), 0.4, speed=1.5), 1.3), (r.own(C("180328"), 0.3), None)])   # v4: +0.3 / -0.3
     r.title(at(t3, L3, 8.99), at(t3, L3, 9.96), "Tempio di Meenakshi", "Tag", 400)
     r.title(at(t3, L3, 9.96), at(t3, L3, 11.86) + 0.3, "Madurai, Tamil Nadu", "Tag", 400)
     say(r, L4, [(r.own(C("174632"), 1.0), 2.0), (r.own(C("180344"), 1.4), None)])
@@ -105,6 +106,8 @@ def reel():
     t_sig = r.t
     r.own(C("193642"), 0.4, grade=NIGHT, fx=dict(black_out=0.4))(2.0)
     cue(tl, t_sig - 0.4, "cue_chiusura", 2.4, 0.45, fout=0.9)
+    if CTA:   # frase finale a schermo di Copy, stesso formato dei titoli, sopra la testa della signora
+        r.title(t_b + 0.1, r.t, CTA, "Tag", 400)
 
     end = r.t
     tl.music(0.0, t_b + 0.3, MUSICA, offset=0.0, level=MUS_LEVEL, fin=0.05, fout=0.3, duck=False, norm=False)
