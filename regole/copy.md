@@ -82,3 +82,9 @@ Caroselli e storie (Manuel, 29/10, riferimenti latiumani e Progetto Happiness; p
 Chiusura dei verticali (Manuel, 29/10, primo esempio: meenakshi): frase **Ascolta altre voci, su** + logo Voci Vere
 con il payoff. Stile, tempi e velo nero leggero sono in `regole/formato_reel.md` (vale quel file). Da evitare: frasi
 da influencer ("Il viaggio continua", "Seguimi per..."), rimandi a un video completo.
+
+Bio Instagram @vocivere (scelta di Manuel, 1/11):
+🎙️ Dare voce a chi ne ha più bisogno
+🎥 Oltre la realtà filtrata dei social
+▶️ Le storie complete su YouTube 👇
+(Niente riga con il luogo attuale: Manuel non la vuole.)
