@@ -62,3 +62,19 @@ Si parla di UNA cosa per volta, con UNA persona. Sei temi concreti, tutti rispon
 Dove trovarli (da verificare sul posto): cantieri, ristoranti e negozi di Varkala. Chiedere, mai filmare di nascosto.
 NON usare il caso del migrante che dormiva in una cuccia per cani (South First): troppo sensazionalistico per un
 singolo caso. Distanza: stanno a Varkala, nessun spostamento.
+
+## Decisione 1/11 (Manuel): FORMATO, ORDINE, ESTENSIONE
+- Lungo 16:9 con pacchetto completo (teaser, 3 reel, carosello, 2 set di stories). Si fa DOPO `coir` (orientativo
+  lungo B, dom 10/1).
+- Può essere su tutto il Kerala: Manuel dopo Varkala si sposta a Kochi (Ernakulam). Non è la capitale: la capitale
+  è Thiruvananthapuram. Il raggio di 30 min vale per ogni nuovo alloggio.
+- Perumbavoor (est di Kochi, "angolo nord-est dell'area urbana", Wikipedia) è il luogo dove le fonti indicano più
+  migranti di tutto il Kerala: cluster di plywood con 800-1.000+ unità (discordanti: 800 in un report del 2020, oltre
+  1.000 in un altro), lavoratori da Bengala, Assam, Odisha. Cifre di lavoratori (100-150 mila in Perumbavoor,
+  "il 90% dal Bengala e dall'Assam") e il legame con Domkal (Murshidabad): da una fonte ciascuna, non dire in voce.
+  Un report 2026 parla di crisi della materia prima del legno. Un altro, 2026, di sospetto verso i lavoratori
+  bengalesi dopo il conflitto in Asia occidentale (South First): tema delicato.
+- Distanza Perumbavoor-Kochi: una fonte dà 33 km da Ernakulam (circa 1 h in auto con traffico, stima mia): da
+  verificare sul posto se rientra nel raggio dell'alloggio.
+- Struttura possibile: due-tre persone in due posti (Varkala + Kochi/Perumbavoor), stessa domanda, tema comune "perché
+  il Kerala". Varkala porta cantieri e servizi, Perumbavoor la fabbrica.

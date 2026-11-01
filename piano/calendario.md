@@ -92,3 +92,5 @@ Nota da Pianificazione, 1/11 (Manuel): zona Varkala (Taaraa Loca). Scelti due te
 Nota da Pianificazione, 1/11 (Manuel): filo conduttore ricorrente = donne lavoratrici (te, coir, e altre candidate in `regole/pianificazione.md`). Varietà di luoghi e mestieri, niente pellegrinaggi di default.
 
 Nota da Pianificazione, 1/11 (Manuel): regola dei posti = raggio massimo 30 minuti di auto dall'alloggio (Taaraa Loca, Varkala). Anjengo (coir) rientra (circa 9-12 km, stima). Anacardi di Kollam (circa 40 km, oltre il limite per stima, nessuna fabbrica trovata più vicina): fuori finché Manuel non si sposta. Approfondimenti in `piano/coir.md` e `piano/migranti.md`.
+
+Nota da Pianificazione, 1/11 (Manuel): `coir` e `migranti` = lunghi orizzontali con pacchetto completo (teaser, 3 reel, carosello, 2 set stories). Ordine: prima coir (lungo A, dom 20/12), poi migranti (lungo B, dom 10/1), il secondo anche su più luoghi del Kerala (Varkala, poi Kochi/Perumbavoor). Piani aggiornati in `piano/coir.md` e `piano/migranti.md`.

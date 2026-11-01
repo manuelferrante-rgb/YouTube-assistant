@@ -59,3 +59,9 @@ Numeri di lavoratori, salario medio, quante società restano, anno esatto del fo
   e cosa fanno le figlie; l'acqua (macerazione) e la fibra che cambia.
 - Il reportage "Frayed Threads" (Caravan) sulle lavoratrici del coir in pandemia è utile per il contesto, da rileggere
   prima di citarlo.
+
+## Decisione 1/11 (Manuel): FORMATO E ORDINE
+`coir` va girato per primo. Pacchetto completo: lungo 16:9 + teaser + 3 reel + carosello + 2 set di stories (regola
+`regole/pianificazione.md`). Lungo A orientativo dom 20/12, teaser sab 19/12. Girare a Anjengo a partire da subito
+(Manuel è a Varkala fino a quando decide), con materiale per 4 angoli (vedi sopra). Il lungo si pubblica solo dopo
+approvazione e via di Montaggio.
