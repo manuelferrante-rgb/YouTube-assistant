@@ -96,3 +96,5 @@ Nota da Pianificazione, 1/11 (Manuel): regola dei posti = raggio massimo 30 minu
 Nota da Pianificazione, 1/11 (Manuel): `coir` e `migranti` = lunghi orizzontali con pacchetto completo (teaser, 3 reel, carosello, 2 set stories). Ordine: prima coir (lungo A, dom 20/12), poi migranti (lungo B, dom 10/1), il secondo anche su più luoghi del Kerala (Varkala, poi Kochi/Perumbavoor). Piani aggiornati in `piano/coir.md` e `piano/migranti.md`.
 
 Nota da Pianificazione, 1/11 (Manuel): Manuel resta a Varkala (Taaraa Loca) fino al 13/11, con 11-12/11 a Kochi. Da girare: filiera del coir (`coir`), migranti (`migranti`, Varkala e Kochi/Perumbavoor), Diwali dom 8/11 (`diwali`, reel o scena dentro migranti, non un lungo) e una ONG del posto (nessuna verificata entro 30 min da Varkala). Proposta di giorni in `piano/coir.md`. Il Diwali non entra nel calendario delle uscite fino al montato.
+
+Nota da Pianificazione, 1/11 (Manuel): martedì 3 e mercoledì 4/11 Manuel è a Kanyakumari (alloggio Ramraj Resorts, Kovalam). La ONG la fa lì (piano in `piano/kanyakumari.md`: donne del mare, KDFSF, Siluvai Nagar). Poi rientra a Varkala.
