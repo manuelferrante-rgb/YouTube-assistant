@@ -65,3 +65,27 @@ Numeri di lavoratori, salario medio, quante società restano, anno esatto del fo
 `regole/pianificazione.md`). Lungo A orientativo dom 20/12, teaser sab 19/12. Girare a Anjengo a partire da subito
 (Manuel è a Varkala fino a quando decide), con materiale per 4 angoli (vedi sopra). Il lungo si pubblica solo dopo
 approvazione e via di Montaggio.
+
+## Aggiornamento 1/11 (testo trovato da Manuel online): passato e declino, dove andare
+Testo incollato da Manuel (probabile riassunto di una ricerca con IA, citazioni di wanderlog, hiddenroutes, indiamart,
+Times of India, UNIDO). Cosa tengo e cosa no:
+- TENGO (confermato da CPPR "Kerala's Anjengo coir: once a crown jewel"): filato di alta qualità, a torsione dura e più
+  resistente; famiglie di Anjengo e Kaniyapuram vivono di coir da generazioni; ora quasi nessuna società o fabbrica
+  rimasta nel tratto Anjuthengu-Kaniyapuram; cause citate: costo del lavoro, esportatori che passano a iuta e sisal,
+  coir sintetico (polythene coir); un'altra analisi CPPR cita la concorrenza del Tamil Nadu. Un sindacalista di
+  The News Minute: "questa industria tradizionale sta morendo". Lo studio IJCRT 2025: 80% donne, la maggior parte
+  nella filatura. L'articolo CPPR ha circa 3 anni: la situazione va verificata sul posto.
+- NON DIRE: "il coir di Anjengo faceva le corde delle flotte inglesi" (da siti turistici, non verificato); i nomi
+  "Anjengo A / M / 4 Shaft" (da un sito commerciale); "Anjengo oggi è solo un tipo di filato e non una fabbrica
+  attiva" (inferenza del testo, non detta da fonti: è proprio quello che si va a verificare).
+- Non trovato l'articolo del Times of India: da cercare per titolo, "Traditional coir industry sees decline in district".
+Dove andare, in ordine (scouting mezza giornata, poi riprese):
+1. Ufficio del panchayat di Anchuthengu e il mercato di Anjengo: chiedere "kayar" (coir in malayalam, da verificare)
+   e dove si fila ancora. Chiedere dove stanno le ex lavoratrici.
+2. Una casa o un cortile dove si fila ancora (accesso migliore: una donna con il consenso, mestiere in azione).
+3. Una società o un'unità di coir se esiste ancora (Chirayinkeezhu, Kaniyapuram). Non cercare "la fabbrica":
+   le fonti dicono che ne restano pochissime.
+4. L'acqua dove i gusci sono in ammollo (backwater/lagune di Anjengo).
+5. Il forte di Anjengo: una sola inquadratura per il passato, senza spiegare.
+Interviste su strada: solo come complemento (negozio, pescatore, anziano), per il contesto sul declino.
+Struttura del lungo: passato (anziane che ricordano), mestiere oggi (la persona al lavoro), declino (parole loro).
