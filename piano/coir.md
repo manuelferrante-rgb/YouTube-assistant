@@ -89,3 +89,17 @@ Dove andare, in ordine (scouting mezza giornata, poi riprese):
 5. Il forte di Anjengo: una sola inquadratura per il passato, senza spiegare.
 Interviste su strada: solo come complemento (negozio, pescatore, anziano), per il contesto sul declino.
 Struttura del lungo: passato (anziane che ricordano), mestiere oggi (la persona al lavoro), declino (parole loro).
+
+## Filiera (Manuel 1/11: "il cocco sulla filiera")
+Anelli da girare, con chi trovare in ognuno (da verificare sul posto):
+1. Palma e noci: il proprietario del terreno o chi raccoglie le noci.
+2. Gusci: chi li raccoglie o li compra. Fonti: la carenza di gusci in Kerala è sentita da ottobre a dicembre e cala a gennaio
+   (documento parlamentare); una fonte dice che il Kerala importa più della metà del fabbisogno dal Tamil Nadu; cause:
+   calo del prezzo delle noci, gusci bruciati come legna, pochi punti di raccolta. Fonti vecchie (2009-2012): NON dirle.
+3. Macerazione (ammollo): fonti 6-10 mesi per la fibra bianca; ha inquinato i backwater (fonti vecchie).
+4. Battitura e filatura: le donne (80%, IJCRT 2025). Lavoro concentrato tra donne di classi e caste svantaggiate nei
+   villaggi costieri di Thiruvananthapuram, Kollam, Alappuzha.
+5. Chi compra il filato: cooperativa (poi Coirfed, che secondo CPPR fissa i prezzi senza consultarle) o commerciante privato.
+6. Prodotti: stuoie, tappeti, passatoie. Quanto vale il prodotto finito rispetto a quanto prende chi fila: chiedere,
+   attribuire a chi lo dice.
+Domanda guida della filiera: chi guadagna cosa a ogni passaggio. Solo con parole degli intervistati.
