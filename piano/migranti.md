@@ -47,3 +47,18 @@ Angoli dei 4 verticali: (a) una giornata in 30 s, (b) quanto spedisce a casa (so
 ## Rischi
 Tema politico: non fare confronti col voto o gli stati. Non filmare cantieri irregolari in modo da esporre
 la persona. Non generalizzare da una storia a tutti i migranti.
+
+## Aggiornamento 1/11 (Manuel): "è un tema generale, su cosa parliamo?"; raggio massimo 30 min di auto da Varkala
+Si parla di UNA cosa per volta, con UNA persona. Sei temi concreti, tutti rispondibili da chi lo vive:
+1. Perché il Kerala: lo stesso motivo per cui i keralesi vanno nel Golfo (stipendi più alti). Per molti migranti il
+   Kerala è "il loro Golfo". Angolo mio, con fonti su Golfo e salari (Millennium Post, Open): da verificare con la persona.
+2. Quanto prende e quanto spedisce a casa. Le fonti dicono 600-800 rupie al giorno (fino a 1.200 per mestieri
+   specializzati; Outlook, dato vecchio) e più di 500 anche senza qualifica (Gulf News). Solo parole sue, mai cifre mie.
+3. Dove dorme e quanto paga: nel Kochi, due terzi pagano circa 1.000 rupie al mese di affitto, alcuni non pagano in
+   cambio di servizi al padrone di casa (studio 2020). Va chiesto, non detto.
+4. Mangiare e lingua: il cibo di casa, il malayalam imparato, chi lo aiuta a capire.
+5. Salute: se ha la tessera Aawaz, se è mai andato dal medico (storia di un servizio che pochi usano).
+6. Come lo guardano i keralesi: stigma e sospetto (The News Minute, Gulf News). Solo se la persona ne parla lei.
+Dove trovarli (da verificare sul posto): cantieri, ristoranti e negozi di Varkala. Chiedere, mai filmare di nascosto.
+NON usare il caso del migrante che dormiva in una cuccia per cani (South First): troppo sensazionalistico per un
+singolo caso. Distanza: stanno a Varkala, nessun spostamento.

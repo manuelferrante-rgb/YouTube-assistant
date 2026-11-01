@@ -49,3 +49,13 @@ Angoli dei 4 verticali: (a) il gesto, (b) il tempo che ci vuole, (c) una persona
 
 ## Cosa NON dire senza conferma
 Numeri di lavoratori, salario medio, quante società restano, anno esatto del forte, durata unica della macerazione.
+
+## Aggiornamento 1/11 (Manuel): tema "bello forte", approfondire; raggio massimo 30 min di auto da Taaraa Loca (Varkala)
+- Distanza: Anchuthengu/Anjengo è a circa 9-12 km da Varkala (tripxl, rome2rio; stime, non tempi). Dentro il limite.
+- Chirayinkeezhu (a circa 13 km da Varkala, Kerala Tourism) è uno dei 10 "project area" delle cooperative del coir
+  (studio CUSAT). Non ho trovato società precise di Kappil, Edava o Kadakkavoor: chiedere sul posto.
+- Di cosa si può parlare (una cosa per verticale, dalle donne): il gesto e il tempo del lavoro; chi insegna a chi
+  (madre-figlia: solo se loro vogliono); il pagamento (quando arriva, a cosa è legato: parole loro); perché è in calo
+  e cosa fanno le figlie; l'acqua (macerazione) e la fibra che cambia.
+- Il reportage "Frayed Threads" (Caravan) sulle lavoratrici del coir in pandemia è utile per il contesto, da rileggere
+  prima di citarlo.
