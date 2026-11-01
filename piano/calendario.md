@@ -86,3 +86,5 @@ Nota da Pianificazione, 29/10 (Manuel): cadenza dilatata, un contenuto un giorno
 Nota da Pianificazione, 29/10 (Manuel): per mercato, arthunkal e te sono già pronti 4 verticali, carosello e 2 set di
 stories ciascuno: nessuna attesa su Copy. Reel extra già pronti: bucato, comunismo, kallu; meenakshi già pronto (girato e montato). Stendere i panni: sul profilo personale di Manuel. Dal 30/10 Manuel è in un ashram (tono più introspettivo):
 se gira qualcosa, bene, ma non è nel piano. Stories: set 1 il lunedì dopo il lungo, set 2 il venerdì (giorni liberi).
+
+Nota da Pianificazione, 1/11 (Manuel): zona Varkala (Taaraa Loca). Scelti due temi per i lunghi A e B: `coir` (le donne del coir ad Anjengo/Anchuthengu) e `migranti` (lavoratori del Bengala e dell'Odisha in Kerala). Proposta: coir = lungo A (20/12), migranti = lungo B (10/1), da confermare. Piani in `piano/coir.md` e `piano/migranti.md`. Nessun contatto verificato: si parte sul posto.
