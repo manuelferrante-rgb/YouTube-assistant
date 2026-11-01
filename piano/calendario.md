@@ -88,3 +88,5 @@ stories ciascuno: nessuna attesa su Copy. Reel extra già pronti: bucato, comuni
 se gira qualcosa, bene, ma non è nel piano. Stories: set 1 il lunedì dopo il lungo, set 2 il venerdì (giorni liberi).
 
 Nota da Pianificazione, 1/11 (Manuel): zona Varkala (Taaraa Loca). Scelti due temi per i lunghi A e B: `coir` (le donne del coir ad Anjengo/Anchuthengu) e `migranti` (lavoratori del Bengala e dell'Odisha in Kerala). Proposta: coir = lungo A (20/12), migranti = lungo B (10/1), da confermare. Piani in `piano/coir.md` e `piano/migranti.md`. Nessun contatto verificato: si parte sul posto.
+
+Nota da Pianificazione, 1/11 (Manuel): filo conduttore ricorrente = donne lavoratrici (te, coir, e altre candidate in `regole/pianificazione.md`). Varietà di luoghi e mestieri, niente pellegrinaggi di default.

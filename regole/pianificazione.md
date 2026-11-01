@@ -37,3 +37,8 @@
   ogni lungo: lo segnalo a Copy con una nota.
 - Cadenza dei contenuti (Manuel, 29/10): un contenuto (reel, carosello, teaser, lungo) un giorno sì e uno no. Più giorni
   di fila vanno bene, un giorno vuoto pure. Le stories riempiono i giorni liberi.
+- Filo conduttore (Manuel, 1/11): portare in giro il tema delle donne lavoratrici (non l'unico, ma ricorrente). Nelle idee
+  per ogni luogo proporre sempre anche un angolo con donne che lavorano: chi, cosa fa, "come funziona", la voce sul
+  salario solo come parole loro. Già in linea: raccoglitrici di tè (`te`), donne del coir (`coir`). Candidate: operaie
+  degli anacardi di Kollam, venditrici di pesce del Kanyakumari (Santidhan), venditori di lotterie.
+  Varietà prima di tutto: niente pellegrinaggi o templi di default, luoghi e mestieri diversi (Manuel, 1/11).
