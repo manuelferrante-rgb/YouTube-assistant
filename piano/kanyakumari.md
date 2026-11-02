@@ -32,3 +32,20 @@ Nessuna inquadratura da cartolina (roccia di Vivekananda, tramonto): al massimo 
 Manuel in camera dentro l'azione con ora e numeri; prima/dopo nello stesso punto (porto all'alba, mercato a fine mattina);
 30 s di audio pulito senza la sua voce; ripresa dall'alto del porto o del mercato; 2-3 interviste, stessa domanda.
 Solo con il consenso. Salari e debiti: parole loro. Framing "raccontare", mai tono da salvatore.
+
+## Verticale "Capo Comorin" (Manuel, 2/11: un verticale dal punto più a sud)
+Fatti con fonte (Wikipedia "Kanyakumari", Gulf News, siti di viaggio; da ricontrollare):
+- Kanyakumari è la punta più a sud dell'India CONTINENTALE (ex Capo Comorin). Il punto più a sud dell'intero territorio è
+  Indira Point, nelle isole Andamane e Nicobare. Dire "la punta più a sud del continente indiano".
+- Si dice che qui si incontrino Golfo del Bengala, Mar Arabico e Oceano Indiano: tre, non due. Qualche sito lo
+  chiama una credenza popolare. Dire "si dice".
+- "Unico posto dove vedere alba e tramonto sul mare": affermazione da siti di viaggio, NON verificata. Non dirla.
+  In novembre l'alba si vede dal "Sunrise Point" sulla spiaggia, con la roccia di Vivekananda alle spalle (fonte di
+  viaggio). Il Sunset Point è a circa 3 km (altra fonte). Orari dell'alba in novembre: non trovati, guardare
+  l'orologio solare nel complesso del memoriale o una tabella del giorno.
+- Traghetto per la roccia di Vivekananda: orari discordanti (8:00-16:00 / 8:00-16:30 / 7:45-16:00): verificare prima.
+Angolo Voci Vere: non la cartolina. "La punta dell'India vista da chi ci lavora": barcaioli, venditori di conchiglie,
+fotografi, chi apre le bancarelle prima dell'alba. Collega le donne delle conchiglie di Siluvai Nagar (vedi sopra).
+Riprese: Manuel in camera con ora e luogo prima dell'alba; l'alba (una inquadratura, tempo fermo); le bancarelle che
+aprono; 30 s audio pulito (onde, voci), niente voce di Manuel; dall'alto se possibile; 1-2 persone con la stessa
+domanda; una riga finale. Un solo verticale, 30-45 s, formato `regole/formato_reel.md`.
