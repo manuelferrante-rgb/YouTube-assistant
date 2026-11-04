@@ -1,16 +1,20 @@
-# te: minutaggi dei capitoli del lungo (v7 del 28/10, 6:24, con la chiusura del canale)
+# te: minutaggi dei capitoli del lungo (v8 del 4/11, 6:26; v7 del 28/10, 6:24)
+
+v8 (Manuel 4/11): la domanda della miniatura "E oggi, di chi sono queste colline?" resta a schermo ~3.4 s (0:15-0:18)
+invece di 1.9: le colline sotto la domanda durano 2 s in più, quindi dalla sigla in poi tutto slitta di 2.0 s
+(`projects/te/v8_modifiche.sh`). Sottotitoli da rifare con lo slittamento.
 
 Titoli di lavoro: quelli definitivi it/en li scrive Copy dopo l'ok di Manuel. Nessuna scritta dei capitoli nel video.
 "Chiusura" torna capitolo: con la frase "Il viaggio di Voci Vere... continua" dura 14 s.
 
 - 0:00 Le colline del tè
-- 0:22 Munnar
-- 0:44 Con Sadish tra i filari
-- 3:28 La storia e chi ci lavora
-- 5:42 Il tè del chai master
-- 6:09 Chiusura
+- 0:24 Munnar
+- 0:46 Con Sadish tra i filari
+- 3:30 La storia e chi ci lavora
+- 5:44 Il tè del chai master
+- 6:11 Chiusura
 
-Voiceover (s):
+Voiceover (s, tempi della v7: dalla sigla in poi +2.0 s nella v8):
 - 4.57	7.65	vo_1_44577056.wav
 - 27.75	38.11	vo_2_91546449.wav
 - 38.42	43.87	vo_3_92434579.wav

@@ -236,3 +236,20 @@ Da mettere nel calendario: il carosello dei volti (mai nel giorno del lungo, né
 e il terzo giorno di stories per ogni lungo.
 
 Nota da Pianificazione, 4/11 sera (Manuel, via Copy): nuovo pacchetto di ogni lungo = 1 teaser, 1 lungo, 3 reel, 2 caroselli (fatto e "I volti"), 3 set di stories da 6; i caroselli escono anche come post YouTube. Il calendario completo v2 (sopra) include i nuovi slot.
+
+Nota da Montaggio, 4/11 sera (richieste di Manuel dai dati del mercato): file sostituiti su Drive con gli stessi nomi.
+- arthunkal v5: lungo 6:21 (prima 6:49), "Il giorno prima" di 10 s, notte con la folla a 0:44, ultimi 15 s senza
+  volti in primo piano. Capitoli nuovi: 0:00 Prima dell'alba, 0:34 Il giorno prima, 0:44 2:30 di notte, 1:07 L'alba
+  sulla spiaggia, 1:25 Chi cammina, 3:37 Chi non cammina, 4:14 In strada, 4:34 L'arrivo ad Arthunkal, 5:02 La storia,
+  5:32 Il ritorno (`projects/arthunkal/capitoli.md`). I 4 verticali rifatti nel formato reel del 29/10, primo
+  fotogramma su una persona o un gesto: v1 teaser 13.5 s (donna che cammina di notte, chiude su "Perché?"), v2 statua
+  19.4 s (Manuel davanti alla basilica), v3 persona 18.7 s (la pellegrina), v4 come funziona 23.4 s (il rosario in mano).
+  Senza il voiceover registrato (non è più su Drive): solo parlato in camera e interviste. Testi a schermo cambiati:
+  v1 "2:30 di notte, in cammino" e "Perché?", v2 "Scolpita a Milano nel 1647", v3 "13 km a piedi, di notte" e
+  "Arthunkal, Kerala", v4 "13 km pregando" e "Dal 2002".
+- te v8: lungo 6:26, la domanda "E oggi, di chi sono queste colline?" a schermo 3.4 s a 0:15; capitoli +2 s dalla
+  sigla: 0:00, 0:24 Munnar, 0:46 Con Sadish tra i filari, 3:30 La storia e chi ci lavora, 5:44 Il tè del chai master,
+  6:11 Chiusura. Il finale era già senza volti negli ultimi 14 s. Verticali: v3 giornata ora apre sulle mani di Sadish
+  che raccolgono; v1, v2, v4 aprivano già su una persona o sul gesto.
+- Per Copy (quando Manuel approva): sottotitoli it/en dei due lunghi da rifare (tempi cambiati), capitoli nelle
+  descrizioni, testi dei verticali di arthunkal.

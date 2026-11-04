@@ -70,3 +70,13 @@ Si risponde sempre in italiano a Manuel, risposte brevi e concrete.
 Nota Montaggio 4/11 (comorin): voce da un file registrato a 0 dBFS (tipo i memo di Manuel): `tools/voice_clean.py` ora
 abbassa di 6 dB prima di RNNoise, altrimenti satura e crepita. Controllare sempre lo spettrogramma della voce pulita
 contro l'originale (righe verticali larghe = crepitio).
+
+Nota Montaggio 4/11 sera: arthunkal v5 e te v8 (richieste di Manuel dai dati del mercato, vedi `piano/calendario.md`).
+- Modifiche fatte sul lungo già consegnato, senza rifare il 4K: tagli sui fotogrammi chiave e copia del resto
+  (`projects/arthunkal/v5_modifiche.sh`, `projects/te/v8_modifiche.sh`). Metodo veloce (3 minuti invece di 2 ore):
+  stessi parametri x264 del file (crf 20, maxrate 38M, bufsize 76M, high 5.1, GOP chiuso), concat con -c copy.
+- I verticali di arthunkal ora sono in `projects/arthunkal/reels.py` (formato reel 29/10, usa build.py per clip e
+  grafiche). Il voiceover vo_take1 di arthunkal non c'è più su Drive: se servisse, chiederlo a Manuel.
+- Tabella W_BASILICA in build.py: i tempi a inizio clip erano anticipati di ~0.4 s (corretti in reels.py dalla
+  trascrizione della voce pulita).
+- Mai `pkill -f` dentro un comando che contiene lo stesso testo: è successo di nuovo il 4/11 (uccide la shell).
