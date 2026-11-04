@@ -49,3 +49,7 @@ fotografi, chi apre le bancarelle prima dell'alba. Collega le donne delle conchi
 Riprese: Manuel in camera con ora e luogo prima dell'alba; l'alba (una inquadratura, tempo fermo); le bancarelle che
 aprono; 30 s audio pulito (onde, voci), niente voce di Manuel; dall'alto se possibile; 1-2 persone con la stessa
 domanda; una riga finale. Un solo verticale, 30-45 s, formato `regole/formato_reel.md`.
+
+Nota da Insights, 4/11: Manuel ha girato per il verticale Capo Comorin succo di canna, cocco, barca per la roccia di
+Vivekananda, statua, oceano. Ricerca sui video che girano e brief per Copy in `analisi/comorin_reel.md` (nome breve
+proposto `comorin`, per non confonderlo con il video delle donne del mare).
