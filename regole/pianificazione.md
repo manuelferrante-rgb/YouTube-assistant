@@ -31,7 +31,7 @@
   Shorts, caroselli, storie) portano molti contenuti dallo stesso girato. Nelle settimane senza lungo escono 2-3
   verticali autonomi. Il piano aggiornato è in `piano/calendario.md`. Questo sostituisce lo schema "un lungo ogni
   domenica" del 26/10.
-- Pacchetto di ogni lungo (Manuel, 29/10): 1 lungo, 1 carosello, 2 set di stories, 1 teaser, 3 reel dopo il lungo e
+- [SOSTITUITA il 4/11 dalla voce in fondo: ora 2 caroselli e 3 set di stories] Pacchetto di ogni lungo (Manuel, 29/10): 1 lungo, 1 carosello, 2 set di stories, 1 teaser, 3 reel dopo il lungo e
   reel extra (autonomi, nelle settimane senza lungo). Temi in base al girato e al luogo dove si trova Manuel. Gli
   extra non sono legati al lungo. Stories: i set di Copy erano 3 (regola 29/10 in `regole/copy.md`), ora 2 per
   ogni lungo: lo segnalo a Copy con una nota.
@@ -43,3 +43,7 @@
   degli anacardi di Kollam, venditrici di pesce del Kanyakumari (Santidhan), venditori di lotterie.
   Varietà prima di tutto: niente pellegrinaggi o templi di default, luoghi e mestieri diversi (Manuel, 1/11).
 - Scopo principale (Manuel, 4/11): dare voce a chi ne ha più bisogno. Prima si pubblica, poi si dà al profilo una forma professionale e da Voci Vere. Ogni tema, luogo e lungo nuovo si verifica contro questa frase; i reel più leggeri (panni, autostop, cocco, canna) vanno su entrambi i profili ma non sostituiscono i lunghi con le voci.
+- Pacchetto di ogni lungo (Manuel, 4/11, via Copy): 1 teaser (sabato prima), 1 lungo (domenica), 3 reel, 2 caroselli ("fatto" e "I volti"), 3 set di stories da 6.
+  Vale per mercato, arthunkal, te e per i lunghi A, B, C. I caroselli escono anche come post YouTube con il link al lungo, lo stesso giorno di IG.
+  Il carosello "I volti" va in un giorno diverso dal lungo e dall'altro carosello, a qualche giorno di distanza. Stories: set 1 il lunedì dopo il lungo, set 3 il
+  mercoledì, set 2 il venerdì (giorni liberi). Sostituisce "2 set di stories e 1 carosello".

@@ -66,3 +66,8 @@ Fotogrammi a ogni titolo e sottotitolo e dei primi 5 s, trascrizione del montato
 ripetuta; i dubbi si riascoltano a pezzi), `tools/audio_check.py`, ffprobe sul file finito. Se si cambia un pezzo
 generato (logo, scheda), cancellare `work/<video>/out/reel_*_work`: la cache è per nome di file.
 Manuel vuole vedere il reel in chat (SendUserFile) e lo approva prima che si sostituisca il file su Drive.
+
+Nota da Insights, 4/11 (dati del mercato, YouTube Shorts e Instagram, `analisi/mercato.md`): il teaser montato come
+trailer lo scorre via il 61% su IG e l'84% su YT; il reel che apre su una persona in primo piano il 25,6% su IG
+(e resta il 36% su YT, più del doppio). Quindi: primo fotogramma = la persona o il gesto più forte, già in
+movimento; mai un montaggio da trailer, nemmeno per i teaser. Da riconfermare con i prossimi reel.

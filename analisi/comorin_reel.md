@@ -127,3 +127,6 @@ Regole che valgono (da `regole/formato_reel.md` e `regole/copy.md`):
 3. Il venditore di canna o di cocco è inquadrato in volto e d'accordo (consenso: c'è sempre, è solo per sapere
    se può chiudere lui il reel)?
 4. Link della cartella Drive del girato (questo a Manuel).
+
+Nota 4/11 sera (Manuel): i 4 reel di Kanyakumari sono già fatti e scaricati. Il brief sopra resta come
+riferimento; i dati si guardano quando escono (skip rate e invii per primi).
