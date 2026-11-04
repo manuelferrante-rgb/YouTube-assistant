@@ -78,3 +78,33 @@ iscritti" era sbagliato: l'87,1% del tempo di visione è di NON iscritti.
   processione. "Te" parte già dentro l'azione (0:44 con Sadish) e non ha questo problema.
 - Schermata finale su ogni lungo.
 Da confermare a 7 giorni (8/11) e sul secondo lungo prima di farne una regola.
+
+## Instagram a 48 ore (registrazioni schermo di Manuel, 4/11 sera)
+| | Teaser (29/10, 22 s, uomo in blu a braccia aperte) | Reel 1 (2/11, 24 s, pescatore in rosso) |
+|---|---|---|
+| Visualizzazioni / spettatori | 346 / 276 | 2.245 / 1.948 |
+| Tempo medio | 6 s | 8 s |
+| Skip rate (scorrono via subito) | 61,0% (più alto del solito) | 25,6% (più basso del solito) |
+| Like / commenti / ricondivisioni / salvataggi | 11 / 0 / 2 / 0 | 55 / 0 / 1 / 2 |
+| Share rate (invii) | 0,0% | 0,1% (più alto del solito) |
+| Visite al profilo / clic link bio / follower | 3 / 2 / 0 | 13 / 1 / 0 |
+| Non follower | 93,3% | 99,2% |
+| Sorgenti | Reels 77%, Esplora 9%, Feed 8% | Reels 86,5%, Esplora 11,6% |
+| Età principale | 25-34 (55%), 18-24 (25%) | 25-34 (49%), 35-44 (24%) |
+
+Cosa dice:
+1. Stesso pubblico freddo, 6,5 volte le visualizzazioni: la differenza la fa il primo secondo. Il teaser lo
+   scorrono via 6 persone su 10, il reel 1 solo 1 su 4. Il reel 1 apre su una persona in primo piano; il teaser
+   è un montaggio da trailer. Conferma l'ipotesi dei competitor: il trailer non gira, la persona sì.
+2. Instagram distribuisce quasi solo a non follower (93-99%): il canale per farsi scoprire c'è.
+3. Nessuno segue: 16 visite al profilo, 0 follower. Il profilo non converte. Da guardare: bio (nuova, 4/11),
+   griglia (pochi post, coerenti?), storie in evidenza.
+4. Invii quasi zero e nessun commento: manca un motivo per mandarlo a qualcuno. La didascalia o la frase finale
+   può chiedere qualcosa di concreto (es. "Tu ci andresti?") senza esca.
+5. Tempo medio 6-8 s su 22-24 s: la metà se ne va prima di metà video, come su YouTube Shorts (48%).
+
+Cosa cambiare nei prossimi reel (comorin compreso):
+- Primo fotogramma = la persona o il gesto più forte, in movimento, già nel momento migliore. Mai un trailer.
+- Indicatore da guardare per primo: skip rate (obiettivo sotto il 30%), poi share rate.
+- Teaser dei prossimi lunghi: una curiosità con una persona, non un montaggio di momenti.
+Da confermare con i reel 2 e 3 e a 7 giorni.
