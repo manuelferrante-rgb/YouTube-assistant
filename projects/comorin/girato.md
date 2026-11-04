@@ -42,3 +42,5 @@ Controlli: fotogrammi di tutti i reel, trascrizione dei montati (nessuna parola 
   IMG_8762 onde sulla spiaggia, IMG_8765 le onde), niente DJI.
 - Titoli oro su bianco più piccoli in tutti e 4 (corpo 82 invece di 96, riquadro 18 invece di 22, più margine ai lati):
   `TAG_SIZE, TAG_PAD, TAG_SIDE` in `tools/reel_kit.py`.
+- Tre mari (v3, Manuel 4/11): "Qui si incontrano 3 mari" sull'arrivo, poi sulle onde i tre mari uno dopo l'altro
+  ("Golfo del Bengala", "Mar Arabico", "Oceano Indiano", ~1.6 s ciascuno, stesso stile oro su bianco).

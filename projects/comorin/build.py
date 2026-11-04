@@ -259,8 +259,14 @@ def mari():
     r.own(C("IMG_8759"), 0.3, speed=1.3)(1.1)                   # la strada che scende verso il mare
     r.own(C("IMG_8761"), 0.5, speed=1.3)(1.2)                   # il sentiero nel prato fino alla scogliera
     r.own(C("IMG_8762"), 2.0, speed=1.3)(1.1)                   # le onde sulla spiaggia
+    t_sea = r.t
     r.own(C("IMG_8765"), 0.0, speed=0.9)((240 + X) * 1.1 / 30 - r.t)   # le onde, una sola inquadratura lunga
-    r.title(0.0, r.t, "Qui si incontrano 3 mari", "Tag", 400)
+    r.title(0.0, t_sea, "Qui si incontrano 3 mari", "Tag", 400)
+    # Manuel 4/11: sulle onde i tre mari, uno dopo l'altro (l'ultimo resta fino alla fine, dentro la dissolvenza del loop)
+    seas = ["Golfo del Bengala", "Mar Arabico", "Oceano Indiano"]
+    step = (r.t - X * 1.1 / 30 - t_sea) / 3
+    for i, name in enumerate(seas):
+        r.title(t_sea + i * step, t_sea + (i + 1) * step if i < 2 else r.t, name, "Tag", 400)
     one = finish(r, "reel4_tre_mari_video")
     if os.environ.get("PLAN"):
         return one
