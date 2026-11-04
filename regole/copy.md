@@ -96,3 +96,7 @@ Bio Instagram @vocivere (scelta di Manuel, 1/11):
 🎥 Oltre la realtà filtrata dei social
 ▶️ Le storie complete su YouTube 👇
 (Niente riga con il luogo attuale: Manuel non la vuole.)
+
+Nota da Insights, 4/11 (decisione di Manuel): MINIATURE MENO DA BLOGGER. Protagonista una persona del posto nel
+momento più forte, Manuel assente o piccolo di lato; testo 2-4 parole; 2-3 versioni per "Test e confronto" in
+YouTube Studio. Dettagli e motivi in `analisi/miniature.md`.
