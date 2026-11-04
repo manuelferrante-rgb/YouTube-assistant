@@ -218,3 +218,9 @@ Giorni liberi per loro: 8/11, 13/11, 24/11, 27/11, 6/12, 10/12, 12/12, 13/12, 15
 
 Nota da Pianificazione, 4/11 (Manuel): cocco e canna di comorin escono anche loro su entrambi i profili (personale e Voci Vere). Quindi tutti i reel mainstream (panni, autostop, cocco, canna) vanno su entrambi; le date 26/11 e 2/12 non sono più condizionate.
 Nota da Pianificazione, 4/11 (Manuel): strategia. Prima si pubblica (anche contenuti più leggeri), poi si dà al profilo una forma professionale e da "Voci Vere". Lo scopo principale, da non dimenticare: DARE VOCE A CHI NE HA PIU' BISOGNO. Ogni lungo e ogni tema nuovo (coir, migranti, ONG) va verificato contro questa frase.
+Nota da Copy, 4/11 sera (Manuel): PACCHETTO DI OGNI LUNGO = 1 teaser, 1 lungo, 3 reel, 2 caroselli, 3 set di stories da 6.
+Il secondo carosello è "I volti" (primi piani delle persone, chiusura "Segui Voci Vere"): pronto per mercato, arthunkal
+e te su Drive in montati/<video>/carosello_volti/. Stories di mercato e arthunkal rifatte in 3 set da 6 (Drive
+montati/<video>/storie/), te già 3x6. Tutti i caroselli escono anche come post YouTube con il link al lungo.
+Da mettere nel calendario: il carosello dei volti (mai nel giorno del lungo, né lo stesso giorno dell'altro carosello)
+e il terzo giorno di stories per ogni lungo.

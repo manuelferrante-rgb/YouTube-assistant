@@ -78,6 +78,12 @@ Caroselli e storie (Manuel, 29/10, riferimenti latiumani e Progetto Happiness; p
   le virgolette oro, una foto che continua dalla slide prima (nella seconda: il resto della foto + nero con la
   citazione). 2-3 slide video con il testo che compare (per il post YouTube il loro fotogramma .jpg).
 - Storie: 3 set da 6 per ogni lungo (non 2 da 10, non 2 set: confermato da Manuel il 4/11). Solo la domanda, mai la scritta "quiz".
+- PACCHETTO DI OGNI LUNGO (Manuel, 4/11): 3 set di storie da 6, 2 caroselli, 1 teaser, 3 reel.
+- Secondo carosello "I volti" (Manuel, 4/11): solo primi piani delle persone girate (dal lungo e dal girato su Drive),
+  filtro Voci Vere opaco, chiaro e avvolgente; copertina con il volto più forte e "I volti di ..." (es. "I volti del
+  mercato del pesce"), 5 volti con una riga breve e vera, ultima slide logo + "Segui Voci Vere per scoprire le
+  prossime storie" (chiusura chiesta da Manuel). Generatore `copioni/caroselli/carosello_volti.py`, testi in
+  `copioni/caroselli/testi_caroselli.md`. Niente volti di chi non ha voluto parlare.
 - Caroselli anche su YouTube (Manuel, 4/11): ogni carosello esce anche come post YouTube, con il link al lungo nel testo. Insights poi controlla i numeri.
 
 Chiusura dei verticali (Manuel, 29/10, primo esempio: meenakshi): frase **Ascolta altre voci, su** + logo Voci Vere
