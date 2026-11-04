@@ -24,3 +24,11 @@ Da decidere / verificare:
 3. B-roll IA: oggi nessuna chiave API e nessun file in `broll_ia/` su Drive. Senza, la storia va su linea del tempo,
    panorami veri e Pixabay (solo cose generiche: fabbrica, tazze).
 4. Chiusura in camera "Il viaggio di Voci Vere..." non c'è nel girato: chiudo con il logo (come il mercato).
+
+Nota da Insights, 4/11 (Manuel: sì, modifiche prima dell'uscita del 22/11 circa), dai dati del mercato
+(`analisi/mercato.md`): il lungo parte già dentro l'azione, non serve tagliare. Solo:
+1. Entro il primo minuto anticipare la domanda della miniatura ("E oggi di chi sono?"): 3-5 s, una frase già
+   registrata o una scritta breve, senza rispondere (la risposta resta a 3:28).
+2. Ultimi 10-15 s senza volti in primo piano (chiusura + logo), per la schermata finale che Manuel mette in Studio.
+3. Verticali: primo fotogramma = persona o gesto più forte già in movimento (Sadish con le foglie, il chai
+   versato), mai un montaggio da trailer.
