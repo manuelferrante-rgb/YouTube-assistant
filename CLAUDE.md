@@ -30,8 +30,8 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
 Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01Htfbh2Xp2z2rbRNGYUwBKL (dal 29/10 sera, prossimo video; meenakshi era session_01Htfbh1ny4yyq4niKggdc3h),
-Pianificazione session_01Htfbh2bajkKHUYyPHPM7ru (dal 29/10), Copy session_01Htfbh1edWrAWmq9z8TR8Ss (dal 4/11 sera),
-Insights session_01HtfbgyzAxUCZDsgATkknE1, Audio session_01Htfbh1kXiyxeoJVcNiDrAt (dal 28/10).
+Pianificazione session_01HtfbgyQZdNPCAAcY16CRCR (dal 4/11; la precedente session_01Htfbh2bajkKHUYyPHPM7ru è chiusa), Copy session_01Htfbh1edWrAWmq9z8TR8Ss (dal 4/11 sera),
+Insights session_01HtfbgxeFrmgvhNi9P52eKk (dal 4/11), Audio session_01Htfbh1kXiyxeoJVcNiDrAt (dal 28/10).
 
 FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
 1. Pianificazione (fatti, riprese), Copy (domande, parti in camera, voiceover, testi a schermo), Insights (cosa
@@ -93,8 +93,9 @@ Regole tra chat:
   (dal 25/10 niente musica di YouTube: la musica è originale, composta dalla chat Audio) -> montaggio e consegna.
 - Titolo e descrizione YT anche in inglese (traduzioni YouTube).
 - PACCHETTO DI OGNI LUNGO (Manuel, 25/10), sempre dopo l'analisi incrociata tra le chat (Insights, Pianificazione,
-  Copy, Montaggio, Audio): 1 lungo 16:9 + 1 teaser verticale + 3 reel verticali dopo il lungo + 1 carosello
-  (IG e post YouTube, 7-8 immagini 4:5, lo fa Copy: `copioni/caroselli/`, regole in `regole/copy.md`).
+  Copy, Montaggio, Audio): 1 lungo 16:9 + 1 teaser verticale + 3 reel verticali dopo il lungo + 2 caroselli
+  ("fatto" e "I volti", Manuel 4/11) + 3 set di stories da 6 (IG e post YouTube, 7-8 immagini 4:5, lo fa Copy:
+  `copioni/caroselli/`, regole in `regole/copy.md`).
   Con titoli, descrizioni, capitoli, sottotitoli it/en, miniatura, didascalie, giorni di uscita suggeriti, analisi.
 - Lunghi a CAPITOLI (dal 22/10): consegnare l'elenco dei minutaggi esatti dal montaggio per la descrizione YT
   (0:00 primo, min 3 capitoli, ognuno >= 10 s), it+en. Solo il titolo del capitolo (niente "Parte 1").

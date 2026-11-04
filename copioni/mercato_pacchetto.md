@@ -31,6 +31,7 @@ Didascalia IG:
 Un pesce da 50 chili, all'asta sulla spiaggia 🇮🇳
 Mercato di Mararikulam, Kerala, India. Niente tetto, niente banchi: le barche arrivano a riva e il pesce si vende
 sulla sabbia. Quella mattina ne arriva uno da 50-55 chili, ci dicono lì. "Veramente come una persona."
+Hai mai visto un pesce così grande?
 Tutta la storia su YouTube, link in bio.
 #kerala #india #vocivere #marari #mercatodelpesce
 Descrizione Short YT:
@@ -43,6 +44,7 @@ Didascalia IG:
 Alle 3 di notte è già in mare. Da trent'anni 🇮🇳
 Spiaggia di Marari, Kerala, India. Sveglia alle tre, in mare alle quattro, alle otto si torna a riva con il pesce
 per il mercato. Ogni giorno.
+Tu ti alzeresti alle 3?
 Video fuori sul canale.
 #kerala #india #vocivere #marari #pescatori
 Descrizione Short YT:
@@ -65,3 +67,11 @@ Il video completo è uscito sul canale, link in bio.
 Post YouTube (scheda Community, stesse 8 immagini):
 Pesava come una persona 🇮🇳 Il mercato del pesce di Marari, in Kerala: niente tetto, niente banchi, aste sulla
 sabbia. Tu ti alzeresti alle 3 per esserci? Il video completo è sul canale.
+
+## MINIATURE PER "TEST E CONFRONTO" (Copy, 4/11, regole in analisi/miniature.md)
+Persone del posto, Manuel assente. Drive montati/mercato/miniatura/, repo copioni/mercato_miniature/ (v4_*):
+1. v4_1_pesce_comeunapersona: l'uomo che trascina il pesce enorme sulla sabbia, "COME UNA PERSONA".
+   Da confermare con Manuel: che sia proprio il pesce da 50-55 chili (nel girato è quello più grande).
+2. v4_2_signora_asta: la signora del mercato che sorride, "ALL'ASTA SULLA SABBIA" (consigliata).
+3. v4_3_asta_sabbia: chi compra chino sulle ceste, stesso testo.
+La 2 e la 3 hanno lo stesso testo: il test confronta solo la persona.

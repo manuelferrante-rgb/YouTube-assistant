@@ -10,10 +10,15 @@ Niente suoni dal girato né ambienti; solo musica e segni melodici composti da n
 servono; sotto chi parla niente o musica molto bassa; niente tappeto basso, passa-alto 160 Hz; controllo con
 `audio/kit/bande.py` (niente sotto 150 Hz) prima di consegnare. Dettagli in `regole/audio.md`.
 
-## In sospeso al 28/10: niente
-Arthunkal e tè sono approvati e chiusi (il ding provvisorio di Arthunkal resta così: con la regola nuova non si
-registrano più suoni veri). Per il prossimo video: musica originale a tema (`audio/musica/compose.py`, un brano nuovo
-per video) e segni melodici `cue_*` solo sui B-roll senza parlato, consegna come in `projects/te/audio/LEGGIMI.md`.
+## Stato al 4/11 (passaggio alla chat Audio nuova)
+- meenakshi (1 verticale): musica e segni consegnati (`projects/meenakshi/audio/`), posizioni nuove di Copy in
+  `copioni/meenakshi_testi.md` ("PER AUDIO"). Niente in sospeso.
+- comorin (4 reel, Kanyakumari): consegnato tutto il 4/11 in `projects/comorin/audio/` (LEGGIMI con la griglia dei
+  colpi del cocco e il loop dei tre mari). Codice: `audio/musica/comorin.py`. In attesa del montato: se Montaggio o
+  Manuel segnalano un punto, si sposta o si rifà lo stesso brano.
+- Formato dei reel (livelli musica e segni, 1.1x, chiusura con logo): `regole/formato_reel.md`.
+- Per un video nuovo: brani nuovi a tema (`compose.py` o un modulo per video come `comorin.py`), segni gancio,
+  rivelazione, chiusura; consegna come in `projects/comorin/audio/LEGGIMI.md`.
 
 ## Come lavora la chat Audio (decisioni di Manuel)
 - Sound design naturale e professionale, mai forzato. Fonti in quest'ordine: suoni veri del girato di Manuel

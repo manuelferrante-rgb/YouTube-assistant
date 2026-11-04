@@ -176,11 +176,13 @@ Didascalia IG (IT):
 Prendi, taglia, porgi. E ricomincia 🇮🇳
 Un cocco in una mano, il machete nell'altra, a piedi nudi sotto un albero. Pochi colpi, sempre uguali, e il
 cocco è già nelle mani di qualcun altro. Kanyakumari, Tamil Nadu.
+L'hai mai bevuto così, appena aperto?
 #india #tamilnadu #kanyakumari #vocivere #cocco
 Didascalia IG (EN):
 Take, cut, hand over. And again 🇮🇳
 A coconut in one hand, the machete in the other, barefoot under a tree. A few strokes, always the same, and
 the coconut is already in someone else's hands. Kanyakumari, Tamil Nadu.
+Ever had one opened right in front of you?
 #india #tamilnadu #kanyakumari #vocivere #coconut
 Descrizione Short YT:
 IT: Lo stesso gesto, un cocco dopo l'altro. Quanti colpi servono, secondo te?
@@ -195,12 +197,14 @@ I greci la chiamavano miele senza api 🇮🇳
 I soldati di Alessandro Magno trovarono in India una canna che faceva il miele senza api. Qui la spremono
 al momento. E lo zucchero in cristalli l'hanno inventato in India, più di 1500 anni fa: la parola viene dal
 sanscrito, śarkarā.
+L'hai mai assaggiata?
 #india #tamilnadu #kanyakumari #vocivere #cannadazucchero
 Didascalia IG (EN):
 The Greeks called it honey without bees 🇮🇳
 Alexander the Great's soldiers found in India a reed that made honey without bees. Here they press it on the
 spot. And crystal sugar was invented in India, more than 1,500 years ago: the word comes from the Sanskrit
 śarkarā.
+Have you ever tasted it?
 #india #tamilnadu #kanyakumari #vocivere #sugarcane
 Descrizione Short YT:
 IT: Miele senza api, così lo chiamavano i greci. Lo sapevi che lo zucchero in cristalli è nato in India?
@@ -215,12 +219,14 @@ Alta 133 piedi, come i capitoli del suo libro 🇮🇳
 Thiruvalluvar, poeta tamil, scrisse il Thirukkural: 1330 versi in 133 capitoli, sulla virtù, la ricchezza e
 l'amore. Il piedistallo è alto 38 piedi, come i capitoli sulla virtù. Kanyakumari, la punta più a sud
 dell'India: ci si arriva in barca.
+Tu ci andresti?
 #india #tamilnadu #kanyakumari #vocivere #thiruvalluvar
 Didascalia IG (EN):
 133 feet tall, like the chapters of his book 🇮🇳
 Thiruvalluvar, a Tamil poet, wrote the Thirukkural: 1,330 couplets in 133 chapters, on virtue, wealth and
 love. The pedestal is 38 feet tall, like the chapters on virtue. Kanyakumari, the southern tip of India: you
 get there by boat.
+Would you go?
 #india #tamilnadu #kanyakumari #vocivere #thiruvalluvar
 Descrizione Short YT:
 IT: Una statua alta come il suo libro, in mezzo all'oceano. Conoscevi Thiruvalluvar?
@@ -234,11 +240,13 @@ Didascalia IG (IT):
 Qui si incontrano 3 mari 🇮🇳
 Kanyakumari, la punta più a sud dell'India: si dice che qui si incontrino il Golfo del Bengala, il Mar Arabico
 e l'Oceano Indiano.
+Ci sei mai stato?
 #india #tamilnadu #kanyakumari #vocivere
 Didascalia IG (EN):
 Three seas meet here 🇮🇳
 Kanyakumari, the southern tip of India: the Bay of Bengal, the Arabian Sea and the Indian Ocean are said to
 meet here.
+Have you ever been?
 #india #tamilnadu #kanyakumari #vocivere
 Descrizione Short YT:
 IT: La punta più a sud dell'India, dove si dice che si incontrino tre mari. Ci sei mai stato?

@@ -1,6 +1,20 @@
-# Insights: stato e passaggio di consegne (27/10/2026)
+# Insights: stato e passaggio di consegne (aggiornato 4/11/2026)
 
 Da leggere all'avvio di ogni nuova chat Insights, dopo CLAUDE.md e analisi/README.md.
+
+## Cosa è stato fatto (27/10-4/11, chat Insights session_01HtfbgyzAxUCZDsgATkknE1)
+- MERCATO, dati a 48 ore (YT lungo, YT Shorts, IG teaser e reel 1): `mercato.md`. Punti chiave: durata media
+  1:43 (28%), 46 spettatori unici, 87% non iscritti, italiani 81%; buco tra 0:30 e 1:30 ("Il giorno prima"),
+  risalita a ~3:15-3:45 (probabile pesce da 50 kg promesso dalla miniatura); CTR 3,7%; teaser-trailer scorso via
+  61% IG / ~84% YT contro 25,6% IG / ~64% YT del reel aperto sul pescatore; 0 follower IG da 16 visite al profilo;
+  invii e commenti quasi zero; teaser YT collegato al lungo solo dopo l'uscita.
+- Regola passata a Montaggio: primo fotogramma dei reel = persona o gesto più forte (nota in
+  `regole/formato_reel.md`). Modifiche ad arthunkal e te prima dell'uscita: note del 4/11 in
+  `projects/arthunkal/brief.md` e `projects/te/brief.md` (Manuel le manda a Montaggio, file sostituiti su Drive).
+- Miniature meno da blogger, persone del posto al centro, 2-3 versioni in "Test e confronto": `miniature.md` +
+  nota in `regole/copy.md` (Manuel la manda a Copy, con rifacimento miniature di arthunkal, te e mercato).
+- Kanyakumari (`comorin`): ricerca e brief di 4 reel in `comorin_reel.md`; i reel sono già fatti (Manuel, 4/11).
+- Messaggi a Montaggio e Copy dati a Manuel il 4/11 sera (non ancora inviati quando si è chiusa la chat).
 
 ## Cosa è stato fatto (25-26/10)
 - Analisi dei competitor YouTube (11 canali, ultimi 60 lunghi e 60 Shorts): `competitor/elenco.md`,
@@ -37,5 +51,10 @@ Da leggere all'avvio di ogni nuova chat Insights, dopo CLAUDE.md e analisi/READM
   con una scena storica del tè (prompt in `broll_ia_te.md`), animata con zoom lento.
 - Chiave AWS nell'ambiente non usata da nessun file: chiedere a Manuel se toglierla. Freesound: verificare se
   Audio la usa.
-- Promemoria programmati (nella chat Insights attiva): dati mercato 48 h (3/11), 7 giorni (8/11, poi scrivere
-  `analisi/mercato.md`), revisione strumenti (9/11). Per ogni nuovo lungo uscito programmare 48 h e 7 giorni.
+- Promemoria programmati (spostati sulla nuova chat Insights il 4/11): dati mercato a 7 giorni (dom 8/11, mattina
+  in India: analisi principale, completa `analisi/mercato.md` e decidi cosa diventa regola), revisione strumenti
+  (9/11). Per ogni nuovo lungo uscito programmare 48 h e 7 giorni (arthunkal: lungo dom 15/11 -> 17/11 e 22/11).
+- In arrivo da Manuel: insights del reel B del mercato (appena pubblicato), stories set 1, reel 2 e 3 IG.
+  A 7 giorni: confermare o smentire le lezioni di `mercato.md` (primo minuto, miniatura, primo fotogramma).
+- Da seguire: risultato del "Test e confronto" della nuova miniatura del mercato; dati dei 4 reel comorin quando
+  escono (skip rate e invii per primi).
