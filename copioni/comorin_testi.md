@@ -149,7 +149,7 @@ logo (romperebbe il loop). Veloce: ~3 s di arrivo, poi il mare.
 - Un solo titolo per tutto il video, oro su bianco in alto: **Qui si incontrano 3 mari**.
 - Audio: solo la musica di Audio, che deve girare in loop anche lei.
 
-Controlli prima della consegna come in `regole/formato_reel.md`; i reel li approva Manuel in chat.
+Controlli prima della consegna come in `regole/formato_reel.md`; i reel si caricano direttamente su Drive in montati/comorin, senza passare dalla chat (Manuel, 4/11): se servono modifiche le dice lui.
 
 ---
 
