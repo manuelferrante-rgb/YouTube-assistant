@@ -20,8 +20,9 @@ DECISIONI DI MANUEL (4/11):
 - Cocco e canna "stile Voci Vere": SOLO le persone che lavorano. Niente Manuel che beve o mangia, e la ragazza di
   Manuel NON si vede mai (Manuel, 4/11): fuori `135850` intera, `140944` intera e in `135906` ogni pezzo con lei
   o con Manuel (resta solo il venditore). Montaggio controlla fotogramma per fotogramma anche le altre clip.
-- Un solo voiceover per tutti i reel (Manuel dice "reel uno", "reel due", "reel tre" prima di ognuno); Montaggio
-  trascrive e taglia.
+- Reel 1 cocco SENZA parole (Manuel, 4/11): una sola scritta fissa a schermo; focus sul taglio, la pila di cocchi,
+  la polpa e gli scarti dietro.
+- Un solo voiceover per i reel 2 e 3 (Manuel dice "canna" e "statua" prima di ognuno); Montaggio trascrive e taglia.
 
 ## Cosa c'è nel girato (guardato tutto, 4/11)
 - 3/11 pomeriggio, iPhone (GPS 8.079 N, 77.538 E): IMG_8759-8761 sentiero verso il mare e muro di pietra in
@@ -64,15 +65,9 @@ verificato).
 ---
 
 ## VOICEOVER (Manuel: una sola registrazione, voce calma, ferma)
-Prima di ogni reel Manuel dice "reel uno", "reel due", "reel tre". Il reel 4 non ha voce.
+Prima di ogni reel Manuel dice "canna" e "statua". Reel 1 (cocco) e reel 4 (tre mari) non hanno voce.
 
-### Reel 1, COCCO
-1. Prendi. Taglia. Porgi. E ricomincia.
-2. Lui apre cocchi così, uno dietro l'altro.
-3. Il cocco in una mano, il machete nell'altra. Pochi colpi, sempre uguali.
-4. Il buco in cima, la cannuccia, ed è già in mano a qualcun altro.
-5. Dietro di lui, la pila da aprire. Davanti, la gente che aspetta.
-6. A piedi nudi, sotto un albero. E il prossimo è già pronto.
+### Reel 1, COCCO: nessuna voce (vedi PER MONTAGGIO)
 
 ### Reel 2, CANNA DA ZUCCHERO
 1. I greci di Alessandro Magno la chiamavano: miele senza api.
@@ -101,21 +96,22 @@ fascia scura con la parola in oro, titoli oro su bianco "bam" in alto y 400 mai 
 Clip DJI 4K orizzontali: ritaglio 9:16 al centro, mai schiacciate. `122458` capovolta: raddrizzarla.
 Immagini brevi (1-2 s) che seguono le parole.
 
-### Reel 1, COCCO (~20 s): il gesto del venditore, ripetuto
-Tutto su `135736` e `135906`: si montano i suoi tagli UNO DOPO L'ALTRO a ritmo (ogni ciclo prendi-taglia-porgi
-diventa un colpo di montaggio), così si vede che il gesto si ripete. Il venditore è il protagonista; niente
-Manuel, niente ragazza di Manuel (in `135906` solo i pezzi con il venditore). La signora della polpa (`140138`)
-può entrare 1 s sulla frase 5, come altra persona che lavora.
-| Frase VO | Immagine | Titolo |
-|---|---|---|
-| 1 "Prendi. Taglia. Porgi." | GANCIO da 0 s: il colpo di machete più netto di `135736`, ~1 s, poi un taglio per parola | **Prendi, taglia, porgi** dal primo fotogramma |
-| 2 "uno dietro l'altro" | due cicli interi di fila (`135736` 0-7 s e 7-14 s, accelerabili) | |
-| 3 "pochi colpi, sempre uguali" | primo piano mani e machete (`135906` inizio) | |
-| 4 "già in mano a qualcun altro" | RIVELAZIONE: il cocco che passa dalle sue mani a quelle del cliente (`135736` ~7 s e ~13 s) | |
-| 5 "la pila... la gente che aspetta" | `135652` la montagna di cocchi; `135736` la gente intorno | |
-| 6 "a piedi nudi, sotto un albero" | `135736` inquadratura larga: lui, l'albero, i piedi | |
-| chiusura | lui che prende il cocco successivo (~2 s), poi chiusura fissa | |
-Un solo titolo (il gancio): qui non serve il luogo.
+### Reel 1, COCCO (~15 s, senza voce, una scritta fissa)
+Eccezione a `regole/formato_reel.md`: niente voiceover e niente sottotitoli. UNA scritta fissa oro su bianco in alto
+(y 400) dal primo all'ultimo fotogramma prima della chiusura: **Prendi, taglia, porgi. Ricomincia** (scelta di
+Manuel tra le opzioni in fondo a questa sezione). Il montaggio va a ritmo sui colpi del machete e sulla musica.
+Solo le persone che lavorano: niente Manuel, niente ragazza di Manuel (in `135906` solo i pezzi con il venditore).
+| Tempo | Immagine |
+|---|---|
+| 0-1 s | GANCIO: il colpo di machete più netto di `135736` |
+| 1-3 s | `135652` la pila di cocchi (panoramica breve) |
+| 3-9 s | IL TAGLIO, ripetuto: i cicli prendi-taglia-porgi del venditore uno dopo l'altro (`135736` 0-7 s e 7-14 s, `135906` i pezzi con lui), accelerabili; dentro, un primo piano di mani e machete |
+| 9-10 s | il cocco che passa dalle sue mani a quelle del cliente (`135736` ~7 s o ~13 s) |
+| 10-12 s | LA POLPA: `140138` le mani della signora che spaccano il cocco sulla pietra e lo aprono in due (solo mani e cocco) |
+| 12-13.5 s | GLI SCARTI DIETRO: `140346` la montagna di gusci |
+| chiusura | il venditore che prende il cocco successivo (~2 s), poi chiusura fissa ("Ascolta altre voci, su" + logo) |
+Opzioni della scritta fissa (Manuel sceglie; consigliata la A): A **Prendi, taglia, porgi. Ricomincia**;
+B **Lo stesso gesto, un cocco dopo l'altro**; C **Dalla pila agli scarti**.
 
 ### Reel 2, CANNA DA ZUCCHERO (~20 s)
 | Frase VO | Immagine | Titolo |
@@ -160,8 +156,8 @@ Controlli prima della consegna come in `regole/formato_reel.md`; i reel li appro
 ## PER AUDIO
 Musica originale, come meenakshi: bassissima e costante sotto la voce, un po' più su sul finale senza voce;
 segni di gancio, rivelazione e chiusura. Solo musica (regola di Audio).
-- Reel 1 cocco: ritmica, a tempo con i colpi del machete (il montaggio va a ritmo sui tagli). Rivelazione: il
-  cocco che passa al cliente.
+- Reel 1 cocco: SENZA voce, la musica porta tutto il reel (~15 s): ritmica, a tempo con i colpi del machete,
+  livello pieno (non sotto la voce). Segni: gancio (primo colpo), il passaggio alla polpa, chiusura.
 - Reel 2 canna: leggera, un po' più calda per la storia. Rivelazione: la canna piegata e ripassata.
 - Reel 3 statua: mare aperto, più ampia, 25-30 s. Rivelazione: la camera che trova la statua ("Poi lui").
 - Reel 4 tre mari: 8 s, mare, che si chiude in loop perfetto (fine attaccata all'inizio), senza segno di
