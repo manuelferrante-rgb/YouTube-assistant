@@ -12,7 +12,13 @@ consegnato, programmato, pubblicato.
 | arthunkal | lungo + teaser + 3 verticali | APPROVATO da Manuel il 27/10 (v4). File finali su Drive, cartella 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX, montati/arthunkal: VociVere_arthunkal_long_4K.mp4 (6:49), VociVere_arthunkal_v1_teaser, v2_statua, v3_persona, v4_come_funziona (_1080x1920.mp4). Capitoli: 0:00 Prima dell'alba, 0:34 Il giorno prima, 1:13 2:30 di notte, 1:35 L'alba sulla spiaggia, 1:53 Chi cammina, 4:05 Chi non cammina, 4:42 In strada, 5:02 L'arrivo ad Arthunkal, 5:30 La storia, 6:01 Il ritorno. Pacchetto Copy pronto 27/10 (sottotitoli, titolo, descrizione e capitoli it/en, miniatura D scelta da Manuel il 27/10, storie IG in montati/arthunkal/storie, verticali, carosello: copioni/arthunkal_testi.md e Drive montati/arthunkal); Pianificazione: uscite | da decidere (fine settimana) | capitoli in `projects/arthunkal/capitoli.md`, traduzioni interviste in `projects/arthunkal/interviste.md` |
 | te | lungo (almeno 6 min) + 4 verticali + carosello | APPROVATO da Manuel il 27/10 sera, chiusura aggiunta il 28/10 (v7: "Il viaggio di Voci Vere... continua. Seguimi per scoprire le prossime storie" prima del logo; intro e teaser rifatti da zero, ~20 s; voce pulita con RNNoise; musica nuova di Audio bassissima solo dopo "Sono a Munnar" e sotto la storia). File finali su Drive montati/te VociVere_te_long_4K.mp4 (6:24) e VociVere_te_v1_teaser, v2_raccolta, v3_giornata, v4_chai (_1080x1920.mp4); reel del bucato invariato. Copy può fare il pacchetto. PACCHETTO COPY PRONTO 29/10 su Drive montati/te: sottotitoli it/en, miniatura definitiva, carosello v2 (9 slide, 3 video), storie 3x6, TESTI_titolo_descrizioni_verticali.txt (copioni/te_pacchetto.md). Capitoli: 0:00 Le colline del tè, 0:22 Munnar, 0:44 Con Sadish tra i filari, 3:28 La storia e chi ci lavora, 5:42 Il tè del chai master, 6:09 Chiusura (`projects/te/capitoli.md`) | da decidere | approvato 26/10; `piano/te.md`, `copioni/te_testi.md`; niente B-roll IA (Manuel, 27/10); cartella Drive: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw |
 | meenakshi | 1 verticale (Madurai, Tamil Nadu) | APPROVATO 29/10 (verticale 19.3 s a 1.1x in montati/meenakshi) | da decidere | `piano/meenakshi.md`; cartella Drive 1Gov2PE4EU32BZPdJW3miH3oYPc68Iv8v |
-| comorin | 4 reel (Kanyakumari: cocco, canna, statua di Thiruvalluvar, tre mari in loop senza voce) | girato (3-4/11, Drive 1z5BA2MoG69ExGT6ivPb9VAcbxV25VVmI); copione VO, PER MONTAGGIO, PER AUDIO e didascalie pronti (Copy, 4/11): `copioni/comorin_testi.md`; Manuel registra i 4 VO; musica e segni pronti (Audio, 4/11): `projects/comorin/audio/LEGGIMI.md` | da decidere | brief `analisi/comorin_reel.md` |
+| comorin | 4 reel (Kanyakumari: cocco, canna, statua di Thiruvalluvar, tre mari in loop senza voce) | CONSEGNATI su Drive 4/11 (Montaggio), cartella 1z5BA2MoG69ExGT6ivPb9VAcbxV25VVmI, montati/comorin: VociVere_comorin_reel1_cocco (16.7 s), reel2_canna (18.8 s), reel3_statua (30.9 s), reel4_tre_mari (8.0 s, loop) _1080x1920.mp4; tutti a 1.1x, -14 LUFS. Copione, didascalie: `copioni/comorin_testi.md`; musica: `projects/comorin/audio/LEGGIMI.md`; montaggio: `projects/comorin/girato.md`. In attesa delle note di Manuel | da decidere | brief `analisi/comorin_reel.md` |
+| panni (pov giungla) | 1 reel: pov "sei nella giungla indiana" e Manuel che stende i panni | pronto, non ancora pubblicato; va sul profilo personale E su Voci Vere (Manuel, 4/11) | proposta dom 8/11 su Voci Vere; sul personale la data è libera | sostituisce la decisione del 29/10 (solo personale) |
+| autostop | 1 reel (Manuel sul motorino di uno sconosciuto che lo riporta a casa) | PRONTO (Manuel, 4/11); frase a schermo da Copy; va su entrambi i profili, personale e Voci Vere (Manuel, 4/11) | proposta ven 6/11 su Voci Vere | nuovo (4/11) |
+| coir | lungo orizzontale + teaser + 3 reel + carosello + 2 set di stories | pianificato, girato da fare a Anjengo/Varkala (Manuel, 2-7/11) | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
+| migranti | lungo orizzontale + pacchetto completo | pianificato, da girare a Varkala (9-10/11) e Kochi/Perumbavoor (11-12/11) | proposta lungo B dom 10/1 | `piano/migranti.md` |
+| diwali | 1 reel o scena dentro `migranti` | pianificato, da girare dom 8/11 | da decidere dopo il montato | `piano/diwali.md` |
+| kanyakumari | donne del mare e ONG del posto (verticale/materiale) | girato 3-4/11? Manuel non ha ancora detto cosa ha fatto con KDFSF e Siluvai Nagar | da decidere | `piano/kanyakumari.md` |
 
 ## Piano rifatto il 29/10 (Manuel): lunghi ogni 2-3 settimane, un contenuto un giorno sì e uno no
 Decisioni di Manuel 29/10: un lungo ogni 2-3 settimane (siamo all'inizio, non si sprecano); caroselli, reel e stories si
@@ -99,3 +105,116 @@ Nota da Pianificazione, 1/11 (Manuel): `coir` e `migranti` = lunghi orizzontali 
 Nota da Pianificazione, 1/11 (Manuel): Manuel resta a Varkala (Taaraa Loca) fino al 13/11, con 11-12/11 a Kochi. Da girare: filiera del coir (`coir`), migranti (`migranti`, Varkala e Kochi/Perumbavoor), Diwali dom 8/11 (`diwali`, reel o scena dentro migranti, non un lungo) e una ONG del posto (nessuna verificata entro 30 min da Varkala). Proposta di giorni in `piano/coir.md`. Il Diwali non entra nel calendario delle uscite fino al montato.
 
 Nota da Pianificazione, 1/11 (Manuel): martedì 3 e mercoledì 4/11 Manuel è a Kanyakumari (alloggio Ramraj Resorts, Kovalam). La ONG la fa lì (piano in `piano/kanyakumari.md`: donne del mare, KDFSF, Siluvai Nagar). Poi rientra a Varkala.
+
+Nota da Pianificazione, 4/11 (Manuel): bio Instagram @vocivere cambiata il 1/11 (testo in `regole/copy.md`, nessuna riga con il luogo).
+
+Nota da Pianificazione, 4/11 (Manuel): comorin, 4 reel girati a Kanyakumari il 3-4/11. Copy ha chiuso il 4/11 (`copioni/comorin_testi.md`).
+Ordine: Manuel registra il voiceover (solo per canna e statua: cocco e tre mari sono senza voce), poi Audio, poi Montaggio, che
+carica i reel in `montati/comorin` su Drive. Reel 1 cocco (scritta fissa "Prendi, taglia, porgi. Ricomincia", senza voce) e
+reel 2 canna: forse sul profilo personale di Manuel, DA DECIDERE. Reel 3 statua di Thiruvalluvar (25-30 s) e reel 4 tre mari
+(8 s in loop, senza voce, senza chiusura con logo) restano su Voci Vere. Attenzione al titolo del reel 4 "Qui si incontrano 3 mari":
+le fonti dicono che si dice che si incontrino, un sito lo chiama credenza popolare. Segnalato a Manuel.
+
+Proposta di Pianificazione, 4/11, date dei nuovi reel (giorni alterni, nessun lungo, teaser o carosello spostato; da confermare con Manuel):
+| Giorno | Uscita | Nota |
+|---|---|---|
+| ven 6/11 | autostop | solo se montato; in caso contrario slitta a dom 8/11 o ven 13/11. Insieme alle stories set 2 del mercato |
+| mer 18/11 | comorin: statua di Thiruvalluvar | tra arthunkal reel 1 (17/11) e reel 2 (19/11) |
+| mar 24/11 | comorin: canna da zucchero | solo se Voci Vere; se va sul profilo personale, il giorno resta libero |
+| ven 27/11 | comorin: cocco | solo se Voci Vere; se personale, resta libero (28/11 teaser te) |
+| mer 2/12 | comorin: tre mari (loop) | tra te reel 1 (1/12) e reel 2 (3/12) |
+Gli slot extra del 11/12, 14/12 e 17/12 restano liberi per coir, diwali e kanyakumari (materiale girato 2-12/11).
+Regola usata: mai più di tre giorni di fila con un contenuto; 10/11 e 13/11 non si usano perché con comunismo (12/11),
+meenakshi (11/11), teaser arthunkal (14/11) e lungo (15/11) farebbero quattro giorni di fila.
+
+Nota da Copy, 4/11 (Manuel): le stories sono 3 set da 6 per ogni lungo (non 2): per mercato, arthunkal e te serve un terzo
+giorno di stories nel calendario. I caroselli escono anche su YouTube come post, con il link al lungo, oltre che su IG.
+Regola in `regole/copy.md`.
+
+Nota da Pianificazione, 4/11 (Manuel): aggiunto il reel pov giungla con Manuel che stende (`panni`). Il 29/10 era sul profilo personale; se resta lì, la data è libera e non tocca la cadenza di Voci Vere. Proposta dom 8/11 (giorno libero, tra carosello 7/11 e reel 9/11), da confermare.
+
+Nota da Pianificazione, 4/11 (Manuel): autostop pronto. Con meenakshi, comunismo, kallu, bucato e panni sono 6 reel esterni ai lunghi pronti; i 4 di comorin sono in coda (voiceover, Audio, Montaggio). Autostop proposto ven 6/11.
+
+Nota da Pianificazione, 4/11 (Manuel): panni non ancora pubblicato; esce sul profilo personale e anche su Voci Vere. Regola generale di Manuel: i reel un po' più mainstream possono andare su entrambi i profili. Panni entra quindi tra i reel di Voci Vere (dom 8/11, da confermare); il resto dei profili da decidere caso per caso (cocco, canna, autostop).
+
+Nota da Pianificazione, 4/11 (Manuel): autostop esce anche lui su entrambi i profili (personale e Voci Vere). Restano da decidere solo cocco e canna di comorin.
+
+## CALENDARIO COMPLETO dal 5/11 al 31/1 (Pianificazione, 4/11, per Manuel; sostituisce il piano del 29/10)
+Regole usate: un contenuto (reel, carosello, teaser, lungo) a giorni alterni, mai più di 3 di fila tranne una volta (9-12/11, quattro); lunghi
+fissi 15/11, 29/11, 20/12, 10/1, 24/1; il carosello mai nel giorno del lungo; stories il lunedì dopo il lungo e il venerdì (set 2: confermare se 2 o 3 set);
+teaser il sabato prima. I lunghi A, B e C sono coir, migranti e ONG, nell'ordine in cui Manuel li gira e Montaggio li chiude: A coir (girato 2-7/11),
+B e C gli altri due. Se un lungo non è pronto, il suo blocco (teaser, 3 reel, carosello, stories) scorre di 7 o 14 giorni e i giorni liberi si riempiono con le scorte.
+Reel istantanei (Manuel: idea di una serie, la dice ad Audio, Copy e Montaggio, edita e pubblica subito): vanno nei giorni vuoti, senza superare 3 di fila.
+Giorni liberi per loro: 8/11, 13/11, 24/11, 27/11, 6/12, 10/12, 12/12, 13/12, 15/12, 16/12, 18/12, 29/12, 31/12, 2/1, 4/1, 6/1, 8/1, 13/1, 17/1, 19/1, 21/1, 27/1.
+
+| Giorno | Uscita | Nota |
+|---|---|---|
+| gio 5/11 | mercato: reel 2 | fisso |
+| ven 6/11 | autostop | pronto; entrambi i profili |
+| ven 6/11 | mercato: stories set 2 | fisso |
+| sab 7/11 | mercato: carosello | fisso |
+| dom 8/11 | Diwali (Manuel gira; stories dal vivo se vuoi) | nessun reel |
+| lun 9/11 | mercato: reel 3 | fisso |
+| mar 10/11 | Diwali: reel | montato veloce, 2 giorni dopo |
+| mer 11/11 | meenakshi | pronto |
+| gio 12/11 | comunismo | pronto |
+| sab 14/11 | arthunkal: teaser | fisso |
+| dom 15/11 | arthunkal: LUNGO | fisso |
+| lun 16/11 | arthunkal: stories set 1 |  |
+| mar 17/11 | arthunkal: reel 1 |  |
+| mer 18/11 | comorin: statua di Thiruvalluvar | dopo VO, Audio, Montaggio |
+| gio 19/11 | arthunkal: reel 2 |  |
+| ven 20/11 | arthunkal: stories set 2 |  |
+| sab 21/11 | arthunkal: carosello |  |
+| dom 22/11 | panni (pov giungla) | entrambi i profili |
+| lun 23/11 | arthunkal: reel 3 |  |
+| mer 25/11 | kallu | pronto |
+| gio 26/11 | comorin: canna da zucchero | entrambi i profili (Manuel, 4/11) |
+| sab 28/11 | te: teaser |  |
+| dom 29/11 | te: LUNGO | solo se approvato |
+| lun 30/11 | te: stories set 1 |  |
+| mar 1/12 | te: reel 1 |  |
+| mer 2/12 | comorin: cocco | entrambi i profili (Manuel, 4/11) |
+| gio 3/12 | te: reel 2 |  |
+| ven 4/12 | te: stories set 2 |  |
+| sab 5/12 | te: carosello |  |
+| lun 7/12 | te: reel 3 |  |
+| mar 8/12 | comorin: tre mari (loop) |  |
+| mer 9/12 | bucato (te) | pronto |
+| ven 11/12 | extra 1 dal girato (ONG o Kanyakumari) | da scegliere con Manuel |
+| lun 14/12 | extra 2 dal girato (Kochi o Varkala) | da scegliere con Manuel |
+| gio 17/12 | extra 3 dal girato (Diwali o altro) | da scegliere con Manuel |
+| sab 19/12 | lungo A (coir): teaser |  |
+| dom 20/12 | LUNGO A (coir) | girato 2-7/11 |
+| lun 21/12 | lungo A: stories set 1 |  |
+| mar 22/12 | lungo A: reel 1 |  |
+| gio 24/12 | lungo A: reel 2 |  |
+| ven 25/12 | lungo A: stories set 2 | Natale, sposta se serve |
+| sab 26/12 | lungo A: carosello |  |
+| lun 28/12 | lungo A: reel 3 |  |
+| mer 30/12 | extra 4 | dalla scorta |
+| ven 1/1 | extra 5 | dalla scorta |
+| dom 3/1 | extra 6 | dalla scorta |
+| mar 5/1 | extra 7 | dalla scorta |
+| gio 7/1 | extra 8 | dalla scorta |
+| sab 9/1 | lungo B: teaser |  |
+| dom 10/1 | LUNGO B (migranti o ONG) | girato entro metà dicembre |
+| lun 11/1 | lungo B: stories set 1 |  |
+| mar 12/1 | lungo B: reel 1 |  |
+| gio 14/1 | lungo B: reel 2 |  |
+| ven 15/1 | lungo B: stories set 2 |  |
+| sab 16/1 | lungo B: carosello |  |
+| lun 18/1 | lungo B: reel 3 |  |
+| mer 20/1 | extra 9 | dalla scorta |
+| ven 22/1 | extra 10 | dalla scorta |
+| sab 23/1 | lungo C: teaser | solo se girato e montato |
+| dom 24/1 | LUNGO C (l'altro tra migranti e ONG) | solo se girato e montato |
+| lun 25/1 | lungo C: stories set 1 |  |
+| mar 26/1 | lungo C: reel 1 |  |
+| gio 28/1 | lungo C: reel 2 |  |
+| ven 29/1 | lungo C: stories set 2 |  |
+| sab 30/1 | lungo C: carosello |  |
+| dom 31/1 | lungo C: reel 3 | programmato prima della partenza per il Vietnam |
+
+Nota da Pianificazione, 4/11 (Manuel): cocco e canna di comorin escono anche loro su entrambi i profili (personale e Voci Vere). Quindi tutti i reel mainstream (panni, autostop, cocco, canna) vanno su entrambi; le date 26/11 e 2/12 non sono più condizionate.
+Nota da Pianificazione, 4/11 (Manuel): strategia. Prima si pubblica (anche contenuti più leggeri), poi si dà al profilo una forma professionale e da "Voci Vere". Lo scopo principale, da non dimenticare: DARE VOCE A CHI NE HA PIU' BISOGNO. Ogni lungo e ogni tema nuovo (coir, migranti, ONG) va verificato contro questa frase.
