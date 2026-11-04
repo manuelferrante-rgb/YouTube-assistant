@@ -52,8 +52,9 @@ orari del traghetto, "primo/unico".
 ---
 
 ## COPIONI VOICEOVER (da registrare: Manuel)
-Come meenakshi: voce calma, ferma, non solenne. Un file per reel, una frase per riga, anche una sola presa
-basta. Niente pause lunghe (le taglia Montaggio). Circa 50 parole per reel.
+Come meenakshi: voce calma, ferma, non solenne. UNA SOLA REGISTRAZIONE per tutti e 4 (Manuel, 4/11), nell'ordine
+reel 1-2-3-4, dicendo "reel uno", "reel due"... prima di ognuno; anche una sola presa basta. Montaggio la
+trascrive e taglia le frasi che servono a ogni reel. Niente pause lunghe (le taglia Montaggio). Circa 50 parole per reel.
 
 ### Reel 1, COCCO
 1. Qui il cocco si apre due volte.
