@@ -138,3 +138,80 @@ Nota da Pianificazione, 4/11 (Manuel): autostop pronto. Con meenakshi, comunismo
 Nota da Pianificazione, 4/11 (Manuel): panni non ancora pubblicato; esce sul profilo personale e anche su Voci Vere. Regola generale di Manuel: i reel un po' più mainstream possono andare su entrambi i profili. Panni entra quindi tra i reel di Voci Vere (dom 8/11, da confermare); il resto dei profili da decidere caso per caso (cocco, canna, autostop).
 
 Nota da Pianificazione, 4/11 (Manuel): autostop esce anche lui su entrambi i profili (personale e Voci Vere). Restano da decidere solo cocco e canna di comorin.
+
+## CALENDARIO COMPLETO dal 5/11 al 31/1 (Pianificazione, 4/11, per Manuel; sostituisce il piano del 29/10)
+Regole usate: un contenuto (reel, carosello, teaser, lungo) a giorni alterni, mai più di 3 di fila tranne una volta (9-12/11, quattro); lunghi
+fissi 15/11, 29/11, 20/12, 10/1, 24/1; il carosello mai nel giorno del lungo; stories il lunedì dopo il lungo e il venerdì (set 2: confermare se 2 o 3 set);
+teaser il sabato prima. I lunghi A, B e C sono coir, migranti e ONG, nell'ordine in cui Manuel li gira e Montaggio li chiude: A coir (girato 2-7/11),
+B e C gli altri due. Se un lungo non è pronto, il suo blocco (teaser, 3 reel, carosello, stories) scorre di 7 o 14 giorni e i giorni liberi si riempiono con le scorte.
+Reel istantanei (Manuel: idea di una serie, la dice ad Audio, Copy e Montaggio, edita e pubblica subito): vanno nei giorni vuoti, senza superare 3 di fila.
+Giorni liberi per loro: 8/11, 13/11, 24/11, 27/11, 6/12, 10/12, 12/12, 13/12, 15/12, 16/12, 18/12, 29/12, 31/12, 2/1, 4/1, 6/1, 8/1, 13/1, 17/1, 19/1, 21/1, 27/1.
+
+| Giorno | Uscita | Nota |
+|---|---|---|
+| gio 5/11 | mercato: reel 2 | fisso |
+| ven 6/11 | autostop | pronto; entrambi i profili |
+| ven 6/11 | mercato: stories set 2 | fisso |
+| sab 7/11 | mercato: carosello | fisso |
+| dom 8/11 | Diwali (Manuel gira; stories dal vivo se vuoi) | nessun reel |
+| lun 9/11 | mercato: reel 3 | fisso |
+| mar 10/11 | Diwali: reel | montato veloce, 2 giorni dopo |
+| mer 11/11 | meenakshi | pronto |
+| gio 12/11 | comunismo | pronto |
+| sab 14/11 | arthunkal: teaser | fisso |
+| dom 15/11 | arthunkal: LUNGO | fisso |
+| lun 16/11 | arthunkal: stories set 1 |  |
+| mar 17/11 | arthunkal: reel 1 |  |
+| mer 18/11 | comorin: statua di Thiruvalluvar | dopo VO, Audio, Montaggio |
+| gio 19/11 | arthunkal: reel 2 |  |
+| ven 20/11 | arthunkal: stories set 2 |  |
+| sab 21/11 | arthunkal: carosello |  |
+| dom 22/11 | panni (pov giungla) | entrambi i profili |
+| lun 23/11 | arthunkal: reel 3 |  |
+| mer 25/11 | kallu | pronto |
+| gio 26/11 | comorin: canna da zucchero | solo se Voci Vere |
+| sab 28/11 | te: teaser |  |
+| dom 29/11 | te: LUNGO | solo se approvato |
+| lun 30/11 | te: stories set 1 |  |
+| mar 1/12 | te: reel 1 |  |
+| mer 2/12 | comorin: cocco | solo se Voci Vere |
+| gio 3/12 | te: reel 2 |  |
+| ven 4/12 | te: stories set 2 |  |
+| sab 5/12 | te: carosello |  |
+| lun 7/12 | te: reel 3 |  |
+| mar 8/12 | comorin: tre mari (loop) |  |
+| mer 9/12 | bucato (te) | pronto |
+| ven 11/12 | extra 1 dal girato (ONG o Kanyakumari) | da scegliere con Manuel |
+| lun 14/12 | extra 2 dal girato (Kochi o Varkala) | da scegliere con Manuel |
+| gio 17/12 | extra 3 dal girato (Diwali o altro) | da scegliere con Manuel |
+| sab 19/12 | lungo A (coir): teaser |  |
+| dom 20/12 | LUNGO A (coir) | girato 2-7/11 |
+| lun 21/12 | lungo A: stories set 1 |  |
+| mar 22/12 | lungo A: reel 1 |  |
+| gio 24/12 | lungo A: reel 2 |  |
+| ven 25/12 | lungo A: stories set 2 | Natale, sposta se serve |
+| sab 26/12 | lungo A: carosello |  |
+| lun 28/12 | lungo A: reel 3 |  |
+| mer 30/12 | extra 4 | dalla scorta |
+| ven 1/1 | extra 5 | dalla scorta |
+| dom 3/1 | extra 6 | dalla scorta |
+| mar 5/1 | extra 7 | dalla scorta |
+| gio 7/1 | extra 8 | dalla scorta |
+| sab 9/1 | lungo B: teaser |  |
+| dom 10/1 | LUNGO B (migranti o ONG) | girato entro metà dicembre |
+| lun 11/1 | lungo B: stories set 1 |  |
+| mar 12/1 | lungo B: reel 1 |  |
+| gio 14/1 | lungo B: reel 2 |  |
+| ven 15/1 | lungo B: stories set 2 |  |
+| sab 16/1 | lungo B: carosello |  |
+| lun 18/1 | lungo B: reel 3 |  |
+| mer 20/1 | extra 9 | dalla scorta |
+| ven 22/1 | extra 10 | dalla scorta |
+| sab 23/1 | lungo C: teaser | solo se girato e montato |
+| dom 24/1 | LUNGO C (l'altro tra migranti e ONG) | solo se girato e montato |
+| lun 25/1 | lungo C: stories set 1 |  |
+| mar 26/1 | lungo C: reel 1 |  |
+| gio 28/1 | lungo C: reel 2 |  |
+| ven 29/1 | lungo C: stories set 2 |  |
+| sab 30/1 | lungo C: carosello |  |
+| dom 31/1 | lungo C: reel 3 | programmato prima della partenza per il Vietnam |
