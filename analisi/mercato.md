@@ -108,3 +108,8 @@ Cosa cambiare nei prossimi reel (comorin compreso):
 - Indicatore da guardare per primo: skip rate (obiettivo sotto il 30%), poi share rate.
 - Teaser dei prossimi lunghi: una curiosità con una persona, non un montaggio di momenti.
 Da confermare con i reel 2 e 3 e a 7 giorni.
+
+Nota 4/11 (Manuel): il teaser su YouTube NON era collegato al lungo quando è uscito (il lungo non era ancora
+pubblico); Manuel ha messo il video correlato dopo. Quindi l'1% da "Short correlati" non dice ancora se il teaser
+porta al lungo: si rivaluta a 7 giorni. Per i prossimi: collegare il teaser nel minuto in cui il lungo diventa
+pubblico (domenica mattina), perché gli Shorts prendono quasi tutte le visualizzazioni nei primi 2-3 giorni.
