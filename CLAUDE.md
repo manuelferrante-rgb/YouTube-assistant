@@ -29,7 +29,7 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura, carosello di ogni lungo, sottotitoli it/en del lungo; testi a schermo per Montaggio (scritte sui B-roll del lungo, gancio e scritte dei 4 verticali, sul girato già registrato); dal 25/10 per i prossimi video anche le domande da fare alle persone e la parte di storia da dire in camera | `copioni/<video>_testi.md` |
 | Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
-Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01Htfbh2Xp2z2rbRNGYUwBKL (dal 29/10 sera, prossimo video; meenakshi era session_01Htfbh1ny4yyq4niKggdc3h),
+Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01HtfbgxT69ew2wUsfVswkFq (dal 4/11 sera, prossimo video; comorin era session_01Htfbh2Xp2z2rbRNGYUwBKL),
 Pianificazione session_01Htfbh2bajkKHUYyPHPM7ru (dal 29/10), Copy session_01Htfbh2CvydZZ9zskjMcc2c (dal 4/11),
 Insights session_01HtfbgyzAxUCZDsgATkknE1, Audio session_01Htfbh1kXiyxeoJVcNiDrAt (dal 28/10).
 
