@@ -1,236 +1,247 @@
-# Capo Comorin (Kanyakumari, Tamil Nadu): 4 reel verticali (Copy, 4/11)
+# Capo Comorin (Kanyakumari, Tamil Nadu): 4 reel verticali (Copy, 4/11, v2 dopo le note di Manuel)
 
 Nome breve `comorin`. Brief di Insights in `analisi/comorin_reel.md`. Formato: `regole/formato_reel.md` (modello
-meenakshi: ~20 s finali a 1.1x, tutto voiceover di Manuel, gancio da 0 s, rivelazione con un movimento vero,
-3 titoli oro su bianco, chiusura fissa "Ascolta altre voci, su" + logo).
-Girato: cartella Drive 1z5BA2MoG69ExGT6ivPb9VAcbxV25VVmI (37 clip, 3-4/11). Le clip qui sotto si chiamano con
-l'ora del file DJI (es. `135736` = dji_mimo_20261104_135736_...) o con il nome iPhone (`IMG_8766`).
+meenakshi: voiceover di Manuel, gancio da 0 s, rivelazione con un movimento vero, titoli oro su bianco, video
+finito a 1.1x, chiusura fissa "Ascolta altre voci, su" + logo), con le eccezioni scritte qui sotto.
+Girato: cartella Drive 1z5BA2MoG69ExGT6ivPb9VAcbxV25VVmI (37 clip, 3-4/11). Le clip si chiamano con l'ora del file
+DJI (es. `135736` = dji_mimo_20261104_135736_...) o con il nome iPhone (`IMG_8766`).
+
+DECISIONI DI MANUEL (4/11):
+- Reel 1 cocco: il lavoro del venditore che taglia, il gesto ripetuto più volte, dargli valore.
+- Reel 2 canna: la storia (Alessandro Magno, "miele senza api", i cristalli inventati in India), il fresco, come
+  la spreme. Chiude sulla frase dei 1500 anni. Niente "lui spreme, lei serve".
+- Reel 3 statua: la STORIA di Thiruvalluvar e del suo libro, breve; si arriva in barca; il memoriale prima, la
+  statua circondata dall'oceano. 25-30 s (più lungo degli altri, c'è materiale). Il ponte di vetro NON si nomina
+  e quasi non si mostra (a Manuel non piace). Quella che Manuel aveva chiamato "fortezza" è questa statua.
+- Reel 4 tre mari: SENZA parlato, ~8 s che girano in loop: come ci si arriva (la barca), veloce, poi si resta nel
+  flusso del mare.
+- Il luogo NON si ripete in ogni reel: nel cocco e nella canna non si dice dove siamo; nel reel 3 solo "la punta
+  più a sud dell'India". Reel 1 e 2 forse vanno sul profilo personale di Manuel: decide lui.
+- Un solo voiceover per tutti i reel (Manuel dice "reel uno", "reel due", "reel tre" prima di ognuno); Montaggio
+  trascrive e taglia.
 
 ## Cosa c'è nel girato (guardato tutto, 4/11)
-- 3/11 pomeriggio, iPhone (GPS 8.079 N, 77.538 E, circa 300 m a ovest del centro): IMG_8759-8761 sentiero verso il
-  mare con un muro basso di pietra in rovina sulla scogliera; IMG_8762-8766 spiaggia, scogli, onde forti. Cielo
-  coperto. Non si vede nessuna differenza di colore tra le acque: nel copy NON si dice.
-- 4/11 DJI 4K orizzontale: `121640` grata del molo; `122458` dentro il traghetto, gente con i giubbotti arancioni
-  (girata capovolta: va raddrizzata); `122850`, `123010` dal traghetto, la roccia col memoriale che si avvicina;
-  `125410` il mare dalla roccia; `125830` il PONTE DI VETRO: il mare sotto i piedi, poi la camera si alza sul ponte
-  e in fondo c'è la statua; `130034` scale di pietra; `130140`, `130308` la statua gigante di pietra dal basso,
-  panorama, gente ai piedi; `130238` Manuel in camera davanti alla statua; `132230` muro con i versi del
-  Thirukkural in inglese; `132332` elefante di pietra sul ponte; `132340` statua e piedistallo controluce;
-  `132602` piedi nudi sul pavimento di pietra.
-- COCCO: `135652` montagna di cocchi; `135736` il venditore (maglia verde oliva) li taglia e li porge; `135850`
-  Manuel paga, una ragazza beve; `135906` Manuel beve; `140138` LA SIGNORA seduta per terra spacca il cocco col
-  machete su una pietra e lo apre in due, poi alza le due metà sorridendo (dietro il cartello del sindacato dei
-  lavoratori del traghetto Poompuhar); `140244` Manuel mangia la polpa; `140346` la montagna di gusci.
-- CANNA: `140434` le canne, l'uomo in rosso le spinge nella macchina, il succo nel colino; `140516` la ruota che
-  gira, lui piega la canna già spremuta e la ripassa; `140622` di nuovo alla macchina; `140724` il chiosco intero;
-  `140808` versa il succo dal colino nel pentolone (seduta accanto una signora in sari); `140828` la signora
-  serve i bicchieri; `140944` Manuel beve.
-- Nessuno dice prezzi o numeri: nel copy niente prezzi.
-- La STATUA è Thiruvalluvar (pietra, sull'isolotto accanto alla roccia di Vivekananda), non Vivekananda.
-- La FORTEZZA: nel girato c'è solo il muro in rovina di IMG_8759-8761 (circa 8 s in tutto, poco). Non è il forte
-  di Vattakottai (quello è a 6-7 km a nord-est) e non ho trovato fonti su questo muro. Quindi il reel 3 l'ho
-  scritto sulla statua e il ponte di vetro, che hanno il girato migliore e fatti verificati. Il muro entra nel
-  reel 4 come immagine di mare. DA CONFERMARE CON MANUEL: se sa come si chiama quel posto, rifaccio il reel 3.
+- 3/11 pomeriggio, iPhone (GPS 8.079 N, 77.538 E): IMG_8759-8761 sentiero verso il mare e muro di pietra in
+  rovina sulla scogliera; IMG_8762-8766 spiaggia, scogli, onde forti, cielo coperto. Nessuna differenza di
+  colore tra le acque visibile.
+- 4/11 DJI 4K orizzontale: `121640` grata del molo; `122458` dentro il traghetto, gente con i giubbotti
+  arancioni (girata capovolta: raddrizzare); `122850`, `123010` dal traghetto, la roccia col memoriale di
+  Vivekananda che si avvicina; `125410` il mare dalla roccia, onde; `125830` ponte di vetro (da non usare, al
+  massimo l'ultimo pezzo con la statua in fondo); `130034` scale di pietra; `130140` la statua gigante dal basso;
+  `130238` Manuel in camera davanti alla statua; `130308` panorama della costa dalla roccia, poi la statua, poi
+  gente ai piedi; `132230` muro con i versi del Thirukkural; `132332` elefante di pietra; `132340` statua e
+  piedistallo controluce; `132602` piedi nudi sulla pietra; `132628` cielo.
+- COCCO: `135652` montagna di cocchi; `135736` (15 s) IL VENDITORE (maglia verde oliva, a piedi nudi, sotto un
+  albero) prende un cocco dal secchio, lo taglia col machete, lo porge, ne prende un altro: in 15 s ne porge
+  almeno due, sempre lo stesso gesto; `135850` Manuel paga; `135906` il venditore di nuovo, Manuel beve;
+  `140138` una signora per terra spacca i cocchi bevuti per la polpa; `140244` Manuel mangia la polpa;
+  `140346` montagna di gusci.
+- CANNA: `140434` canne intere, l'uomo in rosso le spinge nei rulli, il succo nel colino; `140516` la ruota che
+  gira, lui piega la canna già spremuta e la ripassa; `140622` di nuovo ai rulli; `140724` il chiosco intero;
+  `140808` versa il succo dal colino; `140828` la signora riempie i bicchieri; `140944` Manuel beve.
+- Nessuno dice prezzi o numeri: niente prezzi nel copy.
 
 ## Fatti usati (con fonte)
-- Kanyakumari, ex Capo Comorin: punta più a sud dell'India CONTINENTALE (il punto più a sud di tutta l'India è
-  nelle isole Andamane e Nicobare). Fonti in `piano/kanyakumari.md`.
-- Tre mari: Golfo del Bengala, Mar Arabico, Oceano Indiano ("si dice che qui si incontrino").
-- Vivekananda: si racconta che a fine dicembre 1892 arrivò a nuoto sulla roccia e ci meditò tre giorni (Lonely
-  Planet). "A nuoto" va con il "si racconta".
-- Thiruvalluvar, poeta tamil, autore del Thirukkural: 1330 versi in 133 capitoli. La statua è alta 133 piedi
-  (circa 41 m) con il piedistallo, come i capitoli del libro; inaugurata il 1° gennaio 2000 (Wikipedia
-  "Thiruvalluvar Statue", incredibleindia.gov.in, kanniyakumari.nic.in).
-- Ponte di vetro tra la roccia di Vivekananda e la statua: 77 m, inaugurato il 30/12/2024 (Deccan Chronicle,
-  The Week, DT Next). NON dire "il primo ponte di vetro sul mare dell'India" (lo scrivono i giornali, non è
-  verificabile).
-- "Zucchero": in italiano viene dall'arabo sukkar, che viene dal sanscrito śarkarā (Treccani, etimologia). Si
-  dice "La parola zucchero viene dall'India", non "lo zucchero è nato qui".
-Fuori: la meditazione di Modi, leggende (sabbia colorata, dea Kanya Kumari), colori diversi del mare, prezzi,
-orari del traghetto, "primo/unico".
+- Kanyakumari: punta più a sud dell'India continentale (`piano/kanyakumari.md`).
+- Canna: Nearco, ammiraglio di Alessandro Magno, durante la campagna in India (327-325 a.C.) parla di una canna
+  che dà miele senza api (Wikipedia "History of sugar", da Arriano; la frase è citata ovunque, la data in una
+  fonte è diversa: per questo si dice solo "i greci di Alessandro Magno"). Lo zucchero in cristalli lo
+  ottengono per primi in India: la data più citata è il 350 d.C. circa (dinastia Gupta), altre fonti la mettono
+  molto prima; "più di 1500 anni fa" è vero per tutte. "Zucchero" viene dall'arabo sukkar, dal sanscrito
+  śarkarā (Treccani).
+- Thiruvalluvar: poeta tamil, autore del Thirukkural, 1330 versi di due righe in 133 capitoli, in tre parti:
+  virtù, ricchezza, amore. Quando visse non si sa (stime dal III secolo a.C. al V d.C.): "si racconta, quasi
+  duemila anni fa". Statua di pietra, inaugurata il 1/1/2000: 95 piedi su un piedistallo di 38 piedi = 133 piedi
+  (41 m), come i capitoli; il piedistallo sono i 38 capitoli sulla virtù, la statua sopra la ricchezza e l'amore
+  (Wikipedia "Thiruvalluvar Statue", kanniyakumari.nic.in, incredibleindia.gov.in).
+- Vivekananda: si racconta che nel 1892 arrivò a nuoto sulla roccia e ci meditò (Lonely Planet).
+Fuori: Modi, leggende, colori del mare, prezzi, il ponte di vetro, "primo/unico", "sette parole per verso" (non
+verificato).
 
 ---
 
-## COPIONI VOICEOVER (da registrare: Manuel)
-Come meenakshi: voce calma, ferma, non solenne. UNA SOLA REGISTRAZIONE per tutti e 4 (Manuel, 4/11), nell'ordine
-reel 1-2-3-4, dicendo "reel uno", "reel due"... prima di ognuno; anche una sola presa basta. Montaggio la
-trascrive e taglia le frasi che servono a ogni reel. Niente pause lunghe (le taglia Montaggio). Circa 50 parole per reel.
+## VOICEOVER (Manuel: una sola registrazione, voce calma, ferma)
+Prima di ogni reel Manuel dice "reel uno", "reel due", "reel tre". Il reel 4 non ha voce.
 
 ### Reel 1, COCCO
-1. Qui il cocco si apre due volte.
-2. La prima, per berlo.
-3. Kanyakumari, Tamil Nadu. La punta più a sud dell'India.
-4. Lui lo taglia e ci infila la cannuccia. Quando hai finito, lo porti a lei.
-5. Lo spacca in due sulla pietra. Ed ecco la seconda volta: la polpa, da mangiare.
-6. Per terra restano i gusci, uno sopra l'altro.
+1. Prendi. Taglia. Porgi. E ricomincia.
+2. Lui apre cocchi così, uno dietro l'altro.
+3. Il cocco in una mano, il machete nell'altra. Pochi colpi, sempre uguali.
+4. Il buco in cima, la cannuccia, ed è già in mano a qualcun altro.
+5. Dietro di lui, la pila da aprire. Davanti, la gente che aspetta.
+6. A piedi nudi, sotto un albero. E il prossimo è già pronto.
 
 ### Reel 2, CANNA DA ZUCCHERO
-1. La parola zucchero viene dall'India.
-2. Dal sanscrito: sharkara.
-3. Kanyakumari, Tamil Nadu. La punta più a sud dell'India.
-4. La canna entra nella macchina. Lui la piega e la ripassa, finché non resta secca.
-5. Il succo passa nel colino, e lei lo versa nei bicchieri.
-6. Lui spreme, lei serve. Un bicchiere alla volta.
+1. I greci di Alessandro Magno la chiamavano: miele senza api.
+2. È la canna da zucchero. E qui la spremono al momento.
+3. Passa nei rulli, si piega, ripassa. Finché non resta secca.
+4. E la parola zucchero viene dal sanscrito: sharkara.
+5. Perché lo zucchero in cristalli l'hanno inventato qui, in India. Più di 1500 anni fa.
 
-### Reel 3, LA STATUA SUL MARE
-1. Alta 133 piedi. Come i capitoli del suo libro.
-2. E per arrivarci, si cammina sopra il mare.
-3. Thiruvalluvar, poeta tamil. Kanyakumari, India.
-4. Il suo libro, il Thirukkural, ha 1330 versi. Qui dentro li trovi sui muri.
-5. La statua è del 2000. Il ponte di vetro, del 2024.
-6. E i suoi versi, in tamil, si leggono ancora.
+### Reel 3, LA STATUA IN MEZZO ALL'OCEANO (25-30 s)
+1. Alta 133 piedi. Uno per ogni capitolo del suo libro.
+2. Per arrivarci si prende la barca, alla punta più a sud dell'India.
+3. Prima c'è lo scoglio di Vivekananda: si racconta che nel 1892 ci arrivò a nuoto.
+4. Poi lui. Thiruvalluvar, poeta tamil. Visse, si racconta, quasi duemila anni fa.
+5. Scrisse il Thirukkural: 1330 versi su come si vive. La virtù, la ricchezza, l'amore.
+6. Il piedistallo è alto 38 piedi, come i capitoli sulla virtù. Sopra, la ricchezza e l'amore.
+7. E tutto intorno, solo oceano.
 
-### Reel 4, TRE MARI
-1. Qui finisce l'India. E si incontrano tre mari.
-2. Golfo del Bengala, Mar Arabico, Oceano Indiano.
-3. Kanyakumari, Tamil Nadu. La punta più a sud del continente indiano.
-4. Nel 1892, si racconta, un monaco arrivò a nuoto su quello scoglio.
-5. Era Vivekananda. Ci meditò tre giorni.
-6. Oggi ci si arriva in barca. E la barca parte piena.
-
-Note di pronuncia: Thiruvalluvar = "Tiru-vallu-var"; Thirukkural = "Tiru-kkural"; sharkara con l'accento sulla
-prima a ("SHAR-kara"); Kanyakumari = "Kania-kumari".
+Pronuncia: Thiruvalluvar = "Tiru-vallu-var"; Thirukkural = "Tiru-kkural"; sharkara con l'accento sulla prima
+("SHAR-kara").
 
 ---
 
 ## PER MONTAGGIO
-Valgono tutte le regole di `regole/formato_reel.md` (1.1x finale, nessuna pausa, sottotitoli parola per parola
-sulla fascia scura con la parola in oro, titoli oro su bianco "bam" in alto y 400 mai sul viso, chiusura fissa).
-Clip DJI 4K orizzontali: ritaglio 9:16 al centro, mai schiacciate. `122458` è capovolta: raddrizzarla.
-La sequenza segue le frasi del VO: le immagini cambiano quando cambia la cosa detta (1-2 s ciascuna).
+Regole di `regole/formato_reel.md` per reel 1-3 (1.1x finale, nessuna pausa, sottotitoli parola per parola sulla
+fascia scura con la parola in oro, titoli oro su bianco "bam" in alto y 400 mai sul viso, chiusura fissa).
+Clip DJI 4K orizzontali: ritaglio 9:16 al centro, mai schiacciate. `122458` capovolta: raddrizzarla.
+Immagini brevi (1-2 s) che seguono le parole.
 
-### Reel 1, COCCO
-| Frase VO | Immagine | Titolo a schermo (entra sulla parola) |
+### Reel 1, COCCO (~20 s): il gesto del venditore, ripetuto
+Tutto su `135736` e `135906`: si montano i suoi tagli UNO DOPO L'ALTRO a ritmo (ogni ciclo prendi-taglia-porgi
+diventa un colpo di montaggio), così si vede che il gesto si ripete. Il venditore è il protagonista; la signora
+della polpa e Manuel non servono (al massimo Manuel che beve 1 s sulla frase 4).
+| Frase VO | Immagine | Titolo |
 |---|---|---|
-| 1 "si apre due volte" | GANCIO da 0 s: `140138` il colpo di machete della signora sulla pietra (il momento più forte, ~1 s), poi `135652` la montagna di cocchi | **Si apre due volte** dal primo fotogramma |
-| 2 "per berlo" | `135906` Manuel che beve | |
-| 3 nome e luogo | `135736` il venditore tra i cocchi | **Kanyakumari** su "Kanyakumari", **Tamil Nadu, India** su "Tamil Nadu" |
-| 4 "lo taglia... lo porti a lei" | `135736` i colpi del venditore e il cocco porto in mano; `135850` Manuel paga | |
-| 5 "lo spacca in due" | RIVELAZIONE: `140138` lei lo apre in due e alza le due metà verso la camera, su "la seconda volta"; poi `140244` Manuel mangia la polpa (1 s) | |
-| 6 "restano i gusci" | `140346` la montagna di gusci (panoramica breve ~1.3 s) | |
-| chiusura | la signora di `140138` che sorride con le due metà (~2 s), "Ascolta altre voci, su" + velo + logo | |
+| 1 "Prendi. Taglia. Porgi." | GANCIO da 0 s: il colpo di machete più netto di `135736`, ~1 s, poi un taglio per parola | **Prendi, taglia, porgi** dal primo fotogramma |
+| 2 "uno dietro l'altro" | due cicli interi di fila (`135736` 0-7 s e 7-14 s, accelerabili) | |
+| 3 "pochi colpi, sempre uguali" | primo piano mani e machete (`135906` inizio) | |
+| 4 "già in mano a qualcun altro" | RIVELAZIONE: il cocco che passa dalle sue mani a quelle del cliente (`135736` ~7 s e ~13 s) | |
+| 5 "la pila... la gente che aspetta" | `135652` la montagna di cocchi; `135736` la gente intorno | |
+| 6 "a piedi nudi, sotto un albero" | `135736` inquadratura larga: lui, l'albero, i piedi | |
+| chiusura | lui che prende il cocco successivo (~2 s), poi chiusura fissa | |
+Un solo titolo (il gancio): qui non serve il luogo.
 
-### Reel 2, CANNA DA ZUCCHERO
-| Frase VO | Immagine | Titolo a schermo |
+### Reel 2, CANNA DA ZUCCHERO (~20 s)
+| Frase VO | Immagine | Titolo |
 |---|---|---|
-| 1 "zucchero viene dall'India" | GANCIO da 0 s: `140516` la ruota che gira e la canna che entra (~1 s), poi `140434` le canne intere | **Zucchero: parola indiana** dal primo fotogramma (24 car.; se non sta su una riga: **Parola indiana**) |
-| 2 "sharkara" | `140434` il succo che cola nel colino | **Sanscrito: śarkarā** su "sharkara" |
-| 3 nome e luogo | `140724` il chiosco intero | **Kanyakumari, India** su "Kanyakumari" |
-| 4 "la piega e la ripassa" | RIVELAZIONE: `140516` lui piega la canna già spremuta e la rimette nei rulli (il gesto intero, accelerabile 1.5x), su "finché non resta secca" | |
-| 5 "colino... bicchieri" | `140808` versa dal colino; `140828` la signora riempie i bicchieri | |
-| 6 "lui spreme, lei serve" | `140622` lui alla macchina (1 s), `140944` Manuel beve (1 s) | |
-| chiusura | la signora di `140828` che serve (~2 s), poi chiusura fissa | |
+| 1 "miele senza api" | GANCIO da 0 s: `140516` la ruota che gira e la canna che entra (~1 s), poi `140434` le canne intere | **Miele senza api** dal primo fotogramma |
+| 2 "la spremono al momento" | `140434` lui spinge la canna nei rulli, il succo che cola nel colino | |
+| 3 "si piega, ripassa" | RIVELAZIONE: `140516` lui piega la canna spremuta e la rimette nei rulli (gesto intero, accelerabile 1.5x), su "finché non resta secca" | |
+| 4 "sanscrito: sharkara" | `140808` il succo versato dal colino | **Sanscrito: śarkarā** su "sharkara" |
+| 5 "inventato qui, in India" | `140828` i bicchieri pieni, `140944` Manuel beve (1 s) | **Più di 1500 anni fa** su "1500" |
+| chiusura | lui ai rulli (`140622`, ~2 s), poi chiusura fissa | |
 
-### Reel 3, LA STATUA SUL MARE
-| Frase VO | Immagine | Titolo a schermo |
+### Reel 3, LA STATUA IN MEZZO ALL'OCEANO (25-30 s)
+Il ponte di vetro non si vede (al massimo l'ultimo pezzo di `125830`, se serve, solo con la statua in fondo).
+| Frase VO | Immagine | Titolo |
 |---|---|---|
-| 1 "133 piedi" | GANCIO da 0 s: `130140` la statua dal basso, enorme (~1 s), poi `132340` statua e piedistallo | **133 piedi, 133 capitoli** dal primo fotogramma |
-| 2 "si cammina sopra il mare" | RIVELAZIONE: `125830` dal vetro col mare sotto la camera si alza sul ponte e scopre la statua in fondo; "sopra il mare" cade quando si vede la statua | |
-| 3 nome e luogo | `130308` panorama dalla roccia, poi la statua | **Thiruvalluvar** su "Thiruvalluvar", **Kanyakumari, India** su "Kanyakumari" |
-| 4 "versi sui muri" | `132230` il muro con i versi (movimento lungo il muro) | |
-| 5 "2000... 2024" | `132340` statua controluce su "2000"; `125830` primo pezzo, il vetro, su "ponte di vetro"; `132332` l'elefante di pietra (1 s) | |
-| 6 "si leggono ancora" | `130034` le scale, `132602` i piedi nudi sulla pietra | |
-| chiusura | `130308` la gente ai piedi della statua (ultimo pezzo, ~2 s), poi chiusura fissa | |
-Nota: se un titolo con il numero 133 si legge male in 22 caratteri, alternativa **Alta come il suo libro**.
+| 1 "133 piedi" | GANCIO da 0 s: `130140` la statua dal basso, enorme (~1 s), poi `132340` statua e piedistallo | **133 piedi, 133 capitoli** dal primo fotogramma (se è troppo lungo: **Alta come il suo libro**) |
+| 2 "si prende la barca" | `121640` la grata del molo, `122458` la gente col giubbotto arancione | **La punta dell'India** su "la punta più a sud" |
+| 3 "lo scoglio di Vivekananda" | `123010` la roccia col memoriale che si avvicina dal traghetto; `132602` i piedi nudi sulla pietra | |
+| 4 "Poi lui. Thiruvalluvar" | RIVELAZIONE: `130308` dal panorama la camera gira e trova la statua, su "Poi lui" | **Thiruvalluvar** su "Thiruvalluvar" |
+| 5 "1330 versi" | `132230` il muro con i versi (movimento lungo il muro) | |
+| 6 "il piedistallo... 38 piedi" | `132340` il piedistallo, poi la statua che sale (o `130140` dal basso verso l'alto) | |
+| 7 "solo oceano" | `130308` primo pezzo (la costa e il mare dalla roccia), `125410` le onde intorno (~1.3 s) | |
+| chiusura | `130308` la gente ai piedi della statua (~2 s), poi chiusura fissa | |
 
-### Reel 4, TRE MARI
-| Frase VO | Immagine | Titolo a schermo |
-|---|---|---|
-| 1 "qui finisce l'India" | GANCIO da 0 s: `IMG_8766` l'onda che si rompe sugli scogli (~1 s), poi `IMG_8765` la schiuma sulla roccia | **Qui finisce l'India** dal primo fotogramma |
-| 2 i tre nomi | `IMG_8764`, `125410` il mare dalla roccia, `IMG_8761` il muro in rovina sul mare (un nome per immagine) | **3 mari** su "Golfo del Bengala" |
-| 3 nome e luogo | `130308` primo pezzo, panorama della costa dalla roccia | **Kanyakumari, India** su "Kanyakumari" |
-| 4 "su quello scoglio" | RIVELAZIONE: `123010` dal traghetto la roccia col memoriale che si avvicina, su "quello scoglio" | |
-| 5 "Vivekananda... tre giorni" | `122850` il mare dal traghetto, `121640` la grata del molo | |
-| 6 "la barca parte piena" | `122458` la gente col giubbotto arancione (raddrizzata) | |
-| chiusura | `122458` una persona sul traghetto (~2 s), poi chiusura fissa | |
+### Reel 4, TRE MARI (~8 s, in loop, senza voce)
+Eccezione a `regole/formato_reel.md` (Manuel, 4/11): niente voiceover, niente sottotitoli, NIENTE chiusura con
+logo (romperebbe il loop). Veloce: ~3 s di arrivo, poi il mare.
+- 0-1 s `122458` la gente sul traghetto (raddrizzata), 1-2 s `123010` la roccia che si avvicina, 2-3 s
+  `122850` il mare dal traghetto (tagli rapidi, anche 1.3x).
+- 3-8 s si resta sul mare: `125410` le onde dalla roccia (o `IMG_8766` / `IMG_8765` se scorrono meglio), una
+  sola inquadratura lunga.
+- L'ultimo fotogramma deve attaccarsi al primo senza stacco (stesso movimento o stessa luce), così il video
+  ricomincia da solo.
+- Un solo titolo per tutto il video, oro su bianco in alto: **Qui si incontrano 3 mari**.
+- Audio: solo la musica di Audio, che deve girare in loop anche lei.
 
 Controlli prima della consegna come in `regole/formato_reel.md`; i reel li approva Manuel in chat.
 
 ---
 
 ## PER AUDIO
-Musica originale, una per i 4 reel o una per reel (decide Audio), come meenakshi: bassissima e costante sotto
-la voce, un po' più su sul finale senza voce; segni di gancio, rivelazione e chiusura. Solo musica (regola di
-Audio). Temi: reel 1 e 2 mercato e strada, leggeri; reel 3 e 4 mare aperto, più ampi. Tempi dei segni:
-rivelazione = reel 1 la signora che apre il cocco, reel 2 la canna piegata e ripassata, reel 3 la statua che
-appare in fondo al ponte, reel 4 la roccia vista dal traghetto. `cue_chiusura` e musica fino all'ultimo
-fotogramma del logo.
+Musica originale, come meenakshi: bassissima e costante sotto la voce, un po' più su sul finale senza voce;
+segni di gancio, rivelazione e chiusura. Solo musica (regola di Audio).
+- Reel 1 cocco: ritmica, a tempo con i colpi del machete (il montaggio va a ritmo sui tagli). Rivelazione: il
+  cocco che passa al cliente.
+- Reel 2 canna: leggera, un po' più calda per la storia. Rivelazione: la canna piegata e ripassata.
+- Reel 3 statua: mare aperto, più ampia, 25-30 s. Rivelazione: la camera che trova la statua ("Poi lui").
+- Reel 4 tre mari: 8 s, mare, che si chiude in loop perfetto (fine attaccata all'inizio), senza segno di
+  chiusura. È l'unico suono del video.
+`cue_chiusura` e musica fino all'ultimo fotogramma del logo (reel 1-3).
 
 ---
 
-## DIDASCALIE (reel autonomi: niente rimando a un video completo)
+## DIDASCALIE
 
-### Reel 1, COCCO
+### Reel 1, COCCO (forse profilo personale di Manuel)
 Titolo Short / prima riga IG:
-IT: Qui il cocco si apre due volte 🇮🇳
-EN: Here the coconut gets opened twice 🇮🇳
+IT: Prendi, taglia, porgi. E ricomincia 🇮🇳
+EN: Take, cut, hand over. And again 🇮🇳
 Didascalia IG (IT):
-Qui il cocco si apre due volte 🇮🇳
-Kanyakumari, Tamil Nadu, la punta più a sud dell'India continentale. Lui lo taglia e ci mette la cannuccia.
-Quando l'hai bevuto, lo porti a lei: lo spacca in due sulla pietra e dentro c'è la polpa.
+Prendi, taglia, porgi. E ricomincia 🇮🇳
+Un cocco in una mano, il machete nell'altra, a piedi nudi sotto un albero. Pochi colpi, sempre uguali, e il
+cocco è già nelle mani di qualcun altro. Kanyakumari, Tamil Nadu.
 #india #tamilnadu #kanyakumari #vocivere #cocco
 Didascalia IG (EN):
-Here the coconut gets opened twice 🇮🇳
-Kanyakumari, Tamil Nadu, the southern tip of mainland India. He cuts it and puts in a straw. When you have
-drunk it, you take it to her: she splits it on a stone, and inside there is the flesh to eat.
+Take, cut, hand over. And again 🇮🇳
+A coconut in one hand, the machete in the other, barefoot under a tree. A few strokes, always the same, and
+the coconut is already in someone else's hands. Kanyakumari, Tamil Nadu.
 #india #tamilnadu #kanyakumari #vocivere #coconut
 Descrizione Short YT:
-IT: Alla punta più a sud dell'India il cocco si beve e poi si mangia. Tu la polpa l'hai mai assaggiata?
-EN: At the southern tip of India you drink the coconut, then you eat it. Have you ever tried the flesh?
+IT: Lo stesso gesto, un cocco dopo l'altro. Quanti colpi servono, secondo te?
+EN: The same gesture, one coconut after another. How many strokes does it take, do you think?
 
-### Reel 2, CANNA DA ZUCCHERO
+### Reel 2, CANNA DA ZUCCHERO (forse profilo personale di Manuel)
 Titolo Short / prima riga IG:
-IT: La parola zucchero viene dall'India 🇮🇳
-EN: The word sugar comes from India 🇮🇳
+IT: I greci la chiamavano miele senza api 🇮🇳
+EN: The Greeks called it honey without bees 🇮🇳
 Didascalia IG (IT):
-La parola zucchero viene dall'India 🇮🇳
-Dal sanscrito śarkarā, passata per l'arabo. A Kanyakumari, Tamil Nadu, la canna passa nella macchina finché
-non resta secca. Lui spreme, lei serve. Un bicchiere alla volta.
+I greci la chiamavano miele senza api 🇮🇳
+I soldati di Alessandro Magno trovarono in India una canna che faceva il miele senza api. Qui la spremono
+al momento. E lo zucchero in cristalli l'hanno inventato in India, più di 1500 anni fa: la parola viene dal
+sanscrito, śarkarā.
 #india #tamilnadu #kanyakumari #vocivere #cannadazucchero
 Didascalia IG (EN):
-The word sugar comes from India 🇮🇳
-From the Sanskrit śarkarā, through Arabic. In Kanyakumari, Tamil Nadu, the cane goes through the machine until
-it is dry. He presses, she serves. One glass at a time.
+The Greeks called it honey without bees 🇮🇳
+Alexander the Great's soldiers found in India a reed that made honey without bees. Here they press it on the
+spot. And crystal sugar was invented in India, more than 1,500 years ago: the word comes from the Sanskrit
+śarkarā.
 #india #tamilnadu #kanyakumari #vocivere #sugarcane
 Descrizione Short YT:
-IT: Zucchero viene dal sanscrito śarkarā. Qui la canna si spreme al momento. L'hai mai bevuto il succo di canna?
-EN: Sugar comes from the Sanskrit śarkarā. Here the cane is pressed on the spot. Have you ever had sugarcane juice?
+IT: Miele senza api, così lo chiamavano i greci. Lo sapevi che lo zucchero in cristalli è nato in India?
+EN: Honey without bees, the Greeks called it. Did you know crystal sugar was born in India?
 
-### Reel 3, LA STATUA SUL MARE
+### Reel 3, LA STATUA IN MEZZO ALL'OCEANO
 Titolo Short / prima riga IG:
 IT: Alta 133 piedi, come i capitoli del suo libro 🇮🇳
 EN: 133 feet tall, like the chapters of his book 🇮🇳
 Didascalia IG (IT):
 Alta 133 piedi, come i capitoli del suo libro 🇮🇳
-Thiruvalluvar, poeta tamil, autore del Thirukkural: 1330 versi in 133 capitoli. La statua, a Kanyakumari, è
-del 2000. Dal 2024 ci si arriva su un ponte di vetro sopra il mare.
+Thiruvalluvar, poeta tamil, scrisse il Thirukkural: 1330 versi in 133 capitoli, sulla virtù, la ricchezza e
+l'amore. Il piedistallo è alto 38 piedi, come i capitoli sulla virtù. Kanyakumari, la punta più a sud
+dell'India: ci si arriva in barca.
 #india #tamilnadu #kanyakumari #vocivere #thiruvalluvar
 Didascalia IG (EN):
 133 feet tall, like the chapters of his book 🇮🇳
-Thiruvalluvar, Tamil poet, author of the Thirukkural: 1,330 couplets in 133 chapters. The statue in
-Kanyakumari dates from 2000. Since 2024 you reach it on a glass bridge over the sea.
+Thiruvalluvar, a Tamil poet, wrote the Thirukkural: 1,330 couplets in 133 chapters, on virtue, wealth and
+love. The pedestal is 38 feet tall, like the chapters on virtue. Kanyakumari, the southern tip of India: you
+get there by boat.
 #india #tamilnadu #kanyakumari #vocivere #thiruvalluvar
 Descrizione Short YT:
-IT: 133 piedi, come i 133 capitoli del Thirukkural. E ci si arriva camminando sul vetro. Lo conoscevi questo poeta?
-EN: 133 feet, like the 133 chapters of the Thirukkural. And you walk there on glass. Did you know this poet?
+IT: Una statua alta come il suo libro, in mezzo all'oceano. Conoscevi Thiruvalluvar?
+EN: A statue as tall as his book, in the middle of the ocean. Did you know Thiruvalluvar?
 
-### Reel 4, TRE MARI
+### Reel 4, TRE MARI (loop)
 Titolo Short / prima riga IG:
-IT: Qui finisce l'India. E si incontrano 3 mari 🇮🇳
-EN: India ends here. And three seas meet 🇮🇳
+IT: Qui si incontrano 3 mari 🇮🇳
+EN: Three seas meet here 🇮🇳
 Didascalia IG (IT):
-Qui finisce l'India. E si incontrano 3 mari 🇮🇳
-Kanyakumari, Tamil Nadu: Golfo del Bengala, Mar Arabico, Oceano Indiano. Si racconta che nel 1892 il monaco
-Vivekananda arrivò a nuoto su quello scoglio e ci meditò tre giorni. Oggi ci si va in barca.
-#india #tamilnadu #kanyakumari #vocivere #vivekananda
+Qui si incontrano 3 mari 🇮🇳
+Kanyakumari, la punta più a sud dell'India: si dice che qui si incontrino il Golfo del Bengala, il Mar Arabico
+e l'Oceano Indiano.
+#india #tamilnadu #kanyakumari #vocivere
 Didascalia IG (EN):
-India ends here. And three seas meet 🇮🇳
-Kanyakumari, Tamil Nadu: the Bay of Bengal, the Arabian Sea, the Indian Ocean. It is said that in 1892 the monk
-Vivekananda swam to that rock and meditated there for three days. Today you go by boat.
-#india #tamilnadu #kanyakumari #vocivere #vivekananda
+Three seas meet here 🇮🇳
+Kanyakumari, the southern tip of India: the Bay of Bengal, the Arabian Sea and the Indian Ocean are said to
+meet here.
+#india #tamilnadu #kanyakumari #vocivere
 Descrizione Short YT:
-IT: La punta più a sud del continente indiano, dove si dice che si incontrino tre mari. Ci sei mai stato?
-EN: The southern tip of mainland India, where three seas are said to meet. Have you ever been?
+IT: La punta più a sud dell'India, dove si dice che si incontrino tre mari. Ci sei mai stato?
+EN: The southern tip of India, where three seas are said to meet. Have you ever been?
 
 ## Dopo il montato
 - Allineare titoli e didascalie al VO registrato davvero.
