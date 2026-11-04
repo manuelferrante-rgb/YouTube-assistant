@@ -13,7 +13,14 @@ in voiceover di Manuel, gancio forte da 0 s, rivelazione con un movimento di cam
    memoriale. DA CONFERMARE CON MANUEL: se invece è la statua gigante di pietra sull'isolotto accanto, è
    Thiruvalluvar, un poeta, e i fatti cambiano (vedi sotto).
 5. L'oceano dalla punta, per dire che qui si incontrano tre mari.
-Cartella Drive del girato: da chiedere a Manuel.
+Cartella Drive del girato: Manuel la carica (link da chiedere a lui quando è pronta).
+
+PRIMA DI SCRIVERE IL COPY (Manuel, 4/11): il girato è già fatto. Copy guarda tutto il girato su Drive prima di
+scrivere (se Montaggio ha già fatto `projects/comorin/girato.md`, parte da lì) e costruisce copione VO, titoli e
+istruzioni sulle clip che ci sono davvero: quale clip fa da gancio, quale da rivelazione, chi chiude. Il brief
+qui sotto è un consiglio, il girato decide. Dal girato Copy risolve anche le domande in fondo (statua, colore
+dell'acqua, volto del venditore) senza chiederle a Manuel. Poi, nell'ordine: copione VO per Manuel, "PER
+MONTAGGIO", "PER AUDIO" in `copioni/comorin_testi.md`.
 
 ## Cosa gira dei video su Kanyakumari (YouTube, ricerca del 4/11 con yt-dlp; Instagram senza login non si vede)
 - Gli Shorts che sono solo panorami, alba o drone fanno numeri bassissimi (alba 5 K, drone 11 K, la maggior parte
@@ -84,9 +91,9 @@ Regole che valgono (da `regole/formato_reel.md` e `regole/copy.md`):
 - A Audio: musica originale a tema (mare, punta dell'India) bassa e costante, e i segni melodici di gancio,
   rivelazione e chiusura (solo musica: regola di Audio in CLAUDE.md).
 
-## Da chiedere a Manuel
+## Da verificare sul girato (Copy; a Manuel solo se dal girato non si capisce)
 1. La statua: Vivekananda (bronzo, dentro il memoriale) o Thiruvalluvar (pietra gigante sull'isolotto)?
 2. Nel girato dell'oceano si vede la differenza di colore dell'acqua?
 3. Il venditore di canna o di cocco è inquadrato in volto e d'accordo (consenso: c'è sempre, è solo per sapere
    se può chiudere lui il reel)?
-4. Link della cartella Drive del girato.
+4. Link della cartella Drive del girato (questo a Manuel).
