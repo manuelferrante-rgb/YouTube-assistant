@@ -113,3 +113,14 @@ Nota 4/11 (Manuel): il teaser su YouTube NON era collegato al lungo quando è us
 pubblico); Manuel ha messo il video correlato dopo. Quindi l'1% da "Short correlati" non dice ancora se il teaser
 porta al lungo: si rivaluta a 7 giorni. Per i prossimi: collegare il teaser nel minuto in cui il lungo diventa
 pubblico (domenica mattina), perché gli Shorts prendono quasi tutte le visualizzazioni nei primi 2-3 giorni.
+
+## YouTube Shorts a 48 ore (video dello schermo di Manuel, 4/11)
+| | Teaser (0:23, uscito 29/10) | Reel 1 "Cristiani, induisti, musulmani" (0:25, uscito 2/11) |
+|---|---|---|
+| Visualizzazioni | 182 | 61 |
+| Hanno continuato a guardare (contro "scorsi via") | circa 15-16% | circa 36% |
+| Durata media | 0:11 | 0:12 |
+| Visualizzazioni engaged / spettatori unici | 27 / 24 | 21 / 18 |
+| Sorgente principale | feed Shorts 86%, ricerca 11% | feed Shorts (oltre il 90%) |
+Stesso risultato di Instagram: il teaser-trailer lo scorrono via 5 su 6, il reel che apre sulla persona più del
+doppio resta. Due piattaforme, stessa differenza: lezione passata a `regole/formato_reel.md` (nota del 4/11).
