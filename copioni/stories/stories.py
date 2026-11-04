@@ -92,48 +92,59 @@ def build(video,name,items):
     G.save(f'copioni/stories/{video}_{name}_anteprima.jpg',quality=85)
 
 M,A,T='mercato','arthunkal','te'
+MB1,MB2,MB3,AT1,AT2=262,270,348,320,312  # fotogrammi nuovi (4/11)
 ONLY=sys.argv[1:]  # es. python3 copioni/stories/stories.py te
 _build=build
 def build(video,*a):
     if not ONLY or video in ONLY: _build(video,*a)
-build(M,'set1_mercato',[
- dict(video=M,t=220,kicker='MARARI, KERALA',title='Un mercato del pesce senza tetto',body='Né banchi, né muri. Solo la spiaggia, le barche e chi compra.',crop=(.5,1,.5)),
+# mercato e arthunkal: rifatti in 3 set da 6 (Manuel 4/11)
+build(M,'set1_giornata',[
+ dict(video=M,t=124,kicker='MARARI, KERALA',title='Fa il pescatore da 30 anni',body='Lo incontriamo sulla spiaggia, seduto sulla sua barca.',crop=(.42,1,.5)),
  dict(video=M,t=73,kind='ask',title='A che ora si sveglia un pescatore qui?',hl=0,crop=(.5,1,.5),tsize=130),
- dict(video=M,t=157,title='Alle 3 di notte',body='Alle 4 è già in mare. Alle 8 il pesce arriva qui, sulla spiaggia.',crop=(.4,1,.5)),
+ dict(video=M,t=157,title='Alle 3 di notte',body='Alle 4 è già in mare. Alle 8 il pesce arriva al mercato, sulla spiaggia.',crop=(.4,1,.5)),
+ dict(video=M,t=88,title='Non è il suo unico lavoro',body='Fa anche la guida in kayak, tra i canali dietro la spiaggia. E ci dice che gli piace di più.',crop=(.5,1,.5)),
+ dict(video=M,t=136,title='«Un posto in pace»',body='Cristiani, induisti, musulmani: qui vivono insieme, ci racconta.',crop=(.42,1,.5)),
+ dict(video=M,t=82,kind='ask',title='Cosa chiederesti a un pescatore di Marari?',body='Scrivilo qui sotto.',hl=0,crop=(.45,1,.5),tsize=124),
+])
+build(M,'set2_mercato',[
+ dict(video=M,t=220,kicker='MARARI, KERALA',title='Un mercato del pesce senza tetto',body='Né banchi, né muri. Solo la spiaggia, le barche e chi compra.',crop=(.5,1,.5)),
  dict(video=M,t=223,title='L\'asta si fa sulla sabbia',body='Arriva la barca, tutti si avvicinano, e si comincia a trattare.',crop=(.5,1,.5)),
  dict(video=M,t=226,kind='ask',title='Quanto pesava il pesce più grande della mattina?',hl=0,crop=(.5,1,.5),tsize=124),
  dict(video=M,t=280,title='50-55 chili',body='"Veramente come una persona." Ce l\'hanno detto lì, al mercato.',crop=(.55,1,.5)),
  dict(video=M,t=289,title='Tutto va veloce',body='Ghiaccio nei cesti: il pesce deve partire finché è fresco.',crop=(.4,1,.5)),
  dict(video=M,t=334,kind='ask',title='Com\'è il mercato del pesce dove vivi tu?',body='Raccontamelo qui sotto. Tutta la storia nel video sul canale.',hl=0,crop=(.5,1,.5),tsize=130),
 ])
-build(M,'set2_persone',[
- dict(video=M,t=124,kicker='MARARI, KERALA',title='Fa il pescatore da 30 anni',body='Lo incontriamo sulla spiaggia, seduto sulla sua barca.',crop=(.42,1,.5)),
- dict(video=M,t=88,title='Non è il suo unico lavoro',body='Fa anche la guida in kayak, tra i canali dietro la spiaggia. E ci dice che gli piace di più.',crop=(.5,1,.5)),
- dict(video=M,t=136,title='«Un posto in pace»',body='Cristiani, induisti, musulmani: qui vivono insieme, ci racconta.',crop=(.42,1,.5)),
+build(M,'set3_mare',[
+ dict(video=M,t=MB1,kind='ask',title='Quanto restano in mare le barche più grandi?',hl=0,crop=(.5,1,.5),tsize=124),
+ dict(video=M,t=MB2,title='Fino a due giorni',body='Le barche piccole invece vanno e tornano ogni giorno. Qui il mare lo chiamano Arabian Sea.',crop=(.5,1,.5)),
  dict(video=M,t=145,title='Due giorni senza pesca',body='Succede durante la festa, ci racconta. E il cibo è gratis per chiunque arrivi.',crop=(.4,1,.5)),
  dict(video=M,t=307,kind='ask',title='Come si chiama questo pane del Kerala?',hl=0,crop=(.45,1,.5),tsize=130),
  dict(video=M,t=313,title='Porotta',body='Il pane sfogliato del Kerala, fatto al momento: la colazione dopo il mercato.',crop=(.4,1,.5)),
- dict(video=M,t=82,kind='ask',title='Cosa chiederesti a un pescatore di Marari?',body='Scrivilo qui sotto: le domande migliori le porto nei prossimi video.',hl=0,crop=(.45,1,.5),tsize=124),
+ dict(video=M,t=MB3,kind='ask',title='Ti alzeresti alle 3 per andare in mare?',body='Tutta la storia nel video sul canale.',hl=0,crop=(.5,1,.5),tsize=130),
 ])
 build(A,'set1_cammino',[
  dict(video=A,t=79,kicker='2:30 DI NOTTE',title='Camminano da mezzanotte',body='Costa del Kerala, India. La strada è già piena.',crop=(.4,1,.5)),
  dict(video=A,t=88,kind='ask',title='Quanti km camminano, pregando?',hl=0,crop=(.5,1,.5),tsize=136),
  dict(video=A,t=97,title='13 km',body='Da Kalavoor alla basilica di Arthunkal, lungo la costa. Senza mai smettere di pregare.',crop=(.55,1,.5)),
  dict(video=A,t=140,kicker='AKHANDA JAPAMALA',title='Il rosario ininterrotto',body='Chi guida dice la prima metà della preghiera, gli altri rispondono. Per chilometri.',crop=(.72,1,.5)),
- dict(video=A,t=19,kind='ask',title='Quante persone camminano?',hl=0,crop=(.5,1,.5),tsize=124),
- dict(video=A,t=304,title='Quasi un milione',body='Le stime che ci danno sul posto vanno da 400 mila a un milione. La prima volta, nel 2002, erano poche centinaia.',crop=(.5,1,.5)),
  dict(video=A,t=34,title='Perché sulla spiaggia?',body='Prima si camminava in strada. Con il traffico, si sono spostati sul bagnasciuga.',crop=(.45,1,.5)),
  dict(video=A,t=1,kind='ask',title='Cammineresti 13 km di notte?',body='Tutta la storia nel video sul canale.',hl=0,crop=(.55,1,.5),tsize=136),
 ])
-build(A,'set2_storie',[
+build(A,'set2_persone',[
+ dict(video=A,t=19,kind='ask',title='Quante persone camminano?',hl=0,crop=(.5,1,.5),tsize=124),
+ dict(video=A,t=304,title='Quasi un milione',body='Le stime che ci danno sul posto vanno da 400 mila a un milione. La prima volta, nel 2002, erano poche centinaia.',crop=(.5,1,.5)),
  dict(video=A,t=256,kicker='SULLA STRADA',title='C\'è anche chi non cammina',body='Pentoloni e bicchieri d\'acqua: cibo e acqua gratis a chiunque passa.',crop=(.45,1,.5)),
  dict(video=A,t=203.0,title='Elizabeth, 26 anni',body='Per lei è la prima volta. "È un atto di devozione alla Madonna."',crop=(.52,1,.5)),
  dict(video=A,t=169,title='Tutti insieme',body='Cammina chi è cristiano, e anche ragazzi musulmani. Ce lo raccontano loro.',crop=(.5,1,.5)),
- dict(video=A,t=316,kind='ask',title='Da dove arriva la statua di San Sebastiano di Arthunkal?',hl=0,crop=(.5,1,.5),tsize=118),
- dict(video=A,t=331,title='Da Milano, nel 1647',body='Arriva in una chiesa sul mare del Kerala, ricostruita nel 1584 da un gesuita italiano.',crop=(.45,1,.5)),
- dict(video=A,t=346,kind='ask',title='Come chiamano qui quel gesuita italiano?',hl=0,crop=(.5,1,.5),tsize=130),
- dict(video=A,t=349,kicker='VELUTHACHAN',title='Il padre bianco',body='Padre Giacomo Fenicio. Lo chiamano ancora così, più di 400 anni dopo.',crop=(.55,1,.5)),
  dict(video=A,t=289,kind='ask',title='Hai mai fatto un pellegrinaggio a piedi?',body='Raccontamelo qui sotto.',hl=0,crop=(.5,1,.5),tsize=130),
+])
+build(A,'set3_storia',[
+ dict(video=A,t=AT1,kind='ask',title='Quando arriva il cristianesimo in Kerala?',body='Secondo la tradizione.',hl=0,crop=(.5,1,.5),tsize=124),
+ dict(video=A,t=AT2,title='Nel 52 dopo Cristo',body='La tradizione dice che l\'abbia portato l\'apostolo Tommaso.',crop=(.5,1,.5)),
+ dict(video=A,t=346,kind='ask',title='Come chiamano qui il gesuita italiano che ricostruì questa chiesa?',hl=0,crop=(.5,1,.5),tsize=112),
+ dict(video=A,t=349,kicker='VELUTHACHAN',title='Il padre bianco',body='Padre Giacomo Fenicio, che la ricostruisce nel 1584. Lo chiamano ancora così.',crop=(.55,1,.5)),
+ dict(video=A,t=316,kind='ask',title='Da dove arriva la statua di San Sebastiano di Arthunkal?',hl=0,crop=(.5,1,.5),tsize=118),
+ dict(video=A,t=331,title='Da Milano, nel 1647',body='Da allora Arthunkal è un santuario. A gennaio la sua festa porta qui gente da tutto il Kerala.',crop=(.45,1,.5)),
 ])
 # te: 3 set da 6 (Manuel 29/10: 2 set da 10 sono troppi)
 build(T,'set1_raccolta',[

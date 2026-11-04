@@ -90,3 +90,17 @@ teaser "2:30 di notte" con domanda aperta senza l'arrivo; statua scolpita a Mila
 
 Nota da Audio, 25/10 (Manuel): niente musica di YouTube (Manuel toglie "Turn In The Sun" e "inner_outer" da Drive);
 la musica di Arthunkal la compone la chat Audio sul montato. Manuel valuta direttamente il lungo orizzontale finale.
+
+Nota da Insights, 4/11 (Manuel ha detto sì): modifiche al lungo e ai verticali prima dell'uscita del 15/11, dai
+dati del mercato (`analisi/mercato.md`). Messaggio per Montaggio dato a Manuel il 4/11:
+1. Lungo: accorciare "Il giorno prima" (0:34-1:13, 39 s) a 10-15 s: 1-2 inquadrature della costa vuota sotto
+   "Nessuno avrebbe detto che di notte si sarebbe riempita", poi subito "2:30 di notte". Via il resto
+   (Manuel che parla sulla costa, ghirlande) o spostato più avanti se serve al racconto.
+2. Lungo: entro il primo minuto un'immagine forte del cammino di notte con la folla (quello che promette la
+   miniatura D), anche 3-5 s.
+3. Lungo: ultimi 10-15 s con logo o immagine senza volti, per la schermata finale che Manuel aggiunge in Studio.
+4. Verticali: primo fotogramma = persona o gesto più forte, già in movimento (IG: teaser-trailer del mercato
+   61% di skip, reel con persona in primo piano 25,6%). Teaser v1: valutare di aprire su un volto in cammino
+   invece che su un'inquadratura di notte generica. Se serve, riallinearli al formato reel del 29/10
+   (`regole/formato_reel.md`).
+Aggiornare i capitoli in `capitoli.md` e `piano/calendario.md` dopo il taglio (li usa Copy).

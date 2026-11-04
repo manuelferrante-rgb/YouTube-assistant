@@ -50,3 +50,48 @@ Il video completo è uscito sul canale, link in bio.
 Post YouTube (scheda Community):
 Affittate per 3.000 rupie l'anno 🇮🇳 Le colline del tè di Munnar, in Kerala: chi le raccoglie, e di chi sono oggi.
 Che tè bevi tu? Il video completo è sul canale.
+
+# Secondo carosello: "I volti" (Manuel, 4/11)
+Uno per ogni lungo, oltre al carosello dei fatti. Primi piani veri delle persone girate (dal lungo e dal girato su
+Drive, trovati con il rilevatore di volti, Manuel e la sua ragazza esclusi), filtro Voci Vere scuro (neri profondi,
+colore spento, vignetta forte). 7 slide 4:5: 01 copertina con il volto più forte + "I volti di ..." + luogo e una riga
+di contesto; 02-06 un volto per slide, senza scritte; 07 logo + "Segui Voci Vere per scoprire le prossime storie".
+File: copioni/caroselli/<video>_volti/01-07.jpg, su Drive in montati/<video>/carosello_volti/.
+Rigenerare: `python3 copioni/caroselli/carosello_volti.py [video]` (volti scelti in copioni/caroselli/volti_scelti.json).
+Il chai master del tè NON c'è: non ha voluto parlare, quindi niente volto.
+
+## Mercato, i volti
+Posizione IG/YT: Marari Beach, Mararikulam (Alappuzha, Kerala)
+Didascalia IG:
+I volti del mercato del pesce di Marari 🇮🇳
+Chi pesca, chi vende, chi compra all'asta sulla sabbia. Ogni mattina, sulla costa del Kerala.
+Chi ti è rimasto in mente? Scrivilo nei commenti.
+Tutta la storia nel video sul canale, link in bio.
+#kerala #india #vocivere #marari #ritratti
+Post YouTube (stesse 7 immagini):
+I volti del mercato del pesce di Marari, in Kerala 🇮🇳 Chi pesca, chi vende, chi compra all'asta sulla sabbia.
+Tutta la storia nel video: [link al lungo]
+
+## Arthunkal, i volti
+Posizione IG/YT: St. Andrew's Basilica, Arthunkal (Alappuzha, Kerala)
+Didascalia IG:
+I volti del pellegrinaggio di Arthunkal 🇮🇳
+13 km a piedi, di notte, lungo la costa del Kerala fino alla basilica. Per qualcuno era la prima volta.
+Chi ti è rimasto in mente? Scrivilo nei commenti.
+Tutta la storia nel video sul canale, link in bio.
+#kerala #india #vocivere #arthunkal #ritratti
+Post YouTube:
+I volti del pellegrinaggio di Arthunkal, in Kerala 🇮🇳 13 km a piedi, di notte, fino alla basilica.
+Tutta la storia nel video: [link al lungo]
+
+## Te, i volti
+Posizione IG/YT: Munnar, Kerala
+Didascalia IG:
+I volti del tè di Munnar 🇮🇳
+Sadish, che ci ha portati tra i filari, e chi abbiamo incontrato sulla strada per arrivarci, in Kerala.
+Chi ti è rimasto in mente? Scrivilo nei commenti.
+Tutta la storia nel video sul canale, link in bio.
+#kerala #india #vocivere #munnar #ritratti
+Post YouTube:
+I volti del tè di Munnar, in Kerala 🇮🇳 Sadish tra i filari, e chi abbiamo incontrato lungo la strada.
+Tutta la storia nel video: [link al lungo]
