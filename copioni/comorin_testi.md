@@ -17,6 +17,9 @@ DECISIONI DI MANUEL (4/11):
   flusso del mare.
 - Il luogo NON si ripete in ogni reel: nel cocco e nella canna non si dice dove siamo; nel reel 3 solo "la punta
   più a sud dell'India". Reel 1 e 2 forse vanno sul profilo personale di Manuel: decide lui.
+- Cocco e canna "stile Voci Vere": SOLO le persone che lavorano. Niente Manuel che beve o mangia, e la ragazza di
+  Manuel NON si vede mai (Manuel, 4/11): fuori `135850` intera, `140944` intera e in `135906` ogni pezzo con lei
+  o con Manuel (resta solo il venditore). Montaggio controlla fotogramma per fotogramma anche le altre clip.
 - Un solo voiceover per tutti i reel (Manuel dice "reel uno", "reel due", "reel tre" prima di ognuno); Montaggio
   trascrive e taglia.
 
@@ -100,8 +103,9 @@ Immagini brevi (1-2 s) che seguono le parole.
 
 ### Reel 1, COCCO (~20 s): il gesto del venditore, ripetuto
 Tutto su `135736` e `135906`: si montano i suoi tagli UNO DOPO L'ALTRO a ritmo (ogni ciclo prendi-taglia-porgi
-diventa un colpo di montaggio), così si vede che il gesto si ripete. Il venditore è il protagonista; la signora
-della polpa e Manuel non servono (al massimo Manuel che beve 1 s sulla frase 4).
+diventa un colpo di montaggio), così si vede che il gesto si ripete. Il venditore è il protagonista; niente
+Manuel, niente ragazza di Manuel (in `135906` solo i pezzi con il venditore). La signora della polpa (`140138`)
+può entrare 1 s sulla frase 5, come altra persona che lavora.
 | Frase VO | Immagine | Titolo |
 |---|---|---|
 | 1 "Prendi. Taglia. Porgi." | GANCIO da 0 s: il colpo di machete più netto di `135736`, ~1 s, poi un taglio per parola | **Prendi, taglia, porgi** dal primo fotogramma |
@@ -120,8 +124,9 @@ Un solo titolo (il gancio): qui non serve il luogo.
 | 2 "la spremono al momento" | `140434` lui spinge la canna nei rulli, il succo che cola nel colino | |
 | 3 "si piega, ripassa" | RIVELAZIONE: `140516` lui piega la canna spremuta e la rimette nei rulli (gesto intero, accelerabile 1.5x), su "finché non resta secca" | |
 | 4 "sanscrito: sharkara" | `140808` il succo versato dal colino | **Sanscrito: śarkarā** su "sharkara" |
-| 5 "inventato qui, in India" | `140828` i bicchieri pieni, `140944` Manuel beve (1 s) | **Più di 1500 anni fa** su "1500" |
-| chiusura | lui ai rulli (`140622`, ~2 s), poi chiusura fissa | |
+| 5 "inventato qui, in India" | `140828` la signora che riempie i bicchieri, poi lui ai rulli | **Più di 1500 anni fa** su "1500" |
+| chiusura | lui (`140516` quando guarda in camera, o `140622`, ~2 s), poi chiusura fissa | |
+Nella canna solo le due persone del chiosco: niente Manuel, niente ragazza di Manuel.
 
 ### Reel 3, LA STATUA IN MEZZO ALL'OCEANO (25-30 s)
 Il ponte di vetro non si vede (al massimo l'ultimo pezzo di `125830`, se serve, solo con la statua in fondo).
