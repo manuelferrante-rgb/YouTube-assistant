@@ -37,3 +37,7 @@
 | `projects/meenakshi/audio/cue_gancio.flac` | `musica/compose.py cue_gancio` (due campanelle sintetiche + arpeggio che sale), 3.5 s, -18 LUFS | Voci Vere | propria | - | Meenakshi: gancio |
 | `projects/meenakshi/audio/cue_rivelazione.flac` | `musica/compose.py cue_rivelazione` (accordo sospeso che si apre), 4.5 s | Voci Vere | propria | - | Meenakshi: il fatto forte |
 | `projects/meenakshi/audio/cue_chiusura.flac` | `musica/compose.py cue_chiusura` (tre note che scendono sulla tonica), 5 s | Voci Vere | propria | - | Meenakshi: chiusura |
+| `projects/comorin/audio/musica_cocco.flac` | `musica/comorin.py cocco` (la dorico, 120 bpm, legno intonato sui colpi + pizzicato + piano), 20 s, -16 LUFS | Voci Vere | propria | - | Comorin reel 1 cocco: unica musica, a tempo con il machete |
+| `projects/comorin/audio/musica_canna.flac` + `cue_canna_*` | `musica/comorin.py canna` e segni in re (gancio, rivelazione, chiusura) | Voci Vere | propria | - | Comorin reel 2 canna |
+| `projects/comorin/audio/musica_statua.flac` + `cue_statua_*` | `musica/comorin.py statua` e segni in mi | Voci Vere | propria | - | Comorin reel 3 statua |
+| `projects/comorin/audio/musica_mari_loop_8s8.flac`, `_8s0` | `musica/comorin.py mari_8.8 / mari_8.0`, loop perfetto (code ripiegate sull'inizio), -16 LUFS | Voci Vere | propria | - | Comorin reel 4 tre mari: unico suono, in loop |
