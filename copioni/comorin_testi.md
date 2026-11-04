@@ -98,8 +98,8 @@ Immagini brevi (1-2 s) che seguono le parole.
 
 ### Reel 1, COCCO (~15 s, senza voce, una scritta fissa)
 Eccezione a `regole/formato_reel.md`: niente voiceover e niente sottotitoli. UNA scritta fissa oro su bianco in alto
-(y 400) dal primo all'ultimo fotogramma prima della chiusura: **Prendi, taglia, porgi. Ricomincia** (consigliata,
-da confermare: opzioni in fondo a questa sezione). Il montaggio va a ritmo sui colpi del machete e sulla musica.
+(y 400) dal primo all'ultimo fotogramma prima della chiusura: **Prendi, taglia, porgi. Ricomincia** (SCELTA DA MANUEL il 4/11;
+le altre opzioni in fondo a questa sezione sono scartate). Il montaggio va a ritmo sui colpi del machete e sulla musica.
 Solo le persone che lavorano: niente Manuel, niente ragazza di Manuel (in `135906` solo i pezzi con il venditore).
 | Tempo | Immagine |
 |---|---|
