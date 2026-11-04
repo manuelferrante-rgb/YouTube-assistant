@@ -51,19 +51,19 @@ def cue(tl, t, name, d, gain, fout=0.5):
     tl.sfx(t, out, gain)
 
 
-def phrase(a, b, text, times):
+def phrase(a, b, text, times, cut=()):
     """Frase del VO (tratto di voce misurato a 10 ms sulla voce pulita) con le parole del copione: tempi dalla
     trascrizione, la prima parola non prima dell'inizio del tratto."""
     ws = list(zip(text.split(), times))
     ws[0] = (ws[0][0], max(ws[0][1], a))
-    return (a, b, ws)
+    return (a, b, ws, list(cut))   # cut: tratti tolti dentro la frase (pause, parole ripetute), misurati a 10 ms
 
 
 # CANNA (SH 179.m4a): frasi riascoltate a pezzi sulla voce pulita, testo uguale alla registrazione
 C1 = phrase(2.58, 5.47, "I greci di Alessandro Magno la chiamavano miele senza api.",
             [2.42, 2.58, 2.9, 2.98, 3.46, 3.86, 3.94, 4.42, 4.9, 5.22])
 C2 = phrase(5.75, 8.33, "È la canna da zucchero, e qui la spremono al momento.",
-            [5.62, 5.78, 5.86, 6.18, 6.34, 6.82, 6.98, 7.14, 7.3, 7.86, 8.02])
+            [5.62, 5.78, 5.86, 6.18, 6.34, 6.98, 7.06, 7.14, 7.3, 7.86, 8.02], cut=[(6.76, 6.92)])
 C3 = phrase(8.71, 11.41, "Passa nei rulli, si piega, si ripassa, finché non resta secca.",
             [8.5, 8.82, 8.98, 9.38, 9.46, 9.86, 9.94, 10.34, 10.66, 10.74, 11.06])
 C4 = phrase(11.73, 14.53, "E la parola zucchero viene dal sanscrito, sharkara.",
@@ -77,13 +77,13 @@ S1 = phrase(3.14, 6.15, "Alta 133 piedi, uno per ogni capitolo del suo libro.",
 S2 = phrase(6.45, 9.03, "Per arrivarci si prende la barca, la punta più a sud dell'India.",
             [6.26, 6.5, 6.98, 7.06, 7.3, 7.38, 7.86, 7.94, 8.18, 8.34, 8.42, 8.66])
 S3 = phrase(9.34, 14.09, "Prima c'è lo scoglio di Vivekananda. Si racconta che nel 1892 ci arrivò a nuoto.",
-            [9.22, 9.54, 9.7, 9.86, 10.18, 10.26, 11.22, 11.38, 11.7, 11.86, 12.02, 13.06, 13.22, 13.54, 13.7])
-S4 = phrase(28.07, 33.18, "Poi lui. Thiruvalluvar, poeta tamil. Visse, si racconta, quasi duemila anni fa.",
-            [27.91, 28.23, 28.71, 29.91, 30.31, 30.87, 31.35, 31.51, 32.07, 32.31, 32.87, 33.03])
+            [9.22, 9.54, 9.7, 9.86, 10.18, 10.26, 11.22, 11.38, 11.7, 11.86, 12.02, 13.06, 13.22, 13.54, 13.7], cut=[(11.04, 11.21)])
+S4 = phrase(28.07, 33.18, "Poi lui. Thiruvalluvar, poeta tamil. Visse si racconta, quasi duemila anni fa.",
+            [27.91, 28.23, 28.96, 29.91, 30.31, 30.87, 31.35, 31.51, 32.07, 32.31, 32.87, 33.03], cut=[(28.56, 28.93), (31.23, 32.05)])
 S5 = phrase(33.66, 39.41, "Scrisse il Thirukkural: 1330 versi su come si vive. La virtù, la ricchezza, l'amore.",
-            [33.71, 34.27, 34.35, 35.47, 36.35, 36.75, 36.91, 37.07, 37.23, 37.71, 37.87, 38.35, 38.51, 38.99])
+            [33.71, 34.27, 34.35, 35.47, 36.35, 36.75, 36.91, 37.07, 37.23, 37.71, 37.87, 38.35, 38.51, 38.99], cut=[(35.32, 35.49), (37.52, 37.73)])
 S6 = phrase(40.18, 45.77, "Il piedistallo è alto 38 piedi, come i capitoli sulla virtù. Sopra, la ricchezza e l'amore.",
-            [40.03, 40.19, 40.91, 41.07, 41.47, 41.95, 42.27, 42.43, 42.51, 43.07, 43.39, 44.11, 44.51, 44.67, 45.15, 45.31])
+            [40.03, 40.19, 40.91, 41.07, 41.47, 41.95, 42.27, 42.43, 42.51, 43.07, 43.39, 44.11, 44.51, 44.67, 45.15, 45.31], cut=[(43.70, 44.08)])
 S7 = phrase(47.54, 49.17, "E tutto intorno, solo oceano.", [47.54, 47.56, 47.88, 48.36, 48.6])
 
 
@@ -92,8 +92,15 @@ def word_t(line, w):
 
 
 def at(t0, line, t_src):
-    """Tempo nel montato di un istante della frase (titoli sulla parola)."""
-    return t0 + (t_src - (line[0] - PAD[0]))
+    """Tempo nel montato di un istante della frase (titoli sulla parola), tolti i tratti tagliati prima."""
+    gone = sum(min(cb, t_src) - ca for ca, cb in line[3] if t_src > ca)
+    return t0 + (t_src - (line[0] - PAD[0])) - gone
+
+
+def narr_cuts(line):
+    """narr() allarga di suo i tagli (+0.12 s all'inizio, -0.06 s alla fine): qui si compensa, così si toglie
+    esattamente il tratto misurato."""
+    return [(ca - 0.12, cb + 0.06) for ca, cb in line[3]]
 
 
 def logo_card(W, H, d, src, a, grade="eq=contrast=1.03:saturation=1.05", cx=0.5, speed=1.0):
@@ -140,23 +147,23 @@ def cocco():
     r = Reel(f"{OUT}/reel_cocco_{W}_work", W, H, speed=1.0, gap=0.0, amb=0.0, cap_box=True)
     tl = r.tl
     V = 0.58                                                    # in 135736 il venditore sta a destra del centro
+    # v4 (Manuel 4/11): ~10 s. Lui taglia tanto, lo dà, taglia ancora, la signora seduta che lo apre, di nuovo lui
+    # che taglia SENZA scritta, poi la chiusura. Tagli sui battere della musica (battuta 2 s, colpi ogni 0.5 s)
     r.own(C("135736"), 3.62, cx=V)(1.0)                         # 0-1 GANCIO: machete già alzato, il colpo a 0.2 s
-    r.own(C("135652"), 0.3)(1.0)                                # 1-2 la pila di cocchi
-    r.own(C("135906"), 7.9, speed=1.35)(2.0)                    # 2-4 prende il cocco e taglia (solo lui, fino a 10.6)
-    r.own(C("135736"), 2.9, cx=V, speed=1.35)(2.0)              # 4-6 taglia, taglia
-    r.own(C("135736"), 8.95, cx=V, speed=1.35)(2.0)             # 6-8 il ciclo dopo
-    r.own(C("135736"), 11.6, cx=V)(1.0)                         # 8-9 lo porge (poi la camera va sull'albero)
-    r.own(C("135906"), 2.3)(1.0)                                # 9-10 il cocco passa al cliente
-    r.own(C("140138"), 11.0)(2.0)                               # 10-12 LA POLPA: le mani della signora lo aprono
-    r.own(C("140346"), 2.6)(2.0)                                # 12-14 la montagna di gusci
+    r.own(C("135906"), 7.9, speed=1.35)(2.0)                    # 1-3 prende il cocco e taglia (solo lui, fino a 10.6)
+    r.own(C("135906"), 2.3)(1.0)                                # 3-4 lo dà al cliente
+    r.own(C("135736"), 8.95, cx=V, speed=1.35)(1.0)             # 4-5 taglia di nuovo
+    r.own(C("140138"), 11.0)(1.5)                               # 5-6.5 la signora seduta che lo apre (solo mani)
     t_v = r.t
-    r.own(C("135736"), 0.4, cx=V)(2.0)                          # 14-16 il venditore prende il cocco successivo
+    r.own(C("135906"), 0.0, speed=1.35)(1.5)                    # 6.5-8 di nuovo lui che taglia, senza scritta
     t_b = r.t
-    r.gen(logo_card(W, H, 2.4, C("135736"), 2.4, cx=V))(2.4)    # chiusura fissa: lui continua sotto il velo
+    r.gen(logo_card(W, H, 2.4, C("135906"), 1.5 * 1.35))(2.4)   # chiusura: lui continua sotto il velo (fino a 4.4 s)
     end = r.t
-    r.title(0.0, t_b, "Prendi, taglia, porgi. Ricomincia", "Tag", 400)
-    r.title(t_b, end, CTA, "Tag", 400)
-    tl.music(0.0, end, f"{AUD}/musica_cocco.flac", offset=0.0, level=1.0, fin=0.01, fout=0.8, duck=False, norm=False)
+    r.title(0.0, t_v, "Prendi, taglia, porgi. Ricomincia", "Tag", 400)
+    r.title(t_b, end, CTA, "TagIn", 400)
+    # musica: il groove fino alla battuta 8.0, poi il finale del brano (da 16.0, anche lui inizio di battuta)
+    tl.music(0.0, t_b + 0.02, f"{AUD}/musica_cocco.flac", offset=0.0, level=1.0, fin=0.01, fout=0.02, duck=False, norm=False)
+    tl.music(t_b, end, f"{AUD}/musica_cocco.flac", offset=16.0, level=1.0, fin=0.02, fout=0.6, duck=False, norm=False)
     tl.nat_af = "highpass=f=90"
     return finish(r, "reel1_cocco")
 
@@ -166,7 +173,7 @@ def canna():
     W, H = size()
     r = Reel(f"{OUT}/reel_canna_{W}_work", W, H, speed=1.0, gap=0.0, amb=0.0, cap_box=True)
     tl = r.tl
-    say = lambda line, vis: r.narr(VO_CANNA, line[0], line[1], vis, words=line[2], pad=PAD)
+    say = lambda line, vis: r.narr(VO_CANNA, line[0], line[1], vis, words=line[2], pad=PAD, cuts=narr_cuts(line))
     # 1. GANCIO: la ruota che gira e le canne che entrano, poi le canne intere
     say(C1, [(r.own(C("140516"), 14.2), 1.1), (r.own(C("140434"), 1.7), None)])
     r.title(0.0, r.t, "Miele senza api", "Tag", 400)
@@ -190,8 +197,8 @@ def canna():
     r.own(C("140622"), 0.3)(2.0)                                # lui ai rulli (viso sotto il titolo, non coperto)
     r.gen(logo_card(W, H, 2.0, C("140622"), 2.3))(2.0)
     end = r.t
-    r.title(t_b, end, CTA, "Tag", 400)
-    cue(tl, t_last - 0.4, "cue_canna_chiusura", end - t_last + 0.4, 0.45, fout=1.0)
+    r.title(t_b, end, CTA, "TagIn", 400)
+    cue(tl, t_b - 0.05, "cue_canna_chiusura", end - t_b + 0.05, 0.45, fout=1.0)   # subito sulla fine della voce: niente buco
     music(tl, "musica_canna", t_b, end)
     tl.audio_map = {VO_CANNA: cleaned(VO_CANNA, f"{WORK}/voce")}
     tl.nat_af = "highpass=f=90"
@@ -200,7 +207,7 @@ def canna():
 
 def music(tl, name, t_b, end):
     tl.music(0.0, t_b + 0.3, f"{AUD}/{name}.flac", offset=0.0, level=MUS_LEVEL, fin=0.05, fout=0.3, duck=False, norm=False)
-    tl.music(t_b, end, f"{AUD}/{name}.flac", offset=t_b, level=MUS_UP, fin=0.3, fout=1.0, duck=False, norm=False)
+    tl.music(t_b, end, f"{AUD}/{name}.flac", offset=t_b, level=MUS_UP, fin=0.1, fout=1.0, duck=False, norm=False)
 
 
 # ---------------------------------------------------------------- reel 3: statua
@@ -208,7 +215,7 @@ def statua():
     W, H = size()
     r = Reel(f"{OUT}/reel_statua_{W}_work", W, H, speed=1.0, gap=0.0, amb=0.0, cap_box=True)
     tl = r.tl
-    say = lambda line, vis: r.narr(VO_STATUA, line[0], line[1], vis, words=line[2], pad=PAD)
+    say = lambda line, vis: r.narr(VO_STATUA, line[0], line[1], vis, words=line[2], pad=PAD, cuts=narr_cuts(line))
     # 1. GANCIO: la statua dal basso, enorme, poi statua e piedistallo
     say(S1, [(r.own(C("130140"), 0.0), 1.3), (r.own(C("132340"), 0.0), None)])
     r.title(0.0, r.t, "133 piedi, 133 capitoli", "Tag", 400)
@@ -220,13 +227,14 @@ def statua():
     # 3. lo scoglio di Vivekananda che si avvicina, i piedi nudi sulla pietra
     say(S3, [(r.own(C("123010"), 0.0), 2.6), (r.own(C("132602"), 0.0), None)])
     # 4. RIVELAZIONE: dal panorama la camera gira e trova la statua su "Poi lui"
-    t4 = say(S4, [(r.own(C("130308"), 1.0), 3.4), (r.own(C("132332"), 0.0), None)])
+    t4 = say(S4, [(r.own(C("130308"), 1.0), 2.6), (r.own(C("132332"), 0.0), None)])
     cue(tl, t4, "cue_statua_rivelazione", 4.5, 0.24, fout=0.8)
     r.title(at(t4, S4, word_t(S4, "Thiruvalluvar")), at(t4, S4, word_t(S4, "Visse")), "Thiruvalluvar", "Tag", 400)
     # 5. il muro con i versi, le scale di pietra
     say(S5, [(r.own(C("132230"), 0.0), 3.8), (r.own(C("130034"), 0.0), None)])
     # 6. il piedistallo e la statua che sale
-    say(S6, [(r.own(C("130308"), 4.5), 4.0), (r.own(C("130140"), 1.1), None)])
+    # Manuel 4/11: la statua una volta sola, poi da lontano (statua e piedistallo sul memoriale), poi l'oceano
+    say(S6, [(r.own(C("130308"), 4.5), 3.0), (r.own(C("132340"), 0.0, speed=0.75), None)])
     # 7. la costa e il mare dalla roccia, le onde
     say(S7, [(r.own(C("130308"), 0.0), 0.8), (r.own(C("125410"), 0.2), None)])
     t_b = r.t
@@ -237,8 +245,8 @@ def statua():
     t_last = t_b + 0.9
     r.gen(logo_card(W, H, 2.0, C("130308"), 6.0 + 2.9 * 0.45, speed=0.45))(2.0)
     end = r.t
-    r.title(t_b, end, CTA, "Tag", 400)
-    cue(tl, t_last - 0.4, "cue_statua_chiusura", end - t_last + 0.4, 0.45, fout=1.0)
+    r.title(t_b, end, CTA, "TagIn", 400)
+    cue(tl, t_b - 0.05, "cue_statua_chiusura", end - t_b + 0.05, 0.45, fout=1.0)   # subito sulla fine della voce: niente buco
     music(tl, "musica_statua", t_b, end)
     tl.audio_map = {VO_STATUA: cleaned(VO_STATUA, f"{WORK}/voce")}
     tl.nat_af = "highpass=f=90"

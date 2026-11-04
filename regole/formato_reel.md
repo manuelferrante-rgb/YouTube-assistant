@@ -44,7 +44,8 @@ Prevale sulle note più vecchie sui verticali in `regole/montaggio_documentario.
 1. Subito dopo l'ultima frase: 1 immagine breve del luogo (~0.9 s), poi l'ultima persona ~2 s (non di più: la
    persona dopo un po' è imbarazzata).
 2. Nel fotogramma in cui sparisce l'ultimo sottotitolo entra la frase **Ascolta altre voci, su** nello stesso stile
-   dei titoli (oro su bianco, in alto), e resta fino alla fine.
+   dei titoli (oro su bianco, in alto), e resta fino alla fine. Entra in dissolvenza di 0.6 s, non di colpo (Manuel 4/11): stile `TagIn` di
+   `tools/reel_kit.py`. Il segno di chiusura di Audio parte subito sulla fine della voce (niente buco prima).
 3. La persona continua sotto un velo nero LEGGERO (35%, entra in 0.5 s, non deve sembrare "l'uomo nero"); il logo
    `assets/brand/logo_vocivere_trasparente_chiaro.png` (con il payoff) sfuma in 0.6 s, centrato in verticale e
    orizzontale, largo il 70%. 2 s, poi fine. Codice: `logo_card()` in `projects/meenakshi/build.py`.

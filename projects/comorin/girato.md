@@ -44,3 +44,13 @@ Controlli: fotogrammi di tutti i reel, trascrizione dei montati (nessuna parola 
   `TAG_SIZE, TAG_PAD, TAG_SIDE` in `tools/reel_kit.py`.
 - Tre mari (v3, Manuel 4/11): "Qui si incontrano 3 mari" sull'arrivo, poi sulle onde i tre mari uno dopo l'altro
   ("Golfo del Bengala", "Mar Arabico", "Oceano Indiano", ~1.6 s ciascuno, stesso stile oro su bianco).
+- v4 (Manuel 4/11, sera), su Drive:
+  - Cocco 9.5 s: lui taglia tanto (135736, 135906), lo dà, taglia ancora, la signora seduta che lo apre (140138),
+    di nuovo lui che taglia SENZA scritta, poi la chiusura. Musica: groove fino alla battuta 8.0, poi il finale del
+    brano (da 16.0).
+  - Statua 29.0 s: tolto "si racconta" ripetuto ("Visse quasi duemila anni fa"), tolta la pausa prima di
+    "Thiruvalluvar", accorciate le pause lunghe dentro le frasi (dopo "Vivekananda", "Thirukkural", "si vive",
+    "virtù"); sul piedistallo la statua una volta sola, poi da lontano (132340), poi l'oceano e la chiusura ferma.
+  - Canna: accorciata la pausa dopo "zucchero,".
+  - Tutti: "Ascolta altre voci, su" entra in dissolvenza (0.6 s, stile `TagIn`), non più di colpo; il segno di
+    chiusura di Audio parte sulla fine della voce (prima c'era mezzo secondo quasi muto e poi il segno: buco e colpo).

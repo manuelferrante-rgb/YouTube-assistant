@@ -209,6 +209,8 @@ class Reel:
             else:
                 ev.append((1, a, b, "Orig", f"{{\\an5\\pos({W // 2},{y_orig})}}{txt}"))
         for a, b, txt, st, y in self.titles:
+            soft = st == "TagIn"   # come Tag ma entra piano (Manuel 4/11: la frase finale non di colpo)
+            st = "Tag" if soft else st
             # titolo: se una riga non ci sta (anche al 125% dell'entrata) si rimpicciolisce il carattere
             size = {"Big": 190, "Mid": 96, "Small": 46, "Tag": TAG_SIZE}.get(st, 96)
             font = {"Small": "Poppins-Medium.ttf", "Tag": "VVTitolo-PoppinsExtraBold.ttf"}.get(st, "Anton-Regular.ttf")
@@ -221,6 +223,8 @@ class Reel:
                    f"\\t(0,140,\\fscx100\\fscy100\\alpha&H00&)\\fad(0,120)}}")
             if st == "Tag":   # riquadro bianco con testo oro (opzione E), compare di colpo (Manuel 29/10: "bam")
                 tag = f"{{\\an5\\pos({W // 2},{S(y)}){fs}\\fscx107\\fscy107\\t(0,110,\\fscx100\\fscy100)\\fad(0,100)}}"
+            if soft:      # dissolvenza in entrata di 0.6 s (riquadro e scritta insieme), niente "bam"
+                tag = f"{{\\an5\\pos({W // 2},{S(y)}){fs}\\fad(600,0)}}"
             ev.append((2, a, b, st, tag + txt))
         ev += self.raw_ass
         p = f"{self.dir}/reel.ass"
