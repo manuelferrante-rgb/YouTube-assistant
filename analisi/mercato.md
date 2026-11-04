@@ -38,3 +38,43 @@ Negli Shorts impressioni e CTR contano poco (si vedono nel feed senza clic); con
 - Instagram: teaser e reel 1 (copertura, tempo medio, invii, follower, % non follower), stories set 1.
 
 Analisi principale a 7 giorni: dom 8/11.
+
+## Aggiornamento 48 ore (secondi screenshot di Manuel, 4/11): CORREGGE la stima sopra
+La durata media vera è 1:43 (28,2% del video), non 28 s: le 216 visualizzazioni includono molte anteprime
+della home. Persone vere: 46 spettatori unici, 55 visualizzazioni "engaged". Anche "lo guardano solo gli
+iscritti" era sbagliato: l'87,1% del tempo di visione è di NON iscritti.
+
+### Numeri
+- Impressioni miniatura 955 (96,3% dai consigli di YouTube), CTR 3,7%, 35 visualizzazioni engaged da impressioni.
+- Sorgenti: home di YouTube 85,6%, esterne 5,1% (WhatsApp 82%, Instagram 18%), ricerca 3,7%, pagine del canale
+  1,4%, prossimi video 1,4% (consigliato dopo vlog italiani: "FIGHT CAMP", "24 ore con i falchi di Milano",
+  "Il varo della nuova Tuccoli 250").
+- Pubblico: Italia 80,9%; cellulare 75,5%, TV 11,9%, computer 9,4%; sottotitoli italiani attivi nel 51,8% delle
+  visualizzazioni. Mi piace 100%. Clic sulla schermata finale 0%.
+- Fidelizzazione: 51% a 0:30 (YouTube: in linea col tipico); ~40% a ~0:45; ~25% verso 1:30; piatta ~20% fino a
+  ~2:50; RISALE a ~35% tra ~3:15 e ~3:45 (dentro "Il mercato all'alba", 2:34-4:59, dove c'è il pesce da 50 kg);
+  poi ~20% fino alla fine.
+
+### Cosa dice
+1. YouTube il video lo sta proponendo a italiani che non ci conoscono, accanto a vlog italiani: è il pubblico
+   giusto. Il limite non è la distribuzione, è quanto restano.
+2. Il buco grosso è tra 0:30 e 1:30 (da 51% a ~25%), cioè "Il giorno prima a Marari" e l'inizio dei pescatori.
+   Dopo il gancio del mercato il video torna indietro al giorno prima: chi è entrato per il mercato e il pesce
+   (titolo e miniatura) se ne va.
+3. La risalita a ~3:15-3:45 vuol dire che la gente SALTA in avanti per cercare il pesce da 50 kg promesso dalla
+   miniatura (o lo riguarda). La promessa della miniatura arriva troppo tardi. Da verificare: Manuel passa il
+   mouse sul picco e vede il fotogramma.
+4. Chi supera i 2 minuti resta fino alla fine (curva piatta ~20%): il racconto centrale tiene.
+5. CTR 3,7% su traffico freddo della home: discreto per un canale nuovo, non è il problema principale.
+6. Metà del pubblico guarda con i sottotitoli italiani: tenerli sempre (già nel pacchetto di Copy).
+7. Schermata finale 0%: va messa (rimando al video successivo) appena c'è un secondo lungo.
+
+### Cosa cambiare (proposte, campione piccolo: 46 persone)
+- Nei lunghi, la cosa promessa da titolo e miniatura si vede entro il primo minuto (anche solo 3-5 s di
+  anticipo: "tra poco..."), poi il racconto può andare con calma.
+- Niente salto indietro ("il giorno prima") subito dopo il gancio: se serve, breve (<15 s) o più avanti.
+- ARTHUNKAL (esce dom 15/11, già approvato) ha la stessa struttura: 0:00 Prima dell'alba, 0:34 "Il giorno prima".
+  Da proporre a Manuel prima dell'uscita: accorciare il blocco 0:34-1:13 o anticipare un'immagine forte della
+  processione. "Te" parte già dentro l'azione (0:44 con Sadish) e non ha questo problema.
+- Schermata finale su ogni lungo.
+Da confermare a 7 giorni (8/11) e sul secondo lungo prima di farne una regola.
