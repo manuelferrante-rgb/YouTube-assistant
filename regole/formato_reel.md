@@ -20,7 +20,8 @@ Prevale sulle note più vecchie sui verticali in `regole/montaggio_documentario.
 
 ## Titoli (fatti, nomi, luoghi)
 - Su una riga, il più grandi possibile senza uscire dallo schermo: Poppins ExtraBold ORO (#B68A4B) su riquadro
-  BIANCO (opzione E). Stile `Tag` di `tools/reel_kit.py`: `r.title(a, b, "Testo", "Tag", 400)`.
+  BIANCO (opzione E). Riquadro un po' più piccolo dal 4/11 (Manuel, comorin: "un pochino troppo grande"): corpo 82,
+  margine 18, almeno 90 px ai lati (`TAG_SIZE, TAG_PAD, TAG_SIDE` in `tools/reel_kit.py`). Stile `Tag` di `tools/reel_kit.py`: `r.title(a, b, "Testo", "Tag", 400)`.
 - Font `assets/fonts/VVTitolo-PoppinsExtraBold.ttf` (famiglia "VV Titolo", copiato in `models/` dall'hook di avvio:
   rinominato perché il Poppins ExtraBold vero cambierebbe il grassetto dei sottotitoli).
 - Entrano di colpo ("bam": scala 107% → 100% in 0.11 s, niente dissolvenza), nel momento in cui la parola si dice

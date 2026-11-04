@@ -21,12 +21,14 @@ RNN = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "work", "rn
 def clean_rnn(src, out):
     """RNNoise (rete neurale addestrata sul parlato, filtro arnndn di ffmpeg): toglie vento, motori e strada molto più
     della riduzione spettrale (gancio 115233, 27/10 sera: pause da -27 a -59 dB, voce intatta). Il filtro ritarda di
-    480 campioni a 48 kHz (10 ms, misurato): si tolgono, così il labiale non cambia."""
+    480 campioni a 48 kHz (10 ms, misurato): si tolgono, così il labiale non cambia.
+    volume=0.5 (4/11, comorin): il mono di ffmpeg somma i canali (+3 dB) e su una registrazione a 0 dBFS arnndn
+    saturava (crepitio su "Thiruvalluvar"); il livello lo rimette a posto la normalizzazione del montaggio."""
     if not os.path.exists(RNN):
         os.makedirs(os.path.dirname(RNN), exist_ok=True)
         subprocess.run(["curl", "-sSfL", "-o", RNN, RNN_URL], check=True)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-map", "0:a:0", "-ar", str(SR), "-af",
-                    f"aformat=channel_layouts=mono,highpass=f=100,highpass=f=100,arnndn=m={RNN},"
+                    f"aformat=channel_layouts=mono,volume=0.5,highpass=f=100,highpass=f=100,arnndn=m={RNN},"
                     "atrim=start_sample=480,asetpts=PTS-STARTPTS,pan=stereo|c0=c0|c1=c0", "-c:a", "pcm_s16le", out],
                    check=True)
     print(f"voce pulita (RNNoise) {os.path.basename(src)}", flush=True)

@@ -56,3 +56,7 @@ Si risponde sempre in italiano a Manuel, risposte brevi e concrete.
 ## Consegna
 `GDRIVE_FOLDER_ID=<cartella del video> tools/drive_upload.sh <video> <file>` (al posto dei vecchi; se si blocca,
 `timeout 290` e riprova). Poi `piano/calendario.md`, commit, PR su master e merge.
+
+Nota Montaggio 4/11 (comorin): voce da un file registrato a 0 dBFS (tipo i memo di Manuel): `tools/voice_clean.py` ora
+abbassa di 6 dB prima di RNNoise, altrimenti satura e crepita. Controllare sempre lo spettrogramma della voce pulita
+contro l'originale (righe verticali larghe = crepitio).

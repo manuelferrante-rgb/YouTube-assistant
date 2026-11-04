@@ -31,3 +31,14 @@ Controllato fotogramma per fotogramma; da NON usare:
 Titoli e scritte come in `copioni/comorin_testi.md`. Reel 3 a 30.9 s (copione 25-30 s): il VO intero è 28.8 s.
 Controlli: fotogrammi di tutti i reel, trascrizione dei montati (nessuna parola tagliata o ripetuta), -14 LUFS.
 `audio_check` segnala "fondo" in canna e statua: è la musica di Audio a 0.08 sotto la voce (B-roll muti), non rumore.
+
+## v2 (4/11, note di Manuel), su Drive al posto della v1
+- Statua: la chiusura resta ferma sulla statua (130308 da 6.0 a 8.2 s, il tratto più stabile misurato, rallentato a
+  0.45x), il logo sfuma sullo stesso tratto. Tolti le onde e la gente della chiusura.
+- Voce (canna e statua): il crepitio su "Thiruvalluvar" non era nella registrazione ma nella pulizia: il mono di ffmpeg
+  somma i due canali (+3 dB) e su un file a 0 dBFS RNNoise saturava. `tools/voice_clean.py` ora abbassa di 6 dB prima
+  di RNNoise (il livello lo rimette la normalizzazione). Rifatto anche il mix della canna (stesso difetto, file a 0 dBFS).
+- Tre mari: solo le clip iPhone del 3/11 (IMG_8759 strada verso il mare, IMG_8761 sentiero fino alla scogliera,
+  IMG_8762 onde sulla spiaggia, IMG_8765 le onde), niente DJI.
+- Titoli oro su bianco più piccoli in tutti e 4 (corpo 82 invece di 96, riquadro 18 invece di 22, più margine ai lati):
+  `TAG_SIZE, TAG_PAD, TAG_SIDE` in `tools/reel_kit.py`.

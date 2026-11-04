@@ -96,13 +96,13 @@ def at(t0, line, t_src):
     return t0 + (t_src - (line[0] - PAD[0]))
 
 
-def logo_card(W, H, d, src, a, grade="eq=contrast=1.03:saturation=1.05", cx=0.5):
+def logo_card(W, H, d, src, a, grade="eq=contrast=1.03:saturation=1.05", cx=0.5, speed=1.0):
     """Logo chiaro (70%) che sfuma sopra l'ultima persona, che continua sotto un velo nero leggero (35%)."""
-    out = f"{OUT}/logo_card_{os.path.basename(src)[:26]}_{a:.2f}_{d:.2f}_{W}x{H}.mp4"
+    out = f"{OUT}/logo_card_{os.path.basename(src)[:26]}_{a:.2f}_{d:.2f}_{speed:.2f}_{W}x{H}.mp4"
     lw = int(W * 0.7) // 2 * 2
-    run(["ffmpeg", "-v", "error", "-y", "-ss", f"{a:.3f}", "-t", f"{d + 0.5:.3f}", "-i", src, "-loop", "1", "-t", f"{d:.3f}",
+    run(["ffmpeg", "-v", "error", "-y", "-ss", f"{a:.3f}", "-t", f"{d * speed + 0.5:.3f}", "-i", src, "-loop", "1", "-t", f"{d:.3f}",
          "-i", f"{ROOT}/assets/brand/logo_vocivere_trasparente_chiaro.png", "-filter_complex",
-         f"[0:v:0]crop=ih*9/16:ih:'max(0,min(iw-ih*9/16,iw*{cx}-ih*9/32))':0,scale={W}:{H}:flags=lanczos,fps=30,{grade},"
+         f"[0:v:0]crop=ih*9/16:ih:'max(0,min(iw-ih*9/16,iw*{cx}-ih*9/32))':0,scale={W}:{H}:flags=lanczos,setpts=(PTS-STARTPTS)/{speed},fps=30,{grade},"
          "tpad=stop_mode=clone:stop_duration=2[v0];"
          f"color=c=black@0.35:s={W}x{H}:r=30:d={d:.3f},format=rgba,fade=t=in:st=0:d=0.5:alpha=1[k];"
          "[v0][k]overlay=shortest=1[bg];"
@@ -231,10 +231,11 @@ def statua():
     say(S7, [(r.own(C("130308"), 0.0), 0.8), (r.own(C("125410"), 0.2), None)])
     t_b = r.t
     r.cap_stop.append(t_b)
-    r.own(C("125410"), 1.1)(0.9)                                # le onde intorno
-    t_last = r.t
-    r.own(C("130308"), 8.2)(2.0)                                # la gente ai piedi della statua
-    r.gen(logo_card(W, H, 2.0, C("130308"), 10.2))(2.0)
+    # chiusura (Manuel 4/11): ferma sulla statua, nel tratto più stabile di 130308 (6.0-8.2 s, misurato con la
+    # correlazione di fase: <0.3 px a fotogramma), rallentato a 0.45x; il logo sfuma sullo stesso tratto
+    r.gen(C("130308"), 6.0, speed=0.45, grade="eq=contrast=1.03:saturation=1.05")(2.9)   # muta (atempo non va sotto 0.5)
+    t_last = t_b + 0.9
+    r.gen(logo_card(W, H, 2.0, C("130308"), 6.0 + 2.9 * 0.45, speed=0.45))(2.0)
     end = r.t
     r.title(t_b, end, CTA, "Tag", 400)
     cue(tl, t_last - 0.4, "cue_statua_chiusura", end - t_last + 0.4, 0.45, fout=1.0)
@@ -246,16 +247,18 @@ def statua():
 
 # ---------------------------------------------------------------- reel 4: tre mari (loop, 8.8 s prima del 1.1x)
 def mari():
-    """Arrivo in barca veloce (~3.4 s), poi si resta sul mare. Dopo il 1.1x il video dura 8.00 s esatti (240
+    """Arrivo veloce (~3.4 s), poi si resta sul mare. Dopo il 1.1x il video dura 8.00 s esatti (240
     fotogrammi) come la musica in loop di Audio (file da 8.00 s, messo DOPO il 1.1x con guadagno fisso a -14 LUFS e
     senza dissolvenze, così il giunto resta intatto). Loop senza stacco: si monta 0.3 s in più e gli ultimi 0.3 s
     sfumano nei primi 0.3 s del video, che poi parte da 0.3 s: l'ultimo fotogramma si attacca al primo."""
     W, H = size()
     X = 9                                                       # fotogrammi della dissolvenza del loop (0.3 s)
     r = Reel(f"{OUT}/reel_mari_{W}_work", W, H, speed=1.0, gap=0.0, amb=0.0, cap_box=True)
-    r.own(C("122458"), 17.5, grade=FLIP, speed=1.3)(1.2)       # dentro il traghetto, le barche dal finestrino
-    r.own(C("123010"), 0.6, speed=1.3)(1.1)                     # la roccia che si avvicina
-    r.own(C("122850"), 0.5, speed=1.3)(1.1)                     # il mare dal traghetto
+    # Manuel 4/11: solo le clip dell'iPhone del 3/11 (niente DJI): il sentiero verso il mare, il prato fino alla
+    # scogliera, le onde sulla spiaggia, poi una sola inquadratura lunga sulle onde
+    r.own(C("IMG_8759"), 0.3, speed=1.3)(1.1)                   # la strada che scende verso il mare
+    r.own(C("IMG_8761"), 0.5, speed=1.3)(1.2)                   # il sentiero nel prato fino alla scogliera
+    r.own(C("IMG_8762"), 2.0, speed=1.3)(1.1)                   # le onde sulla spiaggia
     r.own(C("IMG_8765"), 0.0, speed=0.9)((240 + X) * 1.1 / 30 - r.t)   # le onde, una sola inquadratura lunga
     r.title(0.0, r.t, "Qui si incontrano 3 mari", "Tag", 400)
     one = finish(r, "reel4_tre_mari_video")
