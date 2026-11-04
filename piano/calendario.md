@@ -14,7 +14,7 @@ consegnato, programmato, pubblicato.
 | meenakshi | 1 verticale (Madurai, Tamil Nadu) | APPROVATO 29/10 (verticale 19.3 s a 1.1x in montati/meenakshi) | da decidere | `piano/meenakshi.md`; cartella Drive 1Gov2PE4EU32BZPdJW3miH3oYPc68Iv8v |
 | comorin | 4 reel (Kanyakumari: cocco, canna, statua di Thiruvalluvar, tre mari in loop senza voce) | girato (3-4/11, Drive 1z5BA2MoG69ExGT6ivPb9VAcbxV25VVmI); copione VO, PER MONTAGGIO, PER AUDIO e didascalie pronti (Copy, 4/11): `copioni/comorin_testi.md`; Manuel registra i 4 VO | da decidere | brief `analisi/comorin_reel.md` |
 | panni (pov giungla) | 1 reel: pov "sei nella giungla indiana" e Manuel che stende i panni | pronto (era il reel "come stendere i panni"); profilo DA CONFERMARE | proposta dom 8/11 | il 29/10 Manuel lo aveva destinato al profilo personale, non a Voci Vere; aggiunto su richiesta del 4/11 |
-| autostop | 1 reel (Manuel sul motorino di uno sconosciuto che lo riporta a casa) | in montaggio (Manuel lo monta da solo, 4/11); frase a schermo da Copy; profilo da decidere | proposta ven 6/11, se montato | nuovo (4/11) |
+| autostop | 1 reel (Manuel sul motorino di uno sconosciuto che lo riporta a casa) | PRONTO (Manuel, 4/11); frase a schermo da Copy; profilo da decidere | proposta ven 6/11 | nuovo (4/11) |
 | coir | lungo orizzontale + teaser + 3 reel + carosello + 2 set di stories | pianificato, girato da fare a Anjengo/Varkala (Manuel, 2-7/11) | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
 | migranti | lungo orizzontale + pacchetto completo | pianificato, da girare a Varkala (9-10/11) e Kochi/Perumbavoor (11-12/11) | proposta lungo B dom 10/1 | `piano/migranti.md` |
 | diwali | 1 reel o scena dentro `migranti` | pianificato, da girare dom 8/11 | da decidere dopo il montato | `piano/diwali.md` |
@@ -132,3 +132,5 @@ giorno di stories nel calendario. I caroselli escono anche su YouTube come post,
 Regola in `regole/copy.md`.
 
 Nota da Pianificazione, 4/11 (Manuel): aggiunto il reel pov giungla con Manuel che stende (`panni`). Il 29/10 era sul profilo personale; se resta lì, la data è libera e non tocca la cadenza di Voci Vere. Proposta dom 8/11 (giorno libero, tra carosello 7/11 e reel 9/11), da confermare.
+
+Nota da Pianificazione, 4/11 (Manuel): autostop pronto. Con meenakshi, comunismo, kallu, bucato e panni sono 6 reel esterni ai lunghi pronti; i 4 di comorin sono in coda (voiceover, Audio, Montaggio). Autostop proposto ven 6/11.
