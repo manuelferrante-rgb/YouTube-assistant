@@ -169,12 +169,12 @@ Giorni liberi per loro: 8/11, 13/11, 24/11, 27/11, 6/12, 10/12, 12/12, 13/12, 15
 | dom 22/11 | panni (pov giungla) | entrambi i profili |
 | lun 23/11 | arthunkal: reel 3 |  |
 | mer 25/11 | kallu | pronto |
-| gio 26/11 | comorin: canna da zucchero | solo se Voci Vere |
+| gio 26/11 | comorin: canna da zucchero | entrambi i profili (Manuel, 4/11) |
 | sab 28/11 | te: teaser |  |
 | dom 29/11 | te: LUNGO | solo se approvato |
 | lun 30/11 | te: stories set 1 |  |
 | mar 1/12 | te: reel 1 |  |
-| mer 2/12 | comorin: cocco | solo se Voci Vere |
+| mer 2/12 | comorin: cocco | entrambi i profili (Manuel, 4/11) |
 | gio 3/12 | te: reel 2 |  |
 | ven 4/12 | te: stories set 2 |  |
 | sab 5/12 | te: carosello |  |
@@ -215,3 +215,6 @@ Giorni liberi per loro: 8/11, 13/11, 24/11, 27/11, 6/12, 10/12, 12/12, 13/12, 15
 | ven 29/1 | lungo C: stories set 2 |  |
 | sab 30/1 | lungo C: carosello |  |
 | dom 31/1 | lungo C: reel 3 | programmato prima della partenza per il Vietnam |
+
+Nota da Pianificazione, 4/11 (Manuel): cocco e canna di comorin escono anche loro su entrambi i profili (personale e Voci Vere). Quindi tutti i reel mainstream (panni, autostop, cocco, canna) vanno su entrambi; le date 26/11 e 2/12 non sono più condizionate.
+Nota da Pianificazione, 4/11 (Manuel): strategia. Prima si pubblica (anche contenuti più leggeri), poi si dà al profilo una forma professionale e da "Voci Vere". Lo scopo principale, da non dimenticare: DARE VOCE A CHI NE HA PIU' BISOGNO. Ogni lungo e ogni tema nuovo (coir, migranti, ONG) va verificato contro questa frase.

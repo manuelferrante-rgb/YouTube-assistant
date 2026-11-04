@@ -42,3 +42,4 @@
   salario solo come parole loro. Già in linea: raccoglitrici di tè (`te`), donne del coir (`coir`). Candidate: operaie
   degli anacardi di Kollam, venditrici di pesce del Kanyakumari (Santidhan), venditori di lotterie.
   Varietà prima di tutto: niente pellegrinaggi o templi di default, luoghi e mestieri diversi (Manuel, 1/11).
+- Scopo principale (Manuel, 4/11): dare voce a chi ne ha più bisogno. Prima si pubblica, poi si dà al profilo una forma professionale e da Voci Vere. Ogni tema, luogo e lungo nuovo si verifica contro questa frase; i reel più leggeri (panni, autostop, cocco, canna) vanno su entrambi i profili ma non sostituiscono i lunghi con le voci.
