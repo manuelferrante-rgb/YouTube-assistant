@@ -13,6 +13,11 @@ consegnato, programmato, pubblicato.
 | te | lungo (almeno 6 min) + 4 verticali + carosello | APPROVATO da Manuel il 27/10 sera, chiusura aggiunta il 28/10 (v7: "Il viaggio di Voci Vere... continua. Seguimi per scoprire le prossime storie" prima del logo; intro e teaser rifatti da zero, ~20 s; voce pulita con RNNoise; musica nuova di Audio bassissima solo dopo "Sono a Munnar" e sotto la storia). File finali su Drive montati/te VociVere_te_long_4K.mp4 (6:24) e VociVere_te_v1_teaser, v2_raccolta, v3_giornata, v4_chai (_1080x1920.mp4); reel del bucato invariato. Copy può fare il pacchetto. PACCHETTO COPY PRONTO 29/10 su Drive montati/te: sottotitoli it/en, miniatura definitiva, carosello v2 (9 slide, 3 video), storie 3x6, TESTI_titolo_descrizioni_verticali.txt (copioni/te_pacchetto.md). Capitoli: 0:00 Le colline del tè, 0:22 Munnar, 0:44 Con Sadish tra i filari, 3:28 La storia e chi ci lavora, 5:42 Il tè del chai master, 6:09 Chiusura (`projects/te/capitoli.md`) | da decidere | approvato 26/10; `piano/te.md`, `copioni/te_testi.md`; niente B-roll IA (Manuel, 27/10); cartella Drive: 1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw |
 | meenakshi | 1 verticale (Madurai, Tamil Nadu) | APPROVATO 29/10 (verticale 19.3 s a 1.1x in montati/meenakshi) | da decidere | `piano/meenakshi.md`; cartella Drive 1Gov2PE4EU32BZPdJW3miH3oYPc68Iv8v |
 | comorin | 4 reel (Kanyakumari: cocco, canna, statua di Thiruvalluvar, tre mari in loop senza voce) | girato (3-4/11, Drive 1z5BA2MoG69ExGT6ivPb9VAcbxV25VVmI); copione VO, PER MONTAGGIO, PER AUDIO e didascalie pronti (Copy, 4/11): `copioni/comorin_testi.md`; Manuel registra i 4 VO | da decidere | brief `analisi/comorin_reel.md` |
+| autostop | 1 reel (Manuel sul motorino di uno sconosciuto che lo riporta a casa) | in montaggio (Manuel lo monta da solo, 4/11); frase a schermo da Copy; profilo da decidere | proposta ven 6/11, se montato | nuovo (4/11) |
+| coir | lungo orizzontale + teaser + 3 reel + carosello + 2 set di stories | pianificato, girato da fare a Anjengo/Varkala (Manuel, 2-7/11) | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
+| migranti | lungo orizzontale + pacchetto completo | pianificato, da girare a Varkala (9-10/11) e Kochi/Perumbavoor (11-12/11) | proposta lungo B dom 10/1 | `piano/migranti.md` |
+| diwali | 1 reel o scena dentro `migranti` | pianificato, da girare dom 8/11 | da decidere dopo il montato | `piano/diwali.md` |
+| kanyakumari | donne del mare e ONG del posto (verticale/materiale) | girato 3-4/11? Manuel non ha ancora detto cosa ha fatto con KDFSF e Siluvai Nagar | da decidere | `piano/kanyakumari.md` |
 
 ## Piano rifatto il 29/10 (Manuel): lunghi ogni 2-3 settimane, un contenuto un giorno sì e uno no
 Decisioni di Manuel 29/10: un lungo ogni 2-3 settimane (siamo all'inizio, non si sprecano); caroselli, reel e stories si
@@ -99,3 +104,24 @@ Nota da Pianificazione, 1/11 (Manuel): `coir` e `migranti` = lunghi orizzontali 
 Nota da Pianificazione, 1/11 (Manuel): Manuel resta a Varkala (Taaraa Loca) fino al 13/11, con 11-12/11 a Kochi. Da girare: filiera del coir (`coir`), migranti (`migranti`, Varkala e Kochi/Perumbavoor), Diwali dom 8/11 (`diwali`, reel o scena dentro migranti, non un lungo) e una ONG del posto (nessuna verificata entro 30 min da Varkala). Proposta di giorni in `piano/coir.md`. Il Diwali non entra nel calendario delle uscite fino al montato.
 
 Nota da Pianificazione, 1/11 (Manuel): martedì 3 e mercoledì 4/11 Manuel è a Kanyakumari (alloggio Ramraj Resorts, Kovalam). La ONG la fa lì (piano in `piano/kanyakumari.md`: donne del mare, KDFSF, Siluvai Nagar). Poi rientra a Varkala.
+
+Nota da Pianificazione, 4/11 (Manuel): bio Instagram @vocivere cambiata il 1/11 (testo in `regole/copy.md`, nessuna riga con il luogo).
+
+Nota da Pianificazione, 4/11 (Manuel): comorin, 4 reel girati a Kanyakumari il 3-4/11. Copy ha chiuso il 4/11 (`copioni/comorin_testi.md`).
+Ordine: Manuel registra il voiceover (solo per canna e statua: cocco e tre mari sono senza voce), poi Audio, poi Montaggio, che
+carica i reel in `montati/comorin` su Drive. Reel 1 cocco (scritta fissa "Prendi, taglia, porgi. Ricomincia", senza voce) e
+reel 2 canna: forse sul profilo personale di Manuel, DA DECIDERE. Reel 3 statua di Thiruvalluvar (25-30 s) e reel 4 tre mari
+(8 s in loop, senza voce, senza chiusura con logo) restano su Voci Vere. Attenzione al titolo del reel 4 "Qui si incontrano 3 mari":
+le fonti dicono che si dice che si incontrino, un sito lo chiama credenza popolare. Segnalato a Manuel.
+
+Proposta di Pianificazione, 4/11, date dei nuovi reel (giorni alterni, nessun lungo, teaser o carosello spostato; da confermare con Manuel):
+| Giorno | Uscita | Nota |
+|---|---|---|
+| ven 6/11 | autostop | solo se montato; in caso contrario slitta a dom 8/11 o ven 13/11. Insieme alle stories set 2 del mercato |
+| mer 18/11 | comorin: statua di Thiruvalluvar | tra arthunkal reel 1 (17/11) e reel 2 (19/11) |
+| mar 24/11 | comorin: canna da zucchero | solo se Voci Vere; se va sul profilo personale, il giorno resta libero |
+| ven 27/11 | comorin: cocco | solo se Voci Vere; se personale, resta libero (28/11 teaser te) |
+| mer 2/12 | comorin: tre mari (loop) | tra te reel 1 (1/12) e reel 2 (3/12) |
+Gli slot extra del 11/12, 14/12 e 17/12 restano liberi per coir, diwali e kanyakumari (materiale girato 2-12/11).
+Regola usata: mai più di tre giorni di fila con un contenuto; 10/11 e 13/11 non si usano perché con comunismo (12/11),
+meenakshi (11/11), teaser arthunkal (14/11) e lungo (15/11) farebbero quattro giorni di fila.
