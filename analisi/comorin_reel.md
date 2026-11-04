@@ -1,9 +1,12 @@
-# Reel "Capo Comorin" (Kanyakumari): ricerca Insights e brief per Copy (4/11)
+# 4 reel "Capo Comorin" (Kanyakumari): ricerca Insights e brief per Copy (4/11)
 
 Nome breve proposto: `comorin` (così non si confonde con `kanyakumari`, il video delle donne del mare e della ONG
 in `piano/kanyakumari.md`). File di Copy: `copioni/comorin_testi.md`.
-Un solo verticale autonomo, nel formato di `regole/formato_reel.md` (modello meenakshi: circa 20 s finali, tutto
-in voiceover di Manuel, gancio forte da 0 s, rivelazione con un movimento di camera vero, chiusura fissa).
+DECISIONE DI MANUEL (4/11): 4 REEL VERTICALI, ognuno autonomo: 1) cocco, 2) canna da zucchero, 3) la fortezza,
+4) l'oceano dove si incontrano i tre mari. Tutti nel formato di `regole/formato_reel.md` (modello meenakshi: circa
+20 s finali, tutto in voiceover di Manuel, gancio forte da 0 s, rivelazione con un movimento di camera vero,
+chiusura fissa). Il brief dei 4 è nella sezione "I 4 REEL" più sotto; la sezione "Brief per Copy" con gli angoli
+A/B era per un reel unico e ora vale solo come materiale per il reel 4.
 
 ## Girato di Manuel (3-4/11, sua descrizione)
 1. Succo di canna da zucchero fatto al momento (la macchina che spreme).
@@ -52,7 +55,34 @@ Statue", incredibleindia.gov.in e kanniyakumari.nic.in (statua), più fonti di v
 Fuori: leggende (sabbia di sette colori, dea Kanya Kumari), "unico posto con alba e tramonto sul mare" (non
 verificato), orari e prezzi del traghetto, Modi.
 
-## Brief per Copy (consiglio di Insights)
+## I 4 REEL (Manuel, 4/11): un angolo per reel, consiglio di Insights
+Regola comune: un solo fatto o un solo gesto per reel, che si VEDE nel girato. Niente numeri inventati: prezzi,
+tempi, quanti al giorno solo se li dice la persona nel girato (allora si attribuiscono: "dice che..."). Ogni reel
+chiude sulla persona che lavora (~2 s) e poi la chiusura fissa. Il turismo resta sullo sfondo, al centro chi lavora.
+
+1. COCCO. Angolo "come funziona" a una persona: il gesto (i colpi di coltello, il buco, la cannuccia, poi
+   l'apertura per mangiare la polpa se c'è) dal primo all'ultimo colpo, ritmo sui colpi. Gancio sul gesto più
+   forte già a 0 s; titolo a schermo sul fatto concreto che si vede (es. quanti colpi, se si contano nel girato).
+   Frase umana: chi è, dove sta (la bancarella alla punta dell'India). Prezzo solo se detto da lui.
+2. CANNA DA ZUCCHERO. Angolo "dalla canna al bicchiere": la canna che entra nella macchina, ripassata più volte
+   (se si vede), il succo che esce, il bicchiere in mano. Nei video che girano sul succo di canna c'è una persona,
+   non solo la macchina: chiudere sul venditore. Da evitare: discorsi su igiene o ghiaccio (niente fonte, tono
+   sbagliato). Prezzo solo se detto da lui.
+3. LA FORTEZZA. DA CONFERMARE CON MANUEL quale è (nel repo non c'è nessuna foto o nota sulla fortezza). Se è il
+   forte di Vattakottai (forte circolare sul mare, circa 7 km da Kanyakumari), il gancio c'è: si racconta che il
+   capitano olandese Eustachius De Lannoy, catturato dopo la battaglia di Colachel (1741), passò al servizio del
+   re di Travancore che lo aveva sconfitto e ne rifece le difese, tra cui questo forte in granito (regno di
+   Marthanda Varma, 1729-1758). Fonti: Wikipedia "Vattakottai Fort" e "Eustachius De Lannoy", siti turistici;
+   date e attribuzioni non tutte d'accordo, quindi "si racconta" e nessuna data di costruzione precisa. Possibile
+   gancio: "Un capitano olandese, prigioniero, costruì le difese del re che l'aveva sconfitto." Se invece la
+   "fortezza" è la roccia di Vivekananda, il reel 3 usa i fatti di Vivekananda (sopra) e la barca come rivelazione.
+4. L'OCEANO, TRE MARI. L'angolo A qui sotto, senza il pezzo su cocco e canna (ora hanno il loro reel). Se
+   Vivekananda e la barca non vanno nel reel 3, entrano qui come rivelazione; altrimenti il reel 4 resta solo
+   sui tre mari e la punta dell'India, con le persone che ci stanno (chi vende, chi fa il bagno, chi prega).
+Ordine di uscita: lo decide Pianificazione. Consiglio: aprire con il reel 4 (il fatto più forte e cercato) e
+alternare cibo e storia.
+
+## Brief per Copy (versione per un reel unico, ora materiale per il reel 4)
 Un solo fatto forte, come meenakshi. Due angoli; consiglio A.
 
 A (consigliato): "Qui finisce l'India". I tre mari sono il gancio, l'unico che ha funzionato negli Shorts su questo
