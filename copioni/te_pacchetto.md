@@ -61,7 +61,8 @@ Chapters
 V1 teaser, sab 14/11 (VociVere_te_v1_teaser_1080x1920.mp4)
 Colline affittate per 3.000 rupie l'anno 🇮🇳
 Munnar, Kerala, India. Nel 1877 tutte queste colline vengono affittate a un britannico. Oggi sono coperte di tè,
-fino all'orizzonte. E di chi sono?
+fino all'orizzonte.
+Secondo te, di chi sono oggi?
 Domenica il video completo.
 #kerala #india #vocivere #munnar #tè
 YT: Nel 1877 le colline di Munnar, in Kerala, vengono affittate per 3.000 rupie l'anno. Oggi di chi pensi che siano?
@@ -70,6 +71,7 @@ V2 raccolta, lun 16/11 (VociVere_te_v2_raccolta_1080x1920.mp4)
 Del tè si staccano solo 2-3 foglie 🇮🇳
 Munnar, Kerala, India. Sadish ci mostra come si raccoglie: due, tre foglie, quelle buone. Le scure non si usano. E
 sulla stessa pianta si torna ogni dieci, quindici giorni.
+Lo sapevi che si raccoglie così?
 Il video completo è sul canale.
 #kerala #india #vocivere #munnar #tè
 YT: Tra i filari di Munnar, in Kerala, il tè si raccoglie ancora a mano, due o tre foglie alla volta. Sapevi che si fa così?
@@ -78,6 +80,7 @@ V3 giornata, mar 17/11 (VociVere_te_v3_giornata_1080x1920.mp4)
 Quanto tè raccoglie una persona in un giorno? 🇮🇳
 Munnar, Kerala, India. Sadish ce lo dice: in media dai 26 ai 29 chili. Si lavora dalle 8 alle 12, poi
 dall'una e mezza, le due, fino alle 5 circa. E raccolgono tutti, donne e uomini.
+Tu quanti chili raccoglieresti?
 Tutta la storia su YouTube, link in bio.
 #kerala #india #vocivere #munnar #tè
 YT: Sulle colline di Munnar, in Kerala, una persona raccoglie in media 26-29 chili di tè al giorno, a mano. Tu quanto reggeresti?
@@ -86,6 +89,7 @@ V4 chai, gio 19/11 (VociVere_te_v4_chai_1080x1920.mp4)
 Il chai di Munnar si fa così 🇮🇳
 Munnar, Kerala, India. Il chai master tira il tè da un bicchiere all'altro, senza fermarsi. Gli ho chiesto di
 parlare: si è rifiutato. Forse è proprio questa l'essenza dell'India.
+L'hai mai assaggiato?
 Video fuori sul canale.
 #kerala #india #vocivere #munnar #chai
 YT: In un chiosco di Munnar, in Kerala, il chai master prepara il tè come si fa da sempre. L'hai mai assaggiato così?
@@ -94,6 +98,14 @@ Reel del bucato (VociVere_te_bucato_1080x1920.mp4, data libera; testo già scelt
 Didascalia IG / titolo Short:
 POV: non hai la lavatrice (e non ti serve) 🇮🇳
 Kerala, India. Rubinetto, secchio, due mani. E un sorriso alla fine.
+Tu sapresti farlo così?
 #kerala #india #vocivere #vitaquotidiana
 Descrizione Short YT: Rubinetto, secchio e due mani: il bucato in Kerala. Tu sapresti farlo così?
 (Il luogo preciso, se Manuel lo dice, al posto di "Kerala".)
+
+### MINIATURE PER "TEST E CONFRONTO" (Copy, 4/11, regole in analisi/miniature.md; sostituiscono la A1)
+Sadish da solo con le foglie in mano davanti alle colline, "E OGGI / DI CHI SONO?". Drive montati/te/miniatura/
+(la vecchia in miniatura/vecchie/), repo copioni/te_miniature/ (v2_*):
+1. v2_1_sadish: Sadish a mezzo busto, colline larghe.
+2. v2_2_sadish_vicino: più vicino, il viso grande (consigliata, si legge meglio sul telefono).
+3. v2_3_sadish_mano: la mano aperta verso i filari.

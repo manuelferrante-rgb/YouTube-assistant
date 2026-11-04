@@ -238,3 +238,8 @@ e il terzo giorno di stories per ogni lungo.
 Nota da Pianificazione, 4/11 sera (Manuel, via Copy): nuovo pacchetto di ogni lungo = 1 teaser, 1 lungo, 3 reel, 2 caroselli (fatto e "I volti"), 3 set di stories da 6; i caroselli escono anche come post YouTube. Il calendario completo v2 (sopra) include i nuovi slot.
 
 Nota da Pianificazione, 4/11 sera (Manuel): mercato, pubblicati teaser, lungo e due reel (l'ultimo, il B, il 4/11). Mancano reel 3, carosello e 3 set di stories (Manuel li pubblica con le date del calendario v2: carosello 7/11, set 2 6/11, set 3 8/11, reel 3 9/11, carosello "I volti" 16/11). Gli extra del 4/11 (i 4 reel comorin, interpreto così: correggimi se erano altri) sono pronti: nessuna attesa su VO, Audio e Montaggio. Date invariate: statua 20/11, canna 2/12, cocco 6/12, tre mari 11/12. Le altre chat stanno applicando gli insights al volo, il calendario si aggiorna video per video.
+
+Nota da Copy, 4/11 sera (Manuel): miniature nuove "meno da blogger" (persone del posto, Manuel assente), 3 per lungo da
+mettere in "Test e confronto": mercato (subito, già uscito), arthunkal e te; su Drive montati/<video>/miniatura/. Didascalie
+IG dei verticali ancora da pubblicare con una domanda semplice prima del rimando (mercato reel 3 A "alle 3 di notte", arthunkal, te,
+comorin); TESTI_*.txt su Drive sostituiti. Regola in `regole/copy.md`.

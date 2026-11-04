@@ -100,3 +100,12 @@ Bio Instagram @vocivere (scelta di Manuel, 1/11):
 Nota da Insights, 4/11 (decisione di Manuel): MINIATURE MENO DA BLOGGER. Protagonista una persona del posto nel
 momento più forte, Manuel assente o piccolo di lato; testo 2-4 parole; 2-3 versioni per "Test e confronto" in
 YouTube Studio. Dettagli e motivi in `analisi/miniature.md`.
+
+Verticali, titoli e domande (Manuel, 4/11, dai dati del mercato in `analisi/mercato.md`):
+- Il titolo dello Short (= prima riga IG) è SEMPRE la curiosità, mai un annuncio ("Video completo domenica..."):
+  il teaser con quel titolo lo scorrevano via 5 persone su 6. L'annuncio, se serve, va solo in fondo alla didascalia.
+- Teaser dei prossimi lunghi: una curiosità con una persona (un fatto, un gesto, una frase sua), non un riassunto
+  né un montaggio da trailer. Vale anche per il testo che Copy dà a Montaggio.
+- Ogni didascalia IG ha una domanda semplice e concreta, sola su una riga prima del rimando ("Tu ci andresti?",
+  "L'hai mai assaggiato?", "Tu ti alzeresti alle 3?"). Niente esca ("tagga un amico", "scrivi SÌ se..."): su
+  Instagram è l'invio che fa crescere, e si manda un reel che fa nascere una domanda vera.
