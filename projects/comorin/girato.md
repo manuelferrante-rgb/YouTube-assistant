@@ -54,3 +54,6 @@ Controlli: fotogrammi di tutti i reel, trascrizione dei montati (nessuna parola 
   - Canna: accorciata la pausa dopo "zucchero,".
   - Tutti: "Ascolta altre voci, su" entra in dissolvenza (0.6 s, stile `TagIn`), non più di colpo; il segno di
     chiusura di Audio parte sulla fine della voce (prima c'era mezzo secondo quasi muto e poi il segno: buco e colpo).
+
+Nota Montaggio 4/11 sera: il tre mari Manuel l'ha rifatto lui ("il tuo non mi piaceva"). La sua versione è il riferimento
+(non per forza da usare): Drive, cartella comorin, montati/comorin/riferimenti/tre_mari_rifatto_da_Manuel.mov.
