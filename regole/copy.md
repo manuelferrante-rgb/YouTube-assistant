@@ -77,7 +77,8 @@ Caroselli e storie (Manuel, 29/10, riferimenti latiumani e Progetto Happiness; p
   l'altra con le frasi vere come sottotitoli, paragrafo con le parole chiave in grassetto, citazione su nero con
   le virgolette oro, una foto che continua dalla slide prima (nella seconda: il resto della foto + nero con la
   citazione). 2-3 slide video con il testo che compare (per il post YouTube il loro fotogramma .jpg).
-- Storie: 3 set da 6 per ogni lungo (non 2 da 10). Solo la domanda, mai la scritta "quiz".
+- Storie: 3 set da 6 per ogni lungo (non 2 da 10, non 2 set: confermato da Manuel il 4/11). Solo la domanda, mai la scritta "quiz".
+- Caroselli anche su YouTube (Manuel, 4/11): ogni carosello esce anche come post YouTube, con il link al lungo nel testo. Insights poi controlla i numeri.
 
 Chiusura dei verticali (Manuel, 29/10, primo esempio: meenakshi): frase **Ascolta altre voci, su** + logo Voci Vere
 con il payoff. Stile, tempi e velo nero leggero sono in `regole/formato_reel.md` (vale quel file). Da evitare: frasi

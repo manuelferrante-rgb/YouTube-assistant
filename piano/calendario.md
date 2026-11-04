@@ -125,3 +125,7 @@ Proposta di Pianificazione, 4/11, date dei nuovi reel (giorni alterni, nessun lu
 Gli slot extra del 11/12, 14/12 e 17/12 restano liberi per coir, diwali e kanyakumari (materiale girato 2-12/11).
 Regola usata: mai più di tre giorni di fila con un contenuto; 10/11 e 13/11 non si usano perché con comunismo (12/11),
 meenakshi (11/11), teaser arthunkal (14/11) e lungo (15/11) farebbero quattro giorni di fila.
+
+Nota da Copy, 4/11 (Manuel): le stories sono 3 set da 6 per ogni lungo (non 2): per mercato, arthunkal e te serve un terzo
+giorno di stories nel calendario. I caroselli escono anche su YouTube come post, con il link al lungo, oltre che su IG.
+Regola in `regole/copy.md`.
