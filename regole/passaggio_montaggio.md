@@ -1,4 +1,4 @@
-# Passaggio alla nuova chat Montaggio (aggiornato 29/10 sera)
+# Passaggio alla nuova chat Montaggio (aggiornato 4/11 sera)
 
 PRIMA DI TUTTO, PER OGNI REEL: `regole/formato_reel.md` (formato approvato da Manuel sul reel meenakshi: gancio forte,
 nessuna pausa, tutto a 1.1x, titoli Poppins ExtraBold oro su bianco, sottotitoli su fascia scura, chiusura "Ascolta
@@ -13,6 +13,16 @@ Si risponde sempre in italiano a Manuel, risposte brevi e concrete.
 - meenakshi (tempio di Madurai): FINITO e approvato 29/10, verticale 19.3 s in montati/meenakshi (cartella Drive
   1Gov2PE4EU32BZPdJW3miH3oYPc68Iv8v). Non toccarlo salvo richiesta di Manuel.
 - arthunkal, mercato: finiti (vedi `piano/calendario.md`).
+- comorin (Kanyakumari, 4 reel: cocco, canna, statua di Thiruvalluvar, tre mari in loop): consegnato 4/11 sera (v4)
+  in montati/comorin (cartella Drive 1z5BA2MoG69ExGT6ivPb9VAcbxV25VVmI). Manuel ha chiesto le ultime modifiche e le
+  ha avute; se ne chiede altre: `python3 projects/comorin/build.py cocco|canna|statua|mari`, scelte e clip escluse in
+  `projects/comorin/girato.md` (la sua ragazza non deve comparire mai; in cocco e canna niente Manuel).
+- Lezioni di comorin (valgono per tutti i reel): titoli oro su bianco più piccoli (`TAG_SIZE, TAG_PAD, TAG_SIDE` in
+  `tools/reel_kit.py`); "Ascolta altre voci, su" entra in dissolvenza (stile `TagIn`); il segno di chiusura parte sulla
+  fine della voce (niente buco); pause lunghe dentro le frasi del VO e parole ripetute si tagliano (`cut=` nelle frasi,
+  `narr_cuts` in `projects/comorin/build.py`); voce registrata a 0 dBFS: `voice_clean.py` ora abbassa prima di RNNoise
+  (prima crepitava). Controllare lo spettrogramma della voce e il livello a 50 ms nelle chiusure (buchi o colpi).
+- Manuel vuole i video direttamente su Drive (lunghi, teaser, reel), niente anteprime in chat salvo verticali a sé.
 - Prossimo video: lo dice Manuel. Quando carica il girato su Drive, il flusso è quello di CLAUDE.md.
 
 ## Come lavorare (lezioni del tè, Manuel ci tiene moltissimo)
