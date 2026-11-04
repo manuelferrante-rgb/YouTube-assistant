@@ -1,0 +1,194 @@
+{
+ "mercato": {
+  "cover": {
+   "p": "work/stories/VociVere_mercato_long_v6_3840x2160.mp4",
+   "t": 277.0,
+   "box": [
+    2739,
+    519,
+    329,
+    460
+   ]
+  },
+  "faces": [
+   {
+    "p": "work/stories/VociVere_mercato_long_v6_3840x2160.mp4",
+    "t": 196.0,
+    "box": [
+     2248,
+     539,
+     315,
+     489
+    ]
+   },
+   {
+    "p": "work/stories/VociVere_mercato_long_v6_3840x2160.mp4",
+    "t": 119.0,
+    "box": [
+     1978,
+     874,
+     360,
+     452
+    ]
+   },
+   {
+    "p": "work/stories/VociVere_mercato_long_v6_3840x2160.mp4",
+    "t": 64.0,
+    "box": [
+     1446,
+     584,
+     402,
+     531
+    ]
+   },
+   {
+    "p": "work/volti/raw_mercato/DJI_20261020044446_0124_D.MP4",
+    "t": 3.27,
+    "box": [
+     1495,
+     468,
+     366,
+     552
+    ]
+   },
+   {
+    "p": "work/stories/VociVere_mercato_long_v6_3840x2160.mp4",
+    "t": 257.0,
+    "box": [
+     2614,
+     925,
+     344,
+     443
+    ]
+   }
+  ]
+ },
+ "arthunkal": {
+  "cover": {
+   "p": "work/volti/raw_arthunkal/DJI_20261024090951_0301_D.MP4",
+   "t": 0.93,
+   "box": [
+    2490,
+    282,
+    202,
+    381
+   ]
+  },
+  "faces": [
+   {
+    "p": "work/volti/raw_arthunkal/DJI_20261024072623_0247_D.MP4",
+    "t": 1.87,
+    "box": [
+     1930,
+     110,
+     296,
+     372
+    ]
+   },
+   {
+    "p": "work/volti/raw_arthunkal/DJI_20261024091748_0310_D.MP4",
+    "t": 0.0,
+    "box": [
+     1281,
+     11,
+     427,
+     559
+    ]
+   },
+   {
+    "p": "work/stories/VociVere_arthunkal_long_4K.mp4",
+    "t": 214.0,
+    "box": [
+     1924,
+     623,
+     288,
+     390
+    ]
+   },
+   {
+    "p": "work/volti/raw_arthunkal/DJI_20261024073335_0254_D.MP4",
+    "t": 9.34,
+    "box": [
+     397,
+     421,
+     241,
+     313
+    ]
+   },
+   {
+    "p": "work/stories/VociVere_arthunkal_long_4K.mp4",
+    "t": 120.0,
+    "box": [
+     2486,
+     649,
+     287,
+     344
+    ]
+   }
+  ]
+ },
+ "te": {
+  "cover": {
+   "p": "work/te_copy/VociVere_te_long_4K.mp4",
+   "t": 161.0,
+   "box": [
+    3147,
+    190,
+    473,
+    627
+   ]
+  },
+  "faces": [
+   {
+    "p": "work/te_copy/VociVere_te_long_4K.mp4",
+    "t": 353.0,
+    "box": [
+     973,
+     445,
+     573,
+     760
+    ]
+   },
+   {
+    "p": "work/volti/raw_te/DJI_20261026113432_0348_D.MP4",
+    "t": 2.34,
+    "box": [
+     1135,
+     332,
+     185,
+     245
+    ]
+   },
+   {
+    "p": "work/volti/raw_te/DJI_20261026105115_0334_D.MP4",
+    "t": 2.34,
+    "box": [
+     1246,
+     265,
+     155,
+     174
+    ]
+   },
+   {
+    "p": "work/volti/raw_te/DJI_20261026112605_0344_D.MP4",
+    "t": 11.68,
+    "box": [
+     235,
+     572,
+     160,
+     229
+    ]
+   },
+   {
+    "p": "work/volti/raw_te/DJI_20261026112114_0342_D.MP4",
+    "t": 0.93,
+    "box": [
+     192,
+     557,
+     234,
+     335
+    ]
+   }
+  ]
+ }
+}

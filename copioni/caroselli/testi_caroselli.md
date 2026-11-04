@@ -52,19 +52,19 @@ Affittate per 3.000 rupie l'anno 🇮🇳 Le colline del tè di Munnar, in Keral
 Che tè bevi tu? Il video completo è sul canale.
 
 # Secondo carosello: "I volti" (Manuel, 4/11)
-Uno per ogni lungo, oltre al carosello dei fatti. Solo primi piani delle persone che Manuel ha girato (dal lungo e
-dal girato su Drive), con il filtro Voci Vere (opaco, chiaro, avvolgente, tono caldo). 7 slide 4:5: 01 copertina con
-il volto più forte + "I volti di ..." + luogo; 02-06 un volto per slide con una riga breve e vera (chi è o dove
-siamo); 07 logo + "Segui Voci Vere per scoprire le prossime storie". Testo e logo dentro il quadrato centrale.
+Uno per ogni lungo, oltre al carosello dei fatti. Primi piani veri delle persone girate (dal lungo e dal girato su
+Drive, trovati con il rilevatore di volti, Manuel e la sua ragazza esclusi), filtro Voci Vere scuro (neri profondi,
+colore spento, vignetta forte). 7 slide 4:5: 01 copertina con il volto più forte + "I volti di ..." + luogo e una riga
+di contesto; 02-06 un volto per slide, senza scritte; 07 logo + "Segui Voci Vere per scoprire le prossime storie".
 File: copioni/caroselli/<video>_volti/01-07.jpg, su Drive in montati/<video>/carosello_volti/.
-Rigenerare: `python3 copioni/caroselli/carosello_volti.py [video]` (fotogrammi in work/volti/f/, sorgenti nello script).
+Rigenerare: `python3 copioni/caroselli/carosello_volti.py [video]` (volti scelti in copioni/caroselli/volti_scelti.json).
 Il chai master del tè NON c'è: non ha voluto parlare, quindi niente volto.
 
 ## Mercato, i volti
 Posizione IG/YT: Marari Beach, Mararikulam (Alappuzha, Kerala)
 Didascalia IG:
 I volti del mercato del pesce di Marari 🇮🇳
-Chi prepara le reti, chi pesca da trent'anni, chi compra all'asta sulla sabbia. Ogni mattina, sulla costa del Kerala.
+Chi pesca, chi vende, chi compra all'asta sulla sabbia. Ogni mattina, sulla costa del Kerala.
 Chi ti è rimasto in mente? Scrivilo nei commenti.
 Tutta la storia nel video sul canale, link in bio.
 #kerala #india #vocivere #marari #ritratti
@@ -76,7 +76,7 @@ Tutta la storia nel video: [link al lungo]
 Posizione IG/YT: St. Andrew's Basilica, Arthunkal (Alappuzha, Kerala)
 Didascalia IG:
 I volti del pellegrinaggio di Arthunkal 🇮🇳
-13 km a piedi, di notte, lungo la costa del Kerala fino alla basilica. Elizabeth, 26 anni, era qui per la prima volta.
+13 km a piedi, di notte, lungo la costa del Kerala fino alla basilica. Per qualcuno era la prima volta.
 Chi ti è rimasto in mente? Scrivilo nei commenti.
 Tutta la storia nel video sul canale, link in bio.
 #kerala #india #vocivere #arthunkal #ritratti
