@@ -31,7 +31,7 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 
 Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01Htfbh2Xp2z2rbRNGYUwBKL (dal 29/10 sera, prossimo video; meenakshi era session_01Htfbh1ny4yyq4niKggdc3h),
 Pianificazione session_01Htfbh2bajkKHUYyPHPM7ru (dal 29/10), Copy session_01Htfbh1edWrAWmq9z8TR8Ss (dal 4/11 sera),
-Insights session_01HtfbgyzAxUCZDsgATkknE1, Audio session_01Htfbh1kXiyxeoJVcNiDrAt (dal 28/10).
+Insights session_01HtfbgxeFrmgvhNi9P52eKk (dal 4/11), Audio session_01Htfbh1kXiyxeoJVcNiDrAt (dal 28/10).
 
 FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
 1. Pianificazione (fatti, riprese), Copy (domande, parti in camera, voiceover, testi a schermo), Insights (cosa
