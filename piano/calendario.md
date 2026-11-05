@@ -247,3 +247,6 @@ comorin); TESTI_*.txt su Drive sostituiti. Regola in `regole/copy.md`.
 Nota da Copy, 5/11 (richiesta di Montaggio con l'ok di Manuel): sottotitoli it/en di arthunkal (v5, 6:21) e te (v8, 6:26)
 spostati sui lunghi nuovi e sostituiti su Drive (montati/<video>/sottotitoli/); capitoli it/en aggiornati nelle descrizioni
 (copioni/arthunkal_pacchetto.md, copioni/te_pacchetto.md e TESTI_*.txt su Drive). Script: projects/arthunkal/sottotitoli/shift_v5.py.
+
+Nota da Copy, 5/11 sera: domande, parti in camera e riprese in più per `coir` e `erosione` (riprese del 6/11) in
+`copioni/coir_testi.md` e `copioni/erosione_testi.md`. Il voiceover si scrive dopo, sul girato.
