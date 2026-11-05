@@ -4,7 +4,7 @@ Formato reporter come `te`. Fatti e fonti in `piano/erosione.md`. Tono: racconta
 Le persone parlano della loro casa e della loro vita, non della loro disgrazia: niente lacrime cercate, niente zoom sul dolore.
 Numeri, date, cause: dalle loro parole. Le cause (porto o clima) sono due versioni: si attribuiscono, non si decidono.
 
-## DA CHIEDERE (consenso prima, sempre)
+## DA CHIEDERE (in inglese)
 Le domande 1, 2 e 4 a più famiglie: le risposte diverse, una dopo l'altra, fanno il racconto.
 1. (a tutti) Dov'era la tua casa? Me lo indichi da qui?
    Where was your house? Can you point to it from here?
@@ -35,7 +35,7 @@ Chiusura, una riga, senza morale (es. "Qui la casa è dove il mare non è ancora
 - Il mare che arriva sul muro: 10 s fermi, più audio pulito delle onde (30 s, senza voce).
 - Una vista larga della costa senza spiaggia, da un punto alto, se c'è.
 - Ogni persona intervistata: 3-4 s ferma che guarda in camera (carosello dei volti), senza microfono in vista.
-- Vita normale intorno: barche, reti, bambini che giocano (solo con l'ok dei genitori), per non fare solo un racconto di perdita.
+- Vita normale intorno: barche, reti, bambini che giocano, per non fare solo un racconto di perdita.
 
 Nota (Manuel, 5/11): se sul posto salari, tempi e numeri non vengono fuori bene dalle persone, si possono dire nel
 VOICEOVER, presi da fonti verificate e detti con la fonte ("secondo ..."). Mai numeri discordanti tra fonti: lì "si stima"

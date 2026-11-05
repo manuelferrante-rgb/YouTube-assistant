@@ -1,9 +1,9 @@
 # Le donne del coir, Anchuthengu e Nedunganda (Copy, 5/11 sera, per le riprese del 6/11)
 
 Formato reporter come `te`: Manuel in camera racconta mentre cammina e incontra le persone. Fatti e fonti in `piano/coir.md`.
-Salari, tempi, numeri: SOLO dalle parole delle persone. In camera solo le linee generali qui sotto, con la fonte.
+Salari, tempi, numeri: prima dalle parole delle persone; se mancano, nel voiceover da fonti verificate (nota in fondo).
 
-## DA CHIEDERE (consenso prima, sempre; in inglese, o con chi traduce dal malayalam)
+## DA CHIEDERE (in inglese, o con chi traduce dal malayalam)
 Le domande 1, 2 e 3 a più donne (almeno 2-3): nel montaggio si mettono in fila le risposte diverse.
 1. (a tutte) Da quanti anni fai questo lavoro? Chi te l'ha insegnato?
    How many years have you done this work? Who taught you?
