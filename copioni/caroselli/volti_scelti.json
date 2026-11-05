@@ -1,67 +1,78 @@
 {
  "mercato": {
   "cover": {
-   "p": "work/stories/VociVere_mercato_long_v6_3840x2160.mp4",
-   "t": 277.0,
+   "p": "work/volti/raw_mercato/DJI_20261020044446_0124_D.MP4",
+   "t": 3.33,
    "box": [
-    2739,
-    519,
-    329,
-    460
-   ]
+    693,
+    560,
+    229,
+    279
+   ],
+   "W": 3840,
+   "H": 2160,
+   "id": "14_0"
   },
   "faces": [
    {
-    "p": "work/stories/VociVere_mercato_long_v6_3840x2160.mp4",
-    "t": 196.0,
+    "p": "work/volti/raw_mercato/DJI_20261020044058_0118_D.MP4",
+    "t": 20.0,
     "box": [
-     2248,
-     539,
-     315,
-     489
-    ]
+     2759,
+     633,
+     362,
+     490
+    ],
+    "W": 3840,
+    "H": 2160,
+    "id": "3_1"
    },
    {
-    "p": "work/stories/VociVere_mercato_long_v6_3840x2160.mp4",
-    "t": 119.0,
+    "p": "work/volti/raw_mercato/DJI_20261020040222_0085_D.MP4",
+    "t": 15.67,
     "box": [
-     1978,
-     874,
-     360,
-     452
-    ]
+     3011,
+     1551,
+     257,
+     315
+    ],
+    "W": 3840,
+    "H": 2160,
+    "id": "35_1",
+    "zoom": 2.3,
+    "dx": -0.6
    },
    {
-    "p": "work/stories/VociVere_mercato_long_v6_3840x2160.mp4",
-    "t": 64.0,
+    "p": "work/volti/raw_mercato/DJI_20261020040505_0089_D.MP4",
+    "t": 5.0,
     "box": [
-     1446,
-     584,
-     402,
-     531
-    ]
+     3143,
+     1093,
+     209,
+     254
+    ],
+    "W": 3840,
+    "H": 2160,
+    "id": "19_1"
    },
    {
-    "p": "work/volti/raw_mercato/DJI_20261020044446_0124_D.MP4",
-    "t": 3.27,
+    "p": "work/volti/raw_mercato/DJI_20261020043956_0117_D.MP4",
+    "t": 2.0,
     "box": [
-     1495,
-     468,
-     366,
-     552
-    ]
-   },
-   {
-    "p": "work/stories/VociVere_mercato_long_v6_3840x2160.mp4",
-    "t": 257.0,
-    "box": [
-     2614,
-     925,
-     344,
-     443
-    ]
+     1697,
+     957,
+     247,
+     281
+    ],
+    "W": 3840,
+    "H": 2160,
+    "id": "5_2"
    }
-  ]
+  ],
+  "closing": {
+   "p": "work/volti/raw_mercato/DJI_20261020043956_0117_D.MP4",
+   "t": 3.0
+  }
  },
  "arthunkal": {
   "cover": {

@@ -91,7 +91,7 @@ Tutta la storia nel video: [link al lungo]
 Posizione IG/YT: Munnar, Kerala
 Didascalia IG:
 I volti del tè di Munnar 🇮🇳
-Sadish, che ci ha portati tra i filari, e chi abbiamo incontrato sulla strada per arrivarci, in Kerala.
+Sadish tra i filari, il signore che fa il chai e chi abbiamo incontrato sulla strada, in Kerala.
 Chi ti è rimasto in mente? Scrivilo nei commenti.
 Tutta la storia nel video sul canale, link in bio.
 #kerala #india #vocivere #munnar #ritratti
