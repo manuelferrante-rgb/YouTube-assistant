@@ -127,3 +127,9 @@ Testo di una ricerca con IA incollato da Manuel. Verificato quello che si poteva
   stimata da Varkala (9-12 km): se supera i 30 minuti di auto, Manuel decide.
 Ordine proposto: 1) società Anathalavattom (chiedere "Anathalavattom coir society", Chirayinkeezhu/Kadakkavoor); 2) Anchuthengu: panchayat, mercato, cortili;
 3) Vakkom e Akathumuri solo se strada facendo si vede il coir.
+
+## Decisione 5/11 (Manuel): formato reporter, come `te`
+Meno prima/dopo nello stesso punto. Manuel fa il reporter in camera e spiega la storia mentre cammina e incontra le persone, come nel lungo `te`
+(storia, chi lavora oggi, cosa cambia). Il prima e dopo resta solo se capita, non si cerca. Restano: Manuel in camera dentro l'azione, audio
+ambiente pulito 30 s, interviste con consenso. Le parti da dire e le domande le scrive Copy dai fatti sopra (`copioni/coir_testi.md`).
+Ordine di domani: Anchuthengu presto (camminata, cortili), poi società Anathalavattom a tarda mattina (messaggio WhatsApp scritto il 5/11).
