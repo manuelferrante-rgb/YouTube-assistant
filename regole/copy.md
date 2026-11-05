@@ -79,12 +79,17 @@ Caroselli e storie (Manuel, 29/10, riferimenti latiumani e Progetto Happiness; p
   citazione). 2-3 slide video con il testo che compare (per il post YouTube il loro fotogramma .jpg).
 - Storie: 3 set da 6 per ogni lungo (non 2 da 10, non 2 set: confermato da Manuel il 4/11). Solo la domanda, mai la scritta "quiz".
 - PACCHETTO DI OGNI LUNGO (Manuel, 4/11): 3 set di storie da 6, 2 caroselli, 1 teaser, 3 reel.
-- Secondo carosello "I volti" (Manuel, 4/11): PRIMI PIANI VERI (il viso riempie la foto, ritaglio ~2.5 volte il
-  viso) delle persone girate, trovati con il rilevatore di volti su lungo e girato; mai Manuel né la sua ragazza,
-  niente volti di chi non ha voluto parlare. Filtro Voci Vere SCURO (riferimento di Manuel: ritratto del minatore):
-  neri profondi, colore spento, contrasto sul viso, vignetta forte. Volti SENZA SCRITTE e senza logo; solo la
-  copertina ha "I volti di ..." + luogo + una riga di contesto. Ultima slide logo + "Segui Voci Vere per scoprire le
-  prossime storie". Generatore `copioni/caroselli/carosello_volti.py` (volti in `volti_scelti.json`).
+- Secondo carosello "I volti" (Manuel, 4/11, rifatto il 5/11): RITRATTI che sembrano foto in posa, mai fotogrammi
+  presi a metà di un movimento: persona ferma che guarda in camera (i migliori), o di tre quarti/profilo se sembra una
+  foto fatta bene. Dal girato originale, qualità più alta possibile (fotogramma più nitido, ritaglio viso e spalle).
+  Filtro LEGGERO, un po' caldo e naturale (non più quello scuro del minatore). OGNI PERSONA UNA VOLTA SOLA nel
+  carosello, copertina compresa (Manuel, 5/11). Niente microfoni in vista (Manuel, 5/11): se un volto ha il
+  microfono addosso si cerca un altro momento, non si ritocca. Ordine: 01 copertina con un volto forte ma NON il più
+  forte, 02 il volto più forte. Ultima slide senza volti: una foto significativa del luogo, sfocata, sotto il logo. Mai Manuel né la sua ragazza; niente volti di chi non ha voluto parlare
+  e niente guardie o polizia. Volti SENZA SCRITTE e senza logo; solo la copertina ha "I volti di ..." + luogo + una
+  riga di contesto. Ultima slide logo + "Segui Voci Vere per scoprire le prossime storie". Generatore
+  `copioni/caroselli/carosello_volti.py` (scelta in `volti_scelti.json`); candidati con `volti_scan.py` (YuNet + SFace
+  sul girato, Manuel escluso) e provino con `volti_review.py`, scelta scritta con `volti_set.py`.
 - Caroselli anche su YouTube (Manuel, 4/11): ogni carosello esce anche come post YouTube, con il link al lungo nel testo. Insights poi controlla i numeri.
 
 Chiusura dei verticali (Manuel, 29/10, primo esempio: meenakshi): frase **Ascolta altre voci, su** + logo Voci Vere
