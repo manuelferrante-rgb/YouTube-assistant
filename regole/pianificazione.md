@@ -47,3 +47,6 @@
   Vale per mercato, arthunkal, te e per i lunghi A, B, C. I caroselli escono anche come post YouTube con il link al lungo, lo stesso giorno di IG.
   Il carosello "I volti" va in un giorno diverso dal lungo e dall'altro carosello, a qualche giorno di distanza. Stories: set 1 il lunedì dopo il lungo, set 3 il
   mercoledì, set 2 il venerdì (giorni liberi). Sostituisce "2 set di stories e 1 carosello".
+- Limiti aggiornati da Manuel il 5/11 (scritti anche in CLAUDE.md, sezione Limiti): non ricordargli il consenso, se registra lo ha; niente tono da
+  salvatore; poco sfruttamento della sofferenza per il clickbait, ma non troppo; salari e dati dalle parole degli intervistati, e le linee generali
+  da fonti online verificate, con la fonte. Sostituisce nelle liste riprese la riga \"solo con consenso\" e \"salari solo parole loro\".

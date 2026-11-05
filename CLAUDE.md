@@ -8,12 +8,14 @@ Coordinate del mercato di Marari per la mappa: 9.62646 N, 76.29600 E (date da Ma
 Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente supporto editoriale lì.
 
 ## Limiti (sempre)
-- Niente riprese o narrazioni che sfruttano la sofferenza per engagement.
+- Sofferenza e clickbait (Manuel, 5/11): poco sfruttamento per il clickbait, ma non troppo. Mai al centro del racconto.
 - Ogni contenuto contestualizzato (paese, regione, situazione), mai generalizzazioni.
 - Framing "raccontare", mai "salvare" o "aiutare dall'alto". Niente tono da salvatore bianco.
 - Nel copy: "paesi a basso/medio reddito" o il nome del paese, mai "sottosviluppati" (anche se Manuel lo dice a voce).
-- Storie di persone solo con il loro consenso. Manuel lo raccoglie prima di caricare: nel girato che manda il
-  consenso c'è sempre, non chiederlo.
+- Storie di persone solo con il loro consenso. Se Manuel sta registrando, ce l'ha: non ricordarglielo mai
+  (Manuel, 5/11). Nel girato che manda il consenso c'è sempre, non chiederlo.
+- Salari e dati (Manuel, 5/11): vanno bene dalle parole degli intervistati, attribuite a loro. Le linee generali
+  si possono prendere online da fonti verificate (le cerca Claude), con la fonte indicata.
 - Stile: diretto, concreto, niente retorica. Mai il trattino lungo.
 
 ## Chat di lavoro (dal 25/10)
