@@ -1,4 +1,4 @@
-## PACCHETTO DEFINITIVO (27/10, montato v4 6:49 approvato da Manuel)
+## PACCHETTO DEFINITIVO (27/10, montato v4 6:49 approvato da Manuel; 5/11: lungo v5 6:21, capitoli e sottotitoli aggiornati da Copy)
 Tutto su Drive, cartella "Festa pellegrinaggio Kerala" -> montati/arthunkal/: sottotitoli/ (.it.srt, .en.srt),
 miniatura/ (DEFINITIVA_D_mezzanotte.jpg, scelta di Manuel 27/10), carosello/ (01-08). Uscite (Pianificazione): teaser sab 7/11, lungo dom 8/11,
 reel lun-gio con il carosello mercoledì.
@@ -27,14 +27,14 @@ Voci Vere racconta le persone e i luoghi lontani dalle cartoline, dando voce a c
 Capitoli
 0:00 Prima dell'alba
 0:34 Il giorno prima
-1:13 2:30 di notte
-1:35 L'alba sulla spiaggia
-1:53 Chi cammina
-4:05 Chi non cammina
-4:42 In strada
-5:02 L'arrivo ad Arthunkal
-5:30 La storia
-6:01 Il ritorno
+0:44 2:30 di notte
+1:07 L'alba sulla spiaggia
+1:25 Chi cammina
+3:37 Chi non cammina
+4:14 In strada
+4:34 L'arrivo ad Arthunkal
+5:02 La storia
+5:32 Il ritorno
 
 #Kerala #India #VociVere
 
@@ -54,14 +54,14 @@ Voci Vere tells the stories of people and places far from the postcards, giving 
 Chapters
 0:00 Before dawn
 0:34 The day before
-1:13 2:30 a.m.
-1:35 Dawn on the beach
-1:53 Those who walk
-4:05 Those who don't walk
-4:42 On the road
-5:02 Arriving in Arthunkal
-5:30 The history
-6:01 The way back
+0:44 2:30 a.m.
+1:07 Dawn on the beach
+1:25 Those who walk
+3:37 Those who don't walk
+4:14 On the road
+4:34 Arriving in Arthunkal
+5:02 The history
+5:32 The way back
 
 #Kerala #India #VociVere
 
