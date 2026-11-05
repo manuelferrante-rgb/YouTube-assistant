@@ -116,3 +116,14 @@ Nessun nome di società o contatto verificato online: le fonti danno solo l'area
 Ordine per Manuel: panchayat e mercato di Anjengo, poi la società o il cortile indicati, poi l'acqua dell'ammollo. Dopo il sopralluogo la lista riprese sopra
 resta valida.
 Fonti: The News Minute (Chirayinkeezhu), CPPR "Anjengo coir", Lok Sabha (interventi sul declino).
+
+## Dove andare dalla base reale (Pianificazione, 5/11): Taaraa Loca è a Ayroor, Edava, a nord di Varkala
+Testo di una ricerca con IA incollato da Manuel. Verificato quello che si poteva:
+- CONFERMATO: la Anathalavattom Coir Cooperative Society esiste, a Chirayinkeezhu (The News Minute: segretario Ashokan, articolo vecchio, il ruolo può
+  essere cambiato; Wikipedia: nata da Anathalavattom Anandan, sindacalista del coir, che nel 1958 organizzò i lavoratori). Se sia aperta oggi: da verificare sul posto.
+- NON CONFERMATO (nessuna fonte): coir filato a mano a Vakkom e Akathumuri (i due luoghi esistono, nelle fonti non c'è il coir); il "grande capannone aperto con
+  ingresso libero" della società; gli orari "8-11 e dopo le 16" (consiglio generico). Anchuthengu: già nel piano, fonte CPPR.
+- Direzioni e tempi del testo incoerenti: da controllare su Maps, appena la rete lo permette. Da Ayroor la distanza è più lunga di quella
+  stimata da Varkala (9-12 km): se supera i 30 minuti di auto, Manuel decide.
+Ordine proposto: 1) società Anathalavattom (chiedere "Anathalavattom coir society", Chirayinkeezhu/Kadakkavoor); 2) Anchuthengu: panchayat, mercato, cortili;
+3) Vakkom e Akathumuri solo se strada facendo si vede il coir.
