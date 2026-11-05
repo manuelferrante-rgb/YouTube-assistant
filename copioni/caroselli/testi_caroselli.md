@@ -54,8 +54,11 @@ Che tè bevi tu? Il video completo è sul canale.
 # Secondo carosello: "I volti" (Manuel, 4/11)
 Uno per ogni lungo, oltre al carosello dei fatti. Primi piani veri delle persone girate (dal lungo e dal girato su
 Drive, trovati con il rilevatore di volti, Manuel e la sua ragazza esclusi), filtro Voci Vere scuro (neri profondi,
-colore spento, vignetta forte). 7 slide 4:5: 01 copertina con il volto più forte + "I volti di ..." + luogo e una riga
-di contesto; 02-06 un volto per slide, senza scritte; 07 logo + "Segui Voci Vere per scoprire le prossime storie".
+colore spento, vignetta forte). RIFATTO IL 5/11 (Manuel): ritratti che sembrano foto in posa (ferme, sguardo in camera
+o di tre quarti), dal girato originale, filtro leggero caldo e naturale, ogni persona una volta sola. Slide 4:5:
+01 copertina con un volto forte (non il più forte) + "I volti di ..." + luogo e una riga di contesto; 02 il volto più
+forte; poi un volto per slide, senza scritte; ultima: foto del luogo sfocata (niente volti) + logo + "Segui Voci Vere
+per scoprire le prossime storie".
 File: copioni/caroselli/<video>_volti/01-07.jpg, su Drive in montati/<video>/carosello_volti/.
 Rigenerare: `python3 copioni/caroselli/carosello_volti.py [video]` (volti scelti in copioni/caroselli/volti_scelti.json).
 Il chai master del tè NON c'è: non ha voluto parlare, quindi niente volto.
@@ -95,3 +98,16 @@ Tutta la storia nel video sul canale, link in bio.
 Post YouTube:
 I volti del tè di Munnar, in Kerala 🇮🇳 Sadish tra i filari, e chi abbiamo incontrato lungo la strada.
 Tutta la storia nel video: [link al lungo]
+
+## Meenakshi, i volti (5/11)
+Tre persone davanti al tempio: la signora che prega a mani giunte (copertina), la signora anziana (la più forte), il
+signore col segno sulla fronte. Ultima slide: la torre del tempio. Drive (cartella meenakshi) montati/meenakshi/carosello_volti/.
+Posizione IG/YT: Meenakshi Amman Temple, Madurai
+Didascalia IG:
+I volti del tempio di Meenakshi 🇮🇳
+La sera, davanti al tempio, a Madurai, nel Tamil Nadu. Chi viene a pregare e chi ci passa ogni giorno.
+Chi ti è rimasto in mente? Scrivilo nei commenti.
+#india #tamilnadu #madurai #vocivere #ritratti
+Post YouTube (stesse immagini):
+I volti del tempio di Meenakshi, a Madurai 🇮🇳 La sera, davanti al tempio.
+Il video: [link allo Short di Meenakshi]
