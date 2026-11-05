@@ -133,3 +133,7 @@ Meno prima/dopo nello stesso punto. Manuel fa il reporter in camera e spiega la 
 (storia, chi lavora oggi, cosa cambia). Il prima e dopo resta solo se capita, non si cerca. Restano: Manuel in camera dentro l'azione, audio
 ambiente pulito 30 s, interviste con consenso. Le parti da dire e le domande le scrive Copy dai fatti sopra (`copioni/coir_testi.md`).
 Ordine di domani: Anchuthengu presto (camminata, cortili), poi società Anathalavattom a tarda mattina (messaggio WhatsApp scritto il 5/11).
+
+Nota 5/11 sera (Manuel): trovata la Nedunganda Coir Society (nome da Manuel, nessuna fonte online verificata da me), più vicina della società di Anathalavattom. Sostituisce Anathalavattom
+nel giro di domani (6/11); Anathalavattom resta di riserva. Nedunganda è citata anche nelle fonti sull'erosione (Onmanorama 2022, tratto di costa senza spiaggia a nord di Muthalapozhi):
+il posto può servire anche a `erosione` (`piano/erosione.md`).
