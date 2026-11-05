@@ -279,3 +279,14 @@ con il payoff, ~2 s): dettagli in `regole/copy.md`, sezione "Chiusura dei vertic
 FORMATO DEI REEL (Manuel, 29/10, dal reel meenakshi): `regole/formato_reel.md`. Prevale sulle note sui verticali
 sopra dove sono diverse (titoli Poppins ExtraBold oro su bianco, sottotitoli su fascia scura, tutto a 1.1x, nessuna
 pausa tra le frasi, chiusura "Ascolta altre voci, su" + logo su velo leggero).
+
+## Banner nei lunghi: REGOLA STABILE (Manuel 5/11, approvata sul tè e su arthunkal)
+- Due banner piccoli in basso al centro (4.5% dal fondo), con la foto profilo del canale
+  (`assets/brand/avatar_youtube.png`) e piccoli click di mouse quando il cursore clicca:
+  1. "iscriviti" (4.9 s): appena finisce la sigla, quando Manuel inizia a parlare. Cursore su ISCRIVITI (diventa
+     ISCRITTO), campanella (si riempie e oscilla), Hype (si accende).
+  2. "like" (3.9 s): a metà video, in un tratto calmo (voiceover su B-roll). Cursore su Mi piace e Commenta.
+- Mai sopra sottotitoli, etichette o scritte in basso al centro: scegliere il punto guardando i fotogrammi.
+- Codice: `tools/subscribe_banner.py` (grafica e click), `tools/apply_banners.py in out --iscriviti T --like T`
+  (sul lungo finito, ricodifica solo i tratti dei banner). Click a volume 0.45 nel mix.
+- Ultimi 10-15 s di ogni lungo senza volti in primo piano (schermata finale di Studio, Manuel 4/11).

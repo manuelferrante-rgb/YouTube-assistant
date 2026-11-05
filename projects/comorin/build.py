@@ -18,6 +18,7 @@ sys.path.insert(0, f"{ROOT}/tools")
 from doc_render import run
 from reel_kit import Reel
 from voice_clean import cleaned
+import reel_close as RC
 
 PREVIEW = "--preview" in sys.argv
 WORK = f"{ROOT}/work/comorin"
@@ -157,10 +158,12 @@ def cocco():
     t_v = r.t
     r.own(C("135906"), 0.0, speed=1.35)(1.5)                    # 6.5-8 di nuovo lui che taglia, senza scritta
     t_b = r.t
-    r.gen(logo_card(W, H, 2.4, C("135906"), 1.5 * 1.35))(2.4)   # chiusura: lui continua sotto il velo (fino a 4.4 s)
+    # chiusura stabile (Manuel 5/11): scritta subito, logo 0.8 s dopo; lui continua sotto il velo, mai oltre 4.4 s del clip
+    r.own(C("135906"), 1.5 * 1.35, speed=1.35)(RC.LOGO_DELAY)
+    r.gen(RC.logo_card(OUT, W, H, 2.4, C("135906"), (1.5 + RC.LOGO_DELAY) * 1.35, speed=0.55, variant="A"))(2.4)
     end = r.t
     r.title(0.0, t_v, "Prendi, taglia, porgi. Ricomincia", "Tag", 400)
-    r.title(t_b, end, CTA, "TagIn", 400)
+    r.title(t_b, end, RC.CTA, RC.VARIANTS["A"]["style"], 400)
     # musica: il groove fino alla battuta 8.0, poi il finale del brano (da 16.0, anche lui inizio di battuta)
     tl.music(0.0, t_b + 0.02, f"{AUD}/musica_cocco.flac", offset=0.0, level=1.0, fin=0.01, fout=0.02, duck=False, norm=False)
     tl.music(t_b, end, f"{AUD}/musica_cocco.flac", offset=16.0, level=1.0, fin=0.02, fout=0.6, duck=False, norm=False)
@@ -192,12 +195,7 @@ def canna():
     r.title(at(t5, C5, word_t(C5, "più")), r.t, "Più di 1500 anni fa", "Tag", 400)
     t_b = r.t
     r.cap_stop.append(t_b)
-    r.own(C("140724"), 2.2)(0.9)                                # il chiosco intero
-    t_last = r.t
-    r.own(C("140622"), 0.3)(2.0)                                # lui ai rulli (viso sotto il titolo, non coperto)
-    r.gen(logo_card(W, H, 2.0, C("140622"), 2.3))(2.0)
-    end = r.t
-    r.title(t_b, end, CTA, "TagIn", 400)
+    _, end = RC.close(r, OUT, C("140622"), 0.3, variant="B")       # lui ai rulli; logo 0.8 s dopo la scritta (5/11)
     cue(tl, t_b - 0.05, "cue_canna_chiusura", end - t_b + 0.05, 0.45, fout=1.0)   # subito sulla fine della voce: niente buco
     music(tl, "musica_canna", t_b, end)
     tl.audio_map = {VO_CANNA: cleaned(VO_CANNA, f"{WORK}/voce")}
@@ -241,11 +239,8 @@ def statua():
     r.cap_stop.append(t_b)
     # chiusura (Manuel 4/11): ferma sulla statua, nel tratto più stabile di 130308 (6.0-8.2 s, misurato con la
     # correlazione di fase: <0.3 px a fotogramma), rallentato a 0.45x; il logo sfuma sullo stesso tratto
-    r.gen(C("130308"), 6.0, speed=0.45, grade="eq=contrast=1.03:saturation=1.05")(2.9)   # muta (atempo non va sotto 0.5)
-    t_last = t_b + 0.9
-    r.gen(logo_card(W, H, 2.0, C("130308"), 6.0 + 2.9 * 0.45, speed=0.45))(2.0)
-    end = r.t
-    r.title(t_b, end, CTA, "TagIn", 400)
+    _, end = RC.close(r, OUT, C("130308"), 6.0, variant="A", speed=0.45,      # muta (atempo non va sotto 0.5)
+                      own=r.gen(C("130308"), 6.0, speed=0.45, grade="eq=contrast=1.03:saturation=1.05"))
     cue(tl, t_b - 0.05, "cue_statua_chiusura", end - t_b + 0.05, 0.45, fout=1.0)   # subito sulla fine della voce: niente buco
     music(tl, "musica_statua", t_b, end)
     tl.audio_map = {VO_STATUA: cleaned(VO_STATUA, f"{WORK}/voce")}

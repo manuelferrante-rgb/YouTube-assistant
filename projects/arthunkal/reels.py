@@ -17,6 +17,7 @@ import build as B                                         # clip C(), grafiche s
 from doc_render import run
 from reel_kit import Reel
 from voice_clean import cleaned
+import reel_close as RC
 
 PREVIEW = "--preview" in sys.argv
 WORK, OUT, C, NIGHT = B.WORK, f"{B.WORK}/out_reel", B.C, B.NIGHT
@@ -119,24 +120,19 @@ def reel(tag):
     return Reel(f"{OUT}/{tag}_{W}_work", W, H, speed=1.0, gap=0.0, amb=0.0, cap_box=True)
 
 
-def close(r, place, person, tail_title=None, logo_a=None):
-    """Chiusura fissa: luogo ~0.9 s, ultima persona 2 s, logo 2 s; "Ascolta altre voci, su" quando spariscono i
-    sottotitoli. tail_title: domanda del teaser sul luogo e sulla persona (il CTA allora entra sul logo)."""
+def close(r, place, person, tail_title=None, variant="A"):
+    """Chiusura stabile (Manuel 5/11, tools/reel_close.py): "Ascolta altre voci, su" sull'ultima persona appena spariscono
+    i sottotitoli, il logo 0.8 s dopo; variante A o B alternata tra i reel. tail_title (teaser): la domanda prima, sul
+    luogo (1.2 s)."""
     t_b = r.t
     r.cap_stop.append(t_b)
-    r.own(*place)(0.9)
+    if tail_title:
+        r.own(*place)(1.2)
+        r.title(t_b, r.t, tail_title, "Tag", 400)
     src, a = person[:2]
     cx = person[2] if len(person) > 2 else 0.5
     gr = person[3] if len(person) > 3 else GR
-    r.own(src, a, cx=cx, grade=gr)(2.0)
-    t_logo = r.t
-    r.gen(logo_card(r.W, r.H, 2.0, src, a + 2.0 if logo_a is None else logo_a, grade=gr, cx=cx))(2.0)
-    end = r.t
-    if tail_title:
-        r.title(t_b, t_logo, tail_title, "Tag", 400)
-        r.title(t_logo, end, CTA, "TagIn", 400)
-    else:
-        r.title(t_b, end, CTA, "TagIn", 400)
+    _, end = RC.close(r, OUT, src, a, variant=variant, grade=gr, cx=cx)
     r.tl.music(0.0, t_b + 0.3, MUSICA, offset=0.0, level=MUS_LEVEL, fin=0.05, fout=0.3, duck=False, norm=False)
     r.tl.music(t_b, end, MUSICA, offset=t_b, level=MUS_UP, fin=0.1, fout=1.0, duck=False, norm=False)
     return t_b
@@ -211,7 +207,7 @@ def v2():
     r.cam(BAS, 11.40, 15.28, words=wb(11.1, 15.9), pad=PAD)                             # "Qui lo chiamano ancora Veluthachan..."
     r.narr(BAS, 16.62, 17.9, [(r.gen(sC), None)], words=wb(16.15, 17.9), pad=PAD)         # "1647"
     r.narr(BAS, 17.9, 20.32, [(r.own(C("091405"), 0.5), None)], words=wb(17.9, 20.6), pad=(0.0, 0.06))  # la statua
-    close(r, (C("090903"), 0.5), (C("091255"), 0.9))
+    close(r, (C("090903"), 0.5), (C("091255"), 0.9), variant="B")
     return finish(r, "v2_statua", [BAS])
 
 
@@ -228,7 +224,7 @@ def v3():
     r.cam(PEL, 47.3, 49.3, cx=cx, pad=PAD, block=[(47.35, 49.3, "Lì succedono tanti miracoli.", "")])
     r.cam(PEL, 51.25, 57.0, cx=cx, pad=PAD, block=[(51.3, 55.5, "Chi partecipa ci trova qualcosa.", ""),
                                                    (56.0, 57.0, "Un po' di felicità.", "")])
-    close(r, (C("085422"), 1.0), (PEL, 57.1, cx), logo_a=55.2)
+    close(r, (C("085422"), 1.0), (PEL, 57.05, cx))
     return finish(r, "v3_persona", [M, PEL])
 
 
@@ -253,7 +249,7 @@ def v4():
     say(r, M, L4, [(r.own(C("085345"), 0.0), None)])
     t5 = say(r, M, L5, [(r.own(C("085208"), 1.0), None)])
     r.title(t5 + 0.6, r.t, "Dal 2002", "Tag", 400)
-    close(r, (C("075209"), 1.0), (C("073335"), 6.5))
+    close(r, (C("075209"), 1.0), (C("073335"), 6.5), variant="B")
     return finish(r, "v4_come_funziona", [M, K, P])
 
 

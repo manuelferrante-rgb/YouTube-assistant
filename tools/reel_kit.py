@@ -181,6 +181,7 @@ class Reel:
                 f"Style: Orig,Poppins,{S(44)},&H00E6E6E6,&H00FFFFFF,&H00000000,&H80000000,0,-1,0,0,100,100,0,0,1,{S(3)},{S(2)},5,0,0,0,1\n"
                 f"Style: CapT,Poppins,{S(58)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1\n"
                 f"Style: Tag,VV Titolo,{S(TAG_SIZE)},&H004B8AB6,&H004B8AB6,&H00FFFFFF,&H00000000,0,0,0,0,100,100,0,0,3,{S(TAG_PAD)},0,5,0,0,0,1\n"
+                f"Style: TagB,VV Titolo,{S(TAG_SIZE)},&H00FFFFFF,&H00FFFFFF,&H004B8AB6,&H00000000,0,0,0,0,100,100,0,0,3,{S(TAG_PAD)},0,5,0,0,0,1\n"
                 f"Style: Small,Poppins,{S(46)},&H004B8AB6,&H00FFFFFF,&H00000000,&H90000000,-1,0,0,0,100,100,1,0,1,{S(3)},{S(2)},5,0,0,0,1\n\n"
                 "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
         ev, y_cap, y_orig = [], S(1180), S(1440)
@@ -209,7 +210,8 @@ class Reel:
             else:
                 ev.append((1, a, b, "Orig", f"{{\\an5\\pos({W // 2},{y_orig})}}{txt}"))
         for a, b, txt, st, y in self.titles:
-            soft = st == "TagIn"   # come Tag ma entra piano (Manuel 4/11: la frase finale non di colpo)
+            soft = st in ("TagIn", "TagInB")   # come Tag ma entra piano (Manuel 4/11: la frase finale non di colpo)
+            style = "TagB" if st == "TagInB" else ("Tag" if soft else st)   # TagB: bianco su oro (chiusura variante B, 5/11)
             st = "Tag" if soft else st
             # titolo: se una riga non ci sta (anche al 125% dell'entrata) si rimpicciolisce il carattere
             size = {"Big": 190, "Mid": 96, "Small": 46, "Tag": TAG_SIZE}.get(st, 96)
@@ -225,7 +227,7 @@ class Reel:
                 tag = f"{{\\an5\\pos({W // 2},{S(y)}){fs}\\fscx107\\fscy107\\t(0,110,\\fscx100\\fscy100)\\fad(0,100)}}"
             if soft:      # dissolvenza in entrata di 0.6 s (riquadro e scritta insieme), niente "bam"
                 tag = f"{{\\an5\\pos({W // 2},{S(y)}){fs}\\fad(600,0)}}"
-            ev.append((2, a, b, st, tag + txt))
+            ev.append((2, a, b, style, tag + txt))
         ev += self.raw_ass
         p = f"{self.dir}/reel.ass"
         with open(p, "w") as f:

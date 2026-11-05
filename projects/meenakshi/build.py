@@ -13,6 +13,7 @@ sys.path.insert(0, f"{ROOT}/tools")
 from doc_render import run
 from reel_kit import Reel
 from voice_clean import cleaned
+import reel_close as RC
 
 PREVIEW = "--preview" in sys.argv
 WORK = f"{ROOT}/work/meenakshi"
@@ -116,15 +117,9 @@ def reel():
     say(r, L6, [(r.own(C("180524"), 5.6), None)])
     t_b = r.t
     r.cap_stop.append(t_b)
-    r.own(C("180344"), 0.0)(0.9)
-    # 5. chiusura sulla signora anziana, 2 secondi (Manuel: non di più), senza voce
-    t_sig = r.t
-    r.own(C("193642"), 0.4, grade=NIGHT)(2.0)
-    # 6. logo (Copy/Manuel 29/10): "Ascolta altre voci, su" + logo con il payoff che sfuma sulla signora, 2 s
-    r.gen(logo_card(W, H, 2.0, C("193642"), 2.4))(2.0)
-    cue(tl, t_sig - 0.4, "cue_chiusura", r.t - t_sig + 0.4, 0.45, fout=1.0)   # la coda arriva alla fine del logo
-    if CTA:   # frase finale di Copy, stesso formato dei titoli, sopra la testa della signora e sopra il logo
-        r.title(t_b, r.t, CTA, "Tag", 400)                         # entra quando sparisce l'ultimo sottotitolo (cap_stop = t_b)
+    # 5. chiusura stabile (Manuel 5/11): la signora anziana, "Ascolta altre voci, su" subito, il logo 0.8 s dopo
+    RC.close(r, OUT, C("193642"), 0.4, variant="B", grade=NIGHT)
+    cue(tl, t_b - 0.05, "cue_chiusura", r.t - t_b + 0.05, 0.45, fout=1.0)   # subito sulla fine della voce, fino al logo
 
     end = r.t
     tl.music(0.0, t_b + 0.3, MUSICA, offset=0.0, level=MUS_LEVEL, fin=0.05, fout=0.3, duck=False, norm=False)

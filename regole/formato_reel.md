@@ -71,3 +71,13 @@ Nota da Insights, 4/11 (dati del mercato, YouTube Shorts e Instagram, `analisi/m
 trailer lo scorre via il 61% su IG e l'84% su YT; il reel che apre su una persona in primo piano il 25,6% su IG
 (e resta il 36% su YT, più del doppio). Quindi: primo fotogramma = la persona o il gesto più forte, già in
 movimento; mai un montaggio da trailer, nemmeno per i teaser. Da riconfermare con i prossimi reel.
+
+## Chiusura dei reel: REGOLA STABILE (Manuel 5/11, prevale sulla sezione "Chiusura" sopra)
+- Appena sparisce l'ultimo sottotitolo entra "Ascolta altre voci, su" (dissolvenza 0.6 s) sull'ultima persona o
+  sull'ultimo gesto; il logo entra 0.8 s dopo (prima arrivava dopo ~3 s: "troppo lento"), sulla stessa persona che
+  continua sotto il velo, 2 s, poi fine. Niente immagine del luogo prima della chiusura.
+- Due varianti dello stesso stile, da alternare tra i reel così non finiscono tutti uguali:
+  A = scritta oro su riquadro bianco, velo nero 35%; B = scritta bianca su riquadro oro, velo bruno caldo 42%.
+- Codice unico: `tools/reel_close.py` (`close()`, `logo_card()`, `VARIANTS`); per i reel già finiti senza chiusura
+  `tools/append_closing.py`. Nel teaser con la domanda finale: prima la domanda sul luogo (1.2 s), poi la chiusura.
+- Segno di chiusura di Audio e musica: partono sulla fine della voce e arrivano alla fine del logo.

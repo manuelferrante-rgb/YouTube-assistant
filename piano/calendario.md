@@ -260,3 +260,12 @@ Nota da Montaggio, 4/11 sera (richieste di Manuel dai dati del mercato): file so
   che raccolgono; v1, v2, v4 aprivano già su una persona o sul gesto.
 - Per Copy (quando Manuel approva): sottotitoli it/en dei due lunghi da rifare (tempi cambiati), capitoli nelle
   descrizioni, testi dei verticali di arthunkal.
+
+Nota da Montaggio, 5/11 (Manuel): file sostituiti su Drive con gli stessi nomi.
+- Lunghi arthunkal e te: aggiunti i 2 banner (Iscriviti + campanella + Hype dopo la sigla; Mi piace + Commenta a metà),
+  approvati da Manuel; nient'altro cambia, tempi e capitoli uguali al 4/11. Copy avvisata (permesso di Manuel) di rifare
+  i sottotitoli dei due lunghi.
+- Chiusura nuova su TUTTI i verticali non ancora pubblicati: "Ascolta altre voci, su", logo 0.8 s dopo, varianti A/B
+  alternate (regola stabile in `regole/formato_reel.md`): arthunkal v1-v4, comorin cocco/canna/statua, meenakshi,
+  mercato reel A (prima finiva senza chiusura), te v1-v4 (prima senza chiusura; v1 tiene la mini sigla e prende la
+  scritta prima del logo). Il tre mari di comorin resta senza logo (loop, versione di Manuel).
