@@ -137,3 +137,6 @@ Ordine di domani: Anchuthengu presto (camminata, cortili), poi società Anathala
 Nota 5/11 sera (Manuel): trovata la Nedunganda Coir Society (nome da Manuel, nessuna fonte online verificata da me), più vicina della società di Anathalavattom. Sostituisce Anathalavattom
 nel giro di domani (6/11); Anathalavattom resta di riserva. Nedunganda è citata anche nelle fonti sull'erosione (Onmanorama 2022, tratto di costa senza spiaggia a nord di Muthalapozhi):
 il posto può servire anche a `erosione` (`piano/erosione.md`).
+Verifica 5/11 sera della Nedunganda Coir Society: esiste una scheda Justdial (directory, può essere vecchia) con indirizzo Nedungada, Vettoor-Cherunniyoor, Vettoor, Thiruvananthapuram 695312,
+diverso dal villaggio di Nedunganda (695307, tra Kaikkara e Vilabhagom sulla strada Kadakkavoor-Varkala, backwater di Anchuthengu a est, mare a ovest; stazione di Varkala a 5,2 km, fonte
+trivandrumdistrict.blogspot). Vicino al traghetto per Ponnumthuruthu c'è una piccola unità di coir (stessa fonte, vecchia). Stato attuale non verificato: chiedere sul posto.
