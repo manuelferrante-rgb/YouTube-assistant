@@ -40,3 +40,7 @@ Chiusura, una riga sola, senza morale: cosa hai visto (es. "Un filo così, a man
 - Un luogo del passato: il forte o un capannone chiuso, 5 s fermi.
 - 2-3 inquadrature ampie della laguna e del paese senza persone (B-roll per il voiceover e l'ultima slide del carosello).
 - Audio ambiente 30 s della ruota e della battitura, senza voce.
+
+Nota (Manuel, 5/11): se sul posto salari, tempi e numeri non vengono fuori bene dalle persone, si possono dire nel
+VOICEOVER, presi da fonti verificate e detti con la fonte ("secondo ..."). Mai numeri discordanti tra fonti: lì "si stima"
+con un intervallo o niente. Le parole delle persone, quando ci sono, vengono prima.

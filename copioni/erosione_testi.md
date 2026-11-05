@@ -36,3 +36,7 @@ Chiusura, una riga, senza morale (es. "Qui la casa è dove il mare non è ancora
 - Una vista larga della costa senza spiaggia, da un punto alto, se c'è.
 - Ogni persona intervistata: 3-4 s ferma che guarda in camera (carosello dei volti), senza microfono in vista.
 - Vita normale intorno: barche, reti, bambini che giocano (solo con l'ok dei genitori), per non fare solo un racconto di perdita.
+
+Nota (Manuel, 5/11): se sul posto salari, tempi e numeri non vengono fuori bene dalle persone, si possono dire nel
+VOICEOVER, presi da fonti verificate e detti con la fonte ("secondo ..."). Mai numeri discordanti tra fonti: lì "si stima"
+con un intervallo o niente. Le parole delle persone, quando ci sono, vengono prima.
