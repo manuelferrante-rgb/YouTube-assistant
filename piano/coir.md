@@ -103,3 +103,16 @@ Anelli da girare, con chi trovare in ognuno (da verificare sul posto):
 6. Prodotti: stuoie, tappeti, passatoie. Quanto vale il prodotto finito rispetto a quanto prende chi fila: chiedere,
    attribuire a chi lo dice.
 Domanda guida della filiera: chi guadagna cosa a ogni passaggio. Solo con parole degli intervistati.
+
+## Dove registrare le donne del coir vicino a Varkala (Pianificazione, 5/11, risposta a Manuel)
+Nessun nome di società o contatto verificato online: le fonti danno solo l'area. Si trovano sul posto.
+- Area: taluk di Chirayinkeezhu (Anchuthengu, Kaniyapuram, zona dei backwater e del fiume Vamanapuram), già dentro i 30 minuti da Varkala.
+  The News Minute: c'erano quasi 60 società cooperative del coir a Chirayinkeezhu, oggi circa la metà chiuse; un sindacalista dice che circa il 60%
+  dei lavoratori ha più di 50 anni (articolo non datato nei risultati: attribuire, non dire come dato attuale).
+- Società e cooperative: nessun nome trovato per Kappil, Edava, Vakkom, Kadakkavoor, Perumathura. Chiedere al panchayat di Anchuthengu e in paese
+  "coir society" e dove si fila ancora. Quelle aperte sono i posti migliori: più donne insieme, filatura in azione, e c'è chi parla del pagamento.
+- Cortili e case con la ruota di filatura: sono la strada più facile per una persona sola con il suo consenso.
+- Un sindacalista o il segretario di una società: per il contesto del declino (le fonti citano entrambi), non per sostituire le donne.
+Ordine per Manuel: panchayat e mercato di Anjengo, poi la società o il cortile indicati, poi l'acqua dell'ammollo. Dopo il sopralluogo la lista riprese sopra
+resta valida.
+Fonti: The News Minute (Chirayinkeezhu), CPPR "Anjengo coir", Lok Sabha (interventi sul declino).
