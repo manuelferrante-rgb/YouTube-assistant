@@ -20,6 +20,11 @@ servono; sotto chi parla niente o musica molto bassa; niente tappeto basso, pass
 - Per un video nuovo: brani nuovi a tema (`compose.py` o un modulo per video come `comorin.py`), segni gancio,
   rivelazione, chiusura; consegna come in `projects/comorin/audio/LEGGIMI.md`.
 
+## coir (6/11)
+- Lungo: 5 musiche scelte da Manuel tra tre bozze (A/B/C), consegnate in `projects/coir/audio/` con LEGGIMI per Montaggio.
+  Intro, strada e finale nella versione "dinamica": APPROVATE da Manuel il 6/11 (tutte e 5 le musiche approvate).
+  Solo sottofondo, ~25 dB sotto la voce. Dopo: trailer e 4 reel quando Copy avrà i copioni.
+
 ## Come lavora la chat Audio (decisioni di Manuel)
 - Sound design naturale e professionale, mai forzato. Fonti in quest'ordine: suoni veri del girato di Manuel
   (cartella Drive del video); registrazioni "wild" di Manuel (20-30 s senza parlare); sintesi solo per suoni astratti,

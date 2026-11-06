@@ -41,3 +41,7 @@
 | `projects/comorin/audio/musica_canna.flac` + `cue_canna_*` | `musica/comorin.py canna` e segni in re (gancio, rivelazione, chiusura) | Voci Vere | propria | - | Comorin reel 2 canna |
 | `projects/comorin/audio/musica_statua.flac` + `cue_statua_*` | `musica/comorin.py statua` e segni in mi | Voci Vere | propria | - | Comorin reel 3 statua |
 | `projects/comorin/audio/musica_mari_loop_8s8.flac`, `_8s0` | `musica/comorin.py mari_8.8 / mari_8.0`, loop perfetto (code ripiegate sull'inizio), -16 LUFS | Voci Vere | propria | - | Comorin reel 4 tre mari: unico suono, in loop |
+| `projects/coir/audio/coir_intro.flac`, `coir_strada.flac` | `musica/coir.py intro C --dinamica`, `strada C --dinamica` (fa minore, 96 bpm, pizzicato alto + archi a ondate + spiccato), -20 LUFS | Voci Vere | propria | - | coir: VO0 fino alla sigla; VO1-VO3 |
+| `projects/coir/audio/coir_laguna.flac` | `musica/coir.py laguna A` (92 bpm, ostinato d'archi + motivo fa-lab-sol), -20 LUFS | Voci Vere | propria | - | coir: VO5-VO6 |
+| `projects/coir/audio/coir_macchine.flac` | `musica/coir.py macchine C`, -20 LUFS | Voci Vere | propria | - | coir: VO9 |
+| `projects/coir/audio/coir_finale.flac` | `musica/coir.py finale A --dinamica` (motivo che si chiude sul fa), -20 LUFS | Voci Vere | propria | - | coir: VO12 fino alla chiusura |
