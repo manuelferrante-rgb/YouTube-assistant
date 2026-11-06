@@ -153,13 +153,15 @@ L'uomo che fa da interprete (camicia bianca a quadri, `0002`-`0004`): poco in vi
 - 400 rupie = circa 4 euro (cambio di novembre 2026, arrotondato, come dice Manuel).
 
 ## STRUTTURA E VOICEOVER (blocchi VO numerati, solo su scene che esistono)
-### 0. INTRO (~20 s, scelta di Manuel)
-- `0039` Manuel in barca "Mi trovo nel sud dell'India" + `0040` "... in Kerala" (il nome del posto detto in `0040` non si
-  capisce bene: Manuel lo conferma).
-- dopo ~3 s: le donne sedute sotto la tettoia al lavoro, la più forte: `0063` (la signora che guarda in camera, 5 s) o `0540`.
-- `0034` Manuel in barca: "Così viene raccolta la materia prima per produrre i nostri tappeti." (frase del titolo)
-- `0068`/`0069` le donne in fabbrica che filano camminando, 2-3 s.
-- SIGLA.
+### 0. INTRO (~20 s, v2 dopo le note di Manuel del 6/11: diretta, "da qui vengono i nostri tappeti")
+- `0038` Manuel in barca: "Il cocco da cui viene estratta la fibra viene da qua." (dal primo fotogramma)
+- `0544` l'uomo nella laguna che spinge il fascio di gusci (2 s), poi `0052` lui che riemerge (1,5 s).
+- `0034` Manuel in barca: "Così viene raccolta la materia prima per produrre i nostri tappeti."
+- le donne sedute sotto la tettoia: `0063` (la signora che guarda in camera) o `0540`, 2-3 s.
+- `0068`/`0069` le donne in fabbrica che filano camminando, 2 s.
+VO0 (DA REGISTRARE, ultima frase prima della sigla, su `0087` le matasse o `0069`): "Sopra c'è scritto Made in India.
+     Andiamo a vedere chi c'è dietro."
+- SIGLA. Fuori dall'intro: `0039`/`0040` ("Mi trovo nel sud dell'India", troppo lento).
 
 ### 1. LA STRADA E LE DONNE CHE NON LO FANNO PIÙ (~1:00)
 - B-roll strada brevi (`0524` 0-5 s, `0534`, muti), poi l'esterno della fabbrica (`0537` 14-23 s, i gusci e la laguna).
@@ -168,6 +170,7 @@ VO2: "Ancora oggi, in India, circa otto persone su dieci che lavorano il coir so
      lungo la strada."
 - `0526` Manuel in camera con le donne sedute davanti alla saracinesca: "Queste donne prima lavoravano con la fibra di cocco...
   non lo fanno più, ci stanno indicando dove lo fanno adesso." + `0527` il "1975" detto da loro (sottotitolo: "Dal 1975").
+Intermezzo facoltativo (non è il focus): 1-2 s di strada o cielo dal tuk-tuk, muti, tra le donne della strada e l'arrivo.
 VO3 (su `0529`, `0532` i volti, le mani che indicano): "Hanno cominciato negli anni Settanta. Oggi nessuna di loro lo fa più.
      Ci indicano l'unico posto, qui intorno, dove si lavora ancora." (DOMANDA APERTA: perché hanno smesso? si chiude al punto 4)
 
@@ -184,16 +187,16 @@ VO6 (su `0046`, `0047` 0-7 s l'uomo che guarda in camera): "Lui ha settantasei a
      scende in acqua e tira su i gusci, a mano."
 - `0031` Manuel: "qua sotto una settimana fa ha messo gli ultimi cocchi..." (con la superficie della laguna), `0052` l'uomo che
   si immerge e riemerge (6 s), `0056` i gusci nella barca.
+- `0045` 0-12 s il frutto velenoso (Manuel ne parla in barca): momento leggero, tenerlo breve.
 - `0043` Manuel: "Mi sento davvero privilegiato a vedere con i miei occhi questo lavoro, questa tradizione così antica."
-  (fuori: `0045` il frutto velenoso, non c'entra.)
 
 ### 3. LE DONNE SOTTO LA TETTOIA (~2:00, IL CUORE)
 - `0540` la donna che apre i gusci (tutto il gesto), `0542` "Forty years" (sua risposta, sottotitolo "Quarant'anni"), la domanda di
   Manuel si tiene solo se si capisce.
 - `0549` Premilla: "Sixty... forty years... this society has been open forty years" (sottotitolo).
 - `0011` l'altra donna, "mia madre me l'ha insegnato" (solo la risposta, sottotitolo).
-- `0543` Manuel: "Spero si capisca dalla camera la fatica, la quantità di cocco che c'è. E l'umiltà di queste donne." (TAGLIARE la
-  prima frase "sono 20 anni che fa questo lavoro": lei dice 40).
+- `0543` Manuel: "Spero si capisca dalla camera la fatica, la quantità di cocco che c'è. E l'umiltà di queste donne." (TAGLIARE "E ha 60 anni,
+  quindi sono 20 anni che fa questo lavoro": Manuel intendeva "da quando ne ha 20", ma si capisce "da 20 anni" e lei dice 40).
 VO7 (su `0109`, `0110`, `0063`, `0111`, mani e fibra): "Aprono i gusci uno a uno, seduti per terra, e ne tirano fuori la fibra.
      Sotto questo sole si lavora fino alle due del pomeriggio."
 VO8 (su Premilla al lavoro, `0549` 20-27 s): "Premilla ha sessant'anni. Lo fa da quaranta. Quando questa società ha aperto,
@@ -217,8 +220,9 @@ VO10 (su `0072`, `0082`): "Due fili, intrecciati camminando all'indietro. Un pez
 ### 5. IL CLIMAX: I NOSTRI TAPPETI (~1:00, verso l'80%)
 - `0091` + `0092` Manuel: "per poi farla lavorare a mano, creando corde. Successivamente producono tappeti che vengono spediti in Europa."
 - `0547` 10-22 s: "Mats... for exporting to France, Germany" (solo la risposta, sottotitolo).
-VO11 (su `0087`, `0063`, i volti): "Da queste corde nascono i tappeti che arrivano nelle nostre case. In Francia, in Germania, in Italia
-     forse. Sopra c'è scritto Made in India. Dietro, ci sono loro."  (Italia: "forse", non detto da loro; togliere se Manuel preferisce)
+VO11 (su `0087`, `0063`, i volti): "Da queste corde nascono i tappeti che arrivano nelle nostre case. In Italia, in Francia, in
+     Germania. Sopra c'è scritto Made in India. Dietro, ci sono loro."  (Italia: scelta di Manuel; Francia e Germania detti nel girato `0547`.
+     Richiama VO0 prima della sigla: la domanda dell'intro si chiude qui.)
 - `0094` 0-12 s / `0095` Manuel: "per un tappeto a loro solo 80 rupie, 80 centesimi. Sappiamo tutti quanto costa in Europa un tappeto."
 
 ### 6. FINALE (~1:00)
@@ -231,7 +235,8 @@ VO12 (B-roll leggero: `0115` il ponte sulla laguna, `0089`, i volti delle donne,
 
 ## PER MONTAGGIO (oltre alle note sopra in questo file)
 - Domande in inglese non corrette: tagliate, resta la risposta con il sottotitolo.
-- Fuori: `0045` (frutto velenoso), `0064` 6-10 s (scherzo sulla barca), riprese di cielo e strada dal tuk-tuk (`0117`, `0118`, `0116` 6-8 s).
+- Fuori: `0064` 6-10 s (scherzo sulla barca). Cielo e strada dal tuk-tuk (`0116`, `0117`, `0118`, `0121`) solo come intermezzi brevi,
+  facoltativi: tra le donne che non lavorano più e nel finale.
 - Dall'alto con il VO solo i pezzi senza tuk-tuk (`0115` 0-5 s, `0089` 0-8 s).
 - B-roll di strada (`0522`-`0524`, `0534`, `0112`-`0121`): senza suono del girato, sotto VO e musica.
 
