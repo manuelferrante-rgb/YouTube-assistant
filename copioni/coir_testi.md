@@ -105,3 +105,7 @@ Nota per la regola di Insights "primo fotogramma = persona o gesto più forte": 
 - Domande di Manuel nelle interviste (6/11): se una domanda in inglese non è corretta, si taglia e resta solo la
   risposta (con il sottotitolo tradotto). Si tengono solo le domande giuste e utili a capire.
 - Focus sempre sulle persone: qualche domanda, qualche parte di Manuel in camera, ma il tempo va a chi lavora e parla.
+- Protagonisti (Manuel, 6/11): LE DONNE e L'UOMO IN BARCA. L'uomo della fabbrica (forse il proprietario, non è sicuro)
+  pochissimo in video: è brutto vedere lui che parla mentre loro lavorano. Se serve quello che dice, la sua voce va
+  sotto i B-roll delle donne al lavoro (si vede poco o niente lui), così non è neanche noioso. Nel copy non chiamarlo
+  "proprietario" finché non è chiaro chi è.
