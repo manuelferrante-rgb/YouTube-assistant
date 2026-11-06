@@ -62,3 +62,8 @@ senza parole. Più profonda e seria (meno melodia, più tappeto, toni bassi, nie
 nello script per Montaggio (`copioni/coir_testi.md`).
 Nota da Copy, 6/11 (Manuel, `coir`): nei B-roll rumorosi (taxi, strada) Montaggio toglie il suono del girato; lì vanno
 voiceover di Manuel + musica di Audio molto lieve, a tema. I tratti precisi arriveranno nello script per Montaggio.
+
+BOZZE (Manuel, 6/11, coir): per ogni musica o segno, tre bozze diverse (A, B, C) e Manuel approva o no. Per ascoltarle
+dal telefono: un mp4 a schermo nero per brano con le tre bozze una dopo l'altra e la lettera a schermo, a -14 LUFS.
+La musica deve sentirsi anche dall'altoparlante del telefono: voci raddoppiate in alto (1-4 kHz), non solo medio-bassi.
+Gusto (6/11): non troppo lenta, più cinematografica (un passo, accordi che cambiano, crescendo dentro il brano).
