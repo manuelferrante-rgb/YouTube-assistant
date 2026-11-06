@@ -189,7 +189,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | mer 9/12 | bucato (te) | pronto |
 | gio 10/12 | te: carosello "I volti" (+ post YouTube) | nuovo slot, 5 giorni dopo il primo carosello |
 | ven 11/12 | comorin: tre mari (loop) |  |
-| lun 14/12 | extra 1 dal girato (ONG o Kanyakumari) | da scegliere con Manuel |
+| lun 14/12 | extra 1: treno in India (reel di Manuel, già fatto, in galleria) | proposto 6/11; se serve prima, scambiare con kallu (25/11) |
 | gio 17/12 | extra 2 dal girato (Kochi, Varkala o Diwali) | da scegliere con Manuel |
 | sab 19/12 | lungo A (coir): teaser |  |
 | dom 20/12 | LUNGO A (coir) | girato 2-7/11 |
@@ -255,3 +255,5 @@ Nota da Pianificazione, 6/11 (Manuel): `coir` girato oggi ad Anathalavattom (ad 
 
 Nota da Copy, 6/11 (Manuel): coir girato il 6/11 alla società di Anathalavattom (Chirayinkeezhu). Pacchetto da provare:
 trailer + lungo + 4 REEL (non 3) + 2 caroselli + 3 set di stories. Un reel "Made in India". Dettagli in `copioni/coir_testi.md`.
+
+Nota da Pianificazione, 6/11 (Manuel): nuovo reel a sé `treno` (prendere un treno in India), già fatto da Manuel e nella sua galleria. Occupa l'extra 1 del 14/12 (slot prima da scegliere); l'extra 2 del 17/12 resta libero. Se Manuel lo vuole prima, scambia con kallu (25/11) e kallu va al 14/12. Per la regola dei reel più leggeri, proposto su entrambi i profili (personale e Voci Vere), da confermare. Copy: didascalia; Montaggio: solo se serve rifinire.
