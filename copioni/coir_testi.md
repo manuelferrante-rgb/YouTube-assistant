@@ -76,3 +76,5 @@ Anandan, sindacalista del coir, organizzò i lavoratori nel 1958 (da ricontrolla
 - Chiusura: la frase classica di Manuel, poi la scritta finale:
   "Il viaggio di Voci Vere, per dare voce a chi ne ha più bisogno, continua. Seguimi per scoprire le prossime storie."
   (Voluta da Manuel, come la chiusura del lungo `te`: vale sopra la regola generale contro il "Seguimi per...".)
+- Ordine del finale (Manuel, 6/11): 1) voiceover di chiusura; 2) la chiusura che Manuel ha girato in camera sul posto
+  (dal girato); 3) la scritta finale "Il viaggio di Voci Vere... continua. Seguimi per scoprire le prossime storie" con la sigla finale.
