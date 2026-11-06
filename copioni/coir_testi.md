@@ -44,3 +44,11 @@ Chiusura, una riga sola, senza morale: cosa hai visto (es. "Un filo così, a man
 Nota (Manuel, 5/11): se sul posto salari, tempi e numeri non vengono fuori bene dalle persone, si possono dire nel
 VOICEOVER, presi da fonti verificate e detti con la fonte ("secondo ..."). Mai numeri discordanti tra fonti: lì "si stima"
 con un intervallo o niente. Le parole delle persone, quando ci sono, vengono prima.
+
+## Girato del 6/11 (Manuel)
+Girato alla società del coir di Anathalavattom (Coir Society Road, Anathalavattom, Chirayinkeezhu, Kerala 695306),
+non a Nedunganda. Manuel: "esperienza davvero toccante", vuole che sia il miglior filmato fatto finora: un po' più
+lungo degli altri lunghi, ma sempre con il fiato sospeso, tagli fatti bene, copy curato. Al voiceover vuole dare tanto
+valore: Copy lo scrive sul girato appena è su Drive (blocchi numerati, solo su scene vere; storia + "dare voce a chi ne
+ha più bisogno"). Fonte sulla società: The News Minute (segretario citato, articolo vecchio); Wikipedia: Anathalavattom
+Anandan, sindacalista del coir, organizzò i lavoratori nel 1958 (da ricontrollare prima di metterlo in voce).
