@@ -295,61 +295,62 @@ Ordine di uscita consigliato: teaser (prima del lungo) -> lungo -> reel 1 -> ree
   fotogramma che sorride in camera (`0542` 2-8 s). Nel carosello 1 la slide 02 e nel carosello 2 il "volto più forte" idem.
 - Da evitare: `0549` 18-25 s (entra l'interprete), `0528` (Manuel grande in campo), `0050`/`0051` (Manuel accanto all'uomo).
 
-## VOICEOVER DEI VERTICALI DA REGISTRARE (Manuel: una frase per riga, voce calma; prima di ogni reel dire il nome)
+## VOICEOVER DEI VERTICALI DA REGISTRARE (v2, Manuel 6/11: la PRIMA frase è sempre la più forte)
+Manuel: una frase per riga, voce calma; prima di ogni reel dire il nome. Nessuna frase è uguale a quelle del lungo.
 "teaser"
-1. Lui ha settantasei anni. Ogni giorno scende in questa laguna.
-2. E tira su questi.
-3. Gusci di cocco. Kerala, India.
-4. Restano sott'acqua da sei mesi a un anno, finché la fibra non si stacca.
-5. La sua barca ne ha cinquanta. La spinge con una pertica, a mano.
-6. Quello che tira su, un giorno, può finire all'ingresso di casa tua.
-"made in india"
-1. Hai uno zerbino di cocco? Sopra c'è scritto Made in India.
-2. Ecco chi l'ha fatto.
+1. Quello che lui tira su ogni giorno può finire all'ingresso di casa tua.
+2. Gusci di cocco.
 3. Kerala, India.
-4. Le donne aprono i gusci a mano, sedute per terra, fino alle due.
+4. Ha settantasei anni. Scende in questa laguna e li tira su a mano.
+5. Restano sott'acqua per mesi, finché la fibra non si stacca.
+6. La sua barca ne ha cinquanta. E lui la spinge ancora con una pertica.
+"made in india"
+1. Per ogni tappeto, a loro vanno ottanta centesimi. Ce lo dicono qui.
+2. Hai uno zerbino di cocco? Sopra c'è scritto Made in India. Ecco chi l'ha fatto.
+3. Kerala, India.
+4. Aprono i gusci a mano, sedute per terra, fino alle due.
 5. La fibra diventa corda, la corda diventa tappeto. E parte per l'Europa.
-6. A loro, per ogni tappeto, ci dicono che vanno ottanta rupie. Circa ottanta centesimi.
+6. Il tappeto va lontano. Gli ottanta centesimi restano qui.
 "indietro"
-1. Queste donne camminano all'indietro tutto il giorno.
-2. Così nasce la corda di cocco.
+1. Duecentottanta pezzi di corda in otto ore. Camminando all'indietro.
+2. È così che nasce la corda di cocco.
 3. Kerala, India.
 4. Due fili di fibra, intrecciati passo dopo passo.
-5. Un pezzo, poi un altro. Duecentottanta in otto ore.
+5. Un pezzo, poi un altro. Tutto il giorno.
 6. Lei è Mary. La corda che ha in mano diventerà un tappeto.
 "premilla"
-1. Premilla ha sessant'anni. Quaranta li ha passati qui.
-2. Ad aprire gusci di cocco, a mano.
+1. Quarant'anni ad aprire gusci di cocco. A mano.
+2. Lei è Premilla. Ha sessant'anni.
 3. Kerala, India.
-4. Quando questa società ha aperto, lei c'era già.
+4. Quando questa società ha aperto, lei era già qui.
 5. Si lavora sedute per terra, sotto il sole, fino alle due.
-6. Quarant'anni dopo, è ancora qui.
+6. E ogni mattina, è ancora qui.
 "1975"
-1. Queste donne lavoravano il cocco dal 1975.
-2. Oggi nessuna lo fa più. Ci indicano l'unico posto, qui intorno, dove si fa ancora.
+1. Se non arriva più nessuno, questo lavoro finisce. Lo dicono qui.
+2. Queste donne lo facevano dal 1975. Oggi nessuna.
 3. Kerala, India.
-4. Lì, ci dicono, si prendono quattrocento rupie al giorno. Circa quattro euro.
-5. Per questo i giovani non vengono.
-6. E se non viene più nessuno, si chiude.
+4. Ci indicano l'unico posto, qui intorno, dove si fa ancora.
+5. Lì, ci dicono, si prendono quattrocento rupie al giorno. Circa quattro euro.
+6. Per questo i giovani non vengono.
 
-## PER MONTAGGIO (verticali)
+## PER MONTAGGIO (verticali, v2)
 ### TEASER: l'uomo della laguna (~20 s)
 | VO | Immagine | Titolo |
 |---|---|---|
-| 1 | GANCIO da 0 s: `0052` 2-4 s lui nell'acqua che riemerge e sorride; poi `0046` 1-4 s in piedi con la pertica | **76 anni** dal primo fotogramma |
-| 2 | RIVELAZIONE: `0544` 1-4 s spinge il fascio di gusci (gesto intero) | |
-| 3 | `0021` 1-3 s i gusci che galleggiano | **Gusci di cocco** su "gusci", **Kerala, India** su "Kerala" |
-| 4 | `0107` 2-6 s la laguna con i gusci, `0052` 4-6 s lui sott'acqua | |
-| 5 | `0022` o `0020` 1-4 s la barca spinta con la pertica | |
-| 6 | `0547` 48-52 s le donne sotto la tettoia con la fibra (nessuna in primo piano), poi `0047` 0-2 s lui che guarda in camera | |
-| chiusura | `0047` lui (~2 s), poi chiusura fissa | |
-Niente rivelazione del finale del lungo (paga, fabbrica, "si chiude").
+| 1 | GANCIO da 0 s: `0544` 1-4 s lui nella laguna che spinge il fascio di gusci (gesto in corso) | **Fino a casa tua** dal primo fotogramma |
+| 2 | RIVELAZIONE: `0021` 1-3 s i gusci che galleggiano (movimento della barca) | **Gusci di cocco** su "gusci" |
+| 3 | `0107` 2-5 s la laguna con i gusci | **Kerala, India** su "Kerala" |
+| 4 | `0052` 2-5 s lui che riemerge e sorride | |
+| 5 | `0108` 9-13 s lui in acqua tra i gusci | |
+| 6 | `0022` o `0020` 1-4 s la barca spinta con la pertica, poi `0046` 1-3 s lui in piedi con la pertica | |
+| chiusura | `0047` 0-2 s lui che guarda in camera, poi chiusura fissa | |
+Niente paga, fabbrica o "si chiude": restano per il lungo.
 
 ### REEL 1: MADE IN INDIA
 | VO | Immagine | Titolo |
 |---|---|---|
-| 1 | GANCIO da 0 s: `0540` 1-4 s le mani che aprono il guscio, con il volto della donna | **Made in India** dal primo fotogramma |
-| 2 | RIVELAZIONE: `0542` 2-8 s la stessa donna che alza lo sguardo e sorride in camera | **Ecco chi l'ha fatto** |
+| 1 | GANCIO da 0 s: `0540` 1-4 s le mani che aprono il guscio, con il volto della donna | **80 centesimi** dal primo fotogramma |
+| 2 | RIVELAZIONE: `0542` 2-8 s la stessa donna che alza lo sguardo e sorride in camera | **Made in India** su "Made in India" |
 | 3 | `0063` 13-16 s la tettoia sulla laguna, largo | **Kerala, India** |
 | 4 | `0109` 1-4 s, `0110` mani e fibra | |
 | 5 | `0069` 0-2 s la corda in fabbrica, `0087` 0-2 s le matasse | |
@@ -359,11 +360,11 @@ Niente rivelazione del finale del lungo (paga, fabbrica, "si chiude").
 ### REEL 2: ALL'INDIETRO
 | VO | Immagine | Titolo |
 |---|---|---|
-| 1 | GANCIO da 0 s: `0069` 0-2 s la donna che fila camminando all'indietro, già in movimento | **All'indietro** dal primo fotogramma |
-| 2 | `0072` 1-5 s due donne che filano | **Corda di cocco** |
-| 3 | `0091` 1-4 s la fabbrica intera (panoramica breve) | **Kerala, India** |
+| 1 | GANCIO da 0 s: `0069` 0-2 s la donna che fila camminando all'indietro, già in movimento | **280 pezzi in 8 ore** dal primo fotogramma |
+| 2 | RIVELAZIONE: `0074` 0-4 s la fila di donne che filano | **All'indietro** |
+| 3 | `0091` 1-4 s la fabbrica intera | **Kerala, India** |
 | 4 | `0068` 1-6 s, `0073` le mani e i due fili | |
-| 5 | RIVELAZIONE: `0074` 0-4 s la fila, poi `0087` le matasse | |
+| 5 | `0072` 1-5 s due donne, `0087` le matasse | |
 | 6 | `0085` 0-6 s Mary che fila e sorride | |
 | chiusura | `0085` Mary (~2 s), poi chiusura fissa | |
 Niente salario in questo reel.
@@ -371,41 +372,41 @@ Niente salario in questo reel.
 ### REEL 3: PREMILLA (solo clip di Premilla)
 | VO | Immagine | Titolo |
 |---|---|---|
-| 1 | GANCIO da 0 s: `0016` 0-2.5 s Premilla tra i gusci che guarda in camera | **Premilla, 60 anni** dal primo fotogramma |
-| 2 | `0549` 0-6 s le sue mani nella fibra | |
+| 1 | GANCIO da 0 s: `0549` 0-4 s le sue mani nella fibra, il volto in campo | **40 anni, a mano** dal primo fotogramma |
+| 2 | RIVELAZIONE: `0016` 0-2.5 s Premilla tra i gusci che alza lo sguardo in camera | **Premilla, 60 anni** su "Premilla" |
 | 3 | `0063` 4-7 s lei seduta sotto la tettoia | **Kerala, India** |
-| 4 | `0001` 0-6 s lei al lavoro | **40 anni qui** su "Quando questa società" |
-| 5 | RIVELAZIONE: `0001` 12-16 s o `0549` 8-14 s, poi la tettoia larga `0547` 48-52 s | |
+| 4 | `0001` 0-6 s lei al lavoro | |
+| 5 | `0001` 12-16 s, poi la tettoia larga `0547` 48-52 s | |
 | 6 | `0549` 8-12 s il suo volto | |
 | chiusura | `0016` o `0549` (~2 s), poi chiusura fissa | |
-Non usare `0542`/`0011` (sono altre donne) né `0549` 18-25 s (l'interprete).
+Non usare `0542`/`0011` (altre donne) né `0549` 18-25 s (l'interprete).
 
 ### REEL 4: DAL 1975
 | VO | Immagine | Titolo |
 |---|---|---|
-| 1 | GANCIO da 0 s: `0529` 0-2 s le tre donne davanti alla saracinesca, volti vicini | **Dal 1975** dal primo fotogramma |
-| 2 | RIVELAZIONE: `0529` 5-12 s la donna che indica la strada; `0527` 4-12 s | **Oggi nessuna** su "nessuna" |
-| 3 | `0525` 0-4 s la donna seduta da sola | **Kerala, India** |
-| 4 | `0063` 0-3 s o `0106` la tettoia dove si lavora ancora (nessuna in primo piano) | |
-| 5 | `0527` 29-37 s le donne sedute | |
-| 6 | `0526` 10-20 s il gruppo davanti alla saracinesca, largo | |
+| 1 | GANCIO da 0 s: `0529` 0-2 s le tre donne davanti alla saracinesca, volti vicini | **Sta finendo** dal primo fotogramma |
+| 2 | RIVELAZIONE: `0527` 4-12 s le donne sedute, poi `0525` 0-3 s la donna da sola | **Dal 1975** su "1975" |
+| 3 | `0526` 10-16 s il gruppo davanti alla saracinesca, largo | **Kerala, India** |
+| 4 | `0529` 5-12 s la donna che indica la strada | |
+| 5 | `0063` 0-3 s o `0106` la tettoia dove si lavora ancora (nessuna in primo piano) | |
+| 6 | `0527` 29-37 s le donne sedute | |
 | chiusura | `0525` la donna (~2 s), poi chiusura fissa | |
 Niente rallenty sui volti, niente Manuel in campo (`0528` fuori).
 
 ## PER AUDIO (verticali)
 Modello meenakshi (`regole/formato_reel.md`): per ogni verticale una musica originale (~25 s, niente sotto 150 Hz) + 3 segni
 (`cue_gancio`, `cue_rivelazione`, `cue_chiusura`). Stessa famiglia sonora del lungo (seria, poca melodia, nessun motivetto).
-- teaser: acqua, attesa; rivelazione sul fascio di gusci spinto (`0544`).
-- made in india: la più "da condividere", ma sobria; rivelazione sul sorriso in camera (`0542`).
-- indietro: ritmo di passi lenti, regolare; rivelazione sulla fila (`0074`).
-- premilla: calda, intima; rivelazione sulla tettoia larga.
-- 1975: la più spoglia, quasi solo tappeto; niente tristezza; rivelazione sulla mano che indica.
+- teaser: acqua, attesa; rivelazione sui gusci che galleggiano (`0021`).
+- made in india: sobria; rivelazione sul sorriso in camera (`0542`).
+- indietro: passi lenti, regolare; rivelazione sulla fila (`0074`).
+- premilla: calda, intima; rivelazione su Premilla che alza lo sguardo (`0016`).
+- 1975: la più spoglia, quasi solo tappeto; niente tristezza; rivelazione sulle donne sedute (`0527`).
 
 ## TITOLI DEGLI SHORT E DOMANDE DELLE DIDASCALIE (le didascalie complete dopo il montato)
-- teaser: "Ha 76 anni e ogni giorno scende nella laguna 🇮🇳" / "Sapevi da dove viene lo zerbino di cocco?" + in fondo "Domenica il video completo."
-- made in india: "Lo zerbino Made in India: ecco chi lo fa 🇮🇳" / "Ce l'hai anche tu all'ingresso di casa?"
-- indietro: "Fanno la corda camminando all'indietro 🇮🇳" / "Avresti mai detto che si fa così?"
-- premilla: "Da 40 anni apre gusci di cocco a mano 🇮🇳" / "Chi conosci che fa lo stesso lavoro da una vita?"
+- teaser: "Dalla sua laguna all'ingresso di casa tua 🇮🇳" / "Sapevi da dove viene lo zerbino di cocco?" + in fondo "Domenica il video completo."
+- made in india: "Zerbino Made in India: a loro 80 centesimi 🇮🇳" / "Ce l'hai anche tu all'ingresso di casa?"
+- indietro: "280 pezzi di corda in 8 ore, all'indietro 🇮🇳" / "Avresti mai detto che si fa così?"
+- premilla: "40 anni ad aprire gusci di cocco, a mano 🇮🇳" / "Chi conosci che fa lo stesso lavoro da una vita?"
 - 1975: "Lavoravano il cocco dal 1975. Oggi nessuna 🇮🇳" / "Nel tuo paese c'è un mestiere che sta sparendo?"
 
 ## STORIE: 3 set da 6 (solo la domanda negli adesivi, mai la scritta "quiz")
