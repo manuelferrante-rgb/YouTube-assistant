@@ -22,7 +22,7 @@ servono; sotto chi parla niente o musica molto bassa; niente tappeto basso, pass
 
 ## coir (6/11)
 - Lungo: 5 musiche scelte da Manuel tra tre bozze (A/B/C), consegnate in `projects/coir/audio/` con LEGGIMI per Montaggio.
-  Intro, strada e finale nella versione "dinamica": in attesa dell'ok di Manuel; se vuole altro, si cambia `coir.py`.
+  Intro, strada e finale nella versione "dinamica": APPROVATE da Manuel il 6/11 (tutte e 5 le musiche approvate).
   Solo sottofondo, ~25 dB sotto la voce. Dopo: trailer e 4 reel quando Copy avrà i copioni.
 
 ## Come lavora la chat Audio (decisioni di Manuel)
