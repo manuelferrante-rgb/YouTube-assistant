@@ -102,3 +102,6 @@ di estremo. Sempre tagliati i tempi morti.
    finale + sigla.
 Nota per la regola di Insights "primo fotogramma = persona o gesto più forte": qui l'apertura è Manuel in barca solo
 ~3 s e poi subito le donne al lavoro (scelta di Manuel). Le donne entrano entro i primi 3-4 s.
+- Domande di Manuel nelle interviste (6/11): se una domanda in inglese non è corretta, si taglia e resta solo la
+  risposta (con il sottotitolo tradotto). Si tengono solo le domande giuste e utili a capire.
+- Focus sempre sulle persone: qualche domanda, qualche parte di Manuel in camera, ma il tempo va a chi lavora e parla.
