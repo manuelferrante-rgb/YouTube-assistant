@@ -68,3 +68,11 @@ Anandan, sindacalista del coir, organizzò i lavoratori nel 1958 (da ricontrolla
   - chiusura entro 60-75 s dal climax, che richiama la domanda d'apertura; schermata finale negli ultimi 15-20 s.
 - Musica: poca, solo come sottofondo sotto il VO o nei momenti senza parole. Più profonda e seria degli ultimi video
   (quelli erano troppo melodici, quasi infantili). Nota scritta anche in fondo a `regole/audio.md`.
+
+## Intro e chiusura (Manuel, 6/11)
+- Intro: Manuel l'ha girata in camera sul posto e gli piace. Quale presa usare lo decide Montaggio guardando il girato
+  (Copy segnala la migliore nella struttura).
+- Voiceover: deve dare tanto valore a questo lavoro e a quello che le donne hanno fatto.
+- Chiusura: la frase classica di Manuel, poi la scritta finale:
+  "Il viaggio di Voci Vere, per dare voce a chi ne ha più bisogno, continua. Seguimi per scoprire le prossime storie."
+  (Voluta da Manuel, come la chiusura del lungo `te`: vale sopra la regola generale contro il "Seguimi per...".)
