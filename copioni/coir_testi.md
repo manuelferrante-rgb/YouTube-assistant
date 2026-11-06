@@ -163,7 +163,7 @@ Manuel (Francia e Germania dette nel girato). 400 rupie = circa 4 euro.
 | `0063` 4-7 s | la signora seduta tra la fibra che guarda in camera (o `0540` 0-3 s) | VO0 |
 | `0069` 0-2 s | la donna in fabbrica che fila | VO0 |
 | SIGLA | | |
-VO0 (da registrare): "Su quei tappeti c'è scritto Made in India. Non c'è scritto chi li ha fatti."
+VO0 (da registrare): "Su quei tappeti c'è scritto Made in India. Non c'è scritto chi li ha fatti, né quanto le hanno pagate."
 
 ## 1. LE DONNE CHE NON LO FANNO PIÙ (contesto, ~35 s, subito dopo la sigla)
 | Clip | Cosa |
@@ -249,7 +249,7 @@ VO12: "L'India produce più di due terzi del coir del mondo. Ma qui il lavoro a 
       qualche minuto, la voce è stata la loro."
 
 ## VOICEOVER DA REGISTRARE (Manuel, una frase per riga, voce calma)
-0. Su quei tappeti c'è scritto Made in India. Non c'è scritto chi li ha fatti.
+0. Su quei tappeti c'è scritto Made in India. Non c'è scritto chi li ha fatti, né quanto le hanno pagate.
 1. Il coir è la fibra del guscio di cocco. In Kerala, per generazioni, è stata lavorata a mano. Soprattutto dalle donne: ancora oggi, in India, sono circa otto su dieci.
 2. Loro hanno cominciato negli anni Settanta. Oggi nessuna lo fa più.
 3. Ci indicano l'unico posto, qui intorno, dove si lavora ancora.
@@ -272,3 +272,8 @@ Niente musica sotto le interviste e sotto il salario (`0002`-`0006`) né sotto `
 - Titolo consigliato: "I nostri tappeti nascono qui, in India 🇮🇳 le donne del coir del Kerala" (riprende `0034`).
 - Miniatura: una donna sotto la tettoia con la fibra in mano, volto leggibile (candidate `0063` 4-7 s, `0540`, `0549`); Manuel
   assente; testo 2-4 parole ("I NOSTRI TAPPETI", "MADE IN INDIA"); 2-3 versioni per Test e confronto, dopo il montato.
+
+## TITOLO E MINIATURE SCELTI (check di Insights, 6/11, `analisi/coir_script.md`)
+Titolo IT: Made in India: chi fa i nostri tappeti 🇮🇳 le donne del coir in Kerala
+Miniature per Test e confronto (dopo il montato): A Premilla (`0549`) "40 ANNI A MANO"; C mani e volto (`0540`) "80 CENTESIMI";
+E la donna che fila (`0069`) "4 € AL GIORNO". VO0 ora promette anche la paga (C ed E): "né quanto le hanno pagate".
