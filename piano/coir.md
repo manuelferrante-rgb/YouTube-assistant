@@ -140,3 +140,7 @@ il posto può servire anche a `erosione` (`piano/erosione.md`).
 Verifica 5/11 sera della Nedunganda Coir Society: esiste una scheda Justdial (directory, può essere vecchia) con indirizzo Nedungada, Vettoor-Cherunniyoor, Vettoor, Thiruvananthapuram 695312,
 diverso dal villaggio di Nedunganda (695307, tra Kaikkara e Vilabhagom sulla strada Kadakkavoor-Varkala, backwater di Anchuthengu a est, mare a ovest; stazione di Varkala a 5,2 km, fonte
 trivandrumdistrict.blogspot). Vicino al traghetto per Ponnumthuruthu c'è una piccola unità di coir (stessa fonte, vecchia). Stato attuale non verificato: chiedere sul posto.
+
+Nota 6/11 mattina (Manuel): ad Anchuthengu e Nedunganda non ha trovato persone che lavorano il coir. Si va ad Anathalavattom (Chirayinkeezhu/Kadakkavoor), dove forse dicono di sì.
+Coerente con le fonti sul declino (CPPR: quasi nessuna società o fabbrica rimasta nel tratto Anjengo-Kaniyapuram). Se anche lì non si lavora, il declino diventa il racconto:
+ex lavoratrici, chi ha smesso e perché, cosa fanno oggi, in parole loro.
