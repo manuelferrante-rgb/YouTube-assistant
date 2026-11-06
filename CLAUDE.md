@@ -53,6 +53,9 @@ Montaggio e lo scrive in `projects/<video>/girato.md`; le altre chat leggono que
 CHAT NUOVE PER OGNI VIDEO (Manuel, 26/10): dal prossimo video Manuel apre chat nuove, una per area, con il nome del
 video (es. "Copy - <video>"). La prima frase: "Sei la chat <area> di Voci Vere per il video <video>, leggi CLAUDE.md".
 Ogni chat, quando Manuel parla di un video nuovo o la conversazione è molto lunga, gli ricorda di aprirne una nuova.
+CHAT CREATE DA UN'ALTRA CHAT (Manuel, 6/11): quando una chat apre una chat nuova (create_session), le passa SEMPRE il repo:
+`source_url` = https://github.com/manuelferrante-rgb/YouTube-assistant (branch master). Senza, la chat nuova parte
+senza repo e non può fare push (successo ad Audio il 4/11).
 
 Regole tra chat:
 - Ogni video ha un nome breve uguale ovunque (es. `arthunkal`): `projects/arthunkal/`, `copioni/arthunkal_testi.md`.
