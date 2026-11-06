@@ -109,3 +109,13 @@ Nota per la regola di Insights "primo fotogramma = persona o gesto più forte": 
   pochissimo in video: è brutto vedere lui che parla mentre loro lavorano. Se serve quello che dice, la sua voce va
   sotto i B-roll delle donne al lavoro (si vede poco o niente lui), così non è neanche noioso. Nel copy non chiamarlo
   "proprietario" finché non è chiaro chi è.
+
+## Titolo e miniatura (Manuel, 6/11)
+Tema del titolo: "come vengono fatti i nostri tappeti" (anche l'intro in barca di Manuel parla di questo: titolo, miniatura
+e primi 30 s dicono la stessa cosa, come vuole la regola). Opzioni proposte:
+1. Il tappeto di casa tua nasce qui, in India 🇮🇳 le donne del coir in Kerala (consigliata, se nel girato dicono che vanno in Europa/Italia)
+2. Chi fa i nostri zerbini? Siamo andati in India 🇮🇳 le donne del coir
+3. Come nasce un tappeto di cocco in India 🇮🇳 dal guscio alla fibra, in Kerala (sicura in ogni caso)
+4. Da un guscio di cocco al tuo ingresso: India 🇮🇳 le ultime donne del coir
+Miniatura: una donna seduta che lavora la fibra, mani nel gesto; testo 2-4 parole ("IL TUO TAPPETO", "FATTO A MANO");
+2-3 versioni per Test e confronto. Le parole esatte si allineano a quelle dell'intro dopo la trascrizione.
