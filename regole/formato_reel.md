@@ -84,3 +84,8 @@ movimento; mai un montaggio da trailer, nemmeno per i teaser. Da riconfermare co
 
 Nota da Copy, 6/11 (Manuel, registrando i VO di coir): nei verticali la PRIMA frase del voiceover è sempre la più forte
 (il fatto o l'immagine che colpisce di più), mai tenuta per il finale. Il primo titolo a schermo la riprende.
+
+Nota Montaggio 6/11 (Manuel, verticali di coir): quando il VO è già registrato sciolto, i verticali restano a velocità
+normale (niente 1.1x). Pause d'enfasi brevi (~0.45 s) solo dove servono a far arrivare un concetto: di solito una per
+reel, dopo la prima frase (es. "...all'ingresso di casa tua." pausa, poi "Gusci di cocco"), al massimo due. `say(..., pause=PAUSE)`
+in `projects/coir/build.py`.

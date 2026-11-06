@@ -463,6 +463,7 @@ def long_video(W, H):
 
 # ================= VERTICALI (formato regole/formato_reel.md, modello projects/comorin/build.py) =================
 PAD = (0.03, 0.06)
+PAUSE = 0.45                 # pausa d'enfasi dopo le frasi chiave dei verticali (Manuel 6/11)
 VMUS, VMUS_UP = 0.11, 0.26
 
 
@@ -494,8 +495,14 @@ def vsize():
 def vreel(name):
     W, H = vsize()
     r = Reel(f"{OUT}/reel_{name}_{W}_work", W, H, speed=1.0, gap=0.0, amb=0.0, cap_box=True)
-    say = lambda line, vis: r.narr(VOV, line[0], line[1], vis, words=line[2], pad=PAD,
-                                   cuts=[(ca - 0.12, cb + 0.06) for ca, cb in line[3]])
+    def say(line, vis, pause=0.0):
+        """pause: breve silenzio dopo la frase (Manuel 6/11: solo dove serve a far arrivare un concetto, mai lunga);
+        l'immagine resta, la musica continua sotto."""
+        r.GAP = pause
+        t0 = r.narr(VOV, line[0], line[1], vis, words=line[2], pad=PAD,
+                    cuts=[(ca - 0.12, cb + 0.06) for ca, cb in line[3]])
+        r.GAP = 0.0
+        return t0
     return r, say
 
 
@@ -514,10 +521,8 @@ def vfinish(r, name, track, t_b, end, offset=0.0):
     tl.nat_af = "highpass=f=90"
     W, H = r.W, r.H
     out = f"{OUT}/VociVere_coir_{name}_{W}x{H}.mp4"
-    one = r.render(out.replace(".mp4", "_1x.mp4"), crf=16 if W == 1080 else 24, preset="medium" if W == 1080 else "veryfast")
-    if os.environ.get("PLAN"):
-        return one
-    return faster(one, out)
+    # velocità normale (Manuel 6/11: il VO dei verticali di coir è già sciolto, niente 1.1x)
+    return r.render(out, crf=16 if W == 1080 else 24, preset="medium" if W == 1080 else "veryfast")
 
 
 def teaser():
@@ -529,7 +534,7 @@ def teaser():
     T4 = vphrase(16.31, 18.89, "Ha settantasei anni. Scende in questa laguna e li tira su a mano.")
     T5 = vphrase(19.20, 21.59, "Restano sott'acqua per mesi, finché la fibra non si stacca.")
     T6 = vphrase(21.97, 24.75, "La sua barca ne ha cinquanta. E lui la spinge ancora con una pertica.")
-    say(T1, [(r.own(C("0544"), 1.0, cx=0.5), None)])
+    say(T1, [(r.own(C("0544"), 1.0, cx=0.5), None)], pause=PAUSE)
     r.title(0.0, r.t, "Fino a casa tua", "Tag", 400)
     t2 = say(T2, [(r.own(C("0021"), 1.0, cx=0.45), None)])
     r.title(t2, r.t, "Gusci di cocco", "Tag", 400)
@@ -551,7 +556,7 @@ def madeinindia():
     M4 = vphrase(35.07, 37.51, "Aprono i gusci a mano, sedute per terra, fino alle due.")
     M5 = vphrase(37.86, 40.62, "La fibra diventa corda, la corda diventa tappeto. E parte per l'Europa.")
     M6 = vphrase(41.03, 43.53, "Il tappeto va lontano. Gli ottanta centesimi restano qui.")
-    say(M1, [(r.own(C("0540"), 1.0, cx=0.42), None)])
+    say(M1, [(r.own(C("0540"), 1.0, cx=0.42), None)], pause=PAUSE)
     r.title(0.0, r.t, "80 centesimi", "Tag", 400)
     t2 = say(M2, [(r.own(C("0540"), 4.5, cx=0.42), 1.2), (r.own(C("0542"), 2.0, cx=0.45), None)])
     r.title(at(t2, M2, "Made"), r.t, "Made in India", "Tag", 400)
@@ -574,7 +579,7 @@ def indietro():
     N6 = vphrase(61.51, 64.24, "Lei è Mary. La corda che ha in mano diventerà un tappeto.")
     say(N1, [(r.own(C("0069"), 0.0, cx=0.4), None)])
     r.title(0.0, r.t + 0.3, "280 pezzi in 8 ore", "Tag", 400)
-    t1b = say(N1b, [(r.own(C("0074"), 0.0, cx=0.45), None)])
+    t1b = say(N1b, [(r.own(C("0074"), 0.0, cx=0.45), None)], pause=PAUSE)
     r.title(t1b, r.t, "All'indietro", "Tag", 400)
     say(N2, [(r.own(C("0074"), 1.2, cx=0.45), None)])
     say(N4, [(r.own(C("0068"), 1.0, cx=0.62), 1.2), (r.own(C("0073"), 1.5, cx=0.45), None)])
@@ -593,7 +598,7 @@ def premilla():
     P2 = vphrase(71.69, 73.07, "Lei è Premilla. Ha sessant'anni.")
     P4 = vphrase(73.30, 75.15, "Quando questa società ha aperto, lei era già qui.")
     P5 = vphrase(81.60, 85.54, "Si lavora sedute per terra, sotto il sole, fino alle due. E ogni mattina, è ancora qui.")
-    say(P1, [(r.own(C("0549"), 0.3, cx=0.45), None)])
+    say(P1, [(r.own(C("0549"), 0.3, cx=0.45), None)], pause=PAUSE)
     r.title(0.0, r.t, "40 anni, a mano", "Tag", 400)
     t2 = say(P2, [(r.own(C("0016"), 0.0, cx=0.68), None)])
     r.title(at(t2, P2, "Premilla"), r.t + 0.3, "Premilla, 60 anni", "Tag", 400)
@@ -614,11 +619,11 @@ def r1975():
     F3 = vphrase(183.04, 184.92, "Se non arriva più nessuno, questo lavoro finisce.")
     F4 = vphrase(185.13, 188.21, "Queste donne lo fanno dal 1975. Oggi nessuna.")
     F5 = vphrase(188.75, 191.52, "Ci indicano un unico posto, qui intorno, dove ancora si fa.")
-    say(F1, [(r.own(C("0529"), 0.3, cx=0.4), None)])
+    say(F1, [(r.own(C("0529"), 0.3, cx=0.4), None)], pause=PAUSE)
     r.title(0.0, r.t, "4 euro al giorno", "Tag", 400)
     say(F2, [(r.own(C("0525"), 0.5, cx=0.35), None)])
     say(F3, [(r.own(C("0527"), 4.0, cx=0.55), None)])
-    t4 = say(F4, [(r.own(C("0527"), 30.0, cx=0.5), 1.6), (r.own(C("0525"), 6.0, cx=0.55), None)])
+    t4 = say(F4, [(r.own(C("0527"), 30.0, cx=0.5), 1.6), (r.own(C("0525"), 6.0, cx=0.55), None)], pause=PAUSE)
     r.title(at(t4, F4, "1975"), r.t, "Dal 1975", "Tag", 400)
     say(F5, [(r.own(C("0529"), 6.0, cx=0.55), 1.4), (r.own(C("0106"), 4.0, cx=0.5), None)])
     t_b = r.t
