@@ -119,3 +119,10 @@ e primi 30 s dicono la stessa cosa, come vuole la regola). Opzioni proposte:
 4. Da un guscio di cocco al tuo ingresso: India 🇮🇳 le ultime donne del coir
 Miniatura: una donna seduta che lavora la fibra, mani nel gesto; testo 2-4 parole ("IL TUO TAPPETO", "FATTO A MANO");
 2-3 versioni per Test e confronto. Le parole esatte si allineano a quelle dell'intro dopo la trascrizione.
+
+## Pacchetto di coir (Manuel, 6/11, da provare)
+1 trailer fatto bene (curiosità con una persona, non un montaggio da trailer: regola Insights) + lungo + 4 reel
+(non 3) + 2 caroselli (fatto e "I volti") + 3 set di stories da 6.
+"MADE IN INDIA": filo da seguire. Un reel dedicato, e nel lungo un richiamo (Manuel lo dice anche nell'intro prima
+della sigla). Da costruire sulle sue parole nel girato: l'etichetta "Made in India" sui tappeti che compriamo, e chi c'è
+dietro. Non dire dove vanno i tappeti se non lo dicono le persone o una fonte verificata.

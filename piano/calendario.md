@@ -252,3 +252,6 @@ Nota da Copy, 5/11 sera: domande, parti in camera e riprese in più per `coir` e
 `copioni/coir_testi.md` e `copioni/erosione_testi.md`. Il voiceover si scrive dopo, sul girato.
 
 Nota da Pianificazione, 6/11 (Manuel): `coir` girato oggi ad Anathalavattom (ad Anchuthengu e Nedunganda nessuno al lavoro). Nuovo video `erosione` (famiglie sfollate dall'erosione, `piano/erosione.md`): da girare forse lunedì 9/11, da confermare; se si fa, si sovrappone al blocco `migranti` del 9-12/11 (lungo B 10/1). Lunghi per ora A coir 20/12, B migranti 10/1; `erosione` può essere B o C, decido quando c'è il girato.
+
+Nota da Copy, 6/11 (Manuel): coir girato il 6/11 alla società di Anathalavattom (Chirayinkeezhu). Pacchetto da provare:
+trailer + lungo + 4 REEL (non 3) + 2 caroselli + 3 set di stories. Un reel "Made in India". Dettagli in `copioni/coir_testi.md`.
