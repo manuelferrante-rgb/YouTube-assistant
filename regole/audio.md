@@ -55,3 +55,8 @@ musica originale a tema (~50 s, leggera, niente sotto 150 Hz) + 3 segni melodici
 `cue_chiusura`), come in `projects/meenakshi/audio/`. Livelli e posizioni li mette Montaggio: musica bassissima e
 costante sotto la voce, segni ~12 dB sotto la voce, chiusura e musica fino alla fine del logo. Dettagli in
 `regole/formato_reel.md`, sezione "Audio".
+
+Nota da Copy, 6/11 (Manuel, per il lungo `coir` e i prossimi): la musica degli ultimi video era troppo melodica, banale,
+quasi infantile. Per `coir` serve poca musica, non sempre: solo un sottotono sotto il voiceover di Manuel e nei momenti
+senza parole. Più profonda e seria (meno melodia, più tappeto, toni bassi, niente motivetti). I punti precisi arriveranno
+nello script per Montaggio (`copioni/coir_testi.md`).

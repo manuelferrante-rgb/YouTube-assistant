@@ -52,3 +52,19 @@ lungo degli altri lunghi, ma sempre con il fiato sospeso, tagli fatti bene, copy
 valore: Copy lo scrive sul girato appena è su Drive (blocchi numerati, solo su scene vere; storia + "dare voce a chi ne
 ha più bisogno"). Fonte sulla società: The News Minute (segretario citato, articolo vecchio); Wikipedia: Anathalavattom
 Anandan, sindacalista del coir, organizzò i lavoratori nel 1958 (da ricontrollare prima di metterlo in voce).
+
+## DECISIONI DI MANUEL (6/11, dopo le riprese)
+- Tema: DARE VOCE A CHI NE HA PIÙ BISOGNO. Al centro la storia del coir in generale e come questo lavoro oggi si è
+  ridotto. La società di Anathalavattom si può anche non nominare: è "la fabbrica che resta".
+- Nel girato: donne che lo facevano e oggi non lo fanno più; l'unica fabbrica rimasta; la storia; dove vanno i tappeti.
+- Script per Montaggio e copy si costruiscono INSIEME con Manuel, per passi: le istruzioni finali a Montaggio sono il copy finale.
+- Tutto fluido, nessun tempo morto. Un po' più lungo degli altri lunghi, ma sempre col fiato sospeso.
+- Regole di Insights da seguire (`analisi/mercato.md`, `analisi/competitor/pattern.md`):
+  - primo fotogramma = la persona o il gesto più forte, già in movimento; la promessa di titolo e miniatura si vede entro il
+    primo minuto; niente salto indietro ("il giorno prima") subito dopo il gancio;
+  - domanda aperta nei primi 30 s, chiusa solo nel climax (verso l'80%); gancio interno ogni 60-90 s ai cambi di capitolo;
+  - cambio di registro ogni 30-45 s (Manuel in camera, VO su immagini, intervista, suono vero max 8-10 s);
+  - interviste: la risposta più forte per prima, 15-30 s ciascuna; storia max 20-25 s alla volta, subito prima di dove serve;
+  - chiusura entro 60-75 s dal climax, che richiama la domanda d'apertura; schermata finale negli ultimi 15-20 s.
+- Musica: poca, solo come sottofondo sotto il VO o nei momenti senza parole. Più profonda e seria degli ultimi video
+  (quelli erano troppo melodici, quasi infantili). Nota scritta anche in fondo a `regole/audio.md`.
