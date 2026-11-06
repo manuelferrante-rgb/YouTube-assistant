@@ -16,7 +16,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from compose import SR, Track, piano_note, hp_fft, lp_fft, hz, adsr, rng  # noqa: E402
 
-MOTIVO = [65, 68, 67]          # fa4 - lab4 - sol4
+MOTIVO = [77, 80, 79]          # fa5 - lab5 - sol5 (v2: un'ottava sopra, si sente anche dal telefono)
 
 
 def archi(n, dur, bright=900, att=2.0, rel=2.5):
@@ -33,12 +33,12 @@ def archi(n, dur, bright=900, att=2.0, rel=2.5):
 def piano_scuro(n, dur, vel=0.4):
     """Piano col feltro: stessa nota di compose.piano_note, ma piu' morbida (alti tagliati)."""
     x = piano_note(n, dur, vel)
-    return lp_fft(x, 1800, 2)
+    return lp_fft(x, 3200, 2)
 
 
 def motivo(T, t0, passo, gain=0.13, chiude=False):
     """Il motivo: tre note lente del piano scuro, raddoppiate piano all'ottava sotto. Se chiude, si posa sul fa."""
-    note = MOTIVO + ([65] if chiude else [])
+    note = MOTIVO + ([77] if chiude else [])
     for i, n in enumerate(note):
         lunga = (i == len(note) - 1)
         T.add(piano_scuro(n, passo * (2.6 if lunga else 1.1), 0.42), t0 + i * passo, gain, pan=0.1)
@@ -52,12 +52,16 @@ def intro(dur=10.0):
     T = Track(dur)
     fm = [53, 60, 65, 68]                          # fa3 do4 fa4 lab4: il fondo serio, senza basso
     dbm7 = [53, 61, 65, 68]                        # fa3 reb4 fa4 lab4: lo stesso fondo che si scurisce
+    # v2 (6/11): sul telefono i medio-bassi quasi non si sentono. Archi piu' aperti (filtro 1600-2200 Hz) e la
+    # stessa armonia raddoppiata un'ottava sopra, cosi' si sente anche dall'altoparlante; resta scura e lenta.
     for j, n in enumerate(fm):
-        T.add(archi(n, 6.5, 750 + 120 * j, att=2.2), 0.0, 0.11 if n < 60 else 0.08, pan=-0.35 + j * 0.23)
+        T.add(archi(n, 6.5, 2200 + 300 * j, att=2.2), 0.0, 0.09 if n < 60 else 0.07, pan=-0.35 + j * 0.23)
+        T.add(archi(n + 12, 6.5, 3200, att=2.6), 0.0, 0.035, pan=0.35 - j * 0.23)
     for j, n in enumerate(dbm7):
-        T.add(archi(n, dur - 4.6 + 2.0, 750 + 120 * j, att=1.8), 4.6, 0.11 if n < 60 else 0.08, pan=-0.35 + j * 0.23)
-    T.add(archi(72, dur - 1.0, 1300, att=3.5), 1.0, 0.025, pan=0.4)      # un filo alto (do5), appena
-    motivo(T, 2.4, 1.15, gain=0.13)
+        T.add(archi(n, dur - 4.6 + 2.0, 2200 + 300 * j, att=1.8), 4.6, 0.09 if n < 60 else 0.07, pan=-0.35 + j * 0.23)
+        T.add(archi(n + 12, dur - 4.6 + 2.0, 3200, att=2.2), 4.6, 0.035, pan=0.35 - j * 0.23)
+    T.add(archi(72, dur - 1.0, 2400, att=3.5), 1.0, 0.04, pan=0.4)       # un filo alto (do5)
+    motivo(T, 2.4, 1.15, gain=0.17)
     x = T.render(fade_in=1.2, fade_out=2.5, rev=0.42)
     return hp_fft(x)
 
