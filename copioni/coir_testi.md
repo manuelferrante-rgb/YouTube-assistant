@@ -126,3 +126,8 @@ Miniatura: una donna seduta che lavora la fibra, mani nel gesto; testo 2-4 parol
 "MADE IN INDIA": filo da seguire. Un reel dedicato, e nel lungo un richiamo (Manuel lo dice anche nell'intro prima
 della sigla). Da costruire sulle sue parole nel girato: l'etichetta "Made in India" sui tappeti che compriamo, e chi c'è
 dietro. Non dire dove vanno i tappeti se non lo dicono le persone o una fonte verificata.
+- Voce di Manuel a livelli diversi tra le clip (Manuel, 6/11): portare le clip con la voce bassa al livello di quelle
+  con la voce alta SENZA alzare anche il rumore di fondo. Metodo proposto a Montaggio: separare voce e fondo
+  (`tools/voice_clean.py`, RNNoise, già usato per `te`), portare la voce di ogni clip allo stesso volume, poi rimettere
+  sotto il fondo allo stesso livello per tutte le clip (basso, solo per non sentire il "vuoto"). Lo stesso per le
+  interviste delle donne se una è molto più bassa.
