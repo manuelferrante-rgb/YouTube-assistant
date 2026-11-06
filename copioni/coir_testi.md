@@ -296,7 +296,8 @@ Ordine di uscita consigliato: teaser (prima del lungo) -> lungo -> reel 1 -> ree
 - Da evitare: `0549` 18-25 s (entra l'interprete), `0528` (Manuel grande in campo), `0050`/`0051` (Manuel accanto all'uomo).
 
 ## VOICEOVER DEI VERTICALI DA REGISTRARE (v2, Manuel 6/11: la PRIMA frase è sempre la più forte)
-Manuel: una frase per riga, voce calma; prima di ogni reel dire il nome. Nessuna frase è uguale a quelle del lungo.
+Manuel: una frase per riga, voce calma; prima di ogni reel dire il nome. "Kerala, India" detto solo nel teaser (Manuel, 6/11):
+negli altri 4 la frase 3 non c'è, il titolo **Kerala, India** resta a schermo sull'immagine della riga 3 (~1 s, senza voce). Nessuna frase è uguale a quelle del lungo.
 "teaser"
 1. Quello che lui tira su ogni giorno può finire all'ingresso di casa tua.
 2. Gusci di cocco.
@@ -307,28 +308,28 @@ Manuel: una frase per riga, voce calma; prima di ogni reel dire il nome. Nessuna
 "made in india"
 1. Per ogni tappeto, a loro vanno ottanta centesimi. Ce lo dicono qui.
 2. Hai uno zerbino di cocco? Sopra c'è scritto Made in India. Ecco chi l'ha fatto.
-3. Kerala, India.
+3. (non detto: Manuel, 6/11; resta solo il titolo a schermo)
 4. Aprono i gusci a mano, sedute per terra, fino alle due.
 5. La fibra diventa corda, la corda diventa tappeto. E parte per l'Europa.
 6. Il tappeto va lontano. Gli ottanta centesimi restano qui.
 "indietro"
 1. Duecentottanta pezzi di corda in otto ore. Camminando all'indietro.
 2. È così che nasce la corda di cocco.
-3. Kerala, India.
+3. (non detto: Manuel, 6/11; resta solo il titolo a schermo)
 4. Due fili di fibra, intrecciati passo dopo passo.
 5. Un pezzo, poi un altro. Tutto il giorno.
 6. Lei è Mary. La corda che ha in mano diventerà un tappeto.
 "premilla"
 1. Quarant'anni ad aprire gusci di cocco. A mano.
 2. Lei è Premilla. Ha sessant'anni.
-3. Kerala, India.
+3. (non detto: Manuel, 6/11; resta solo il titolo a schermo)
 4. Quando questa società ha aperto, lei era già qui.
 5. Si lavora sedute per terra, sotto il sole, fino alle due.
 6. E ogni mattina, è ancora qui.
 "1975"
 1. Se non arriva più nessuno, questo lavoro finisce. Lo dicono qui.
 2. Queste donne lo facevano dal 1975. Oggi nessuna.
-3. Kerala, India.
+3. (non detto: Manuel, 6/11; resta solo il titolo a schermo)
 4. Ci indicano l'unico posto, qui intorno, dove si fa ancora.
 5. Lì, ci dicono, si prendono quattrocento rupie al giorno. Circa quattro euro.
 6. Per questo i giovani non vengono.
