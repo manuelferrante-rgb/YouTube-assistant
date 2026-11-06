@@ -296,8 +296,8 @@ Ordine di uscita consigliato: teaser (prima del lungo) -> lungo -> reel 1 -> ree
 - Da evitare: `0549` 18-25 s (entra l'interprete), `0528` (Manuel grande in campo), `0050`/`0051` (Manuel accanto all'uomo).
 
 ## VOICEOVER DEI VERTICALI DA REGISTRARE (v2, Manuel 6/11: la PRIMA frase è sempre la più forte)
-Manuel: una frase per riga, voce calma; prima di ogni reel dire il nome. "Kerala, India" detto solo nel teaser (Manuel, 6/11):
-negli altri 4 la frase 3 non c'è, il titolo **Kerala, India** resta a schermo sull'immagine della riga 3 (~1 s, senza voce). Nessuna frase è uguale a quelle del lungo.
+Manuel: una frase per riga, voce calma; prima di ogni reel dire il nome. "Kerala, India" SOLO nel teaser (Manuel, 6/11):
+negli altri 4 né detto né a schermo (banale e ripetitivo). Le frasi restano numerate come prima (manca la 3). Nessuna frase è uguale a quelle del lungo.
 "teaser"
 1. Quello che lui tira su ogni giorno può finire all'ingresso di casa tua.
 2. Gusci di cocco.
@@ -308,28 +308,24 @@ negli altri 4 la frase 3 non c'è, il titolo **Kerala, India** resta a schermo s
 "made in india"
 1. Per ogni tappeto, a loro vanno ottanta centesimi. Ce lo dicono qui.
 2. Hai uno zerbino di cocco? Sopra c'è scritto Made in India. Ecco chi l'ha fatto.
-3. (non detto: Manuel, 6/11; resta solo il titolo a schermo)
 4. Aprono i gusci a mano, sedute per terra, fino alle due.
 5. La fibra diventa corda, la corda diventa tappeto. E parte per l'Europa.
 6. Il tappeto va lontano. Gli ottanta centesimi restano qui.
 "indietro"
 1. Duecentottanta pezzi di corda in otto ore. Camminando all'indietro.
 2. È così che nasce la corda di cocco.
-3. (non detto: Manuel, 6/11; resta solo il titolo a schermo)
 4. Due fili di fibra, intrecciati passo dopo passo.
 5. Un pezzo, poi un altro. Tutto il giorno.
 6. Lei è Mary. La corda che ha in mano diventerà un tappeto.
 "premilla"
 1. Quarant'anni ad aprire gusci di cocco. A mano.
 2. Lei è Premilla. Ha sessant'anni.
-3. (non detto: Manuel, 6/11; resta solo il titolo a schermo)
 4. Quando questa società ha aperto, lei era già qui.
 5. Si lavora sedute per terra, sotto il sole, fino alle due.
 6. E ogni mattina, è ancora qui.
 "1975"
 1. Se non arriva più nessuno, questo lavoro finisce. Lo dicono qui.
 2. Queste donne lo facevano dal 1975. Oggi nessuna.
-3. (non detto: Manuel, 6/11; resta solo il titolo a schermo)
 4. Ci indicano l'unico posto, qui intorno, dove si fa ancora.
 5. Lì, ci dicono, si prendono quattrocento rupie al giorno. Circa quattro euro.
 6. Per questo i giovani non vengono.
@@ -352,7 +348,7 @@ Niente paga, fabbrica o "si chiude": restano per il lungo.
 |---|---|---|
 | 1 | GANCIO da 0 s: `0540` 1-4 s le mani che aprono il guscio, con il volto della donna | **80 centesimi** dal primo fotogramma |
 | 2 | RIVELAZIONE: `0542` 2-8 s la stessa donna che alza lo sguardo e sorride in camera | **Made in India** su "Made in India" |
-| 3 | `0063` 13-16 s la tettoia sulla laguna, largo | **Kerala, India** |
+| (3) | niente VO e niente titolo: `0063` 13-16 s la tettoia sulla laguna, largo, solo se serve come passaggio di 1 s, altrimenti fuori | |
 | 4 | `0109` 1-4 s, `0110` mani e fibra | |
 | 5 | `0069` 0-2 s la corda in fabbrica, `0087` 0-2 s le matasse | |
 | 6 | `0540` 20-24 s la donna al lavoro | |
@@ -363,7 +359,7 @@ Niente paga, fabbrica o "si chiude": restano per il lungo.
 |---|---|---|
 | 1 | GANCIO da 0 s: `0069` 0-2 s la donna che fila camminando all'indietro, già in movimento | **280 pezzi in 8 ore** dal primo fotogramma |
 | 2 | RIVELAZIONE: `0074` 0-4 s la fila di donne che filano | **All'indietro** |
-| 3 | `0091` 1-4 s la fabbrica intera | **Kerala, India** |
+| (3) | niente VO e niente titolo: `0091` 1-4 s la fabbrica intera, solo se serve come passaggio di 1 s, altrimenti fuori | |
 | 4 | `0068` 1-6 s, `0073` le mani e i due fili | |
 | 5 | `0072` 1-5 s due donne, `0087` le matasse | |
 | 6 | `0085` 0-6 s Mary che fila e sorride | |
@@ -375,7 +371,7 @@ Niente salario in questo reel.
 |---|---|---|
 | 1 | GANCIO da 0 s: `0549` 0-4 s le sue mani nella fibra, il volto in campo | **40 anni, a mano** dal primo fotogramma |
 | 2 | RIVELAZIONE: `0016` 0-2.5 s Premilla tra i gusci che alza lo sguardo in camera | **Premilla, 60 anni** su "Premilla" |
-| 3 | `0063` 4-7 s lei seduta sotto la tettoia | **Kerala, India** |
+| (3) | niente VO e niente titolo: `0063` 4-7 s lei seduta sotto la tettoia, solo se serve come passaggio di 1 s, altrimenti fuori | |
 | 4 | `0001` 0-6 s lei al lavoro | |
 | 5 | `0001` 12-16 s, poi la tettoia larga `0547` 48-52 s | |
 | 6 | `0549` 8-12 s il suo volto | |
@@ -387,7 +383,7 @@ Non usare `0542`/`0011` (altre donne) né `0549` 18-25 s (l'interprete).
 |---|---|---|
 | 1 | GANCIO da 0 s: `0529` 0-2 s le tre donne davanti alla saracinesca, volti vicini | **Sta finendo** dal primo fotogramma |
 | 2 | RIVELAZIONE: `0527` 4-12 s le donne sedute, poi `0525` 0-3 s la donna da sola | **Dal 1975** su "1975" |
-| 3 | `0526` 10-16 s il gruppo davanti alla saracinesca, largo | **Kerala, India** |
+| (3) | niente VO e niente titolo: `0526` 10-16 s il gruppo davanti alla saracinesca, largo, solo se serve come passaggio di 1 s, altrimenti fuori | |
 | 4 | `0529` 5-12 s la donna che indica la strada | |
 | 5 | `0063` 0-3 s o `0106` la tettoia dove si lavora ancora (nessuna in primo piano) | |
 | 6 | `0527` 29-37 s le donne sedute | |
