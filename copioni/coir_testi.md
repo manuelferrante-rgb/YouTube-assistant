@@ -277,3 +277,197 @@ Niente musica sotto le interviste e sotto il salario (`0002`-`0006`) né sotto `
 Titolo IT: Made in India: chi fa i nostri tappeti 🇮🇳 le donne del coir in Kerala
 Miniature per Test e confronto (dopo il montato): A Premilla (`0549`) "40 ANNI A MANO"; C mani e volto (`0540`) "80 CENTESIMI";
 E la donna che fila (`0069`) "4 € AL GIORNO". VO0 ora promette anche la paga (C ed E): "né quanto le hanno pagate".
+
+---------------------------------------------------------------------------------------------------------------
+# VERTICALI, STORIE E CAROSELLI (Copy, 6/11, dal brief di Insights `analisi/coir_verticali.md`, controllato sul girato)
+Formato: `regole/formato_reel.md` (modello meenakshi: ~20 s, VO di Manuel una frase per riga, 3 titoli oro su bianco "bam" in
+alto y 400 mai sul viso, sottotitoli parola per parola sulla fascia scura con la parola in oro, finito a 1.1x, nessuna pausa,
+chiusura fissa "Ascolta altre voci, su" + logo). Clip DJI 4K orizzontali: ritaglio 9:16 sulla persona, mai schiacciate.
+Ordine di uscita consigliato: teaser (prima del lungo) -> lungo -> reel 1 -> reel 2 -> reel 3 -> reel 4.
+
+## Controllo sul girato (6/11, riconoscimento volti SFace sui fotogrammi)
+- Le persone: l'uomo della laguna (`0544`, `0052`, `0046`, `0047`, `0050`: sempre lui, 76 anni); PREMILLA (`0549`, `0001`, `0010`,
+  `0016` e anche la signora di `0063` 4-7 s che guarda in camera: è lei); la DONNA DEI 40 ANNI (`0540`, `0542`: maglia rosa,
+  occhiali, cuffia grigia; "forty years" è suo); un'ALTRA donna anziana (`0011`, maglia beige: la risposta sulla madre è ambigua
+  nell'audio, non usarla nei reel); MARY in fabbrica (`0085`, maglia beige); la donna che fila (`0069`, maglia rosa, non è Mary);
+  le donne della saracinesca (`0525`, `0527`, `0529`).
+- Correzioni al brief: nel reel 1 la rivelazione NON è `0063` (è Premilla, protagonista del reel 3) ma la stessa donna del primo
+  fotogramma che sorride in camera (`0542` 2-8 s). Nel carosello 1 la slide 02 e nel carosello 2 il "volto più forte" idem.
+- Da evitare: `0549` 18-25 s (entra l'interprete), `0528` (Manuel grande in campo), `0050`/`0051` (Manuel accanto all'uomo).
+
+## VOICEOVER DEI VERTICALI DA REGISTRARE (Manuel: una frase per riga, voce calma; prima di ogni reel dire il nome)
+"teaser"
+1. Lui ha settantasei anni. Ogni giorno scende in questa laguna.
+2. E tira su questi.
+3. Gusci di cocco. Kerala, India.
+4. Restano sott'acqua da sei mesi a un anno, finché la fibra non si stacca.
+5. La sua barca ne ha cinquanta. La spinge con una pertica, a mano.
+6. Quello che tira su, un giorno, può finire all'ingresso di casa tua.
+"made in india"
+1. Hai uno zerbino di cocco? Sopra c'è scritto Made in India.
+2. Ecco chi l'ha fatto.
+3. Kerala, India.
+4. Le donne aprono i gusci a mano, sedute per terra, fino alle due.
+5. La fibra diventa corda, la corda diventa tappeto. E parte per l'Europa.
+6. A loro, per ogni tappeto, ci dicono che vanno ottanta rupie. Circa ottanta centesimi.
+"indietro"
+1. Queste donne camminano all'indietro tutto il giorno.
+2. Così nasce la corda di cocco.
+3. Kerala, India.
+4. Due fili di fibra, intrecciati passo dopo passo.
+5. Un pezzo, poi un altro. Duecentottanta in otto ore.
+6. Lei è Mary. La corda che ha in mano diventerà un tappeto.
+"premilla"
+1. Premilla ha sessant'anni. Quaranta li ha passati qui.
+2. Ad aprire gusci di cocco, a mano.
+3. Kerala, India.
+4. Quando questa società ha aperto, lei c'era già.
+5. Si lavora sedute per terra, sotto il sole, fino alle due.
+6. Quarant'anni dopo, è ancora qui.
+"1975"
+1. Queste donne lavoravano il cocco dal 1975.
+2. Oggi nessuna lo fa più. Ci indicano l'unico posto, qui intorno, dove si fa ancora.
+3. Kerala, India.
+4. Lì, ci dicono, si prendono quattrocento rupie al giorno. Circa quattro euro.
+5. Per questo i giovani non vengono.
+6. E se non viene più nessuno, si chiude.
+
+## PER MONTAGGIO (verticali)
+### TEASER: l'uomo della laguna (~20 s)
+| VO | Immagine | Titolo |
+|---|---|---|
+| 1 | GANCIO da 0 s: `0052` 2-4 s lui nell'acqua che riemerge e sorride; poi `0046` 1-4 s in piedi con la pertica | **76 anni** dal primo fotogramma |
+| 2 | RIVELAZIONE: `0544` 1-4 s spinge il fascio di gusci (gesto intero) | |
+| 3 | `0021` 1-3 s i gusci che galleggiano | **Gusci di cocco** su "gusci", **Kerala, India** su "Kerala" |
+| 4 | `0107` 2-6 s la laguna con i gusci, `0052` 4-6 s lui sott'acqua | |
+| 5 | `0022` o `0020` 1-4 s la barca spinta con la pertica | |
+| 6 | `0547` 48-52 s le donne sotto la tettoia con la fibra (nessuna in primo piano), poi `0047` 0-2 s lui che guarda in camera | |
+| chiusura | `0047` lui (~2 s), poi chiusura fissa | |
+Niente rivelazione del finale del lungo (paga, fabbrica, "si chiude").
+
+### REEL 1: MADE IN INDIA
+| VO | Immagine | Titolo |
+|---|---|---|
+| 1 | GANCIO da 0 s: `0540` 1-4 s le mani che aprono il guscio, con il volto della donna | **Made in India** dal primo fotogramma |
+| 2 | RIVELAZIONE: `0542` 2-8 s la stessa donna che alza lo sguardo e sorride in camera | **Ecco chi l'ha fatto** |
+| 3 | `0063` 13-16 s la tettoia sulla laguna, largo | **Kerala, India** |
+| 4 | `0109` 1-4 s, `0110` mani e fibra | |
+| 5 | `0069` 0-2 s la corda in fabbrica, `0087` 0-2 s le matasse | |
+| 6 | `0540` 20-24 s la donna al lavoro | |
+| chiusura | `0542` lei che sorride (~2 s), poi chiusura fissa | |
+
+### REEL 2: ALL'INDIETRO
+| VO | Immagine | Titolo |
+|---|---|---|
+| 1 | GANCIO da 0 s: `0069` 0-2 s la donna che fila camminando all'indietro, già in movimento | **All'indietro** dal primo fotogramma |
+| 2 | `0072` 1-5 s due donne che filano | **Corda di cocco** |
+| 3 | `0091` 1-4 s la fabbrica intera (panoramica breve) | **Kerala, India** |
+| 4 | `0068` 1-6 s, `0073` le mani e i due fili | |
+| 5 | RIVELAZIONE: `0074` 0-4 s la fila, poi `0087` le matasse | |
+| 6 | `0085` 0-6 s Mary che fila e sorride | |
+| chiusura | `0085` Mary (~2 s), poi chiusura fissa | |
+Niente salario in questo reel.
+
+### REEL 3: PREMILLA (solo clip di Premilla)
+| VO | Immagine | Titolo |
+|---|---|---|
+| 1 | GANCIO da 0 s: `0016` 0-2.5 s Premilla tra i gusci che guarda in camera | **Premilla, 60 anni** dal primo fotogramma |
+| 2 | `0549` 0-6 s le sue mani nella fibra | |
+| 3 | `0063` 4-7 s lei seduta sotto la tettoia | **Kerala, India** |
+| 4 | `0001` 0-6 s lei al lavoro | **40 anni qui** su "Quando questa società" |
+| 5 | RIVELAZIONE: `0001` 12-16 s o `0549` 8-14 s, poi la tettoia larga `0547` 48-52 s | |
+| 6 | `0549` 8-12 s il suo volto | |
+| chiusura | `0016` o `0549` (~2 s), poi chiusura fissa | |
+Non usare `0542`/`0011` (sono altre donne) né `0549` 18-25 s (l'interprete).
+
+### REEL 4: DAL 1975
+| VO | Immagine | Titolo |
+|---|---|---|
+| 1 | GANCIO da 0 s: `0529` 0-2 s le tre donne davanti alla saracinesca, volti vicini | **Dal 1975** dal primo fotogramma |
+| 2 | RIVELAZIONE: `0529` 5-12 s la donna che indica la strada; `0527` 4-12 s | **Oggi nessuna** su "nessuna" |
+| 3 | `0525` 0-4 s la donna seduta da sola | **Kerala, India** |
+| 4 | `0063` 0-3 s o `0106` la tettoia dove si lavora ancora (nessuna in primo piano) | |
+| 5 | `0527` 29-37 s le donne sedute | |
+| 6 | `0526` 10-20 s il gruppo davanti alla saracinesca, largo | |
+| chiusura | `0525` la donna (~2 s), poi chiusura fissa | |
+Niente rallenty sui volti, niente Manuel in campo (`0528` fuori).
+
+## PER AUDIO (verticali)
+Modello meenakshi (`regole/formato_reel.md`): per ogni verticale una musica originale (~25 s, niente sotto 150 Hz) + 3 segni
+(`cue_gancio`, `cue_rivelazione`, `cue_chiusura`). Stessa famiglia sonora del lungo (seria, poca melodia, nessun motivetto).
+- teaser: acqua, attesa; rivelazione sul fascio di gusci spinto (`0544`).
+- made in india: la più "da condividere", ma sobria; rivelazione sul sorriso in camera (`0542`).
+- indietro: ritmo di passi lenti, regolare; rivelazione sulla fila (`0074`).
+- premilla: calda, intima; rivelazione sulla tettoia larga.
+- 1975: la più spoglia, quasi solo tappeto; niente tristezza; rivelazione sulla mano che indica.
+
+## TITOLI DEGLI SHORT E DOMANDE DELLE DIDASCALIE (le didascalie complete dopo il montato)
+- teaser: "Ha 76 anni e ogni giorno scende nella laguna 🇮🇳" / "Sapevi da dove viene lo zerbino di cocco?" + in fondo "Domenica il video completo."
+- made in india: "Lo zerbino Made in India: ecco chi lo fa 🇮🇳" / "Ce l'hai anche tu all'ingresso di casa?"
+- indietro: "Fanno la corda camminando all'indietro 🇮🇳" / "Avresti mai detto che si fa così?"
+- premilla: "Da 40 anni apre gusci di cocco a mano 🇮🇳" / "Chi conosci che fa lo stesso lavoro da una vita?"
+- 1975: "Lavoravano il cocco dal 1975. Oggi nessuna 🇮🇳" / "Nel tuo paese c'è un mestiere che sta sparendo?"
+
+## STORIE: 3 set da 6 (solo la domanda negli adesivi, mai la scritta "quiz")
+### Set 1, prima del lungo (dietro le quinte)
+1. `0034` Manuel in barca, 3 s | SONDAGGIO "Sai da dove viene lo zerbino di cocco?" Sì / No
+2. `0021` i gusci nella laguna | "Restano sott'acqua fino a un anno"
+3. `0046` l'uomo con la pertica | "Ha 76 anni" + cursore emoji
+4. `0063` 13-16 s la tettoia, suono vero 3-4 s | "Qui si aprono i gusci, a mano"
+5. `0542` la donna che sorride | BOX DOMANDE "Cosa chiederesti a queste donne?"
+6. `0087` le matasse | CONTO ALLA ROVESCIA "La storia intera, domenica su YouTube"
+### Set 2, il giorno dopo il lungo (Made in India)
+1. `0087` le matasse | "Sopra c'è scritto Made in India"
+2. `0540` le mani al lavoro | ADESIVO A SCELTA "Quanto va a loro per un tappeto?" 80 centesimi / 5 € / 15 €
+3. `0109` mani e fibra | "80 rupie, circa 80 centesimi"
+4. `0069` la donna che fila | "Per una giornata, 400 rupie: circa 4 €. Lo dice chi lavora qui"
+5. `0549` Premilla | SONDAGGIO "Lo sapevi?" Sì / No
+6. `0547` 48-52 s la tettoia | LINK al lungo + "La storia intera"
+### Set 3, dopo il reel 3 (dal guscio alla corda, in 6 passaggi)
+1. `0107` la laguna | "1. Nell'acqua, fino a un anno"
+2. `0544` l'uomo che tira su i gusci | "2. Si tirano su a mano"
+3. `0540` le mani che aprono | "3. Si aprono, uno a uno"
+4. `0017` 0-6 s la macchina | "4. La fibra passa alle macchine"
+5. `0069` la corda all'indietro | "5. Diventa corda" + BOX DOMANDE "Nel tuo paese c'è un mestiere che sta sparendo?"
+6. `0085` Mary | LINK al lungo + "Ascolta altre voci"
+Le risposte ai box (set 1 e 3) vanno annotate qui: danno idee per le domande del prossimo video.
+
+## CAROSELLO 1 "fatto": Made in India, chi c'è dietro (8 slide 4:5, regole in `regole/copy.md`)
+01 `0016` Premilla tra i gusci (foto piena, testo un po' alto) | **Sopra c'è scritto Made in India** + Scorri
+02 mezza nera + `0542` la donna dei 40 anni che sorride | **Non c'è scritto chi l'ha fatto**
+03 `0107` la laguna con i gusci | **Mesi sott'acqua** / da sei mesi a un anno, finché la fibra si stacca
+04 `0046` l'uomo con la pertica | **76 anni, barca da 50** / ogni giorno tira su i gusci a mano
+05 `0109` le mani sotto la tettoia | **A mano, fino alle due** / sedute per terra, sotto il sole
+06 VIDEO `0069` la donna che fila (testo che compare) | **280 pezzi in 8 ore** (per il post YouTube il fotogramma .jpg)
+07 citazione su nero, virgolette oro | «Con un salario così basso, i giovani non vengono.» / chi lavora qui, 400 rupie al giorno
+08 | **Fuori ora il video su YouTube**
+Posizione: Chirayinkeezhu, Kerala
+Didascalia IG:
+Sopra c'è scritto Made in India 🇮🇳
+Ma non c'è scritto chi l'ha fatto. Sulla costa del Kerala, sotto una tettoia sulla laguna, le donne aprono i gusci di cocco a mano.
+Dalla fibra nasce la corda, dalla corda i tappeti che arrivano in Europa.
+Ce l'hai anche tu all'ingresso di casa?
+Il video completo è sul canale, link in bio.
+#kerala #india #vocivere #coir #madeinindia
+Post YouTube (stesse immagini, 06 come .jpg):
+Sopra c'è scritto Made in India 🇮🇳 Le donne del coir del Kerala, che fanno i nostri tappeti a mano. Ce l'hai anche tu all'ingresso di casa?
+Tutta la storia nel video: [link al lungo]
+
+## CAROSELLO 2 "I volti" (regole del 4-5/11: ritratti in posa, filtro caldo naturale, ogni persona una volta, niente microfoni)
+01 copertina: l'uomo della laguna (`0052` 2-4 s o `0047`, guarda in camera) | **I volti del coir** + "Kerala, India" + "Le donne e
+   l'uomo che fanno i nostri tappeti"
+02 il volto più forte: Premilla (`0016` o `0549` 8-12 s, quella più da foto)
+03 la donna dei 40 anni (`0542` 4-8 s)
+04 Mary (`0085`)
+05 la donna anziana di `0011` (se il ritaglio è una foto in posa)
+06 una delle donne della saracinesca (`0529` o `0525`)
+07 la donna che fila (`0069`)
+08 la laguna sfocata (`0107`) + logo + "Segui Voci Vere per scoprire le prossime storie"
+Fuori: Manuel, l'interprete, l'uomo della fabbrica, chi ha il microfono addosso. Immagini con `carosello_volti.py` dopo il montato.
+Didascalia IG:
+I volti del coir 🇮🇳
+Le donne e l'uomo che, sulla costa del Kerala, fanno a mano la fibra dei nostri tappeti.
+Chi ti è rimasto in mente? Scrivilo nei commenti.
+Tutta la storia nel video sul canale, link in bio.
+#kerala #india #vocivere #coir #ritratti
+Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Tutta la storia nel video: [link al lungo]
