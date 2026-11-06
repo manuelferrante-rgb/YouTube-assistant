@@ -84,3 +84,21 @@ Anandan, sindacalista del coir, organizzò i lavoratori nel 1958 (da ricontrolla
   lieve, a tema.
 - Riprese dall'alto con il voiceover: usare solo i pezzi in cui NON si vede il tuk-tuk.
 - Audio: brani per questi tratti (B-roll muti + VO), profondi e seri, livello molto basso (nota in `regole/audio.md`).
+
+## STRUTTURA DI MANUEL (6/11) - base dello script per Montaggio
+In generale: POCHI PAESAGGI, molto filmato delle persone. Si dà davvero voce a chi ne ha più bisogno. Il B-roll c'è ma
+è soprattutto quello delle persone al lavoro (Manuel l'ha girato); paesaggio solo un po', soprattutto nel finale, niente
+di estremo. Sempre tagliati i tempi morti.
+1. INTRO (~20 s, quella girata da Manuel in barca):
+   - 0-3 s Manuel in barca che parla;
+   - dopo ~3 s le donne sedute a lavorare (le immagini più forti), mentre la sua voce continua;
+   - di nuovo Manuel in barca;
+   - le persone che lavorano dentro la fabbrica;
+   - SIGLA.
+2. DOPO LA SIGLA: un po' la fabbrica, poi il viaggio per arrivarci; mentre Manuel racconta la storia (voiceover),
+   B-roll alternati tra viaggio e fabbrica/persone. Il viaggio solo come appoggio alla storia, breve.
+3. CORPO: le donne che lo facevano e non lo fanno più, la fabbrica che resta, dove vanno i tappeti (interviste, parole loro).
+4. FINALE: voiceover di chiusura (con un po' di B-roll di paesaggio, poco) -> chiusura di Manuel in camera -> scritta
+   finale + sigla.
+Nota per la regola di Insights "primo fotogramma = persona o gesto più forte": qui l'apertura è Manuel in barca solo
+~3 s e poi subito le donne al lavoro (scelta di Manuel). Le donne entrano entro i primi 3-4 s.
