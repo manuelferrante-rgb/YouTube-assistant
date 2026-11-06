@@ -55,3 +55,13 @@ a 7 giorni). Se la promessa è "chi fa i tappeti Made in India", l'intro la mant
 Miniatura: una donna sotto la tettoia con la fibra in mano (Premilla), volto leggibile, niente fatica messa in vetrina.
 
 Nota 6/11 (Manuel): "Italia" in VO11 resta: sul posto gli hanno detto che i tappeti vanno in Europa. Il resto del check è approvato.
+
+## Titoli e miniature proposti da Copy (check Insights, 6/11)
+- Scelta: titolo 2 "Made in India: chi fa i nostri tappeti 🇮🇳 le donne del coir in Kerala". È l'unico che chiude la
+  stessa domanda di VO0/VO11 e si vede già nei primi 20 s. Il titolo 1 ha "qui" vago; il 3 e il 4 promettono la paga,
+  che arriva a ~4:00 e a ~6:00; il 5 ("ultime") generalizza e nel titolo il contesto non c'è.
+- "Test e confronto" cambia solo la miniatura: le 3 miniature devono funzionare tutte con il titolo 2 e non ripeterlo.
+  A con "I NOSTRI TAPPETI" e B con "MADE IN INDIA" ripetono il titolo. Proposta: A Premilla con "40 ANNI A MANO",
+  C le mani con il guscio e il volto con "80 CENTESIMI", E la donna che fila con "4 € AL GIORNO".
+- Se una miniatura promette la paga, l'intro deve accennarla. VO0 proposto: "Su quei tappeti c'è scritto Made in
+  India. Non c'è scritto chi li ha fatti, né quanto le hanno pagate." Il numero resta dov'è.
