@@ -60,3 +60,5 @@ Nota da Copy, 6/11 (Manuel, per il lungo `coir` e i prossimi): la musica degli u
 quasi infantile. Per `coir` serve poca musica, non sempre: solo un sottotono sotto il voiceover di Manuel e nei momenti
 senza parole. Più profonda e seria (meno melodia, più tappeto, toni bassi, niente motivetti). I punti precisi arriveranno
 nello script per Montaggio (`copioni/coir_testi.md`).
+Nota da Copy, 6/11 (Manuel, `coir`): nei B-roll rumorosi (taxi, strada) Montaggio toglie il suono del girato; lì vanno
+voiceover di Manuel + musica di Audio molto lieve, a tema. I tratti precisi arriveranno nello script per Montaggio.

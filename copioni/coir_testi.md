@@ -78,3 +78,9 @@ Anandan, sindacalista del coir, organizzò i lavoratori nel 1958 (da ricontrolla
   (Voluta da Manuel, come la chiusura del lungo `te`: vale sopra la regola generale contro il "Seguimi per...".)
 - Ordine del finale (Manuel, 6/11): 1) voiceover di chiusura; 2) la chiusura che Manuel ha girato in camera sul posto
   (dal girato); 3) la scritta finale "Il viaggio di Voci Vere... continua. Seguimi per scoprire le prossime storie" con la sigla finale.
+
+## ISTRUZIONI PER MONTAGGIO E AUDIO (Manuel, 6/11; entrano nel copy finale per Montaggio)
+- B-roll rumorosi (taxi, tuk-tuk, strada): togliere il loro audio. Sotto: voiceover di Manuel + musica di Audio molto
+  lieve, a tema.
+- Riprese dall'alto con il voiceover: usare solo i pezzi in cui NON si vede il tuk-tuk.
+- Audio: brani per questi tratti (B-roll muti + VO), profondi e seri, livello molto basso (nota in `regole/audio.md`).
