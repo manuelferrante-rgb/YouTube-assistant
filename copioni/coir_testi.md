@@ -132,114 +132,140 @@ dietro. Non dire dove vanno i tappeti se non lo dicono le persone o una fonte ve
   sotto il fondo allo stesso livello per tutte le clip (basso, solo per non sentire il "vuoto"). Lo stesso per le
   interviste delle donne se una è molto più bassa.
 
+
 ---------------------------------------------------------------------------------------------------------------
-# SCRIPT v1 (Copy, 6/11 sera, dal girato) - da sistemare con Manuel, poi diventa il copy finale per Montaggio
-Girato: Drive cartella "Coir" 19zCOBK_aJ6a4SFwGffbZvDKUr-IXR8UA, 122 clip DJI 4K del 6/11 (24 min). Le clip si chiamano
-con le ultime 4 cifre del file (es. `0540` = DJI_20261106082853_0540_D.MP4). Trascrizioni in work/coir (computer di Copy).
-Durata obiettivo: 7-8 min (un po' più degli altri). Persone: le donne sotto la tettoia, le donne della strada, l'uomo in barca.
-L'uomo che fa da interprete (camicia bianca a quadri, `0002`-`0004`): poco in video, la sua voce sotto le donne al lavoro.
+# SCRIPT FINALE v3 (Copy, 6/11 sera, dal girato e dalle note di Manuel) - check di Insights, poi a Montaggio
+Girato: Drive cartella "Coir" 19zCOBK_aJ6a4SFwGffbZvDKUr-IXR8UA, 122 clip DJI 4K del 6/11 (24 min), società del coir di
+Anathalavattom (Chirayinkeezhu, Kerala). Le clip si chiamano con le ultime 4 cifre (es. `0540` = DJI_20261106082853_0540_D.MP4).
+Durata obiettivo 7-8 min. Protagonisti: le donne sotto la tettoia, le donne della strada, l'uomo in barca. L'interprete (camicia
+bianca a quadri, `0002`-`0004`) quasi non si vede: la sua voce va sotto le donne al lavoro.
+Regole: tempi morti sempre tagliati; domande in inglese non corrette tagliate (resta la risposta, sottotitolata); voce di Manuel
+portata allo stesso livello in tutte le clip senza alzare il fondo; B-roll rumorosi (strada, tuk-tuk) muti, sotto VO e musica.
 
-## Fatti usati (dal girato, attribuiti) e da fonti
-- Dal girato: le donne della strada lavoravano il coir dal 1975 circa, oggi non più (`0526`, `0527`); Premilla, 60 anni, lo fa
-  da 40 (`0549`); un'altra donna da 40 anni, glielo ha insegnato la madre (`0542`, `0011`); la società ha aperto 40 anni fa,
-  loro sono le prime (`0549`, `0001`); 40 rupie a pezzo, 400 al giorno (`0002`); per il salario i giovani non vengono, se non
-  arriva nessuno si chiude (`0003`, `0004`); gusci in acqua 6 mesi (`0547`) o un anno (`0047`, l'uomo in barca): si dice
-  "da sei mesi a un anno"; l'uomo in barca ha 76 anni, la barca 50 (`0050`, `0024`); sotto il sole si finisce alle 2, in fabbrica
-  alle 4 (`0062`); in fabbrica 280 pezzi in 8 ore per 400 rupie (`0076`, `0081`); tappeti per Francia e Germania (`0547`); per
-  un tappeto a loro vanno 80 rupie, circa 80 centesimi (`0094`, `0095`).
-- Da fonti: circa 8 lavoratori del coir su 10 in India sono donne (Coir Board, citato dal Presidente dell'India nel 2013 e da
-  IBEF); l'India fa più di due terzi del coir del mondo (Indian Ecological Society; altre fonti dicono 70-80%, per questo "più
-  di due terzi"); a Chirayinkeezhu molte società hanno chiuso (The News Minute, data non chiara: in voce "molte hanno chiuso").
-- 400 rupie = circa 4 euro (cambio di novembre 2026, arrotondato, come dice Manuel).
+## Fatti usati
+Dal girato (attribuiti): donne della strada che lavoravano il coir dal 1975 e oggi non più (`0526`, `0527`); Premilla, 60 anni,
+da 40 (`0549`); un'altra donna da 40 anni, glielo ha insegnato la madre (`0542`, `0011`); la società ha aperto 40 anni fa, loro sono
+le prime (`0549`, `0001`); 40 rupie a pezzo, 400 al giorno; per il salario i giovani non vengono, se non arriva nessuno si chiude
+(`0002`-`0004`); gusci in acqua 6 mesi (`0547`) o un anno (`0047`): "da sei mesi a un anno"; l'uomo in barca 76 anni, la barca 50
+(`0050`, `0024`); sotto il sole fino alle 2, in fabbrica fino alle 4 (`0062`); in fabbrica 280 pezzi in 8 ore per 400 rupie (`0076`,
+`0081`); tappeti per Francia e Germania (`0547`); 80 rupie, circa 80 centesimi, per tappeto a loro (`0094`, `0095`).
+Da fonti: circa 8 su 10 lavoratori del coir in India sono donne (Coir Board, citato dal Presidente dell'India nel 2013, e IBEF);
+l'India produce più di due terzi del coir del mondo (Indian Ecological Society; altre fonti 70-80%); "Italia" nel VO11: scelta di
+Manuel (Francia e Germania dette nel girato). 400 rupie = circa 4 euro.
 
-## STRUTTURA E VOICEOVER (blocchi VO numerati, solo su scene che esistono)
-### 0. INTRO (~20 s, v2 dopo le note di Manuel del 6/11: diretta, "da qui vengono i nostri tappeti")
-- `0038` Manuel in barca: "Il cocco da cui viene estratta la fibra viene da qua." (dal primo fotogramma)
-- `0544` l'uomo nella laguna che spinge il fascio di gusci (2 s), poi `0052` lui che riemerge (1,5 s).
-- `0034` Manuel in barca: "Così viene raccolta la materia prima per produrre i nostri tappeti."
-- le donne sedute sotto la tettoia: `0063` (la signora che guarda in camera) o `0540`, 2-3 s.
-- `0068`/`0069` le donne in fabbrica che filano camminando, 2 s.
-VO0 (DA REGISTRARE, ultima frase prima della sigla, su `0087` le matasse o `0069`): "Sopra c'è scritto Made in India.
-     Andiamo a vedere chi c'è dietro."
-- SIGLA. Fuori dall'intro: `0039`/`0040` ("Mi trovo nel sud dell'India", troppo lento).
+## 0. INTRO (~20 s)
+| Clip | Cosa | Audio |
+|---|---|---|
+| `0034` 0-3.7 s | Manuel in barca: "Così viene raccolta la materia prima per produrre i nostri tappeti." DAL PRIMO FOTOGRAMMA | sua voce |
+| `0544` 1-3 s | l'uomo nella laguna che spinge il fascio di gusci | suono vero |
+| `0038` 0-3.2 s | Manuel: "Il cocco da cui viene estratta la fibra viene da qua." | sua voce |
+| `0063` 4-7 s | la signora seduta tra la fibra che guarda in camera (o `0540` 0-3 s) | VO0 |
+| `0069` 0-2 s | la donna in fabbrica che fila | VO0 |
+| SIGLA | | |
+VO0 (da registrare): "Su quei tappeti c'è scritto Made in India. Non c'è scritto chi li ha fatti."
 
-### 1. LA STRADA E LE DONNE CHE NON LO FANNO PIÙ (~1:00)
-- B-roll strada brevi (`0524` 0-5 s, `0534`, muti), poi l'esterno della fabbrica (`0537` 14-23 s, i gusci e la laguna).
-VO1: "Il coir è la fibra del guscio di cocco. In Kerala, per generazioni, è stata lavorata a mano. Soprattutto dalle donne."
-VO2: "Ancora oggi, in India, circa otto persone su dieci che lavorano il coir sono donne. Prima di arrivare, ne incontriamo alcune
-     lungo la strada."
-- `0526` Manuel in camera con le donne sedute davanti alla saracinesca: "Queste donne prima lavoravano con la fibra di cocco...
-  non lo fanno più, ci stanno indicando dove lo fanno adesso." + `0527` il "1975" detto da loro (sottotitolo: "Dal 1975").
-Intermezzo facoltativo (non è il focus): 1-2 s di strada o cielo dal tuk-tuk, muti, tra le donne della strada e l'arrivo.
-VO3 (su `0529`, `0532` i volti, le mani che indicano): "Hanno cominciato negli anni Settanta. Oggi nessuna di loro lo fa più.
-     Ci indicano l'unico posto, qui intorno, dove si lavora ancora." (DOMANDA APERTA: perché hanno smesso? si chiude al punto 4)
+## 1. LE DONNE CHE NON LO FANNO PIÙ (contesto, ~1 min, subito dopo la sigla)
+| Clip | Cosa |
+|---|---|
+| `0525` 0-8 s | le donne sedute davanti alla saracinesca (VO1) |
+| `0526` 0-15 s | Manuel in camera con loro: "Queste donne prima lavoravano con la fibra di cocco, adesso viene tutto fatto con le macchine. E non lo fanno più, ci stanno indicando dove lo fanno adesso." |
+| `0527` 12-24 s | la risposta "1975" (sottotitolo: "Dal 1975.") |
+| `0528`, `0529` | i volti, le mani che indicano la strada (VO2) |
+| `0532` 0-8 s | Manuel: "Più rimango qua e più arrivano altre donne che nel passato lavoravano qua." |
+| (facoltativo) `0121` 1-4 s o `0524` 0-4 s | 1-2 s di strada dal tuk-tuk, muti (VO3) |
+VO1: "Il coir è la fibra del guscio di cocco. In Kerala, per generazioni, è stata lavorata a mano. Soprattutto dalle donne:
+     ancora oggi, in India, sono circa otto su dieci."
+VO2: "Loro hanno cominciato negli anni Settanta. Oggi nessuna lo fa più."
+VO3: "Ci indicano l'unico posto, qui intorno, dove si lavora ancora."   (DOMANDA APERTA: perché hanno smesso? si chiude al punto 4)
 
-### 2. LA SOCIETÀ E LA LAGUNA (~1:30)
-- `0537` 0-30 s Manuel arriva: "È assurdo come questo era un lavoro fatto dalle donne... la globalizzazione, l'industrializzazione."
-- `0538` 0-12 s: "non c'è un proprietario... una comunità che si riunisce per portare avanti questo antichissimo lavoro".
-VO4 (B-roll `0088`, `0098`, gusci arancioni sulla laguna): "Un tempo, lungo questa costa, le società del coir erano decine. Molte
-     hanno chiuso. Questa resiste."
-- `0544` l'uomo nella laguna che spinge il fascio di gusci (7 s, il gesto intero), `0546` 9-31 s Manuel spiega (con barca, laguna, donne).
-VO5 (B-roll `0021` gusci che galleggiano, `0107`, `0108` 9-21 s l'uomo in acqua): "Tutto comincia qui, nell'acqua. I gusci restano
-     sotto la laguna da sei mesi a un anno, finché la fibra non si stacca."
-- La barca: `0023` 0-8 s Manuel "Mi hanno concesso il privilegio...", poi `0022`, `0020` l'uomo che spinge con la pertica (tagli brevi).
-VO6 (su `0046`, `0047` 0-7 s l'uomo che guarda in camera): "Lui ha settantasei anni. Questa barca ne ha cinquanta. Ogni giorno
-     scende in acqua e tira su i gusci, a mano."
-- `0031` Manuel: "qua sotto una settimana fa ha messo gli ultimi cocchi..." (con la superficie della laguna), `0052` l'uomo che
-  si immerge e riemerge (6 s), `0056` i gusci nella barca.
-- `0045` 0-12 s il frutto velenoso (Manuel ne parla in barca): momento leggero, tenerlo breve.
-- `0043` Manuel: "Mi sento davvero privilegiato a vedere con i miei occhi questo lavoro, questa tradizione così antica."
+## 2. LA SOCIETÀ (~40 s)
+| Clip | Cosa |
+|---|---|
+| `0537` 0-30 s | Manuel arriva: "Cerchiamo di prendere il permesso... È assurdo come questo era un lavoro fatto dalle donne, e adesso è una società... la globalizzazione e l'industrializzazione a suo modo si fa vedere." (tagliare le pause) |
+| `0538` 0-12 s | "La cosa bellissima è che non c'è un proprietario, è una società fatta di persone, una comunità che si riunisce per portare avanti questo antichissimo lavoro." |
+| `0088`, `0098` | la laguna con i gusci arancioni (VO4) |
+VO4: "Un tempo, lungo questa costa, le società del coir erano decine. Molte hanno chiuso. Questa resiste da quarant'anni."
 
-### 3. LE DONNE SOTTO LA TETTOIA (~2:00, IL CUORE)
-- `0540` la donna che apre i gusci (tutto il gesto), `0542` "Forty years" (sua risposta, sottotitolo "Quarant'anni"), la domanda di
-  Manuel si tiene solo se si capisce.
-- `0549` Premilla: "Sixty... forty years... this society has been open forty years" (sottotitolo).
-- `0011` l'altra donna, "mia madre me l'ha insegnato" (solo la risposta, sottotitolo).
-- `0543` Manuel: "Spero si capisca dalla camera la fatica, la quantità di cocco che c'è. E l'umiltà di queste donne." (TAGLIARE "E ha 60 anni,
-  quindi sono 20 anni che fa questo lavoro": Manuel intendeva "da quando ne ha 20", ma si capisce "da 20 anni" e lei dice 40).
-VO7 (su `0109`, `0110`, `0063`, `0111`, mani e fibra): "Aprono i gusci uno a uno, seduti per terra, e ne tirano fuori la fibra.
-     Sotto questo sole si lavora fino alle due del pomeriggio."
+## 3. LA LAGUNA E L'UOMO IN BARCA (~1:30)
+| Clip | Cosa |
+|---|---|
+| `0544` intera | l'uomo nella laguna che spinge il fascio (gesto intero) |
+| `0546` 9-31 s | Manuel spiega: "Con la barca va a prendere i cocchi in questa laguna, li porta qua, alle donne che li aprono, prendono la fibra e creano tutte queste masse." |
+| `0021`, `0107`, `0108` 9-21 s | gusci che galleggiano, l'uomo in acqua (VO5) |
+| `0023` 0-8 s | Manuel: "Mi hanno concesso il privilegio di andare a vedere dove raccolgono il cocco, con quel signore che prima era immerso in acqua." |
+| `0022`, `0020` | l'uomo che spinge la barca con la pertica (tagli brevi) |
+| `0046`, `0047` 0-7 s | l'uomo che guarda in camera (VO6) |
+| `0031` 0-9 s | Manuel: "qua sotto, una settimana fa, ha messo gli ultimi cocchi in ammollo..." |
+| `0052` intera | l'uomo che si immerge e riemerge |
+| `0045` 0-12 s | il frutto velenoso (momento leggero, breve) |
+| `0043` 0-4.5 s | Manuel: "Mi sento davvero privilegiato a poter vedere con i miei occhi questo lavoro, questa tradizione così antica." |
+VO5: "Tutto comincia qui, nell'acqua. I gusci restano sotto la laguna da sei mesi a un anno, finché la fibra non si stacca."
+VO6: "Lui ha settantasei anni. Questa barca ne ha cinquanta. Ogni giorno scende in acqua e tira su i gusci, a mano."
+
+## 4. LE DONNE SOTTO LA TETTOIA (~2 min, il cuore)
+| Clip | Cosa |
+|---|---|
+| `0540` intera | la donna che apre i gusci, il gesto intero |
+| `0109`, `0110`, `0111` | mani e fibra (VO7) |
+| `0542` 0-10 s | "Forty years." (sottotitolo: "Quarant'anni.") |
+| `0549` 0-24 s | Premilla: sessant'anni, quarant'anni di lavoro, la società aperta da quaranta (sottotitoli, solo le risposte) |
+| `0011` 30-50 s | "Mia madre me l'ha insegnato." (solo la risposta) |
+| `0543` da "Spero si capisca" | Manuel: "Spero si capisca dalla camera la fatica, la quantità di cocco che c'è, e l'umiltà di queste donne." (TAGLIARE "E ha 60 anni, quindi sono 20 anni che fa questo lavoro") |
+| voce di `0002` 0-30 s e `0003`-`0004` sotto `0063`, `0106`, `0109` | il salario detto dall'interprete; lui in video al massimo 2 s |
+| `0006` 0-35 s | Manuel: "Lo stipendio sono 400 rupie al giorno, essenzialmente 4 euro. E per questo la nuova generazione non vuole venire... tutta questa cultura, questa tradizione della fibra di cocco verrà interrotta, perché nessuno vorrà farlo a stipendi così bassi." (CHIUDE LA DOMANDA DELL'INIZIO) |
+Sottotitoli dell'interprete: "Quaranta rupie a pezzo. Quattrocento al giorno." / "Con un salario così basso, i giovani non vengono." /
+"Se non viene più nessuno, si chiude."
+VO7: "Aprono i gusci uno a uno, seduti per terra, e ne tirano fuori la fibra. Sotto questo sole si lavora fino alle due."
 VO8 (su Premilla al lavoro, `0549` 20-27 s): "Premilla ha sessant'anni. Lo fa da quaranta. Quando questa società ha aperto,
      lei c'era già."
-- IL SALARIO: voce dell'interprete `0002` (40 rupie a pezzo, 400 al giorno) e `0003`-`0004` (i giovani non vengono, si chiuderà)
-  SOTTO le immagini delle donne al lavoro; lui in video al massimo 2 s. Sottotitoli: "Quaranta rupie a pezzo. Quattrocento al
-  giorno." / "Con un salario così basso, i giovani non vengono." / "Se non arriva nessuno, si chiude."
-- `0006` Manuel 0-35 s: "Lo stipendio sono 400 rupie al giorno, essenzialmente 4 euro... questa cultura verrà interrotta, perché
-  nessuno vorrà farlo a stipendi così bassi." (risposta alla domanda aperta del punto 1)
 
-### 4. LE MACCHINE E LA FABBRICA (~1:30)
-- `0062` Manuel: "Questo lavoro... sotto il sole finisce alle 2, invece nella fabbrica, che adesso andiamo a vedere, alle 4."
-VO9 (su `0017` 0-15 s, `0090`, `0105` la donna che spinge la fibra nella macchina): "Dalla laguna, la fibra passa alle macchine.
-     Poi entra in fabbrica, dove diventa corda."
-- `0066`, `0067`, `0068`, `0069`, `0072`, `0073`, `0074`: le donne che filano camminando all'indietro (tagli a ritmo, 1-2 s).
-- `0076` Manuel: "due fili... 280 corde al giorno, in 8 ore di lavoro." + `0081`: "Anche qui solo 4 euro al giorno... ripetuto
-  all'infinito, per solo 400 rupie."
-- `0085` Mary che fila e sorride, `0084` la donna con il filo, `0087` le matasse.
-VO10 (su `0072`, `0082`): "Due fili, intrecciati camminando all'indietro. Un pezzo, poi un altro. Duecentottanta in un giorno."
+## 5. LE MACCHINE E LA FABBRICA (~1:30)
+| Clip | Cosa |
+|---|---|
+| `0062` 0-6 s | Manuel: "Sotto il sole finisce alle 2, invece nella fabbrica, che adesso andiamo a vedere, alle 4." |
+| `0017` 0-15 s, `0090`, `0105` | la fibra nelle macchine (VO9) |
+| `0066`, `0067`, `0068`, `0069`, `0072`, `0073`, `0074` | le donne che filano camminando all'indietro (tagli a ritmo, 1-2 s) |
+| `0076` 0-12 s | Manuel: "due fili diversi, raggruppati, annodati... 280 corde al giorno, in 8 ore di lavoro." |
+| `0081` 0-10 s | Manuel: "Anche qui solo 4 euro al giorno. 280 pezzi, 8 ore di lavoro, ripetuto all'infinito, per solo 400 rupie." |
+| `0085`, `0084`, `0087` | Mary che fila e sorride, la donna con il filo, le matasse (VO10) |
+VO9: "Dalla laguna, la fibra passa alle macchine. Poi entra in fabbrica, dove diventa corda."
+VO10: "Due fili, intrecciati camminando all'indietro. Un pezzo, poi un altro. Duecentottanta in un giorno."
 
-### 5. IL CLIMAX: I NOSTRI TAPPETI (~1:00, verso l'80%)
-- `0091` + `0092` Manuel: "per poi farla lavorare a mano, creando corde. Successivamente producono tappeti che vengono spediti in Europa."
-- `0547` 10-22 s: "Mats... for exporting to France, Germany" (solo la risposta, sottotitolo).
-VO11 (su `0087`, `0063`, i volti): "Da queste corde nascono i tappeti che arrivano nelle nostre case. In Italia, in Francia, in
-     Germania. Sopra c'è scritto Made in India. Dietro, ci sono loro."  (Italia: scelta di Manuel; Francia e Germania detti nel girato `0547`.
-     Richiama VO0 prima della sigla: la domanda dell'intro si chiude qui.)
-- `0094` 0-12 s / `0095` Manuel: "per un tappeto a loro solo 80 rupie, 80 centesimi. Sappiamo tutti quanto costa in Europa un tappeto."
+## 6. CLIMAX: I NOSTRI TAPPETI (~1 min, verso l'80%)
+| Clip | Cosa |
+|---|---|
+| `0091` + `0092` | Manuel: "per poi farla lavorare a mano, creando corde. Successivamente producono tappeti che vengono spediti in Europa." |
+| `0547` 10-22 s | "Mats... for exporting to France, Germany." (solo la risposta) |
+| `0087`, `0063`, i volti | VO11 |
+| `0094` 0-12 s o `0095` | Manuel: "per un tappeto a loro solo 80 rupie, 80 centesimi. Sappiamo tutti quanto costa in Europa un tappeto." |
+VO11: "Da queste corde nascono i tappeti che arrivano nelle nostre case. In Italia, in Francia, in Germania. Sopra c'è scritto
+      Made in India. Adesso sapete chi li ha fatti."   (chiude VO0)
 
-### 6. FINALE (~1:00)
-VO12 (B-roll leggero: `0115` il ponte sulla laguna, `0089`, i volti delle donne, poco paesaggio):
-     "L'India produce più di due terzi del coir del mondo. Ma qui il lavoro a mano sta finendo. Non perché manchi chi lo sa fare:
-     perché nessun giovane lo farebbe per quattro euro al giorno. Queste donne lo portano avanti da quarant'anni. Oggi, per qualche
-     minuto, la voce è stata la loro."
-- `0102` Manuel in camera: "Il viaggio di Voci Vere, per dare voce a chi ne ha più bisogno, continua. Seguimi per scoprire le prossime storie."
-- Scritta finale + sigla finale. Ultimi 15-20 s senza volti in primo piano (schermata finale di YouTube).
+## 7. FINALE (~1 min)
+| Clip | Cosa |
+|---|---|
+| `0115` 0-5 s, `0089` 0-8 s, i volti delle donne (`0063`, `0549`, `0085`), facoltativo 1-2 s di strada | VO12, poco paesaggio |
+| `0102` | Manuel: "Il viaggio di Voci Vere, per dare voce a chi ne ha più bisogno, continua. Seguimi per scoprire le prossime storie." |
+| scritta finale + sigla finale | ultimi 15-20 s senza volti in primo piano (schermata finale di YouTube) |
+VO12: "L'India produce più di due terzi del coir del mondo. Ma qui il lavoro a mano sta finendo. Non perché manchi chi lo sa fare:
+      perché nessun giovane lo farebbe per quattro euro al giorno. Queste donne lo portano avanti da quarant'anni. Oggi, per qualche
+      minuto, la voce è stata la loro."
 
-## PER MONTAGGIO (oltre alle note sopra in questo file)
-- Domande in inglese non corrette: tagliate, resta la risposta con il sottotitolo.
-- Fuori: `0064` 6-10 s (scherzo sulla barca). Cielo e strada dal tuk-tuk (`0116`, `0117`, `0118`, `0121`) solo come intermezzi brevi,
-  facoltativi: tra le donne che non lavorano più e nel finale.
-- Dall'alto con il VO solo i pezzi senza tuk-tuk (`0115` 0-5 s, `0089` 0-8 s).
-- B-roll di strada (`0522`-`0524`, `0534`, `0112`-`0121`): senza suono del girato, sotto VO e musica.
+## VOICEOVER DA REGISTRARE (Manuel, una frase per riga, voce calma)
+0. Su quei tappeti c'è scritto Made in India. Non c'è scritto chi li ha fatti.
+1. Il coir è la fibra del guscio di cocco. In Kerala, per generazioni, è stata lavorata a mano. Soprattutto dalle donne: ancora oggi, in India, sono circa otto su dieci.
+2. Loro hanno cominciato negli anni Settanta. Oggi nessuna lo fa più.
+3. Ci indicano l'unico posto, qui intorno, dove si lavora ancora.
+4. Un tempo, lungo questa costa, le società del coir erano decine. Molte hanno chiuso. Questa resiste da quarant'anni.
+5. Tutto comincia qui, nell'acqua. I gusci restano sotto la laguna da sei mesi a un anno, finché la fibra non si stacca.
+6. Lui ha settantasei anni. Questa barca ne ha cinquanta. Ogni giorno scende in acqua e tira su i gusci, a mano.
+7. Aprono i gusci uno a uno, seduti per terra, e ne tirano fuori la fibra. Sotto questo sole si lavora fino alle due.
+8. Premilla ha sessant'anni. Lo fa da quaranta. Quando questa società ha aperto, lei c'era già.
+9. Dalla laguna, la fibra passa alle macchine. Poi entra in fabbrica, dove diventa corda.
+10. Due fili, intrecciati camminando all'indietro. Un pezzo, poi un altro. Duecentottanta in un giorno.
+11. Da queste corde nascono i tappeti che arrivano nelle nostre case. In Italia, in Francia, in Germania. Sopra c'è scritto Made in India. Adesso sapete chi li ha fatti.
+12. L'India produce più di due terzi del coir del mondo. Ma qui il lavoro a mano sta finendo. Non perché manchi chi lo sa fare: perché nessun giovane lo farebbe per quattro euro al giorno. Queste donne lo portano avanti da quarant'anni. Oggi, per qualche minuto, la voce è stata la loro.
 
 ## PER AUDIO
-Musica solo sotto VO1-VO3 (strada), VO5-VO6 (laguna e barca), VO9 (macchine) e VO12 (finale). Niente musica sotto le interviste
-e sotto il salario (`0002`-`0006`). Profonda, seria, poca melodia.
+Musica solo sotto VO0 (fino alla sigla), VO1-VO3 (le donne della strada), VO5-VO6 (laguna e barca), VO9 (macchine) e VO12 (finale).
+Niente musica sotto le interviste e sotto il salario (`0002`-`0006`) né sotto `0094`. Profonda, seria, poca melodia, livello basso.
