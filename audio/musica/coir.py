@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Musica originale del lungo coir (le donne del coir, Anathalavattom, Kerala), autore Voci Vere. Solo musica.
 
-    python3 audio/musica/coir.py <brano> <stile> <out.wav>
+    python3 audio/musica/coir.py <brano> <stile> <out.wav> [--dinamica]
+    SCELTE DI MANUEL (6/11): intro C --dinamica, strada C --dinamica, laguna A, macchine C, finale A --dinamica
     brani: intro (~10 s), strada (~30 s), laguna (~30 s), macchine (~12 s), finale (~35 s)
     stili (tre bozze per brano, Manuel 6/11: "dammi di tutti gli audio le tre bozze"):
       A  ostinato d'archi in crome (spiccato) + accordi lunghi che crescono: il piu' cinematografico
@@ -79,18 +80,24 @@ def motivo(T, t0, passo, gain=0.17, chiude=False):
         T.add(piano_m(n - 12, passo * (2.8 if lunga else 1.0), 0.35), t0 + i * passo, gain * 0.45, pan=0.1)
 
 
-def brano(nome, stile):
+def brano(nome, stile, din=False):
+    """din (Manuel 6/11, "un po' piu' dinamica"): crescendo piu' ampio, accenti piu' marcati e sincopati, un secondo
+    strato ritmico che entra a meta', un'onda d'archi che spinge verso ogni cambio d'accordo; nella strada gli accordi
+    cambiano ogni battuta."""
     b = BRANI[nome]; dur = b["dur"]; bpm = STILI[stile]
-    beat = 60 / bpm; L = 4 * beat * b["bars"]
+    bars = 1 if (din and nome == "strada") else b["bars"]
+    beat = 60 / bpm; L = 4 * beat * bars
     T = Track(dur); t = 0.0; k = 0
     nacc = int(np.ceil(dur / L))
     while t < dur:
         ch = CH[b["prog"][k % len(b["prog"])]]
         # crescendo dentro il brano (il finale sale fino a 3/4 e poi si posa)
         x = t / dur
-        g = 0.55 + 0.45 * (min(1, x / 0.75) if nome == "finale" else x)
+        cur = min(1, x / 0.75) if nome == "finale" else x
+        g = (0.35 + 0.65 * cur) if din else (0.55 + 0.45 * cur)
         if nome == "finale" and x > 0.8:
             g *= 0.8
+        sec = din and x >= 0.35                             # secondo strato ritmico dalla seconda parte
         # archi tenuti (in tutti gli stili): voci gravi + raddoppio un'ottava sopra
         for j, n in enumerate(ch[:4]):
             T.add(archi(n, L + 1.2, 2200 + 300 * j, att=0.6), t - 0.15, 0.06 * g, pan=-0.45 + j * 0.3)
@@ -103,6 +110,12 @@ def brano(nome, stile):
                 acc = 1.0 if s_ % 4 == 0 else 0.75
                 T.add(spiccato(pat[s_ % 4], 0.6 * acc), t + s_ * beat / 2, 0.11 * g, pan=-0.2 if s_ % 2 else 0.2)
                 T.add(spiccato(pat[s_ % 4] + 12, 0.45 * acc), t + s_ * beat / 2, 0.05 * g, pan=0.3)
+            if sec:                                        # pizzicato alto in semicrome, accenti sincopati
+                pz = [ch[2] + 12, ch[4] + 12, ch[3] + 12, ch[4] + 12]
+                for s_ in range(steps * 4):
+                    a_ = 1.6 if s_ % 16 in (0, 6, 10) else 1.0
+                    T.add(pluck(pz[s_ % 4], beat * 0.4, 0.99, 0.6), t + s_ * beat / 4, 0.045 * g * a_,
+                          pan=0.4 if s_ % 2 else -0.35)
         elif stile == "B":                                 # arpeggio di piano in semicrome
             pat = [ch[1] + 12, ch[2] + 12, ch[3] + 12, ch[4] + 12, ch[3] + 12, ch[2] + 12]
             for s_ in range(steps * 4):
@@ -112,13 +125,22 @@ def brano(nome, stile):
             pat = [ch[2] + 12, ch[3] + 12, ch[4] + 12, ch[3] + 12]
             for s_ in range(steps * 4):
                 T.add(pluck(pat[s_ % 4], beat * 0.5, 0.99, 0.55), t + s_ * beat / 4,
-                      0.06 * g * (1.25 if s_ % 4 == 0 else 1.0), pan=0.35 if s_ % 2 else -0.3)
+                      0.06 * g * ((1.7 if s_ % 16 in (0, 6, 10) else 0.9) if din else (1.25 if s_ % 4 == 0 else 1.0)),
+                      pan=0.35 if s_ % 2 else -0.3)
+            if sec:                                        # spiccato in crome sotto il pizzicato
+                pat2 = [ch[1], ch[3], ch[2], ch[3]]
+                for s_ in range(steps * 2):
+                    T.add(spiccato(pat2[s_ % 4], 0.55 if s_ % 4 else 0.75), t + s_ * beat / 2, 0.08 * g,
+                          pan=-0.2 if s_ % 2 else 0.2)
             for s_ in range(0, steps, 2):
                 for j, n in enumerate(ch[1:4]):
                     T.add(onda(n + 12, beat * 2, 3000), t + s_ * beat, 0.05 * g, pan=-0.3 + j * 0.3)
             if b["motivo"] is None and k % 2 == 1:
                 T.add(piano_m(ch[4] + 12, beat * 3, 0.45), t, 0.09 * g, pan=0.1)
                 T.add(piano_m(ch[4], beat * 3, 0.35), t, 0.05 * g, pan=0.1)
+        if din:                                            # onda che spinge verso l'accordo successivo
+            for j, n in enumerate(ch[2:5]):
+                T.add(onda(n + 12, beat * 1.5, 3400), t + L - beat * 1.5, 0.05 * g, pan=-0.3 + j * 0.3)
         t += L; k += 1
     if b["motivo"] is not None:
         motivo(T, b["motivo"], 60 / bpm * 1.5, chiude=b["chiude"])
@@ -135,8 +157,9 @@ def brano(nome, stile):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("brano", choices=list(BRANI)); ap.add_argument("stile", choices=list(STILI)); ap.add_argument("out")
+    ap.add_argument("--dinamica", action="store_true")
     a = ap.parse_args()
-    x = brano(a.brano, a.stile)
+    x = brano(a.brano, a.stile, a.dinamica)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f64le", "-ar", str(SR), "-ac", "2", "-i", "-",
                     "-c:a", "pcm_s24le", a.out], input=x.astype("<f8").tobytes(), check=True)
 
