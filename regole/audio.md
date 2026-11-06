@@ -55,3 +55,15 @@ musica originale a tema (~50 s, leggera, niente sotto 150 Hz) + 3 segni melodici
 `cue_chiusura`), come in `projects/meenakshi/audio/`. Livelli e posizioni li mette Montaggio: musica bassissima e
 costante sotto la voce, segni ~12 dB sotto la voce, chiusura e musica fino alla fine del logo. Dettagli in
 `regole/formato_reel.md`, sezione "Audio".
+
+Nota da Copy, 6/11 (Manuel, per il lungo `coir` e i prossimi): la musica degli ultimi video era troppo melodica, banale,
+quasi infantile. Per `coir` serve poca musica, non sempre: solo un sottotono sotto il voiceover di Manuel e nei momenti
+senza parole. Più profonda e seria (meno melodia, più tappeto, toni bassi, niente motivetti). I punti precisi arriveranno
+nello script per Montaggio (`copioni/coir_testi.md`).
+Nota da Copy, 6/11 (Manuel, `coir`): nei B-roll rumorosi (taxi, strada) Montaggio toglie il suono del girato; lì vanno
+voiceover di Manuel + musica di Audio molto lieve, a tema. I tratti precisi arriveranno nello script per Montaggio.
+
+BOZZE (Manuel, 6/11, coir): per ogni musica o segno, tre bozze diverse (A, B, C) e Manuel approva o no. Per ascoltarle
+dal telefono: un mp4 a schermo nero per brano con le tre bozze una dopo l'altra e la lettera a schermo, a -14 LUFS.
+La musica deve sentirsi anche dall'altoparlante del telefono: voci raddoppiate in alto (1-4 kHz), non solo medio-bassi.
+Gusto (6/11): non troppo lenta, più cinematografica (un passo, accordi che cambiano, crescendo dentro il brano).

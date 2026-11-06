@@ -81,3 +81,6 @@ movimento; mai un montaggio da trailer, nemmeno per i teaser. Da riconfermare co
 - Codice unico: `tools/reel_close.py` (`close()`, `logo_card()`, `VARIANTS`); per i reel già finiti senza chiusura
   `tools/append_closing.py`. Nel teaser con la domanda finale: prima la domanda sul luogo (1.2 s), poi la chiusura.
 - Segno di chiusura di Audio e musica: partono sulla fine della voce e arrivano alla fine del logo.
+
+Nota da Copy, 6/11 (Manuel, registrando i VO di coir): nei verticali la PRIMA frase del voiceover è sempre la più forte
+(il fatto o l'immagine che colpisce di più), mai tenuta per il finale. Il primo titolo a schermo la riprende.

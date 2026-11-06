@@ -15,7 +15,7 @@ consegnato, programmato, pubblicato.
 | comorin | 4 reel (Kanyakumari: cocco, canna, statua di Thiruvalluvar, tre mari in loop senza voce) | girato (3-4/11, Drive 1z5BA2MoG69ExGT6ivPb9VAcbxV25VVmI); copione VO, PER MONTAGGIO, PER AUDIO e didascalie pronti (Copy, 4/11): `copioni/comorin_testi.md`; Manuel registra i 4 VO; musica e segni pronti (Audio, 4/11): `projects/comorin/audio/LEGGIMI.md` | PRONTI TUTTI E 4 (Manuel, 4/11 sera: "gli extra"), date nel calendario v2 | brief `analisi/comorin_reel.md` |
 | panni (pov giungla) | 1 reel: pov "sei nella giungla indiana" e Manuel che stende i panni | pronto, non ancora pubblicato; va sul profilo personale E su Voci Vere (Manuel, 4/11) | proposta dom 8/11 su Voci Vere; sul personale la data è libera | sostituisce la decisione del 29/10 (solo personale) |
 | autostop | 1 reel (Manuel sul motorino di uno sconosciuto che lo riporta a casa) | PRONTO (Manuel, 4/11); frase a schermo da Copy; va su entrambi i profili, personale e Voci Vere (Manuel, 4/11) | proposta ven 6/11 su Voci Vere | nuovo (4/11) |
-| coir | lungo orizzontale + teaser + 3 reel + carosello + 2 set di stories | pianificato, girato da fare a Anjengo/Varkala (Manuel, 2-7/11) | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
+| coir | lungo orizzontale + teaser + 3 reel + 2 caroselli + 3 set di stories | GIRATO il 6/11 (Anathalavattom, Chirayinkeezhu; formato reporter come `te`); girato su Drive e `girato.md` di Montaggio da fare; Copy: domande, parti in camera, VO | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
 | migranti | lungo orizzontale + pacchetto completo | pianificato, da girare a Varkala (9-10/11) e Kochi/Perumbavoor (11-12/11) | proposta lungo B dom 10/1 | `piano/migranti.md` |
 | diwali | 1 reel o scena dentro `migranti` | pianificato, da girare dom 8/11 | da decidere dopo il montato | `piano/diwali.md` |
 | kanyakumari | donne del mare e ONG del posto (verticale/materiale) | girato 3-4/11? Manuel non ha ancora detto cosa ha fatto con KDFSF e Siluvai Nagar | da decidere | `piano/kanyakumari.md` |
@@ -189,7 +189,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | mer 9/12 | bucato (te) | pronto |
 | gio 10/12 | te: carosello "I volti" (+ post YouTube) | nuovo slot, 5 giorni dopo il primo carosello |
 | ven 11/12 | comorin: tre mari (loop) |  |
-| lun 14/12 | extra 1 dal girato (ONG o Kanyakumari) | da scegliere con Manuel |
+| lun 14/12 | extra 1: treno in India (reel di Manuel, già fatto, in galleria) | proposto 6/11; se serve prima, scambiare con kallu (25/11) |
 | gio 17/12 | extra 2 dal girato (Kochi, Varkala o Diwali) | da scegliere con Manuel |
 | sab 19/12 | lungo A (coir): teaser |  |
 | dom 20/12 | LUNGO A (coir) | girato 2-7/11 |
@@ -269,3 +269,17 @@ Nota da Montaggio, 5/11 (Manuel): file sostituiti su Drive con gli stessi nomi.
   alternate (regola stabile in `regole/formato_reel.md`): arthunkal v1-v4, comorin cocco/canna/statua, meenakshi,
   mercato reel A (prima finiva senza chiusura), te v1-v4 (prima senza chiusura; v1 tiene la mini sigla e prende la
   scritta prima del logo). Il tre mari di comorin resta senza logo (loop, versione di Manuel).
+
+Nota da Copy, 5/11 (richiesta di Montaggio con l'ok di Manuel): sottotitoli it/en di arthunkal (v5, 6:21) e te (v8, 6:26)
+spostati sui lunghi nuovi e sostituiti su Drive (montati/<video>/sottotitoli/); capitoli it/en aggiornati nelle descrizioni
+(copioni/arthunkal_pacchetto.md, copioni/te_pacchetto.md e TESTI_*.txt su Drive). Script: projects/arthunkal/sottotitoli/shift_v5.py.
+
+Nota da Copy, 5/11 sera: domande, parti in camera e riprese in più per `coir` e `erosione` (riprese del 6/11) in
+`copioni/coir_testi.md` e `copioni/erosione_testi.md`. Il voiceover si scrive dopo, sul girato.
+
+Nota da Pianificazione, 6/11 (Manuel): `coir` girato oggi ad Anathalavattom (ad Anchuthengu e Nedunganda nessuno al lavoro). Nuovo video `erosione` (famiglie sfollate dall'erosione, `piano/erosione.md`): da girare forse lunedì 9/11, da confermare; se si fa, si sovrappone al blocco `migranti` del 9-12/11 (lungo B 10/1). Lunghi per ora A coir 20/12, B migranti 10/1; `erosione` può essere B o C, decido quando c'è il girato.
+
+Nota da Copy, 6/11 (Manuel): coir girato il 6/11 alla società di Anathalavattom (Chirayinkeezhu). Pacchetto da provare:
+trailer + lungo + 4 REEL (non 3) + 2 caroselli + 3 set di stories. Un reel "Made in India". Dettagli in `copioni/coir_testi.md`.
+
+Nota da Pianificazione, 6/11 (Manuel): nuovo reel a sé `treno` (prendere un treno in India), già fatto da Manuel e nella sua galleria. Occupa l'extra 1 del 14/12 (slot prima da scegliere); l'extra 2 del 17/12 resta libero. Se Manuel lo vuole prima, scambia con kallu (25/11) e kallu va al 14/12. Per la regola dei reel più leggeri, proposto su entrambi i profili (personale e Voci Vere), da confermare. Copy: didascalia; Montaggio: solo se serve rifinire.

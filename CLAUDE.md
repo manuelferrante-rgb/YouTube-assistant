@@ -8,12 +8,14 @@ Coordinate del mercato di Marari per la mappa: 9.62646 N, 76.29600 E (date da Ma
 Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente supporto editoriale lì.
 
 ## Limiti (sempre)
-- Niente riprese o narrazioni che sfruttano la sofferenza per engagement.
+- Sofferenza e clickbait (Manuel, 5/11): poco sfruttamento per il clickbait, ma non troppo. Mai al centro del racconto.
 - Ogni contenuto contestualizzato (paese, regione, situazione), mai generalizzazioni.
 - Framing "raccontare", mai "salvare" o "aiutare dall'alto". Niente tono da salvatore bianco.
 - Nel copy: "paesi a basso/medio reddito" o il nome del paese, mai "sottosviluppati" (anche se Manuel lo dice a voce).
-- Storie di persone solo con il loro consenso. Manuel lo raccoglie prima di caricare: nel girato che manda il
-  consenso c'è sempre, non chiederlo.
+- Storie di persone solo con il loro consenso. Se Manuel sta registrando, ce l'ha: non ricordarglielo mai
+  (Manuel, 5/11). Nel girato che manda il consenso c'è sempre, non chiederlo.
+- Salari e dati (Manuel, 5/11): vanno bene dalle parole degli intervistati, attribuite a loro. Le linee generali
+  si possono prendere online da fonti verificate (le cerca Claude), con la fonte indicata.
 - Stile: diretto, concreto, niente retorica. Mai il trattino lungo.
 
 ## Chat di lavoro (dal 25/10)
@@ -31,7 +33,7 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 
 Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01Htfbh2Xp2z2rbRNGYUwBKL (dal 29/10 sera, prossimo video; meenakshi era session_01Htfbh1ny4yyq4niKggdc3h),
 Pianificazione session_01HtfbgyQZdNPCAAcY16CRCR (dal 4/11; la precedente session_01Htfbh2bajkKHUYyPHPM7ru è chiusa), Copy session_01Htfbh1edWrAWmq9z8TR8Ss (dal 4/11 sera),
-Insights session_01HtfbgxeFrmgvhNi9P52eKk (dal 4/11), Audio session_01Htfbh1kXiyxeoJVcNiDrAt (dal 28/10).
+Insights session_01HtfbgxeFrmgvhNi9P52eKk (dal 4/11), Audio session_01Htfbh1hh4sZ1vuxcxFFMyL (dal 4/11; la precedente session_01Htfbh1kXiyxeoJVcNiDrAt è chiusa).
 
 FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
 1. Pianificazione (fatti, riprese), Copy (domande, parti in camera, voiceover, testi a schermo), Insights (cosa
@@ -51,6 +53,9 @@ Montaggio e lo scrive in `projects/<video>/girato.md`; le altre chat leggono que
 CHAT NUOVE PER OGNI VIDEO (Manuel, 26/10): dal prossimo video Manuel apre chat nuove, una per area, con il nome del
 video (es. "Copy - <video>"). La prima frase: "Sei la chat <area> di Voci Vere per il video <video>, leggi CLAUDE.md".
 Ogni chat, quando Manuel parla di un video nuovo o la conversazione è molto lunga, gli ricorda di aprirne una nuova.
+CHAT CREATE DA UN'ALTRA CHAT (Manuel, 6/11): quando una chat apre una chat nuova (create_session), le passa SEMPRE il repo:
+`source_url` = https://github.com/manuelferrante-rgb/YouTube-assistant (branch master). Senza, la chat nuova parte
+senza repo e non può fare push (successo ad Audio il 4/11).
 
 Regole tra chat:
 - Ogni video ha un nome breve uguale ovunque (es. `arthunkal`): `projects/arthunkal/`, `copioni/arthunkal_testi.md`.

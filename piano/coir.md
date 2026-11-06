@@ -103,3 +103,44 @@ Anelli da girare, con chi trovare in ognuno (da verificare sul posto):
 6. Prodotti: stuoie, tappeti, passatoie. Quanto vale il prodotto finito rispetto a quanto prende chi fila: chiedere,
    attribuire a chi lo dice.
 Domanda guida della filiera: chi guadagna cosa a ogni passaggio. Solo con parole degli intervistati.
+
+## Dove registrare le donne del coir vicino a Varkala (Pianificazione, 5/11, risposta a Manuel)
+Nessun nome di società o contatto verificato online: le fonti danno solo l'area. Si trovano sul posto.
+- Area: taluk di Chirayinkeezhu (Anchuthengu, Kaniyapuram, zona dei backwater e del fiume Vamanapuram), già dentro i 30 minuti da Varkala.
+  The News Minute: c'erano quasi 60 società cooperative del coir a Chirayinkeezhu, oggi circa la metà chiuse; un sindacalista dice che circa il 60%
+  dei lavoratori ha più di 50 anni (articolo non datato nei risultati: attribuire, non dire come dato attuale).
+- Società e cooperative: nessun nome trovato per Kappil, Edava, Vakkom, Kadakkavoor, Perumathura. Chiedere al panchayat di Anchuthengu e in paese
+  "coir society" e dove si fila ancora. Quelle aperte sono i posti migliori: più donne insieme, filatura in azione, e c'è chi parla del pagamento.
+- Cortili e case con la ruota di filatura: sono la strada più facile per una persona sola con il suo consenso.
+- Un sindacalista o il segretario di una società: per il contesto del declino (le fonti citano entrambi), non per sostituire le donne.
+Ordine per Manuel: panchayat e mercato di Anjengo, poi la società o il cortile indicati, poi l'acqua dell'ammollo. Dopo il sopralluogo la lista riprese sopra
+resta valida.
+Fonti: The News Minute (Chirayinkeezhu), CPPR "Anjengo coir", Lok Sabha (interventi sul declino).
+
+## Dove andare dalla base reale (Pianificazione, 5/11): Taaraa Loca è a Ayroor, Edava, a nord di Varkala
+Testo di una ricerca con IA incollato da Manuel. Verificato quello che si poteva:
+- CONFERMATO: la Anathalavattom Coir Cooperative Society esiste, a Chirayinkeezhu (The News Minute: segretario Ashokan, articolo vecchio, il ruolo può
+  essere cambiato; Wikipedia: nata da Anathalavattom Anandan, sindacalista del coir, che nel 1958 organizzò i lavoratori). Se sia aperta oggi: da verificare sul posto.
+- NON CONFERMATO (nessuna fonte): coir filato a mano a Vakkom e Akathumuri (i due luoghi esistono, nelle fonti non c'è il coir); il "grande capannone aperto con
+  ingresso libero" della società; gli orari "8-11 e dopo le 16" (consiglio generico). Anchuthengu: già nel piano, fonte CPPR.
+- Direzioni e tempi del testo incoerenti: da controllare su Maps, appena la rete lo permette. Da Ayroor la distanza è più lunga di quella
+  stimata da Varkala (9-12 km): se supera i 30 minuti di auto, Manuel decide.
+Ordine proposto: 1) società Anathalavattom (chiedere "Anathalavattom coir society", Chirayinkeezhu/Kadakkavoor); 2) Anchuthengu: panchayat, mercato, cortili;
+3) Vakkom e Akathumuri solo se strada facendo si vede il coir.
+
+## Decisione 5/11 (Manuel): formato reporter, come `te`
+Meno prima/dopo nello stesso punto. Manuel fa il reporter in camera e spiega la storia mentre cammina e incontra le persone, come nel lungo `te`
+(storia, chi lavora oggi, cosa cambia). Il prima e dopo resta solo se capita, non si cerca. Restano: Manuel in camera dentro l'azione, audio
+ambiente pulito 30 s, interviste con consenso. Le parti da dire e le domande le scrive Copy dai fatti sopra (`copioni/coir_testi.md`).
+Ordine di domani: Anchuthengu presto (camminata, cortili), poi società Anathalavattom a tarda mattina (messaggio WhatsApp scritto il 5/11).
+
+Nota 5/11 sera (Manuel): trovata la Nedunganda Coir Society (nome da Manuel, nessuna fonte online verificata da me), più vicina della società di Anathalavattom. Sostituisce Anathalavattom
+nel giro di domani (6/11); Anathalavattom resta di riserva. Nedunganda è citata anche nelle fonti sull'erosione (Onmanorama 2022, tratto di costa senza spiaggia a nord di Muthalapozhi):
+il posto può servire anche a `erosione` (`piano/erosione.md`).
+Verifica 5/11 sera della Nedunganda Coir Society: esiste una scheda Justdial (directory, può essere vecchia) con indirizzo Nedungada, Vettoor-Cherunniyoor, Vettoor, Thiruvananthapuram 695312,
+diverso dal villaggio di Nedunganda (695307, tra Kaikkara e Vilabhagom sulla strada Kadakkavoor-Varkala, backwater di Anchuthengu a est, mare a ovest; stazione di Varkala a 5,2 km, fonte
+trivandrumdistrict.blogspot). Vicino al traghetto per Ponnumthuruthu c'è una piccola unità di coir (stessa fonte, vecchia). Stato attuale non verificato: chiedere sul posto.
+
+Nota 6/11 mattina (Manuel): ad Anchuthengu e Nedunganda non ha trovato persone che lavorano il coir. Si va ad Anathalavattom (Chirayinkeezhu/Kadakkavoor), dove forse dicono di sì.
+Coerente con le fonti sul declino (CPPR: quasi nessuna società o fabbrica rimasta nel tratto Anjengo-Kaniyapuram). Se anche lì non si lavora, il declino diventa il racconto:
+ex lavoratrici, chi ha smesso e perché, cosa fanno oggi, in parole loro.
