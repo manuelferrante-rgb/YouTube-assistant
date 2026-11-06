@@ -53,3 +53,5 @@ Quello che titolo e miniatura promettono deve vedersi entro il primo minuto (lez
 a 7 giorni). Se la promessa è "chi fa i tappeti Made in India", l'intro la mantiene. Se il titolo parla della paga
 (4 euro, 80 centesimi), l'intro deve accennarla, altrimenti la promessa arriva a ~4:30 e a ~6:00, troppo tardi.
 Miniatura: una donna sotto la tettoia con la fibra in mano (Premilla), volto leggibile, niente fatica messa in vetrina.
+
+Nota 6/11 (Manuel): "Italia" in VO11 resta: sul posto gli hanno detto che i tappeti vanno in Europa. Il resto del check è approvato.
