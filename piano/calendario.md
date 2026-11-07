@@ -46,6 +46,7 @@ Pacchetto di ogni lungo: teaser (sabato prima), lungo (domenica), 3 reel, 1 caro
 | gio 19/11 | arthunkal: reel 2 | |
 | ven 20/11 | arthunkal: stories set 2 | |
 | sab 21/11 | arthunkal: carosello | |
+| dom 22/11 | comunismo | pronto, POSTICIPATO dal 12/11 (Manuel 7/11) |
 | lun 23/11 | arthunkal: reel 3 | |
 | mer 25/11 | kallu (reel pronto) | |
 | sab 28/11 | te: teaser | |
@@ -159,8 +160,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | dom 8/11 | Diwali: Manuel gira | nessun reel |
 | lun 9/11 | mercato: reel 3 | fisso |
 | mar 10/11 | Diwali: reel | montato veloce |
-| mer 11/11 | meenakshi | pronto |
-| gio 12/11 | comunismo | pronto |
+| gio 12/11 | meenakshi | pronto (Manuel 7/11: giovedì) |
 | sab 14/11 | arthunkal: teaser | fisso |
 | dom 15/11 | arthunkal: LUNGO | fisso |
 | lun 16/11 | mercato: carosello "I volti" (+ post YouTube) | nuovo slot, 9 giorni dopo il primo carosello |
@@ -257,3 +257,5 @@ Nota da Copy, 6/11 (Manuel): coir girato il 6/11 alla società di Anathalavattom
 trailer + lungo + 4 REEL (non 3) + 2 caroselli + 3 set di stories. Un reel "Made in India". Dettagli in `copioni/coir_testi.md`.
 
 Nota da Pianificazione, 6/11 (Manuel): nuovo reel a sé `treno` (prendere un treno in India), già fatto da Manuel e nella sua galleria. Occupa l'extra 1 del 14/12 (slot prima da scegliere); l'extra 2 del 17/12 resta libero. Se Manuel lo vuole prima, scambia con kallu (25/11) e kallu va al 14/12. Per la regola dei reel più leggeri, proposto su entrambi i profili (personale e Voci Vere), da confermare. Copy: didascalia; Montaggio: solo se serve rifinire.
+
+Nota da Pianificazione, 7/11 (Manuel): meenakshi esce gio 12/11 (era mer 11/11); comunismo posticipato da gio 12/11 a dom 22/11 (non cancellato). Il 11/11 resta libero.
