@@ -196,7 +196,7 @@ def tight(src, ranges, min_gap=0.32, keep=0.1):
     return out
 
 
-def piece(name, src, ranges, speed=1.1, gap=0.2, pad=(0.06, 0.1)):
+def piece(name, src, ranges, speed=1.0, gap=0.2, pad=(0.06, 0.1)):
     """Voce da più tratti (misurati sulla voce pulita) uniti con respiri di gap s e accelerata -> (file, durata)."""
     D = dur_of(src)
     ranges = [(max(0, a - pad[0]), min(D, b + pad[1])) for a, b in ranges]
@@ -227,11 +227,15 @@ class Edit:
     def t(self):
         return self.tl.t
 
-    def b(self, src, a, d, cx=0.5, speed=1.0):
-        """B-roll muto: sotto solo voce, voiceover o musica di Audio."""
-        self.tl.broll(src, a, d, gain=0.0, cx=cx, grade=DEF, fx=dict(zoom=(1.0, 1.04, None)), speed=speed, fade=0.12)
+    def b(self, src, a, d, cx=0.5, speed=1.0, zoom=1.0, zy=0.4, gain=0.0):
+        """B-roll muto (gain 0): sotto solo voce, voiceover o musica di Audio. zoom/zy: ingrandimento fisso lieve
+        con il taglio spostato in alto (zy=1: si toglie solo la parte alta, es. la mano di Manuel in 0088)."""
+        self.tl.broll(src, a, d, gain=gain, cx=cx, grade=DEF, zoom=zoom,
+                      fx=None if zoom != 1.0 else dict(zoom=(1.0, 1.04, None)), speed=speed, fade=0.12)
+        if zoom != 1.0:
+            self.tl.shots[-1]["zy"] = zy
 
-    def say(self, src, ranges, speed=1.1, cover=None, subs=(), cut_gaps=True, pad=(0.06, 0.12), exact=False, lift=False):
+    def say(self, src, ranges, speed=1.0, cover=None, subs=(), cut_gaps=True, pad=(0.06, 0.12), exact=False, lift=False):
         """Parlato con la voce livellata; cover = {indice: (clip, inizio)} copre quel tratto con un'altra immagine
         mentre la voce continua. subs (inizio, fine, testo) in tempi della sorgente."""
         cover = cover or {}
@@ -260,16 +264,18 @@ class Edit:
                 if hi - lo > 0.15:
                     self.tl.subs.append((t0 + (lo - a) / speed, t0 + (hi - a) / speed, txt))
 
-    def vo(self, name, ranges, items, lead=0.15, tail=0.25, speed=1.1):
-        """Voiceover di Manuel sopra immagini mute: items = [(clip, inizio, durata o None)]. -> (t voce, durata)."""
-        f, d = piece(f"vo_{name}", VO, ranges, speed=speed)
+    def vo(self, name, ranges, items, lead=0.15, tail=0.25, speed=1.0, src=None, db=0.0):
+        """Voiceover di Manuel sopra immagini mute: items = [(clip, inizio, durata o None[, opzioni di b()])].
+        db: voce un filo più alta nei punti chiave (Manuel 7/11). -> (t voce, durata)."""
+        f, d = piece(f"vo_{name}", src or VO, ranges, speed=speed)
         t0 = self.t
-        self.tl.vos.append(dict(file=f, a=0, b=d, speed=1.0, t=t0 + lead, raw=True))
+        self.tl.vos.append(dict(file=f, a=0, b=d, speed=1.0, t=t0 + lead, raw=True,
+                                **({"af": f"volume={db}dB"} if db else {})))
         total = lead + d + tail
         fixed = sum(x[2] for x in items if x[2])
         rest = max(0.8, total - fixed) / max(1, sum(1 for x in items if not x[2]))
-        for src, a, dd in items:
-            self.b(src, a, dd or rest)
+        for it in items:
+            self.b(it[0], it[1], it[2] or rest, **(it[3] if len(it) > 3 else {}))
         return t0 + lead, d
 
     def label(self, text, t0, d=2.8):
@@ -329,99 +335,195 @@ def music(tl, name, t0, t1, offset=0.0, level=MUS, fin=1.0, fout=1.0):
 
 
 SIGLA_CLIPS = [(C("0544"), 1.6), (C("0540"), 2.0), (C("0021"), 1.0), (C("0069"), 0.3), (C("0089"), 2.0), (C("0087"), 0.5)]
+VO2 = f"{R}/vo_v2.m4a"          # VO13-VO18 (Drive: "Ayanikuzhivila-Arathantevila Road.m4a", 7/11)
 
-# voiceover del lungo (voiceoverlungo.m4a): frasi misurate sulla voce pulita, si usa sempre l'ultima presa ("ripeto")
+# voiceover del lungo (voiceoverlungo.m4a e vo_v2.m4a): frasi misurate sulla voce pulita, sempre l'ultima presa ("ripeto")
 V = {0: [(4.41, 5.99), (6.41, 8.83)],
      1: [(9.36, 11.22), (11.52, 14.03), (14.41, 15.33), (15.86, 18.44)],
      2: [(19.87, 23.09)], 3: [(23.94, 26.84)],
      4: [(31.07, 34.60), (35.04, 37.66)],
      5: [(40.40, 41.95), (42.33, 45.64), (46.00, 47.41)],
-     6: [(51.02, 52.95), (53.31, 54.84), (55.12, 58.05)],
+     6: [(51.02, 52.95), (55.12, 58.05)],                    # v2: via "Questa barca ne ha cinquanta" (lo dice 0024)
      7: [(61.32, 62.76), (63.01, 65.11), (65.42, 67.52)],
      8: [(72.72, 74.65)], 9: [(75.57, 79.45)],
      10: [(80.36, 82.59), (82.89, 84.13), (84.57, 86.45)],
-     11: [(99.54, 103.69), (103.98, 105.31), (106.45, 107.62)],
+     11: [(99.54, 103.69), (103.98, 105.31)], "11b": [(106.45, 107.62)],
      12: [(124.52, 127.01), (127.27, 128.83), (129.15, 130.63), (130.94, 133.43), (133.86, 135.98), (136.26, 138.72)]}
-I = dict(speed=1.0, cut_gaps=False, lift=True, exact=True)          # interviste: velocità normale, tagli esatti sulle risposte
+V2 = {13: [(1.69, 5.67), (6.01, 6.83)], 14: [(8.21, 12.82)], 15: [(26.40, 30.85)],
+      16: [(31.25, 33.32), (37.18, 39.28)], 17: [(45.81, 47.83), (48.14, 50.99)], 18: [(53.23, 53.84), (54.21, 57.58)]}
+I = dict(speed=1.0, cut_gaps=False, lift=True, exact=True)   # interviste: velocità normale, tagli esatti sulle risposte
+KEY = dict(speed=0.9, db=2.0)                                 # frasi chiave (Manuel 7/11): 0.9x e voce un filo più alta
+
+
+def soft_clean(src, a, b):
+    """Voce della chiusura 0102 (Manuel 7/11: fondo troppo alto e voce sgranata): passa-alto, riduzione spettrale leggera,
+    poi RNNoise mescolato al 85% (meno artefatti del 100%), gate dolce nelle pause e -18 LUFS. Stessi tempi della clip."""
+    out = f"{VOCE}/chiusura_{os.path.splitext(os.path.basename(src))[0]}_{a:.2f}_{b:.2f}.wav"
+    if os.path.exists(out):
+        return out
+    from voice_clean import RNN
+    cleaned(src, VOCE)                                          # scarica il modello RNNoise se manca
+    tmp = out.replace(".wav", "_t.wav")
+    run(["ffmpeg", "-v", "error", "-y", "-i", src, "-map", "0:a:0", "-ar", "48000", "-af",
+         f"aformat=channel_layouts=mono,volume=0.5,highpass=f=110,highpass=f=110,afftdn=nf=-28:nr=14,{AFFTDN_FIX},"
+         f"arnndn=m={RNN}:mix=0.85,atrim=start_sample=480,asetpts=PTS-STARTPTS,lowpass=f=11000",
+         "-c:a", "pcm_s16le", tmp])
+    c = _pcm(tmp).astype(np.float64)
+    seg = c[int(a * 48000):int(b * 48000)]
+    hv = 480
+    m = len(c) // hv
+    dv = 20 * np.log10(np.sqrt((c[:m * hv].reshape(m, hv) ** 2).mean(1)) + 1e-9)
+    dv = np.convolve(dv, np.ones(5) / 5, mode="same")
+    ref = dv[int(a * 100):int(b * 100)]
+    lo, hi = np.percentile(ref, 10), np.percentile(ref, 95)
+    on = np.convolve((dv > lo + 0.3 * (hi - lo)).astype(float), np.ones(27), mode="full")[6:6 + m] > 0
+    gate = np.convolve(np.where(on, 1.0, 10 ** (-30 / 20)), np.ones(3) / 3, mode="same")
+    y = c[:m * hv] * np.interp(np.arange(m * hv), (np.arange(m) + 0.5) * hv, gate)
+    import soundfile as sf
+    sf.write(tmp, np.stack([y, y], 1).astype(np.float32), 48000, subtype="PCM_16")
+    seg_l = subprocess.run(["ffmpeg", "-hide_banner", "-ss", str(a), "-t", str(b - a), "-i", tmp, "-af",
+                            "loudnorm=print_format=json", "-f", "null", "-"], capture_output=True, text=True).stderr
+    g = VOICE_LUFS - float(json.loads(seg_l.split("[Parsed_loudnorm")[-1].split("\n", 1)[1])["input_i"])
+    run(["ffmpeg", "-v", "error", "-y", "-i", tmp, "-af", f"volume={g:.2f}dB,alimiter=limit=0.95:level=false",
+         "-ac", "2", "-ar", "48000", "-c:a", "pcm_s16le", out])
+    os.remove(tmp)
+    return out
+
+
+def closing_visual(W, H, items, dur, card_at, card_dur):
+    """Immagini della chiusura (le donne sedute, l'uomo nella laguna, la fabbrica, la laguna) montate in una clip sola,
+    con la scritta finale animata (tools/scritta_finale.py, font D, riquadro con la luce a cometa) da card_at s."""
+    tag = "_".join(f"{os.path.basename(c)[24:28]}{a:.1f}" for c, a in items)
+    out = f"{OUT}/chiusura_{tag}_{dur:.2f}_{card_at:.2f}_{W}x{H}.mp4"
+    if os.path.exists(out):
+        return out
+    fr = f"{OUT}/scritta_{W}x{H}_{card_dur:.2f}"
+    if not os.path.exists(f"{fr}/0000.png"):
+        run(["python3", f"{ROOT}/tools/scritta_finale.py", fr, "--w", str(W), "--h", str(H), "--dur", f"{card_dur:.2f}",
+             "--fadeout", "0.6"])
+    d = dur / len(items)
+    ins, fc = [], ""
+    for i, (c, a) in enumerate(items):
+        ins += ["-ss", f"{a:.2f}", "-t", f"{d + 0.5:.2f}", "-i", c]
+        fc += (f"[{i}:v]scale={W}:{H}:flags=lanczos,{DEF},fps=30,setpts=PTS-STARTPTS,trim=duration={d:.3f},"
+               f"setpts=PTS-STARTPTS[v{i}];")
+    fc += "".join(f"[v{i}]" for i in range(len(items))) + f"concat=n={len(items)}:v=1:a=0[bg];"
+    n = len(items)
+    fc += (f"[{n}:v]setpts=PTS-STARTPTS+{card_at:.3f}/TB[ov];[bg][ov]overlay=eof_action=pass:format=auto,"
+           f"format=yuv420p[o]")
+    run(["ffmpeg", "-v", "error", "-y", *ins, "-framerate", "30", "-i", f"{fr}/%04d.png", "-filter_complex", fc,
+         "-map", "[o]", "-t", f"{dur:.3f}", "-c:v", "libx264", "-crf", "14", "-preset", "medium", out])
+    return out
 
 
 def long_video(W, H):
+    """Lungo v2 (7/11): tutto a 1x, VO13-VO18, tre momenti di sole immagini e musica, il parlato di Manuel ripreso
+    (copioni/coir_testi.md, "LUNGO v2") e le correzioni di Manuel del 7/11."""
     e = Edit(W, H, "long")
     tl = e.tl
     vo = lambda n, items, **kw: e.vo(str(n), V[n], items, **kw)
+    vo2 = lambda n, items, **kw: e.vo(f"v2_{n}", V2[n], items, src=VO2, **kw)
 
-    # 0. INTRO (~20 s): l'uomo nella laguna già nel gesto, Manuel in barca, VO0 sulle donne, la sigla
-    e.tl.broll(C("0544"), 1.9, 1.8, gain=0.8, grade=DEF, fade=0.05)    # suono vero dell'acqua (fra due voci)
-    e.say(C("0034"), [(0.15, 4.1)])                                   # "Così viene raccolta... i nostri tappeti."
+    def quiet(items, track, offset, level=0.28, nat=0.0):
+        """Momento di sole immagini e musica (niente voce né scritte): items = [(clip, inizio, durata)]."""
+        t0 = e.t
+        for c, a, d in items:
+            e.b(c, a, d, gain=nat)
+        music(tl, track, t0 - 0.3, e.t + 0.2, offset=offset, level=level, fin=0.8, fout=1.2)
+        return t0
+
+    # 0. INTRO: parte subito parlata. La voce di 0034 va già sopra l'uomo nella laguna; finita la sua clip entra
+    # l'immagine di Manuel in barca (Manuel 7/11)
+    e.say(C("0034"), [(0.1, 2.5), (2.5, 4.1)], cover={0: (C("0544"), 1.6)}, exact=True, pad=(0.0, 0.1))
     e.say(C("0038"), [(0.0, 3.5)])                                    # "Il cocco da cui viene estratta la fibra viene da qua."
     t_mi = e.t
     vo(0, [(C("0063"), 4.0, 2.6), (C("0069"), 0.0, None)], lead=0.1, tail=0.2)
     music(tl, "coir_intro", t_mi - 0.4, e.t + 0.3, fin=0.4, fout=0.4)    # sfuma sull'attacco della sigla
     sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="coir")
 
-    # 1. LE DONNE CHE NON LO FANNO PIÙ (~35 s)
+    # 1. DOVE SIAMO, LE DONNE CHE NON LO FANNO PIÙ
     t_1 = e.t
-    tv, d1 = vo(1, [(C("0525"), 0.3, 4.6), (C("0529"), 0.3, None)], lead=0.15)
-    e.label("Chirayinkeezhu, Kerala", t_1 + 5.4)                   # dopo il banner "iscriviti"
-    off = music(tl, "coir_strada", t_1 - 0.2, e.t + 0.2, fin=0.3, fout=0.8)
-    e.say(C("0526"), [(5.17, 12.25), (13.25, 15.35)], exact=True)       # prima c'è la domanda in inglese: niente snap                  # Manuel: "Queste donne prima lavoravano..."
+    e.say(C("0039"), [(0.0, 1.9)])                                  # "Mi trovo nel sud dell'India,"
+    e.say(C("0040"), [(0.0, 2.3)])                                    # "ad Anathalavattom, in Kerala."
+    t_v1 = e.t
+    vo(1, [(C("0525"), 0.3, 4.6), (C("0529"), 0.3, None)], lead=0.15)
+    off = music(tl, "coir_strada", t_v1 - 0.2, e.t + 0.2, fin=0.3, fout=0.8)
+    e.say(C("0526"), [(5.17, 12.25), (13.25, 15.35)], exact=True)     # prima c'è la domanda in inglese: niente snap
     e.say(C("0527"), [(18.1, 18.8), (19.9, 21.05)], subs=[(18.0, 21.1, "1975.")], **I)
+    e.say(C("0532"), [(0.0, 5.75)])                                   # "Più rimango qua, più arrivano altre donne..."
     t_2 = e.t
     vo(2, [(C("0527"), 29.5, 3.6)], lead=0.15, tail=0.1)
     vo(3, [(C("0529"), 5.5, 2.2), (C("0121"), 2.0, None)], lead=0.1, tail=0.3)
     music(tl, "coir_strada", t_2 - 0.3, e.t, offset=off, fin=0.8, fout=1.0)
 
-    # 2. LA SOCIETÀ (~15 s)
+    # 2. LA SOCIETÀ: subito il posto e le persone che aprono il cocco, Manuel in camera un attimo, di nuovo loro
     t_s = e.t
-    e.say(C("0538"), [(0.35, 3.9), (4.25, 5.55), (5.7, 8.6), (9.65, 12.15)],
-          cover={2: (C("0063"), 13.0), 3: (C("0109"), 1.0)})
-    vo(4, [(C("0088"), 0.3, 3.0), (C("0098"), 0.3, None)])
+    e.say(C("0536"), [(0.0, 5.3)], cover={0: (C("0537"), 18.5)})     # "Forse abbiamo trovato... una società" sul posto
+    e.say(C("0538"), [(0.35, 2.2), (2.45, 3.9), (4.25, 5.55), (5.7, 8.6), (9.65, 12.15)],
+          cover={0: (C("0061"), 0.3), 1: (C("0109"), 1.0), 3: (C("0063"), 13.0), 4: (C("0540"), 6.0)})
+    vo(4, [(C("0088"), 0.3, 3.2, dict(zoom=1.14, zy=1.0)), (C("0098"), 0.3, None)])   # zoom lieve: via la mano in alto
 
     # 3. LA LAGUNA E L'UOMO IN BARCA
     t_l = e.t
     e.say(C("0546"), [(9.4, 11.0), (12.6, 16.75), (17.8, 18.8), (20.6, 23.5), (25.1, 25.7), (27.3, 28.0), (28.6, 30.4)],
           cover={1: (C("0544"), 0.0), 3: (C("0540"), 6.0), 4: (C("0008"), 0.5), 6: (C("0009"), 0.5)})
+    quiet([(C("0544"), 4.2, 2.6), (C("0061"), 0.5, 3.0)], "coir_laguna", 0.0, level=0.22)   # la laguna, solo musica
+    e.say(C("0023"), [(12.95, 17.1), (18.6, 19.95)])                  # "Adesso andiamo a prendere il cocco..."
     t_m = e.t
     vo(5, [(C("0021"), 1.0, 2.2), (C("0107"), 2.0, 2.4), (C("0108"), 9.0, None)], lead=0.3)
-    e.say(C("0044"), [(0.0, 2.6)], cover={0: (C("0022"), 1.0)})          # "Dobbiamo stare attenti..." (momento leggero)
+    e.say(C("0044"), [(0.0, 2.6)])                                    # la barca affondata si vede nella sua clip (7/11)
     e.b(C("0020"), 1.0, 1.4)
-    tv6, d6 = vo(6, [(C("0046"), 0.8, 3.4), (C("0047"), 0.0, None)])
+    tv6, d6 = vo(6, [(C("0046"), 0.8, 3.0), (C("0047"), 0.0, None)])
     music(tl, "coir_laguna", t_m - 0.6, e.t + 0.3, offset=max(0.0, 15.0 - (tv6 - (t_m - 0.6))), fin=0.8, fout=1.0)
-    e.say(C("0031"), [(0.0, 4.45), (4.95, 9.4)], cover={1: (C("0052"), 0.0)})     # lui riemerge mentre se ne parla
+    e.say(C("0024"), [(0.2, 6.2)])                        # "Questa barca è più anziana della società..."
+    t13 = e.t
+    vo2(13, [(C("0052"), 0.0, 4.0), (C("0056"), 4.0, 2.4), (C("0057"), 0.0, None)])
+    music(tl, "coir_laguna", t13 - 0.4, e.t + 0.3, offset=20.0, fin=0.5, fout=1.0)
+    e.say(C("0031"), [(0.0, 4.45), (4.95, 9.4)], cover={1: (C("0058"), 0.5)})
     e.say(C("0045"), [(0.0, 4.0), (5.1, 7.4), (8.7, 12.6)])
-    e.say(C("0043"), [(0.0, 4.8)])
-    e.say(C("0064"), [(5.95, 9.35)], exact=True)                                    # le donne lo prendono in giro: "posso andare in Italia..."
+    vo2(14, [(C("0097"), 0.0, 2.0), (C("0099"), 0.3, 1.8), (C("0104"), 0.3, None)])
+    # "Mi sento privilegiato": prima le persone al lavoro, poi Manuel, poi di nuovo loro (7/11)
+    e.say(C("0043"), [(0.0, 1.43), (1.43, 2.5), (2.53, 4.8)], cover={0: (C("0111"), 0.5), 2: (C("0068"), 1.0)}, exact=True,
+          pad=(0.02, 0.06))
+    e.say(C("0064"), [(5.95, 9.35)], exact=True)                      # "mi prendono in giro, posso andare in Italia..."
 
     # 4. LE DONNE SOTTO LA TETTOIA (il cuore)
     t_d = e.t
-    vo(7, [(C("0540"), 0.5, 2.6), (C("0109"), 1.0, 1.6), (C("0110"), 0.5, 1.6), (C("0111"), 0.5, None)], lead=0.3)
+    vo(7, [(C("0540"), 0.5, 2.6), (C("0109"), 1.0, 1.6), (C("0110"), 0.5, 1.6), (C("0111"), 0.5, None)], lead=0.3, tail=0.1)
+    vo2(15, [(C("0540"), 6.0, None)], lead=0.05)
     e.say(C("0542"), [(4.4, 7.65), (9.35, 10.45)],
           subs=[(4.4, 7.65, "Da quanti anni fai questo lavoro?"), (9.35, 10.45, "Quarant'anni.")], **I)
-    e.say(C("0549"), [(0.0, 1.65), (1.85, 2.5), (7.05, 8.7), (11.45, 12.55), (13.35, 15.95)],
-          subs=[(0.0, 1.65, "Come ti chiami?"), (1.9, 2.45, "Premilla."), (7.05, 8.7, "Sessanta."),
+    e.say(C("0549"), [(0.0, 1.65), (1.85, 2.5), (5.75, 6.7), (7.05, 8.7), (9.5, 11.3), (11.45, 12.55), (13.35, 15.95)],
+          subs=[(0.0, 1.65, "Come ti chiami?"), (1.9, 2.45, "Premilla."), (5.75, 6.7, "Quanti anni hai?"),
+                (7.05, 8.7, "Sessanta."), (9.5, 11.3, "E da quanti anni fai questo lavoro?"),
                 (11.45, 12.55, "Quarant'anni."), (13.35, 15.95, "La società ha aperto quarant'anni fa.")], **I)
-    vo(8, [(C("0001"), 0.5, None)], lead=0.1, tail=0.2)
+    vo(8, [(C("0010"), 0.3, None)], lead=0.1, tail=0.2)
+    e.say(C("0001"), [(4.6, 14.4)])                                   # "loro sono le prime, le uniche donne... tutti i giorni"
     e.say(C("0543"), [(5.05, 6.85), (8.85, 12.15)], cover={1: (C("0063"), 13.0)})
+    e.say(C("0015"), [(0.0, 3.95)])                                   # "È difficile comunicare... l'interprete"
     t_sal = e.t
     e.say(C("0002"), [(0.0, 1.6), (35.7, 36.85)], cover={0: (C("0106"), 0.5), 1: (C("0109"), 3.0)},
           subs=[(0.0, 1.6, "Quanto è il salario?"), (35.7, 36.85, "Quattrocento rupie al giorno.")], **I)
     e.say(C("0003"), [(0.55, 2.1), (2.3, 5.65)], cover={0: (C("0016"), 0.0), 1: (C("0063"), 0.5)},
           subs=[(0.55, 5.65, "Con un salario così basso, i giovani non vengono.")], **I)
-    e.say(C("0006"), [(0.0, 4.9), (6.2, 9.6), (22.4, 24.7), (25.1, 28.5), (29.1, 30.2), (30.8, 35.2)],
-          cover={2: (C("0110"), 0.5), 3: (C("0063"), 0.8)})
+    e.say(C("0006"), [(0.0, 4.9), (6.2, 9.6), (10.2, 13.3), (14.4, 19.0), (19.4, 21.95), (22.4, 24.7), (25.1, 28.5),
+                      (29.1, 30.2), (30.8, 35.2)],
+          cover={2: (C("0111"), 1.0), 3: (C("0110"), 0.5), 5: (C("0106"), 3.0), 6: (C("0063"), 0.8)})
+    quiet([(C("0549"), 0.3, 4.6), (C("0063"), 13.0, 3.4)], "coir_strada", 12.0)     # dopo il salario: 8 s
 
     # 5. LE MACCHINE E LA FABBRICA
     t_f = e.t
     e.say(C("0062"), [(2.4, 8.25)])
+    e.say(C("0548"), [(6.2, 9.2), (10.1, 14.65)])                          # "da qui vengono messi a lavorare dentro le macchine..."
     t_9 = e.t
-    vo(9, [(C("0017"), 0.0, 2.0), (C("0090"), 0.3, 1.4), (C("0105"), 0.2, None)], lead=0.4, tail=0.1)
-    for k, a, d in (("0066", 3.5, 1.3), ("0068", 1.0, 1.3), ("0072", 1.0, 1.2), ("0073", 0.5, 1.2), ("0074", 0.0, 1.4)):
-        if e.t + d - (t_9 - 0.5) > 11.9:                               # il brano dura 12 s: i tagli finiscono con lui
-            break
-        e.b(C(k), a, d)
-    music(tl, "coir_macchine", t_9 - 0.5, e.t, fin=0.5, fout=1.2)
-    e.say(C("0076"), [(1.3, 12.1)], cover={})
-    vo(10, [(C("0085"), 0.0, 2.6), (C("0084"), 0.3, 1.6), (C("0087"), 0.0, None)])
+    vo(9, [(C("0017"), 0.0, 2.2), (C("0090"), 0.3, None)], lead=0.4, tail=0.1)
+    vo2(16, [(C("0017"), 15.0, 2.4), (C("0105"), 0.2, None)], tail=0.3)
+    music(tl, "coir_macchine", t_9 - 0.5, min(e.t, t_9 + 11.5), fin=0.5, fout=1.2)
+    # "280 al giorno in 8 ore" fluido: via la parola accennata prima di "in 8 ore" (10.76 s) e le pause (7/11)
+    e.say(C("0076"), [(1.3, 9.5), (9.94, 10.52), (10.93, 12.1)], exact=True, pad=(0.03, 0.05))
+    vo(10, [(C("0069"), 0.0, 2.2), (C("0072"), 1.0, 2.0), (C("0073"), 0.5, None)], tail=0.1)
+    vo2(17, [(C("0066"), 3.0, 1.8), (C("0068"), 1.0, 2.0), (C("0074"), 0.0, None)], lead=0.05, tail=0.1)
+    vo2(18, [(C("0085"), 0.0, None)], lead=0.05, tail=0.3)
 
     # 6. CLIMAX: I NOSTRI TAPPETI
     t_c = e.t
@@ -430,26 +532,36 @@ def long_video(W, H):
     e.say(C("0547"), [(10.25, 12.8)], cover={0: (C("0099"), 0.5)})
     e.say(C("0547"), [(13.7, 15.0), (19.5, 22.6)], cover={0: (C("0087"), 0.0), 1: (C("0099"), 0.5)},
           subs=[(13.7, 15.0, "Tappeti..."), (19.5, 22.6, "da esportare in Francia, Germania.")], **I)
-    vo(11, [(C("0087"), 0.0, 2.2), (C("0063"), 4.0, 2.4), (C("0542"), 2.5, None)])
-    e.say(C("0094"), [(0.3, 5.5), (6.0, 8.8), (9.6, 12.3)])
+    vo(11, [(C("0087"), 0.0, 2.6), (C("0063"), 4.0, None)], tail=0.0)
+    # "Adesso sapete chi li ha fatti": pausa prima e dopo, 0.9x, voce un filo più alta (7/11)
+    e.vo("11b", V["11b"], [(C("0542"), 1.6, None)], lead=0.7, tail=0.7, **KEY)
+    quiet([(C("0087"), 0.0, 2.4), (C("0074"), 0.0, 3.0), (C("0068"), 2.0, 2.6)], "coir_laguna", 13.0, nat=0.25)
+    e.say(C("0094"), [(0.3, 5.5), (6.0, 8.8)])
+    e.b(C("0540"), 3.0, 0.6)                                           # pausa sulle donne prima degli 80 centesimi
+    e.say(C("0094"), [(9.6, 12.3)], cover={0: (C("0540"), 3.6)}, exact=True, speed=0.9)
+    e.tl.vos[-1]["af"] = "volume=2dB"
+    quiet([(C("0542"), 4.0, 2.0), (C("0549"), 8.0, 2.0), (C("0085"), 2.0, 2.0), (C("0529"), 0.0, 2.0),
+           (C("0047"), 0.0, 2.0)], "coir_intro", 0.0, level=0.3)       # 10 s sui volti: torna il motivo dell'inizio
 
-    # 7. FINALE: VO12 su volti e laguna, Manuel in camera, la scritta finale e la sigla
+    # 7. FINALE: VO12 su volti e laguna, poi la frase di chiusura senza Manuel in video, con la scritta, e la sigla
     t_e = e.t
     e.say(C("0098"), [(0.0, 1.7), (2.4, 3.45)])                       # "Una tradizione centenaria che si sta perdendo."
     e.say(C("0099"), [(0.4, 3.25)], cover={0: (C("0107"), 6.0)})      # "Sono venuto qui in India a documentarla."
-    tv12, d12 = vo(12, [(C("0063"), 4.0, 2.6), (C("0085"), 2.5, 2.4), (C("0549"), 8.0, 2.6), (C("0115"), 0.0, 4.2),
-                        (C("0089"), 0.0, None)], lead=0.6, tail=0.6)
-    m0 = tv12 + d12 - 26.5                                         # "la voce è stata la loro" sui 26-27 s del brano
-    e.say(C("0102"), [(0.0, 5.3)])
-    t_card = e.t
-    e.b(C("0098"), 0.0, 4.2)
-    e.b(C("0097"), 0.0, 3.8)
-    e.card("Il viaggio di Voci Vere, per dare voce a chi ne ha più bisogno, continua.\\N"
-           "Seguimi per scoprire le prossime storie", t_card + 0.2, e.t - 0.2)
-    # il brano (35 s) deve arrivare alla fine della scritta: si parte più avanti se serve
-    off = max(0.0, min(t_e - m0, 34.6 - (e.t - t_e)))
-    music(tl, "coir_finale", t_e, t_card + 0.6, offset=off, fin=1.0, fout=0.6)
-    music(tl, "coir_finale", t_card, e.t, offset=off + t_card - t_e, level=0.3, fin=0.6, fout=1.0)   # sulla scritta, senza voce
+    vo(12, [(C("0063"), 4.0, 2.6), (C("0085"), 2.5, 2.4), (C("0549"), 8.0, 2.6), (C("0115"), 0.0, 4.2),
+            (C("0089"), 0.0, None)], lead=0.6, tail=0.6)
+    # chiusura (7/11): voce di 0102 ripulita, sopra le donne sedute, l'uomo nella laguna, la fabbrica e la laguna;
+    # la scritta entra con la voce; dopo la frase ancora poche immagini con la musica
+    a2, b2 = 0.0, 5.35
+    t_c0 = e.t
+    lead, after = 0.3, 2.6
+    tl.vos.append(dict(file=soft_clean(C("0102"), a2, b2), a=a2, b=b2, speed=1.0, t=t_c0 + lead, raw=True))
+    dur = lead + (b2 - a2) + after
+    items = [(C("0063"), 4.2), (C("0544"), 1.5), (C("0069"), 0.0), (C("0074"), 0.0), (C("0107"), 2.0)]
+    tl._add(closing_visual(W, H, items, dur, lead, dur - lead), 0, dur, audio=False, grade="null")
+    off = max(0.0, 34.6 - (e.t - t_e))
+    music(tl, "coir_finale", t_e, t_c0 + lead + (b2 - a2) + 0.4, offset=off, fin=1.0, fout=0.6)
+    music(tl, "coir_finale", t_c0 + lead + (b2 - a2), e.t, offset=off + t_c0 + lead + (b2 - a2) - t_e, level=0.3,
+          fin=0.5, fout=1.0)
     sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="coir")
 
     chapters = [(0.0, "Made in India"), (t_1, "Le donne che non lo fanno più"), (t_l, "La laguna"),

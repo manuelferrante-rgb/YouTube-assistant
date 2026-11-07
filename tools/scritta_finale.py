@@ -24,7 +24,7 @@ def alpha(im, k):
     im = im.copy(); im.putalpha(im.split()[3].point(lambda v: int(v * k))); return im
 
 
-def main(out, W, H, dur, fps=30):
+def main(out, W, H, dur, fps=30, fadeout=0.0):
     k = H / 1080
     S = lambda v: int(round(v * k))
     f, fs = ImageFont.truetype(FONT, S(70)), ImageFont.truetype(FONT, S(44))
@@ -72,12 +72,14 @@ def main(out, W, H, dur, fps=30):
             ImageDraw.Draw(sweep).rectangle([head - S(110), by0 + 3, head, by1 - 3], fill=(255, 225, 170, int(55 * fade)))
             for L in (sweep.filter(ImageFilter.GaussianBlur(S(20))), glow, lay, hd):
                 fr = Image.alpha_composite(fr, L)
+        if fadeout and t > dur - fadeout:                      # tutto sfuma negli ultimi fadeout s
+            fr = alpha(fr, max(0.0, (dur - t) / fadeout))
         fr.save(f"{out}/{i:04d}.png")
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("out"); ap.add_argument("--w", type=int, default=1920); ap.add_argument("--h", type=int, default=1080)
-    ap.add_argument("--dur", type=float, default=6.5)
+    ap.add_argument("--dur", type=float, default=6.5); ap.add_argument("--fadeout", type=float, default=0.0)
     a = ap.parse_args()
-    main(a.out, a.w, a.h, a.dur)
+    main(a.out, a.w, a.h, a.dur, fadeout=a.fadeout)

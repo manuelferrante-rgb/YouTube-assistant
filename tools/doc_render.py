@@ -163,7 +163,7 @@ class Timeline:
             f.append(f"crop=ih*9/16:ih:'max(0,min(iw-ih*9/16,iw*{s['cx']}-ih*9/32))':0")
         elif s["zoom"] != 1.0:
             z = s["zoom"]
-            f.append(f"crop=iw/{z}:ih/{z}:'max(0,min(iw-iw/{z},iw*{s['cx']}-iw/{z}/2))':'(ih-ih/{z})*0.4'")
+            f.append(f"crop=iw/{z}:ih/{z}:'max(0,min(iw-iw/{z},iw*{s['cx']}-iw/{z}/2))':'(ih-ih/{z})*{s.get('zy', 0.4)}'")
         f.append(f"scale={W}:{H}:flags=lanczos:force_original_aspect_ratio=increase,"
                  f"crop={W}:{H}:(iw-ow)/2:(ih-oh)*{s.get('cy', 0.5)}")
         if s["grade"] and s["grade"] != "null":
