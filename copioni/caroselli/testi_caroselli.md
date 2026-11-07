@@ -20,7 +20,7 @@ Il video completo è sul canale, link in bio.
 Post YouTube (scheda Community, stesse 8 immagini, senza musica):
 Pesava come una persona 🇮🇳 Il mercato del pesce di Marari, in Kerala: niente tetto, niente banchi, aste sulla sabbia. Tu ti alzeresti alle 3 per esserci? Il video completo: https://youtu.be/LW4zO_0oSgQ
 Musica IG (Insights, 7/11): strumentale della libreria di Instagram, calma (chitarra o percussioni leggere), senza voce, non di
-tendenza, volume basso. Brano messo da Manuel: [DA SCRIVERE: titolo e autore], uscito il [data].
+tendenza, volume basso. Brano messo da Manuel: "Art of Life", Lesfm (libreria di Instagram), uscito il 7/11. Post YouTube: 8 immagini caricate senza problemi.
 
 ## Arthunkal (dopo l'uscita del lungo)
 Posizione IG/YT: St. Andrew's Basilica, Arthunkal (Alappuzha, Kerala)
@@ -119,4 +119,5 @@ Il video: [link allo Short di Meenakshi]
 - Post YouTube: il link VERO del lungo nel testo (mai "è sul canale"), niente musica.
 - Musica IG: strumentale della libreria di Instagram, calma (chitarra o percussioni leggere), senza voce, non di tendenza,
   volume basso. Per ogni carosello si scrive qui quale brano ha messo Manuel, così Insights confronta.
+Post YouTube: Studio accetta 8 immagini (prova del mercato, 7/11): i caroselli si caricano interi.
 Link dei lunghi: mercato https://youtu.be/LW4zO_0oSgQ; arthunkal e te da aggiungere quando escono.
