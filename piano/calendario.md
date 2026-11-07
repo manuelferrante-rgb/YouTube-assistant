@@ -34,9 +34,14 @@ Pacchetto di ogni lungo: teaser (sabato prima), lungo (domenica), 3 reel, 1 caro
 | lun 2/11 | mercato: stories set 1 | |
 | mar 3/11 | mercato: reel 1 | |
 | gio 5/11 | mercato: reel 2 | |
-| ven 6/11 | mercato: stories set 2 | |
 | sab 7/11 | mercato: carosello | pronto (Manuel, 29/10) |
+| dom 8/11 | mercato: stories set 1 | slittato dal 2/11 (non uscito, Manuel 7/11) |
 | lun 9/11 | mercato: reel 3 | |
+| mar 10/11 | Diwali: reel | montato veloce |
+| mar 10/11 | mercato: stories set 2 (set2_mercato) | slittato dal 6/11 (non uscito) |
+| mer 11/11 | autostop | slittato dal 6/11 (non uscito); entrambi i profili |
+| gio 12/11 | meenakshi | pronto (giovedì) |
+| gio 12/11 | mercato: stories set 3 (set3_mare) | slittato dall'8/11 |
 | mer 11/11 | meenakshi (verticale unico, Madurai) | già fatto e pronto (Manuel, 29/10) |
 | gio 12/11 | comunismo (reel pronto) | |
 | sab 14/11 | arthunkal: teaser | |
@@ -119,7 +124,6 @@ le fonti dicono che si dice che si incontrino, un sito lo chiama credenza popola
 (SOSTITUITA dal calendario completo v2 in fondo) Proposta di Pianificazione, 4/11, date dei nuovi reel (giorni alterni, nessun lungo, teaser o carosello spostato; da confermare con Manuel):
 | Giorno | Uscita | Nota |
 |---|---|---|
-| ven 6/11 | autostop | solo se montato; in caso contrario slitta a dom 8/11 o ven 13/11. Insieme alle stories set 2 del mercato |
 | mer 18/11 | comorin: statua di Thiruvalluvar | tra arthunkal reel 1 (17/11) e reel 2 (19/11) |
 | mar 24/11 | comorin: canna da zucchero | solo se Voci Vere; se va sul profilo personale, il giorno resta libero |
 | ven 27/11 | comorin: cocco | solo se Voci Vere; se personale, resta libero (28/11 teaser te) |
@@ -156,11 +160,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | ven 6/11 | autostop | pronto; entrambi i profili |
 | ven 6/11 | mercato: stories set 2 (set2_mercato) | fisso |
 | sab 7/11 | mercato: carosello (+ post YouTube) | fisso |
-| dom 8/11 | mercato: stories set 3 (set3_mare) | nuovo slot |
 | dom 8/11 | Diwali: Manuel gira | nessun reel |
 | lun 9/11 | mercato: reel 3 | fisso |
-| mar 10/11 | Diwali: reel | montato veloce |
-| gio 12/11 | meenakshi | pronto (Manuel 7/11: giovedì) |
 | sab 14/11 | arthunkal: teaser | fisso |
 | dom 15/11 | arthunkal: LUNGO | fisso |
 | lun 16/11 | mercato: carosello "I volti" (+ post YouTube) | nuovo slot, 9 giorni dopo il primo carosello |
@@ -259,3 +260,5 @@ trailer + lungo + 4 REEL (non 3) + 2 caroselli + 3 set di stories. Un reel "Made
 Nota da Pianificazione, 6/11 (Manuel): nuovo reel a sé `treno` (prendere un treno in India), già fatto da Manuel e nella sua galleria. Occupa l'extra 1 del 14/12 (slot prima da scegliere); l'extra 2 del 17/12 resta libero. Se Manuel lo vuole prima, scambia con kallu (25/11) e kallu va al 14/12. Per la regola dei reel più leggeri, proposto su entrambi i profili (personale e Voci Vere), da confermare. Copy: didascalia; Montaggio: solo se serve rifinire.
 
 Nota da Pianificazione, 7/11 (Manuel): meenakshi esce gio 12/11 (era mer 11/11); comunismo posticipato da gio 12/11 a dom 22/11 (non cancellato). Il 11/11 resta libero.
+
+Nota da Pianificazione, 7/11 (Manuel): stories mercato set 1 (2/11), set 2 (6/11) e autostop (6/11) NON sono usciti. Usciti finora: presentazione, mercato teaser, lungo e 2 reel. Ripianificati: 7/11 carosello, 8/11 set 1, 9/11 reel 3, 10/11 Diwali e set 2, 11/11 autostop, 12/11 meenakshi e set 3, 13/11 vuoto.
