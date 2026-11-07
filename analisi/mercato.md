@@ -124,3 +124,9 @@ pubblico (domenica mattina), perché gli Shorts prendono quasi tutte le visualiz
 | Sorgente principale | feed Shorts 86%, ricerca 11% | feed Shorts (oltre il 90%) |
 Stesso risultato di Instagram: il teaser-trailer lo scorrono via 5 su 6, il reel che apre sulla persona più del
 doppio resta. Due piattaforme, stessa differenza: lezione passata a `regole/formato_reel.md` (nota del 4/11).
+
+## Carosello "fatto" del mercato (sab 7/11): cosa si prova (Insights)
+- IG con una musica strumentale della libreria di Instagram a volume basso (i post con le foto non accettano audio
+  caricato da noi). Dato da guardare a 48 ore e a 7 giorni: copertura da non follower, salvataggi, invii. È il primo
+  carosello: fa da base per gli altri.
+- Post YouTube con il link vero al lungo nel testo (https://youtu.be/LW4zO_0oSgQ), niente musica (il post non la ha).
