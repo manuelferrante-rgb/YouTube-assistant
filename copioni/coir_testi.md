@@ -469,3 +469,49 @@ Chi ti è rimasto in mente? Scrivilo nei commenti.
 Tutta la storia nel video sul canale, link in bio.
 #kerala #india #vocivere #coir #ritratti
 Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Tutta la storia nel video: [link al lungo]
+
+---------------------------------------------------------------------------------------------------------------
+# LUNGO v2: DA 4:38 A ~7:00 (Copy, 7/11, risposta a Montaggio; Manuel registra i VO nuovi e decide la velocità)
+I blocchi VO0-VO12 restano come sono. Si aggiungono VO13-VO18 sulle scene che oggi passano senza parole, 3 momenti di
+solo immagini e musica, e 5 pezzi di Manuel in camera non usati. Stima: ~6:30 a 1.1x, ~6:55 a 1x.
+
+## NUOVI VOICEOVER DA REGISTRARE (Manuel, una frase per riga, voce calma)
+VO13 (laguna, dopo VO6: `0052` intera, `0056` 4-13 s, `0057` i gusci caricati sulla barca):
+     "Si immerge fino al petto. Cerca i gusci sul fondo, con le mani, e li carica sulla barca. Uno dopo l'altro."
+VO14 (laguna, prima della tettoia: `0097`, `0099`, `0104` i fasci scuri a riva):
+     "Questi fasci sono i gusci appena tirati fuori dall'acqua. Dentro c'è la fibra, pronta per essere aperta."
+VO15 (tettoia, dopo VO7: `0540` intera, le mani che aprono il guscio):
+     "Un colpo secco, e il guscio si apre. Poi la fibra si sfila a mani nude. E si ricomincia, con il guscio dopo."
+VO16 (macchine, dopo VO9: `0017` 15-30 s, `0090`, `0105` la donna che spinge la fibra nella macchina):
+     "Le macchine battono la fibra e la puliscono. Anche qui, a caricarle a mano, sono le donne."
+VO17 (fabbrica, dopo VO10: `0066`-`0074` le donne che filano all'indietro):
+     "Una tiene i fili, l'altra cammina all'indietro. La corda si allunga di un passo alla volta, fino in fondo al capannone."
+VO18 (fabbrica, su Mary `0085` intera):
+     "Lei è Mary. Qui in fabbrica si lavora fino alle quattro. E domani mattina si ricomincia."
+(Fatti: tutto visibile nel girato; "fino alle quattro" da `0062`. Nessun numero nuovo.)
+
+## MOMENTI DI SOLO IMMAGINI E MUSICA (niente voce, niente scritte)
+- Dopo gli 80 centesimi (`0094`/`0095`): 10 s (Manuel). I volti, uno alla volta, 2 s ciascuno: `0542` 4-6 s, `0549` 8-10 s, `0085` 2-4 s,
+  `0529` 0-2 s, `0047` 0-2 s. È il momento più forte del video: chi guarda resta con loro.
+- Dopo il salario (fine di `0006`): 6-8 s. Premilla al lavoro, mani e fibra (`0549` 0-6 s), poi la tettoia larga sulla laguna (`0063` 13-16 s).
+- Dopo VO11 ("Adesso sapete chi li ha fatti"): 6-8 s. Le matasse (`0087`) e la fila delle donne che filano (`0074`), suono vero basso sotto la musica.
+Musica di Audio sotto questi tre momenti (è il punto dove la musica può salire un po').
+
+## PARLATO DI MANUEL NON USATO: cosa rimettere
+- `0039` + `0040` SÌ, subito dopo la sigla, prima di VO1: "Mi trovo nel sud dell'India, ad Anathalavattom, in Kerala." (4 s, dà il luogo una volta sola).
+- `0024` SÌ, in barca: "Questa barca è più anziana della società. 50 anni di barca." Detto da lui in barca è più forte del VO: si toglie da VO6
+  "Questa barca ne ha cinquanta" (VO6 resta: "Lui ha settantasei anni. Ogni giorno scende in acqua e tira su i gusci, a mano.").
+- `0548` SOLO 6-16 s, all'inizio della parte delle macchine: "da qui vengono messi a lavorare dentro le macchine, e poi sono utilizzabili per
+  iniziare a levare la fibra di cocco". Il resto (ammollo, Europa) ripete VO5 e il climax: fuori.
+- `0015` SOLO 0-8 s, subito prima del salario: "È difficile comunicare, perché l'inglese ovviamente non lo sanno: ho bisogno dell'interprete."
+  Spiega perché da lì parla l'interprete. Il resto ("non c'è un vero proprietario") ripete `0538`: fuori.
+- `0006` 10-22 s SÌ (la fabbrica che si ferma se non arriva nessuno): è la frase che chiude la domanda dell'inizio, va tenuta intera.
+- `0089` NO: poco parlato, solo il giro della laguna (si può usare come B-roll muto).
+
+## VELOCITÀ
+DECISO DA MANUEL (7/11): lungo a 1x (voce di Manuel e VO), con le pause già tagliate. È un video lento per natura, a 1x pesa di più e da solo
+recupera ~25 s. Verticali: 1x come ha chiesto Manuel. Decide Manuel.
+
+## INTERVISTE
+Le risposte delle donne di 1-2 s vanno bene così: prima la risposta più forte, nessuna domanda sbagliata. Se una risposta in malayalam è
+chiara e lunga (es. Premilla `0549` 0-24 s), lasciarla per intero con il sottotitolo, anche se dura più della traduzione.
