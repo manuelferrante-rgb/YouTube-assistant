@@ -152,7 +152,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 
 | Giorno | Uscita | Nota |
 |---|---|---|
-| sab 7/11 | mercato: carosello "fatto" (+ post YouTube) | oggi |
+| sab 7/11 | mercato: carosello "fatto" (+ post YouTube) | PUBBLICATO (Manuel 7/11) |
 | dom 8/11 | mercato: stories set 1 | slittato dal 2/11; Diwali: Manuel gira |
 | lun 9/11 | mercato: reel 3 |  |
 | mar 10/11 | EXTRA Diwali: reel | montato veloce |
@@ -261,3 +261,5 @@ Nota da Pianificazione, 7/11 (Manuel): meenakshi esce gio 12/11 (era mer 11/11);
 Nota da Pianificazione, 7/11 (Manuel): stories mercato set 1 (2/11), set 2 (6/11) e autostop (6/11) NON sono usciti. Usciti finora: presentazione, mercato teaser, lungo e 2 reel. Ripianificati: 7/11 carosello, 8/11 set 1, 9/11 reel 3, 10/11 Diwali e set 2, 11/11 autostop, 12/11 meenakshi e set 3, 13/11 vuoto.
 
 Nota da Pianificazione, 7/11 sera (Manuel): CALENDARIO RIFATTO (v3, la tabella v2 sopra e' sostituita). Stories mercato set 1 (2/11), set 2 (6/11) e autostop (6/11) non erano usciti. Regola nuova: i reel EXTRA (esterni ai lunghi, piu' clickbait) stanno distanziati tra loro (almeno 3 giorni, mai uno vicino all'altro); gli altri giorni si coprono con le uscite dei pacchetti (teaser, lungo, reel, stories, caroselli); i giorni vuoti vanno bene. Usciti finora: presentazione, mercato teaser, lungo e 2 reel.
+
+Nota da Pianificazione, 7/11 (Manuel): pubblicato il carosello "fatto" del mercato. Usciti finora: presentazione, mercato teaser, lungo, 2 reel e carosello.
