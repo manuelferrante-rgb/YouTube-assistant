@@ -509,7 +509,7 @@ Musica di Audio sotto questi tre momenti (è il punto dove la musica può salire
 - `0089` NO: poco parlato, solo il giro della laguna (si può usare come B-roll muto).
 
 ## VELOCITÀ
-Consiglio di Copy: lungo a 1x (voce di Manuel e VO), con le pause già tagliate. È un video lento per natura, a 1x pesa di più e da solo
+DECISO DA MANUEL (7/11): lungo a 1x (voce di Manuel e VO), con le pause già tagliate. È un video lento per natura, a 1x pesa di più e da solo
 recupera ~25 s. Verticali: 1x come ha chiesto Manuel. Decide Manuel.
 
 ## INTERVISTE
