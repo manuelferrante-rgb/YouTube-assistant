@@ -449,7 +449,7 @@ Il video completo è sul canale, link in bio.
 #kerala #india #vocivere #coir #madeinindia
 Post YouTube (stesse immagini, 06 come .jpg):
 Sopra c'è scritto Made in India 🇮🇳 Le donne del coir del Kerala, che fanno i nostri tappeti a mano. Ce l'hai anche tu all'ingresso di casa?
-Tutta la storia nel video: [link al lungo]
+Tutta la storia nel video: [link vero del lungo, appena pubblicato]
 
 ## CAROSELLO 2 "I volti" (regole del 4-5/11: ritratti in posa, filtro caldo naturale, ogni persona una volta, niente microfoni)
 01 copertina: l'uomo della laguna (`0052` 2-4 s o `0047`, guarda in camera) | **I volti del coir** + "Kerala, India" + "Le donne e
@@ -465,10 +465,10 @@ Fuori: Manuel, l'interprete, l'uomo della fabbrica, chi ha il microfono addosso.
 Didascalia IG:
 I volti del coir 🇮🇳
 Le donne e l'uomo che, sulla costa del Kerala, fanno a mano la fibra dei nostri tappeti.
-Chi ti è rimasto in mente? Scrivilo nei commenti.
+Chi ti è rimasto in mente?
 Tutta la storia nel video sul canale, link in bio.
 #kerala #india #vocivere #coir #ritratti
-Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Tutta la storia nel video: [link al lungo]
+Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Tutta la storia nel video: [link vero del lungo, appena pubblicato]
 
 ---------------------------------------------------------------------------------------------------------------
 # LUNGO v2: DA 4:38 A ~7:00 (Copy, 7/11, risposta a Montaggio; Manuel registra i VO nuovi e decide la velocità)

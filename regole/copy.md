@@ -114,3 +114,8 @@ Verticali, titoli e domande (Manuel, 4/11, dai dati del mercato in `analisi/merc
 - Ogni didascalia IG ha una domanda semplice e concreta, sola su una riga prima del rimando ("Tu ci andresti?",
   "L'hai mai assaggiato?", "Tu ti alzeresti alle 3?"). Niente esca ("tagga un amico", "scrivi SÌ se..."): su
   Instagram è l'invio che fa crescere, e si manda un reel che fa nascere una domanda vera.
+
+Caroselli (Insights, 7/11, approvato da Manuel): nella didascalia IG la domanda da sola su una riga, senza "Scrivilo nei
+commenti"; sotto "Il video completo è sul canale, link in bio." Nel post YouTube il link vero del lungo, niente musica.
+Su IG musica strumentale calma della libreria (senza voce, non di tendenza, volume basso): il brano si annota in
+`copioni/caroselli/testi_caroselli.md`.
