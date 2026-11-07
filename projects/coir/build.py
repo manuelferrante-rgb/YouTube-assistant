@@ -325,6 +325,7 @@ class Edit:
         if PREVIEW:
             return self.tl.render(out, crf=26, preset="veryfast")
         self.tl.drop_shots = True
+        self.tl.direct_concat = True                                 # 4K: niente cut.mkv da 11 GB (disco)
         self.tl.final_opts = ["-maxrate", "38M", "-bufsize", "76M"]
         return self.tl.render(out, crf=20, preset="medium")
 
