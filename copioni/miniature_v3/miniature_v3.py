@@ -75,10 +75,35 @@ def shadow_text(layer, xy, parts, font, sh=10, alpha=200):
     for t, c in parts:
         d.text((xx, y), t, font=font, fill=c); xx += d.textlength(t, font=font)
 
+_det = None
+def face_top(im):
+    # parte alta del volto più grande (YuNet), in pixel della miniatura; None se nessun volto
+    global _det
+    a = np.asarray(im.convert('RGB'))[:, :, ::-1].copy()
+    _det = _det or cv2.FaceDetectorYN.create('work/volti/model/face_detection_yunet_2023mar.onnx', '', (W, H), 0.6, 0.3, 50)
+    _det.setInputSize((W, H)); _, fs = _det.detect(a)
+    if fs is None: return None
+    f = max(fs, key=lambda f: f[2] * f[3]); return f[1] - f[3] * 0.35   # fronte e capelli compresi
+
+def text_bottom(layout, text, top):
+    if layout == 'basso': return None
+    f = fit(text, ANTON, W - 70 if layout == 'dietro' else W - 120, max_h=250 if layout == 'dietro' else 150)
+    bb = ImageDraw.Draw(Image.new('L', (10, 10))).textbbox((0, 0), text, font=f)
+    return top + (bb[3] - bb[1])
+
 def make(name, video, lang, src, t, cx, cy, zoom, layout, text, night=False, flip=False, red=None, top=24):
-    base = grade(crop(Image.open(frame(src, t)).convert('RGB'), cx, cy, zoom), night, flip).convert('RGBA')
+    # Regola (Insights, 8/11, dati del reel B): il volto è sempre libero, la scritta mai sopra il viso.
+    # Se il volto tocca la fascia del testo, il ritaglio si alza finché il volto è sotto la scritta.
+    src_im = Image.open(frame(src, t)).convert('RGB')
+    base = grade(crop(src_im, cx, cy, zoom), night, flip).convert('RGBA')
+    # spazio sopra il volto: la scritta sta tutta lì; se non basta (<90 px) si passa allo schema in basso
+    ft = face_top(base) if layout in ('dietro', 'citazione') else None
+    room = None if ft is None else int(ft) - top - 8
+    if room is not None and room < 90:
+        layout = 'basso'
+        if isinstance(text, str): text = ('', text.strip('“”'))
     if layout == 'dietro':       # parola enorme in alto, la persona davanti al testo
-        f = fit(text, ANTON, W - 70, max_h=250); d = ImageDraw.Draw(base)
+        f = fit(text, ANTON, W - 70, max_h=min(250, room) if room else 250); d = ImageDraw.Draw(base)
         bb = d.textbbox((0, 0), text, font=f); x = (W - (bb[2] - bb[0])) // 2 - bb[0]
         txt = Image.new('RGBA', (W, H), (0, 0, 0, 0))
         parts = [(w + ' ', RED if (red and w in red) else WHITE) for w in text.split(' ')]
@@ -86,7 +111,7 @@ def make(name, video, lang, src, t, cx, cy, zoom, layout, text, night=False, fli
         shadow_text(txt, (x, top - bb[1]), parts, f)
         out = Image.alpha_composite(base, txt)
         # la persona copre solo la parte bassa delle lettere: la parola resta leggibile
-        th = bb[3] - bb[1]; ycut = int(top + th * 0.62)
+        th = bb[3] - bb[1]; ycut = int(top + th + 4)
         ramp = np.clip((np.arange(H) - ycut) / 25.0, 0, 1)[:, None] * np.ones((1, W))
         m = np.asarray(mask(base.convert('RGB')), np.float32) * ramp
         person = base.copy(); person.putalpha(Image.fromarray(m.astype('uint8')))
@@ -99,9 +124,9 @@ def make(name, video, lang, src, t, cx, cy, zoom, layout, text, night=False, fli
         d = ImageDraw.Draw(out); bb = d.textbbox((0, 0), big, font=fb)
         y_big = H - 40 - bb[3]
         if small: shadow_text(out, (48, y_big + bb[1] - 58), [(small, WHITE)], fs, 6)
-        shadow_text(out, (44, y_big), [(big, RED if red else WHITE)], fb)
+        shadow_text(out, (44, y_big), [(big, RED if red is True else WHITE)], fb)
     else:                        # 'citazione': frase tra virgolette in alto, una parola rossa
-        f = fit(text, ANTON, W - 120, max_h=150); d = ImageDraw.Draw(base)
+        f = fit(text, ANTON, W - 120, max_h=min(150, room) if room else 150); d = ImageDraw.Draw(base)
         bb = d.textbbox((0, 0), text, font=f); x = (W - (bb[2] - bb[0])) // 2 - bb[0]
         parts = [(w + ' ', RED if (red and w.strip('“”"') in red) else WHITE) for w in text.split(' ')]
         parts[-1] = (parts[-1][0].strip(), parts[-1][1])
@@ -140,8 +165,8 @@ J = {
      it='40 ANNI A MANO', en='40 YEARS BY HAND'),
  ('coir', 'C2_sorriso'): dict(src=g(C, '0542'), t=6.0, cx=.48, cy=.5, zoom=1.5, layout='basso', red=True,
      it=('PER UN TAPPETO', '80 CENTESIMI'), en=('FOR ONE RUG', '80 CENTS')),
- ('coir', 'C3_corda'): dict(src=g(C, '0069'), t=1.5, cx=.42, cy=.45, zoom=1.4, layout='dietro', red=['4€', '€4'],
-     it='4€ AL GIORNO', en='€4 A DAY'),
+ ('coir', 'C3_corda'): dict(src=g(C, '0069'), t=1.5, cx=.42, cy=.45, zoom=1.4, layout='basso', red=True,
+     it=('PER UNA GIORNATA', '4€ AL GIORNO'), en=('FOR A FULL DAY', '€4 A DAY')),
  ('coir', 'C4_laguna'): dict(src=g(C, '0052'), t=3.0, cx=.5, cy=.55, zoom=1.35, layout='dietro',
      it='MADE IN INDIA', en='MADE IN INDIA'),
  ('coir', 'C5_manuel'): dict(src=g(C, '0050'), t=1.0, cx=.5, cy=.45, zoom=1.2, layout='basso',
