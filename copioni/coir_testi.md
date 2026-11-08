@@ -407,13 +407,13 @@ Modello meenakshi (`regole/formato_reel.md`): per ogni verticale una musica orig
 - 1975: "Lavoravano il cocco dal 1975. Oggi nessuna 🇮🇳" / "Nel tuo paese c'è un mestiere che sta sparendo?"
 
 ## STORIE: 3 set da 6 (solo la domanda negli adesivi, mai la scritta "quiz")
-### Set 1, prima del lungo (dietro le quinte)
+### Set 1, dopo il lungo (dietro le quinte)
 1. `0034` Manuel in barca, 3 s | SONDAGGIO "Sai da dove viene lo zerbino di cocco?" Sì / No
 2. `0021` i gusci nella laguna | "Restano sott'acqua fino a un anno"
 3. `0046` l'uomo con la pertica | "Ha 76 anni" + cursore emoji
 4. `0063` 13-16 s la tettoia, suono vero 3-4 s | "Qui si aprono i gusci, a mano"
 5. `0542` la donna che sorride | BOX DOMANDE "Cosa chiederesti a queste donne?"
-6. `0087` le matasse | CONTO ALLA ROVESCIA "La storia intera, domenica su YouTube"
+6. `0087` le matasse | LINK al lungo + "La storia intera è sul canale"
 ### Set 2, il giorno dopo il lungo (Made in India)
 1. `0087` le matasse | "Sopra c'è scritto Made in India"
 2. `0540` le mani al lavoro | ADESIVO A SCELTA "Quanto va a loro per un tappeto?" 80 centesimi / 5 € / 15 €
