@@ -265,3 +265,8 @@ Nota da Pianificazione, 7/11 sera (Manuel): CALENDARIO RIFATTO (v3, la tabella v
 Nota da Pianificazione, 7/11 (Manuel): pubblicato il carosello "fatto" del mercato. Usciti finora: presentazione, mercato teaser, lungo, 2 reel e carosello.
 
 Nota da Pianificazione, 8/11 (Manuel, da Insights): il reel piu' forte di ogni lungo va su YouTube Shorts il prima possibile, perche' li' cresce per giorni; su IG prende una spinta sola. Spostato il reel 1 al lunedi' dopo il lungo (giorno dopo), le stories set 1 al martedi'. Quale reel e' il piu' forte lo indica Insights (o Manuel) dal girato e dai dati; il reel 1 e' lo slot riservato. Mercato: il reel B e' gia' su YouTube.
+
+Nota da Copy, 8/11 (Manuel): coir APPROVATO (lungo v2 6:51). Pacchetto Copy pronto su Drive cartella "Coir" montati/coir:
+miniature v3 (Test e confronto: C1 Premilla, C2, C3), sottotitoli it/en, TESTI (titolo, descrizione e capitoli it/en, didascalie
+dei 5 verticali), carosello "fatto" (8 slide, 3 video), carosello "I volti" (7), storie 3x6. Testi in `copioni/coir_pacchetto.md`.
+Titoli e miniature v3 approvati anche per arthunkal e te (pacchetti e TESTI su Drive aggiornati, vecchie miniature in miniatura/vecchie/).

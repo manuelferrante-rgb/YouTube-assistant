@@ -32,6 +32,8 @@ V = {
    context='13 km a piedi, di notte, fino alla basilica'),
  'te': dict(kicker='MUNNAR, KERALA, INDIA', title='I volti del tè',
    context='Le colline del tè, a oltre 1.500 metri'),
+ 'coir': dict(kicker='ANATHALAVATTOM, KERALA, INDIA', title='I volti del coir',
+   context='Le donne e l\'uomo che fanno i nostri tappeti'),
  'meenakshi': dict(kicker='MADURAI, TAMIL NADU, INDIA', title='I volti del tempio di Meenakshi',
    context='Chi viene al tempio, la sera'),
 }

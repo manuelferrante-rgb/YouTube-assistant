@@ -431,7 +431,7 @@ Modello meenakshi (`regole/formato_reel.md`): per ogni verticale una musica orig
 Le risposte ai box (set 1 e 3) vanno annotate qui: danno idee per le domande del prossimo video.
 
 ## CAROSELLO 1 "fatto": Made in India, chi c'è dietro (8 slide 4:5, regole in `regole/copy.md`)
-01 `0016` Premilla tra i gusci (foto piena, testo un po' alto) | **Sopra c'è scritto Made in India** + Scorri
+01 VIDEO `0549` Premilla (testo in basso, volto libero) | **Sopra c'è scritto Made in India** + Scorri (FATTO 8/11)
 02 mezza nera + `0542` la donna dei 40 anni che sorride | **Non c'è scritto chi l'ha fatto**
 03 `0107` la laguna con i gusci | **Mesi sott'acqua** / da sei mesi a un anno, finché la fibra si stacca
 04 `0046` l'uomo con la pertica | **76 anni, barca da 50** / ogni giorno tira su i gusci a mano
