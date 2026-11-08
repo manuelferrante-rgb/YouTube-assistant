@@ -1,6 +1,30 @@
-# Insights: stato e passaggio di consegne (aggiornato 4/11/2026)
+# Insights: stato e passaggio di consegne (aggiornato 8/11/2026)
 
 Da leggere all'avvio di ogni nuova chat Insights, dopo CLAUDE.md e analisi/README.md.
+
+## Cosa è stato fatto (4-8/11, chat Insights session_01HtfbgxeFrmgvhNi9P52eKk)
+- COIR: check dello script v3 (`coir_script.md`, approvato da Manuel; "Italia" resta nel VO11 per sua scelta),
+  titolo 1 "MADE IN INDIA: chi fa i nostri tappeti" + miniature C1/C2/C3 in Test e confronto; brief di teaser,
+  4 reel, 3 set di storie e 2 caroselli per Copy (`coir_verticali.md`).
+- MERCATO a 7 giorni, SOLO INSTAGRAM per ora (`mercato.md`, sezione "Analisi a 7 giorni"): i reel li vede quasi
+  solo l'India e il Golfo (reel 1 India 66,8% + Golfo ~24%; reel B India 90,3%), uomini 88-95%; voiceover in
+  italiano non capito, 4-8 s di media, 0 follower su ~4.000 visualizzazioni. Il teaser è l'unico con Italia (21,7%).
+  Reel B (volto coperto dalla cesta) 42,7% di skip contro 25,6% del pescatore: il volto deve essere leggibile.
+  Carosello "fatto" (7/11, con musica IG): 24 visualizzazioni, solo follower. Ogni reel prende una spinta in 1-2
+  giorni e si ferma.
+- DECISIONE APERTA per Manuel: prova di sottotitoli in inglese sui reel (pubblico indiano) oppure tutto in italiano
+  per farsi mostrare agli italiani. Non ha ancora risposto.
+- Miniature v3 (`copioni/miniature_v3/BOZZE.md`): arthunkal titolo 2 + A2 (test A2, A3, A1); tè titolo 2 + T1 (test
+  T1, T5, T3); coir titolo 1 + C1 (test C1, C2, C3; in C3 la scritta copre il volto). Regola: scritta mai sul viso.
+- Carosello mercato: tolto "Scrivilo nei commenti", link vero al lungo nel post YouTube, musica IG strumentale.
+
+## PROSSIMO PASSO (chat Insights nuova, dall'8/11)
+Manuel manda una cartella Drive con TUTTI gli insights (YouTube del mercato compreso). Da fare: lungo YT (fidelizzazione
+e fotogramma del picco ~3:15-3:45, CTR, sorgenti, "Short correlati" ora che il teaser è collegato, pubblico), i 3
+Shorts YT, stories set 1; completare la sezione 7 giorni di `mercato.md`; passare alle regole SOLO le lezioni
+confermate da due piattaforme o due video (candidate: promessa della miniatura entro il primo minuto; primo
+fotogramma con volto leggibile; teaser mai trailer, già in `regole/formato_reel.md`). Le registrazioni dello schermo
+si leggono estraendo i fotogrammi con ffmpeg (2 al secondo, i paesi stanno nella scheda Pubblico > Paese).
 
 ## Cosa è stato fatto (27/10-4/11, chat Insights session_01HtfbgyzAxUCZDsgATkknE1)
 - MERCATO, dati a 48 ore (YT lungo, YT Shorts, IG teaser e reel 1): `mercato.md`. Punti chiave: durata media
@@ -53,7 +77,7 @@ Da leggere all'avvio di ogni nuova chat Insights, dopo CLAUDE.md e analisi/READM
   Audio la usa.
 - Promemoria programmati (spostati sulla nuova chat Insights il 4/11): dati mercato a 7 giorni (dom 8/11, mattina
   in India: analisi principale, completa `analisi/mercato.md` e decidi cosa diventa regola), revisione strumenti
-  (9/11). Per ogni nuovo lungo uscito programmare 48 h e 7 giorni (arthunkal: lungo dom 15/11 -> 17/11 e 22/11).
+  (9/11). Per ogni nuovo lungo uscito programmare 48 h e 7 giorni (arthunkal: 17/11 e 22/11, già programmati; spostati sulla chat Insights nuova l'8/11).
 - In arrivo da Manuel: insights del reel B del mercato (appena pubblicato), stories set 1, reel 2 e 3 IG.
   A 7 giorni: confermare o smentire le lezioni di `mercato.md` (primo minuto, miniatura, primo fotogramma).
 - Da seguire: risultato del "Test e confronto" della nuova miniatura del mercato; dati dei 4 reel comorin quando
