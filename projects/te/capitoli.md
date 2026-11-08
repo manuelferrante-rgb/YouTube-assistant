@@ -29,3 +29,7 @@ Voiceover (s, tempi della v7: dalla sigla in poi +2.0 s nella v8):
 - 334.62	341.79	vo_12_56979152.wav
 - 370.03	374.50	vo_14_93533385.wav
 - 374.73	380.02	vo_tag_16186724.wav
+
+v9 (8/11, Insights): stessi tempi del v8 (6:26) e stesso audio; cambiate solo le immagini di 9 tratti di colline e case vuote
+tra 2:01 e 5:36 (Sadish in sincrono dove parla, mani che raccolgono sul voiceover), sottotitoli e etichetta riscritti
+uguali. Capitoli e sottotitoli invariati. Codice: `projects/te/v9_modifiche.py`.

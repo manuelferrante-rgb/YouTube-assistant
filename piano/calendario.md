@@ -298,3 +298,12 @@ dei 5 verticali), carosello "fatto" (8 slide, 3 video), carosello "I volti" (7),
 Titoli e miniature v3 approvati anche per arthunkal e te (pacchetti e TESTI su Drive aggiornati, vecchie miniature in miniatura/vecchie/).
 
 Nota da Pianificazione, 8/11 (Manuel): il reel più forte non è fisso, dipende: lo decidono caso per caso Manuel e Insights. Il lunedì dopo il lungo è lo slot per quel reel, non necessariamente il reel 1. Il motivo esplicito per andare dal Short al lungo (didascalia, commento fissato) è ancora da capire, non deciso: da provare su arthunkal e misurare.
+
+Nota da Montaggio, 8/11 (nota di Insights dell'8/11 sera + richieste di Manuel): file sostituiti su Drive con gli stessi nomi.
+- te v9: stessi tempi, capitoli e audio del v8; a metà video le colline/case vuote (9 tratti tra 2:01 e 5:36) sono diventate
+  Sadish in sincrono o mani che raccolgono. Sottotitoli it/en: NON cambiano (stessi tempi). Inizio già coerente con titolo e
+  miniatura T1 (domanda "E oggi, di chi sono queste colline?" a 0:15, risposta a 3:28).
+- arthunkal: lungo invariato (cammino di notte già a 0:09 e 0:44, il resto a metà video è folla, non campi vuoti).
+  Verticali v1-v4 rifatti: "persone" non diventa più "pedone" (taglio delle pause sulle consonanti), voce davanti alla
+  basilica più pulita (v2), la voce della pellegrina ora si sente (v3: RNNoise la cancellava). Testi a schermo uguali.
+- coir v3: lungo 6:45 (prima v2 6:51), via 3 campi larghi vuoti; capitoli in `projects/coir/capitoli.md`.
