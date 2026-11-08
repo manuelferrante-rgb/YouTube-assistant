@@ -431,7 +431,7 @@ Modello meenakshi (`regole/formato_reel.md`): per ogni verticale una musica orig
 Le risposte ai box (set 1 e 3) vanno annotate qui: danno idee per le domande del prossimo video.
 
 ## CAROSELLO 1 "fatto": Made in India, chi c'è dietro (8 slide 4:5, regole in `regole/copy.md`)
-01 `0016` Premilla tra i gusci (foto piena, testo un po' alto) | **Sopra c'è scritto Made in India** + Scorri
+01 VIDEO `0549` Premilla (testo in basso, volto libero) | **Sopra c'è scritto Made in India** + Scorri (FATTO 8/11)
 02 mezza nera + `0542` la donna dei 40 anni che sorride | **Non c'è scritto chi l'ha fatto**
 03 `0107` la laguna con i gusci | **Mesi sott'acqua** / da sei mesi a un anno, finché la fibra si stacca
 04 `0046` l'uomo con la pertica | **76 anni, barca da 50** / ogni giorno tira su i gusci a mano
@@ -449,7 +449,7 @@ Il video completo è sul canale, link in bio.
 #kerala #india #vocivere #coir #madeinindia
 Post YouTube (stesse immagini, 06 come .jpg):
 Sopra c'è scritto Made in India 🇮🇳 Le donne del coir del Kerala, che fanno i nostri tappeti a mano. Ce l'hai anche tu all'ingresso di casa?
-Tutta la storia nel video: [link al lungo]
+Tutta la storia nel video: [link vero del lungo, appena pubblicato]
 
 ## CAROSELLO 2 "I volti" (regole del 4-5/11: ritratti in posa, filtro caldo naturale, ogni persona una volta, niente microfoni)
 01 copertina: l'uomo della laguna (`0052` 2-4 s o `0047`, guarda in camera) | **I volti del coir** + "Kerala, India" + "Le donne e
@@ -465,10 +465,10 @@ Fuori: Manuel, l'interprete, l'uomo della fabbrica, chi ha il microfono addosso.
 Didascalia IG:
 I volti del coir 🇮🇳
 Le donne e l'uomo che, sulla costa del Kerala, fanno a mano la fibra dei nostri tappeti.
-Chi ti è rimasto in mente? Scrivilo nei commenti.
+Chi ti è rimasto in mente?
 Tutta la storia nel video sul canale, link in bio.
 #kerala #india #vocivere #coir #ritratti
-Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Tutta la storia nel video: [link al lungo]
+Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Tutta la storia nel video: [link vero del lungo, appena pubblicato]
 
 ---------------------------------------------------------------------------------------------------------------
 # LUNGO v2: DA 4:38 A ~7:00 (Copy, 7/11, risposta a Montaggio; Manuel registra i VO nuovi e decide la velocità)

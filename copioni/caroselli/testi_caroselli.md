@@ -14,12 +14,13 @@ Didascalia IG:
 Pesava come una persona 🇮🇳
 Il mercato del pesce di Marari, in Kerala, non ha tetto né banchi: le barche arrivano a riva e il pesce si vende
 all'asta sulla sabbia. Prima, la sveglia alle 3.
-Tu ti alzeresti alle 3? Scrivilo nei commenti.
-Il video completo è uscito sul canale, link in bio.
+Tu ti alzeresti alle 3?
+Il video completo è sul canale, link in bio.
 #kerala #india #vocivere #mercatodelpesce #marari
-Post YouTube (scheda Community, stesse 8 immagini):
-Pesava come una persona 🇮🇳 Il mercato del pesce di Marari, in Kerala: niente tetto, niente banchi, aste sulla
-sabbia. Tu ti alzeresti alle 3 per esserci? Il video completo è sul canale.
+Post YouTube (scheda Community, stesse 8 immagini, senza musica):
+Pesava come una persona 🇮🇳 Il mercato del pesce di Marari, in Kerala: niente tetto, niente banchi, aste sulla sabbia. Tu ti alzeresti alle 3 per esserci? Il video completo: https://youtu.be/LW4zO_0oSgQ
+Musica IG (Insights, 7/11): strumentale della libreria di Instagram, calma (chitarra o percussioni leggere), senza voce, non di
+tendenza, volume basso. Brano messo da Manuel: "Art of Life", Lesfm (libreria di Instagram), uscito il 7/11. Post YouTube: 8 immagini caricate senza problemi.
 
 ## Arthunkal (dopo l'uscita del lungo)
 Posizione IG/YT: St. Andrew's Basilica, Arthunkal (Alappuzha, Kerala)
@@ -27,12 +28,12 @@ Didascalia IG:
 13 km pregando, senza mai fermarsi 🇮🇳
 Si parte a mezzanotte dal santuario di Kreupasanam, a Kalavoor, e si cammina lungo la costa del Kerala fino
 alla basilica di Arthunkal, recitando un rosario che non si interrompe mai. Noi c'eravamo dalle 2:30.
-Cammineresti 13 km di notte pregando? Scrivi SÌ o NO nei commenti.
-Il video completo è uscito sul canale, link in bio.
+Cammineresti 13 km di notte, pregando?
+Il video completo è sul canale, link in bio.
 #kerala #india #vocivere #arthunkal #pellegrinaggio
 Post YouTube (scheda Community):
 13 km pregando, senza mai fermarsi 🇮🇳 Di notte, sulla costa del Kerala, fino alla basilica di Arthunkal.
-Cammineresti 13 km di notte pregando? Scrivi SÌ o NO nei commenti. Il video completo è sul canale.
+Cammineresti 13 km di notte, pregando? Il video completo: [link vero del lungo, appena pubblicato]
 
 ## Te (dopo l'uscita del lungo, mer 18/11)
 9 slide, v2 con i riferimenti di Manuel (29/10): 01, 06 e 09 sono video (.mp4, testo animato, senza audio), le altre .jpg.
@@ -44,12 +45,12 @@ Affittate per 3.000 rupie l'anno 🇮🇳
 Nel 1877 le colline di Munnar, in Kerala, vengono affittate a un britannico. Oggi sono coperte di tè fino
 all'orizzonte, raccolto a mano, due, tre foglie alla volta. E dal 2005 l'azienda è per la maggior parte dei suoi
 dipendenti.
-Che tè bevi tu? Scrivilo nei commenti.
-Il video completo è uscito sul canale, link in bio.
+Che tè bevi tu?
+Il video completo è sul canale, link in bio.
 #kerala #india #vocivere #munnar #tè
 Post YouTube (scheda Community):
 Affittate per 3.000 rupie l'anno 🇮🇳 Le colline del tè di Munnar, in Kerala: chi le raccoglie, e di chi sono oggi.
-Che tè bevi tu? Il video completo è sul canale.
+Che tè bevi tu? Il video completo: [link vero del lungo, appena pubblicato]
 
 # Secondo carosello: "I volti" (Manuel, 4/11)
 Uno per ogni lungo, oltre al carosello dei fatti. Primi piani veri delle persone girate (dal lungo e dal girato su
@@ -68,36 +69,36 @@ Posizione IG/YT: Marari Beach, Mararikulam (Alappuzha, Kerala)
 Didascalia IG:
 I volti del mercato del pesce di Marari 🇮🇳
 Chi pesca, chi vende, chi compra all'asta sulla sabbia. Ogni mattina, sulla costa del Kerala.
-Chi ti è rimasto in mente? Scrivilo nei commenti.
+Chi ti è rimasto in mente?
 Tutta la storia nel video sul canale, link in bio.
 #kerala #india #vocivere #marari #ritratti
 Post YouTube (stesse 7 immagini):
 I volti del mercato del pesce di Marari, in Kerala 🇮🇳 Chi pesca, chi vende, chi compra all'asta sulla sabbia.
-Tutta la storia nel video: [link al lungo]
+Tutta la storia nel video: [link vero del lungo, appena pubblicato]
 
 ## Arthunkal, i volti
 Posizione IG/YT: St. Andrew's Basilica, Arthunkal (Alappuzha, Kerala)
 Didascalia IG:
 I volti del pellegrinaggio di Arthunkal 🇮🇳
 13 km a piedi, di notte, lungo la costa del Kerala fino alla basilica. Per qualcuno era la prima volta.
-Chi ti è rimasto in mente? Scrivilo nei commenti.
+Chi ti è rimasto in mente?
 Tutta la storia nel video sul canale, link in bio.
 #kerala #india #vocivere #arthunkal #ritratti
 Post YouTube:
 I volti del pellegrinaggio di Arthunkal, in Kerala 🇮🇳 13 km a piedi, di notte, fino alla basilica.
-Tutta la storia nel video: [link al lungo]
+Tutta la storia nel video: [link vero del lungo, appena pubblicato]
 
 ## Te, i volti
 Posizione IG/YT: Munnar, Kerala
 Didascalia IG:
 I volti del tè di Munnar 🇮🇳
 Sadish tra i filari, il signore che fa il chai e chi abbiamo incontrato sulla strada, in Kerala.
-Chi ti è rimasto in mente? Scrivilo nei commenti.
+Chi ti è rimasto in mente?
 Tutta la storia nel video sul canale, link in bio.
 #kerala #india #vocivere #munnar #ritratti
 Post YouTube:
 I volti del tè di Munnar, in Kerala 🇮🇳 Sadish tra i filari, e chi abbiamo incontrato lungo la strada.
-Tutta la storia nel video: [link al lungo]
+Tutta la storia nel video: [link vero del lungo, appena pubblicato]
 
 ## Meenakshi, i volti (5/11)
 Tre persone davanti al tempio: la signora che prega a mani giunte (copertina), la signora anziana (la più forte), il
@@ -106,8 +107,17 @@ Posizione IG/YT: Meenakshi Amman Temple, Madurai
 Didascalia IG:
 I volti del tempio di Meenakshi 🇮🇳
 La sera, davanti al tempio, a Madurai, nel Tamil Nadu. Chi viene a pregare e chi ci passa ogni giorno.
-Chi ti è rimasto in mente? Scrivilo nei commenti.
+Chi ti è rimasto in mente?
 #india #tamilnadu #madurai #vocivere #ritratti
 Post YouTube (stesse immagini):
 I volti del tempio di Meenakshi, a Madurai 🇮🇳 La sera, davanti al tempio.
 Il video: [link allo Short di Meenakshi]
+
+## Regole dei caroselli (Insights, 7/11, dal carosello del mercato)
+- Didascalia IG: la domanda da sola su una riga, senza "Scrivilo nei commenti" o "Scrivi SÌ o NO"; sotto, su un'altra riga,
+  "Il video completo è sul canale, link in bio." Hashtag e posizione come prima.
+- Post YouTube: il link VERO del lungo nel testo (mai "è sul canale"), niente musica.
+- Musica IG: strumentale della libreria di Instagram, calma (chitarra o percussioni leggere), senza voce, non di tendenza,
+  volume basso. Per ogni carosello si scrive qui quale brano ha messo Manuel, così Insights confronta.
+Post YouTube: Studio accetta 8 immagini (prova del mercato, 7/11): i caroselli si caricano interi.
+Link dei lunghi: mercato https://youtu.be/LW4zO_0oSgQ; arthunkal e te da aggiungere quando escono.

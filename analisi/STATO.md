@@ -1,6 +1,37 @@
-# Insights: stato e passaggio di consegne (aggiornato 4/11/2026)
+# Insights: stato e passaggio di consegne (aggiornato 8/11/2026 sera)
 
 Da leggere all'avvio di ogni nuova chat Insights, dopo CLAUDE.md e analisi/README.md.
+
+## Cosa è stato fatto (4-8/11, chat Insights session_01HtfbgxeFrmgvhNi9P52eKk)
+- COIR: check dello script v3 (`coir_script.md`, approvato da Manuel; "Italia" resta nel VO11 per sua scelta),
+  titolo 1 "MADE IN INDIA: chi fa i nostri tappeti" + miniature C1/C2/C3 in Test e confronto; brief di teaser,
+  4 reel, 3 set di storie e 2 caroselli per Copy (`coir_verticali.md`).
+- MERCATO a 7 giorni, SOLO INSTAGRAM per ora (`mercato.md`, sezione "Analisi a 7 giorni"): i reel li vede quasi
+  solo l'India e il Golfo (reel 1 India 66,8% + Golfo ~24%; reel B India 90,3%), uomini 88-95%; voiceover in
+  italiano non capito, 4-8 s di media, 0 follower su ~4.000 visualizzazioni. Il teaser è l'unico con Italia (21,7%).
+  Reel B (volto coperto dalla cesta) 42,7% di skip contro 25,6% del pescatore: il volto deve essere leggibile.
+  Carosello "fatto" (7/11, con musica IG): 24 visualizzazioni, solo follower. Ogni reel prende una spinta in 1-2
+  giorni e si ferma.
+- DECISIONE CHIUSA 8/11 sera: per ora tutto in italiano anche su IG (era: prova di sottotitoli in inglese sui reel (pubblico indiano) oppure tutto in italiano
+  per farsi mostrare agli italiani. Non ha ancora risposto.
+- Miniature v3 (`copioni/miniature_v3/BOZZE.md`): arthunkal titolo 2 + A2 (test A2, A3, A1); tè titolo 2 + T1 (test
+  T1, T5, T3); coir titolo 1 + C1 (test C1, C2, C3; in C3 la scritta copre il volto). Regola: scritta mai sul viso.
+- Carosello mercato: tolto "Scrivilo nei commenti", link vero al lungo nel post YouTube, musica IG strumentale.
+
+## Fatto l'8/11 (chat Insights nuova): MERCATO a 7 giorni COMPLETO (YouTube + Instagram)
+Sezione "Analisi a 7 giorni, YOUTUBE" in `mercato.md`. Punti chiave: reel B su YouTube 5.248 visualizzazioni, 60,8%
+resta, Italia 97% (su IG India 90%): il pubblico italiano dei verticali è su YouTube Shorts. "Volto leggibile" NON
+confermato (stesso primo fotogramma, 60,8% su YT). Shorts non portano al lungo (fermo a 235). Picco del lungo a 3:26
+= l'asta; calo a 4:10 su B-roll largo. Consigliato dopo video di mercati in Sri Lanka (spettatori 4-5 min).
+Proposta sulla decisione aperta: restare in italiano e dare a IG segnali italiani.
+
+## PROSSIMO PASSO
+- Risposte di Manuel 8/11 sera: il reel B aveva il video correlato collegato (gli Shorts non portano al lungo nemmeno
+  così); lingua: per ora tutto in italiano anche su IG.
+- Arthunkal (lungo dom 15/11): 48 ore il 17/11, 7 giorni il 22/11. Misurare: visualizzazioni del lungo da "Short
+  correlati", fidelizzazione nel primo minuto (conferma della regola "promessa entro il primo minuto"), reel su YT vs IG.
+- Dati IG del reel 3 mercato (9/11) e stories set 1 quando arrivano.
+- Schermate finali aggiunte da Manuel l'8/11 su mercato e arthunkal: misurare i clic a 7 giorni di arthunkal (22/11).
 
 ## Cosa è stato fatto (27/10-4/11, chat Insights session_01HtfbgyzAxUCZDsgATkknE1)
 - MERCATO, dati a 48 ore (YT lungo, YT Shorts, IG teaser e reel 1): `mercato.md`. Punti chiave: durata media
@@ -53,7 +84,7 @@ Da leggere all'avvio di ogni nuova chat Insights, dopo CLAUDE.md e analisi/READM
   Audio la usa.
 - Promemoria programmati (spostati sulla nuova chat Insights il 4/11): dati mercato a 7 giorni (dom 8/11, mattina
   in India: analisi principale, completa `analisi/mercato.md` e decidi cosa diventa regola), revisione strumenti
-  (9/11). Per ogni nuovo lungo uscito programmare 48 h e 7 giorni (arthunkal: lungo dom 15/11 -> 17/11 e 22/11).
+  (9/11). Per ogni nuovo lungo uscito programmare 48 h e 7 giorni (arthunkal: 17/11 e 22/11, già programmati; spostati sulla chat Insights nuova l'8/11).
 - In arrivo da Manuel: insights del reel B del mercato (appena pubblicato), stories set 1, reel 2 e 3 IG.
   A 7 giorni: confermare o smentire le lezioni di `mercato.md` (primo minuto, miniatura, primo fotogramma).
 - Da seguire: risultato del "Test e confronto" della nuova miniatura del mercato; dati dei 4 reel comorin quando

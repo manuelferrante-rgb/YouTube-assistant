@@ -4,11 +4,10 @@ Tutto su Drive, cartella del video -> montati/te/: sottotitoli/ (.it.srt, .en.sr
 gio 19/11, carosello mer 18/11.
 
 ### Titolo (scelta di Manuel, 1a)
-IT: Colline del tè in India, affittate per 3.000 rupie 🇮🇳
-EN: India's tea hills, leased for 3,000 rupees 🇮🇳
-Miniatura DEFINITIVA (Manuel 29/10): copioni/te_miniature/A1_sadish.jpg, "E OGGI / DI CHI SONO?", Manuel che indica
-le colline a destra, Sadish con le foglie in mano che entra nel panorama a sinistra. Il titolo dà l'affitto del 1877, la miniatura apre la domanda e il
-video risponde (dal 2005 l'azienda è per la maggior parte dei dipendenti). I primi 20 s dicono le 3.000 rupie.
+IT: AFFITTATE PER 3.000 RUPIE L'ANNO: le colline del tè in India 🇮🇳
+EN: LEASED FOR 3,000 RUPEES A YEAR: India's tea hills 🇮🇳
+Miniature DEFINITIVE v3 (Manuel + Insights, 8/11): Test e confronto con 1_T1_sadish (principale), 2_T5_filari, 3_T3_profilo
+(_it e _en), Drive montati/te/miniatura/ (la vecchia in miniatura/vecchie/), repo copioni/te_miniature/v3/.
 
 ### Descrizione IT
 Munnar, Kerala, oltre 1.500 metri. Tutto quello che si vede è tè. Nel 1877 queste colline vengono affittate a un

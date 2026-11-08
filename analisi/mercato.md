@@ -124,3 +124,119 @@ pubblico (domenica mattina), perché gli Shorts prendono quasi tutte le visualiz
 | Sorgente principale | feed Shorts 86%, ricerca 11% | feed Shorts (oltre il 90%) |
 Stesso risultato di Instagram: il teaser-trailer lo scorrono via 5 su 6, il reel che apre sulla persona più del
 doppio resta. Due piattaforme, stessa differenza: lezione passata a `regole/formato_reel.md` (nota del 4/11).
+
+## Carosello "fatto" del mercato (sab 7/11): cosa si prova (Insights)
+- IG con una musica strumentale della libreria di Instagram a volume basso (i post con le foto non accettano audio
+  caricato da noi). Dato da guardare a 48 ore e a 7 giorni: copertura da non follower, salvataggi, invii. È il primo
+  carosello: fa da base per gli altri.
+- Post YouTube con il link vero al lungo nel testo (https://youtu.be/LW4zO_0oSgQ), niente musica (il post non la ha).
+
+## Analisi a 7 giorni, INSTAGRAM (registrazioni di Manuel, 8/11 mattina; YouTube ancora da mandare)
+| | Teaser (29/10, 22 s) | Reel 1 pescatore (2/11, 24 s) | Reel B uomo con la cesta (4/11, 19 s) | Carosello "fatto" (7/11, a 18 h) |
+|---|---|---|---|---|
+| Visualizzazioni / spettatori | 349 / 277 | 2.252 / 1.949 | 1.270 / 1.140 | 24 / 7 |
+| Skip rate | 60,8% (più alto del solito) | 25,6% (più basso) | 42,7% (più basso) | - |
+| Tempo medio | 6 s | 8 s | 4 s | - |
+| Like / ricondivisioni / salvataggi / invii | 11 / 2 / 0 / 0 | 56 / 1 / 2 / 0,1% | 10 / 1 / 0 / 0 | 4 / 1 / 0 / 0 |
+| Visite al profilo / follower | 4 / 0 | 13 / 0 | - / 0 | - / 0 |
+| Non follower | 93,3% | 99,1% | 98,1% | 0% (solo follower) |
+| Uomini | 87,9% | 95,4% | 93,2% | - |
+Paesi del reel 1: India 66,8%, Emirati 14,7%, Arabia Saudita 4,8%, Qatar 2,1%, Kuwait 2%. L'Italia non è nei primi 5.
+Paesi del teaser: India 65,9%, ITALIA 21,7%, Emirati 4,3%, Regno Unito 1,4%, Bahrein 1,2%.
+Paesi del reel B: India 90,3%, Italia 2,9%, Emirati 2,1%, Arabia Saudita 1%, Singapore 0,7%.
+Carosello: musica messa (libreria IG, come da nota del 7/11): nonostante la musica, 0 non follower in 18 ore.
+
+### Cosa dice
+1. NUOVO E IMPORTANTE: Instagram fa vedere i reel del Kerala a chi è del Kerala. Il reel 1 l'hanno visto per circa il
+   90% persone in India e nel Golfo (i paesi dove lavorano tanti keralesi), quasi tutti uomini. Il voiceover è in
+   italiano: non lo capiscono, quindi 8 s di media e 0 follower. Su YouTube invece il lungo va all'81% in Italia.
+   Il pubblico italiano su IG non lo stiamo raggiungendo; quello che ci trova è un altro. L'unico con un pezzo
+   d'Italia (21,7%) è il teaser, l'unico con un testo che parlava a chi ci segue già: l'Italia arriva dai follower
+   e da chi li conosce, non dalla scoperta.
+2. Tutti i reel prendono una sola spinta nei primi 1-2 giorni e poi si fermano (reel 1: 2.245 a 48 ore, 2.252 a 7 giorni).
+3. Primo fotogramma: il reel B apre su una persona ma il volto è coperto dalla cesta, tra la folla: 42,7% di skip
+   contro il 25,6% del pescatore seduto, volto leggibile, fermo. La regola va precisata: persona con il VOLTO
+   leggibile, vicina, non in mezzo alla folla. (Due casi: da confermare.) Il trailer resta il peggiore (60,8%).
+4. Tempo medio 4-8 s su 19-24 s: metà se ne va prima di metà video su tutti e tre. Effetto anche della lingua (punto 1).
+5. Carosello: in 18 ore lo hanno visto solo 7 follower (feed e storie), nessun non follower. Con pochi follower
+   un carosello non esce dalla cerchia; i reel sì. L'ultima slide ("Fuori ora il video su YouTube") ha preso più like
+   delle altre. Da rivedere a 7 giorni prima di decidere quanto lavoro metterci.
+6. Follower da Instagram in 10 giorni: 0, su circa 4.000 visualizzazioni.
+
+### Da decidere con Manuel (proposta)
+Prova sul prossimo reel: voiceover italiano invariato e sottotitoli in INGLESE invece che in italiano (gli italiani
+capiscono già l'audio). Se il tempo medio e i follower salgono, il pubblico keralese e del Golfo diventa una strada
+in più. Se Manuel vuole solo italiani: didascalia, testi a schermo e hashtag tutti in italiano, e titolo a schermo
+che parla all'Italia (es. "In Italia costa..."), per far capire a Instagram a chi mostrarlo.
+
+## Analisi a 7 giorni, YOUTUBE (registrazioni di Manuel, 8/11, cartella Drive 17k54n5lBu49nmEtAYiT8Wwg51FaGXnqo)
+Le 4 registrazioni IG della cartella sono le stesse già analizzate sopra. Nuove: lungo (Studio dal computer) e 3 Shorts.
+
+### Lungo "Sveglia alle 3 in India..." (6:05), miniatura nuova "ALL'ASTA SULLA SABBIA"
+- 235 visualizzazioni (216 a 48 ore: dopo il 2/11 quasi ferme), 53 spettatori unici, 70 engaged, 2,0 ore, +1 iscritto.
+- Durata media 1:35-1:36 (26,6%). Impressioni 1.269, CTR 3,1% (era 3,7% a 48 ore), 38 engaged da impressioni.
+- Sorgenti: navigazione (home) 80,8%, esterne 5,1% (WhatsApp 82%, IG 18%), pagine del canale 4,3%, ricerca 3,9%,
+  video consigliati 2,6%, altro 3,4%. "Short correlati" non compare tra le principali: gli Shorts non portano al lungo.
+- Video consigliati: dopo vlog italiani (FIGHT CAMP, falchi di Milano, varo Tuccoli) e dopo due video di MERCATI
+  in Sri Lanka ("Sri Lanka Sunday Market", "Inside Jaffna's Fish Market"): chi arriva da quelli resta 4:08 e 4:53.
+- Pubblico: nuovi 80,8%, occasionali 7,7%, abituali 11,5%; non iscritti 85,5%; Italia 76,7%; cellulare 74,6%,
+  TV 14,7%; sottotitoli italiani 50%, nessuno 47%, inglese 3%. Mi piace 100%. Schermata finale 0% (non c'è).
+- Fidelizzazione: 50% a 0:30 (YouTube: nella media), minimo ~22% verso 2:35. PICCO a 3:26 (fotogramma visto: la folla
+  all'asta sulla spiaggia, uomo in camicia azzurra). CALO a 4:10 (campo largo della spiaggia, solo B-roll).
+
+### Shorts YouTube a 7 giorni
+| | Teaser (29/10, 0:23) | Reel 1 pescatore (2/11, 0:25) | Reel B "Un pesce da 50 chili, all'asta sulla spiaggia" (4/11, 0:20) |
+|---|---|---|---|
+| Visualizzazioni | 181 | 65 | 5.248 (1.850 nelle ultime 48 ore, sale ancora) |
+| Hanno continuato a guardare | 16,6% | 35,4% | 60,8% |
+| Durata media | 0:12 | 0:11 | 0:15 (su 0:19; a 0:03 il 118%: lo riguardano) |
+| Spettatori unici / iscritti | 26 / 0 | 21 / 0 | 2.477 / +1 |
+| Sorgente | feed Shorts 83,4%, ricerca 11,1% | feed Shorts 87,7% | feed Shorts 98,2% |
+| Paese | Italia 81,1% | Italia | Italia 97,3% |
+| Non iscritti | 91,6% | - | 99,9% (nuovi spettatori 99,7%) |
+Reel B: uomini 73,8%, donne 26,2%; età distribuite, circa metà sopra i 45 anni.
+
+### Cosa dice (7 giorni, YouTube + Instagram)
+1. IL DATO PIÙ IMPORTANTE: lo stesso reel B su YouTube lo vede l'Italia (97%) e resta il 60,8% (5.248 visualizzazioni,
+   sale ancora); su Instagram lo vede l'India (90%) e si ferma a 1.270 con 4 s di media. Il contenuto funziona con gli
+   italiani. Il limite di Instagram è a chi lo mostra (e la lingua), non il video. Il pubblico italiano per i verticali
+   oggi è su YouTube Shorts.
+2. CORREGGE un'ipotesi del 8/11 mattina: il primo fotogramma del reel B (folla, volto coperto) su YouTube tiene il
+   60,8%. Il 42,7% di skip su IG viene dal pubblico sbagliato, non dal volto. "Volto leggibile" NON diventa regola.
+3. Titolo dello Short = la curiosità con un numero concreto: "Un pesce da 50 chili, all'asta sulla spiaggia" 60,8%,
+   "Cristiani, induisti, musulmani" 35,4%, "Video completo domenica" 16,6%. Conferma la regola di Copy già scritta
+   (titolo = il fatto, mai l'annuncio) con dati nostri.
+4. Gli Shorts NON portano al lungo: 5.248 visualizzazioni del reel B e il lungo è fermo a 235 (19 visualizzazioni
+   in 5 giorni). Da verificare con Manuel se il reel B aveva il "video correlato" collegato al lungo.
+5. Il picco del lungo a 3:26 è l'asta, cioè la cosa che ora promettono la miniatura nuova e il reel migliore: è il
+   cuore del video ed è arrivata al minuto 3:26. Il calo a 4:10 è su un campo largo senza persone.
+6. YouTube consiglia il lungo dopo video di mercati in Sri Lanka, e quelle persone guardano più di 4 minuti: il
+   nostro pubblico naturale sono gli spettatori di viaggi "vita locale e mercati". Titoli e descrizioni devono usare
+   quelle parole (mercato, mercato del pesce, vita locale, India, Kerala).
+7. Il teaser porta poco ovunque (16,6% YT, 60,8% di skip IG). Già regola.
+
+### Cosa cambiare (per Montaggio, Copy, Pianificazione: Manuel decide se mandarlo)
+- Montaggio, lunghi: il momento promesso da titolo e miniatura entro il primo minuto (anche un anticipo di 3-5 s).
+  Due segnali sullo stesso video (picco a 3:26 + reel B che è quel momento). Da confermare con arthunkal prima della regola.
+- Montaggio, lunghi: niente B-roll larghi senza persone oltre pochi secondi a metà video (calo a 4:10).
+- Copy: titolo di ogni Short = un fatto con un numero o un oggetto concreto ("50 chili", "all'asta"). Testi in
+  italiano dappertutto.
+- Copy/Manuel: in ogni Short dopo il lungo collegare il "video correlato" al lungo appena esce; nel lungo aggiungere
+  la schermata finale. Da misurare su arthunkal: visualizzazioni del lungo da "Short correlati".
+- Pianificazione: YouTube Shorts è il canale che porta italiani nuovi. Il reel più forte di ogni lungo va su YouTube
+  il prima possibile (anche il giorno dopo il lungo), perché lì cresce per giorni; su IG prende una spinta sola.
+
+### Risposte di Manuel (8/11 sera)
+- Il reel B su YouTube AVEVA il video correlato collegato al lungo. Quindi gli Shorts non portano al lungo nemmeno
+  collegati: 5.248 visualizzazioni, il lungo quasi fermo. Il collegamento resta (non costa), ma non basta: da provare
+  su arthunkal un motivo esplicito per andare al lungo (es. didascalia e commento fissato: "come finisce l'asta: video
+  sul canale") e misurare "Short correlati" a 48 ore e 7 giorni.
+- Lingua: PER ORA TUTTO IN ITALIANO anche su Instagram (niente prova con sottotitoli inglesi).
+
+### Decisione aperta (sottotitoli inglesi su IG): proposta aggiornata (CHIUSA, vedi sopra)
+I dati di YouTube dicono che gli italiani il formato lo guardano. Proposta: restare tutto in italiano e dare a
+Instagram segnali italiani (scritta a schermo, didascalia e hashtag in italiano, primo testo che parla all'Italia).
+La prova con l'inglese ha senso solo se Manuel vuole anche il pubblico indiano. Decide Manuel.
+- Schermata finale (Manuel, 8/11 sera): sul mercato non c'era (primo lungo, 0% di clic). Manuel la aggiunge ora
+  (Iscriviti + altro video) e la mette anche su arthunkal. Da guardare a 7 giorni di arthunkal: clic sulla schermata
+  finale di entrambi i lunghi.

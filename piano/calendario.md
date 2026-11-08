@@ -46,6 +46,7 @@ Pacchetto di ogni lungo: teaser (sabato prima), lungo (domenica), 3 reel, 1 caro
 | gio 19/11 | arthunkal: reel 2 | |
 | ven 20/11 | arthunkal: stories set 2 | |
 | sab 21/11 | arthunkal: carosello | |
+| dom 22/11 | comunismo | pronto, POSTICIPATO dal 12/11 (Manuel 7/11) |
 | lun 23/11 | arthunkal: reel 3 | |
 | mer 25/11 | kallu (reel pronto) | |
 | sab 28/11 | te: teaser | |
@@ -151,75 +152,72 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 
 | Giorno | Uscita | Nota |
 |---|---|---|
-| gio 5/11 | mercato: reel 2 | fisso |
-| ven 6/11 | autostop | pronto; entrambi i profili |
-| ven 6/11 | mercato: stories set 2 (set2_mercato) | fisso |
-| sab 7/11 | mercato: carosello (+ post YouTube) | fisso |
-| dom 8/11 | mercato: stories set 3 (set3_mare) | nuovo slot |
-| dom 8/11 | Diwali: Manuel gira | nessun reel |
-| lun 9/11 | mercato: reel 3 | fisso |
-| mar 10/11 | Diwali: reel | montato veloce |
-| mer 11/11 | meenakshi | pronto |
-| gio 12/11 | comunismo | pronto |
-| sab 14/11 | arthunkal: teaser | fisso |
-| dom 15/11 | arthunkal: LUNGO | fisso |
-| lun 16/11 | mercato: carosello "I volti" (+ post YouTube) | nuovo slot, 9 giorni dopo il primo carosello |
-| lun 16/11 | arthunkal: stories set 1 (set1_cammino) | fisso |
-| mar 17/11 | arthunkal: reel 1 | fisso |
-| mer 18/11 | arthunkal: stories set 3 (set3_storia) | nuovo slot |
-| gio 19/11 | arthunkal: reel 2 | fisso |
-| ven 20/11 | comorin: statua di Thiruvalluvar | dopo VO, Audio, Montaggio |
-| ven 20/11 | arthunkal: stories set 2 (set2_persone) | fisso |
-| sab 21/11 | arthunkal: carosello (+ post YouTube) | fisso |
-| lun 23/11 | arthunkal: reel 3 | fisso |
-| mar 24/11 | arthunkal: carosello "I volti" (+ post YouTube) | nuovo slot |
-| mer 25/11 | kallu | pronto |
-| ven 27/11 | panni (pov giungla) | entrambi i profili |
-| sab 28/11 | te: teaser | fisso |
+| sab 7/11 | mercato: carosello "fatto" (+ post YouTube) | PUBBLICATO (Manuel 7/11) |
+| dom 8/11 | mercato: stories set 1 | slittato dal 2/11; Diwali: Manuel gira |
+| lun 9/11 | mercato: reel 3 |  |
+| mar 10/11 | EXTRA Diwali: reel | montato veloce |
+| mer 11/11 | mercato: stories set 2 | slittato dal 6/11 |
+| gio 12/11 | mercato: carosello "I volti" (+ post YouTube) e stories set 3 | unico giorno con due uscite |
+| ven 13/11 | EXTRA autostop | slittato dal 6/11; entrambi i profili |
+| sab 14/11 | arthunkal: teaser |  |
+| dom 15/11 | arthunkal: LUNGO |  |
+| lun 16/11 | arthunkal: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 17/11 | arthunkal: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
+| mer 18/11 | EXTRA meenakshi | spostato dall'11/11 |
+| gio 19/11 | arthunkal: reel 2 |  |
+| ven 20/11 | arthunkal: stories set 2 |  |
+| sab 21/11 | arthunkal: carosello (+ post YouTube) |  |
+| dom 22/11 | EXTRA comunismo | posticipato dal 12/11 |
+| lun 23/11 | arthunkal: reel 3 |  |
+| mar 24/11 | arthunkal: stories set 3 |  |
+| mer 25/11 | arthunkal: carosello "I volti" (+ post YouTube) |  |
+| gio 26/11 | EXTRA kallu |  |
+| sab 28/11 | te: teaser |  |
 | dom 29/11 | te: LUNGO | solo se approvato |
-| lun 30/11 | te: stories set 1 | fisso |
-| mar 1/12 | te: reel 1 | fisso |
-| mer 2/12 | comorin: canna da zucchero | entrambi i profili |
-| mer 2/12 | te: stories set 3 | nuovo slot |
-| gio 3/12 | te: reel 2 | fisso |
-| ven 4/12 | te: stories set 2 | fisso |
-| sab 5/12 | te: carosello (+ post YouTube) | fisso |
-| dom 6/12 | comorin: cocco | entrambi i profili |
-| lun 7/12 | te: reel 3 | fisso |
-| mer 9/12 | bucato (te) | pronto |
-| gio 10/12 | te: carosello "I volti" (+ post YouTube) | nuovo slot, 5 giorni dopo il primo carosello |
-| ven 11/12 | comorin: tre mari (loop) |  |
-| lun 14/12 | extra 1: treno in India (reel di Manuel, già fatto, in galleria) | proposto 6/11; se serve prima, scambiare con kallu (25/11) |
-| gio 17/12 | extra 2 dal girato (Kochi, Varkala o Diwali) | da scegliere con Manuel |
+| lun 30/11 | te: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 1/12 | te: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
+| mer 2/12 | EXTRA panni (pov giungla) | entrambi i profili |
+| gio 3/12 | te: reel 2 |  |
+| ven 4/12 | te: stories set 2 |  |
+| sab 5/12 | te: carosello (+ post YouTube) |  |
+| dom 6/12 | EXTRA comorin: statua di Thiruvalluvar | dopo VO, Audio, Montaggio |
+| lun 7/12 | te: reel 3 |  |
+| mar 8/12 | te: stories set 3 |  |
+| mer 9/12 | EXTRA bucato (te) |  |
+| gio 10/12 | te: carosello "I volti" (+ post YouTube) |  |
+| sab 12/12 | EXTRA comorin: canna da zucchero | entrambi i profili |
+| mar 15/12 | EXTRA comorin: cocco | entrambi i profili |
+| ven 18/12 | EXTRA da scegliere dal girato (Kochi, Varkala o Diwali) | con Manuel |
 | sab 19/12 | lungo A (coir): teaser |  |
-| dom 20/12 | LUNGO A (coir) | girato 2-7/11 |
-| lun 21/12 | lungo A: stories set 1 |  |
-| mar 22/12 | lungo A: reel 1 |  |
+| dom 20/12 | LUNGO A (coir) |  |
+| lun 21/12 | lungo A: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 22/12 | lungo A: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
 | mer 23/12 | lungo A: stories set 3 |  |
 | gio 24/12 | lungo A: reel 2 |  |
 | ven 25/12 | lungo A: stories set 2 | Natale, sposta se serve |
 | sab 26/12 | lungo A: carosello (+ post YouTube) |  |
+| dom 27/12 | EXTRA treno in India | reel già fatto, in galleria |
 | lun 28/12 | lungo A: reel 3 |  |
-| mer 30/12 | lungo A: carosello "I volti" (+ post YouTube) | 4 giorni dopo il primo carosello |
-| ven 1/1 | extra 3 | dalla scorta |
-| dom 3/1 | extra 4 | dalla scorta |
-| mar 5/1 | extra 5 | dalla scorta |
-| gio 7/1 | extra 6 | dalla scorta |
+| mer 30/12 | lungo A: carosello "I volti" (+ post YouTube) |  |
+| gio 31/12 | EXTRA comorin: tre mari (loop) |  |
+| dom 3/1 | EXTRA dalla scorta |  |
+| mar 6/1 | EXTRA dalla scorta |  |
 | sab 9/1 | lungo B: teaser |  |
-| dom 10/1 | LUNGO B (migranti o ONG) | girato entro metà dicembre |
-| lun 11/1 | lungo B: stories set 1 |  |
-| mar 12/1 | lungo B: reel 1 |  |
+| dom 10/1 | LUNGO B (migranti o erosione) |  |
+| lun 11/1 | lungo B: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 12/1 | lungo B: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
 | mer 13/1 | lungo B: stories set 3 |  |
 | gio 14/1 | lungo B: reel 2 |  |
 | ven 15/1 | lungo B: stories set 2 |  |
 | sab 16/1 | lungo B: carosello (+ post YouTube) |  |
+| dom 17/1 | EXTRA dalla scorta |  |
 | lun 18/1 | lungo B: reel 3 |  |
-| mer 20/1 | lungo B: carosello "I volti" (+ post YouTube) | 4 giorni dopo il primo carosello |
-| ven 22/1 | extra 7 | dalla scorta |
+| mer 20/1 | lungo B: carosello "I volti" (+ post YouTube) |  |
+| ven 22/1 | EXTRA dalla scorta |  |
 | sab 23/1 | lungo C: teaser | solo se girato e montato |
-| dom 24/1 | LUNGO C (l'altro tra migranti e ONG) | solo se girato e montato |
-| lun 25/1 | lungo C: stories set 1 |  |
-| mar 26/1 | lungo C: reel 1 |  |
+| dom 24/1 | LUNGO C (l'altro tra migranti ed erosione) | solo se girato e montato |
+| lun 25/1 | lungo C: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 26/1 | lungo C: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
 | mer 27/1 | lungo C: stories set 3 |  |
 | gio 28/1 | lungo C: reel 2 |  |
 | ven 29/1 | lungo C: stories set 2 |  |
@@ -283,3 +281,20 @@ Nota da Copy, 6/11 (Manuel): coir girato il 6/11 alla società di Anathalavattom
 trailer + lungo + 4 REEL (non 3) + 2 caroselli + 3 set di stories. Un reel "Made in India". Dettagli in `copioni/coir_testi.md`.
 
 Nota da Pianificazione, 6/11 (Manuel): nuovo reel a sé `treno` (prendere un treno in India), già fatto da Manuel e nella sua galleria. Occupa l'extra 1 del 14/12 (slot prima da scegliere); l'extra 2 del 17/12 resta libero. Se Manuel lo vuole prima, scambia con kallu (25/11) e kallu va al 14/12. Per la regola dei reel più leggeri, proposto su entrambi i profili (personale e Voci Vere), da confermare. Copy: didascalia; Montaggio: solo se serve rifinire.
+
+Nota da Pianificazione, 7/11 (Manuel): meenakshi esce gio 12/11 (era mer 11/11); comunismo posticipato da gio 12/11 a dom 22/11 (non cancellato). Il 11/11 resta libero.
+
+Nota da Pianificazione, 7/11 (Manuel): stories mercato set 1 (2/11), set 2 (6/11) e autostop (6/11) NON sono usciti. Usciti finora: presentazione, mercato teaser, lungo e 2 reel. Ripianificati: 7/11 carosello, 8/11 set 1, 9/11 reel 3, 10/11 Diwali e set 2, 11/11 autostop, 12/11 meenakshi e set 3, 13/11 vuoto.
+
+Nota da Pianificazione, 7/11 sera (Manuel): CALENDARIO RIFATTO (v3, la tabella v2 sopra e' sostituita). Stories mercato set 1 (2/11), set 2 (6/11) e autostop (6/11) non erano usciti. Regola nuova: i reel EXTRA (esterni ai lunghi, piu' clickbait) stanno distanziati tra loro (almeno 3 giorni, mai uno vicino all'altro); gli altri giorni si coprono con le uscite dei pacchetti (teaser, lungo, reel, stories, caroselli); i giorni vuoti vanno bene. Usciti finora: presentazione, mercato teaser, lungo e 2 reel.
+
+Nota da Pianificazione, 7/11 (Manuel): pubblicato il carosello "fatto" del mercato. Usciti finora: presentazione, mercato teaser, lungo, 2 reel e carosello.
+
+Nota da Pianificazione, 8/11 (Manuel, da Insights): il reel piu' forte di ogni lungo va su YouTube Shorts il prima possibile, perche' li' cresce per giorni; su IG prende una spinta sola. Spostato il reel 1 al lunedi' dopo il lungo (giorno dopo), le stories set 1 al martedi'. Quale reel e' il piu' forte lo indica Insights (o Manuel) dal girato e dai dati; il reel 1 e' lo slot riservato. Mercato: il reel B e' gia' su YouTube.
+
+Nota da Copy, 8/11 (Manuel): coir APPROVATO (lungo v2 6:51). Pacchetto Copy pronto su Drive cartella "Coir" montati/coir:
+miniature v3 (Test e confronto: C1 Premilla, C2, C3), sottotitoli it/en, TESTI (titolo, descrizione e capitoli it/en, didascalie
+dei 5 verticali), carosello "fatto" (8 slide, 3 video), carosello "I volti" (7), storie 3x6. Testi in `copioni/coir_pacchetto.md`.
+Titoli e miniature v3 approvati anche per arthunkal e te (pacchetti e TESTI su Drive aggiornati, vecchie miniature in miniatura/vecchie/).
+
+Nota da Pianificazione, 8/11 (Manuel): il reel più forte non è fisso, dipende: lo decidono caso per caso Manuel e Insights. Il lunedì dopo il lungo è lo slot per quel reel, non necessariamente il reel 1. Il motivo esplicito per andare dal Short al lungo (didascalia, commento fissato) è ancora da capire, non deciso: da provare su arthunkal e misurare.

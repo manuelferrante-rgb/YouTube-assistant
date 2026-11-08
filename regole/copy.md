@@ -114,3 +114,26 @@ Verticali, titoli e domande (Manuel, 4/11, dai dati del mercato in `analisi/merc
 - Ogni didascalia IG ha una domanda semplice e concreta, sola su una riga prima del rimando ("Tu ci andresti?",
   "L'hai mai assaggiato?", "Tu ti alzeresti alle 3?"). Niente esca ("tagga un amico", "scrivi SÌ se..."): su
   Instagram è l'invio che fa crescere, e si manda un reel che fa nascere una domanda vera.
+
+Caroselli (Insights, 7/11, approvato da Manuel): nella didascalia IG la domanda da sola su una riga, senza "Scrivilo nei
+commenti"; sotto "Il video completo è sul canale, link in bio." Nel post YouTube il link vero del lungo, niente musica.
+Su IG musica strumentale calma della libreria (senza voce, non di tendenza, volume basso): il brano si annota in
+`copioni/caroselli/testi_caroselli.md`.
+
+Miniature e titoli dei lunghi (Manuel, 8/11, riferimenti: Progetto Happiness e simili; generatore `copioni/miniature_v3/miniature_v3.py`):
+- Persona del posto grande e frontale, colore cinematografico (poco saturo, contrastato, caldo), testo ENORME condensato
+  (Anton), bianco con al massimo una parola rossa. Sempre versione italiana ed inglese.
+- Il volto è sempre libero: la scritta mai sopra il viso (Insights 8/11, reel B col volto coperto: 42,7% di skip contro 25,6%).
+- Titolo: gancio in MAIUSCOLO + spiegazione + bandiera, sempre anche in inglese. Un titolo per video; 3 miniature in
+  "Test e confronto" di YouTube Studio (la prima è la principale). Il testo della miniatura non ripete il titolo.
+
+Nota da Insights, 8/11 sera (mercato a 7 giorni, YouTube + IG; `analisi/mercato.md`):
+- Lingua (Manuel, 8/11): per ora TUTTO IN ITALIANO anche su Instagram (scritte, didascalie, hashtag): niente sottotitoli
+  inglesi sui reel. Su IG i reel vanno al pubblico indiano; i segnali in italiano aiutano a farli mostrare all'Italia.
+- Titolo degli Shorts confermato dai nostri dati: un fatto concreto con un numero o un oggetto. "Un pesce da 50 chili,
+  all'asta sulla spiaggia" 60,8% resta e 5.248 visualizzazioni; "Video completo domenica" 16,6%.
+- Gli Shorts non portano al lungo nemmeno con il video correlato collegato (reel B: 5.248 visualizzazioni, lungo fermo
+  a 235). Per arthunkal proposta: dare un motivo esplicito per il lungo nella didascalia o nel commento fissato
+  (cosa si scopre solo nel lungo), senza esca.
+- Correzione: la regola "scritta mai sul viso" resta, ma il reel B non la dimostra: su YouTube lo stesso primo
+  fotogramma (volto coperto) tiene il 60,8%. Lo skip su IG dipendeva dal pubblico indiano.

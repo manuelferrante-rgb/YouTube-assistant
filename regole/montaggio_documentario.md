@@ -290,3 +290,12 @@ pausa tra le frasi, chiusura "Ascolta altre voci, su" + logo su velo leggero).
 - Codice: `tools/subscribe_banner.py` (grafica e click), `tools/apply_banners.py in out --iscriviti T --like T`
   (sul lungo finito, ricodifica solo i tratti dei banner). Click a volume 0.45 nel mix.
 - Ultimi 10-15 s di ogni lungo senza volti in primo piano (schermata finale di Studio, Manuel 4/11).
+
+Nota da Insights, 8/11 sera (decisione di Manuel, dai dati del mercato a 7 giorni, `analisi/mercato.md`):
+- La prima parte del lungo è coerente con titolo e miniatura: quello che promettono si vede entro il primo minuto
+  (anche solo un anticipo di pochi secondi). Titolo e miniatura li decidono Copy e Manuel; Montaggio controlla solo
+  che l'inizio del video li mantenga. Nel mercato la cosa promessa (l'asta) arrivava a 3:26 e la gente andava avanti
+  a cercarla.
+- A metà video niente B-roll larghi senza persone oltre pochi secondi (nel mercato il calo più forte è a 4:10, su un
+  campo largo della spiaggia): meglio una persona in azione. Se il video si accorcia di qualche secondo, non si riempie.
+- Si verifica sui dati di arthunkal (22/11): se non regge, Insights lo scrive qui.
