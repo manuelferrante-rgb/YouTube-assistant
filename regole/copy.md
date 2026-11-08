@@ -119,3 +119,10 @@ Caroselli (Insights, 7/11, approvato da Manuel): nella didascalia IG la domanda 
 commenti"; sotto "Il video completo è sul canale, link in bio." Nel post YouTube il link vero del lungo, niente musica.
 Su IG musica strumentale calma della libreria (senza voce, non di tendenza, volume basso): il brano si annota in
 `copioni/caroselli/testi_caroselli.md`.
+
+Miniature e titoli dei lunghi (Manuel, 8/11, riferimenti: Progetto Happiness e simili; generatore `copioni/miniature_v3/miniature_v3.py`):
+- Persona del posto grande e frontale, colore cinematografico (poco saturo, contrastato, caldo), testo ENORME condensato
+  (Anton), bianco con al massimo una parola rossa. Sempre versione italiana ed inglese.
+- Il volto è sempre libero: la scritta mai sopra il viso (Insights 8/11, reel B col volto coperto: 42,7% di skip contro 25,6%).
+- Titolo: gancio in MAIUSCOLO + spiegazione + bandiera, sempre anche in inglese. Un titolo per video; 3 miniature in
+  "Test e confronto" di YouTube Studio (la prima è la principale). Il testo della miniatura non ripete il titolo.

@@ -4,11 +4,10 @@ miniatura/ (DEFINITIVA_D_mezzanotte.jpg, scelta di Manuel 27/10), carosello/ (01
 reel lun-gio con il carosello mercoledì.
 
 ### Titolo
-IT: Di notte sulla spiaggia in India: 13 km di rosario senza fermarsi 🇮🇳
-EN: All night on an Indian beach: a 13 km rosary that never stops 🇮🇳
-Miniatura DEFINITIVA (Manuel, 27/10): D "DA MEZZANOTTE / 13 KM A PIEDI" (folla di notte), file
-copioni/arthunkal_miniature/D_mezzanotte.jpg e Drive montati/arthunkal/miniatura/DEFINITIVA_D_mezzanotte.jpg.
-I primi 30 s del lungo partono proprio da "camminano da mezzanotte" e dai 13 km: la promessa è mantenuta subito.
+IT: LA PREGHIERA CHE NON SI FERMA MAI: tutta la notte sulla costa dell'India 🇮🇳
+EN: THE PRAYER THAT NEVER STOPS: all night on India's coast 🇮🇳
+Miniature DEFINITIVE v3 (Manuel + Insights, 8/11): Test e confronto con 1_A2_anziano (principale), 2_A3_ragazza, 3_A1_notte
+(_it e _en), Drive montati/arthunkal/miniatura/ (le vecchie in miniatura/vecchie/), repo copioni/arthunkal_miniature/v3/.
 
 ### Descrizione IT
 Mezzanotte, Kalavoor, costa del Kerala. Da qui parte un rosario che non si interrompe mai: si recita camminando
