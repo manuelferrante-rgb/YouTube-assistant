@@ -446,7 +446,7 @@ Ma non c'è scritto chi l'ha fatto. Sulla costa del Kerala, sotto una tettoia su
 Dalla fibra nasce la corda, dalla corda i tappeti che arrivano in Europa.
 Ce l'hai anche tu all'ingresso di casa?
 Il video completo è sul canale, link in bio.
-#kerala #india #vocivere #coir #madeinindia
+#india #kerala #viaggio #vitalocale #cocco
 Post YouTube (stesse immagini, 06 come .jpg):
 Sopra c'è scritto Made in India 🇮🇳 Le donne del coir del Kerala, che fanno i nostri tappeti a mano. Ce l'hai anche tu all'ingresso di casa?
 Tutta la storia nel video: [link vero del lungo, appena pubblicato]
@@ -467,7 +467,7 @@ I volti del coir 🇮🇳
 Le donne e l'uomo che, sulla costa del Kerala, fanno a mano la fibra dei nostri tappeti.
 Chi ti è rimasto in mente?
 Tutta la storia nel video sul canale, link in bio.
-#kerala #india #vocivere #coir #ritratti
+#india #kerala #viaggio #vitalocale #ritratti
 Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Tutta la storia nel video: [link vero del lungo, appena pubblicato]
 
 ---------------------------------------------------------------------------------------------------------------

@@ -58,54 +58,78 @@ Chapters
 
 #Kerala #India #VociVere
 
-## VERTICALI: titolo Short (= prima riga IG), didascalia IG, descrizione Short YT
-Regola (Insights, 8/11): titolo dello Short = un fatto con un numero o un oggetto concreto, tutto in italiano.
-Didascalie: domanda da sola su una riga, poi il rimando (regole/copy.md).
+## VERTICALI v3 (8/11): titolo Short, didascalia IG, descrizione e commento fissato YT
+Regole (Insights + Manuel, 8/11): titolo dello Short = fatto concreto con un numero o un oggetto; tutto in italiano anche
+su IG (scritte, didascalie, hashtag), niente sottotitoli in inglese. Sotto i reel dopo il lungo: riga 1 il fatto, poi una
+frase con una cosa precisa che si scopre solo nel lungo (stessa frase nel commento fissato su YouTube, dove i link non si
+cliccano: il collegamento è il video correlato che mette Manuel). Su IG chiude "Video completo sul canale YouTube Voci Vere,
+link in bio." Teaser: dice cosa c'è nel lungo senza il finale; l'annuncio solo in fondo, mai nel titolo.
+Hashtag con le parole del pubblico: #india #kerala #viaggio #vitalocale + uno sul tema.
 
-### Teaser, sab 19/12 (VociVere_coir_teaser_1080x1920.mp4)
+### Teaser (VociVere_coir_teaser_1080x1920.mp4)
+Titolo Short / prima riga IG:
 Ha 76 anni e tira su gusci di cocco dalla laguna 🇮🇳
-Ogni giorno scende in acqua fino al petto e li cerca sul fondo, a mano. Restano lì per mesi, finché la fibra non si
-stacca. Kerala, India.
+Didascalia IG:
+Ha 76 anni e tira su gusci di cocco dalla laguna 🇮🇳
+Ogni giorno scende in acqua fino al petto e li cerca sul fondo, a mano. Restano lì per mesi, finché la fibra non si stacca. Kerala, India.
 Sapevi da dove viene lo zerbino di cocco?
-Domenica il video completo sul canale.
-#kerala #india #vocivere #coir #cocco
-YT: In una laguna del Kerala, un uomo di 76 anni tira su a mano i gusci di cocco da cui nascono i nostri zerbini. Lo sapevi?
+Nel video: chi apre questi gusci a mano, quanto le pagano e dove finiscono i tappeti.
+Domenica il video completo sul canale YouTube Voci Vere.
+#india #kerala #viaggio #vitalocale #cocco
+Descrizione Short YT: Ogni giorno scende in acqua fino al petto e li cerca sul fondo, a mano. Restano lì per mesi, finché la fibra non si stacca. Kerala, India. Sapevi da dove viene lo zerbino di cocco?
+Commento fissato YT: Nel video: chi apre questi gusci a mano, quanto le pagano e dove finiscono i tappeti.
 
 ### Reel 1, made in india (VociVere_coir_made_in_india_1080x1920.mp4)
+Titolo Short / prima riga IG:
 Zerbino di cocco: a chi lo fa vanno 80 centesimi 🇮🇳
-Sopra c'è scritto Made in India. Sotto una tettoia in Kerala, le donne aprono i gusci a mano, sedute per terra. Dalla fibra
-nasce la corda, dalla corda il tappeto che parte per l'Europa. A loro, per ogni tappeto, 80 rupie.
+Didascalia IG:
+Zerbino di cocco: a chi lo fa vanno 80 centesimi 🇮🇳
+Sopra c'è scritto Made in India. Sotto una tettoia in Kerala, le donne aprono i gusci a mano, sedute per terra. Dalla corda nasce il tappeto che parte per l'Europa.
 Ce l'hai anche tu all'ingresso di casa?
-Il video completo è sul canale, link in bio.
-#kerala #india #vocivere #coir #madeinindia
-YT: Per ogni zerbino di cocco che arriva in Europa, alle donne che lo fanno in Kerala vanno 80 centesimi. Ce l'hai anche tu all'ingresso?
+Perché qui i giovani non vengono più, e chi tira su i gusci dalla laguna: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #cocco
+Descrizione Short YT: Sopra c'è scritto Made in India. Sotto una tettoia in Kerala, le donne aprono i gusci a mano, sedute per terra. Dalla corda nasce il tappeto che parte per l'Europa. Ce l'hai anche tu all'ingresso di casa?
+Commento fissato YT: Perché qui i giovani non vengono più, e chi tira su i gusci dalla laguna: è nel video sul canale.
 
 ### Reel 2, indietro (VociVere_coir_indietro_1080x1920.mp4)
+Titolo Short / prima riga IG:
 280 pezzi di corda in 8 ore, camminando all'indietro 🇮🇳
-Due fili di fibra di cocco, intrecciati passo dopo passo, fino in fondo al capannone. Lei è Mary. La corda che ha in mano
-diventerà un tappeto.
+Didascalia IG:
+280 pezzi di corda in 8 ore, camminando all'indietro 🇮🇳
+Due fili di fibra di cocco, intrecciati passo dopo passo, fino in fondo al capannone. Lei è Mary. La corda che ha in mano diventerà un tappeto.
 Avresti mai detto che si fa così?
-Tutta la storia su YouTube, link in bio.
-#kerala #india #vocivere #coir #corda
-YT: In una fabbrica del Kerala la corda di cocco si fa camminando all'indietro: 280 pezzi in 8 ore. L'avresti mai detto?
+Da dove arriva la fibra, tirata su a mano da una laguna, e quanto paga questo lavoro: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #cocco
+Descrizione Short YT: Due fili di fibra di cocco, intrecciati passo dopo passo, fino in fondo al capannone. Lei è Mary. La corda che ha in mano diventerà un tappeto. Avresti mai detto che si fa così?
+Commento fissato YT: Da dove arriva la fibra, tirata su a mano da una laguna, e quanto paga questo lavoro: è nel video sul canale.
 
 ### Reel 3, premilla (VociVere_coir_premilla_1080x1920.mp4)
+Titolo Short / prima riga IG:
 40 anni ad aprire gusci di cocco, a mano 🇮🇳
-Premilla ha sessant'anni. Quando questa società del coir ha aperto, in Kerala, lei era già qui. Si lavora sedute per terra,
-sotto il sole, fino alle due.
+Didascalia IG:
+40 anni ad aprire gusci di cocco, a mano 🇮🇳
+Premilla ha sessant'anni. Quando questa società del coir ha aperto, in Kerala, lei era già qui. Si lavora sedute per terra, sotto il sole, fino alle due.
 Chi conosci che fa lo stesso lavoro da una vita?
-Il video completo è sul canale, link in bio.
-#kerala #india #vocivere #coir #ritratti
-YT: Premilla apre gusci di cocco a mano da quarant'anni, in una società del coir del Kerala. Chi conosci che fa lo stesso lavoro da una vita?
+Quanto guadagna in un giorno, e perché dopo di lei potrebbe non esserci nessuno: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #cocco
+Descrizione Short YT: Premilla ha sessant'anni. Quando questa società del coir ha aperto, in Kerala, lei era già qui. Si lavora sedute per terra, sotto il sole, fino alle due. Chi conosci che fa lo stesso lavoro da una vita?
+Commento fissato YT: Quanto guadagna in un giorno, e perché dopo di lei potrebbe non esserci nessuno: è nel video sul canale.
 
 ### Reel 4, 1975 (VociVere_coir_1975_1080x1920.mp4)
+Titolo Short / prima riga IG:
 Lavoravano il cocco dal 1975. Oggi nessuna 🇮🇳
-Ci indicano l'unico posto, qui intorno, dove si fa ancora. Il salario, ci dicono, è di 400 rupie al giorno, circa 4 euro. Per
-questo i giovani non vengono più.
+Didascalia IG:
+Lavoravano il cocco dal 1975. Oggi nessuna 🇮🇳
+Ci indicano l'unico posto, qui intorno, dove si fa ancora. Il salario, ci dicono, è di 400 rupie al giorno, circa 4 euro.
 Nel tuo paese c'è un mestiere che sta sparendo?
-Video fuori sul canale.
-#kerala #india #vocivere #coir #lavoro
-YT: In Kerala queste donne hanno lavorato la fibra di cocco dal 1975. Oggi nessuna lo fa più. Nel tuo paese c'è un mestiere che sta sparendo?
+L'unico posto dove si fa ancora, e le donne che ci lavorano da quarant'anni: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #cocco
+Descrizione Short YT: Ci indicano l'unico posto, qui intorno, dove si fa ancora. Il salario, ci dicono, è di 400 rupie al giorno, circa 4 euro. Nel tuo paese c'è un mestiere che sta sparendo?
+Commento fissato YT: L'unico posto dove si fa ancora, e le donne che ci lavorano da quarant'anni: è nel video sul canale.
 
 ## CAROSELLI E STORIE
 Testi in `copioni/coir_testi.md` (sezioni CAROSELLO 1, CAROSELLO 2, STORIE); immagini su Drive montati/coir/carosello/,
