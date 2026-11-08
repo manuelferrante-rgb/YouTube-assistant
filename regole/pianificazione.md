@@ -50,3 +50,4 @@
 - Limiti aggiornati da Manuel il 5/11 (scritti anche in CLAUDE.md, sezione Limiti): non ricordargli il consenso, se registra lo ha; niente tono da
   salvatore; poco sfruttamento della sofferenza per il clickbait, ma non troppo; salari e dati dalle parole degli intervistati, e le linee generali
   da fonti online verificate, con la fonte. Sostituisce nelle liste riprese la riga \"solo con consenso\" e \"salari solo parole loro\".
+- Reel piu' forte su YouTube (Insights, 8/11, confermato da Manuel): il reel piu' forte di ogni lungo esce su YouTube Shorts il prima possibile, il giorno dopo il lungo (lunedi'), perche' su YouTube cresce per giorni mentre su Instagram prende una sola spinta. Nello schema: lunedi' reel 1 (il piu' forte), martedi' stories set 1. Quale e' il piu' forte lo decide Insights o Manuel.

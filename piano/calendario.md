@@ -161,8 +161,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | ven 13/11 | EXTRA autostop | slittato dal 6/11; entrambi i profili |
 | sab 14/11 | arthunkal: teaser |  |
 | dom 15/11 | arthunkal: LUNGO |  |
-| lun 16/11 | arthunkal: stories set 1 |  |
-| mar 17/11 | arthunkal: reel 1 |  |
+| lun 16/11 | arthunkal: reel 1 (il PIU' FORTE, su YouTube Shorts il prima possibile) | regola Insights 8/11 |
+| mar 17/11 | arthunkal: stories set 1 | scambiato col reel 1 (Insights 8/11) |
 | mer 18/11 | EXTRA meenakshi | spostato dall'11/11 |
 | gio 19/11 | arthunkal: reel 2 |  |
 | ven 20/11 | arthunkal: stories set 2 |  |
@@ -174,8 +174,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | gio 26/11 | EXTRA kallu |  |
 | sab 28/11 | te: teaser |  |
 | dom 29/11 | te: LUNGO | solo se approvato |
-| lun 30/11 | te: stories set 1 |  |
-| mar 1/12 | te: reel 1 |  |
+| lun 30/11 | te: reel 1 (il PIU' FORTE, su YouTube Shorts il prima possibile) | regola Insights 8/11 |
+| mar 1/12 | te: stories set 1 | scambiato col reel 1 (Insights 8/11) |
 | mer 2/12 | EXTRA panni (pov giungla) | entrambi i profili |
 | gio 3/12 | te: reel 2 |  |
 | ven 4/12 | te: stories set 2 |  |
@@ -190,8 +190,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | ven 18/12 | EXTRA da scegliere dal girato (Kochi, Varkala o Diwali) | con Manuel |
 | sab 19/12 | lungo A (coir): teaser |  |
 | dom 20/12 | LUNGO A (coir) |  |
-| lun 21/12 | lungo A: stories set 1 |  |
-| mar 22/12 | lungo A: reel 1 |  |
+| lun 21/12 | lungo A: reel 1 (il PIU' FORTE, su YouTube Shorts il prima possibile) | regola Insights 8/11 |
+| mar 22/12 | lungo A: stories set 1 | scambiato col reel 1 (Insights 8/11) |
 | mer 23/12 | lungo A: stories set 3 |  |
 | gio 24/12 | lungo A: reel 2 |  |
 | ven 25/12 | lungo A: stories set 2 | Natale, sposta se serve |
@@ -204,8 +204,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | mar 6/1 | EXTRA dalla scorta |  |
 | sab 9/1 | lungo B: teaser |  |
 | dom 10/1 | LUNGO B (migranti o erosione) |  |
-| lun 11/1 | lungo B: stories set 1 |  |
-| mar 12/1 | lungo B: reel 1 |  |
+| lun 11/1 | lungo B: reel 1 (il PIU' FORTE, su YouTube Shorts il prima possibile) | regola Insights 8/11 |
+| mar 12/1 | lungo B: stories set 1 | scambiato col reel 1 (Insights 8/11) |
 | mer 13/1 | lungo B: stories set 3 |  |
 | gio 14/1 | lungo B: reel 2 |  |
 | ven 15/1 | lungo B: stories set 2 |  |
@@ -216,8 +216,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | ven 22/1 | EXTRA dalla scorta |  |
 | sab 23/1 | lungo C: teaser | solo se girato e montato |
 | dom 24/1 | LUNGO C (l'altro tra migranti ed erosione) | solo se girato e montato |
-| lun 25/1 | lungo C: stories set 1 |  |
-| mar 26/1 | lungo C: reel 1 |  |
+| lun 25/1 | lungo C: reel 1 (il PIU' FORTE, su YouTube Shorts il prima possibile) | regola Insights 8/11 |
+| mar 26/1 | lungo C: stories set 1 | scambiato col reel 1 (Insights 8/11) |
 | mer 27/1 | lungo C: stories set 3 |  |
 | gio 28/1 | lungo C: reel 2 |  |
 | ven 29/1 | lungo C: stories set 2 |  |
@@ -263,3 +263,5 @@ Nota da Pianificazione, 7/11 (Manuel): stories mercato set 1 (2/11), set 2 (6/11
 Nota da Pianificazione, 7/11 sera (Manuel): CALENDARIO RIFATTO (v3, la tabella v2 sopra e' sostituita). Stories mercato set 1 (2/11), set 2 (6/11) e autostop (6/11) non erano usciti. Regola nuova: i reel EXTRA (esterni ai lunghi, piu' clickbait) stanno distanziati tra loro (almeno 3 giorni, mai uno vicino all'altro); gli altri giorni si coprono con le uscite dei pacchetti (teaser, lungo, reel, stories, caroselli); i giorni vuoti vanno bene. Usciti finora: presentazione, mercato teaser, lungo e 2 reel.
 
 Nota da Pianificazione, 7/11 (Manuel): pubblicato il carosello "fatto" del mercato. Usciti finora: presentazione, mercato teaser, lungo, 2 reel e carosello.
+
+Nota da Pianificazione, 8/11 (Manuel, da Insights): il reel piu' forte di ogni lungo va su YouTube Shorts il prima possibile, perche' li' cresce per giorni; su IG prende una spinta sola. Spostato il reel 1 al lunedi' dopo il lungo (giorno dopo), le stories set 1 al martedi'. Quale reel e' il piu' forte lo indica Insights (o Manuel) dal girato e dai dati; il reel 1 e' lo slot riservato. Mercato: il reel B e' gia' su YouTube.
