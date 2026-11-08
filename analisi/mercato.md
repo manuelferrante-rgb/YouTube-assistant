@@ -237,3 +237,6 @@ Reel B: uomini 73,8%, donne 26,2%; età distribuite, circa metà sopra i 45 anni
 I dati di YouTube dicono che gli italiani il formato lo guardano. Proposta: restare tutto in italiano e dare a
 Instagram segnali italiani (scritta a schermo, didascalia e hashtag in italiano, primo testo che parla all'Italia).
 La prova con l'inglese ha senso solo se Manuel vuole anche il pubblico indiano. Decide Manuel.
+- Schermata finale (Manuel, 8/11 sera): sul mercato non c'era (primo lungo, 0% di clic). Manuel la aggiunge ora
+  (Iscriviti + altro video) e la mette anche su arthunkal. Da guardare a 7 giorni di arthunkal: clic sulla schermata
+  finale di entrambi i lunghi.

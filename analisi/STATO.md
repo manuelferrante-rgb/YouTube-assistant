@@ -31,6 +31,7 @@ Proposta sulla decisione aperta: restare in italiano e dare a IG segnali italian
 - Arthunkal (lungo dom 15/11): 48 ore il 17/11, 7 giorni il 22/11. Misurare: visualizzazioni del lungo da "Short
   correlati", fidelizzazione nel primo minuto (conferma della regola "promessa entro il primo minuto"), reel su YT vs IG.
 - Dati IG del reel 3 mercato (9/11) e stories set 1 quando arrivano.
+- Schermate finali aggiunte da Manuel l'8/11 su mercato e arthunkal: misurare i clic a 7 giorni di arthunkal (22/11).
 
 ## Cosa è stato fatto (27/10-4/11, chat Insights session_01HtfbgyzAxUCZDsgATkknE1)
 - MERCATO, dati a 48 ore (YT lungo, YT Shorts, IG teaser e reel 1): `mercato.md`. Punti chiave: durata media
