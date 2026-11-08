@@ -12,7 +12,7 @@ Da leggere all'avvio di ogni nuova chat Insights, dopo CLAUDE.md e analisi/READM
   Reel B (volto coperto dalla cesta) 42,7% di skip contro 25,6% del pescatore: il volto deve essere leggibile.
   Carosello "fatto" (7/11, con musica IG): 24 visualizzazioni, solo follower. Ogni reel prende una spinta in 1-2
   giorni e si ferma.
-- DECISIONE APERTA per Manuel: prova di sottotitoli in inglese sui reel (pubblico indiano) oppure tutto in italiano
+- DECISIONE CHIUSA 8/11 sera: per ora tutto in italiano anche su IG (era: prova di sottotitoli in inglese sui reel (pubblico indiano) oppure tutto in italiano
   per farsi mostrare agli italiani. Non ha ancora risposto.
 - Miniature v3 (`copioni/miniature_v3/BOZZE.md`): arthunkal titolo 2 + A2 (test A2, A3, A1); tè titolo 2 + T1 (test
   T1, T5, T3); coir titolo 1 + C1 (test C1, C2, C3; in C3 la scritta copre il volto). Regola: scritta mai sul viso.
@@ -26,7 +26,8 @@ confermato (stesso primo fotogramma, 60,8% su YT). Shorts non portano al lungo (
 Proposta sulla decisione aperta: restare in italiano e dare a IG segnali italiani.
 
 ## PROSSIMO PASSO
-- Chiedere a Manuel: il reel B su YT aveva il video correlato collegato al lungo? Risposta sull'italiano/inglese su IG.
+- Risposte di Manuel 8/11 sera: il reel B aveva il video correlato collegato (gli Shorts non portano al lungo nemmeno
+  così); lingua: per ora tutto in italiano anche su IG.
 - Arthunkal (lungo dom 15/11): 48 ore il 17/11, 7 giorni il 22/11. Misurare: visualizzazioni del lungo da "Short
   correlati", fidelizzazione nel primo minuto (conferma della regola "promessa entro il primo minuto"), reel su YT vs IG.
 - Dati IG del reel 3 mercato (9/11) e stories set 1 quando arrivano.

@@ -226,7 +226,14 @@ Reel B: uomini 73,8%, donne 26,2%; età distribuite, circa metà sopra i 45 anni
 - Pianificazione: YouTube Shorts è il canale che porta italiani nuovi. Il reel più forte di ogni lungo va su YouTube
   il prima possibile (anche il giorno dopo il lungo), perché lì cresce per giorni; su IG prende una spinta sola.
 
-### Decisione aperta (sottotitoli inglesi su IG): proposta aggiornata
+### Risposte di Manuel (8/11 sera)
+- Il reel B su YouTube AVEVA il video correlato collegato al lungo. Quindi gli Shorts non portano al lungo nemmeno
+  collegati: 5.248 visualizzazioni, il lungo quasi fermo. Il collegamento resta (non costa), ma non basta: da provare
+  su arthunkal un motivo esplicito per andare al lungo (es. didascalia e commento fissato: "come finisce l'asta: video
+  sul canale") e misurare "Short correlati" a 48 ore e 7 giorni.
+- Lingua: PER ORA TUTTO IN ITALIANO anche su Instagram (niente prova con sottotitoli inglesi).
+
+### Decisione aperta (sottotitoli inglesi su IG): proposta aggiornata (CHIUSA, vedi sopra)
 I dati di YouTube dicono che gli italiani il formato lo guardano. Proposta: restare tutto in italiano e dare a
 Instagram segnali italiani (scritta a schermo, didascalia e hashtag in italiano, primo testo che parla all'Italia).
 La prova con l'inglese ha senso solo se Manuel vuole anche il pubblico indiano. Decide Manuel.

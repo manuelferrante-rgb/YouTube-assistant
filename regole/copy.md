@@ -126,3 +126,14 @@ Miniature e titoli dei lunghi (Manuel, 8/11, riferimenti: Progetto Happiness e s
 - Il volto è sempre libero: la scritta mai sopra il viso (Insights 8/11, reel B col volto coperto: 42,7% di skip contro 25,6%).
 - Titolo: gancio in MAIUSCOLO + spiegazione + bandiera, sempre anche in inglese. Un titolo per video; 3 miniature in
   "Test e confronto" di YouTube Studio (la prima è la principale). Il testo della miniatura non ripete il titolo.
+
+Nota da Insights, 8/11 sera (mercato a 7 giorni, YouTube + IG; `analisi/mercato.md`):
+- Lingua (Manuel, 8/11): per ora TUTTO IN ITALIANO anche su Instagram (scritte, didascalie, hashtag): niente sottotitoli
+  inglesi sui reel. Su IG i reel vanno al pubblico indiano; i segnali in italiano aiutano a farli mostrare all'Italia.
+- Titolo degli Shorts confermato dai nostri dati: un fatto concreto con un numero o un oggetto. "Un pesce da 50 chili,
+  all'asta sulla spiaggia" 60,8% resta e 5.248 visualizzazioni; "Video completo domenica" 16,6%.
+- Gli Shorts non portano al lungo nemmeno con il video correlato collegato (reel B: 5.248 visualizzazioni, lungo fermo
+  a 235). Per arthunkal proposta: dare un motivo esplicito per il lungo nella didascalia o nel commento fissato
+  (cosa si scopre solo nel lungo), senza esca.
+- Correzione: la regola "scritta mai sul viso" resta, ma il reel B non la dimostra: su YouTube lo stesso primo
+  fotogramma (volto coperto) tiene il 60,8%. Lo skip su IG dipendeva dal pubblico indiano.
