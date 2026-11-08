@@ -1,4 +1,4 @@
-# Insights: stato e passaggio di consegne (aggiornato 8/11/2026)
+# Insights: stato e passaggio di consegne (aggiornato 8/11/2026 sera)
 
 Da leggere all'avvio di ogni nuova chat Insights, dopo CLAUDE.md e analisi/README.md.
 
@@ -18,13 +18,18 @@ Da leggere all'avvio di ogni nuova chat Insights, dopo CLAUDE.md e analisi/READM
   T1, T5, T3); coir titolo 1 + C1 (test C1, C2, C3; in C3 la scritta copre il volto). Regola: scritta mai sul viso.
 - Carosello mercato: tolto "Scrivilo nei commenti", link vero al lungo nel post YouTube, musica IG strumentale.
 
-## PROSSIMO PASSO (chat Insights nuova, dall'8/11)
-Manuel manda una cartella Drive con TUTTI gli insights (YouTube del mercato compreso). Da fare: lungo YT (fidelizzazione
-e fotogramma del picco ~3:15-3:45, CTR, sorgenti, "Short correlati" ora che il teaser è collegato, pubblico), i 3
-Shorts YT, stories set 1; completare la sezione 7 giorni di `mercato.md`; passare alle regole SOLO le lezioni
-confermate da due piattaforme o due video (candidate: promessa della miniatura entro il primo minuto; primo
-fotogramma con volto leggibile; teaser mai trailer, già in `regole/formato_reel.md`). Le registrazioni dello schermo
-si leggono estraendo i fotogrammi con ffmpeg (2 al secondo, i paesi stanno nella scheda Pubblico > Paese).
+## Fatto l'8/11 (chat Insights nuova): MERCATO a 7 giorni COMPLETO (YouTube + Instagram)
+Sezione "Analisi a 7 giorni, YOUTUBE" in `mercato.md`. Punti chiave: reel B su YouTube 5.248 visualizzazioni, 60,8%
+resta, Italia 97% (su IG India 90%): il pubblico italiano dei verticali è su YouTube Shorts. "Volto leggibile" NON
+confermato (stesso primo fotogramma, 60,8% su YT). Shorts non portano al lungo (fermo a 235). Picco del lungo a 3:26
+= l'asta; calo a 4:10 su B-roll largo. Consigliato dopo video di mercati in Sri Lanka (spettatori 4-5 min).
+Proposta sulla decisione aperta: restare in italiano e dare a IG segnali italiani.
+
+## PROSSIMO PASSO
+- Chiedere a Manuel: il reel B su YT aveva il video correlato collegato al lungo? Risposta sull'italiano/inglese su IG.
+- Arthunkal (lungo dom 15/11): 48 ore il 17/11, 7 giorni il 22/11. Misurare: visualizzazioni del lungo da "Short
+  correlati", fidelizzazione nel primo minuto (conferma della regola "promessa entro il primo minuto"), reel su YT vs IG.
+- Dati IG del reel 3 mercato (9/11) e stories set 1 quando arrivano.
 
 ## Cosa è stato fatto (27/10-4/11, chat Insights session_01HtfbgyzAxUCZDsgATkknE1)
 - MERCATO, dati a 48 ore (YT lungo, YT Shorts, IG teaser e reel 1): `mercato.md`. Punti chiave: durata media
