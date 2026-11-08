@@ -65,3 +65,7 @@ Nota 6/11 (Manuel): "Italia" in VO11 resta: sul posto gli hanno detto che i tapp
   C le mani con il guscio e il volto con "80 CENTESIMI", E la donna che fila con "4 € AL GIORNO".
 - Se una miniatura promette la paga, l'intro deve accennarla. VO0 proposto: "Su quei tappeti c'è scritto Made in
   India. Non c'è scritto chi li ha fatti, né quanto le hanno pagate." Il numero resta dov'è.
+
+Nota 8/11 sera: Montaggio ha controllato il lungo v2 (promessa del titolo nel primo minuto: c'è; tre B-roll larghi
+vuoti a ~1:13, ~1:25, ~3:45). Insights consiglia di correggerli subito (persone in azione, Premilla in primo piano dopo
+il salario, 6:45 va bene). Miniature e titolo già decisi con Copy: a Montaggio basta la coerenza con l'inizio.
