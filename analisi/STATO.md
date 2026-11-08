@@ -107,3 +107,15 @@ Proposta sulla decisione aperta: restare in italiano e dare a IG segnali italian
   A 7 giorni: confermare o smentire le lezioni di `mercato.md` (primo minuto, miniatura, primo fotogramma).
 - Da seguire: risultato del "Test e confronto" della nuova miniatura del mercato; dati dei 4 reel comorin quando
   escono (skip rate e invii per primi).
+
+## Risposta a Montaggio (8/11 sera, sul materiale rifatto dopo la nota dell'8/11)
+Insights ha giudicato dalla descrizione di Montaggio, senza riguardare i file.
+- COIR lungo v3 (6:45): APPROVATO. Promessa del titolo a 0:01-0:08, campi larghi vuoti tolti.
+- TÈ lungo v9 (6:26): APPROVATO. Domanda della miniatura T1 a 0:15, risposta a 3:28, B-roll vuoti sostituiti da persone.
+- ARTHUNKAL lungo: va bene così. Il titolo 2 promette la preghiera di notte, che si vede a 0:07-0:09: è coerente. L'anziano
+  della miniatura A2 nel primo minuto non serve (in Test e confronto ci sono anche A3 e A1). Meglio non rifare l'intro prima del 15/11.
+- Verticali arthunkal: v1, v3, v4 vanno bene. v2 si apre su Manuel davanti alla basilica: va contro la regola del primo fotogramma
+  (persona del posto o gesto). Se c'è, meglio aprire su un pellegrino o sulla folla davanti alla basilica, con Manuel subito dopo.
+  Decide Manuel. Verticali coir: tutti i primi fotogrammi vanno bene.
+- COIR ultimi 15 s: va bene la proposta di Montaggio, se Manuel è d'accordo (i volti li aveva chiesti lui il 7/11): volti all'inizio
+  della frase di chiusura, poi la fabbrica di spalle e la laguna sotto la schermata finale, che altrimenti copre i volti.
