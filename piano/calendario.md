@@ -161,8 +161,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | ven 13/11 | EXTRA autostop | slittato dal 6/11; entrambi i profili |
 | sab 14/11 | arthunkal: teaser |  |
 | dom 15/11 | arthunkal: LUNGO |  |
-| lun 16/11 | arthunkal: reel 1 (il PIU' FORTE, su YouTube Shorts il prima possibile) | regola Insights 8/11 |
-| mar 17/11 | arthunkal: stories set 1 | scambiato col reel 1 (Insights 8/11) |
+| lun 16/11 | arthunkal: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 17/11 | arthunkal: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
 | mer 18/11 | EXTRA meenakshi | spostato dall'11/11 |
 | gio 19/11 | arthunkal: reel 2 |  |
 | ven 20/11 | arthunkal: stories set 2 |  |
@@ -174,8 +174,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | gio 26/11 | EXTRA kallu |  |
 | sab 28/11 | te: teaser |  |
 | dom 29/11 | te: LUNGO | solo se approvato |
-| lun 30/11 | te: reel 1 (il PIU' FORTE, su YouTube Shorts il prima possibile) | regola Insights 8/11 |
-| mar 1/12 | te: stories set 1 | scambiato col reel 1 (Insights 8/11) |
+| lun 30/11 | te: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 1/12 | te: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
 | mer 2/12 | EXTRA panni (pov giungla) | entrambi i profili |
 | gio 3/12 | te: reel 2 |  |
 | ven 4/12 | te: stories set 2 |  |
@@ -190,8 +190,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | ven 18/12 | EXTRA da scegliere dal girato (Kochi, Varkala o Diwali) | con Manuel |
 | sab 19/12 | lungo A (coir): teaser |  |
 | dom 20/12 | LUNGO A (coir) |  |
-| lun 21/12 | lungo A: reel 1 (il PIU' FORTE, su YouTube Shorts il prima possibile) | regola Insights 8/11 |
-| mar 22/12 | lungo A: stories set 1 | scambiato col reel 1 (Insights 8/11) |
+| lun 21/12 | lungo A: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 22/12 | lungo A: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
 | mer 23/12 | lungo A: stories set 3 |  |
 | gio 24/12 | lungo A: reel 2 |  |
 | ven 25/12 | lungo A: stories set 2 | Natale, sposta se serve |
@@ -204,8 +204,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | mar 6/1 | EXTRA dalla scorta |  |
 | sab 9/1 | lungo B: teaser |  |
 | dom 10/1 | LUNGO B (migranti o erosione) |  |
-| lun 11/1 | lungo B: reel 1 (il PIU' FORTE, su YouTube Shorts il prima possibile) | regola Insights 8/11 |
-| mar 12/1 | lungo B: stories set 1 | scambiato col reel 1 (Insights 8/11) |
+| lun 11/1 | lungo B: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 12/1 | lungo B: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
 | mer 13/1 | lungo B: stories set 3 |  |
 | gio 14/1 | lungo B: reel 2 |  |
 | ven 15/1 | lungo B: stories set 2 |  |
@@ -216,8 +216,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | ven 22/1 | EXTRA dalla scorta |  |
 | sab 23/1 | lungo C: teaser | solo se girato e montato |
 | dom 24/1 | LUNGO C (l'altro tra migranti ed erosione) | solo se girato e montato |
-| lun 25/1 | lungo C: reel 1 (il PIU' FORTE, su YouTube Shorts il prima possibile) | regola Insights 8/11 |
-| mar 26/1 | lungo C: stories set 1 | scambiato col reel 1 (Insights 8/11) |
+| lun 25/1 | lungo C: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 26/1 | lungo C: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
 | mer 27/1 | lungo C: stories set 3 |  |
 | gio 28/1 | lungo C: reel 2 |  |
 | ven 29/1 | lungo C: stories set 2 |  |
@@ -270,3 +270,5 @@ Nota da Copy, 8/11 (Manuel): coir APPROVATO (lungo v2 6:51). Pacchetto Copy pron
 miniature v3 (Test e confronto: C1 Premilla, C2, C3), sottotitoli it/en, TESTI (titolo, descrizione e capitoli it/en, didascalie
 dei 5 verticali), carosello "fatto" (8 slide, 3 video), carosello "I volti" (7), storie 3x6. Testi in `copioni/coir_pacchetto.md`.
 Titoli e miniature v3 approvati anche per arthunkal e te (pacchetti e TESTI su Drive aggiornati, vecchie miniature in miniatura/vecchie/).
+
+Nota da Pianificazione, 8/11 (Manuel): il reel più forte non è fisso, dipende: lo decidono caso per caso Manuel e Insights. Il lunedì dopo il lungo è lo slot per quel reel, non necessariamente il reel 1. Il motivo esplicito per andare dal Short al lungo (didascalia, commento fissato) è ancora da capire, non deciso: da provare su arthunkal e misurare.
