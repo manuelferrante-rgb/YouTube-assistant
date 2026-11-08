@@ -142,12 +142,17 @@ doppio resta. Due piattaforme, stessa differenza: lezione passata a `regole/form
 | Non follower | 93,3% | 99,1% | 98,1% | 0% (solo follower) |
 | Uomini | 87,9% | 95,4% | 93,2% | - |
 Paesi del reel 1: India 66,8%, Emirati 14,7%, Arabia Saudita 4,8%, Qatar 2,1%, Kuwait 2%. L'Italia non è nei primi 5.
+Paesi del teaser: India 65,9%, ITALIA 21,7%, Emirati 4,3%, Regno Unito 1,4%, Bahrein 1,2%.
+Paesi del reel B: India 90,3%, Italia 2,9%, Emirati 2,1%, Arabia Saudita 1%, Singapore 0,7%.
+Carosello: musica messa (libreria IG, come da nota del 7/11): nonostante la musica, 0 non follower in 18 ore.
 
 ### Cosa dice
 1. NUOVO E IMPORTANTE: Instagram fa vedere i reel del Kerala a chi è del Kerala. Il reel 1 l'hanno visto per circa il
    90% persone in India e nel Golfo (i paesi dove lavorano tanti keralesi), quasi tutti uomini. Il voiceover è in
    italiano: non lo capiscono, quindi 8 s di media e 0 follower. Su YouTube invece il lungo va all'81% in Italia.
-   Il pubblico italiano su IG non lo stiamo raggiungendo; quello che ci trova è un altro.
+   Il pubblico italiano su IG non lo stiamo raggiungendo; quello che ci trova è un altro. L'unico con un pezzo
+   d'Italia (21,7%) è il teaser, l'unico con un testo che parlava a chi ci segue già: l'Italia arriva dai follower
+   e da chi li conosce, non dalla scoperta.
 2. Tutti i reel prendono una sola spinta nei primi 1-2 giorni e poi si fermano (reel 1: 2.245 a 48 ore, 2.252 a 7 giorni).
 3. Primo fotogramma: il reel B apre su una persona ma il volto è coperto dalla cesta, tra la folla: 42,7% di skip
    contro il 25,6% del pescatore seduto, volto leggibile, fermo. La regola va precisata: persona con il VOLTO
