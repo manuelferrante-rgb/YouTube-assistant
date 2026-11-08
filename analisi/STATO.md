@@ -33,6 +33,24 @@ Proposta sulla decisione aperta: restare in italiano e dare a IG segnali italian
 - Dati IG del reel 3 mercato (9/11) e stories set 1 quando arrivano.
 - Schermate finali aggiunte da Manuel l'8/11 su mercato e arthunkal: misurare i clic a 7 giorni di arthunkal (22/11).
 
+## Fatto l'8/11 sera, dopo l'analisi (chat Insights session_01Htfbh2up7MM5nEfeMgD82f)
+- Risposte di Manuel: reel B con video correlato collegato (gli Shorts non portano al lungo nemmeno così); lingua per
+  ora tutta in italiano anche su IG (nota in `regole/copy.md`).
+- Regola di Manuel scritta in `regole/montaggio_documentario.md` (nota 8/11): inizio del lungo coerente con titolo e
+  miniatura (decisi da Copy e Manuel), niente B-roll larghi senza persone a metà video, non riempire se si accorcia.
+  Messaggio a Montaggio dato a Manuel: controllare arthunkal, te e coir (coir: B-roll a ~1:13, ~1:25, ~3:45; ultimi
+  10-15 s puliti per la schermata finale; primo fotogramma dei verticali = persona o gesto). Manuel sta programmando
+  arthunkal (15/11) e te (29/11): se Montaggio cambia i file, Manuel li ricarica.
+- Messaggio a Copy dato a Manuel: titolo degli Shorts = fatto con un numero; testo sotto i 3 verticali dopo il lungo
+  con una cosa precisa che si scopre solo nel lungo (YT: anche commento fissato; IG: "link in bio"); tutto in italiano;
+  parole chiave India, Kerala, vita locale, mercato, viaggio. I verticali restano curiosità complete con la sigla.
+- Schermata finale: sul mercato non c'era (primo video). Manuel la mette su mercato ("Caricamento più recente" +
+  Iscriviti; controllare che non mostri uno Short) e su arthunkal (video specifico: il mercato + Iscriviti).
+- Pagina del canale (video in evidenza per i nuovi visitatori, playlist Kerala, descrizione): Manuel la sistema dopo il 15/11.
+- Stories: con ~10 follower restano tutte DOPO il lungo (decisione invariata); valore attuale = "In evidenza" per chi
+  arriva sul profilo dai reel (una per video). Rivalutare un set PRIMA del lungo (sticker conto alla rovescia) quando
+  una storia supera le 100 visualizzazioni. Priorità: YouTube Shorts.
+
 ## Cosa è stato fatto (27/10-4/11, chat Insights session_01HtfbgyzAxUCZDsgATkknE1)
 - MERCATO, dati a 48 ore (YT lungo, YT Shorts, IG teaser e reel 1): `mercato.md`. Punti chiave: durata media
   1:43 (28%), 46 spettatori unici, 87% non iscritti, italiani 81%; buco tra 0:30 e 1:30 ("Il giorno prima"),
