@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build as B                                         # clip C(), grafiche storia() e mappa() del lungo
 from doc_render import run
 from reel_kit import Reel
-from voice_clean import cleaned
+from voice_clean import cleaned, gated, light
 import reel_close as RC
 
 PREVIEW = "--preview" in sys.argv
@@ -91,7 +91,8 @@ def gaps(src, a, b, min_gap=0.25):
 def say(r, src, line, visuals):
     """Frase sopra immagini, senza le pause interne (narr allarga i tagli di +0.12/-0.06: si compensa)."""
     a, b, ws = line
-    cuts = [(ca - 0.12, cb + 0.06) for ca, cb in gaps(src, a, b)]
+    # solo pause vere (>= 0.3 s): sotto, il taglio cadeva sulle consonanti ("persone" diventava "pedone", Manuel 8/11)
+    cuts = [(ca - 0.12, cb + 0.06) for ca, cb in gaps(src, a, b, min_gap=0.3)]
     return r.narr(src, a, b, visuals, words=ws, pad=PAD, cuts=cuts)
 
 
@@ -138,8 +139,12 @@ def close(r, place, person, tail_title=None, variant="A"):
     return t_b
 
 
+VOICE = {BAS: lambda s: gated(s, VOCE, depth_db=-12.0, double=True),       # 8/11: davanti alla basilica la folla tra le parole si sentiva troppo
+         PEL: lambda s: light(s, VOCE)}      # 8/11: RNNoise cancellava la voce della pellegrina (si sentiva solo la musica)
+
+
 def finish(r, name, voices):
-    r.tl.audio_map = {v: cleaned(v, VOCE) for v in voices}
+    r.tl.audio_map = {v: VOICE.get(v, lambda s: cleaned(s, VOCE))(v) for v in voices}
     r.tl.nat_af = "highpass=f=90"
     W, H = r.W, r.H
     out = f"{OUT}/VociVere_arthunkal_{name}_{W}x{H}.mp4"

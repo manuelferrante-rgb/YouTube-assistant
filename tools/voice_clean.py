@@ -88,3 +88,42 @@ def cleaned(src, workdir):
 
 if __name__ == "__main__":
     clean_rnn(sys.argv[1], sys.argv[2])
+
+
+def _gate(y, depth_db=-25.0, rel=0.2, pre=0.06, thr=0.3):
+    """Gate dolce: fuori dalle parole (con pre s prima e rel s dopo ogni tratto di voce) il suono scende di depth_db."""
+    hv = 480
+    m = len(y) // hv
+    dv = 20 * np.log10(np.sqrt((y[:m * hv].reshape(m, hv) ** 2).mean(1)) + 1e-9)
+    dv = np.convolve(dv, np.ones(5) / 5, mode="same")
+    lo, hi = np.percentile(dv, 10), np.percentile(dv, 95)
+    on = np.convolve((dv > lo + thr * (hi - lo)).astype(float), np.ones(int((pre + rel) * 100) + 1),
+                     mode="full")[int(pre * 100):int(pre * 100) + m] > 0
+    g = np.convolve(np.where(on, 1.0, 10 ** (depth_db / 20)), np.ones(3) / 3, mode="same")
+    return y[:m * hv] * np.interp(np.arange(m * hv), (np.arange(m) + 0.5) * hv, g)
+
+
+def gated(src, workdir, depth_db=-25.0, double=False):
+    """RNNoise + gate dolce nelle pause (8/11, arthunkal: folla e altoparlanti davanti alla basilica). double: un secondo
+    passaggio di RNNoise sulla voce già pulita (fondo nelle micro-pause da -34 a -40 dB, voce invariata). Stessi tempi."""
+    out = f"{workdir}/voce_gate{'2' if double else ''}_{os.path.splitext(os.path.basename(src))[0]}.wav"
+    if not os.path.exists(out):
+        af = f"arnndn=m={RNN},atrim=start_sample=480,asetpts=PTS-STARTPTS" if double else "anull"
+        c = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-i", cleaned(src, workdir), "-ac", "1", "-ar", str(SR),
+                                          "-af", af, "-f", "f32le", "-"], capture_output=True, check=True).stdout, np.float32)
+        y = _gate(c.astype(np.float64), depth_db, pre=0.15, thr=0.2)   # attacchi morbidi ("Qui") salvi
+        sf.write(out, np.stack([y, y], 1).astype(np.float32), SR, subtype="PCM_16")
+    return out
+
+
+def light(src, workdir, nr=12):
+    """Pulizia leggera (passa-alto + riduzione spettrale, niente RNNoise) per chi parla piano e lontano dal microfono:
+    RNNoise la scambia per rumore e la cancella (8/11, la pellegrina di arthunkal: da -28 a -50 dB). Ritardo di afftdn
+    tolto, stessi tempi della clip."""
+    out = f"{workdir}/voce_light_{os.path.splitext(os.path.basename(src))[0]}.wav"
+    if not os.path.exists(out):
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-map", "0:a:0", "-ar", str(SR), "-af",
+                        f"aformat=channel_layouts=mono,highpass=f=120,highpass=f=120,afftdn=nf=-30:nr={nr},"
+                        "atrim=start_sample=1200,asetpts=PTS-STARTPTS,pan=stereo|c0=c0|c1=c0", "-c:a", "pcm_s16le", out],
+                       check=True)
+    return out

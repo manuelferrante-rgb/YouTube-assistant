@@ -326,6 +326,7 @@ class Edit:
             return self.tl.render(out, crf=26, preset="veryfast")
         self.tl.drop_shots = True
         self.tl.direct_concat = True                                 # 4K: niente cut.mkv da 11 GB (disco)
+        self.tl.shot_crf = 17                                         # inquadrature intermedie più leggere (disco)
         self.tl.final_opts = ["-maxrate", "38M", "-bufsize", "76M"]
         return self.tl.render(out, crf=20, preset="medium")
 
@@ -462,13 +463,13 @@ def long_video(W, H):
     e.say(C("0536"), [(0.0, 5.3)], cover={0: (C("0537"), 18.5)})     # "Forse abbiamo trovato... una società" sul posto
     e.say(C("0538"), [(0.35, 2.2), (2.45, 3.9), (4.25, 5.55), (5.7, 8.6), (9.65, 12.15)],
           cover={0: (C("0061"), 0.3), 1: (C("0109"), 1.0), 3: (C("0063"), 13.0), 4: (C("0540"), 6.0)})
-    vo(4, [(C("0088"), 0.3, 3.2, dict(zoom=1.14, zy=1.0)), (C("0098"), 0.3, None)])   # zoom lieve: via la mano in alto
+    vo(4, [(C("0527"), 4.0, 3.2), (C("0109"), 3.5, None)])          # 8/11 (Insights): persone al lavoro, non la laguna vuota
 
     # 3. LA LAGUNA E L'UOMO IN BARCA
     t_l = e.t
     e.say(C("0546"), [(9.4, 11.0), (12.6, 16.75), (17.8, 18.8), (20.6, 23.5), (25.1, 25.7), (27.3, 28.0), (28.6, 30.4)],
           cover={1: (C("0544"), 0.0), 3: (C("0540"), 6.0), 4: (C("0008"), 0.5), 6: (C("0009"), 0.5)})
-    quiet([(C("0544"), 4.2, 2.6), (C("0061"), 0.5, 3.0)], "coir_laguna", 0.0, level=0.22)   # la laguna, solo musica
+    quiet([(C("0544"), 4.2, 2.6)], "coir_laguna", 0.0, level=0.22)   # l'uomo nella laguna, solo musica (8/11: via il largo)
     e.say(C("0023"), [(12.95, 17.1), (18.6, 19.95)])                  # "Adesso andiamo a prendere il cocco..."
     t_m = e.t
     vo(5, [(C("0021"), 1.0, 2.2), (C("0107"), 2.0, 2.4), (C("0108"), 9.0, None)], lead=0.3)
@@ -510,7 +511,7 @@ def long_video(W, H):
     e.say(C("0006"), [(0.0, 4.9), (6.2, 9.6), (10.2, 13.3), (14.4, 19.0), (19.4, 21.95), (22.4, 24.7), (25.1, 28.5),
                       (29.1, 30.2), (30.8, 35.2)],
           cover={2: (C("0111"), 1.0), 3: (C("0110"), 0.5), 5: (C("0106"), 3.0), 6: (C("0063"), 0.8)})
-    quiet([(C("0549"), 0.3, 4.6), (C("0063"), 13.0, 3.4)], "coir_strada", 12.0)     # dopo il salario: 8 s
+    quiet([(C("0549"), 0.3, 5.0)], "coir_strada", 12.0)              # dopo il salario: Premilla in primo piano (8/11)
 
     # 5. LE MACCHINE E LA FABBRICA
     t_f = e.t

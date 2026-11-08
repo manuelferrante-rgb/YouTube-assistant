@@ -286,7 +286,7 @@ class Timeline:
                     else:
                         cmd += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v:0", "-map", "1:a:0"]
                     cmd += ["-vf", self._vf(s)]
-                cmd += ["-t", f"{s['d']:.4f}", "-c:v", "libx264", "-crf", "15", "-preset", "veryfast",
+                cmd += ["-t", f"{s['d']:.4f}", "-c:v", "libx264", "-crf", str(getattr(self, "shot_crf", 15)), "-preset", "veryfast",
                         "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", p]
                 run(cmd)
                 open(kp, "w").write(key)
