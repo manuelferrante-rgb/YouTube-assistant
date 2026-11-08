@@ -467,7 +467,7 @@ I volti del coir 🇮🇳
 Le donne e l'uomo che, sulla costa del Kerala, fanno a mano la fibra dei nostri tappeti.
 Chi ti è rimasto in mente?
 Tutta la storia nel video sul canale, link in bio.
-#india #kerala #viaggio #vitalocale #ritratti
+#india #kerala #viaggio #vitalocale #cocco
 Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Tutta la storia nel video: [link vero del lungo, appena pubblicato]
 
 ---------------------------------------------------------------------------------------------------------------

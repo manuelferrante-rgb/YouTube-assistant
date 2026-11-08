@@ -121,7 +121,7 @@ Didascalia IG / titolo Short:
 POV: non hai la lavatrice (e non ti serve) 🇮🇳
 Kerala, India. Rubinetto, secchio, due mani. E un sorriso alla fine.
 Tu sapresti farlo così?
-#kerala #india #vocivere #vitaquotidiana
+#india #kerala #viaggio #vitalocale #bucato
 Descrizione Short YT: Rubinetto, secchio e due mani: il bucato in Kerala. Tu sapresti farlo così?
 (Il luogo preciso, se Manuel lo dice, al posto di "Kerala".)
 
