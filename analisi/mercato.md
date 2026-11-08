@@ -130,3 +130,36 @@ doppio resta. Due piattaforme, stessa differenza: lezione passata a `regole/form
   caricato da noi). Dato da guardare a 48 ore e a 7 giorni: copertura da non follower, salvataggi, invii. È il primo
   carosello: fa da base per gli altri.
 - Post YouTube con il link vero al lungo nel testo (https://youtu.be/LW4zO_0oSgQ), niente musica (il post non la ha).
+
+## Analisi a 7 giorni, INSTAGRAM (registrazioni di Manuel, 8/11 mattina; YouTube ancora da mandare)
+| | Teaser (29/10, 22 s) | Reel 1 pescatore (2/11, 24 s) | Reel B uomo con la cesta (4/11, 19 s) | Carosello "fatto" (7/11, a 18 h) |
+|---|---|---|---|---|
+| Visualizzazioni / spettatori | 349 / 277 | 2.252 / 1.949 | 1.270 / 1.140 | 24 / 7 |
+| Skip rate | 60,8% (più alto del solito) | 25,6% (più basso) | 42,7% (più basso) | - |
+| Tempo medio | 6 s | 8 s | 4 s | - |
+| Like / ricondivisioni / salvataggi / invii | 11 / 2 / 0 / 0 | 56 / 1 / 2 / 0,1% | 10 / 1 / 0 / 0 | 4 / 1 / 0 / 0 |
+| Visite al profilo / follower | 4 / 0 | 13 / 0 | - / 0 | - / 0 |
+| Non follower | 93,3% | 99,1% | 98,1% | 0% (solo follower) |
+| Uomini | 87,9% | 95,4% | 93,2% | - |
+Paesi del reel 1: India 66,8%, Emirati 14,7%, Arabia Saudita 4,8%, Qatar 2,1%, Kuwait 2%. L'Italia non è nei primi 5.
+
+### Cosa dice
+1. NUOVO E IMPORTANTE: Instagram fa vedere i reel del Kerala a chi è del Kerala. Il reel 1 l'hanno visto per circa il
+   90% persone in India e nel Golfo (i paesi dove lavorano tanti keralesi), quasi tutti uomini. Il voiceover è in
+   italiano: non lo capiscono, quindi 8 s di media e 0 follower. Su YouTube invece il lungo va all'81% in Italia.
+   Il pubblico italiano su IG non lo stiamo raggiungendo; quello che ci trova è un altro.
+2. Tutti i reel prendono una sola spinta nei primi 1-2 giorni e poi si fermano (reel 1: 2.245 a 48 ore, 2.252 a 7 giorni).
+3. Primo fotogramma: il reel B apre su una persona ma il volto è coperto dalla cesta, tra la folla: 42,7% di skip
+   contro il 25,6% del pescatore seduto, volto leggibile, fermo. La regola va precisata: persona con il VOLTO
+   leggibile, vicina, non in mezzo alla folla. (Due casi: da confermare.) Il trailer resta il peggiore (60,8%).
+4. Tempo medio 4-8 s su 19-24 s: metà se ne va prima di metà video su tutti e tre. Effetto anche della lingua (punto 1).
+5. Carosello: in 18 ore lo hanno visto solo 7 follower (feed e storie), nessun non follower. Con pochi follower
+   un carosello non esce dalla cerchia; i reel sì. L'ultima slide ("Fuori ora il video su YouTube") ha preso più like
+   delle altre. Da rivedere a 7 giorni prima di decidere quanto lavoro metterci.
+6. Follower da Instagram in 10 giorni: 0, su circa 4.000 visualizzazioni.
+
+### Da decidere con Manuel (proposta)
+Prova sul prossimo reel: voiceover italiano invariato e sottotitoli in INGLESE invece che in italiano (gli italiani
+capiscono già l'audio). Se il tempo medio e i follower salgono, il pubblico keralese e del Golfo diventa una strada
+in più. Se Manuel vuole solo italiani: didascalia, testi a schermo e hashtag tutti in italiano, e titolo a schermo
+che parla all'Italia (es. "In Italia costa..."), per far capire a Instagram a chi mostrarlo.
