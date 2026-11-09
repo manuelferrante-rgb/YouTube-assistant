@@ -91,11 +91,14 @@ def text_bottom(layout, text, top):
     bb = ImageDraw.Draw(Image.new('L', (10, 10))).textbbox((0, 0), text, font=f)
     return top + (bb[3] - bb[1])
 
-def make(name, video, lang, src, t, cx, cy, zoom, layout, text, night=False, flip=False, red=None, top=24):
+def make(name, video, lang, src, t, cx, cy, zoom, layout, text, night=False, flip=False, red=None, top=24, small_size=46, blur=None):
     # Regola (Insights, 8/11, dati del reel B): il volto è sempre libero, la scritta mai sopra il viso.
     # Se il volto tocca la fascia del testo, il ritaglio si alza finché il volto è sotto la scritta.
     src_im = Image.open(frame(src, t)).convert('RGB')
     base = grade(crop(src_im, cx, cy, zoom), night, flip).convert('RGBA')
+    if blur:                     # blur=(x0, y0, x1, y1) in pixel della miniatura: zona sfocata con bordo morbido
+        m = Image.new('L', (W, H), 0); ImageDraw.Draw(m).rectangle(blur, fill=255)
+        base = Image.composite(base.filter(ImageFilter.GaussianBlur(14)), base, m.filter(ImageFilter.GaussianBlur(18)))
     # spazio sopra il volto: la scritta sta tutta lì; se non basta (<90 px) si passa allo schema in basso
     ft = face_top(base) if layout in ('dietro', 'citazione') else None
     room = None if ft is None else int(ft) - top - 8
@@ -120,10 +123,12 @@ def make(name, video, lang, src, t, cx, cy, zoom, layout, text, night=False, fli
         small, big = text
         g = np.zeros((H, W), np.float32); g[:] = np.clip((np.arange(H)[:, None] - H * 0.45) / (H * 0.55), 0, 1) ** 1.3 * 0.75
         out = Image.composite(Image.new('RGBA', (W, H), (0, 0, 0, 255)), base, Image.fromarray((g * 255).astype('uint8')))
-        fb = fit(big, ANTON, 640, max_h=190); fs = ImageFont.truetype(ANTON, 46)
+        fb = fit(big, ANTON, 640, max_h=190); fs = ImageFont.truetype(ANTON, small_size)
         d = ImageDraw.Draw(out); bb = d.textbbox((0, 0), big, font=fb)
         y_big = H - 40 - bb[3]
-        if small: shadow_text(out, (48, y_big + bb[1] - 58), [(small, WHITE)], fs, 6)
+        if small:
+            sb = d.textbbox((0, 0), small, font=fs)
+            shadow_text(out, (48, y_big + bb[1] - 12 - sb[3]), [(small, WHITE)], fs, 6 if small_size < 80 else 10)
         shadow_text(out, (44, y_big), [(big, RED if red is True else WHITE)], fb)
     else:                        # 'citazione': frase tra virgolette in alto, una parola rossa
         f = fit(text, ANTON, W - 120, max_h=min(150, room) if room else 150); d = ImageDraw.Draw(base)

@@ -5,7 +5,7 @@ import sys; sys.path.insert(0, 'copioni/miniature_v3')
 from miniature_v3 import make
 R = 'work/mercato/raw/'
 J = {
- 'M1_signora': dict(src=R + 'DJI_0118.MP4', t=20.0, cx=.72, cy=.4, zoom=1.7, layout='basso',
+ 'M1_signora': dict(src=R + 'DJI_0118.MP4', t=20.0, cx=.72, cy=.4, zoom=1.7, layout='basso', small_size=118, blur=(400, 285, 535, 565),
      it=("ALL'ASTA", 'SULLA SABBIA'), en=('AUCTIONED', 'ON THE SAND')),
  'M2_mattina': dict(src=R + 'DJI_0120.MP4', t=3.0, cx=.8, cy=.42, zoom=1.6, layout='basso', red=True,
      it=('OGNI MATTINA', 'ALLE 8'), en=('EVERY MORNING', 'AT 8 A.M.')),
