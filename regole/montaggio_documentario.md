@@ -280,6 +280,17 @@ FORMATO DEI REEL (Manuel, 29/10, dal reel meenakshi): `regole/formato_reel.md`. 
 sopra dove sono diverse (titoli Poppins ExtraBold oro su bianco, sottotitoli su fascia scura, tutto a 1.1x, nessuna
 pausa tra le frasi, chiusura "Ascolta altre voci, su" + logo su velo leggero).
 
+## Banner nei lunghi: REGOLA STABILE (Manuel 5/11, approvata sul tè e su arthunkal)
+- Due banner piccoli in basso al centro (4.5% dal fondo), con la foto profilo del canale
+  (`assets/brand/avatar_youtube.png`) e piccoli click di mouse quando il cursore clicca:
+  1. "iscriviti" (4.9 s): appena finisce la sigla, quando Manuel inizia a parlare. Cursore su ISCRIVITI (diventa
+     ISCRITTO), campanella (si riempie e oscilla), Hype (si accende).
+  2. "like" (3.9 s): a metà video, in un tratto calmo (voiceover su B-roll). Cursore su Mi piace e Commenta.
+- Mai sopra sottotitoli, etichette o scritte in basso al centro: scegliere il punto guardando i fotogrammi.
+- Codice: `tools/subscribe_banner.py` (grafica e click), `tools/apply_banners.py in out --iscriviti T --like T`
+  (sul lungo finito, ricodifica solo i tratti dei banner). Click a volume 0.45 nel mix.
+- Ultimi 10-15 s di ogni lungo senza volti in primo piano (schermata finale di Studio, Manuel 4/11).
+
 Nota da Insights, 8/11 sera (decisione di Manuel, dai dati del mercato a 7 giorni, `analisi/mercato.md`):
 - La prima parte del lungo è coerente con titolo e miniatura: quello che promettono si vede entro il primo minuto
   (anche solo un anticipo di pochi secondi). Titolo e miniatura li decidono Copy e Manuel; Montaggio controlla solo
@@ -288,3 +299,8 @@ Nota da Insights, 8/11 sera (decisione di Manuel, dai dati del mercato a 7 giorn
 - A metà video niente B-roll larghi senza persone oltre pochi secondi (nel mercato il calo più forte è a 4:10, su un
   campo largo della spiaggia): meglio una persona in azione. Se il video si accorcia di qualche secondo, non si riempie.
 - Si verifica sui dati di arthunkal (22/11): se non regge, Insights lo scrive qui.
+
+Nota Montaggio, 9/11 (Manuel): la frase di chiusura dei lunghi ("Il viaggio di Voci Vere, per dar voce a chi ne ha più
+bisogno, continua. Seguimi per scoprire le prossime storie") si usa SEMPRE dalla registrazione pulita
+`assets/voce/chiusura_vocivere.m4a` (frase da 0.88 a 6.80 s), mai dall'audio di una ripresa sul posto. Esempio di
+sostituzione sul lungo già finito: `projects/coir/v5_chiusura.py`.

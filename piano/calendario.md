@@ -15,7 +15,7 @@ consegnato, programmato, pubblicato.
 | comorin | 4 reel (Kanyakumari: cocco, canna, statua di Thiruvalluvar, tre mari in loop senza voce) | girato (3-4/11, Drive 1z5BA2MoG69ExGT6ivPb9VAcbxV25VVmI); copione VO, PER MONTAGGIO, PER AUDIO e didascalie pronti (Copy, 4/11): `copioni/comorin_testi.md`; Manuel registra i 4 VO; musica e segni pronti (Audio, 4/11): `projects/comorin/audio/LEGGIMI.md` | PRONTI TUTTI E 4 (Manuel, 4/11 sera: "gli extra"), date nel calendario v2 | brief `analisi/comorin_reel.md` |
 | panni (pov giungla) | 1 reel: pov "sei nella giungla indiana" e Manuel che stende i panni | pronto, non ancora pubblicato; va sul profilo personale E su Voci Vere (Manuel, 4/11) | proposta dom 8/11 su Voci Vere; sul personale la data è libera | sostituisce la decisione del 29/10 (solo personale) |
 | autostop | 1 reel (Manuel sul motorino di uno sconosciuto che lo riporta a casa) | PRONTO (Manuel, 4/11); frase a schermo da Copy; va su entrambi i profili, personale e Voci Vere (Manuel, 4/11) | proposta ven 6/11 su Voci Vere | nuovo (4/11) |
-| coir | lungo orizzontale + teaser + 3 reel + 2 caroselli + 3 set di stories | GIRATO il 6/11 (Anathalavattom, Chirayinkeezhu; formato reporter come `te`); girato su Drive e `girato.md` di Montaggio da fare; Copy: domande, parti in camera, VO | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
+| coir | lungo orizzontale + teaser + 3 reel + 2 caroselli + 3 set di stories | IN APPROVAZIONE (Montaggio 7/11): lungo v3 4K 6:45 (1x, VO13-18, senza campi larghi vuoti, Insights 8/11) `VociVere_coir_long_4K.mp4` + 5 verticali 1x (teaser, made_in_india, indietro, premilla, 1975) in montati/coir della cartella Drive Coir; capitoli in `projects/coir/capitoli.md`, scelte in `projects/coir/girato.md`. Da segnare APPROVATO quando Manuel dà l'ok | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
 | migranti | lungo orizzontale + pacchetto completo | pianificato, da girare a Varkala (9-10/11) e Kochi/Perumbavoor (11-12/11) | proposta lungo B dom 10/1 | `piano/migranti.md` |
 | diwali | 1 reel o scena dentro `migranti` | ANNULLATO (8/11, Manuel: non è riuscito a registrarlo) | nessuno | `piano/diwali.md` (archiviato) |
 | bilancio | lungo parlato con B-roll di tutto il viaggio + pacchetto | SICURO (Manuel 9/11), da montare a metà gennaio | dom 24/1 (lungo C) | `piano/bilancio.md` |
@@ -243,6 +243,32 @@ mettere in "Test e confronto": mercato (subito, già uscito), arthunkal e te; su
 IG dei verticali ancora da pubblicare con una domanda semplice prima del rimando (mercato reel 3 A "alle 3 di notte", arthunkal, te,
 comorin); TESTI_*.txt su Drive sostituiti. Regola in `regole/copy.md`.
 
+Nota da Montaggio, 4/11 sera (richieste di Manuel dai dati del mercato): file sostituiti su Drive con gli stessi nomi.
+- arthunkal v5: lungo 6:21 (prima 6:49), "Il giorno prima" di 10 s, notte con la folla a 0:44, ultimi 15 s senza
+  volti in primo piano. Capitoli nuovi: 0:00 Prima dell'alba, 0:34 Il giorno prima, 0:44 2:30 di notte, 1:07 L'alba
+  sulla spiaggia, 1:25 Chi cammina, 3:37 Chi non cammina, 4:14 In strada, 4:34 L'arrivo ad Arthunkal, 5:02 La storia,
+  5:32 Il ritorno (`projects/arthunkal/capitoli.md`). I 4 verticali rifatti nel formato reel del 29/10, primo
+  fotogramma su una persona o un gesto: v1 teaser 13.5 s (donna che cammina di notte, chiude su "Perché?"), v2 statua
+  19.4 s (Manuel davanti alla basilica), v3 persona 18.7 s (la pellegrina), v4 come funziona 23.4 s (il rosario in mano).
+  Senza il voiceover registrato (non è più su Drive): solo parlato in camera e interviste. Testi a schermo cambiati:
+  v1 "2:30 di notte, in cammino" e "Perché?", v2 "Scolpita a Milano nel 1647", v3 "13 km a piedi, di notte" e
+  "Arthunkal, Kerala", v4 "13 km pregando" e "Dal 2002".
+- te v8: lungo 6:26, la domanda "E oggi, di chi sono queste colline?" a schermo 3.4 s a 0:15; capitoli +2 s dalla
+  sigla: 0:00, 0:24 Munnar, 0:46 Con Sadish tra i filari, 3:30 La storia e chi ci lavora, 5:44 Il tè del chai master,
+  6:11 Chiusura. Il finale era già senza volti negli ultimi 14 s. Verticali: v3 giornata ora apre sulle mani di Sadish
+  che raccolgono; v1, v2, v4 aprivano già su una persona o sul gesto.
+- Per Copy (quando Manuel approva): sottotitoli it/en dei due lunghi da rifare (tempi cambiati), capitoli nelle
+  descrizioni, testi dei verticali di arthunkal.
+
+Nota da Montaggio, 5/11 (Manuel): file sostituiti su Drive con gli stessi nomi.
+- Lunghi arthunkal e te: aggiunti i 2 banner (Iscriviti + campanella + Hype dopo la sigla; Mi piace + Commenta a metà),
+  approvati da Manuel; nient'altro cambia, tempi e capitoli uguali al 4/11. Copy avvisata (permesso di Manuel) di rifare
+  i sottotitoli dei due lunghi.
+- Chiusura nuova su TUTTI i verticali non ancora pubblicati: "Ascolta altre voci, su", logo 0.8 s dopo, varianti A/B
+  alternate (regola stabile in `regole/formato_reel.md`): arthunkal v1-v4, comorin cocco/canna/statua, meenakshi,
+  mercato reel A (prima finiva senza chiusura), te v1-v4 (prima senza chiusura; v1 tiene la mini sigla e prende la
+  scritta prima del logo). Il tre mari di comorin resta senza logo (loop, versione di Manuel).
+
 Nota da Copy, 5/11 (richiesta di Montaggio con l'ok di Manuel): sottotitoli it/en di arthunkal (v5, 6:21) e te (v8, 6:26)
 spostati sui lunghi nuovi e sostituiti su Drive (montati/<video>/sottotitoli/); capitoli it/en aggiornati nelle descrizioni
 (copioni/arthunkal_pacchetto.md, copioni/te_pacchetto.md e TESTI_*.txt su Drive). Script: projects/arthunkal/sottotitoli/shift_v5.py.
@@ -273,6 +299,32 @@ dei 5 verticali), carosello "fatto" (8 slide, 3 video), carosello "I volti" (7),
 Titoli e miniature v3 approvati anche per arthunkal e te (pacchetti e TESTI su Drive aggiornati, vecchie miniature in miniatura/vecchie/).
 
 Nota da Pianificazione, 8/11 (Manuel): il reel più forte non è fisso, dipende: lo decidono caso per caso Manuel e Insights. Il lunedì dopo il lungo è lo slot per quel reel, non necessariamente il reel 1. Il motivo esplicito per andare dal Short al lungo (didascalia, commento fissato) è ancora da capire, non deciso: da provare su arthunkal e misurare.
+
+Nota da Montaggio, 8/11 (nota di Insights dell'8/11 sera + richieste di Manuel): file sostituiti su Drive con gli stessi nomi.
+- te v9: stessi tempi, capitoli e audio del v8; a metà video le colline/case vuote (9 tratti tra 2:01 e 5:36) sono diventate
+  Sadish in sincrono o mani che raccolgono. Sottotitoli it/en: NON cambiano (stessi tempi). Inizio già coerente con titolo e
+  miniatura T1 (domanda "E oggi, di chi sono queste colline?" a 0:15, risposta a 3:28).
+- arthunkal: lungo invariato (cammino di notte già a 0:09 e 0:44, il resto a metà video è folla, non campi vuoti).
+  Verticali v1-v4 rifatti: "persone" non diventa più "pedone" (taglio delle pause sulle consonanti), voce davanti alla
+  basilica più pulita (v2), la voce della pellegrina ora si sente (v3: RNNoise la cancellava). Testi a schermo uguali.
+- coir v3: lungo 6:45 (prima v2 6:51), via 3 campi larghi vuoti; capitoli in `projects/coir/capitoli.md`.
+
+Nota da Montaggio, 9/11 (Insights approva coir v3, te v9, arthunkal lungo; Manuel ok sui punti 4 e 6):
+- coir: APPROVATO. File finale su Drive montati/coir/VociVere_coir_long_4K.mp4 (v4, 6:45): come la v3, cambiano solo le
+  immagini degli ultimi 15 s (volti all'inizio della frase di chiusura, poi fabbrica senza volti, laguna e sigla senza
+  volti, per la schermata finale). Capitoli: 0:00 Made in India, 0:18 Le donne che non lo fanno più, 1:20 La laguna,
+  2:48 Sotto la tettoia, 4:24 La fabbrica, 5:12 I nostri tappeti, 6:08 Chiusura (`projects/coir/capitoli.md`).
+  Verticali coir invariati (5, a 1x, montati/coir). Copy: sottotitoli it/en del lungo da rifare sul v4 (quelli su Drive
+  sono della v2 di 6:51), capitoli nella descrizione.
+- te v9 approvato (stessi tempi del v8: sottotitoli e capitoli invariati).
+- arthunkal: lungo invariato; verticale v2 rifatto: apre sull'anziano col telo bianco (lo stesso della miniatura A2),
+  poi Manuel davanti alla basilica. Testi a schermo uguali.
+
+Nota da Montaggio, 9/11: coir lungo v5 APPROVATO da Manuel, file finale su Drive montati/coir/VociVere_coir_long_4K.mp4 (6:45).
+Come il v4 (stesse immagini e tempi, capitoli invariati); cambia solo l'audio della frase di chiusura: ora è la
+registrazione pulita di Manuel (assets/voce/chiusura_vocivere.m4a, da usare in tutti i prossimi lunghi). Verticale
+"indietro": il primo titolo sparisce quando entra "All'indietro". Verticale "premilla": il viso non è più coperto dalle
+scritte. Per Copy: nei sottotitoli it/en la frase finale ora dura ~0.6 s in più (da 6:30.8 a 6:36.8 circa).
 
 Nota da Pianificazione, 9/11 (Manuel): DIWALI ANNULLATO. L'8/11 Manuel non è riuscito a registrarlo, nessun girato. Tolto dal calendario: il 10/11 resta libero (era l'extra Diwali) e l'extra del 18/12 si sceglie tra Kochi e Varkala. Nessuna chat deve montarlo, scriverne testi o pianificarlo. `piano/diwali.md` resta solo come archivio.
 Nota da Copy, 9/11: coir, lungo finale v4 (6:45): sottotitoli it/en rifatti sul montato e capitoli aggiornati (0:00 Made in India,

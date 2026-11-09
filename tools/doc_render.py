@@ -163,7 +163,7 @@ class Timeline:
             f.append(f"crop=ih*9/16:ih:'max(0,min(iw-ih*9/16,iw*{s['cx']}-ih*9/32))':0")
         elif s["zoom"] != 1.0:
             z = s["zoom"]
-            f.append(f"crop=iw/{z}:ih/{z}:'max(0,min(iw-iw/{z},iw*{s['cx']}-iw/{z}/2))':'(ih-ih/{z})*0.4'")
+            f.append(f"crop=iw/{z}:ih/{z}:'max(0,min(iw-iw/{z},iw*{s['cx']}-iw/{z}/2))':'(ih-ih/{z})*{s.get('zy', 0.4)}'")
         f.append(f"scale={W}:{H}:flags=lanczos:force_original_aspect_ratio=increase,"
                  f"crop={W}:{H}:(iw-ow)/2:(ih-oh)*{s.get('cy', 0.5)}")
         if s["grade"] and s["grade"] != "null":
@@ -286,7 +286,7 @@ class Timeline:
                     else:
                         cmd += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v:0", "-map", "1:a:0"]
                     cmd += ["-vf", self._vf(s)]
-                cmd += ["-t", f"{s['d']:.4f}", "-c:v", "libx264", "-crf", "15", "-preset", "veryfast",
+                cmd += ["-t", f"{s['d']:.4f}", "-c:v", "libx264", "-crf", str(getattr(self, "shot_crf", 15)), "-preset", "veryfast",
                         "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", p]
                 run(cmd)
                 open(kp, "w").write(key)
@@ -295,7 +295,9 @@ class Timeline:
         lst = f"{self.dir}/list.txt"
         open(lst, "w").write("".join(f"file '{p}'\n" for p in parts))
         cut = f"{self.dir}/cut.mkv"
-        run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", cut])
+        direct = getattr(self, "direct_concat", False)   # disco stretto (coir 7/11): niente copia intera, si legge la lista
+        if not direct:
+            run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", cut])
         total = self.t
         # audio unito campione per campione (il concat dei file perde ~13 ms a taglio e sposta il labiale):
         # ogni inquadratura contribuisce esattamente n fotogrammi * 1600 campioni
@@ -309,7 +311,7 @@ class Timeline:
                 need = s["n"] * 1600 * 4
                 pcm = pcm[:need] + b"\0" * max(0, need - len(pcm))
                 wf.writeframes(pcm)
-        if getattr(self, "drop_shots", False):   # disco stretto: dopo cut.mkv e nat.wav le inquadrature non servono
+        if getattr(self, "drop_shots", False) and not direct:   # disco stretto: dopo cut.mkv e nat.wav non servono
             for p in parts:
                 for x in (p, p + ".key"):
                     if os.path.exists(x):
@@ -323,8 +325,11 @@ class Timeline:
             k = len(inputs) // 2 - 1
             dvo = (v["b"] - v["a"]) / v["speed"]
             xaf = f"{v['af']}," if v.get("af") else ""   # filtro in più per una sola voce (es. registrazione con più bassi)
+            # raw: voce già pulita e livellata con guadagno fisso (coir, 6/11): niente afftdn né loudnorm dinamico
+            proc = "" if v.get("raw") else (f"highpass=f=90,highpass=f=90,afftdn=nf=-30,{AFFTDN_FIX},"
+                                            "loudnorm=I=-16:TP=-2:LRA=6,aresample=48000,")
             fc.append(f"[{k}:a]atrim={v['a']:.3f}:{v['b']:.3f},asetpts=PTS-STARTPTS,atempo={v['speed']},aresample=48000,"
-                      f"{xaf}highpass=f=90,highpass=f=90,afftdn=nf=-30,{AFFTDN_FIX},loudnorm=I=-16:TP=-2:LRA=6,aresample=48000,"
+                      f"{xaf}{proc}"
                       f"afade=t=in:d=0.04,afade=t=out:st={dvo - 0.08:.3f}:d=0.08,"
                       f"adelay={int(v['t'] * 1000)}:all=1,apad=whole_dur={total:.3f}[vo{j}]")
             vo_labels.append(f"[vo{j}]")
@@ -444,7 +449,8 @@ class Timeline:
                 f.write(f"Dialogue: 0,{ts(a)},{ts(b)},Sub,,0,0,0,,{t}\n")
 
         ass = getattr(self, "ass_override", None) or ass   # sottotitoli/titoli animati preparati a parte
-        run(["ffmpeg", "-v", "error", "-y", "-i", cut, "-i", mix, "-vf", f"setpts=N/({FPS}*TB),ass={ass}:fontsdir={ROOT}/models", "-r", str(FPS),
+        vin = ["-f", "concat", "-safe", "0", "-i", lst] if direct else ["-i", cut]
+        run(["ffmpeg", "-v", "error", "-y", *vin, "-i", mix, "-vf", f"setpts=N/({FPS}*TB),ass={ass}:fontsdir={ROOT}/models", "-r", str(FPS),
              "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", str(crf), *getattr(self, "final_opts", []), "-preset", preset, "-profile:v", "high",
              "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", "-t", f"{total:.3f}", out])
         self.check(out)

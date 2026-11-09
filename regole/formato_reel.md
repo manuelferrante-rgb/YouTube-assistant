@@ -20,7 +20,8 @@ Prevale sulle note più vecchie sui verticali in `regole/montaggio_documentario.
 
 ## Titoli (fatti, nomi, luoghi)
 - Su una riga, il più grandi possibile senza uscire dallo schermo: Poppins ExtraBold ORO (#B68A4B) su riquadro
-  BIANCO (opzione E). Stile `Tag` di `tools/reel_kit.py`: `r.title(a, b, "Testo", "Tag", 400)`.
+  BIANCO (opzione E). Riquadro un po' più piccolo dal 4/11 (Manuel, comorin: "un pochino troppo grande"): corpo 82,
+  margine 18, almeno 90 px ai lati (`TAG_SIZE, TAG_PAD, TAG_SIDE` in `tools/reel_kit.py`). Stile `Tag` di `tools/reel_kit.py`: `r.title(a, b, "Testo", "Tag", 400)`.
 - Font `assets/fonts/VVTitolo-PoppinsExtraBold.ttf` (famiglia "VV Titolo", copiato in `models/` dall'hook di avvio:
   rinominato perché il Poppins ExtraBold vero cambierebbe il grassetto dei sottotitoli).
 - Entrano di colpo ("bam": scala 107% → 100% in 0.11 s, niente dissolvenza), nel momento in cui la parola si dice
@@ -43,7 +44,8 @@ Prevale sulle note più vecchie sui verticali in `regole/montaggio_documentario.
 1. Subito dopo l'ultima frase: 1 immagine breve del luogo (~0.9 s), poi l'ultima persona ~2 s (non di più: la
    persona dopo un po' è imbarazzata).
 2. Nel fotogramma in cui sparisce l'ultimo sottotitolo entra la frase **Ascolta altre voci, su** nello stesso stile
-   dei titoli (oro su bianco, in alto), e resta fino alla fine.
+   dei titoli (oro su bianco, in alto), e resta fino alla fine. Entra in dissolvenza di 0.6 s, non di colpo (Manuel 4/11): stile `TagIn` di
+   `tools/reel_kit.py`. Il segno di chiusura di Audio parte subito sulla fine della voce (niente buco prima).
 3. La persona continua sotto un velo nero LEGGERO (35%, entra in 0.5 s, non deve sembrare "l'uomo nero"); il logo
    `assets/brand/logo_vocivere_trasparente_chiaro.png` (con il payoff) sfuma in 0.6 s, centrato in verticale e
    orizzontale, largo il 70%. 2 s, poi fine. Codice: `logo_card()` in `projects/meenakshi/build.py`.
@@ -70,5 +72,20 @@ trailer lo scorre via il 61% su IG e l'84% su YT; il reel che apre su una person
 (e resta il 36% su YT, più del doppio). Quindi: primo fotogramma = la persona o il gesto più forte, già in
 movimento; mai un montaggio da trailer, nemmeno per i teaser. Da riconfermare con i prossimi reel.
 
+## Chiusura dei reel: REGOLA STABILE (Manuel 5/11, prevale sulla sezione "Chiusura" sopra)
+- Appena sparisce l'ultimo sottotitolo entra "Ascolta altre voci, su" (dissolvenza 0.6 s) sull'ultima persona o
+  sull'ultimo gesto; il logo entra 0.8 s dopo (prima arrivava dopo ~3 s: "troppo lento"), sulla stessa persona che
+  continua sotto il velo, 2 s, poi fine. Niente immagine del luogo prima della chiusura.
+- Due varianti dello stesso stile, da alternare tra i reel così non finiscono tutti uguali:
+  A = scritta oro su riquadro bianco, velo nero 35%; B = scritta bianca su riquadro oro, velo bruno caldo 42%.
+- Codice unico: `tools/reel_close.py` (`close()`, `logo_card()`, `VARIANTS`); per i reel già finiti senza chiusura
+  `tools/append_closing.py`. Nel teaser con la domanda finale: prima la domanda sul luogo (1.2 s), poi la chiusura.
+- Segno di chiusura di Audio e musica: partono sulla fine della voce e arrivano alla fine del logo.
+
 Nota da Copy, 6/11 (Manuel, registrando i VO di coir): nei verticali la PRIMA frase del voiceover è sempre la più forte
 (il fatto o l'immagine che colpisce di più), mai tenuta per il finale. Il primo titolo a schermo la riprende.
+
+Nota Montaggio 6/11 (Manuel, verticali di coir): quando il VO è già registrato sciolto, i verticali restano a velocità
+normale (niente 1.1x). Pause d'enfasi brevi (~0.45 s) solo dove servono a far arrivare un concetto: di solito una per
+reel, dopo la prima frase (es. "...all'ingresso di casa tua." pausa, poi "Gusci di cocco"), al massimo due. `say(..., pause=PAUSE)`
+in `projects/coir/build.py`.
