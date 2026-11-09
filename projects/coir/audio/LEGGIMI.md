@@ -62,6 +62,8 @@ File: `<reel>_musica.flac` (25 s, bozza scelta) e `<reel>_cue_gancio|rivelazione
 `python3 projects/coir/audio/verticali.py teaser madeinindia indietro premilla 1975`: prende il video APPROVATO da Drive
 (montati/coir, in `work/coir/drive/`, copiato senza ricodifica: immagini, testi e sottotitoli identici, verificato) e ci
 mette sopra l'audio rifatto con `projects/coir/build.py` (voce negli stessi tempi: scarto 0 ms con l'approvato).
-Musica ricomposta della durata esatta del reel (crescendo sul finale), 0.08 sotto la voce, -6 dB mentre suona la
-rivelazione, 0.17 dopo la voce; segni a 0.24 (chiusura 0.45, dalla fine della voce all'ultimo fotogramma del logo).
-Limitatore a -2 dB: -14.7/-15.0 LUFS, picchi sotto -1.5 dBTP.
+Musica ricomposta della durata esatta del reel (crescendo sul finale). Livelli (Manuel 9/11: "molto più bassi, accompagnamento
+leggero"): 0.025 sotto la voce, -6 dB mentre suona la
+rivelazione, 0.055 dopo la voce; segni a 0.08 (chiusura 0.14, dalla fine della voce all'ultimo fotogramma del logo).
+La musica resta sotto il livello dei verticali approvati prima, anche sul logo.
+Limitatore a -2 dB con sovracampionamento: -14.7/-15.2 LUFS, picchi sotto -1.8 dBTP.
