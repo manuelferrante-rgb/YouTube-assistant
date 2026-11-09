@@ -18,6 +18,7 @@ consegnato, programmato, pubblicato.
 | coir | lungo orizzontale + teaser + 3 reel + 2 caroselli + 3 set di stories | GIRATO il 6/11 (Anathalavattom, Chirayinkeezhu; formato reporter come `te`); girato su Drive e `girato.md` di Montaggio da fare; Copy: domande, parti in camera, VO | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
 | migranti | lungo orizzontale + pacchetto completo | pianificato, da girare a Varkala (9-10/11) e Kochi/Perumbavoor (11-12/11) | proposta lungo B dom 10/1 | `piano/migranti.md` |
 | diwali | 1 reel o scena dentro `migranti` | ANNULLATO (8/11, Manuel: non è riuscito a registrarlo) | nessuno | `piano/diwali.md` (archiviato) |
+| bilancio | lungo parlato con B-roll di tutto il viaggio + pacchetto | SICURO (Manuel 9/11), da montare a metà gennaio | dom 24/1 (lungo C) | `piano/bilancio.md` |
 | kanyakumari | donne del mare e ONG del posto (verticale/materiale) | girato 3-4/11? Manuel non ha ancora detto cosa ha fatto con KDFSF e Siluvai Nagar | da decidere | `piano/kanyakumari.md` |
 
 ## Piano rifatto il 29/10 (Manuel): lunghi ogni 2-3 settimane, un contenuto un giorno sì e uno no
@@ -214,15 +215,15 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | lun 18/1 | lungo B: reel 3 |  |
 | mer 20/1 | lungo B: carosello "I volti" (+ post YouTube) |  |
 | ven 22/1 | EXTRA dalla scorta |  |
-| sab 23/1 | lungo C: teaser | solo se girato e montato |
-| dom 24/1 | LUNGO C (l'altro tra migranti ed erosione) | solo se girato e montato |
-| lun 25/1 | lungo C: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
-| mar 26/1 | lungo C: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
-| mer 27/1 | lungo C: stories set 3 |  |
-| gio 28/1 | lungo C: reel 2 |  |
-| ven 29/1 | lungo C: stories set 2 |  |
-| sab 30/1 | lungo C: carosello (+ post YouTube) |  |
-| dom 31/1 | lungo C: reel 3 | programmato prima della partenza per il Vietnam |
+| sab 23/1 | bilancio: teaser | SICURO (Manuel 9/11) |
+| dom 24/1 | LUNGO C = BILANCIO "Un mese in India" (`piano/bilancio.md`) | SICURO (Manuel 9/11); sostituisce migranti/erosione come lungo C |
+| lun 25/1 | bilancio: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 26/1 | bilancio: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
+| mer 27/1 | bilancio: stories set 3 |  |
+| gio 28/1 | bilancio: reel 2 |  |
+| ven 29/1 | bilancio: stories set 2 |  |
+| sab 30/1 | bilancio: carosello (+ post YouTube) |  |
+| dom 31/1 | bilancio: reel 3 | programmato prima della partenza per il Vietnam |
 
 Nota da Pianificazione, 4/11 (Manuel): cocco e canna di comorin escono anche loro su entrambi i profili (personale e Voci Vere). Quindi tutti i reel mainstream (panni, autostop, cocco, canna) vanno su entrambi; le date 26/11 e 2/12 non sono più condizionate.
 Nota da Pianificazione, 4/11 (Manuel): strategia. Prima si pubblica (anche contenuti più leggeri), poi si dà al profilo una forma professionale e da "Voci Vere". Lo scopo principale, da non dimenticare: DARE VOCE A CHI NE HA PIU' BISOGNO. Ogni lungo e ogni tema nuovo (coir, migranti, ONG) va verificato contro questa frase.
@@ -279,3 +280,5 @@ Nota da Copy, 9/11: coir, lungo finale v4 (6:45): sottotitoli it/en rifatti sul 
 (sottotitoli/ e TESTI_titolo_descrizioni_verticali.txt). Il resto del pacchetto coir resta valido. Te v9 e arthunkal: niente da rifare.
 
 Nota da Pianificazione, 9/11 (Manuel): le stories set 1 del mercato NON sono uscite l'8/11. Spostate a mar 10/11. Il resto invariato: set 2 11/11, carosello "I volti" e set 3 12/11, autostop 13/11.
+
+Nota da Pianificazione, 9/11 (Manuel): NUOVO LUNGO SICURO `bilancio`: "Un mese in India, ti racconto la mia esperienza" (titolo provvisorio di Manuel, lo rifinisce Copy). Lungo parlato con B-roll di tutto il viaggio, importanza alle persone incontrate e ai video. Chiude dicendo che continua e la prossima tappa: Vietnam. Uscita orientativa fine gennaio: messo come lungo C, dom 24/1 (teaser 23/1, pacchetto 25-31/1, come la tabella). Migranti ed erosione: uno resta lungo B (10/1), l'altro non ha più lo slot del 24/1, va in reel/extra o dopo il Vietnam; decido dopo il girato. Dettagli in `piano/bilancio.md`.
