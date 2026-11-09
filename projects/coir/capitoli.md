@@ -1,4 +1,4 @@
-# coir: capitoli del lungo (v3, 8/11, dal montato 4K `VociVere_coir_long_4K.mp4`, 6:45)
+# coir: capitoli del lungo (v4, 9/11, 6:45: come la v3, cambiano solo le immagini degli ultimi 15 s)
 
 v3 (Insights 8/11): niente campi larghi senza persone a metà video. Su "Un tempo, lungo questa costa..." le donne della
 saracinesca e una donna al lavoro al posto della laguna vuota; il momento di sola musica sulla laguna è solo l'uomo che

@@ -203,9 +203,11 @@ def v2():
     W, H = r.W, r.H
     sB = B.storia(W, H, "Bv5", "1584|padre Giacomo Fenicio|gesuita italiano|0.2", 5.0, prev="52 d.C.")
     sC = B.storia(W, H, "Cv5", "1647|la statua di San Sebastiano|arriva da Milano|0.3", 4.0, prev="1584")
-    # GANCIO: Manuel davanti alla basilica, già mentre parla
-    t0 = r.cam(BAS, 1.50, 2.95, words=wb(1.0, 2.95), pad=PAD)                         # "Questa chiesa l'ha ricostruita"
-    r.narr(BAS, 2.95, 4.58, [(r.gen(sB), None)], words=wb(2.95, 4.45), pad=(0.0, 0.04))    # "nel 1584"
+    # GANCIO (Insights + Manuel 9/11): prima un pellegrino, l'anziano col telo bianco della miniatura, poi Manuel
+    # davanti alla basilica. L'anziano esce dall'inquadratura dopo ~1 s: rallentato a 0.7x sotto la prima frase
+    r.narr(BAS, 1.50, 2.95, [(r.own(C("090951"), 0.0, cx=0.58, speed=0.7), None)], words=wb(1.0, 2.95),
+           pad=(PAD[0], 0.0))                                                             # "Questa chiesa l'ha ricostruita"
+    r.cam(BAS, 2.95, 4.58, words=wb(2.95, 4.45), pad=(0.0, 0.04))                        # Manuel: "nel 1584"
     tB = r.t
     r.narr(BAS, 5.08, 8.50, [(r.gen(sB, 1.6), None)], words=wb(4.85, 8.95), pad=PAD)      # "un gesuita italiano, padre..."
     r.title(0.0, tB, "Scolpita a Milano nel 1647", "Tag", 400)

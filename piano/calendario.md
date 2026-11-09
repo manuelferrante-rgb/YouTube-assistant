@@ -307,3 +307,14 @@ Nota da Montaggio, 8/11 (nota di Insights dell'8/11 sera + richieste di Manuel):
   Verticali v1-v4 rifatti: "persone" non diventa più "pedone" (taglio delle pause sulle consonanti), voce davanti alla
   basilica più pulita (v2), la voce della pellegrina ora si sente (v3: RNNoise la cancellava). Testi a schermo uguali.
 - coir v3: lungo 6:45 (prima v2 6:51), via 3 campi larghi vuoti; capitoli in `projects/coir/capitoli.md`.
+
+Nota da Montaggio, 9/11 (Insights approva coir v3, te v9, arthunkal lungo; Manuel ok sui punti 4 e 6):
+- coir: APPROVATO. File finale su Drive montati/coir/VociVere_coir_long_4K.mp4 (v4, 6:45): come la v3, cambiano solo le
+  immagini degli ultimi 15 s (volti all'inizio della frase di chiusura, poi fabbrica senza volti, laguna e sigla senza
+  volti, per la schermata finale). Capitoli: 0:00 Made in India, 0:18 Le donne che non lo fanno più, 1:20 La laguna,
+  2:48 Sotto la tettoia, 4:24 La fabbrica, 5:12 I nostri tappeti, 6:08 Chiusura (`projects/coir/capitoli.md`).
+  Verticali coir invariati (5, a 1x, montati/coir). Copy: sottotitoli it/en del lungo da rifare sul v4 (quelli su Drive
+  sono della v2 di 6:51), capitoli nella descrizione.
+- te v9 approvato (stessi tempi del v8: sottotitoli e capitoli invariati).
+- arthunkal: lungo invariato; verticale v2 rifatto: apre sull'anziano col telo bianco (lo stesso della miniatura A2),
+  poi Manuel davanti alla basilica. Testi a schermo uguali.
