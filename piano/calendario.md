@@ -274,3 +274,6 @@ Titoli e miniature v3 approvati anche per arthunkal e te (pacchetti e TESTI su D
 Nota da Pianificazione, 8/11 (Manuel): il reel più forte non è fisso, dipende: lo decidono caso per caso Manuel e Insights. Il lunedì dopo il lungo è lo slot per quel reel, non necessariamente il reel 1. Il motivo esplicito per andare dal Short al lungo (didascalia, commento fissato) è ancora da capire, non deciso: da provare su arthunkal e misurare.
 
 Nota da Pianificazione, 9/11 (Manuel): DIWALI ANNULLATO. L'8/11 Manuel non è riuscito a registrarlo, nessun girato. Tolto dal calendario: il 10/11 resta libero (era l'extra Diwali) e l'extra del 18/12 si sceglie tra Kochi e Varkala. Nessuna chat deve montarlo, scriverne testi o pianificarlo. `piano/diwali.md` resta solo come archivio.
+Nota da Copy, 9/11: coir, lungo finale v4 (6:45): sottotitoli it/en rifatti sul montato e capitoli aggiornati (0:00 Made in India,
+0:18, 1:20, 2:48 Sotto la tettoia, 4:24 La fabbrica, 5:12 I nostri tappeti, 6:08 Chiusura), sostituiti su Drive montati/coir
+(sottotitoli/ e TESTI_titolo_descrizioni_verticali.txt). Il resto del pacchetto coir resta valido. Te v9 e arthunkal: niente da rifare.

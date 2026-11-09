@@ -11,7 +11,8 @@ Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in
   Sottotitoli it/en spostati sul lungo v5 (6:21) il 5/11.
 - te (lungo dom 29/11): pacchetto in `copioni/te_pacchetto.md`. Titolo e miniature v3 approvati 8/11 (T1, T5, T3).
   Verticali v3. Sottotitoli sul lungo v8 (6:26).
-- coir (lungo A dom 20/12): APPROVATO 8/11, pacchetto completo in `copioni/coir_pacchetto.md` e su Drive cartella "Coir"
+- coir (lungo A dom 20/12): APPROVATO 8/11, lungo finale v4 6:45 (9/11: sottotitoli it/en spostati con shift() in make_srt.py,
+  capitoli 0:00, 0:18, 1:20, 2:48, 4:24, 5:12, 6:08, sostituiti su Drive), pacchetto completo in `copioni/coir_pacchetto.md` e su Drive cartella "Coir"
   (19zCOBK_aJ6a4SFwGffbZvDKUr-IXR8UA) montati/coir: miniature C1, C2, C3, sottotitoli it/en (`projects/coir/sottotitoli/make_srt.py`),
   descrizione e capitoli it/en, 5 verticali (teaser + 4 reel), carosello "fatto" (`copioni/caroselli/carosello_coir.py`),
   "I volti", storie 3x6 (`copioni/stories/stories_coir.py`). Script, VO e note per Montaggio/Audio in `copioni/coir_testi.md`.

@@ -1,4 +1,4 @@
-# Le donne del coir: PACCHETTO DEFINITIVO (Copy, 8/11, lungo v2 6:51 approvato da Manuel)
+# Le donne del coir: PACCHETTO DEFINITIVO (Copy, 8/11; 9/11 sul lungo v4 6:45 approvato da Manuel: capitoli e sottotitoli rifatti)
 Tutto su Drive, cartella "Coir" (19zCOBK_aJ6a4SFwGffbZvDKUr-IXR8UA) -> montati/coir/: VociVere_coir_long_4K.mp4, i 5 verticali,
 sottotitoli/ (.it.srt, .en.srt), miniatura/, carosello/, carosello_volti/, storie/, TESTI_titolo_descrizioni_verticali.txt.
 Uscite (calendario, Pianificazione): teaser sab 19/12, lungo dom 20/12, reel e caroselli nei giorni dopo.
@@ -26,10 +26,10 @@ Capitoli
 0:00 Made in India
 0:18 Le donne che non lo fanno più
 1:20 La laguna
-2:51 Sotto la tettoia
-4:30 La fabbrica
-5:18 I nostri tappeti
-6:14 Chiusura
+2:48 Sotto la tettoia
+4:24 La fabbrica
+5:12 I nostri tappeti
+6:08 Chiusura
 
 #Kerala #India #VociVere
 
@@ -51,10 +51,10 @@ Chapters
 0:00 Made in India
 0:18 The women who stopped
 1:20 The lagoon
-2:51 Under the shelter
-4:30 The factory
-5:18 Our doormats
-6:14 Closing
+2:48 Under the shelter
+4:24 The factory
+5:12 Our doormats
+6:08 Closing
 
 #Kerala #India #VociVere
 
