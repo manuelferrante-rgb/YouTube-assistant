@@ -1,11 +1,14 @@
-# Copy: stato e passaggio di consegne (aggiornato 8/11 sera)
+# Copy: stato e passaggio di consegne (aggiornato 9/11)
 Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in `regole/copy.md` (in fondo le note più nuove),
 `regole/formato_reel.md`, `copioni/caroselli/testi_caroselli.md` (regole dei caroselli), `copioni/stories/storie_testi.md`.
 
 ## Video e stato del pacchetto Copy
 - mercato: pubblicati teaser, lungo, 2 reel, carosello "fatto" (7/11, musica IG "Art of Life" di Lesfm, 8 immagini su YT).
-  Restano: reel 3 A "alle 3 di notte" (testi in `copioni/mercato_pacchetto.md`, con commento fissato), carosello "I volti",
-  storie. Link lungo: https://youtu.be/LW4zO_0oSgQ
+  Reel 3 A "alle 3 di notte" pubblicato il 9/11 (commento fissato unico YT+IG). Restano: storie set 1 (10/11), set 2 (11/11),
+  carosello "I volti" + set 3 (12/11). 9/11: titolo e miniature v3 del lungo rifatti e approvati (Insights + Manuel):
+  "UN PESCE DA 50 CHILI IN INDIA 🇮🇳 il mercato del pesce sulla spiaggia", M1 signora "ALL'ASTA / SULLA SABBIA" (principale),
+  M2, M3, it/en, Drive montati/mercato/miniatura/ (vecchie in vecchie/), generatore copioni/miniature_v3/mercato_v3.py.
+  Niente sfocature sulle miniature (Manuel 9/11: "bruttissimo"). Link lungo: https://youtu.be/LW4zO_0oSgQ
 - arthunkal (lungo dom 15/11): pacchetto in `copioni/arthunkal_pacchetto.md`. Titolo e miniature v3 approvati l'8/11
   (titolo "LA PREGHIERA CHE NON SI FERMA MAI..."; Test e confronto A2, A3, A1 su Drive miniatura/). Verticali v3 (8/11).
   Sottotitoli it/en spostati sul lungo v5 (6:21) il 5/11.
