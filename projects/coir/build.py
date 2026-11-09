@@ -708,20 +708,24 @@ def indietro():
 
 def premilla():
     r, say = vreel("premilla")
+    # Manuel 9/11: le scritte in alto coprivano il viso. Dove succede l'immagine si ingrandisce di 1.3 tenendo fermo
+    # il bordo alto: il viso scende sotto la scritta (testi, voce e tempi invariati)
+    Z = DEF + f",scale={int(r.W * 1.3) // 2 * 2}:{int(r.H * 1.3) // 2 * 2},crop={r.W}:{r.H}:(iw-ow)/2:0"
+    Z2 = DEF + f",scale={int(r.W * 1.45) // 2 * 2}:{int(r.H * 1.45) // 2 * 2},crop={r.W}:{r.H}:(iw-ow)/2:0"   # 0016: viso più in alto
     P1 = vphrase(69.03, 71.30, "Quarant'anni ad aprire gusci di cocco. A mano.")
     P2 = vphrase(71.69, 73.07, "Lei è Premilla. Ha sessant'anni.")
     P4 = vphrase(73.30, 75.15, "Quando questa società ha aperto, lei era già qui.")
     P5 = vphrase(81.60, 85.54, "Si lavora sedute per terra, sotto il sole, fino alle due. E ogni mattina, è ancora qui.")
-    say(P1, [(r.own(C("0549"), 0.3, cx=0.45), None)], pause=PAUSE)
+    say(P1, [(r.own(C("0549"), 0.3, cx=0.45, grade=Z), None)], pause=PAUSE)
     r.title(0.0, r.t, "40 anni, a mano", "Tag", 400)
-    t2 = say(P2, [(r.own(C("0016"), 0.0, cx=0.68), None)])
+    t2 = say(P2, [(r.own(C("0016"), 0.0, cx=0.68, grade=Z2), None)])
     r.title(at(t2, P2, "Premilla"), r.t + 0.3, "Premilla, 60 anni", "Tag", 400)
     say(P4, [(r.own(C("0001"), 0.3, cx=0.62), None)])
     say(P5, [(r.own(C("0001"), 12.0, cx=0.62), 1.6), (r.own(C("0547"), 48.5, cx=0.5), 1.3), (r.own(C("0549"), 8.0, cx=0.45), None)])
     t_b = r.t
     r.cap_stop.append(t_b)
-    _, end = RC.close(r, OUT, C("0016"), 0.4, variant="B", cx=0.68, speed=0.6,
-                      own=(lambda d: r.tl._add(C("0016"), 0.4, d * 0.6, speed=0.6, gain=0.0, cx=0.68, grade=DEF, audio=False)))
+    _, end = RC.close(r, OUT, C("0016"), 0.4, variant="B", cx=0.68, speed=0.6, grade=Z2,
+                      own=(lambda d: r.tl._add(C("0016"), 0.4, d * 0.6, speed=0.6, gain=0.0, cx=0.68, grade=Z2, audio=False)))
     return vfinish(r, "premilla", "coir_finale", t_b, end, offset=12.0)
 
 
