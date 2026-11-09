@@ -31,3 +31,19 @@ tagliare con dissolvenza di 1 s.
 `python3 audio/musica/coir.py <brano> <stile> <out.wav> [--dinamica]`, poi guadagno fisso a -20 LUFS e
 `python3 audio/kit/bande.py <file>`. Brani e scelte: intro C --dinamica, strada C --dinamica, laguna A, macchine C,
 finale A --dinamica.
+
+# Verticali di coir: musica e segni (chat Audio, 9/11)
+Codice: `audio/musica/coir_verticali.py` (stessa famiglia del lungo, fa minore). Scelte tra tre bozze A/B/C fatte da
+Insights su richiesta di Manuel (9/11). Tutti controllati con `bande.py` (sotto 150 Hz da -57 a -70 dB: OK).
+Livelli e posizioni come `regole/formato_reel.md` (musica 0.08-0.11 costante sotto la voce, segni gain 0.24, chiusura e
+musica fino all'ultimo fotogramma del logo).
+
+## teaser
+| File | Durata | Livello | Dove |
+|---|---|---|---|
+| `teaser_musica.flac` | 25 s | -18 LUFS | da 0:00 a fine logo; archi brevi a passo (92 bpm) + archi tenuti, cresce verso la fine (bozza A) |
+| `teaser_cue_gancio.flac` | 3.5 s | -18 LUFS | prima immagine; quattro note di piano che restano sospese (B) |
+| `teaser_cue_rivelazione.flac` | 4.5 s | -18 LUFS | prima nota sui gusci che galleggiano (`0021`), musica -6 dB mentre suona (B, arpeggio di piano) |
+| `teaser_cue_chiusura.flac` | 5.5 s | -18 LUFS | sulla fine della voce fino al logo: motivo del lungo fa-lab-sol-fa (A, piano e archi) |
+Rifare: `python3 audio/musica/coir_verticali.py teaser musica A out.wav` (gancio B, rivelazione B, chiusura A), poi
+loudnorm a -20 (musica) / -18 (segni) come in `flac()`.
