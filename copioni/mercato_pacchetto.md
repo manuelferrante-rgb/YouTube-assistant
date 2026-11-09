@@ -48,7 +48,7 @@ Tu ti alzeresti alle 3?
 Il pesce da 50 chili venduto all'asta sulla sabbia, alle 8 del mattino: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
 #india #kerala #viaggio #vitalocale #mercato
-Commento fissato YT: Il pesce da 50 chili venduto all'asta sulla sabbia, alle 8 del mattino: è nel video sul canale.
+Commento fissato (uguale su YouTube e IG, Manuel 9/11): Il pesce da 50 chili venduto all'asta sulla sabbia, alle 8 del mattino: è nel video completo sul canale YouTube Voci Vere.
 Descrizione Short YT:
 Un pescatore di Marari, in Kerala, ci racconta la sua giornata: comincia alle tre di notte, da trent'anni. Tu ce la faresti?
 
