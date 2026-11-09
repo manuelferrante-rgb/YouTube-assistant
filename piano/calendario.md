@@ -318,3 +318,9 @@ Nota da Montaggio, 9/11 (Insights approva coir v3, te v9, arthunkal lungo; Manue
 - te v9 approvato (stessi tempi del v8: sottotitoli e capitoli invariati).
 - arthunkal: lungo invariato; verticale v2 rifatto: apre sull'anziano col telo bianco (lo stesso della miniatura A2),
   poi Manuel davanti alla basilica. Testi a schermo uguali.
+
+Nota da Montaggio, 9/11: coir lungo v5 APPROVATO da Manuel, file finale su Drive montati/coir/VociVere_coir_long_4K.mp4 (6:45).
+Come il v4 (stesse immagini e tempi, capitoli invariati); cambia solo l'audio della frase di chiusura: ora è la
+registrazione pulita di Manuel (assets/voce/chiusura_vocivere.m4a, da usare in tutti i prossimi lunghi). Verticale
+"indietro": il primo titolo sparisce quando entra "All'indietro". Verticale "premilla": il viso non è più coperto dalle
+scritte. Per Copy: nei sottotitoli it/en la frase finale ora dura ~0.6 s in più (da 6:30.8 a 6:36.8 circa).
