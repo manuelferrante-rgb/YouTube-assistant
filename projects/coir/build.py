@@ -692,7 +692,7 @@ def indietro():
     N5 = vphrase(59.41, 61.24, "Un pezzo, poi un altro. Tutto il giorno.")
     N6 = vphrase(61.51, 64.24, "Lei è Mary. La corda che ha in mano diventerà un tappeto.")
     say(N1, [(r.own(C("0069"), 0.0, cx=0.4), None)])
-    r.title(0.0, r.t + 0.3, "280 pezzi in 8 ore", "Tag", 400)
+    r.title(0.0, r.t, "280 pezzi in 8 ore", "Tag", 400)       # sparisce quando entra "All'indietro" (Manuel 9/11)
     t1b = say(N1b, [(r.own(C("0074"), 0.0, cx=0.45), None)], pause=PAUSE)
     r.title(t1b, r.t, "All'indietro", "Tag", 400)
     say(N2, [(r.own(C("0074"), 1.2, cx=0.45), None)])
