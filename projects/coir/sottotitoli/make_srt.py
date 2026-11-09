@@ -91,7 +91,7 @@ S = [
  (385.4, 390.3, "Non perché manchi chi lo sa fare: perché qui\ni giovani non vengono più, per quattro euro al giorno.", "Not because no one knows how: because young people\nno longer come here, for four euros a day."),
  (390.5, 393.38, "Queste donne lo portano avanti da quarant'anni.", "These women have carried it on for forty years."),
  (393.5, 395.7, "Oggi, per qualche minuto, la voce è stata la loro.", "Today, for a few minutes, the voice was theirs."),
- (396.8, 401.79, "Il viaggio di Voci Vere, per dare voce a chi ne ha\npiù bisogno, continua. Seguimi per scoprire le prossime storie.", "The Voci Vere journey, giving a voice to those\nwho need it most, goes on. Follow me for the next stories."),
+ (396.8, 402.8, "Il viaggio di Voci Vere, per dare voce a chi ne ha\npiù bisogno, continua. Seguimi per scoprire le prossime storie.", "The Voci Vere journey, giving a voice to those\nwho need it most, goes on. Follow me for the next stories."),
 ]
 def shift(t):
     return t if t < 96 else t - 3 if t < 263 else t - 6
