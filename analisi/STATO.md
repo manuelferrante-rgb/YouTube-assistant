@@ -119,3 +119,13 @@ Insights ha giudicato dalla descrizione di Montaggio, senza riguardare i file.
   Decide Manuel. Verticali coir: tutti i primi fotogrammi vanno bene.
 - COIR ultimi 15 s: va bene la proposta di Montaggio, se Manuel è d'accordo (i volti li aveva chiesti lui il 7/11): volti all'inizio
   della frase di chiusura, poi la fabbrica di spalle e la laguna sotto la schermata finale, che altrimenti copre i volti.
+
+## Fatto il 9/11 (chat Insights session_01HtfbgytQCQCLucysNXetfy, chiusa il 9/11)
+- Revisione strumenti (`strumenti.md`): togliere FREESOUND_API_KEY e chiavi AWS (le toglie Manuel); prossima revisione 30/11.
+- Miniatura IA proposta da "Chiedi a Studio" per il mercato: scartata (`miniature.md`, nota 9/11).
+- Mercato, titolo e miniatura nuovi di Copy (`mercato.md`, ultima sezione): titolo "UN PESCE DA 50 CHILI IN INDIA" approvato;
+  miniatura M1 (la signora) approvata con "ALL'ASTA" più grande e da controllare l'uomo in verde sullo sfondo. Da misurare
+  7 giorni dopo il cambio: CTR (prima 3,1%) e vincitore del Test e confronto (se nessuno, tenere M1).
+- Risposta a Montaggio su coir v3, te v9, arthunkal, verticali (sezione sopra). Aperti per Manuel: v2 arthunkal (apre su
+  Manuel) e ultimi 15 s del coir.
+- Promemoria spostati sulla chat nuova: dati arthunkal 17/11 e 22/11, revisione strumenti 30/11.
