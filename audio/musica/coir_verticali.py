@@ -18,6 +18,18 @@ from coir import CH, archi, spiccato, onda, piano_m  # noqa: E402
 VIDEO = {
     "teaser": dict(prog=["Fm", "Db", "Fsus", "Fm", "Db", "Ab", "Eb", "Fsus"], bars=1,
                    bpm={"A": 92, "B": 88, "C": 96}, nota="acqua, attesa"),
+    # sobria: armonia ferma (due accordi per giro), meno note; la rivelazione (sorriso in camera) si apre in la bemolle
+    "madeinindia": dict(prog=["Fm", "Fm", "Db", "Eb", "Fm", "Cm", "Db", "Eb"], bars=1,
+                        bpm={"A": 88, "B": 84, "C": 92}, nota="sobria", aperto="Fm", riv="Ab"),
+    # passi lenti, regolare: un accordo ogni due battute, passo fermo; la rivelazione (la fila) si apre in mi bemolle
+    "indietro": dict(prog=["Fm", "Eb", "Db", "Eb"], bars=2, bpm={"A": 84, "B": 80, "C": 88}, nota="passi lenti",
+                     aperto="Fsus", riv="Eb"),
+    # calda, intima: armonia che gira sul maggiore (re bemolle, la bemolle); rivelazione su Premilla in re bemolle
+    "premilla": dict(prog=["Db", "Ab", "Fm", "Eb", "Db", "Ab", "Bbm", "Fsus"], bars=1,
+                     bpm={"A": 80, "B": 76, "C": 84}, nota="calda, intima", aperto="Db", riv="Db"),
+    # la più spoglia, niente tristezza: accordi lunghi, si apre in la bemolle (luce) sulle donne sedute
+    "1975": dict(prog=["Fm", "Db", "Ab", "Eb"], bars=2, bpm={"A": 84, "B": 80, "C": 88}, nota="spoglia",
+                 aperto="Fm", riv="Ab"),
 }
 CUE_DUR = {"gancio": 3.5, "rivelazione": 4.5, "chiusura": 5.5}
 
@@ -29,11 +41,11 @@ def musica(video, stile, dur=25.0):
     return coir.brano("_v", stile, din=True)
 
 
-def cue(kind, stile, bpm=92):
+def cue(kind, stile, bpm=92, aperto="Fsus", riv="Db"):
     """Segni brevi in fa minore. A archi + spiccato, B piano, C pizzicato + archi a ondate."""
     beat = 60 / bpm; T = Track(CUE_DUR[kind])
     if kind == "gancio":                # calmo, niente colpi: si apre e resta sospeso (Fsus)
-        ch = CH["Fsus"]
+        ch = CH[aperto]
         for j, n in enumerate(ch[2:]):
             T.add(archi(n + 12, 3.2, 3200, att=0.9, rel=1.0), 0.0, 0.05, pan=-0.4 + j * 0.4)
         if stile == "A":
@@ -51,7 +63,7 @@ def cue(kind, stile, bpm=92):
     if kind == "rivelazione":           # il fatto: sospensione che si apre su re bemolle maggiore
         for j, n in enumerate(CH["Fsus"][2:]):
             T.add(archi(n + 12, 1.6, 3000, att=0.4, rel=0.3), 0.0, 0.045, pan=-0.4 + j * 0.4)
-        for j, n in enumerate(CH["Db"][1:]):
+        for j, n in enumerate(CH[riv][1:]):
             T.add(archi(n + 12, 3.0, 3400, att=0.3, rel=1.5), 1.3, 0.05, pan=-0.45 + j * 0.3)
         if stile == "A":
             for s_ in range(8):
@@ -122,16 +134,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("video", choices=list(VIDEO)); ap.add_argument("cosa"); ap.add_argument("a"); ap.add_argument("b", nargs="?")
     a = ap.parse_args()
-    bpm = VIDEO[a.video]["bpm"]
+    v = VIDEO[a.video]; bpm = v["bpm"]
+    kw = dict(aperto=v.get("aperto", "Fsus"), riv=v.get("riv", "Db"))
     if a.cosa != "bozze":
-        x = musica(a.video, a.a) if a.cosa == "musica" else cue(a.cosa, a.a, bpm[a.a])
+        x = musica(a.video, a.a) if a.cosa == "musica" else cue(a.cosa, a.a, bpm[a.a], **kw)
         return scrivi(x, a.b)
     os.makedirs(a.a, exist_ok=True)
     for cosa in ("musica", "gancio", "rivelazione", "chiusura"):
         files = []
         for s in "ABC":
             w = f"{a.a}/{a.video}_{cosa}_{s}.wav"
-            scrivi(musica(a.video, s) if cosa == "musica" else cue(cosa, s, bpm[s]), w)
+            scrivi(musica(a.video, s) if cosa == "musica" else cue(cosa, s, bpm[s], **kw), w)
             flac(w, w[:-4] + ".flac", -20 if cosa == "musica" else -18)
             files.append((s, w[:-4] + ".flac"))
         mp4_bozze(files, f"coir {a.video} - {cosa}", f"{a.a}/BOZZE_{a.video}_{cosa}.mp4")
