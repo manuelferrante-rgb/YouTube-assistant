@@ -73,3 +73,10 @@ servono; sotto chi parla niente o musica molto bassa; niente tappeto basso, pass
   l'ok di Manuel sul montaggio; se i tempi cambiano, rigenerarla. `fabbrica_provvisorio` da sostituire se arriva una
   registrazione vera. Il reel del bucato (105047, 105115): suono vero dell'acqua, musica leggera mai triste se serve.
 - Video nuovi: dal prossimo, Manuel apre chat nuove per video ("Audio - <video>").
+
+## coir verticali (9/11, chat Audio session_01HtfbgznfgQLyxms46EphZT)
+CONSEGNATI e approvati da Manuel: 5 verticali con musica e segni v2 (un suono per reel, `V2` in
+`audio/musica/coir_verticali.py`), montati da Audio senza Montaggio (Manuel: "ci pensi tu") con
+`projects/coir/audio/verticali.py`: video approvato copiato senza ricodifica + audio rifatto, voce identica.
+Su Drive montati/coir al posto dei precedenti. Lezioni di Manuel: musica dei reel MOLTO bassa (0.01 sotto la voce),
+mai toccare voce o audio di Montaggio, e ogni reel deve avere un suono suo (strumento, tonalità, chiusura diversi).
