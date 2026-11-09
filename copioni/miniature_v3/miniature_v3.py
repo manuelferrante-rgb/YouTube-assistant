@@ -135,7 +135,7 @@ def make(name, video, lang, src, t, cx, cy, zoom, layout, text, night=False, fli
     out.convert('RGB').save(o, quality=93); return o
 
 A, T, C = 'work/mini/raw_arth/', 'work/mini/raw_te/', 'work/coir/raw/'
-def g(d, n): return [d + f for f in os.listdir(d) if f'_{n}_' in f][0]
+def g(d, n): return next((d + f for f in (os.listdir(d) if os.path.isdir(d) else []) if f'_{n}_' in f), d + n)
 F = 'work/volti/f/'
 J = {
  # ARTHUNKAL
