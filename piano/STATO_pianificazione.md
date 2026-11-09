@@ -11,7 +11,7 @@ Da leggere all'avvio di ogni nuova chat Pianificazione, dopo CLAUDE.md e `regole
 
 ## Calendario (la verità è in `piano/calendario.md`, tabella "CALENDARIO COMPLETO v2", rifatta il 7/11 come v3)
 - Usciti: presentazione, mercato (teaser 29/10, lungo 1/11, 2 reel, carosello "fatto" 7/11). Le stories 1 e 2 del mercato e autostop NON erano usciti: ripianificati.
-- Regole: EXTRA (reel esterni ai lunghi, più clickbait: Diwali, autostop, meenakshi, comunismo, kallu, panni, comorin x4, bucato, treno, extra da scorta) distanziati
+- Regole: EXTRA (reel esterni ai lunghi, più clickbait: autostop, meenakshi, comunismo, kallu, panni, comorin x4, bucato, treno, extra da scorta) distanziati
   tra loro di almeno 3 giorni. Gli altri giorni si coprono con teaser, lungo, reel, stories, caroselli dei pacchetti; i giorni vuoti vanno bene.
 - Pacchetto di ogni lungo: 1 teaser (sabato prima), 1 lungo (domenica), 3 reel, 2 caroselli ("fatto" e "I volti", anche come post YouTube), 3 set di stories da 6.
 - Insights 8/11: il reel più forte di ogni lungo va su YouTube Shorts il prima possibile (lunedì dopo il lungo). Non è fisso quale: lo decidono Manuel e Insights caso
@@ -24,7 +24,7 @@ Da leggere all'avvio di ogni nuova chat Pianificazione, dopo CLAUDE.md e `regole
 - `erosione`: famiglie sfollate dall'erosione. `piano/erosione.md`. Zone: Anchuthengu, Poothura, Perumathura, Nedunganda, Muthalapozhi. Manuel chiede nei posti dove
   sono le case colpite. Forse girato lunedì 9/11. Sarà lungo B o C: decidi con lui dopo il girato.
 - `migranti`: da girare a Varkala (9-10/11) e Kochi/Perumbavoor (11-12/11), `piano/migranti.md`.
-- `diwali`: girato dom 8/11, reel extra il 10/11 (`piano/diwali.md`).
+- `diwali`: ANNULLATO il 9/11 (Manuel non è riuscito a registrarlo, nessun girato). Il 10/11 è libero.
 - `kanyakumari`: Manuel ha girato i 4 reel `comorin`; KDFSF, Siluvai Nagar e donne del mare: non so se ha girato, `piano/kanyakumari.md`. ONG vicino a Varkala: nessuna verificata.
 - `treno`: reel già fatto da Manuel (in galleria), extra il 27/12.
 - Idea da Manuel (5/11): una baraccopoli per un altro video. Non ha detto quale. Non trovata una vera "slum" a Varkala nelle fonti.

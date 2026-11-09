@@ -17,7 +17,7 @@ consegnato, programmato, pubblicato.
 | autostop | 1 reel (Manuel sul motorino di uno sconosciuto che lo riporta a casa) | PRONTO (Manuel, 4/11); frase a schermo da Copy; va su entrambi i profili, personale e Voci Vere (Manuel, 4/11) | proposta ven 6/11 su Voci Vere | nuovo (4/11) |
 | coir | lungo orizzontale + teaser + 3 reel + 2 caroselli + 3 set di stories | GIRATO il 6/11 (Anathalavattom, Chirayinkeezhu; formato reporter come `te`); girato su Drive e `girato.md` di Montaggio da fare; Copy: domande, parti in camera, VO | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
 | migranti | lungo orizzontale + pacchetto completo | pianificato, da girare a Varkala (9-10/11) e Kochi/Perumbavoor (11-12/11) | proposta lungo B dom 10/1 | `piano/migranti.md` |
-| diwali | 1 reel o scena dentro `migranti` | pianificato, da girare dom 8/11 | da decidere dopo il montato | `piano/diwali.md` |
+| diwali | 1 reel o scena dentro `migranti` | ANNULLATO (8/11, Manuel: non è riuscito a registrarlo) | nessuno | `piano/diwali.md` (archiviato) |
 | kanyakumari | donne del mare e ONG del posto (verticale/materiale) | girato 3-4/11? Manuel non ha ancora detto cosa ha fatto con KDFSF e Siluvai Nagar | da decidere | `piano/kanyakumari.md` |
 
 ## Piano rifatto il 29/10 (Manuel): lunghi ogni 2-3 settimane, un contenuto un giorno sì e uno no
@@ -124,7 +124,7 @@ le fonti dicono che si dice che si incontrino, un sito lo chiama credenza popola
 | mar 24/11 | comorin: canna da zucchero | solo se Voci Vere; se va sul profilo personale, il giorno resta libero |
 | ven 27/11 | comorin: cocco | solo se Voci Vere; se personale, resta libero (28/11 teaser te) |
 | mer 2/12 | comorin: tre mari (loop) | tra te reel 1 (1/12) e reel 2 (3/12) |
-Gli slot extra del 11/12, 14/12 e 17/12 restano liberi per coir, diwali e kanyakumari (materiale girato 2-12/11).
+Gli slot extra del 11/12, 14/12 e 17/12 restano liberi per coir e kanyakumari (materiale girato 2-12/11).
 Regola usata: mai più di tre giorni di fila con un contenuto; 10/11 e 13/11 non si usano perché con comunismo (12/11),
 meenakshi (11/11), teaser arthunkal (14/11) e lungo (15/11) farebbero quattro giorni di fila.
 
@@ -153,9 +153,9 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | Giorno | Uscita | Nota |
 |---|---|---|
 | sab 7/11 | mercato: carosello "fatto" (+ post YouTube) | PUBBLICATO (Manuel 7/11) |
-| dom 8/11 | mercato: stories set 1 | slittato dal 2/11; Diwali: Manuel gira |
+| dom 8/11 | mercato: stories set 1 | slittato dal 2/11 |
 | lun 9/11 | mercato: reel 3 |  |
-| mar 10/11 | EXTRA Diwali: reel | montato veloce |
+| mar 10/11 | (libero: Diwali annullato) | giorno vuoto, va bene |
 | mer 11/11 | mercato: stories set 2 | slittato dal 6/11 |
 | gio 12/11 | mercato: carosello "I volti" (+ post YouTube) e stories set 3 | unico giorno con due uscite |
 | ven 13/11 | EXTRA autostop | slittato dal 6/11; entrambi i profili |
@@ -187,7 +187,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | gio 10/12 | te: carosello "I volti" (+ post YouTube) |  |
 | sab 12/12 | EXTRA comorin: canna da zucchero | entrambi i profili |
 | mar 15/12 | EXTRA comorin: cocco | entrambi i profili |
-| ven 18/12 | EXTRA da scegliere dal girato (Kochi, Varkala o Diwali) | con Manuel |
+| ven 18/12 | EXTRA da scegliere dal girato (Kochi o Varkala) | con Manuel |
 | sab 19/12 | lungo A (coir): teaser |  |
 | dom 20/12 | LUNGO A (coir) |  |
 | lun 21/12 | lungo A: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
@@ -272,3 +272,5 @@ dei 5 verticali), carosello "fatto" (8 slide, 3 video), carosello "I volti" (7),
 Titoli e miniature v3 approvati anche per arthunkal e te (pacchetti e TESTI su Drive aggiornati, vecchie miniature in miniatura/vecchie/).
 
 Nota da Pianificazione, 8/11 (Manuel): il reel più forte non è fisso, dipende: lo decidono caso per caso Manuel e Insights. Il lunedì dopo il lungo è lo slot per quel reel, non necessariamente il reel 1. Il motivo esplicito per andare dal Short al lungo (didascalia, commento fissato) è ancora da capire, non deciso: da provare su arthunkal e misurare.
+
+Nota da Pianificazione, 9/11 (Manuel): DIWALI ANNULLATO. L'8/11 Manuel non è riuscito a registrarlo, nessun girato. Tolto dal calendario: il 10/11 resta libero (era l'extra Diwali) e l'extra del 18/12 si sceglie tra Kochi e Varkala. Nessuna chat deve montarlo, scriverne testi o pianificarlo. `piano/diwali.md` resta solo come archivio.
