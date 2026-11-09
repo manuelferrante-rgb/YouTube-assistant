@@ -64,42 +64,65 @@ Chapters
 
 #Kerala #India #VociVere
 
-### Verticali: titolo Short (= prima riga IG), didascalia IG, descrizione Short YT
-V1 teaser (sab 7/11)
-In migliaia a piedi alle 2:30 di notte, pregando 🇮🇳
-Costa del Kerala, India. Si parte da Kalavoor a mezzanotte e si cammina sulla spiaggia fino alla basilica di
-Arthunkal: 13 km recitando il rosario, senza interromperlo mai.
-Tu li cammineresti, 13 km di notte?
-Domenica il video completo.
-#kerala #india #vocivere #arthunkal #pellegrinaggio
-YT: Di notte, sulla costa del Kerala, migliaia di persone camminano 13 km pregando senza fermarsi. Perché lo fanno?
+### Verticali v3 (8/11): titolo Short, didascalia IG, descrizione e commento fissato YT
+Regole (Insights + Manuel, 8/11): titolo dello Short = fatto concreto con un numero o un oggetto; tutto in italiano anche
+su IG (scritte, didascalie, hashtag), niente sottotitoli in inglese. Sotto i reel dopo il lungo: riga 1 il fatto, poi una
+frase con una cosa precisa che si scopre solo nel lungo (stessa frase nel commento fissato su YouTube, dove i link non si
+cliccano: il collegamento è il video correlato che mette Manuel). Su IG chiude "Video completo sul canale YouTube Voci Vere,
+link in bio." Teaser: dice cosa c'è nel lungo senza il finale; l'annuncio solo in fondo, mai nel titolo.
+Hashtag con le parole del pubblico: #india #kerala #viaggio #vitalocale + uno sul tema.
 
-V2 statua
-Una statua di Milano sulla costa del Kerala 🇮🇳
-Arthunkal, India. La chiesa la ricostruisce nel 1584 un gesuita italiano, padre Giacomo Fenicio: qui lo chiamano
-ancora Veluthachan, il padre bianco. Nel 1647 arriva da Milano la statua di San Sebastiano.
+### V1 teaser (VociVere_arthunkal_v1_teaser_1080x1920.mp4)
+Titolo Short / prima riga IG:
+13 km a piedi, di notte, recitando il rosario 🇮🇳
+Didascalia IG:
+13 km a piedi, di notte, recitando il rosario 🇮🇳
+Si parte a mezzanotte da Kalavoor e si cammina lungo la costa del Kerala fino alla basilica di Arthunkal.
+Cammineresti 13 km di notte?
+Nel video: chi cammina, chi dà da mangiare a chi passa, e perché in questa chiesa c'è una statua arrivata da Milano.
+Domenica il video completo sul canale YouTube Voci Vere.
+#india #kerala #viaggio #vitalocale #pellegrinaggio
+Descrizione Short YT: Si parte a mezzanotte da Kalavoor e si cammina lungo la costa del Kerala fino alla basilica di Arthunkal. Cammineresti 13 km di notte?
+Commento fissato YT: Nel video: chi cammina, chi dà da mangiare a chi passa, e perché in questa chiesa c'è una statua arrivata da Milano.
+
+### V2 statua (VociVere_arthunkal_v2_statua_1080x1920.mp4)
+Titolo Short / prima riga IG:
+Una statua arrivata da Milano nel 1647, sulla costa del Kerala 🇮🇳
+Didascalia IG:
+Una statua arrivata da Milano nel 1647, sulla costa del Kerala 🇮🇳
+Arthunkal, India. La chiesa la ricostruisce nel 1584 un gesuita italiano: qui lo chiamano ancora Veluthachan, il padre bianco.
 Lo sapevi?
-Il video completo è sul canale.
-#kerala #india #vocivere #arthunkal #milano
-YT: Nel 1647 una statua scolpita a Milano arriva in una chiesa sul mare del Kerala. Chi ce l'ha portata fin qui?
+Perché ogni anno centinaia di migliaia di persone arrivano qui a piedi, di notte: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #pellegrinaggio
+Descrizione Short YT: Arthunkal, India. La chiesa la ricostruisce nel 1584 un gesuita italiano: qui lo chiamano ancora Veluthachan, il padre bianco. Lo sapevi?
+Commento fissato YT: Perché ogni anno centinaia di migliaia di persone arrivano qui a piedi, di notte: è nel video sul canale.
 
-V3 persona
-"Lì succedono tanti miracoli" 🇮🇳
-Sulla strada per Arthunkal, in Kerala, le chiedo cosa significa per lei questo cammino. Non è la prima volta che
-lo fa: "È fede, è credere. Chi partecipa ci trova qualcosa. Un po' di felicità."
+### V3 persona (VociVere_arthunkal_v3_persona_1080x1920.mp4)
+Titolo Short / prima riga IG:
+13 km di notte per la sua fede: «Lì succedono tanti miracoli» 🇮🇳
+Didascalia IG:
+13 km di notte per la sua fede: «Lì succedono tanti miracoli» 🇮🇳
+Sulla strada per Arthunkal, in Kerala, le chiedo cosa significa per lei questo cammino. Non è la prima volta che lo fa.
 Tu hai mai fatto un cammino così?
-Tutta la storia su YouTube, link in bio.
-#kerala #india #vocivere #arthunkal #fede
-YT: Una pellegrina in cammino verso Arthunkal, in Kerala, ci spiega perché lo fa. Tu cosa cercheresti in 13 km?
+Chi aspetta i pellegrini lungo la strada, con acqua e cibo gratis per tutti: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #pellegrinaggio
+Descrizione Short YT: Sulla strada per Arthunkal, in Kerala, le chiedo cosa significa per lei questo cammino. Non è la prima volta che lo fa. Tu hai mai fatto un cammino così?
+Commento fissato YT: Chi aspetta i pellegrini lungo la strada, con acqua e cibo gratis per tutti: è nel video sul canale.
 
-V4 come funziona
+### V4 come funziona (VociVere_arthunkal_v4_come_funziona_1080x1920.mp4)
+Titolo Short / prima riga IG:
 13 km di rosario senza mai smettere 🇮🇳
-Si chiama Akhanda Japamala, il rosario ininterrotto. Dal santuario di Kreupasanam, a Kalavoor, alla basilica di
-Arthunkal, lungo la costa del Kerala. La prima volta, nel 2002, erano poche centinaia.
+Didascalia IG:
+13 km di rosario senza mai smettere 🇮🇳
+Si chiama Akhanda Japamala, il rosario ininterrotto: dal santuario di Kalavoor alla basilica di Arthunkal, lungo la costa del Kerala.
 Ce la faresti a non fermarti mai?
-Video fuori sul canale.
-#kerala #india #vocivere #arthunkal #rosario
-YT: Dal 2002 una preghiera che non si interrompe mai attraversa 13 km di costa del Kerala. Come si fa a non fermarsi?
+Com'è nato, quando nel 2002 erano poche centinaia, e chi cammina oggi: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #pellegrinaggio
+Descrizione Short YT: Si chiama Akhanda Japamala, il rosario ininterrotto: dal santuario di Kalavoor alla basilica di Arthunkal, lungo la costa del Kerala. Ce la faresti a non fermarti mai?
+Commento fissato YT: Com'è nato, quando nel 2002 erano poche centinaia, e chi cammina oggi: è nel video sul canale.
 
 ### Carosello (mercoledì, dopo il lungo)
 Immagini: montati/arthunkal/carosello/01-08 (ultima slide "Fuori ora il video su YouTube").

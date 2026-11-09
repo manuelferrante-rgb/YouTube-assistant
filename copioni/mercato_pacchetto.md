@@ -20,7 +20,7 @@ Cristiani, induisti, musulmani: "Un posto in pace" 🇮🇳
 Marari, costa del Kerala, India. Un pescatore ci racconta la vita qui: tante religioni, che vanno d'accordo.
 "Amici", dice. E quando c'è la festa, per tutti c'è il cibo gratis.
 Il video completo è sul canale.
-#kerala #india #vocivere #marari #pescatori
+#india #kerala #viaggio #vitalocale #mercato
 Descrizione Short YT:
 Sulla spiaggia di Marari, in Kerala, un pescatore ci spiega com'è vivere dove convivono tre religioni. Dove vivi tu è così?
 
@@ -33,7 +33,7 @@ Mercato di Mararikulam, Kerala, India. Niente tetto, niente banchi: le barche ar
 sulla sabbia. Quella mattina ne arriva uno da 50-55 chili, ci dicono lì. "Veramente come una persona."
 Hai mai visto un pesce così grande?
 Tutta la storia su YouTube, link in bio.
-#kerala #india #vocivere #marari #mercatodelpesce
+#india #kerala #viaggio #vitalocale #mercato
 Descrizione Short YT:
 Ogni mattina, a Marari, il pesce si vende all'asta direttamente sulla spiaggia. Quella mattina ne arriva uno da 50 chili. Quanto pensi che valga?
 
@@ -45,8 +45,10 @@ Alle 3 di notte è già in mare. Da trent'anni 🇮🇳
 Spiaggia di Marari, Kerala, India. Sveglia alle tre, in mare alle quattro, alle otto si torna a riva con il pesce
 per il mercato. Ogni giorno.
 Tu ti alzeresti alle 3?
-Video fuori sul canale.
-#kerala #india #vocivere #marari #pescatori
+Il pesce da 50 chili venduto all'asta sulla sabbia, alle 8 del mattino: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #mercato
+Commento fissato (uguale su YouTube e IG, Manuel 9/11): Il pesce da 50 chili venduto all'asta sulla sabbia, alle 8 del mattino: è nel video completo sul canale YouTube Voci Vere.
 Descrizione Short YT:
 Un pescatore di Marari, in Kerala, ci racconta la sua giornata: comincia alle tre di notte, da trent'anni. Tu ce la faresti?
 
@@ -63,7 +65,7 @@ Il mercato del pesce di Marari, in Kerala, non ha tetto né banchi: le barche ar
 all'asta sulla sabbia. Prima, la sveglia alle 3.
 Tu ti alzeresti alle 3? Scrivilo nei commenti.
 Il video completo è uscito sul canale, link in bio.
-#kerala #india #vocivere #mercatodelpesce #marari
+#india #kerala #viaggio #vitalocale #mercato
 Post YouTube (scheda Community, stesse 8 immagini):
 Pesava come una persona 🇮🇳 Il mercato del pesce di Marari, in Kerala: niente tetto, niente banchi, aste sulla
 sabbia. Tu ti alzeresti alle 3 per esserci? Il video completo è sul canale.
@@ -75,3 +77,12 @@ Persone del posto, Manuel assente. Drive montati/mercato/miniatura/, repo copion
 2. v4_2_signora_asta: la signora del mercato che sorride, "ALL'ASTA SULLA SABBIA" (consigliata).
 3. v4_3_asta_sabbia: chi compra chino sulle ceste, stesso testo.
 La 2 e la 3 hanno lo stesso testo: il test confronta solo la persona.
+
+## TITOLO E MINIATURE v3 (Copy, 9/11, dopo l'analisi di Insights a 7 giorni; Manuel sceglie la signora)
+Titolo IT: UN PESCE DA 50 CHILI IN INDIA 🇮🇳 il mercato del pesce sulla spiaggia
+Titolo EN: A 50-KILO FISH IN INDIA 🇮🇳 the fish market on the beach
+Perché: l'intro del lungo apre proprio su "Quello enorme pesava 50-55 chili... come una persona" (0:05); 50 chili è il fatto
+dello Short migliore (60,8%); "mercato del pesce" sono le parole del pubblico che ci trova (video di mercati in Sri Lanka).
+Miniature (Test e confronto, Drive montati/mercato/miniatura/, le vecchie in vecchie/; generatore copioni/miniature_v3/mercato_v3.py):
+1_M1_signora (principale, scelta di Manuel; 9/11 con Insights: "ALL'ASTA" grande come "SULLA SABBIA"; niente sfocature, Manuel) "ALL'ASTA / SULLA SABBIA" | "AUCTIONED / ON THE SAND";
+2_M2_mattina "OGNI MATTINA / ALLE 8" | "EVERY MORNING / AT 8 A.M."; 3_M3_asta "NIENTE TETTO, / NIENTE BANCHI" | "NO ROOF, / NO STALLS".

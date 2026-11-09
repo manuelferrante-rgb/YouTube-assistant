@@ -30,3 +30,9 @@ Decisione di Manuel (4/11): copertine più forti, con le persone del posto e non
 5. Ogni lungo esce con 2-3 miniature in "Test e confronto" di YouTube Studio (Manuel le carica), così si vede
    davvero quale funziona invece di indovinare. Una con la persona del posto da sola, una con la persona e
    Manuel piccolo.
+
+Nota 9/11 (Manuel ha mostrato un'idea di miniatura generata da "Chiedi a Studio" di YouTube per il mercato: Manuel grande a
+destra, pescatori che spingono una barca all'alba, "ORE 03:00"): scartata. Schema da blogger già tolto il 4/11, scritta che
+ripete il titolo ("Sveglia alle 3"), scena e persone generate dall'IA e non del girato (Manuel non usa immagini IA, 27/10),
+e promette l'alba invece dell'asta, che è il picco del lungo (3:26) e il reel migliore. Le idee di Studio si usano solo come
+spunto; la miniatura si fa sempre da un fotogramma vero.

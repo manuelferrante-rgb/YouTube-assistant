@@ -17,7 +17,8 @@ consegnato, programmato, pubblicato.
 | autostop | 1 reel (Manuel sul motorino di uno sconosciuto che lo riporta a casa) | PRONTO (Manuel, 4/11); frase a schermo da Copy; va su entrambi i profili, personale e Voci Vere (Manuel, 4/11) | proposta ven 6/11 su Voci Vere | nuovo (4/11) |
 | coir | lungo orizzontale + teaser + 3 reel + 2 caroselli + 3 set di stories | IN APPROVAZIONE (Montaggio 7/11): lungo v3 4K 6:45 (1x, VO13-18, senza campi larghi vuoti, Insights 8/11) `VociVere_coir_long_4K.mp4` + 5 verticali 1x (teaser, made_in_india, indietro, premilla, 1975) in montati/coir della cartella Drive Coir; capitoli in `projects/coir/capitoli.md`, scelte in `projects/coir/girato.md`. Da segnare APPROVATO quando Manuel dà l'ok | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
 | migranti | lungo orizzontale + pacchetto completo | pianificato, da girare a Varkala (9-10/11) e Kochi/Perumbavoor (11-12/11) | proposta lungo B dom 10/1 | `piano/migranti.md` |
-| diwali | 1 reel o scena dentro `migranti` | pianificato, da girare dom 8/11 | da decidere dopo il montato | `piano/diwali.md` |
+| diwali | 1 reel o scena dentro `migranti` | ANNULLATO (8/11, Manuel: non è riuscito a registrarlo) | nessuno | `piano/diwali.md` (archiviato) |
+| bilancio | lungo parlato con B-roll di tutto il viaggio + pacchetto | SICURO (Manuel 9/11), da montare a metà gennaio | dom 24/1 (lungo C) | `piano/bilancio.md` |
 | kanyakumari | donne del mare e ONG del posto (verticale/materiale) | girato 3-4/11? Manuel non ha ancora detto cosa ha fatto con KDFSF e Siluvai Nagar | da decidere | `piano/kanyakumari.md` |
 
 ## Piano rifatto il 29/10 (Manuel): lunghi ogni 2-3 settimane, un contenuto un giorno sì e uno no
@@ -124,7 +125,7 @@ le fonti dicono che si dice che si incontrino, un sito lo chiama credenza popola
 | mar 24/11 | comorin: canna da zucchero | solo se Voci Vere; se va sul profilo personale, il giorno resta libero |
 | ven 27/11 | comorin: cocco | solo se Voci Vere; se personale, resta libero (28/11 teaser te) |
 | mer 2/12 | comorin: tre mari (loop) | tra te reel 1 (1/12) e reel 2 (3/12) |
-Gli slot extra del 11/12, 14/12 e 17/12 restano liberi per coir, diwali e kanyakumari (materiale girato 2-12/11).
+Gli slot extra del 11/12, 14/12 e 17/12 restano liberi per coir e kanyakumari (materiale girato 2-12/11).
 Regola usata: mai più di tre giorni di fila con un contenuto; 10/11 e 13/11 non si usano perché con comunismo (12/11),
 meenakshi (11/11), teaser arthunkal (14/11) e lungo (15/11) farebbero quattro giorni di fila.
 
@@ -153,9 +154,9 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | Giorno | Uscita | Nota |
 |---|---|---|
 | sab 7/11 | mercato: carosello "fatto" (+ post YouTube) | PUBBLICATO (Manuel 7/11) |
-| dom 8/11 | mercato: stories set 1 | slittato dal 2/11; Diwali: Manuel gira |
+| dom 8/11 | (nessuna uscita) | stories set 1 non pubblicate, spostate al 10/11 |
 | lun 9/11 | mercato: reel 3 |  |
-| mar 10/11 | EXTRA Diwali: reel | montato veloce |
+| mar 10/11 | mercato: stories set 1 | slittato dall'8/11 (Manuel 9/11) |
 | mer 11/11 | mercato: stories set 2 | slittato dal 6/11 |
 | gio 12/11 | mercato: carosello "I volti" (+ post YouTube) e stories set 3 | unico giorno con due uscite |
 | ven 13/11 | EXTRA autostop | slittato dal 6/11; entrambi i profili |
@@ -187,7 +188,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | gio 10/12 | te: carosello "I volti" (+ post YouTube) |  |
 | sab 12/12 | EXTRA comorin: canna da zucchero | entrambi i profili |
 | mar 15/12 | EXTRA comorin: cocco | entrambi i profili |
-| ven 18/12 | EXTRA da scegliere dal girato (Kochi, Varkala o Diwali) | con Manuel |
+| ven 18/12 | EXTRA da scegliere dal girato (Kochi o Varkala) | con Manuel |
 | sab 19/12 | lungo A (coir): teaser |  |
 | dom 20/12 | LUNGO A (coir) |  |
 | lun 21/12 | lungo A: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
@@ -214,15 +215,15 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | lun 18/1 | lungo B: reel 3 |  |
 | mer 20/1 | lungo B: carosello "I volti" (+ post YouTube) |  |
 | ven 22/1 | EXTRA dalla scorta |  |
-| sab 23/1 | lungo C: teaser | solo se girato e montato |
-| dom 24/1 | LUNGO C (l'altro tra migranti ed erosione) | solo se girato e montato |
-| lun 25/1 | lungo C: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
-| mar 26/1 | lungo C: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
-| mer 27/1 | lungo C: stories set 3 |  |
-| gio 28/1 | lungo C: reel 2 |  |
-| ven 29/1 | lungo C: stories set 2 |  |
-| sab 30/1 | lungo C: carosello (+ post YouTube) |  |
-| dom 31/1 | lungo C: reel 3 | programmato prima della partenza per il Vietnam |
+| sab 23/1 | bilancio: teaser | SICURO (Manuel 9/11) |
+| dom 24/1 | LUNGO C = BILANCIO "Un mese in India" (`piano/bilancio.md`) | SICURO (Manuel 9/11); sostituisce migranti/erosione come lungo C |
+| lun 25/1 | bilancio: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 26/1 | bilancio: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
+| mer 27/1 | bilancio: stories set 3 |  |
+| gio 28/1 | bilancio: reel 2 |  |
+| ven 29/1 | bilancio: stories set 2 |  |
+| sab 30/1 | bilancio: carosello (+ post YouTube) |  |
+| dom 31/1 | bilancio: reel 3 | programmato prima della partenza per il Vietnam |
 
 Nota da Pianificazione, 4/11 (Manuel): cocco e canna di comorin escono anche loro su entrambi i profili (personale e Voci Vere). Quindi tutti i reel mainstream (panni, autostop, cocco, canna) vanno su entrambi; le date 26/11 e 2/12 non sono più condizionate.
 Nota da Pianificazione, 4/11 (Manuel): strategia. Prima si pubblica (anche contenuti più leggeri), poi si dà al profilo una forma professionale e da "Voci Vere". Lo scopo principale, da non dimenticare: DARE VOCE A CHI NE HA PIU' BISOGNO. Ogni lungo e ogni tema nuovo (coir, migranti, ONG) va verificato contro questa frase.
@@ -324,3 +325,14 @@ Come il v4 (stesse immagini e tempi, capitoli invariati); cambia solo l'audio de
 registrazione pulita di Manuel (assets/voce/chiusura_vocivere.m4a, da usare in tutti i prossimi lunghi). Verticale
 "indietro": il primo titolo sparisce quando entra "All'indietro". Verticale "premilla": il viso non è più coperto dalle
 scritte. Per Copy: nei sottotitoli it/en la frase finale ora dura ~0.6 s in più (da 6:30.8 a 6:36.8 circa).
+
+Nota da Pianificazione, 9/11 (Manuel): DIWALI ANNULLATO. L'8/11 Manuel non è riuscito a registrarlo, nessun girato. Tolto dal calendario: il 10/11 resta libero (era l'extra Diwali) e l'extra del 18/12 si sceglie tra Kochi e Varkala. Nessuna chat deve montarlo, scriverne testi o pianificarlo. `piano/diwali.md` resta solo come archivio.
+Nota da Copy, 9/11: coir, lungo finale v4 (6:45): sottotitoli it/en rifatti sul montato e capitoli aggiornati (0:00 Made in India,
+0:18, 1:20, 2:48 Sotto la tettoia, 4:24 La fabbrica, 5:12 I nostri tappeti, 6:08 Chiusura), sostituiti su Drive montati/coir
+(sottotitoli/ e TESTI_titolo_descrizioni_verticali.txt). Il resto del pacchetto coir resta valido. Te v9 e arthunkal: niente da rifare.
+
+Nota da Pianificazione, 9/11 (Manuel): le stories set 1 del mercato NON sono uscite l'8/11. Spostate a mar 10/11. Il resto invariato: set 2 11/11, carosello "I volti" e set 3 12/11, autostop 13/11.
+
+Nota da Pianificazione, 9/11 (Manuel): NUOVO LUNGO SICURO `bilancio`: "Un mese in India, ti racconto la mia esperienza" (titolo provvisorio di Manuel, lo rifinisce Copy). Lungo parlato con B-roll di tutto il viaggio, importanza alle persone incontrate e ai video. Chiude dicendo che continua e la prossima tappa: Vietnam. Uscita orientativa fine gennaio: messo come lungo C, dom 24/1 (teaser 23/1, pacchetto 25-31/1, come la tabella). Migranti ed erosione: uno resta lungo B (10/1), l'altro non ha più lo slot del 24/1, va in reel/extra o dopo il Vietnam; decido dopo il girato. Dettagli in `piano/bilancio.md`.
+
+Nota da Pianificazione, 9/11 (Manuel): Manuel non sa se riesce a girare altro oltre ai lunghi già in lista. I 5 lunghi sono: arthunkal 15/11, te 29/11, coir 20/12, B 10/1, bilancio 24/1. Il minimo che regge il piano è questo. Regola: B è UNO solo tra migranti ed erosione, quello che Manuel riesce a girare meglio; non servono entrambi. Se non gira né l'uno né l'altro, il blocco di B (9-18/1) si riempie con reel dalla scorta (comorin, treno, panni, extra dal girato di Kochi e Varkala) e il bilancio resta il lungo di fine gennaio. Niente nuove idee di lungo finché questi non sono chiusi: ogni ripresa extra è un regalo, non un obbligo. Il bilancio si monta da piccoli parlati a camera + B-roll già girato, quindi non richiede riprese nuove oltre ai parlati.

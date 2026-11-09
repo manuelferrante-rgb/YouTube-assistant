@@ -1,6 +1,8 @@
 # Diwali a Varkala/Kerala, dom 8/11/2026 (nome breve: `diwali`)
 
-Stato: idea (Manuel, 1/11). Un reel o un pezzo dentro `migranti`, NON un lungo. Manuel è a Varkala (Taaraa Loca).
+Stato: ANNULLATO il 9/11 (Manuel: l'8/11 non è riuscito a registrarlo, nessun girato). Archivio, non usare.
+
+Stato precedente: idea (Manuel, 1/11). Un reel o un pezzo dentro `migranti`, NON un lungo. Manuel è a Varkala (Taaraa Loca).
 
 ## Fatti con fonte
 - Data 2026: domenica 8 novembre, festa pubblica in Kerala (OfficeHolidays, Hindutone). Altre pagine mettono ottobre:

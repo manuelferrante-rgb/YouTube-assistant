@@ -33,6 +33,24 @@ Proposta sulla decisione aperta: restare in italiano e dare a IG segnali italian
 - Dati IG del reel 3 mercato (9/11) e stories set 1 quando arrivano.
 - Schermate finali aggiunte da Manuel l'8/11 su mercato e arthunkal: misurare i clic a 7 giorni di arthunkal (22/11).
 
+## Fatto l'8/11 sera, dopo l'analisi (chat Insights session_01Htfbh2up7MM5nEfeMgD82f)
+- Risposte di Manuel: reel B con video correlato collegato (gli Shorts non portano al lungo nemmeno così); lingua per
+  ora tutta in italiano anche su IG (nota in `regole/copy.md`).
+- Regola di Manuel scritta in `regole/montaggio_documentario.md` (nota 8/11): inizio del lungo coerente con titolo e
+  miniatura (decisi da Copy e Manuel), niente B-roll larghi senza persone a metà video, non riempire se si accorcia.
+  Messaggio a Montaggio dato a Manuel: controllare arthunkal, te e coir (coir: B-roll a ~1:13, ~1:25, ~3:45; ultimi
+  10-15 s puliti per la schermata finale; primo fotogramma dei verticali = persona o gesto). Manuel sta programmando
+  arthunkal (15/11) e te (29/11): se Montaggio cambia i file, Manuel li ricarica.
+- Messaggio a Copy dato a Manuel: titolo degli Shorts = fatto con un numero; testo sotto i 3 verticali dopo il lungo
+  con una cosa precisa che si scopre solo nel lungo (YT: anche commento fissato; IG: "link in bio"); tutto in italiano;
+  parole chiave India, Kerala, vita locale, mercato, viaggio. I verticali restano curiosità complete con la sigla.
+- Schermata finale: sul mercato non c'era (primo video). Manuel la mette su mercato ("Caricamento più recente" +
+  Iscriviti; controllare che non mostri uno Short) e su arthunkal (video specifico: il mercato + Iscriviti).
+- Pagina del canale (video in evidenza per i nuovi visitatori, playlist Kerala, descrizione): Manuel la sistema dopo il 15/11.
+- Stories: con ~10 follower restano tutte DOPO il lungo (decisione invariata); valore attuale = "In evidenza" per chi
+  arriva sul profilo dai reel (una per video). Rivalutare un set PRIMA del lungo (sticker conto alla rovescia) quando
+  una storia supera le 100 visualizzazioni. Priorità: YouTube Shorts.
+
 ## Cosa è stato fatto (27/10-4/11, chat Insights session_01HtfbgyzAxUCZDsgATkknE1)
 - MERCATO, dati a 48 ore (YT lungo, YT Shorts, IG teaser e reel 1): `mercato.md`. Punti chiave: durata media
   1:43 (28%), 46 spettatori unici, 87% non iscritti, italiani 81%; buco tra 0:30 e 1:30 ("Il giorno prima"),
@@ -89,3 +107,25 @@ Proposta sulla decisione aperta: restare in italiano e dare a IG segnali italian
   A 7 giorni: confermare o smentire le lezioni di `mercato.md` (primo minuto, miniatura, primo fotogramma).
 - Da seguire: risultato del "Test e confronto" della nuova miniatura del mercato; dati dei 4 reel comorin quando
   escono (skip rate e invii per primi).
+
+## Risposta a Montaggio (8/11 sera, sul materiale rifatto dopo la nota dell'8/11)
+Insights ha giudicato dalla descrizione di Montaggio, senza riguardare i file.
+- COIR lungo v3 (6:45): APPROVATO. Promessa del titolo a 0:01-0:08, campi larghi vuoti tolti.
+- TÈ lungo v9 (6:26): APPROVATO. Domanda della miniatura T1 a 0:15, risposta a 3:28, B-roll vuoti sostituiti da persone.
+- ARTHUNKAL lungo: va bene così. Il titolo 2 promette la preghiera di notte, che si vede a 0:07-0:09: è coerente. L'anziano
+  della miniatura A2 nel primo minuto non serve (in Test e confronto ci sono anche A3 e A1). Meglio non rifare l'intro prima del 15/11.
+- Verticali arthunkal: v1, v3, v4 vanno bene. v2 si apre su Manuel davanti alla basilica: va contro la regola del primo fotogramma
+  (persona del posto o gesto). Se c'è, meglio aprire su un pellegrino o sulla folla davanti alla basilica, con Manuel subito dopo.
+  Decide Manuel. Verticali coir: tutti i primi fotogrammi vanno bene.
+- COIR ultimi 15 s: va bene la proposta di Montaggio, se Manuel è d'accordo (i volti li aveva chiesti lui il 7/11): volti all'inizio
+  della frase di chiusura, poi la fabbrica di spalle e la laguna sotto la schermata finale, che altrimenti copre i volti.
+
+## Fatto il 9/11 (chat Insights session_01HtfbgytQCQCLucysNXetfy, chiusa il 9/11)
+- Revisione strumenti (`strumenti.md`): togliere FREESOUND_API_KEY e chiavi AWS (le toglie Manuel); prossima revisione 30/11.
+- Miniatura IA proposta da "Chiedi a Studio" per il mercato: scartata (`miniature.md`, nota 9/11).
+- Mercato, titolo e miniatura nuovi di Copy (`mercato.md`, ultima sezione): titolo "UN PESCE DA 50 CHILI IN INDIA" approvato;
+  miniatura M1 (la signora) approvata con "ALL'ASTA" più grande e da controllare l'uomo in verde sullo sfondo. Da misurare
+  7 giorni dopo il cambio: CTR (prima 3,1%) e vincitore del Test e confronto (se nessuno, tenere M1).
+- Risposta a Montaggio su coir v3, te v9, arthunkal, verticali (sezione sopra). Aperti per Manuel: v2 arthunkal (apre su
+  Manuel) e ultimi 15 s del coir.
+- Promemoria spostati sulla chat nuova: dati arthunkal 17/11 e 22/11, revisione strumenti 30/11.

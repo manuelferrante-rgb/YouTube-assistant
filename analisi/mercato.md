@@ -240,3 +240,13 @@ La prova con l'inglese ha senso solo se Manuel vuole anche il pubblico indiano. 
 - Schermata finale (Manuel, 8/11 sera): sul mercato non c'era (primo lungo, 0% di clic). Manuel la aggiunge ora
   (Iscriviti + altro video) e la mette anche su arthunkal. Da guardare a 7 giorni di arthunkal: clic sulla schermata
   finale di entrambi i lunghi.
+
+## Titolo e miniatura nuovi del lungo (Copy, 9/11): parere di Insights
+- Titolo "UN PESCE DA 50 CHILI IN INDIA 🇮🇳 il mercato del pesce sulla spiaggia": approvato. Prende il fatto dello Short
+  migliore (60,8%) e le parole del pubblico dei mercati in Sri Lanka; la promessa si sente a 0:05.
+- Miniatura M1 (la signora, "ALL'ASTA / SULLA SABBIA"): approvata, con una modifica: "ALL'ASTA" più grande. Sul telefono
+  la riga piccola non si legge, e "SULLA SABBIA" da solo non dice niente; la parola che conta (e che il picco a 3:26
+  conferma) è "asta". Da controllare: l'uomo in maglietta verde e pantaloncini al centro dello sfondo (sembra un turista
+  o Manuel): se è lui, ritagliare o sfocare.
+- Da misurare a 7 giorni dal cambio: impressioni e CTR (prima 3,1% su 1.269 impressioni in 7 giorni) e chi vince il Test e
+  confronto. Con così poche impressioni il test può restare senza vincitore: in quel caso tenere M1.

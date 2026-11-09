@@ -407,13 +407,13 @@ Modello meenakshi (`regole/formato_reel.md`): per ogni verticale una musica orig
 - 1975: "Lavoravano il cocco dal 1975. Oggi nessuna 🇮🇳" / "Nel tuo paese c'è un mestiere che sta sparendo?"
 
 ## STORIE: 3 set da 6 (solo la domanda negli adesivi, mai la scritta "quiz")
-### Set 1, prima del lungo (dietro le quinte)
+### Set 1, dopo il lungo (dietro le quinte)
 1. `0034` Manuel in barca, 3 s | SONDAGGIO "Sai da dove viene lo zerbino di cocco?" Sì / No
 2. `0021` i gusci nella laguna | "Restano sott'acqua fino a un anno"
 3. `0046` l'uomo con la pertica | "Ha 76 anni" + cursore emoji
 4. `0063` 13-16 s la tettoia, suono vero 3-4 s | "Qui si aprono i gusci, a mano"
 5. `0542` la donna che sorride | BOX DOMANDE "Cosa chiederesti a queste donne?"
-6. `0087` le matasse | CONTO ALLA ROVESCIA "La storia intera, domenica su YouTube"
+6. `0087` le matasse | LINK al lungo + "La storia intera è sul canale"
 ### Set 2, il giorno dopo il lungo (Made in India)
 1. `0087` le matasse | "Sopra c'è scritto Made in India"
 2. `0540` le mani al lavoro | ADESIVO A SCELTA "Quanto va a loro per un tappeto?" 80 centesimi / 5 € / 15 €
@@ -445,11 +445,11 @@ Sopra c'è scritto Made in India 🇮🇳
 Ma non c'è scritto chi l'ha fatto. Sulla costa del Kerala, sotto una tettoia sulla laguna, le donne aprono i gusci di cocco a mano.
 Dalla fibra nasce la corda, dalla corda i tappeti che arrivano in Europa.
 Ce l'hai anche tu all'ingresso di casa?
-Il video completo è sul canale, link in bio.
-#kerala #india #vocivere #coir #madeinindia
+Quanto va a loro per ogni tappeto, e perché i giovani non vengono più: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #cocco
 Post YouTube (stesse immagini, 06 come .jpg):
-Sopra c'è scritto Made in India 🇮🇳 Le donne del coir del Kerala, che fanno i nostri tappeti a mano. Ce l'hai anche tu all'ingresso di casa?
-Tutta la storia nel video: [link vero del lungo, appena pubblicato]
+Sopra c'è scritto Made in India 🇮🇳 Le donne del coir del Kerala, che fanno i nostri tappeti a mano. Ce l'hai anche tu all'ingresso di casa? Quanto va a loro per ogni tappeto, e perché i giovani non vengono più: è nel video. [link del lungo]
 
 ## CAROSELLO 2 "I volti" (regole del 4-5/11: ritratti in posa, filtro caldo naturale, ogni persona una volta, niente microfoni)
 01 copertina: l'uomo della laguna (`0052` 2-4 s o `0047`, guarda in camera) | **I volti del coir** + "Kerala, India" + "Le donne e
@@ -466,9 +466,10 @@ Didascalia IG:
 I volti del coir 🇮🇳
 Le donne e l'uomo che, sulla costa del Kerala, fanno a mano la fibra dei nostri tappeti.
 Chi ti è rimasto in mente?
-Tutta la storia nel video sul canale, link in bio.
-#kerala #india #vocivere #coir #ritratti
-Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Tutta la storia nel video: [link vero del lungo, appena pubblicato]
+Chi sono, da quanti anni lo fanno e cosa ci hanno raccontato: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #cocco
+Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Chi sono, da quanti anni lo fanno e cosa ci hanno raccontato: è nel video. [link del lungo]
 
 ---------------------------------------------------------------------------------------------------------------
 # LUNGO v2: DA 4:38 A ~7:00 (Copy, 7/11, risposta a Montaggio; Manuel registra i VO nuovi e decide la velocità)

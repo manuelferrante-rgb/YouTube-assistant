@@ -56,49 +56,72 @@ Chapters
 
 #Kerala #India #VociVere
 
-### Verticali: titolo Short (= prima riga IG), didascalia IG, descrizione Short YT
-V1 teaser, sab 14/11 (VociVere_te_v1_teaser_1080x1920.mp4)
-Colline affittate per 3.000 rupie l'anno 🇮🇳
-Munnar, Kerala, India. Nel 1877 tutte queste colline vengono affittate a un britannico. Oggi sono coperte di tè,
-fino all'orizzonte.
+### Verticali v3 (8/11): titolo Short, didascalia IG, descrizione e commento fissato YT
+Regole (Insights + Manuel, 8/11): titolo dello Short = fatto concreto con un numero o un oggetto; tutto in italiano anche
+su IG (scritte, didascalie, hashtag), niente sottotitoli in inglese. Sotto i reel dopo il lungo: riga 1 il fatto, poi una
+frase con una cosa precisa che si scopre solo nel lungo (stessa frase nel commento fissato su YouTube, dove i link non si
+cliccano: il collegamento è il video correlato che mette Manuel). Su IG chiude "Video completo sul canale YouTube Voci Vere,
+link in bio." Teaser: dice cosa c'è nel lungo senza il finale; l'annuncio solo in fondo, mai nel titolo.
+Hashtag con le parole del pubblico: #india #kerala #viaggio #vitalocale + uno sul tema.
+
+### V1 teaser (VociVere_te_v1_teaser_1080x1920.mp4)
+Titolo Short / prima riga IG:
+Colline affittate per 3.000 rupie l'anno, nel 1877 🇮🇳
+Didascalia IG:
+Colline affittate per 3.000 rupie l'anno, nel 1877 🇮🇳
+Munnar, Kerala. Oggi sono coperte di tè fino all'orizzonte.
 Secondo te, di chi sono oggi?
-Domenica il video completo.
-#kerala #india #vocivere #munnar #tè
-YT: Nel 1877 le colline di Munnar, in Kerala, vengono affittate per 3.000 rupie l'anno. Oggi di chi pensi che siano?
+Nel video: chi raccoglie il tè, quanto ne raccoglie in un giorno, e di chi sono diventate queste colline.
+Domenica il video completo sul canale YouTube Voci Vere.
+#india #kerala #viaggio #vitalocale #tè
+Descrizione Short YT: Munnar, Kerala. Oggi sono coperte di tè fino all'orizzonte. Secondo te, di chi sono oggi?
+Commento fissato YT: Nel video: chi raccoglie il tè, quanto ne raccoglie in un giorno, e di chi sono diventate queste colline.
 
-V2 raccolta, lun 16/11 (VociVere_te_v2_raccolta_1080x1920.mp4)
+### V2 raccolta (VociVere_te_v2_raccolta_1080x1920.mp4)
+Titolo Short / prima riga IG:
 Del tè si staccano solo 2-3 foglie 🇮🇳
-Munnar, Kerala, India. Sadish ci mostra come si raccoglie: due, tre foglie, quelle buone. Le scure non si usano. E
-sulla stessa pianta si torna ogni dieci, quindici giorni.
+Didascalia IG:
+Del tè si staccano solo 2-3 foglie 🇮🇳
+Munnar, Kerala. Sadish ci mostra come si raccoglie: due, tre foglie, quelle buone. Sulla stessa pianta si torna ogni dieci, quindici giorni.
 Lo sapevi che si raccoglie così?
-Il video completo è sul canale.
-#kerala #india #vocivere #munnar #tè
-YT: Tra i filari di Munnar, in Kerala, il tè si raccoglie ancora a mano, due o tre foglie alla volta. Sapevi che si fa così?
+Di chi sono oggi queste colline, affittate nel 1877 per 3.000 rupie: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #tè
+Descrizione Short YT: Munnar, Kerala. Sadish ci mostra come si raccoglie: due, tre foglie, quelle buone. Sulla stessa pianta si torna ogni dieci, quindici giorni. Lo sapevi che si raccoglie così?
+Commento fissato YT: Di chi sono oggi queste colline, affittate nel 1877 per 3.000 rupie: è nel video sul canale.
 
-V3 giornata, mar 17/11 (VociVere_te_v3_giornata_1080x1920.mp4)
-Quanto tè raccoglie una persona in un giorno? 🇮🇳
-Munnar, Kerala, India. Sadish ce lo dice: in media dai 26 ai 29 chili. Si lavora dalle 8 alle 12, poi
-dall'una e mezza, le due, fino alle 5 circa. E raccolgono tutti, donne e uomini.
+### V3 giornata (VociVere_te_v3_giornata_1080x1920.mp4)
+Titolo Short / prima riga IG:
+26-29 chili di tè al giorno, raccolti a mano 🇮🇳
+Didascalia IG:
+26-29 chili di tè al giorno, raccolti a mano 🇮🇳
+Munnar, Kerala. Sadish ce lo dice: si lavora dalle 8 alle 12, poi dall'una e mezza fino alle 5 circa. E raccolgono tutti, donne e uomini.
 Tu quanti chili raccoglieresti?
-Tutta la storia su YouTube, link in bio.
-#kerala #india #vocivere #munnar #tè
-YT: Sulle colline di Munnar, in Kerala, una persona raccoglie in media 26-29 chili di tè al giorno, a mano. Tu quanto reggeresti?
+I nove giorni del 2015 in cui le raccoglitrici bloccarono Munnar: sono nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #tè
+Descrizione Short YT: Munnar, Kerala. Sadish ce lo dice: si lavora dalle 8 alle 12, poi dall'una e mezza fino alle 5 circa. E raccolgono tutti, donne e uomini. Tu quanti chili raccoglieresti?
+Commento fissato YT: I nove giorni del 2015 in cui le raccoglitrici bloccarono Munnar: sono nel video sul canale.
 
-V4 chai, gio 19/11 (VociVere_te_v4_chai_1080x1920.mp4)
-Il chai di Munnar si fa così 🇮🇳
-Munnar, Kerala, India. Il chai master tira il tè da un bicchiere all'altro, senza fermarsi. Gli ho chiesto di
-parlare: si è rifiutato. Forse è proprio questa l'essenza dell'India.
+### V4 chai (VociVere_te_v4_chai_1080x1920.mp4)
+Titolo Short / prima riga IG:
+Un bicchiere di chai a Munnar, tirato da un bicchiere all'altro 🇮🇳
+Didascalia IG:
+Un bicchiere di chai a Munnar, tirato da un bicchiere all'altro 🇮🇳
+Munnar, Kerala. Il chai master tira il tè senza fermarsi. Gli ho chiesto di parlare: si è rifiutato.
 L'hai mai assaggiato?
-Video fuori sul canale.
-#kerala #india #vocivere #munnar #chai
-YT: In un chiosco di Munnar, in Kerala, il chai master prepara il tè come si fa da sempre. L'hai mai assaggiato così?
+Da dove arriva il tè di questo bicchiere, e chi lo raccoglie sulle colline: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #vitalocale #chai
+Descrizione Short YT: Munnar, Kerala. Il chai master tira il tè senza fermarsi. Gli ho chiesto di parlare: si è rifiutato. L'hai mai assaggiato?
+Commento fissato YT: Da dove arriva il tè di questo bicchiere, e chi lo raccoglie sulle colline: è nel video sul canale.
 
 Reel del bucato (VociVere_te_bucato_1080x1920.mp4, data libera; testo già scelto da Manuel il 26/10, niente Munnar)
 Didascalia IG / titolo Short:
 POV: non hai la lavatrice (e non ti serve) 🇮🇳
 Kerala, India. Rubinetto, secchio, due mani. E un sorriso alla fine.
 Tu sapresti farlo così?
-#kerala #india #vocivere #vitaquotidiana
+#india #kerala #viaggio #vitalocale #bucato
 Descrizione Short YT: Rubinetto, secchio e due mani: il bucato in Kerala. Tu sapresti farlo così?
 (Il luogo preciso, se Manuel lo dice, al posto di "Kerala".)
 

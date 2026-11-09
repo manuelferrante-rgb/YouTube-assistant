@@ -16,13 +16,14 @@ def crop916(path, cx=.5, zoom=1.0, cy=.5):
     return ImageEnhance.Color(ImageEnhance.Contrast(im).enhance(1.06)).enhance(1.1)
 S.frame, S.crop916 = frame, crop916
 C = 'coir'; B = S._build
+# Tutte le storie escono DOPO il lungo (Manuel, 8/11): mai "domenica" o "esce", solo il rimando al video già uscito.
 B(C, 'set1_dietro_le_quinte', [
  dict(video=C, t=('0034', 1.0), kind='ask', title='Sai da dove viene lo zerbino di cocco?', hl=0, crop=(.5, 1, .5), tsize=124),
  dict(video=C, t=('0021', 2.0), kicker='LA LAGUNA', title='Restano sott\'acqua fino a un anno', body='I gusci di cocco, finché la fibra non si stacca.', crop=(.5, 1, .5)),
  dict(video=C, t=('0046', 3.0), title='Ha 76 anni', body='Ogni giorno spinge la sua barca e tira su i gusci, a mano.', crop=(.45, 1, .5)),
  dict(video=C, t=('0063', 14.0), title='Qui si aprono i gusci, a mano', body='Sedute per terra, sotto la tettoia, fino alle due.', crop=(.5, 1, .5)),
  dict(video=C, t=('0542', 5.0), kind='ask', title='Cosa chiederesti a queste donne?', body='Scrivilo qui sotto.', hl=0, crop=(.45, 1, .5), tsize=130),
- dict(video=C, t=('0087', 1.0), kind='ask', title='La storia intera, domenica su YouTube', hl=0, crop=(.5, 1, .5), tsize=124),
+ dict(video=C, t=('0087', 1.0), kind='ask', title='La storia intera è sul canale', body='Il link qui sotto.', hl=0, crop=(.5, 1, .5), tsize=124),
 ])
 B(C, 'set2_made_in_india', [
  dict(video=C, t=('0087', 1.0), kicker='MADE IN INDIA', title='Sopra c\'è scritto Made in India', body='Ma non c\'è scritto chi l\'ha fatto.', crop=(.5, 1, .5)),

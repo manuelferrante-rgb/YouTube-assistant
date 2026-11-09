@@ -1,4 +1,6 @@
-# Sottotitoli YouTube it/en del lungo coir (v2 6:51, VociVere_coir_long_4K.mp4). Copy, 8/11.
+# Sottotitoli YouTube it/en del lungo coir. Copy, 8/11 sulla v2 (6:51); 9/11 spostati sulla v4 (6:45, VociVere_coir_long_4K.mp4):
+# i tempi qui sotto sono quelli della v2, shift() li porta sulla v4 (controllato sulla trascrizione della v4:
+# uguale fino a 1:36, poi -3 s dalla pausa sulla laguna, -6 s dopo Premilla che segue il salario).
 # Tempi dalla trascrizione parakeet del montato (work/coir/long/tr.json), testo corretto a mano: VO dal copione,
 # frasi di Manuel come le dice, interviste tradotte fedeli. Sigla e scritte finali senza sottotitolo.
 #   python3 projects/coir/sottotitoli/make_srt.py
@@ -89,8 +91,11 @@ S = [
  (385.4, 390.3, "Non perché manchi chi lo sa fare: perché qui\ni giovani non vengono più, per quattro euro al giorno.", "Not because no one knows how: because young people\nno longer come here, for four euros a day."),
  (390.5, 393.38, "Queste donne lo portano avanti da quarant'anni.", "These women have carried it on for forty years."),
  (393.5, 395.7, "Oggi, per qualche minuto, la voce è stata la loro.", "Today, for a few minutes, the voice was theirs."),
- (396.8, 401.79, "Il viaggio di Voci Vere, per dare voce a chi ne ha\npiù bisogno, continua. Seguimi per scoprire le prossime storie.", "The Voci Vere journey, giving a voice to those\nwho need it most, goes on. Follow me for the next stories."),
+ (396.8, 402.8, "Il viaggio di Voci Vere, per dare voce a chi ne ha\npiù bisogno, continua. Seguimi per scoprire le prossime storie.", "The Voci Vere journey, giving a voice to those\nwho need it most, goes on. Follow me for the next stories."),
 ]
+def shift(t):
+    return t if t < 96 else t - 3 if t < 263 else t - 6
+S = [(shift(a), shift(b), it, en) for a, b, it, en in S]
 def fm(t):
     ms = int(round(t * 1000)); return f"{ms//3600000:02d}:{ms//60000%60:02d}:{ms//1000%60:02d},{ms%1000:03d}"
 for k, lang in ((2, 'it'), (3, 'en')):

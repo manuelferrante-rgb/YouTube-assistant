@@ -81,3 +81,5 @@ Quando: dopo l'uscita del lungo, un set per giorno, nei giorni senza reel o insi
 4. Risposta: più di cent'anni (Sadish)
 5. Il chai master, che non ha voluto parlare
 6. SONDAGGIO "Hai mai assaggiato il chai?" Sì / No (+ link al video)
+
+Regola (Manuel, 8/11): le storie escono SEMPRE dopo il lungo: niente "domenica", conto alla rovescia o annunci; solo il rimando al video già uscito (link).
