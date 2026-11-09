@@ -21,6 +21,15 @@ VIDEO = {
     # sobria: armonia ferma (due accordi per giro), meno note; la rivelazione (sorriso in camera) si apre in la bemolle
     "madeinindia": dict(prog=["Fm", "Fm", "Db", "Eb", "Fm", "Cm", "Db", "Eb"], bars=1,
                         bpm={"A": 88, "B": 84, "C": 92}, nota="sobria", aperto="Fm", riv="Ab"),
+    # passi lenti, regolare: un accordo ogni due battute, passo fermo; la rivelazione (la fila) si apre in mi bemolle
+    "indietro": dict(prog=["Fm", "Eb", "Db", "Eb"], bars=2, bpm={"A": 84, "B": 80, "C": 88}, nota="passi lenti",
+                     aperto="Fsus", riv="Eb"),
+    # calda, intima: armonia che gira sul maggiore (re bemolle, la bemolle); rivelazione su Premilla in re bemolle
+    "premilla": dict(prog=["Db", "Ab", "Fm", "Eb", "Db", "Ab", "Bbm", "Fsus"], bars=1,
+                     bpm={"A": 80, "B": 76, "C": 84}, nota="calda, intima", aperto="Db", riv="Db"),
+    # la più spoglia, niente tristezza: accordi lunghi, si apre in la bemolle (luce) sulle donne sedute
+    "1975": dict(prog=["Fm", "Db", "Ab", "Eb"], bars=2, bpm={"A": 84, "B": 80, "C": 88}, nota="spoglia",
+                 aperto="Fm", riv="Ab"),
 }
 CUE_DUR = {"gancio": 3.5, "rivelazione": 4.5, "chiusura": 5.5}
 
