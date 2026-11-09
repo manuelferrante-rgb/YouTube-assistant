@@ -286,8 +286,13 @@ pausa tra le frasi, chiusura "Ascolta altre voci, su" + logo su velo leggero).
   1. "iscriviti" (4.9 s): appena finisce la sigla, quando Manuel inizia a parlare. Cursore su ISCRIVITI (diventa
      ISCRITTO), campanella (si riempie e oscilla), Hype (si accende).
   2. "like" (3.9 s): a metà video, in un tratto calmo (voiceover su B-roll). Cursore su Mi piace e Commenta.
+  3. "instagram" (4.2 s, Manuel 9/11): dopo il "like", idealmente alla stessa distanza che c'è tra il primo e il
+     secondo (se il video è troppo corto, nell'ultimo terzo, prima della chiusura). Su una DISSOLVENZA, mentre c'è una
+     frase leggera di voiceover (o niente parlato), su immagini tranquille: mai su un momento o una frase forte, mai su
+     un'intervista con sottotitoli. Profilo IG "vocivere" (nome "Voci Vere | Unfiltered", foto = logo nel cerchio con
+     l'anello di Instagram), il cursore clicca Segui (blu) che diventa "Segui già". Approvato da Manuel il 9/11.
 - Mai sopra sottotitoli, etichette o scritte in basso al centro: scegliere il punto guardando i fotogrammi.
-- Codice: `tools/subscribe_banner.py` (grafica e click), `tools/apply_banners.py in out --iscriviti T --like T`
+- Codice: `tools/subscribe_banner.py` (grafica e click), `tools/apply_banners.py in out --iscriviti T --like T --instagram T`
   (sul lungo finito, ricodifica solo i tratti dei banner). Click a volume 0.45 nel mix.
 - Ultimi 10-15 s di ogni lungo senza volti in primo piano (schermata finale di Studio, Manuel 4/11).
 

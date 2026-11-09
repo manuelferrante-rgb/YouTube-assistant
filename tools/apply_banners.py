@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Mette i banner (tools/subscribe_banner.py) su un lungo già finito, senza rifare il 4K (Manuel 5/11).
 
-    python3 tools/apply_banners.py in.mp4 out.mp4 --iscriviti 23.3 --like 220.0
-Banner in basso al centro (4.5% dal fondo), larghi il 27% / 21% dello schermo; i click entrano nel mix (volume 0.45).
+    python3 tools/apply_banners.py in.mp4 out.mp4 --iscriviti 23.3 --like 220.0 --instagram 300.0
+Banner in basso al centro (4.5% dal fondo), larghi il 27% / 21% / 25% dello schermo; i click entrano nel mix (volume 0.45).
 Si ricodificano solo i tratti tra i fotogrammi chiave attorno a ogni banner (stessi parametri x264 dei lunghi:
 crf 20, maxrate 38M, high 5.1, GOP chiuso); il resto si copia. Audio: mix completo ricodificato in AAC 320k.
 Scegliere i tempi dove non ci sono sottotitoli né scritte in basso al centro.
@@ -12,7 +12,7 @@ import argparse, json, os, subprocess, sys
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 X264 = ["-c:v", "libx264", "-preset", "medium", "-crf", "20", "-maxrate", "38M", "-bufsize", "76M", "-profile:v", "high",
         "-level", "5.1", "-pix_fmt", "yuv420p", "-g", "250", "-keyint_min", "25", "-x264-params", "open_gop=0", "-an"]
-DUR = {"iscriviti": 4.9, "like": 3.9}
+DUR = {"iscriviti": 4.9, "like": 3.9, "instagram": 4.2}
 VOL = 0.45
 
 
@@ -27,6 +27,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("inp"); ap.add_argument("out")
     ap.add_argument("--iscriviti", type=float); ap.add_argument("--like", type=float)
+    ap.add_argument("--instagram", type=float)
     a = ap.parse_args()
     info = json.loads(run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height,nb_frames",
                            "-of", "json", a.inp]))["streams"][0]
@@ -35,7 +36,7 @@ def main():
     keys = [int(round(float(l.split(",")[0]) * 30)) for l in run(
         ["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "packet=pts_time,flags", "-of", "csv=p=0", a.inp]
     ).split() if ",K" in l]
-    jobs = sorted([(t, k) for k, t in (("iscriviti", a.iscriviti), ("like", a.like)) if t is not None])
+    jobs = sorted([(t, k) for k, t in (("iscriviti", a.iscriviti), ("like", a.like), ("instagram", a.instagram)) if t is not None])
     for t, k in jobs:
         mov = f"{bdir}/banner_{k}_{W}.mov"
         if not os.path.exists(mov):
