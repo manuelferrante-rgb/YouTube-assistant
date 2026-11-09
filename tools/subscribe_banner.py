@@ -3,6 +3,9 @@
 - "iscriviti": appena dopo la sigla, quando Manuel inizia a parlare. Il cursore clicca ISCRIVITI (diventa ISCRITTO),
   la campanella (si riempie e oscilla) e Hype (si accende).
 - "like": a metà video, in un punto calmo. Il cursore clicca Mi piace (pollice pieno) e Commenta.
+- "instagram" (Manuel 9/11): dopo il "like", alla stessa distanza che c'è tra il primo e il secondo, in un tratto
+  senza parlato. Profilo IG "vocivere" (nome "Voci Vere | Unfiltered", foto = logo nel cerchio con l'anello
+  Instagram), il cursore clicca Segui (diventa "Segui già").
 Ogni click ha il suo piccolo suono (click di mouse sintetico, banner_<tipo>_click.wav, stessa durata del banner).
 
     python3 tools/subscribe_banner.py out_dir iscriviti|like --w 3840
@@ -18,7 +21,10 @@ FONT_M = f"{ROOT}/models/Poppins-Medium.ttf"
 AVATAR = f"{ROOT}/assets/brand/avatar_youtube.png"
 FPS = 30
 KIND = {"iscriviti": dict(dur=4.9, clicks=(1.45, 2.25, 3.05), width=0.27),
-        "like": dict(dur=3.9, clicks=(1.35, 2.15), width=0.21)}
+        "like": dict(dur=3.9, clicks=(1.35, 2.15), width=0.21),
+        "instagram": dict(dur=4.2, clicks=(1.6,), width=0.25)}
+LOGO_IG = f"{ROOT}/assets/brand/logo_vocivere_trasparente.png"
+IG_BLUE = (74, 93, 249)          # blu del tasto Segui come nell'app (screenshot di Manuel 9/11)
 GOLD = (182, 138, 75)
 RED = (204, 0, 0)
 INK = (30, 30, 30, 255)
@@ -95,6 +101,55 @@ def icon_comment(s, filled):
     return img
 
 
+def icon_ig(s):
+    """Glifo della fotocamera di Instagram (quadrato arrotondato, cerchio, punto) con il gradiente dell'app."""
+    n = int(s * 2)
+    grad = ig_gradient(n)
+    m = Image.new("L", (n, n), 0)
+    g = ImageDraw.Draw(m)
+    w = max(2, int(n * 0.09))
+    g.rounded_rectangle([w // 2, w // 2, n - 1 - w // 2, n - 1 - w // 2], radius=n * 0.28, outline=255, width=w)
+    g.ellipse([n * 0.28, n * 0.28, n * 0.72, n * 0.72], outline=255, width=w)
+    g.ellipse([n * 0.70, n * 0.17, n * 0.82, n * 0.29], fill=255)
+    grad.putalpha(m)
+    return grad
+
+
+def ig_gradient(n):
+    """Gradiente diagonale giallo -> arancio -> magenta -> viola (dal basso a sinistra in alto a destra)."""
+    stops = [(0.0, (254, 218, 117)), (0.3, (250, 126, 30)), (0.6, (214, 41, 118)), (0.85, (150, 47, 191)),
+             (1.0, (79, 91, 213))]
+    yy, xx = np.mgrid[0:n, 0:n]
+    u = np.clip(((xx + (n - 1 - yy)) / (2 * (n - 1))), 0, 1)
+    out = np.zeros((n, n, 3))
+    for (u0, c0), (u1, c1) in zip(stops, stops[1:]):
+        k = (u >= u0) & (u <= u1)
+        f = ((u - u0) / (u1 - u0))[k][:, None]
+        out[k] = np.array(c0) * (1 - f) + np.array(c1) * f
+    return Image.fromarray(out.astype(np.uint8), "RGB").convert("RGBA")
+
+
+def ig_avatar(r):
+    """Foto profilo IG: logo Voci Vere su cerchio bianco, anello col gradiente di Instagram."""
+    n = 2 * r
+    img = ig_gradient(n)
+    m = Image.new("L", (n, n), 0)
+    ImageDraw.Draw(m).ellipse([0, 0, n - 1, n - 1], fill=255)
+    img.putalpha(m)
+    g = ImageDraw.Draw(img)
+    ring = max(2, int(r * 0.09))
+    g.ellipse([ring, ring, n - 1 - ring, n - 1 - ring], fill=(255, 255, 255, 255))
+    gap = ring * 2
+    ImageDraw.Draw(img).ellipse([gap, gap, n - 1 - gap, n - 1 - gap], fill=(255, 255, 255, 255),
+                                outline=(225, 225, 225, 255), width=max(1, ring // 3))
+    logo = Image.open(LOGO_IG).convert("RGBA")
+    logo = logo.crop(logo.getbbox())
+    lw = int((n - 2 * gap) * 0.84)
+    logo = logo.resize((lw, int(logo.height * lw / logo.width)), Image.LANCZOS)
+    img.alpha_composite(logo, ((n - logo.width) // 2, (n - logo.height) // 2))
+    return img
+
+
 def cursor(s):
     img = Image.new("RGBA", (int(s * 1.2), int(s * 1.6)), (0, 0, 0, 0))
     g = ImageDraw.Draw(img)
@@ -118,7 +173,7 @@ def pill_button(g, cx, cy, w, h, fill, text, font, tcol):
 def frame(kind, t, W):
     cfg = KIND[kind]
     dur, clicks = cfg["dur"], cfg["clicks"]
-    H = int(W * (0.25 if kind == "iscriviti" else 0.3))
+    H = int(W * {"iscriviti": 0.25, "like": 0.3, "instagram": 0.27}[kind])
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     alpha = min(ease(t / 0.35), 1 - ease((t - (dur - 0.4)) / 0.4))
     if alpha <= 0:
@@ -167,6 +222,25 @@ def frame(kind, t, W):
         paste_center(pill, icon_bolt(hh * 0.32, on), x0 + bw0 / 2, cy)
         g.text((x0 + bw0 + hh * 0.08, cy - hh * 0.36), "Hype", font=f_h, fill=(255, 255, 255, 255) if on else INK)
         targets.append((hx + W * 0.01, cy + ph * 0.08))
+    elif kind == "instagram":
+        r = int(ph * 0.4)
+        lx = px0 + int(ph * 0.5)
+        pill.alpha_composite(ig_avatar(r), (lx - r, cy - r))
+        nx = lx + r + int(ph * 0.2)
+        g.text((nx, cy - ph * 0.3), "vocivere", font=ImageFont.truetype(FONT, int(ph * 0.25)), fill=(17, 17, 17, 255))
+        # seconda riga: glifo Instagram + nome del profilo
+        gs = ph * 0.1
+        pill.alpha_composite(icon_ig(gs), (int(nx), int(cy + ph * 0.06)))
+        g.text((nx + gs * 2 + ph * 0.06, cy + ph * 0.03), "Voci Vere | Unfiltered",
+               font=ImageFont.truetype(FONT_M, int(ph * 0.15)), fill=(90, 90, 90, 255))
+        # Segui -> Segui già
+        done = t >= clicks[0]
+        p = pulse(t, clicks[0])
+        bx = int(W * 0.785)
+        bw_, bh_ = int(W * 0.28 * p), int(ph * 0.56 * p)
+        pill_button(g, bx, cy, bw_, bh_, (230, 230, 230, 255) if done else IG_BLUE + (255,), "Segui già" if done else "Segui",
+                    ImageFont.truetype(FONT, int(bh_ * 0.42)), (40, 40, 40, 255) if done else (255, 255, 255, 255))
+        targets.append((bx + W * 0.02, cy + ph * 0.05))
     else:
         f_t = ImageFont.truetype(FONT, int(ph * 0.24))
         for i, (txt, icon) in enumerate((("Mi piace", icon_thumb), ("Commenta", icon_comment))):
