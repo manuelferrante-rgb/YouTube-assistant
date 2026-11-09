@@ -42,3 +42,7 @@ Da leggere all'avvio di ogni nuova chat Pianificazione, dopo CLAUDE.md e `regole
 - Una volta ho modificato la tabella sbagliata (la vecchia del 29/10): per il calendario lavora sempre nella tabella dopo "CALENDARIO COMPLETO v2".
 - "Kayar" come parola malayalam per il coir: non verificata.
 - Il testo di una ricerca con IA incollato da Manuel va verificato: Vakkom e Akathumuri come posti del coir non erano confermati.
+
+## Aggiornamento 9/11
+- NUOVO lungo sicuro `bilancio` (Un mese in India), dom 24/1, `piano/bilancio.md`.
+- Manuel non sa se riesce a girare altro: i lunghi sono 5 (arthunkal, te, coir, B, bilancio). B = uno solo tra migranti ed erosione, il più facile da girare; se nessuno dei due, reel dalla scorta. Diwali annullato. Stories set 1 mercato spostate al 10/11.
