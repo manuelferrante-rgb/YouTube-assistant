@@ -47,3 +47,21 @@ musica fino all'ultimo fotogramma del logo).
 | `teaser_cue_chiusura.flac` | 5.5 s | -18 LUFS | sulla fine della voce fino al logo: motivo del lungo fa-lab-sol-fa (A, piano e archi) |
 Rifare: `python3 audio/musica/coir_verticali.py teaser musica A out.wav` (gancio B, rivelazione B, chiusura A), poi
 loudnorm a -20 (musica) / -18 (segni) come in `flac()`.
+
+## made in india, indietro, premilla, 1975 (scelte di Insights, 9/11)
+| Reel | Musica | Gancio | Rivelazione (immagine) | Chiusura |
+|---|---|---|---|---|
+| teaser | A archi a passo | B piano | B arpeggio di piano (`0021`) | A piano + archi |
+| madeinindia | A archi a passo, armonia ferma | B piano | A archi + piano, la bemolle (`0542`) | A piano + archi |
+| indietro | C pizzicato regolare | B piano | B arpeggio, mi bemolle (`0074`) | A piano + archi |
+| premilla | A archi caldi (re bemolle) | B piano | A archi + piano (`0016`) | B solo piano |
+| 1975 | A accordi lunghi | B piano | A archi + piano, la bemolle (`0527`) | B solo piano |
+File: `<reel>_musica.flac` (25 s, bozza scelta) e `<reel>_cue_gancio|rivelazione|chiusura.flac`.
+
+## Montati con questo audio (Manuel 9/11: "ci pensi tu", senza Montaggio)
+`python3 projects/coir/audio/verticali.py teaser madeinindia indietro premilla 1975`: prende il video APPROVATO da Drive
+(montati/coir, in `work/coir/drive/`, copiato senza ricodifica: immagini, testi e sottotitoli identici, verificato) e ci
+mette sopra l'audio rifatto con `projects/coir/build.py` (voce negli stessi tempi: scarto 0 ms con l'approvato).
+Musica ricomposta della durata esatta del reel (crescendo sul finale), 0.08 sotto la voce, -6 dB mentre suona la
+rivelazione, 0.17 dopo la voce; segni a 0.24 (chiusura 0.45, dalla fine della voce all'ultimo fotogramma del logo).
+Limitatore a -2 dB: -14.7/-15.0 LUFS, picchi sotto -1.5 dBTP.
