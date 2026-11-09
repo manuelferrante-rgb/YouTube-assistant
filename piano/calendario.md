@@ -153,9 +153,9 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | Giorno | Uscita | Nota |
 |---|---|---|
 | sab 7/11 | mercato: carosello "fatto" (+ post YouTube) | PUBBLICATO (Manuel 7/11) |
-| dom 8/11 | mercato: stories set 1 | slittato dal 2/11 |
+| dom 8/11 | (nessuna uscita) | stories set 1 non pubblicate, spostate al 10/11 |
 | lun 9/11 | mercato: reel 3 |  |
-| mar 10/11 | (libero: Diwali annullato) | giorno vuoto, va bene |
+| mar 10/11 | mercato: stories set 1 | slittato dall'8/11 (Manuel 9/11) |
 | mer 11/11 | mercato: stories set 2 | slittato dal 6/11 |
 | gio 12/11 | mercato: carosello "I volti" (+ post YouTube) e stories set 3 | unico giorno con due uscite |
 | ven 13/11 | EXTRA autostop | slittato dal 6/11; entrambi i profili |
@@ -277,3 +277,5 @@ Nota da Pianificazione, 9/11 (Manuel): DIWALI ANNULLATO. L'8/11 Manuel non è ri
 Nota da Copy, 9/11: coir, lungo finale v4 (6:45): sottotitoli it/en rifatti sul montato e capitoli aggiornati (0:00 Made in India,
 0:18, 1:20, 2:48 Sotto la tettoia, 4:24 La fabbrica, 5:12 I nostri tappeti, 6:08 Chiusura), sostituiti su Drive montati/coir
 (sottotitoli/ e TESTI_titolo_descrizioni_verticali.txt). Il resto del pacchetto coir resta valido. Te v9 e arthunkal: niente da rifare.
+
+Nota da Pianificazione, 9/11 (Manuel): le stories set 1 del mercato NON sono uscite l'8/11. Spostate a mar 10/11. Il resto invariato: set 2 11/11, carosello "I volti" e set 3 12/11, autostop 13/11.
