@@ -84,5 +84,5 @@ Titolo EN: A 50-KILO FISH IN INDIA 🇮🇳 the fish market on the beach
 Perché: l'intro del lungo apre proprio su "Quello enorme pesava 50-55 chili... come una persona" (0:05); 50 chili è il fatto
 dello Short migliore (60,8%); "mercato del pesce" sono le parole del pubblico che ci trova (video di mercati in Sri Lanka).
 Miniature (Test e confronto, Drive montati/mercato/miniatura/, le vecchie in vecchie/; generatore copioni/miniature_v3/mercato_v3.py):
-1_M1_signora (principale, scelta di Manuel; 9/11 con Insights: "ALL'ASTA" grande come "SULLA SABBIA", sfocata la persona in maglietta verde sullo sfondo) "ALL'ASTA / SULLA SABBIA" | "AUCTIONED / ON THE SAND";
+1_M1_signora (principale, scelta di Manuel; 9/11 con Insights: "ALL'ASTA" grande come "SULLA SABBIA"; niente sfocature, Manuel) "ALL'ASTA / SULLA SABBIA" | "AUCTIONED / ON THE SAND";
 2_M2_mattina "OGNI MATTINA / ALLE 8" | "EVERY MORNING / AT 8 A.M."; 3_M3_asta "NIENTE TETTO, / NIENTE BANCHI" | "NO ROOF, / NO STALLS".
