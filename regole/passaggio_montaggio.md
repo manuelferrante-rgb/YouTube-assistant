@@ -1,4 +1,34 @@
-# Passaggio alla nuova chat Montaggio (aggiornato 4/11 sera)
+# Passaggio alla nuova chat Montaggio (aggiornato 9/11)
+
+## STATO AL 9/11 (leggere prima di tutto)
+- coir: FINITO e approvato. Lungo v5 4K 6:45 + 5 verticali (teaser, made_in_india, indietro, premilla, 1975, a 1x) su Drive
+  cartella "Coir" (19zCOBK_aJ6a4SFwGffbZvDKUr-IXR8UA), montati/coir. Codice: `projects/coir/build.py` (long, verticali),
+  `v4_finale.py` (ultimi 15 s senza volti), `v5_chiusura.py` (voce di chiusura registrata). Girato e scelte in
+  `projects/coir/girato.md`, capitoli in `projects/coir/capitoli.md`. Copy ha già il pacchetto. Non toccarlo salvo richiesta.
+- te: v9 su Drive (stessi tempi del v8, immagini a metà video con persone): `projects/te/v9_modifiche.py`. Approvato.
+- arthunkal: lungo invariato; verticali v1-v4 rifatti l'8-9/11 (`projects/arthunkal/reels.py`): v2 apre sull'anziano
+  col telo bianco (090951) e poi Manuel. Approvati.
+- Diwali annullato (vedi calendario). Prossimi lunghi: B (migranti o erosione, 10/1) e bilancio (24/1, `piano/bilancio.md`).
+
+## LEZIONI DI COIR (6-9/11), valgono per i prossimi
+- Velocità: lunghi e verticali a 1x quando il VO è registrato sciolto (Manuel). Pause d'enfasi brevi (~0.45 s) nei
+  verticali solo dove servono (`say(..., pause=PAUSE)`).
+- Voce delle clip: `leveled()` in `projects/coir/build.py` (voce RNNoise a -18 LUFS + fondo della clip sempre a -56 dB,
+  gate dolce nelle pause); interviste lontane dal microfono: `lift=True`. Chi parla piano e lontano: RNNoise lo cancella,
+  usare `voice_clean.light()`; folla dietro: `voice_clean.gated(..., double=True)`.
+- Taglio delle pause nelle frasi: solo pause >= 0.3 s, altrimenti si mangiano consonanti ("persone" -> "pedone").
+- Frase di chiusura dei lunghi: SEMPRE `assets/voce/chiusura_vocivere.m4a` (0.88-6.80 s), mai l'audio della ripresa.
+  Mentre la si dice non si vede Manuel: persone al lavoro, poi immagini senza volti (schermata finale negli ultimi 15 s).
+  Scritta finale animata: `tools/scritta_finale.py` (font DM Serif Display, riquadro con luce a cometa), approvata.
+- Insights 8/11: promessa di titolo e miniatura nel primo minuto; a metà video niente campi larghi senza persone;
+  ultimi 10-15 s senza volti; verticali: primo fotogramma = persona del posto o gesto, mai Manuel per primo.
+- Titoli dei reel: uno sparisce quando entra il successivo (niente sovrapposizioni); controllare che le scritte in
+  alto non coprano i volti (se serve: zoom dal bordo alto, vedi `premilla()` in coir).
+- Modifiche a un lungo già consegnato senza rifare il 4K: sovrapporre le parti nuove e ricodificare una volta (`te/v9`,
+  `coir/v4`), o solo l'audio con il video copiato (`coir/v5`). Disco: liberare `work/` (girato già consegnato, shot_*)
+  prima dei render 4K; `direct_concat` in doc_render evita il cut.mkv da 11 GB.
+- Upload grandi su Drive: `rclone copyto ... --drive-chunk-size 128M --timeout 2m` (senza, si blocca alla fine).
+
 
 PRIMA DI TUTTO, PER OGNI REEL: `regole/formato_reel.md` (formato approvato da Manuel sul reel meenakshi: gancio forte,
 nessuna pausa, tutto a 1.1x, titoli Poppins ExtraBold oro su bianco, sottotitoli su fascia scura, chiusura "Ascolta
