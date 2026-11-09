@@ -24,8 +24,8 @@ import coir_verticali as CV  # noqa: E402
 AUD = HERE
 RIV = {"teaser": "0021", "made_in_india": "0542", "indietro": "0074", "premilla": "0016", "1975": "0527"}
 PREF = {"made_in_india": "madeinindia"}
-MUS, MUS_UP, DIP = 0.025, 0.055, 0.5       # Manuel 9/11: "molto più bassi, accompagnamento leggero" (-10 dB)
-CUE, CUE_END = 0.08, 0.14
+MUS, MUS_UP, DIP = 0.01, 0.022, 0.5         # Manuel 9/11: solo accompagnamento leggero, solo la nostra musica (-18 dB dalla prima prova)
+CUE, CUE_END = 0.03, 0.05
 D_RIV = 4.0
 STILE = {"teaser": "A", "madeinindia": "A", "indietro": "C", "premilla": "A", "1975": "A"}   # bozze scelte
 APPROVATI = f"{B.WORK}/drive"         # verticali approvati scaricati da Drive montati/coir
@@ -35,14 +35,19 @@ def musica_su_misura(p, dur):
     """La musica scelta, ricomposta lunga quanto il reel: il crescendo arriva sul finale, la coda sul logo."""
     wav = f"{B.OUT}/audio_{p}_musica_{dur:.2f}.wav"
     out = wav[:-4] + ".flac"
-    CV.scrivi(CV.musica(p, STILE[p], dur), wav)
+    CV.scrivi(CV.musica2(p, dur), wav)
     CV.flac(wav, out, -20)
     return out
 
 
 def cue_wav(name, d, fout):
+    """Segno v2 del reel (strumento e tonalità propri), a -18 LUFS, lungo d con coda sfumata."""
+    p, kind = name.split("_cue_")
+    src = f"{B.OUT}/audio_{name}_v2.wav"
+    CV.scrivi(CV.cue2(p, kind), src)
+    CV.flac(src, src[:-4] + ".flac", -18)
     out = f"{B.OUT}/audio_{name}_{d:.2f}.wav"
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{AUD}/{name}.flac", "-t", f"{d:.3f}", "-af",
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src[:-4] + ".flac", "-t", f"{d:.3f}", "-af",
                     f"apad,atrim=0:{d:.3f},afade=t=out:st={max(0, d - fout):.3f}:d={fout}", "-ac", "2", "-ar", "48000",
                     out], check=True)
     return out
@@ -70,7 +75,7 @@ def vfinish(r, name, track, t_b, end, offset=0.0):
     app = f"{APPROVATI}/VociVere_coir_{name}_1080x1920.mp4"
     out = f"{B.OUT}/VociVere_coir_{name}_1080x1920.mp4"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", app, "-i", tmp, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
-                    "-af", "aresample=192000,alimiter=limit=0.79:attack=0.5:level=false,aresample=48000", "-c:a", "aac", "-b:a", "256k", "-shortest", "-movflags", "+faststart", out], check=True)
+                    "-c:a", "aac", "-b:a", "256k", "-shortest", "-movflags", "+faststart", out], check=True)
     return out
 
 
