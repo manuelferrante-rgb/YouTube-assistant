@@ -299,3 +299,8 @@ Nota da Insights, 8/11 sera (decisione di Manuel, dai dati del mercato a 7 giorn
 - A metà video niente B-roll larghi senza persone oltre pochi secondi (nel mercato il calo più forte è a 4:10, su un
   campo largo della spiaggia): meglio una persona in azione. Se il video si accorcia di qualche secondo, non si riempie.
 - Si verifica sui dati di arthunkal (22/11): se non regge, Insights lo scrive qui.
+
+Nota Montaggio, 9/11 (Manuel): la frase di chiusura dei lunghi ("Il viaggio di Voci Vere, per dar voce a chi ne ha più
+bisogno, continua. Seguimi per scoprire le prossime storie") si usa SEMPRE dalla registrazione pulita
+`assets/voce/chiusura_vocivere.m4a` (frase da 0.88 a 6.80 s), mai dall'audio di una ripresa sul posto. Esempio di
+sostituzione sul lungo già finito: `projects/coir/v5_chiusura.py`.
