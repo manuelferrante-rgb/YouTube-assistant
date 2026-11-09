@@ -130,6 +130,95 @@ def mp4_bozze(files, titolo, out):
                     "-b:a", "192k", "-shortest", out], check=True)
 
 
+# ===================== v2 (Manuel 9/11: "l'audio è tutto uguale per tutti?") =====================
+# Ogni reel ha un'identità sua: strumento principale, tonalità (trasposizione, solo verso l'alto: niente sotto 150 Hz),
+# passo e motivo di chiusura diversi. Resta la famiglia del lungo (archi, piano, pizzicato; minore/maggiore sobrio).
+import compose as _C  # noqa: E402
+from compose import piano_note  # noqa: E402,F401
+_hz0 = _C.hz
+_TR = [0]
+
+
+def _hz(n):
+    return _hz0(n + _TR[0])
+
+
+_C.hz = _hz; coir.hz = _hz
+
+V2 = {
+    # acqua, attesa: piano che scorre (arpeggio in semicrome, registro alto) su archi lontani; fa minore
+    "teaser": dict(tr=0, bpm=88, tex="acqua", prog=["Fm", "Db", "Fsus", "Fm", "Db", "Ab", "Eb", "Fsus"],
+                   g="B", r="B", c="A", mot=[77, 80, 79, 77]),
+    # sobria: solo archi tenuti e una nota di piano per battuta; sol minore
+    "madeinindia": dict(tr=2, bpm=84, tex="sobria", prog=["Fm", "Fm", "Db", "Eb"], g="A", r="A", c="B",
+                        mot=[80, 79, 77]),
+    # passi lenti: pizzicato regolare in crome, come i passi all'indietro; si bemolle minore
+    "indietro": dict(tr=5, bpm=80, tex="passi", prog=["Fm", "Eb", "Db", "Eb"], g="C", r="C", c="C",
+                     mot=[72, 75, 77, 72]),
+    # calda, intima: piano solo, accordi spezzati lenti in maggiore; re maggiore (re bemolle +1)
+    "premilla": dict(tr=1, bpm=72, tex="intima", prog=["Db", "Ab", "Bbm", "Ab"], g="B", r="B", c="B",
+                     mot=[77, 75, 73]),
+    # la più spoglia, niente tristezza: solo archi lunghi, una linea alta; la bemolle maggiore (+3 da fa)
+    "1975": dict(tr=3, bpm=76, tex="spoglia", prog=["Db", "Ab", "Eb", "Ab"], g="A", r="A", c="A",
+                 mot=[72, 70, 68]),
+}
+
+
+def musica2(video, dur):
+    v = V2[video]; _TR[0] = v["tr"]
+    beat = 60 / v["bpm"]; bar = 4 * beat
+    T = Track(dur); t = 0.0; k = 0
+    while t < dur:
+        ch = CH[v["prog"][k % len(v["prog"])]]; x = t / dur; g = 0.45 + 0.55 * x
+        L = bar * (2 if v["tex"] == "spoglia" else 1)
+        for j, n in enumerate(ch[1:4]):                      # archi tenuti, sempre, molto morbidi
+            T.add(archi(n + 12, L + 1.0, 2600, att=0.8), t - 0.1, (0.05 if v["tex"] in ("sobria", "spoglia") else 0.03) * g,
+                  pan=-0.4 + j * 0.4)
+        if v["tex"] == "acqua":
+            pat = [ch[1] + 12, ch[2] + 12, ch[3] + 12, ch[4] + 12, ch[3] + 12, ch[2] + 12]
+            for s_ in range(16):
+                T.add(piano_m(pat[s_ % 6], beat * 0.6, 0.3), t + s_ * beat / 4, 0.06 * g, pan=-0.25 if s_ % 2 else 0.25)
+        elif v["tex"] == "sobria":
+            T.add(piano_m(ch[4] + 12, beat * 3, 0.4), t, 0.08 * g, pan=0.1)
+        elif v["tex"] == "passi":
+            pat = [ch[1] + 12, ch[3] + 12, ch[2] + 12, ch[3] + 12]
+            for s_ in range(8):
+                T.add(pluck(pat[s_ % 4], beat * 0.9, 0.993, 0.5), t + s_ * beat / 2, 0.08 * g * (1.2 if s_ % 2 == 0 else 0.8),
+                      pan=0.3 if s_ % 2 else -0.3)
+        elif v["tex"] == "intima":
+            for s_, n in enumerate([ch[1] + 12, ch[2] + 12, ch[3] + 12, ch[4] + 12, ch[3] + 12, ch[2] + 12, ch[3] + 12, ch[4] + 12]):
+                T.add(piano_m(n, beat * 1.2, 0.32), t + s_ * beat / 2, 0.07 * g, pan=0.1)
+        else:                                                  # spoglia: una linea alta d'archi che si muove poco
+            T.add(archi(ch[4] + 12, L, 3400, att=1.5, rel=1.5), t, 0.035 * g, pan=0.2)
+        t += L; k += 1
+    x = T.render(fade_in=0.5, fade_out=2.0, rev=0.36)
+    _TR[0] = 0
+    return hp_fft(x)
+
+
+def cue2(video, kind, dur=None):
+    v = V2[video]; _TR[0] = v["tr"]
+    if kind == "chiusura":                                     # motivo proprio del reel, sullo strumento del reel
+        beat = 60 / v["bpm"]; p = beat * 1.2; T = Track(CUE_DUR[kind]); ch = CH[v["prog"][0]]
+        for j, n in enumerate(ch[1:4]):
+            T.add(archi(n + 12, 5.0, 2800, att=0.8, rel=2.0), 0.0, 0.03, pan=-0.4 + j * 0.4)
+        for i, n in enumerate(v["mot"]):
+            last = i == len(v["mot"]) - 1
+            if v["c"] == "C":
+                T.add(pluck(n, p * (3 if last else 1.2), 0.995, 0.55), 0.1 + i * p, 0.13, pan=0.1)
+            else:
+                T.add(piano_m(n, p * (3.0 if last else 1.1), 0.45), 0.1 + i * p, 0.16, pan=0.1)
+                if v["c"] == "A":
+                    T.add(archi(n, p * (3 if last else 1.1), 3000, att=0.2, rel=0.8), 0.1 + i * p, 0.03, pan=-0.1)
+        x = hp_fft(T.render(fade_in=0.02, fade_out=1.8, rev=0.45))
+    else:
+        st = v["g"] if kind == "gancio" else v["r"]
+        x = cue(kind, st, v["bpm"], aperto=v["prog"][0] if v["prog"][0] in CH else "Fsus",
+                riv={"teaser": "Db", "madeinindia": "Ab", "indietro": "Eb", "premilla": "Db", "1975": "Ab"}[video])
+    _TR[0] = 0
+    return x
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("video", choices=list(VIDEO)); ap.add_argument("cosa"); ap.add_argument("a"); ap.add_argument("b", nargs="?")

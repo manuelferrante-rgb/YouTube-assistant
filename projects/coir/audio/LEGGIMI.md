@@ -67,3 +67,12 @@ leggero"): 0.025 sotto la voce, -6 dB mentre suona la
 rivelazione, 0.055 dopo la voce; segni a 0.08 (chiusura 0.14, dalla fine della voce all'ultimo fotogramma del logo).
 La musica resta sotto il livello dei verticali approvati prima, anche sul logo.
 Limitatore a -2 dB con sovracampionamento: -14.7/-15.2 LUFS, picchi sotto -1.8 dBTP.
+
+## v2 (Manuel 9/11 sera): ogni reel con un suono suo, musica solo come accompagnamento leggero
+Manuel: "troppo alto" e "l'audio è tutto uguale per tutti". Ora ogni reel ha strumento, tonalità e passo propri
+(`V2` in `audio/musica/coir_verticali.py`, i file `<reel>_*.flac` sono la v2):
+teaser piano che scorre (fa minore, 88) | made in india solo archi + una nota di piano (sol minore, 84) |
+indietro pizzicato a passi (si bemolle minore, 80) | premilla piano solo, accordi spezzati in maggiore (72) |
+1975 solo archi lunghi in la bemolle maggiore (76). Chiusura: motivo diverso per ogni reel.
+Livelli: musica 0.01 sotto la voce, 0.022 dopo la voce; segni 0.03 (chiusura 0.05). Niente limitatore:
+la voce e l'audio di Montaggio restano identici all'approvato (correlazione 0.999, stesso LUFS).
