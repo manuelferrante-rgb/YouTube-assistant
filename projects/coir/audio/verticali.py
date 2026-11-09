@@ -24,8 +24,8 @@ import coir_verticali as CV  # noqa: E402
 AUD = HERE
 RIV = {"teaser": "0021", "made_in_india": "0542", "indietro": "0074", "premilla": "0016", "1975": "0527"}
 PREF = {"made_in_india": "madeinindia"}
-MUS, MUS_UP, DIP = 0.08, 0.17, 0.5          # sotto la voce, finale senza voce, -6 dB durante la rivelazione
-CUE, CUE_END = 0.24, 0.45
+MUS, MUS_UP, DIP = 0.025, 0.055, 0.5       # Manuel 9/11: "molto più bassi, accompagnamento leggero" (-10 dB)
+CUE, CUE_END = 0.08, 0.14
 D_RIV = 4.0
 STILE = {"teaser": "A", "madeinindia": "A", "indietro": "C", "premilla": "A", "1975": "A"}   # bozze scelte
 APPROVATI = f"{B.WORK}/drive"         # verticali approvati scaricati da Drive montati/coir
@@ -70,7 +70,7 @@ def vfinish(r, name, track, t_b, end, offset=0.0):
     app = f"{APPROVATI}/VociVere_coir_{name}_1080x1920.mp4"
     out = f"{B.OUT}/VociVere_coir_{name}_1080x1920.mp4"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", app, "-i", tmp, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
-                    "-af", "alimiter=limit=0.79:level=false", "-c:a", "aac", "-b:a", "256k", "-shortest", "-movflags", "+faststart", out], check=True)
+                    "-af", "aresample=192000,alimiter=limit=0.79:attack=0.5:level=false,aresample=48000", "-c:a", "aac", "-b:a", "256k", "-shortest", "-movflags", "+faststart", out], check=True)
     return out
 
 
