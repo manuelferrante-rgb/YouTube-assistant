@@ -97,6 +97,13 @@ def main():
     out = fin.copy()
     LAG = 95          # l'audio del file finale è 95 campioni (2 ms) dopo quello ricostruito (misurato: residuo -44 dB)
     out[lo:hi] += G * (new[lo - LAG:hi - LAG] - old[lo - LAG:hi - LAG])
+    # dove c'era la vecchia voce la sottrazione lasciava un'eco (-27 dB su "viaggio", Manuel 9/11): lì l'audio si
+    # ricostruisce da zero, solo voce nuova + musica (nel montato sotto la chiusura non c'è altro), raccordi di 30 ms
+    ra, rb = int((T_VOICE - 0.1) * SR) + LAG, int((T_SIGLA - 0.02) * SR) + LAG
+    clean = G * new[ra - LAG:rb - LAG]
+    x = int(0.03 * SR)
+    w = np.ones(rb - ra); w[:x] = np.linspace(0, 1, x); w[-x:] = np.linspace(1, 0, x)
+    out[ra:rb] = out[ra:rb] * (1 - w[:, None]) + clean * w[:, None]
     print(f"residuo della vecchia chiusura: {20 * np.log10(np.sqrt(((fin - 0)[lo:hi, 0] - G * old[lo - LAG:hi - LAG, 0])[int((T_VOICE - t_e + 1) * SR):int((T_SIGLA - t_e + 0.9) * SR)].std()) + 1e-9):.1f}")
     print(f"picco nel tratto: {20 * np.log10(np.abs(out[lo:hi]).max()):.1f} dBFS, guadagno {20 * np.log10(G):.2f} dB")
     out = np.clip(out, -0.98, 0.98)
