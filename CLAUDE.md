@@ -31,7 +31,7 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura, carosello di ogni lungo, sottotitoli it/en del lungo; testi a schermo per Montaggio (scritte sui B-roll del lungo, gancio e scritte dei 4 verticali, sul girato già registrato); dal 25/10 per i prossimi video anche le domande da fare alle persone e la parte di storia da dire in camera | `copioni/<video>_testi.md` |
 | Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
-Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01Htfbh2Xp2z2rbRNGYUwBKL (dal 29/10 sera, prossimo video; meenakshi era session_01Htfbh1ny4yyq4niKggdc3h),
+Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01Htfbgygqfq2ApmZ8QQUNmP (dal 9/11; le precedenti session_01Htfbh1DnYNwCNcosU1MxNF (coir) e session_01Htfbh2Xp2z2rbRNGYUwBKL sono chiuse),
 Pianificazione session_01Htfbh1JY3Yt7kZFCWdZ1R7 (dal 9/11; la precedente session_01Htfbh1gkXBLknEYqpSW8Nz è chiusa), Copy session_01HtfbgysqTrKE7hBx3kQeSA (dal 9/11; la precedente session_01Htfbh1pdXfsApjZ5UHH6NS è chiusa),
 Insights session_01HtfbgxkNTt22kkzsAAPSRS (dal 9/11; la precedente session_01HtfbgytQCQCLucysNXetfy è chiusa), Audio session_01Htfbh1kM4nuyvmpEN66EKu (dall'8/11; la precedente session_01Htfbh1hh4sZ1vuxcxFFMyL è chiusa).
 
