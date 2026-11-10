@@ -100,8 +100,10 @@ Arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pelleg
 Video completo sul canale, link in bio.
 #india #kerala #viaggio #VociVere #pellegrinaggio
 (versione pubblicata da Manuel su IG, 10/11; su YouTube resta il testo della prova di Insights)
-Descrizione Short YT: Arthunkal, India. La chiesa la ricostruisce nel 1584 un gesuita italiano: qui lo chiamano ancora Veluthachan, il padre bianco. Lo sapevi?
-Dove arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua. Il video completo (6 min) è nel link sopra il titolo.
+Descrizione Short YT: La chiesa la ricostruisce nel 1584 un gesuita italiano: qui lo chiamano ancora Veluthachan, il padre bianco.
+Arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua. Il video completo è sul canale
+#india #kerala #viaggio #VociVere #pellegrinaggio
+(versione messa da Manuel, 10/11)
 Commento fissato YT: Dove arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua. Il video completo (6 min) è nel link sopra il titolo.
 (10/11, Insights su richiesta di Manuel: è lo Short di lun 16/11, prova del motivo esplicito per il lungo, misura in analisi/arthunkal.md.)
 
