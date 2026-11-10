@@ -3,6 +3,8 @@ Tutto su Drive, cartella del video -> montati/te/: sottotitoli/ (.it.srt, .en.sr
 01, 06, 09 video), storie/ (3 set da 6 + storie_testi.md), TESTI_titolo_descrizioni_verticali.txt. Uscite (calendario): teaser sab 14/11, lungo dom 15/11, reel lun 16, mar 17,
 gio 19/11, carosello mer 18/11.
 
+
+Traccia audio inglese (prova, Manuel 10/11): copione e tempi in `copioni/te_audio_en.md`; su Drive montati/te/TESTI_audio_inglese.txt.
 ### Titolo (scelta di Manuel, 1a)
 IT: AFFITTATE PER 3.000 RUPIE L'ANNO: le colline del tè in India 🇮🇳
 EN: LEASED FOR 3,000 RUPEES A YEAR: India's tea hills 🇮🇳
