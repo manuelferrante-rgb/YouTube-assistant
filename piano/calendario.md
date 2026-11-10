@@ -162,7 +162,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | ven 13/11 | EXTRA autostop e mercato: stories set 3, insieme | autostop riportato al 13/11 (Manuel 10/11); entrambi i profili; set 3 insieme all'autostop (Manuel 10/11); meenakshi 18/11 è a 5 giorni |
 | sab 14/11 | arthunkal: teaser |  |
 | dom 15/11 | arthunkal: LUNGO |  |
-| lun 16/11 | arthunkal: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| lun 16/11 | arthunkal: reel V2 statua, "Una statua arrivata da Milano nel 1647, sulla costa del Kerala", su YouTube Shorts | scelto da Insights 10/11; testo per portare al lungo in `analisi/arthunkal.md`; collegare il lungo (video correlato) dopo le 13 di dom 15/11 |
 | mar 17/11 | arthunkal: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
 | mer 18/11 | EXTRA meenakshi | spostato dall'11/11 |
 | gio 19/11 | arthunkal: reel 2 |  |
