@@ -78,10 +78,12 @@ Titolo Short / prima riga IG:
 Didascalia IG:
 13 km a piedi, di notte, recitando il rosario 🇮🇳
 Si parte a mezzanotte da Kalavoor e si cammina lungo la costa del Kerala fino alla basilica di Arthunkal.
-Cammineresti 13 km di notte?
-Nel video: chi cammina, chi dà da mangiare a chi passa, e perché in questa chiesa c'è una statua arrivata da Milano.
-Domenica il video completo sul canale YouTube Voci Vere.
+
+Chi cammina, chi dà da mangiare a chi passa, e perché in questa chiesa c'è una statua arrivata da Milano.
+
+Domenica il video completo su YouTube
 #india #kerala #viaggio #vitalocale #pellegrinaggio
+(versione pubblicata da Manuel, 10/11)
 Descrizione Short YT: Si parte a mezzanotte da Kalavoor e si cammina lungo la costa del Kerala fino alla basilica di Arthunkal. Cammineresti 13 km di notte?
 Commento fissato YT: Nel video: chi cammina, chi dà da mangiare a chi passa, e perché in questa chiesa c'è una statua arrivata da Milano.
 
