@@ -173,7 +173,6 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | mar 24/11 | arthunkal: stories set 3 |  |
 | mer 25/11 | arthunkal: carosello "I volti" (+ post YouTube) |  |
 | gio 26/11 | EXTRA kallu |  |
-| ven 27/11 | EXTRA autostop | slittato dal 13/11 al primo giorno vuoto (Manuel 10/11); entrambi i profili |
 | sab 28/11 | te: teaser |  |
 | dom 29/11 | te: LUNGO | solo se approvato |
 | lun 30/11 | te: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
@@ -225,6 +224,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | ven 29/1 | bilancio: stories set 2 |  |
 | sab 30/1 | bilancio: carosello (+ post YouTube) |  |
 | dom 31/1 | bilancio: reel 3 | programmato prima della partenza per il Vietnam |
+| mar 2/2 | EXTRA autostop | slittato dal 27/11 (Manuel 10/11): primo giorno vuoto che rispetta le regole; entrambi i profili; programmare prima della partenza. Il carosello "I volti" del bilancio va al 3/2 o dopo |
 
 Nota da Pianificazione, 4/11 (Manuel): cocco e canna di comorin escono anche loro su entrambi i profili (personale e Voci Vere). Quindi tutti i reel mainstream (panni, autostop, cocco, canna) vanno su entrambi; le date 26/11 e 2/12 non sono più condizionate.
 Nota da Pianificazione, 4/11 (Manuel): strategia. Prima si pubblica (anche contenuti più leggeri), poi si dà al profilo una forma professionale e da "Voci Vere". Lo scopo principale, da non dimenticare: DARE VOCE A CHI NE HA PIU' BISOGNO. Ogni lungo e ogni tema nuovo (coir, migranti, ONG) va verificato contro questa frase.
@@ -349,3 +349,5 @@ solo i 4.2 s del banner). Punti: coir 2:50.8, te 5:37.0, arthunkal 5:01.8 (voice
 il terzo banner fisso di ogni lungo (regola in `regole/montaggio_documentario.md`).
 
 Nota da Pianificazione, 10/11 (Manuel): stories set 3 del mercato spostate da gio 12/11 a ven 13/11. EXTRA autostop slitta dal 13/11 al primo giorno vuoto, ven 27/11. Attenzione: è il giorno dopo kallu (26/11) e prima di teaser (28/11) e lungo te (29/11), quindi 4 giorni di fila 26-29/11 e due extra a 1 giorno di distanza, contro la regola dei 3 giorni. Da rivedere se serve.
+
+Nota da Pianificazione, 10/11 (Manuel): autostop spostato dal 27/11 al 2/2. Fino al 31/1 non c'è nessun giorno vuoto che rispetti insieme i 3 giorni tra extra e il massimo di 3 uscite di fila. Il 27/11 è annullato.
