@@ -32,7 +32,7 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
 Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01Htfbh1snHZyaWpD1y2Ff4n (dal 10/11; le precedenti session_01Htfbgygqfq2ApmZ8QQUNmP, session_01Htfbh1DnYNwCNcosU1MxNF (coir) e session_01Htfbh2Xp2z2rbRNGYUwBKL sono chiuse),
-Pianificazione session_01Htfbh1JY3Yt7kZFCWdZ1R7 (dal 9/11; la precedente session_01Htfbh1gkXBLknEYqpSW8Nz è chiusa), Copy session_01HtfbgysqTrKE7hBx3kQeSA (dal 9/11; la precedente session_01Htfbh1pdXfsApjZ5UHH6NS è chiusa),
+Pianificazione session_01Htfbh1JY3Yt7kZFCWdZ1R7 (dal 9/11; la precedente session_01Htfbh1gkXBLknEYqpSW8Nz è chiusa), Copy session_01HtfbgxkwhMbMCwGetFjun7 (dal 10/11; le precedenti session_01HtfbgysqTrKE7hBx3kQeSA e session_01Htfbh1pdXfsApjZ5UHH6NS sono chiuse),
 Insights session_01HtfbgxkNTt22kkzsAAPSRS (dal 9/11; la precedente session_01HtfbgytQCQCLucysNXetfy è chiusa), Audio session_01HtfbgznfgQLyxms46EphZT (dal 9/11; la precedente session_01Htfbh1kM4nuyvmpEN66EKu è chiusa).
 
 FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
