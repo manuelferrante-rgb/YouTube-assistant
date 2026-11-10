@@ -14,7 +14,8 @@ Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in
 - Manuel cambia spesso le didascalie prima di pubblicare (toglie la domanda o la sposta in cima, toglie "Nel video:"): salvare
   sempre la versione che manda lui. Su YouTube il titolo dello Short resta il fatto concreto.
 
-## PROMEMORIA da dare a Manuel (non si possono programmare: sessione al limite)
+## PROMEMORIA da dare a Manuel (PROGRAMMATI con send_later dalla chat Copy session_01HtfbgxkwhMbMCwGetFjun7 il 10/11, ora italiana:
+## 13/11 12:00, 14/11 12:00, 15/11 13:15, 16/11 12:00, 22/11 10:00, 13/12 10:00)
 - dom 15/11 dopo le 13:00: collegare il lungo arthunkal come video correlato a teaser (14/11) e V2 statua (16/11), link su IG.
 - Commenti fissati YouTube (Manuel non li mette in programmazione, vanno messi appena esce lo Short):
   sab 14/11 teaser arthunkal: "Nel video: chi cammina, chi dà da mangiare a chi passa, e perché in questa chiesa c'è una statua arrivata da Milano."
