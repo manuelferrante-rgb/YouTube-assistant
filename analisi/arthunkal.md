@@ -6,7 +6,7 @@
   sull'anziano col telo bianco (persona del posto, stesso volto della miniatura A2). V4 ripete il "13 km" del teaser,
   V3 è una citazione senza numero.
 - Prova del motivo esplicito (commento fissato YT + descrizione Short; su IG ultima riga della didascalia):
-  "Dove finiscono a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua.
+  "Dove arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua.
   Il video completo (6 min) è nel link sopra il titolo."
 - Misura: lungo, Copertura > sorgenti > "Short correlati" (o "Shorts" come sorgente) a 48 ore (17/11, primo segnale) e a
   7 giorni (22/11, decisione), rapportato alle visualizzazioni del V2. Base del mercato: reel B 5.248 visualizzazioni,
