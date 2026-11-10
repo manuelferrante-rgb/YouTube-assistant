@@ -20,6 +20,9 @@ Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in
   descrizione e capitoli it/en, 5 verticali (teaser + 4 reel), carosello "fatto" (`copioni/caroselli/carosello_coir.py`),
   "I volti", storie 3x6 (`copioni/stories/stories_coir.py`). Script, VO e note per Montaggio/Audio in `copioni/coir_testi.md`.
   Da fare: inserire il link del lungo nei post YouTube quando esce (lo mette Manuel).
+- Tracce audio inglesi dei lunghi te e coir (Manuel 10/11): copioni in `copioni/te_audio_en.md` e `copioni/coir_audio_en.md`
+  (anche su Drive montati/<video>/TESTI_audio_inglese.txt). Manuel le registra una settimana prima dell'uscita (te ~22/11,
+  coir ~13/12) con Copy, poi Montaggio fa la traccia (istruzioni nel file del te). Arthunkal niente traccia inglese.
 - erosione: domande e parti in camera in `copioni/erosione_testi.md`; girato forse dal 9/11.
 - meenakshi: carosello "I volti" pronto (Drive cartella meenakshi). comorin: copy completo in `copioni/comorin_testi.md`.
 

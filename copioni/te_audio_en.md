@@ -1,6 +1,6 @@
 # te: traccia audio inglese del lungo (Copy, 10/11, prova decisa da Manuel)
-Prova su un solo lungo (te, esce dom 29/11): traccia audio inglese caricata in YouTube Studio ("Traccia audio", inglese).
-Se i dati la giustificano (Insights: visualizzazioni con audio inglese e paesi, dopo 2-3 settimane) si fa anche su coir.
+Fatta su te (esce dom 29/11) e coir (dom 20/12, `copioni/coir_audio_en.md`), decisione di Manuel 10/11. Manuel registra una settimana prima di ogni uscita (te verso il 22/11), insieme a Copy.
+Insights misura dopo 2-3 settimane: visualizzazioni con audio inglese e paesi.
 Base: lungo v9 (6:26), tempi dai sottotitoli `projects/te/sottotitoli/` e dai voiceover in `projects/te/capitoli.md`.
 
 ## Cosa cambia nella traccia

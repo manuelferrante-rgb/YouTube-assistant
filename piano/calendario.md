@@ -357,3 +357,7 @@ Nota da Pianificazione, 10/11 (Manuel): settimana 10-16/11 da schedulare. Set 3 
 Nota da Pianificazione, 10/11 (Manuel): stories set 3 del mercato escono ven 13/11 insieme all'extra autostop (non più gio 12/11 col carosello "I volti"). Settimana 10-15/11: mar stories set 1, mer set 2, gio carosello "I volti", ven autostop + set 3, sab arthunkal teaser, dom arthunkal lungo.
 
 Nota da Pianificazione, 10/11 (Manuel): Manuel schedula le uscite fino a lun 16/11 (arthunkal teaser 14/11, lungo dom 15/11 alle 13:00, reel più forte lun 16/11). REGOLA PER TUTTI I LUNGHI: appena il lungo esce (domenica 13:00), promemoria a Manuel di collegare il lungo al teaser del sabato e al verticale del lunedì già schedulati (link su IG, "video correlato" su YouTube). Promemoria programmati per arthunkal 15/11, te 29/11, coir 20/12, B 10/1, bilancio 24/1.
+
+Nota da Copy, 10/11 (Manuel): tracce audio inglesi per i lunghi te e coir (in YouTube Studio, "Traccia audio"). Copioni pronti in
+`copioni/te_audio_en.md` e `copioni/coir_audio_en.md`. Manuel registra una settimana prima dell'uscita: te verso dom 22/11, coir verso
+dom 13/12; poi Montaggio prepara la traccia (stessa durata del lungo) entro l'uscita. Si può caricare anche dopo la pubblicazione.

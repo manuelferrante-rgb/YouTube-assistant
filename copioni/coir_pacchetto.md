@@ -3,6 +3,8 @@ Tutto su Drive, cartella "Coir" (19zCOBK_aJ6a4SFwGffbZvDKUr-IXR8UA) -> montati/c
 sottotitoli/ (.it.srt, .en.srt), miniatura/, carosello/, carosello_volti/, storie/, TESTI_titolo_descrizioni_verticali.txt.
 Uscite (calendario, Pianificazione): teaser sab 19/12, lungo dom 20/12, reel e caroselli nei giorni dopo.
 
+
+Traccia audio inglese (Manuel 10/11, registrazione verso il 13/12): copione e tempi in `copioni/coir_audio_en.md`; su Drive montati/coir/TESTI_audio_inglese.txt.
 ## LUNGO
 Titolo IT: MADE IN INDIA: chi fa i nostri tappeti 🇮🇳 le donne del coir in Kerala
 Titolo EN: MADE IN INDIA: who makes our doormats 🇮🇳 the coir women of Kerala
