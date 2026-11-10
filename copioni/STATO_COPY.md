@@ -33,7 +33,7 @@ Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in
 - Titolo degli Short: fatto concreto con un numero o un oggetto, tutto in italiano.
 - Testi dei verticali e dei caroselli: fatto, contesto, domanda su una riga, una frase con cosa si scopre solo nel lungo
   (anche come commento fissato su YT), "Video completo sul canale YouTube Voci Vere, link in bio." Hashtag in italiano:
-  #india #kerala #viaggio #vitalocale + uno sul tema. Tutto in italiano anche su IG, niente sottotitoli inglesi sui reel.
+  #india #kerala #viaggio #VociVere + uno sul tema. Tutto in italiano anche su IG, niente sottotitoli inglesi sui reel.
 - Verticali: la PRIMA frase del VO è la più forte; "Kerala, India" non si ripete (né detto né a schermo) se non serve.
 - Storie: escono SEMPRE dopo il lungo, mai "domenica" o conto alla rovescia.
 - Carosello "I volti": ritratti in posa, filtro caldo naturale, ogni persona una volta, niente microfoni, copertina con un

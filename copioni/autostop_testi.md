@@ -12,7 +12,7 @@ Tu ci saliresti? Uno sconosciuto in India mi riporta a casa in motorino 🇮🇳
 Fino a pochi minuti prima non ci conoscevamo.
 
 Segui Voci Vere per le prossime storie dall'India.
-#india #kerala #viaggio #vitalocale #autostop
+#india #kerala #viaggio #VociVere #autostop
 (versione pubblicata da Manuel, 10/11)
 
 Descrizione Short YT:

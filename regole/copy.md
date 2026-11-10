@@ -137,3 +137,6 @@ Nota da Insights, 8/11 sera (mercato a 7 giorni, YouTube + IG; `analisi/mercato.
   (cosa si scopre solo nel lungo), senza esca.
 - Correzione: la regola "scritta mai sul viso" resta, ma il reel B non la dimostra: su YouTube lo stesso primo
   fotogramma (volto coperto) tiene il 60,8%. Lo skip su IG dipendeva dal pubblico indiano.
+
+Hashtag (Manuel, 10/11): da ora in ogni didascalia e descrizione c'è #VociVere, al posto di #vitalocale (tolto: "veramente brutto").
+Schema: #india #kerala #viaggio #VociVere + uno sul tema.

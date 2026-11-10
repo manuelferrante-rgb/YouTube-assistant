@@ -70,7 +70,7 @@ su IG (scritte, didascalie, hashtag), niente sottotitoli in inglese. Sotto i ree
 frase con una cosa precisa che si scopre solo nel lungo (stessa frase nel commento fissato su YouTube, dove i link non si
 cliccano: il collegamento è il video correlato che mette Manuel). Su IG chiude "Video completo sul canale YouTube Voci Vere,
 link in bio." Teaser: dice cosa c'è nel lungo senza il finale; l'annuncio solo in fondo, mai nel titolo.
-Hashtag con le parole del pubblico: #india #kerala #viaggio #vitalocale + uno sul tema.
+Hashtag con le parole del pubblico: #india #kerala #viaggio #VociVere + uno sul tema.
 
 ### V1 teaser (VociVere_arthunkal_v1_teaser_1080x1920.mp4)
 Titolo Short / prima riga IG:
@@ -82,7 +82,7 @@ Si parte a mezzanotte da Kalavoor e si cammina lungo la costa del Kerala fino al
 Chi cammina, chi dà da mangiare a chi passa, e scopriremo perché in questa chiesa c'è una statua arrivata da Milano.
 
 Domenica il video completo su YouTube
-#india #kerala #viaggio #vitalocale #pellegrinaggio
+#india #kerala #viaggio #VociVere #pellegrinaggio
 (versione pubblicata da Manuel, 10/11)
 Descrizione Short YT: Si parte a mezzanotte da Kalavoor e si cammina lungo la costa del Kerala fino alla basilica di Arthunkal. Cammineresti 13 km di notte?
 Commento fissato YT: Nel video: chi cammina, chi dà da mangiare a chi passa, e perché in questa chiesa c'è una statua arrivata da Milano.
@@ -95,7 +95,7 @@ Una statua arrivata da Milano nel 1647, sulla costa del Kerala 🇮🇳
 Arthunkal, India. La chiesa la ricostruisce nel 1584 un gesuita italiano: qui lo chiamano ancora Veluthachan, il padre bianco.
 Lo sapevi?
 Dove arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua. Video completo (6 min) sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #pellegrinaggio
+#india #kerala #viaggio #VociVere #pellegrinaggio
 Descrizione Short YT: Arthunkal, India. La chiesa la ricostruisce nel 1584 un gesuita italiano: qui lo chiamano ancora Veluthachan, il padre bianco. Lo sapevi?
 Dove arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua. Il video completo (6 min) è nel link sopra il titolo.
 Commento fissato YT: Dove arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua. Il video completo (6 min) è nel link sopra il titolo.
@@ -110,7 +110,7 @@ Sulla strada per Arthunkal, in Kerala, le chiedo cosa significa per lei questo c
 Tu hai mai fatto un cammino così?
 Chi aspetta i pellegrini lungo la strada, con acqua e cibo gratis per tutti: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #pellegrinaggio
+#india #kerala #viaggio #VociVere #pellegrinaggio
 Descrizione Short YT: Sulla strada per Arthunkal, in Kerala, le chiedo cosa significa per lei questo cammino. Non è la prima volta che lo fa. Tu hai mai fatto un cammino così?
 Commento fissato YT: Chi aspetta i pellegrini lungo la strada, con acqua e cibo gratis per tutti: è nel video sul canale.
 
@@ -123,7 +123,7 @@ Si chiama Akhanda Japamala, il rosario ininterrotto: dal santuario di Kalavoor a
 Ce la faresti a non fermarti mai?
 Com'è nato, quando nel 2002 erano poche centinaia, e chi cammina oggi: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #pellegrinaggio
+#india #kerala #viaggio #VociVere #pellegrinaggio
 Descrizione Short YT: Si chiama Akhanda Japamala, il rosario ininterrotto: dal santuario di Kalavoor alla basilica di Arthunkal, lungo la costa del Kerala. Ce la faresti a non fermarti mai?
 Commento fissato YT: Com'è nato, quando nel 2002 erano poche centinaia, e chi cammina oggi: è nel video sul canale.
 

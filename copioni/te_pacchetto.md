@@ -64,7 +64,7 @@ su IG (scritte, didascalie, hashtag), niente sottotitoli in inglese. Sotto i ree
 frase con una cosa precisa che si scopre solo nel lungo (stessa frase nel commento fissato su YouTube, dove i link non si
 cliccano: il collegamento è il video correlato che mette Manuel). Su IG chiude "Video completo sul canale YouTube Voci Vere,
 link in bio." Teaser: dice cosa c'è nel lungo senza il finale; l'annuncio solo in fondo, mai nel titolo.
-Hashtag con le parole del pubblico: #india #kerala #viaggio #vitalocale + uno sul tema.
+Hashtag con le parole del pubblico: #india #kerala #viaggio #VociVere + uno sul tema.
 
 ### V1 teaser (VociVere_te_v1_teaser_1080x1920.mp4)
 Titolo Short / prima riga IG:
@@ -75,7 +75,7 @@ Munnar, Kerala. Oggi sono coperte di tè fino all'orizzonte.
 Secondo te, di chi sono oggi?
 Nel video: chi raccoglie il tè, quanto ne raccoglie in un giorno, e di chi sono diventate queste colline.
 Domenica il video completo sul canale YouTube Voci Vere.
-#india #kerala #viaggio #vitalocale #tè
+#india #kerala #viaggio #VociVere #tè
 Descrizione Short YT: Munnar, Kerala. Oggi sono coperte di tè fino all'orizzonte. Secondo te, di chi sono oggi?
 Commento fissato YT: Nel video: chi raccoglie il tè, quanto ne raccoglie in un giorno, e di chi sono diventate queste colline.
 
@@ -88,7 +88,7 @@ Munnar, Kerala. Sadish ci mostra come si raccoglie: due, tre foglie, quelle buon
 Lo sapevi che si raccoglie così?
 Di chi sono oggi queste colline, affittate nel 1877 per 3.000 rupie: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #tè
+#india #kerala #viaggio #VociVere #tè
 Descrizione Short YT: Munnar, Kerala. Sadish ci mostra come si raccoglie: due, tre foglie, quelle buone. Sulla stessa pianta si torna ogni dieci, quindici giorni. Lo sapevi che si raccoglie così?
 Commento fissato YT: Di chi sono oggi queste colline, affittate nel 1877 per 3.000 rupie: è nel video sul canale.
 
@@ -101,7 +101,7 @@ Munnar, Kerala. Sadish ce lo dice: si lavora dalle 8 alle 12, poi dall'una e mez
 Tu quanti chili raccoglieresti?
 I nove giorni del 2015 in cui le raccoglitrici bloccarono Munnar: sono nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #tè
+#india #kerala #viaggio #VociVere #tè
 Descrizione Short YT: Munnar, Kerala. Sadish ce lo dice: si lavora dalle 8 alle 12, poi dall'una e mezza fino alle 5 circa. E raccolgono tutti, donne e uomini. Tu quanti chili raccoglieresti?
 Commento fissato YT: I nove giorni del 2015 in cui le raccoglitrici bloccarono Munnar: sono nel video sul canale.
 
@@ -114,7 +114,7 @@ Munnar, Kerala. Il chai master tira il tè senza fermarsi. Gli ho chiesto di par
 L'hai mai assaggiato?
 Da dove arriva il tè di questo bicchiere, e chi lo raccoglie sulle colline: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #chai
+#india #kerala #viaggio #VociVere #chai
 Descrizione Short YT: Munnar, Kerala. Il chai master tira il tè senza fermarsi. Gli ho chiesto di parlare: si è rifiutato. L'hai mai assaggiato?
 Commento fissato YT: Da dove arriva il tè di questo bicchiere, e chi lo raccoglie sulle colline: è nel video sul canale.
 
@@ -123,7 +123,7 @@ Didascalia IG / titolo Short:
 POV: non hai la lavatrice (e non ti serve) 🇮🇳
 Kerala, India. Rubinetto, secchio, due mani. E un sorriso alla fine.
 Tu sapresti farlo così?
-#india #kerala #viaggio #vitalocale #bucato
+#india #kerala #viaggio #VociVere #bucato
 Descrizione Short YT: Rubinetto, secchio e due mani: il bucato in Kerala. Tu sapresti farlo così?
 (Il luogo preciso, se Manuel lo dice, al posto di "Kerala".)
 

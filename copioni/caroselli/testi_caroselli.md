@@ -16,7 +16,7 @@ Il mercato del pesce di Marari, in Kerala, non ha tetto né banchi: le barche ar
 all'asta sulla sabbia. Prima, la sveglia alle 3.
 Tu ti alzeresti alle 3?
 Il video completo è sul canale, link in bio.
-#india #kerala #viaggio #vitalocale #mercato
+#india #kerala #viaggio #VociVere #mercato
 Post YouTube (scheda Community, stesse 8 immagini, senza musica):
 Pesava come una persona 🇮🇳 Il mercato del pesce di Marari, in Kerala: niente tetto, niente banchi, aste sulla sabbia. Tu ti alzeresti alle 3 per esserci? Il video completo: https://youtu.be/LW4zO_0oSgQ
 Musica IG (Insights, 7/11): strumentale della libreria di Instagram, calma (chitarra o percussioni leggere), senza voce, non di
@@ -31,7 +31,7 @@ alla basilica di Arthunkal, recitando un rosario che non si interrompe mai. Noi 
 Cammineresti 13 km di notte, pregando?
 Chi aspetta i pellegrini lungo la strada, e perché qui c'è una statua arrivata da Milano: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #pellegrinaggio
+#india #kerala #viaggio #VociVere #pellegrinaggio
 Post YouTube (scheda Community):
 13 km pregando, senza mai fermarsi 🇮🇳 Di notte, sulla costa del Kerala, fino alla basilica di Arthunkal.
 Cammineresti 13 km di notte, pregando? Chi aspetta i pellegrini lungo la strada, e perché qui c'è una statua arrivata da Milano: è nel video. [link del lungo]
@@ -49,7 +49,7 @@ dipendenti.
 Che tè bevi tu?
 I nove giorni del 2015 in cui le raccoglitrici bloccarono Munnar: sono nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #tè
+#india #kerala #viaggio #VociVere #tè
 Post YouTube (scheda Community):
 Affittate per 3.000 rupie l'anno 🇮🇳 Le colline del tè di Munnar, in Kerala: chi le raccoglie, e di chi sono oggi.
 Che tè bevi tu? I nove giorni del 2015 in cui le raccoglitrici bloccarono Munnar sono nel video. [link del lungo]
@@ -74,7 +74,7 @@ Chi pesca, chi vende, chi compra all'asta sulla sabbia. Ogni mattina, sulla cost
 Chi ti è rimasto in mente?
 A che ora si sveglia un pescatore qui, e il pesce da 50 chili venduto sulla sabbia: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #mercato
+#india #kerala #viaggio #VociVere #mercato
 Post YouTube (stesse 7 immagini):
 I volti del mercato del pesce di Marari, in Kerala 🇮🇳 Chi pesca, chi vende, chi compra all'asta sulla sabbia.
 A che ora si sveglia un pescatore qui, e il pesce da 50 chili venduto sulla sabbia: è nel video. https://youtu.be/LW4zO_0oSgQ
@@ -87,7 +87,7 @@ I volti del pellegrinaggio di Arthunkal 🇮🇳
 Chi ti è rimasto in mente?
 Cosa ci hanno raccontato, mentre camminavano: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #pellegrinaggio
+#india #kerala #viaggio #VociVere #pellegrinaggio
 Post YouTube:
 I volti del pellegrinaggio di Arthunkal, in Kerala 🇮🇳 13 km a piedi, di notte, fino alla basilica.
 Cosa ci hanno raccontato, mentre camminavano: è nel video. [link del lungo]
@@ -100,7 +100,7 @@ Sadish tra i filari, il signore che fa il chai e chi abbiamo incontrato sulla st
 Chi ti è rimasto in mente?
 Quanto tè raccoglie una persona in un giorno, ce lo dice Sadish: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #tè
+#india #kerala #viaggio #VociVere #tè
 Post YouTube:
 I volti del tè di Munnar, in Kerala 🇮🇳 Sadish tra i filari, e chi abbiamo incontrato lungo la strada.
 Quanto tè raccoglie una persona in un giorno, ce lo dice Sadish: è nel video. [link del lungo]
@@ -114,7 +114,7 @@ I volti del tempio di Meenakshi 🇮🇳
 La sera, davanti al tempio, a Madurai, nel Tamil Nadu. Chi viene a pregare e chi ci passa ogni giorno.
 Chi ti è rimasto in mente?
 Perché questo tempio, saccheggiato nel 1310, oggi è così: è nel reel sul profilo.
-#india #tamilnadu #viaggio #vitalocale #tempio
+#india #tamilnadu #viaggio #VociVere #tempio
 Post YouTube (stesse immagini):
 I volti del tempio di Meenakshi, a Madurai 🇮🇳 La sera, davanti al tempio.
 Il video: [link allo Short di Meenakshi]
@@ -122,10 +122,10 @@ Il video: [link allo Short di Meenakshi]
 ## Regole dei caroselli (Insights, 7/11, dal carosello del mercato)
 - Didascalia IG (aggiornata 8/11): riga 1 il fatto; contesto; la domanda da sola su una riga (niente "Scrivilo nei commenti");
   una frase con una cosa precisa che si scopre solo nel lungo; "Video completo sul canale YouTube Voci Vere, link in bio."
-  Hashtag in italiano: #india #kerala #viaggio #vitalocale + uno sul tema.
+  Hashtag in italiano: #india #kerala #viaggio #VociVere + uno sul tema.
 - Post YouTube: il link VERO del lungo nel testo (mai "è sul canale"), niente musica.
 - Musica IG: strumentale della libreria di Instagram, calma (chitarra o percussioni leggere), senza voce, non di tendenza,
   volume basso. Per ogni carosello si scrive qui quale brano ha messo Manuel, così Insights confronta.
 Post YouTube: Studio accetta 8 immagini (prova del mercato, 7/11): i caroselli si caricano interi.
-Hashtag (Insights, 8/11): parole del pubblico, tutto in italiano: #india #kerala #viaggio #vitalocale + uno sul tema.
+Hashtag (Insights, 8/11): parole del pubblico, tutto in italiano: #india #kerala #viaggio #VociVere + uno sul tema.
 Link dei lunghi: mercato https://youtu.be/LW4zO_0oSgQ; arthunkal e te da aggiungere quando escono.

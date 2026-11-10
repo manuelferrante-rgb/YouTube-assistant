@@ -447,7 +447,7 @@ Dalla fibra nasce la corda, dalla corda i tappeti che arrivano in Europa.
 Ce l'hai anche tu all'ingresso di casa?
 Quanto va a loro per ogni tappeto, e perché i giovani non vengono più: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #cocco
+#india #kerala #viaggio #VociVere #cocco
 Post YouTube (stesse immagini, 06 come .jpg):
 Sopra c'è scritto Made in India 🇮🇳 Le donne del coir del Kerala, che fanno i nostri tappeti a mano. Ce l'hai anche tu all'ingresso di casa? Quanto va a loro per ogni tappeto, e perché i giovani non vengono più: è nel video. [link del lungo]
 
@@ -468,7 +468,7 @@ Le donne e l'uomo che, sulla costa del Kerala, fanno a mano la fibra dei nostri 
 Chi ti è rimasto in mente?
 Chi sono, da quanti anni lo fanno e cosa ci hanno raccontato: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #cocco
+#india #kerala #viaggio #VociVere #cocco
 Post YouTube: I volti del coir, in Kerala 🇮🇳 Le donne e l'uomo che fanno a mano la fibra dei nostri tappeti. Chi sono, da quanti anni lo fanno e cosa ci hanno raccontato: è nel video. [link del lungo]
 
 ---------------------------------------------------------------------------------------------------------------

@@ -66,7 +66,7 @@ su IG (scritte, didascalie, hashtag), niente sottotitoli in inglese. Sotto i ree
 frase con una cosa precisa che si scopre solo nel lungo (stessa frase nel commento fissato su YouTube, dove i link non si
 cliccano: il collegamento è il video correlato che mette Manuel). Su IG chiude "Video completo sul canale YouTube Voci Vere,
 link in bio." Teaser: dice cosa c'è nel lungo senza il finale; l'annuncio solo in fondo, mai nel titolo.
-Hashtag con le parole del pubblico: #india #kerala #viaggio #vitalocale + uno sul tema.
+Hashtag con le parole del pubblico: #india #kerala #viaggio #VociVere + uno sul tema.
 
 ### Teaser (VociVere_coir_teaser_1080x1920.mp4)
 Titolo Short / prima riga IG:
@@ -77,7 +77,7 @@ Ogni giorno scende in acqua fino al petto e li cerca sul fondo, a mano. Restano 
 Sapevi da dove viene lo zerbino di cocco?
 Nel video: chi apre questi gusci a mano, quanto le pagano e dove finiscono i tappeti.
 Domenica il video completo sul canale YouTube Voci Vere.
-#india #kerala #viaggio #vitalocale #cocco
+#india #kerala #viaggio #VociVere #cocco
 Descrizione Short YT: Ogni giorno scende in acqua fino al petto e li cerca sul fondo, a mano. Restano lì per mesi, finché la fibra non si stacca. Kerala, India. Sapevi da dove viene lo zerbino di cocco?
 Commento fissato YT: Nel video: chi apre questi gusci a mano, quanto le pagano e dove finiscono i tappeti.
 
@@ -90,7 +90,7 @@ Sopra c'è scritto Made in India. Sotto una tettoia in Kerala, le donne aprono i
 Ce l'hai anche tu all'ingresso di casa?
 Perché qui i giovani non vengono più, e chi tira su i gusci dalla laguna: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #cocco
+#india #kerala #viaggio #VociVere #cocco
 Descrizione Short YT: Sopra c'è scritto Made in India. Sotto una tettoia in Kerala, le donne aprono i gusci a mano, sedute per terra. Dalla corda nasce il tappeto che parte per l'Europa. Ce l'hai anche tu all'ingresso di casa?
 Commento fissato YT: Perché qui i giovani non vengono più, e chi tira su i gusci dalla laguna: è nel video sul canale.
 
@@ -103,7 +103,7 @@ Due fili di fibra di cocco, intrecciati passo dopo passo, fino in fondo al capan
 Avresti mai detto che si fa così?
 Da dove arriva la fibra, tirata su a mano da una laguna, e quanto paga questo lavoro: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #cocco
+#india #kerala #viaggio #VociVere #cocco
 Descrizione Short YT: Due fili di fibra di cocco, intrecciati passo dopo passo, fino in fondo al capannone. Lei è Mary. La corda che ha in mano diventerà un tappeto. Avresti mai detto che si fa così?
 Commento fissato YT: Da dove arriva la fibra, tirata su a mano da una laguna, e quanto paga questo lavoro: è nel video sul canale.
 
@@ -116,7 +116,7 @@ Premilla ha sessant'anni. Quando questa società del coir ha aperto, in Kerala, 
 Chi conosci che fa lo stesso lavoro da una vita?
 Quanto guadagna in un giorno, e perché dopo di lei potrebbe non esserci nessuno: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #cocco
+#india #kerala #viaggio #VociVere #cocco
 Descrizione Short YT: Premilla ha sessant'anni. Quando questa società del coir ha aperto, in Kerala, lei era già qui. Si lavora sedute per terra, sotto il sole, fino alle due. Chi conosci che fa lo stesso lavoro da una vita?
 Commento fissato YT: Quanto guadagna in un giorno, e perché dopo di lei potrebbe non esserci nessuno: è nel video sul canale.
 
@@ -129,7 +129,7 @@ Ci indicano l'unico posto, qui intorno, dove si fa ancora. Il salario, ci dicono
 Nel tuo paese c'è un mestiere che sta sparendo?
 L'unico posto dove si fa ancora, e le donne che ci lavorano da quarant'anni: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
-#india #kerala #viaggio #vitalocale #cocco
+#india #kerala #viaggio #VociVere #cocco
 Descrizione Short YT: Ci indicano l'unico posto, qui intorno, dove si fa ancora. Il salario, ci dicono, è di 400 rupie al giorno, circa 4 euro. Nel tuo paese c'è un mestiere che sta sparendo?
 Commento fissato YT: L'unico posto dove si fa ancora, e le donne che ci lavorano da quarant'anni: è nel video sul canale.
 
