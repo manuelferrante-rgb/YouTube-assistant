@@ -9,7 +9,8 @@ Uno sconosciuto in India mi riporta a casa in motorino 🇮🇳
 
 Didascalia IG:
 Tu ci saliresti? Uno sconosciuto in India mi riporta a casa in motorino 🇮🇳
-Kerala, India. Fino a pochi minuti prima non ci conoscevamo.
+Fino a pochi minuti prima non ci conoscevamo.
+
 Segui Voci Vere per le prossime storie dall'India.
 #india #kerala #viaggio #vitalocale #autostop
 (versione pubblicata da Manuel, 10/11)
