@@ -337,6 +337,11 @@ Nota da Pianificazione, 9/11 (Manuel): NUOVO LUNGO SICURO `bilancio`: "Un mese i
 
 Nota da Pianificazione, 9/11 (Manuel): Manuel non sa se riesce a girare altro oltre ai lunghi già in lista. I 5 lunghi sono: arthunkal 15/11, te 29/11, coir 20/12, B 10/1, bilancio 24/1. Il minimo che regge il piano è questo. Regola: B è UNO solo tra migranti ed erosione, quello che Manuel riesce a girare meglio; non servono entrambi. Se non gira né l'uno né l'altro, il blocco di B (9-18/1) si riempie con reel dalla scorta (comorin, treno, panni, extra dal girato di Kochi e Varkala) e il bilancio resta il lungo di fine gennaio. Niente nuove idee di lungo finché questi non sono chiusi: ogni ripresa extra è un regalo, non un obbligo. Il bilancio si monta da piccoli parlati a camera + B-roll già girato, quindi non richiede riprese nuove oltre ai parlati.
 
+Nota da Audio, 9/11 (Manuel): verticali di coir con musica e segni originali di Audio (un suono diverso per reel, solo
+accompagnamento leggero), approvati da Manuel e caricati su Drive montati/coir AL POSTO dei precedenti, stessi nomi
+(teaser, made_in_india, indietro, premilla, 1975). Video, voce e testi identici agli approvati di Montaggio, cambia solo la
+musica. Dettagli e codice in `projects/coir/audio/LEGGIMI.md` e `projects/coir/audio/verticali.py`.
+
 Nota da Montaggio, 9/11 (Manuel): banner Instagram ("vocivere", Segui -> Segui già) aggiunto ai lunghi coir, te e
 arthunkal, file sostituiti su Drive con gli stessi nomi. Durata, tempi, capitoli e sottotitoli invariati (si ricodificano
 solo i 4.2 s del banner). Punti: coir 2:50.8, te 5:37.0, arthunkal 5:01.8 (voiceover leggero su dissolvenza). Da ora è

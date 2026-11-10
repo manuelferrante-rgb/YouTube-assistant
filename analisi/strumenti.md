@@ -46,3 +46,7 @@ Nella riga "librerie CC0 (Freesound...)" di `regole/audio.md` c'è ancora un rif
 - A fine viaggio in Kerala (fine novembre): cosa è servito davvero e cosa togliere.
 
 Nota da Pianificazione, 27/10: Manuel ha deciso di NON usare immagini IA (Cloudflare Workers AI incluso), nemmeno per `te`. Voce "Da valutare" chiusa.
+
+Nota 9/11 (Manuel, fatto da Insights): tolti dall'ambiente "Default" (l'unico, lo usano tutte le chat) FREESOUND_API_KEY e gli
+host freesound.org e cdn.freesound.org. Le chiavi AWS NON sono tra le variabili dell'ambiente: le mette la piattaforma
+(servono al sistema, non a noi), quindi non si toccano. Restano GDRIVE_RCLONE_TOKEN e PIXABAY_API_KEY.

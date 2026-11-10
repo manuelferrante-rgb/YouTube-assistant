@@ -31,3 +31,48 @@ tagliare con dissolvenza di 1 s.
 `python3 audio/musica/coir.py <brano> <stile> <out.wav> [--dinamica]`, poi guadagno fisso a -20 LUFS e
 `python3 audio/kit/bande.py <file>`. Brani e scelte: intro C --dinamica, strada C --dinamica, laguna A, macchine C,
 finale A --dinamica.
+
+# Verticali di coir: musica e segni (chat Audio, 9/11)
+Codice: `audio/musica/coir_verticali.py` (stessa famiglia del lungo, fa minore). Scelte tra tre bozze A/B/C fatte da
+Insights su richiesta di Manuel (9/11). Tutti controllati con `bande.py` (sotto 150 Hz da -57 a -70 dB: OK).
+Livelli e posizioni come `regole/formato_reel.md` (musica 0.08-0.11 costante sotto la voce, segni gain 0.24, chiusura e
+musica fino all'ultimo fotogramma del logo).
+
+## teaser
+| File | Durata | Livello | Dove |
+|---|---|---|---|
+| `teaser_musica.flac` | 25 s | -18 LUFS | da 0:00 a fine logo; archi brevi a passo (92 bpm) + archi tenuti, cresce verso la fine (bozza A) |
+| `teaser_cue_gancio.flac` | 3.5 s | -18 LUFS | prima immagine; quattro note di piano che restano sospese (B) |
+| `teaser_cue_rivelazione.flac` | 4.5 s | -18 LUFS | prima nota sui gusci che galleggiano (`0021`), musica -6 dB mentre suona (B, arpeggio di piano) |
+| `teaser_cue_chiusura.flac` | 5.5 s | -18 LUFS | sulla fine della voce fino al logo: motivo del lungo fa-lab-sol-fa (A, piano e archi) |
+Rifare: `python3 audio/musica/coir_verticali.py teaser musica A out.wav` (gancio B, rivelazione B, chiusura A), poi
+loudnorm a -20 (musica) / -18 (segni) come in `flac()`.
+
+## made in india, indietro, premilla, 1975 (scelte di Insights, 9/11)
+| Reel | Musica | Gancio | Rivelazione (immagine) | Chiusura |
+|---|---|---|---|---|
+| teaser | A archi a passo | B piano | B arpeggio di piano (`0021`) | A piano + archi |
+| madeinindia | A archi a passo, armonia ferma | B piano | A archi + piano, la bemolle (`0542`) | A piano + archi |
+| indietro | C pizzicato regolare | B piano | B arpeggio, mi bemolle (`0074`) | A piano + archi |
+| premilla | A archi caldi (re bemolle) | B piano | A archi + piano (`0016`) | B solo piano |
+| 1975 | A accordi lunghi | B piano | A archi + piano, la bemolle (`0527`) | B solo piano |
+File: `<reel>_musica.flac` (25 s, bozza scelta) e `<reel>_cue_gancio|rivelazione|chiusura.flac`.
+
+## Montati con questo audio (Manuel 9/11: "ci pensi tu", senza Montaggio)
+`python3 projects/coir/audio/verticali.py teaser madeinindia indietro premilla 1975`: prende il video APPROVATO da Drive
+(montati/coir, in `work/coir/drive/`, copiato senza ricodifica: immagini, testi e sottotitoli identici, verificato) e ci
+mette sopra l'audio rifatto con `projects/coir/build.py` (voce negli stessi tempi: scarto 0 ms con l'approvato).
+Musica ricomposta della durata esatta del reel (crescendo sul finale). Livelli (Manuel 9/11: "molto più bassi, accompagnamento
+leggero"): 0.025 sotto la voce, -6 dB mentre suona la
+rivelazione, 0.055 dopo la voce; segni a 0.08 (chiusura 0.14, dalla fine della voce all'ultimo fotogramma del logo).
+La musica resta sotto il livello dei verticali approvati prima, anche sul logo.
+Limitatore a -2 dB con sovracampionamento: -14.7/-15.2 LUFS, picchi sotto -1.8 dBTP.
+
+## v2 (Manuel 9/11 sera): ogni reel con un suono suo, musica solo come accompagnamento leggero
+Manuel: "troppo alto" e "l'audio è tutto uguale per tutti". Ora ogni reel ha strumento, tonalità e passo propri
+(`V2` in `audio/musica/coir_verticali.py`, i file `<reel>_*.flac` sono la v2):
+teaser piano che scorre (fa minore, 88) | made in india solo archi + una nota di piano (sol minore, 84) |
+indietro pizzicato a passi (si bemolle minore, 80) | premilla piano solo, accordi spezzati in maggiore (72) |
+1975 solo archi lunghi in la bemolle maggiore (76). Chiusura: motivo diverso per ogni reel.
+Livelli: musica 0.01 sotto la voce, 0.022 dopo la voce; segni 0.03 (chiusura 0.05). Niente limitatore:
+la voce e l'audio di Montaggio restano identici all'approvato (correlazione 0.999, stesso LUFS).
