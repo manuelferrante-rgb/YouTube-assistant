@@ -370,3 +370,5 @@ autostop ven 13/11, teaser arthunkal sab 14/11, V2 statua lun 16/11 (testi in co
 con Manuel in quei giorni glielo ricorda.
 
 Nota da Pianificazione, 10/11 (Manuel): ORARIO DI USCITA di tutti i contenuti, lunghi compresi: 17:30 ora India = 13:00 in Italia (ora solare; sul canale è già così). Il lungo arthunkal esce dom 15/11 alle 17:30, non alle 13. I promemoria per collegare il lungo a teaser e reel partono alle 17:30 ora India del giorno del lungo.
+
+Nota da Pianificazione, 10/11 (Manuel): ORA DI RIFERIMENTO = 13:00 italiane (17:30 India), per il lungo e più o meno per tutti i contenuti.
