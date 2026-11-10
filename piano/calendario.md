@@ -361,3 +361,6 @@ Nota da Pianificazione, 10/11 (Manuel): Manuel schedula le uscite fino a lun 16/
 Nota da Copy, 10/11 (Manuel): tracce audio inglesi per i lunghi te e coir (in YouTube Studio, "Traccia audio"). Copioni pronti in
 `copioni/te_audio_en.md` e `copioni/coir_audio_en.md`. Manuel registra una settimana prima dell'uscita: te verso dom 22/11, coir verso
 dom 13/12; poi Montaggio prepara la traccia (stessa durata del lungo) entro l'uscita. Si può caricare anche dopo la pubblicazione.
+
+Nota da Copy, 10/11 (Manuel + Insights): autostop ven 13/11 esce anche su YouTube Shorts (oltre a IG Voci Vere e personale),
+video correlato il lungo del mercato. Testi in `copioni/autostop_testi.md`. Insights misura il 22/11.
