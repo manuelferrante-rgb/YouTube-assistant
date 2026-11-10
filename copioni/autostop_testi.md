@@ -8,11 +8,11 @@ Titolo Short YT / prima riga IG:
 Uno sconosciuto in India mi riporta a casa in motorino 🇮🇳
 
 Didascalia IG:
-Uno sconosciuto in India mi riporta a casa in motorino 🇮🇳
+Tu ci saliresti? Uno sconosciuto in India mi riporta a casa in motorino 🇮🇳
 Kerala, India. Fino a pochi minuti prima non ci conoscevamo.
-Tu saliresti?
 Segui Voci Vere per le prossime storie dall'India.
 #india #kerala #viaggio #vitalocale #autostop
+(versione pubblicata da Manuel, 10/11)
 
 Descrizione Short YT:
 Kerala, India. Uno sconosciuto mi riporta a casa in motorino. Tu saliresti? #india #kerala #viaggio #shorts
