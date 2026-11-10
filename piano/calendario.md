@@ -356,7 +356,7 @@ Nota da Pianificazione, 10/11 (Manuel): autostop spostato dal 2/2 al 18/12, al p
 Nota da Pianificazione, 10/11 (Manuel): settimana 10-16/11 da schedulare. Set 3 del mercato insieme al carosello "I volti" gio 12/11; EXTRA autostop ven 13/11 (annulla gli spostamenti precedenti al 27/11, 2/2 e 18/12; il 18/12 torna libero per l'extra Kochi/Varkala).
 Nota da Pianificazione, 10/11 (Manuel): stories set 3 del mercato escono ven 13/11 insieme all'extra autostop (non più gio 12/11 col carosello "I volti"). Settimana 10-15/11: mar stories set 1, mer set 2, gio carosello "I volti", ven autostop + set 3, sab arthunkal teaser, dom arthunkal lungo.
 
-Nota da Pianificazione, 10/11 (Manuel): Manuel schedula le uscite fino a lun 16/11 (arthunkal teaser 14/11, lungo dom 15/11 alle 13:00, reel più forte lun 16/11). REGOLA PER TUTTI I LUNGHI: appena il lungo esce (domenica 13:00), promemoria a Manuel di collegare il lungo al teaser del sabato e al verticale del lunedì già schedulati (link su IG, "video correlato" su YouTube). Promemoria programmati per arthunkal 15/11, te 29/11, coir 20/12, B 10/1, bilancio 24/1.
+Nota da Pianificazione, 10/11 (Manuel): Manuel schedula le uscite fino a lun 16/11 (arthunkal teaser 14/11, lungo dom 15/11 alle 17:30, reel più forte lun 16/11). REGOLA PER TUTTI I LUNGHI: appena il lungo esce (domenica 13:00), promemoria a Manuel di collegare il lungo al teaser del sabato e al verticale del lunedì già schedulati (link su IG, "video correlato" su YouTube). Promemoria programmati per arthunkal 15/11, te 29/11, coir 20/12, B 10/1, bilancio 24/1.
 
 Nota da Copy, 10/11 (Manuel): tracce audio inglesi per i lunghi te e coir (in YouTube Studio, "Traccia audio"). Copioni pronti in
 `copioni/te_audio_en.md` e `copioni/coir_audio_en.md`. Manuel registra una settimana prima dell'uscita: te verso dom 22/11, coir verso
@@ -368,3 +368,5 @@ video correlato il lungo del mercato. Testi in `copioni/autostop_testi.md`. Insi
 Nota da Copy, 10/11 sera (Manuel): i COMMENTI FISSATI YouTube degli Short non si programmano, Manuel li mette appena esce lo Short:
 autostop ven 13/11, teaser arthunkal sab 14/11, V2 statua lun 16/11 (testi in copioni/STATO_COPY.md, sezione PROMEMORIA). Chi parla
 con Manuel in quei giorni glielo ricorda.
+
+Nota da Pianificazione, 10/11 (Manuel): ORARIO DI USCITA di tutti i contenuti, lunghi compresi: 17:30 ora India (sul canale è già così). Il lungo arthunkal esce dom 15/11 alle 17:30, non alle 13. I promemoria per collegare il lungo a teaser e reel partono alle 17:30 ora India del giorno del lungo.
