@@ -79,7 +79,7 @@ Didascalia IG:
 13 km a piedi, di notte, recitando il rosario 🇮🇳
 Si parte a mezzanotte da Kalavoor e si cammina lungo la costa del Kerala fino alla basilica di Arthunkal.
 
-Chi cammina, chi dà da mangiare a chi passa, e perché in questa chiesa c'è una statua arrivata da Milano.
+Chi cammina, chi dà da mangiare a chi passa, e scopriremo perché in questa chiesa c'è una statua arrivata da Milano.
 
 Domenica il video completo su YouTube
 #india #kerala #viaggio #vitalocale #pellegrinaggio
