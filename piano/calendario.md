@@ -355,3 +355,5 @@ Nota da Pianificazione, 10/11 (Manuel): autostop spostato dal 2/2 al 18/12, al p
 
 Nota da Pianificazione, 10/11 (Manuel): settimana 10-16/11 da schedulare. Set 3 del mercato insieme al carosello "I volti" gio 12/11; EXTRA autostop ven 13/11 (annulla gli spostamenti precedenti al 27/11, 2/2 e 18/12; il 18/12 torna libero per l'extra Kochi/Varkala).
 Nota da Pianificazione, 10/11 (Manuel): stories set 3 del mercato escono ven 13/11 insieme all'extra autostop (non più gio 12/11 col carosello "I volti"). Settimana 10-15/11: mar stories set 1, mer set 2, gio carosello "I volti", ven autostop + set 3, sab arthunkal teaser, dom arthunkal lungo.
+
+Nota da Pianificazione, 10/11 (Manuel): Manuel schedula le uscite fino a lun 16/11 (arthunkal teaser 14/11, lungo dom 15/11 alle 13:00, reel più forte lun 16/11). REGOLA PER TUTTI I LUNGHI: appena il lungo esce (domenica 13:00), promemoria a Manuel di collegare il lungo al teaser del sabato e al verticale del lunedì già schedulati (link su IG, "video correlato" su YouTube). Promemoria programmati per arthunkal 15/11, te 29/11, coir 20/12, B 10/1, bilancio 24/1.
