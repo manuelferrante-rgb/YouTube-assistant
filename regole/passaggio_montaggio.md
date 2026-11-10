@@ -10,6 +10,13 @@
   col telo bianco (090951) e poi Manuel. Approvati.
 - Diwali annullato (vedi calendario). Prossimi lunghi: B (migranti o erosione, 10/1) e bilancio (24/1, `piano/bilancio.md`).
 
+## AGGIORNAMENTO 9-10/11 (chat Montaggio session_01Htfbgygqfq2ApmZ8QQUNmP, chiusa)
+- Terzo banner fisso nei lunghi: "instagram" (vocivere, Segui -> Segui già), approvato da Manuel il 9/11. Già messo in
+  coir (2:50.8), te (5:37.0), arthunkal (5:01.8), file sostituiti su Drive. Codice: `tools/subscribe_banner.py instagram`,
+  `tools/apply_banners.py ... --instagram T`. Dove metterlo: su una dissolvenza, con una frase leggera di voiceover o senza
+  parlato, immagini tranquille, mai su interviste con sottotitoli (regola in `regole/montaggio_documentario.md`).
+- Nessun altro lavoro aperto: si aspetta il prossimo video di Manuel (girato su Drive).
+
 ## LEZIONI DI COIR (6-9/11), valgono per i prossimi
 - Velocità: lunghi e verticali a 1x quando il VO è registrato sciolto (Manuel). Pause d'enfasi brevi (~0.45 s) nei
   verticali solo dove servono (`say(..., pause=PAUSE)`).
