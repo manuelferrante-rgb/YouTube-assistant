@@ -1,6 +1,27 @@
-# Copy: stato e passaggio di consegne (aggiornato 9/11)
+# Copy: stato e passaggio di consegne (aggiornato 10/11 sera)
 Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in `regole/copy.md` (in fondo le note più nuove),
 `regole/formato_reel.md`, `copioni/caroselli/testi_caroselli.md` (regole dei caroselli), `copioni/stories/storie_testi.md`.
+
+## Fatto il 10/11 (sessione session_01HtfbgysqTrKE7hBx3kQeSA)
+- arthunkal: lungo caricato e programmato da Manuel (dom 15/11 13:00) con titolo, descrizione, capitoli, miniature A2/A3/A1, sottotitoli.
+  Teaser (sab 14/11) e V2 statua (lun 16/11) schedulati con le didascalie di Manuel (salvate nel pacchetto come "versione pubblicata").
+  V2 statua = Short della prova di Insights (motivo esplicito per il lungo, misura 17/11 e 22/11, `analisi/arthunkal.md`).
+- autostop: EXTRA ven 13/11 su IG (Voci Vere + personale) e YouTube Shorts, testi in `copioni/autostop_testi.md`.
+- Tracce audio inglesi di te e coir (vedi sotto, nella lista dei video).
+- Caroselli "I volti": scritta finale "Segui Voci Vere..." più piccola (40 px) in `carosello_volti.py`; ultime slide di arthunkal,
+  te e coir rifatte e sostituite su Drive (vecchie in carosello_volti/vecchie/). Mercato NON rifatto (esce gio 12/11 com'è).
+- Hashtag: #VociVere al posto di #vitalocale ovunque (Manuel 10/11, regola in fondo a `regole/copy.md`).
+- Manuel cambia spesso le didascalie prima di pubblicare (toglie la domanda o la sposta in cima, toglie "Nel video:"): salvare
+  sempre la versione che manda lui. Su YouTube il titolo dello Short resta il fatto concreto.
+
+## PROMEMORIA da dare a Manuel (non si possono programmare: sessione al limite)
+- dom 15/11 dopo le 13:00: collegare il lungo arthunkal come video correlato a teaser (14/11) e V2 statua (16/11), link su IG.
+- Commenti fissati YouTube (Manuel non li mette in programmazione, vanno messi appena esce lo Short):
+  sab 14/11 teaser arthunkal: "Nel video: chi cammina, chi dà da mangiare a chi passa, e perché in questa chiesa c'è una statua arrivata da Milano."
+  ven 13/11 autostop: "Tu saliresti sul motorino di uno sconosciuto, in un paese che non conosci?"
+  lun 16/11 V2 statua (PROVA Insights, testo esatto): "Dove arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua. Il video completo (6 min) è nel link sopra il titolo."
+- dom 22/11: registrazione traccia inglese te (`copioni/te_audio_en.md`); dom 13/12: coir (`copioni/coir_audio_en.md`).
+- Mercato gio 12/11 carosello "I volti": testo in `copioni/caroselli/testi_caroselli.md` (con #VociVere), già dato a Manuel.
 
 ## Video e stato del pacchetto Copy
 - mercato: pubblicati teaser, lungo, 2 reel, carosello "fatto" (7/11, musica IG "Art of Life" di Lesfm, 8 immagini su YT).

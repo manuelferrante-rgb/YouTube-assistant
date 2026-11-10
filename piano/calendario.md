@@ -364,3 +364,7 @@ dom 13/12; poi Montaggio prepara la traccia (stessa durata del lungo) entro l'us
 
 Nota da Copy, 10/11 (Manuel + Insights): autostop ven 13/11 esce anche su YouTube Shorts (oltre a IG Voci Vere e personale),
 video correlato il lungo del mercato. Testi in `copioni/autostop_testi.md`. Insights misura il 22/11.
+
+Nota da Copy, 10/11 sera (Manuel): i COMMENTI FISSATI YouTube degli Short non si programmano, Manuel li mette appena esce lo Short:
+autostop ven 13/11, teaser arthunkal sab 14/11, V2 statua lun 16/11 (testi in copioni/STATO_COPY.md, sezione PROMEMORIA). Chi parla
+con Manuel in quei giorni glielo ricorda.
