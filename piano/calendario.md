@@ -158,8 +158,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | lun 9/11 | mercato: reel 3 |  |
 | mar 10/11 | mercato: stories set 1 | slittato dall'8/11 (Manuel 9/11) |
 | mer 11/11 | mercato: stories set 2 | slittato dal 6/11 |
-| gio 12/11 | mercato: carosello "I volti" (+ post YouTube) e stories set 3, insieme | set 3 riportate al 12/11 (Manuel 10/11) |
-| ven 13/11 | EXTRA autostop | riportato al 13/11 (Manuel 10/11); entrambi i profili; meenakshi 18/11 è a 5 giorni |
+| gio 12/11 | mercato: carosello "I volti" (+ post YouTube) | set 3 spostate al 13/11 (Manuel 10/11) |
+| ven 13/11 | EXTRA autostop e mercato: stories set 3, insieme | autostop riportato al 13/11 (Manuel 10/11); entrambi i profili; set 3 insieme all'autostop (Manuel 10/11); meenakshi 18/11 è a 5 giorni |
 | sab 14/11 | arthunkal: teaser |  |
 | dom 15/11 | arthunkal: LUNGO |  |
 | lun 16/11 | arthunkal: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
@@ -354,3 +354,4 @@ Nota da Pianificazione, 10/11 (Manuel): autostop spostato dal 2/2 al 18/12, al p
 
 
 Nota da Pianificazione, 10/11 (Manuel): settimana 10-16/11 da schedulare. Set 3 del mercato insieme al carosello "I volti" gio 12/11; EXTRA autostop ven 13/11 (annulla gli spostamenti precedenti al 27/11, 2/2 e 18/12; il 18/12 torna libero per l'extra Kochi/Varkala).
+Nota da Pianificazione, 10/11 (Manuel): stories set 3 del mercato escono ven 13/11 insieme all'extra autostop (non più gio 12/11 col carosello "I volti"). Settimana 10-15/11: mar stories set 1, mer set 2, gio carosello "I volti", ven autostop + set 3, sab arthunkal teaser, dom arthunkal lungo.
