@@ -158,8 +158,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | lun 9/11 | mercato: reel 3 |  |
 | mar 10/11 | mercato: stories set 1 | slittato dall'8/11 (Manuel 9/11) |
 | mer 11/11 | mercato: stories set 2 | slittato dal 6/11 |
-| gio 12/11 | mercato: carosello "I volti" (+ post YouTube) | stories set 3 spostate al 13/11 (Manuel 10/11) |
-| ven 13/11 | mercato: stories set 3 | spostate dal 12/11 (Manuel 10/11) |
+| gio 12/11 | mercato: carosello "I volti" (+ post YouTube) e stories set 3, insieme | set 3 riportate al 12/11 (Manuel 10/11) |
+| ven 13/11 | EXTRA autostop | riportato al 13/11 (Manuel 10/11); entrambi i profili; meenakshi 18/11 è a 5 giorni |
 | sab 14/11 | arthunkal: teaser |  |
 | dom 15/11 | arthunkal: LUNGO |  |
 | lun 16/11 | arthunkal: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
@@ -188,7 +188,6 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | gio 10/12 | te: carosello "I volti" (+ post YouTube) |  |
 | sab 12/12 | EXTRA comorin: canna da zucchero | entrambi i profili |
 | mar 15/12 | EXTRA comorin: cocco | entrambi i profili |
-| ven 18/12 | EXTRA autostop | slittato dal 13/11 (Manuel 10/11): primo slot extra libero che rispetta le regole; entrambi i profili. Prende il posto dell'extra "da scegliere" (Kochi o Varkala), che se serve va in uno slot extra dopo |
 | sab 19/12 | lungo A (coir): teaser |  |
 | dom 20/12 | LUNGO A (coir) |  |
 | lun 21/12 | lungo A: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
@@ -352,3 +351,6 @@ Nota da Pianificazione, 10/11 (Manuel): stories set 3 del mercato spostate da gi
 Nota da Pianificazione, 10/11 (Manuel): autostop spostato dal 27/11 al 2/2. Fino al 31/1 non c'è nessun giorno vuoto che rispetti insieme i 3 giorni tra extra e il massimo di 3 uscite di fila. Il 27/11 è annullato.
 
 Nota da Pianificazione, 10/11 (Manuel): autostop spostato dal 2/2 al 18/12, al posto dell'extra generico dal girato di Kochi/Varkala (3 giorni dopo cocco 15/12 e 9 prima di treno 27/12). Il 2/2 è annullato.
+
+
+Nota da Pianificazione, 10/11 (Manuel): settimana 10-16/11 da schedulare. Set 3 del mercato insieme al carosello "I volti" gio 12/11; EXTRA autostop ven 13/11 (annulla gli spostamenti precedenti al 27/11, 2/2 e 18/12; il 18/12 torna libero per l'extra Kochi/Varkala).
