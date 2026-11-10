@@ -188,7 +188,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | gio 10/12 | te: carosello "I volti" (+ post YouTube) |  |
 | sab 12/12 | EXTRA comorin: canna da zucchero | entrambi i profili |
 | mar 15/12 | EXTRA comorin: cocco | entrambi i profili |
-| ven 18/12 | EXTRA roti ("Hot to make roti") | reel nuovo di Manuel 10/11; entrambi i profili; 3 giorni dopo cocco 15/12, 9 prima di treno 27/12 |
+| ven 18/12 | EXTRA roti ("How to make roti") | reel nuovo di Manuel 10/11; entrambi i profili; 3 giorni dopo cocco 15/12, 9 prima di treno 27/12 |
 | sab 19/12 | lungo A (coir): teaser |  |
 | dom 20/12 | LUNGO A (coir) |  |
 | lun 21/12 | lungo A: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
@@ -374,4 +374,4 @@ Nota da Pianificazione, 10/11 (Manuel): ORARIO DI USCITA di tutti i contenuti, l
 
 Nota da Pianificazione, 10/11 (Manuel): ORA DI RIFERIMENTO = 13:00 italiane (17:30 India), per il lungo e più o meno per tutti i contenuti.
 
-Nota da Pianificazione, 10/11 (Manuel): nuovo reel EXTRA `roti` ("Hot to make roti", titolo da rifinire con Copy). Incastrato ven 18/12, lo slot extra libero (rispetta i 3 giorni tra extra). Se Manuel lo vuole prima, scambiare con kallu (26/11). Su entrambi i profili.
+Nota da Pianificazione, 10/11 (Manuel): nuovo reel EXTRA `roti` ("How to make roti", titolo da rifinire con Copy). Incastrato ven 18/12, lo slot extra libero (rispetta i 3 giorni tra extra). Se Manuel lo vuole prima, scambiare con kallu (26/11). Su entrambi i profili.
