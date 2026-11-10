@@ -134,9 +134,9 @@ def closing(v):
     im = Image.blend(im, Image.new('RGB', (W, H), (8, 7, 6)), 0.45).convert('RGBA')
     l = Image.open(LOGO).convert('RGBA'); l = l.crop(l.getbbox()); lw = 640; l = l.resize((lw, int(l.height * lw / l.width)), Image.LANCZOS)
     y = 470; im.alpha_composite(l, ((W - lw) // 2, y))
-    d = ImageDraw.Draw(im); ft = ImageFont.truetype(TIT, 60); y += l.height + 70
+    d = ImageDraw.Draw(im); ft = ImageFont.truetype(TIT, 40); y += l.height + 60  # scritta più piccola (Manuel 10/11, prima 60)
     for t in ['SEGUI VOCI VERE', 'PER SCOPRIRE', 'LE PROSSIME STORIE']:
-        text_sh(im, (W // 2, y), t, ft, (255, 255, 255) if t != 'SEGUI VOCI VERE' else (235, 196, 128), anchor='ma'); y += 74
+        text_sh(im, (W // 2, y), t, ft, (255, 255, 255) if t != 'SEGUI VOCI VERE' else (235, 196, 128), anchor='ma'); y += 50
     return im
 
 def build(v):

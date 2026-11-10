@@ -61,7 +61,7 @@ colore spento, vignetta forte). RIFATTO IL 5/11 (Manuel): ritratti che sembrano 
 o di tre quarti), dal girato originale, filtro leggero caldo e naturale, ogni persona una volta sola. Slide 4:5:
 01 copertina con un volto forte (non il più forte) + "I volti di ..." + luogo e una riga di contesto; 02 il volto più
 forte; poi un volto per slide, senza scritte; ultima: foto del luogo sfocata (niente volti) + logo + "Segui Voci Vere
-per scoprire le prossime storie".
+per scoprire le prossime storie" (scritta piccola, 40 px sotto il logo: Manuel 10/11).
 File: copioni/caroselli/<video>_volti/01-07.jpg, su Drive in montati/<video>/carosello_volti/.
 Rigenerare: `python3 copioni/caroselli/carosello_volti.py [video]` (volti scelti in copioni/caroselli/volti_scelti.json).
 Il chai master del tè NON c'è: non ha voluto parlare, quindi niente volto.
