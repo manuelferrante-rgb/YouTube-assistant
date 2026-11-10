@@ -92,11 +92,12 @@ Didascalia IG:
 Una statua arrivata da Milano nel 1647, sulla costa del Kerala 🇮🇳
 Arthunkal, India. La chiesa la ricostruisce nel 1584 un gesuita italiano: qui lo chiamano ancora Veluthachan, il padre bianco.
 Lo sapevi?
-Perché ogni anno centinaia di migliaia di persone arrivano qui a piedi, di notte: è nel video sul canale.
-Video completo sul canale YouTube Voci Vere, link in bio.
+Dove arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua. Video completo (6 min) sul canale YouTube Voci Vere, link in bio.
 #india #kerala #viaggio #vitalocale #pellegrinaggio
 Descrizione Short YT: Arthunkal, India. La chiesa la ricostruisce nel 1584 un gesuita italiano: qui lo chiamano ancora Veluthachan, il padre bianco. Lo sapevi?
-Commento fissato YT: Perché ogni anno centinaia di migliaia di persone arrivano qui a piedi, di notte: è nel video sul canale.
+Dove arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua. Il video completo (6 min) è nel link sopra il titolo.
+Commento fissato YT: Dove arrivano a piedi, di notte, centinaia di migliaia di persone: 13 km con i pellegrini fino a questa statua. Il video completo (6 min) è nel link sopra il titolo.
+(10/11, Insights su richiesta di Manuel: è lo Short di lun 16/11, prova del motivo esplicito per il lungo, misura in analisi/arthunkal.md.)
 
 ### V3 persona (VociVere_arthunkal_v3_persona_1080x1920.mp4)
 Titolo Short / prima riga IG:
