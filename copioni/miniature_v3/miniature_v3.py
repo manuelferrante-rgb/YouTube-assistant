@@ -130,6 +130,14 @@ def make(name, video, lang, src, t, cx, cy, zoom, layout, text, night=False, fli
             sb = d.textbbox((0, 0), small, font=fs)
             shadow_text(out, (48, y_big + bb[1] - 12 - sb[3]), [(small, WHITE)], fs, 6 if small_size < 80 else 10)
         shadow_text(out, (44, y_big), [(big, RED if red is True else WHITE)], fb)
+    elif layout == 'riga':       # una sola riga grande, centrata, un po' sopra il fondo (Manuel 11/11, coir)
+        g = np.zeros((H, W), np.float32); g[:] = np.clip((np.arange(H)[:, None] - H * 0.45) / (H * 0.55), 0, 1) ** 1.3 * 0.7
+        out = Image.composite(Image.new('RGBA', (W, H), (0, 0, 0, 255)), base, Image.fromarray((g * 255).astype('uint8')))
+        f = fit(text, ANTON, W - 140, max_h=150); d = ImageDraw.Draw(out)
+        bb = d.textbbox((0, 0), text, font=f); x = (W - (bb[2] - bb[0])) // 2 - bb[0]
+        parts = [(w + ' ', RED if (red and w in red) else WHITE) for w in text.split(' ')]
+        parts[-1] = (parts[-1][0].strip(), parts[-1][1])
+        shadow_text(out, (x, H - 120 - bb[3]), parts, f)
     else:                        # 'citazione': frase tra virgolette in alto, una parola rossa
         f = fit(text, ANTON, W - 120, max_h=min(150, room) if room else 150); d = ImageDraw.Draw(base)
         bb = d.textbbox((0, 0), text, font=f); x = (W - (bb[2] - bb[0])) // 2 - bb[0]
@@ -178,8 +186,8 @@ J = {
      it=('CHI FA', 'I NOSTRI TAPPETI'), en=('WHO MAKES', 'OUR DOORMATS')),
  # COIR v4 (Manuel 11/11): espressioni serie, testo coerente con i primi secondi del lungo
  # (0:00 l'uomo nella laguna "Così viene raccolta la materia prima..."; VO0 "...non c'è scritto chi li ha fatti, né quanto le hanno pagate")
- ('coir', 'C6_laguna'): dict(src=g(C, '0052'), t=3.45, cx=.50, cy=.40, zoom=1.35, layout='basso', red=True,
-     it=('I NOSTRI TAPPETI', 'NASCONO QUI'), en=('OUR DOORMATS', 'START HERE')),
+ ('coir', 'C6_laguna'): dict(src=g(C, '0052'), t=3.45, cx=.50, cy=.56, zoom=1.35, layout='riga', red=['NASCONO', 'QUI', 'START', 'HERE'],
+     it='I NOSTRI TAPPETI NASCONO QUI', en='OUR DOORMATS START HERE'),
  ('coir', 'C7_donne'): dict(src=g(C, '0540'), t=13.5, cx=.5, cy=.5, zoom=1.0, layout='basso', red=True, flip=True,
      it=('A MANO, SEDUTE A TERRA', 'QUANTO LE PAGANO?'), en=('BY HAND, ON THE GROUND', 'HOW MUCH ARE THEY PAID?')),
  ('coir', 'C8_anziana'): dict(src=g(C, '0063'), t=15.5, cx=.5, cy=.5, zoom=1.35, layout='dietro', red=['CHI', 'WHO'],
@@ -196,6 +204,11 @@ J = {
      it=('A MANO, SEDUTE A TERRA', 'QUANTO LE PAGANO?'), en=('BY HAND, ON THE GROUND', 'HOW MUCH ARE THEY PAID?')),
  ('coir', 'C7f_lavoro'): dict(src=g(C, '0540'), t=20.0, cx=.5, cy=.5, zoom=1.0, layout='basso', red=True, flip=True,
      it=('A MANO, SEDUTE A TERRA', 'QUANTO LE PAGANO?'), en=('BY HAND, ON THE GROUND', 'HOW MUCH ARE THEY PAID?')),
+ # scelta di Manuel 11/11: le due inquadrature della signora piccolina che guarda in camera, una riga sola
+ ('coir', 'C9_madeinindia'): dict(src=g(C, '0063'), t=9.2, cx=.535, cy=.52, zoom=1.45, layout='riga', red=['INDIA'],
+     it='MADE IN INDIA', en='MADE IN INDIA'),
+ ('coir', 'C10_80centesimi'): dict(src=g(C, '0063'), t=15.5, cx=.45, cy=.45, zoom=1.35, layout='riga', red=['80', 'CENTESIMI', 'CENTS'],
+     it='80 CENTESIMI A TAPPETO', en='80 CENTS PER RUG'),
 }
 if __name__ == '__main__':
     import sys
