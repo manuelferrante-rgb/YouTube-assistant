@@ -381,3 +381,5 @@ Nota da Pianificazione, 11/11 (Manuel): Manuel è a Fort Kochi 12-14/11 e poi to
 Nota da Pianificazione, 11/11 (Manuel): a Fort Kochi (12-14/11) vuole video più lunghi sulle ONG della mappa: intervista ai responsabili e storie delle persone seguite. Piano e fonti in `piano/fortkochi.md`. Formato 3-5 min per ONG; se escono due forti, possibile unico video come lungo B (10/1), da decidere dopo il girato.
 
 Nota da Pianificazione, 11/11 (Manuel): a Fort Kochi si lavora su tre ONG: CSSS, Raksha Society, Ashwasa Bhavan (`piano/fortkochi.md`). Le altre sono escluse.
+
+Nota da Copy, 11/11 (Manuel, via Pianificazione): fortkochi, linee guida di ripresa, domande it/en (generali + per CSSS, Raksha, Ashwasa Bhavan), chiusura in camera, titolo e idea di miniatura per ognuno dei tre video in `copioni/fortkochi_testi.md`. Titoli e miniature definitivi si rifanno sul montato.
