@@ -140,7 +140,20 @@ Nota Montaggio 4/11 sera: arthunkal v5 e te v8 (richieste di Manuel dai dati del
   trascrizione della voce pulita).
 - Mai `pkill -f` dentro un comando che contiene lo stesso testo: è successo di nuovo il 4/11 (uccide la shell).
 
-## REEL EXTRA "spazio Munnar" (11/11, Manuel, in approvazione)
+## STATO AL 11/11 sera (chat Montaggio session_01Htfbh1snHZyaWpD1y2Ff4n, chiusa)
+- REGOLA (Manuel 11/11): le chat NON si scrivono tra loro se non lo chiede Manuel.
+- coir v6 (intro nuova) su Drive e capitoli aggiornati: FATTO (sezione sotto). Copy avvisata (lo ha chiesto Manuel).
+- Reel extra "spazio Munnar" v4 (11 s, 1.1x): mandato a Manuel in chat, controllo completo fatto (trascrizione, livelli
+  -14.5 LUFS, fotogrammi). DA FARE quando Manuel approva: caricarlo su Drive (chiedere la cartella: montati/te o
+  "Reel voiceover spazio") e scrivere il file in piano/calendario.md. Uscita: chiesto a Insights (dom 29/11 col lungo
+  del tè o lun 30/11; proposta di Montaggio: lunedì). Per rifarlo: girato del tè in work/spazio/raw (cartella Drive te
+  1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw: clip 115233, 120307, 120356, 135033, 135012), poi
+  `python3 tools/space_zoom.py work/spazio/sz --lat 10.0417 --lon 77.0393 --fetch --h0 22000 --start 19,74 --dur 3.3`
+  e `python3 projects/spazio_munnar/build.py`.
+- Frase del reel: "Sono a Munnar, in Kerala, a oltre 1500 metri. Scoprirò la storia nella raccolta del tè che consumiamo
+  tutti i giorni." (Manuel: senza "l'arte"; "dietro la raccolta" scartato: la giunzione si sentiva come "quella").
+
+## REEL EXTRA "spazio Munnar" (11/11, Manuel, v1-v4)
 - Riferimento in Drive "Reel voiceover spazio/Riferimenti" (cartella 1V_kn3DJO61loXNLeUWLz6G4oq9jVRDlC). Discesa dallo
   spazio con immagini satellitari vere (`tools/space_zoom.py`: Blue Marble NASA + Sentinel-2 cloudless 2016 di EOX, CC BY 4.0,
   da citare in descrizione) fino al 2nd Mile View Point (22RQ+HP7 = 10.0417 N, 77.0393 E), poi il girato del tè.
