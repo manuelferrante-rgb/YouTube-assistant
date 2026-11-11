@@ -20,7 +20,7 @@ quello che ti dicono loro. Video da 3-5 min, uno per associazione, un tema ciasc
 5. 30 s di audio ambiente pulito, senza voci tue.
 6. Ogni persona intervistata: 3-4 s ferma che guarda in camera, senza microfono in vista (carosello "I volti").
 7. Il quartiere fuori: strada, chiesa, mare, reti cinesi, 3-4 inquadrature per dire "dove siamo".
-8. Chiusura in camera, una riga (sotto).
+8. Chiusura: tutta in VOICEOVER sul tuo B-roll (sotto, sezione VOICEOVER).
 
 DA EVITARE: tu al centro dell'inquadratura che consegni o regali qualcosa; foto di gruppo in posa; donazioni,
 targhe e loghi in primo piano; zoom su disabilità, povertà, case rotte.
@@ -55,10 +55,6 @@ Alla lavoratrice:
 - Quanto guadagni in un giorno buono? E in uno cattivo? / How much do you make on a good day? And a bad one?
 - I soldi li gestisci tu? / Do you manage the money yourself?
 - Cosa vuoi per tua figlia? (o per i tuoi figli) / What do you want for your daughter?
-Chiusura in camera: "Qui a Fort Kochi il lavoro di [nome] non lo vede nessuno. Ma a casa sua si vive con questo."
-Titolo: LAVORANO DA CASA, MA NESSUNO LE VEDE: le donne di Fort Kochi 🇮🇳
-  (variante, se il lavoro è legato al pesce: LE DONNE DEL PESCE DI FORT KOCHI: lavoro, soldi e famiglia 🇮🇳)
-Miniatura: lei grande al lavoro, mani e oggetto in vista, volto libero. Testo: "IL SUO STIPENDIO" o il lavoro in 2 parole.
 
 ## 2. Raksha Society (Kochangadi): RAGAZZI CON DISABILITÀ CHE IMPARANO UN MESTIERE
 Angolo: la formazione professionale, non la malattia. Il protagonista è un ragazzo o una ragazza (o un'insegnante)
@@ -76,9 +72,6 @@ Al ragazzo / alla mamma (solo se il responsabile dice sì):
 - Cosa stai facendo oggi? / What are you making today?
 - (mamma) Com'era prima di venire qui? / What was it like before coming here?
 - (mamma) Cosa speri per lui/lei? / What do you hope for him/her?
-Chiusura in camera: "Qui nessuno parla di cosa non sanno fare. Si parla di cosa stanno imparando."
-Titolo: IMPARANO UN MESTIERE, A MODO LORO: una scuola speciale in Kerala 🇮🇳
-Miniatura: mani che lavorano + volto dell'insegnante (o del ragazzo, se permesso). Testo: "IL SUO PRIMO LAVORO".
 
 ## 3. Ashwasa Bhavan (Veli): UNA CASA PER BAMBINI SENZA FAMIGLIA
 Prima cosa da chiedere: chi l'ha fondata. Le fonti dicono una suora italiana nel 2005 (Sr Fabbri o Sr Fabiola):
@@ -97,12 +90,54 @@ A chi lavora lì / ai ragazzi grandi (solo se lo propone lei):
 - Com'è una giornata qui, dalla sveglia? / What's a day here like, from waking up?
 - Cosa ti piace di questo posto? / What do you like about this place?
 - (ragazzo grande) Cosa vuoi fare da grande? / What do you want to do when you grow up?
-Chiusura in camera: "Una suora arrivata dall'Italia, una casa a Fort Kochi. Vent'anni dopo, la porta è ancora aperta."
-  (se l'Italia non è confermata: "Qui nessuno parla di orfani. Parlano di casa.")
-Titolo (se confermata): UNA SUORA ITALIANA HA APERTO QUESTA CASA: i bambini di Fort Kochi 🇮🇳
-  (se no: UNA CASA PER CHI NON HA FAMIGLIA: vent'anni a Fort Kochi 🇮🇳)
-Miniatura: la suora o l'educatrice grande, volto libero; bambini assenti o solo di spalle (niente sfocature).
-Testo: "DALL'ITALIA" (se confermato) o "LA LORO CASA".
 
 ## DOPO IL GIRATO
 Carica su Drive e scrivi a Montaggio cosa hai. Titoli, miniature e testi definitivi li rifà Copy sul montato.
+
+## Titoli e miniature (Manuel, 11/11): si decidono DOPO il girato, quando si sa cosa c'è.
+
+## VOICEOVER (Manuel, 11/11)
+Il racconto si alterna: VO sul tuo B-roll, poi le persone che parlano, poi di nuovo VO. Il VO fa capire quello che
+riprendi (dove siamo, cosa si vede, chi è la persona); le persone dicono le cose loro.
+La CHIUSURA è tutta in VO sul B-roll: frase finale, spiegazione finale, sigla. Niente chiusura in camera.
+Il testo definitivo si scrive dopo il girato, con le parole vere delle persone: si registra al ritorno, con Copy.
+Qui sotto lo schema e le bozze, con [ ] da riempire con quello che ti dicono. Per ogni blocco: il B-roll da girare.
+
+Schema uguale per i tre video:
+1. Gancio in camera dentro l'azione (unica parte in camera, 1 frase).
+2. VO 1, dove siamo: Fort Kochi, Kerala, il quartiere. B-roll: strada, mare, reti cinesi, il cancello, l'insegna.
+3. La persona protagonista parla (chi è, cosa fa).
+4. VO 2, cos'è il posto: chi l'ha aperto, da quando, per chi (dalle parole del responsabile). B-roll: dentro, attività, dall'alto.
+5. Il responsabile (breve).
+6. VO 3, la giornata: cosa si vede fare. B-roll: mani, dettagli, prima e dopo.
+7. La persona: soldi, difficoltà, cosa vuole (sue parole).
+8. Il responsabile: cosa non funziona, cosa manca.
+9. CHIUSURA in VO: a) frase finale sulla persona; b) spiegazione finale (il dato, cosa resta aperto);
+   c) sigla: "Il viaggio di Voci Vere, per dare voce a chi ne ha più bisogno, continua. Seguimi per scoprire le prossime storie."
+   B-roll: la persona che torna al suo lavoro, il posto che si svuota a fine giornata, il quartiere, il mare, l'ultima luce.
+
+### 1. CSSS, donne e lavoro: bozze VO
+VO 1: "Fort Kochi, in Kerala, nel sud dell'India. Qui, a Veli, ogni giorno [nome] [lavoro]."
+VO 2: "La Cochin Social Service Society lavora qui dal 1966. Oggi segue [quante] donne, che [lavoro]." (numero dal responsabile)
+VO 3: "[Nome] comincia alle [ora]. [Cosa fa, come si vede nel B-roll]. Un giorno buono le porta [cifra detta da lei]."
+Chiusura a): "[Nome] non si fa vedere da chi passa per Fort Kochi. Ma la sua casa va avanti con questo lavoro."
+Chiusura b): "[Cosa manca, detto dal responsabile]. Per [quante] donne, qui, il lavoro è questo."
+B-roll per la chiusura: lei che chiude il lavoro, i soldi contati o la merce sistemata, lei che torna a casa, la strada al tramonto.
+
+### 2. Raksha, il mestiere: bozze VO
+VO 1: "Kochangadi, Kochi, in Kerala. Dietro questo cancello [quanti] ragazzi imparano un mestiere."
+VO 2: "La Raksha Society è nata nel [anno, dal responsabile] per bambini e ragazzi con [disabilità, con le loro parole]. Scuola, e poi un lavoro."
+VO 3: "Qui [nome o 'loro'] impara a [mestiere]. [Cosa si vede fare]."
+Chiusura a): "Qui non si parla di cosa non sanno fare. Si parla di cosa stanno imparando."
+Chiusura b): "[Cosa succede dopo la scuola, detto dal responsabile]. [Cosa manca]."
+B-roll per la chiusura: mani sul lavoro finito, gli oggetti fatti in fila, l'aula che si svuota, il cancello, la strada.
+
+### 3. Ashwasa Bhavan, la casa: bozze VO
+VO 1: "Veli, Fort Kochi, in Kerala. In questa casa vivono [quanti] bambini e ragazzi."
+VO 2: "L'ha aperta nel [anno] [nome della fondatrice], [da dove veniva: se italiana, dirlo qui]." (tutto da confermare lì)
+VO 3: "La giornata comincia alle [ora]. [Scuola, compiti, pranzo: cosa si vede]."
+Chiusura a): "[Nome dell'educatrice o suora] qui lavora da [anni]. Per questi bambini, questa è casa."
+Chiusura b): "A diciotto anni [cosa succede, detto dalla responsabile]. [Cosa manca]."
+B-roll per la chiusura (niente volti dei bambini se non permessi): scarpe in fila, quaderni chiusi, la tavola apparecchiata, la porta, la luce della sera.
+
+Come registrare (al ritorno): numero del blocco, 2 secondi di pausa, testo. Voce calma. Montaggio monta il VO sul B-roll.

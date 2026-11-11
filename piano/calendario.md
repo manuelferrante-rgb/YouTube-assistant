@@ -383,3 +383,5 @@ Nota da Pianificazione, 11/11 (Manuel): a Fort Kochi (12-14/11) vuole video più
 Nota da Pianificazione, 11/11 (Manuel): a Fort Kochi si lavora su tre ONG: CSSS, Raksha Society, Ashwasa Bhavan (`piano/fortkochi.md`). Le altre sono escluse.
 
 Nota da Copy, 11/11 (Manuel, via Pianificazione): fortkochi, linee guida di ripresa, domande it/en (generali + per CSSS, Raksha, Ashwasa Bhavan), chiusura in camera, titolo e idea di miniatura per ognuno dei tre video in `copioni/fortkochi_testi.md`. Titoli e miniature definitivi si rifanno sul montato.
+
+Nota da Copy, 11/11 (Manuel): fortkochi, titoli e miniature si decidono dopo il girato. I tre video alternano VO sul B-roll di Manuel e persone che parlano; la CHIUSURA è tutta in voiceover (frase finale, spiegazione finale, sigla) sul B-roll, niente chiusura in camera. Schema e bozze VO in `copioni/fortkochi_testi.md`, testo definitivo dopo il girato.
