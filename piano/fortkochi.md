@@ -12,3 +12,18 @@ Mappa di Manuel: sull'isola di Fort Kochi/Mattancherry ci sono Vimala Bhavan (Mi
 
 ## Lista riprese (qualunque opzione)
 Gancio dentro l'azione con Manuel in camera, prima e dopo nello stesso punto, dettagli, una ripresa dall'alto, 30 s di audio ambiente pulito senza voce, 2-3 interviste brevi (stessa domanda a più persone), parlato finale in camera. Domande e parti in camera le scrive Copy.
+
+## Decisione di Manuel, 11/11: le ONG della mappa (sostituisce l'ordine di sopra)
+Manuel vuole intervistare i responsabili e far vedere le storie dietro le ONG e le persone che seguono, in video un po' più lunghi dei reel (3-5 min, uno per ONG; se ne escono due forti, valutare un unico video come lungo B).
+Taglio per restare dentro i limiti: la persona seguita è la protagonista (il suo lavoro, la sua giornata, le sue parole), il responsabile è la cornice e dice anche cosa non funziona. Mai "salvare", niente spot per la ONG. Contestualizzare (Kochi, Kerala).
+
+## Cosa risulta dalle fonti (ricerca 11/11, da confermare sul posto)
+- Cochin Social Service Society: braccio sociale della diocesi di Cochin, fondata nel 1966, si occupa di poveri e di sviluppo dei mezzi di sussistenza (livelihood); un elenco la indica sul tema "gender"; sede: Jubilee Memorial Complex, Veli, Fort Cochin 682001. Fonte: give.do, sito della diocesi. Angolo donne e lavoro, il più vicino al filo conduttore.
+- Raksha Society for the Care of Children with Special Needs: fondata nel 1985 (due elenchi), bambini e giovani con paralisi cerebrale, autismo e disabilità multiple, intervento precoce, scuola speciale, formazione professionale. Indirizzo dato: Kochangadi, Kochi 682002 (non Fort Kochi, controllare su Maps). Il nome sulla mappa è tagliato, probabilmente è questa. Fonte: give.do, ChannelIAM.
+- Magic Bus India Foundation: nazionale, sede a Mumbai, fondata nel 1999, sport e competenze per bambini e giovani poveri e accesso al lavoro. Nessuna fonte di un programma a Kochi: chiedere sul posto.
+- Ashwasa Bhavan: una scheda dice organizzazione per educazione e sviluppo di bambini e giovani. Posizione e attività a Fort Kochi non confermate.
+- Ente Kochi e Vimala Bhavan (Missionarie della Carità): nessuna fonte trovata. Per i Missionaries of Charity compare solo una casa dei Fratelli a Kochi (Moolamkuzhy), non quella sulla mappa.
+
+## Piano 12-14/11 (proposto)
+Gio 12: Cochin Social Service Society a Veli (andare di persona al mattino, chiedere del responsabile e di un programma con persone che lavorano). Ven 13: Raksha (formazione professionale: persone che lavorano e imparano un mestiere). Sab 14: la terza, la migliore tra Magic Bus, Ashwasa Bhavan, Ente Kochi, o recupero.
+Per ogni ONG: intervista al responsabile, 2-3 persone seguite al lavoro o in attività (la voce loro), B-roll del luogo, audio ambiente 30 s, ripresa dall'alto, parlato finale in camera. Domande e parti in camera le scrive Copy.
