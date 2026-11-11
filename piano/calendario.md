@@ -375,3 +375,5 @@ Nota da Pianificazione, 10/11 (Manuel): ORARIO DI USCITA di tutti i contenuti, l
 Nota da Pianificazione, 10/11 (Manuel): ORA DI RIFERIMENTO = 13:00 italiane (17:30 India), per il lungo e più o meno per tutti i contenuti.
 
 Nota da Pianificazione, 10/11 (Manuel): nuovo reel EXTRA `roti` ("How to make roti", titolo da rifinire con Copy). Incastrato ven 18/12, lo slot extra libero (rispetta i 3 giorni tra extra). Se Manuel lo vuole prima, scambiare con kallu (26/11). Su entrambi i profili.
+
+Nota da Pianificazione, 11/11 (Manuel): Manuel è a Fort Kochi 12-14/11 e poi torna in Italia. Vuole 1 o 2 video Voci Vere da lì, opzioni in `piano/fortkochi.md`. Ancora non scelto; se esce il materiale per `migranti` è il lungo B (10/1), altrimenti reel dalla scorta.
