@@ -47,40 +47,50 @@ def run(cmd):
 # ---------------- montaggio: (clip, inizio nella clip, durata, opzioni) ----------------
 T_SPACE = len(glob.glob(f"{SZ}/*.png")) / FPS          # discesa (finisce nel bianco)
 T_IN = T_SPACE - 0.22                                    # il girato entra sotto il bianco
-SHOTS = [
-    dict(c="114701", a=2.0, d=1.35, cx=0.55, push=(1.32, 1.0, 0.9), arrive=True),   # arrivo: valle e colline
-    dict(c="132930", a=1.0, d=0.85, cx=0.40, push=(1.06, 1.0, 0.85)),               # colline intorno
-    dict(c="115233", a=11.78, d=3.55, cx=0.50),                                      # "Sono a Munnar..."
-    dict(c="115233", a=36.38, d=3.17, pan=(0.45, 0.80, 0.9, 2.6)),                   # "Dietro di me..." -> colline
-    dict(c="120307", a=3.46, d=2.50, cx=0.56),                                       # "Scoprirò l'arte..."
-    dict(c="120356", a=1.88, d=0.82, cx=0.56),                                       # "E la storia"
-    dict(c="135033", a=1.0, d=1.30, cx=0.50, push=(1.0, 1.06, 1.3), mute_src=("120356", 3.80)),  # "nella raccolta"
-    dict(c="120356", a=5.10, d=1.55, cx=0.56),                                       # "...tutti i giorni."
-    dict(c="120356", a=6.65, d=2.40, cx=0.56, close=True),                           # chiusura
-]
-# voce: (clip, da, a) sotto quale inquadratura (indice): tempi nella clip
-VOICE = {2: ("115233", 11.78, 15.33), 3: ("115233", 36.38, 39.55), 4: ("120307", 3.46, 5.96),
-         5: ("120356", 1.88, 2.70), 6: ("120356", 3.80, 5.10), 7: ("120356", 5.10, 6.65)}
-# sottotitoli: gruppi di parole con l'istante (nella clip) in cui ogni parola si dice
+# voce: pezzi (clip, da, a, pausa dopo) in fila. La seconda frase è montata dalle parole di Manuel (Manuel 11/11:
+# "Scoprirò la storia che si cela dietro la raccolta del tè che consumiamo tutti i giorni"), giunte verificate con
+# la trascrizione automatica; i tagli stanno sotto le immagini del tè, così non si vedono.
+PIECES = [("115233", 11.95, 12.74, 0.0),      # Sono a Munnar,
+          ("115233", 12.86, 13.48, 0.0),      # in Kerala,
+          ("115233", 13.73, 15.27, 0.03),     # a oltre 1500 metri.
+          ("120307", 3.52, 4.30, 0.03),       # Scoprirò
+          ("120356", 2.00, 2.67, 0.03),       # (E) la storia
+          ("120307", 4.56, 5.33, 0.03),       # che si cela dietro
+          ("120356", 4.10, 5.15, 0.0),        # (nel)la raccolta del tè
+          ("120356", 5.30, 6.62, 0.0)]        # che consumiamo tutti i giorni.
+# Manuel 11/11: nessun silenzio da "Sono a Munnar" in poi (pause dentro le frasi tolte, jump cut sul girato)
+A0 = 11.80                                     # 115233 entra un attimo prima della voce (braccia che si aprono)
 CAPS = [
-    ("115233", [("Sono", 11.85), ("a", 12.17), ("Munnar,", 12.25)]),
-    ("115233", [("in", 12.81), ("Kerala,", 12.97)]),
-    ("115233", [("a", 13.69), ("oltre", 13.85), ("1.500", 14.17), ("metri.", 14.97)]),
-    ("115233", [("Dietro", 36.44), ("di", 36.92), ("me", 37.0)]),
-    ("115233", [("una", 37.32), ("piantagione", 37.56)]),
-    ("115233", [("immensa", 38.36), ("di", 39.0), ("tè.", 39.24)]),
-    ("120307", [("Scoprirò", 3.51), ("l'arte", 4.15)]),
-    ("120307", [("che", 4.47), ("c'è", 4.75), ("dietro", 5.11)]),
-    ("120307", [("questo", 5.43), ("lavoro.", 5.59)]),
-    ("120356", [("E", 1.97), ("la", 2.05), ("storia", 2.21)]),
-    ("120356", [("nella", 3.83), ("raccolta", 4.23)]),
-    ("120356", [("del", 4.71), ("tè", 4.87)]),
-    ("120356", [("che", 5.27), ("consumiamo", 5.43)]),
-    ("120356", [("tutti", 5.99), ("i", 6.15), ("giorni.", 6.23)]),
+    [("Sono", 0, 12.00), ("a", 0, 12.17), ("Munnar,", 0, 12.25)],
+    [("in", 1, 12.88), ("Kerala,", 1, 12.97)],
+    [("a", 2, 13.75), ("oltre", 2, 13.85), ("1.500", 2, 14.17), ("metri.", 2, 14.97)],
+    [("Scoprirò", 3, 3.66), ("la", 4, 2.02), ("storia", 4, 2.29)],
+    [("che", 5, 4.58), ("si", 5, 4.66), ("cela", 5, 4.75), ("dietro", 5, 5.08)],
+    [("la", 6, 4.10), ("raccolta", 6, 4.38), ("del", 6, 4.71), ("tè", 6, 4.87)],
+    [("che", 7, 5.31), ("consumiamo", 7, 5.43)],
+    [("tutti", 7, 5.99), ("i", 7, 6.15), ("giorni.", 7, 6.23)],
 ]
+SPEED = 1.1                                    # tutto il reel a 1.1x alla fine (Manuel 11/11)
+SHOTS, PT = [], []
 
 
 def layout():
+    t = T_IN + (PIECES[0][1] - A0)
+    for c, a, b, g in PIECES:
+        PT.append(t)
+        t += (b - a) + g
+    end_v = t
+    P = PIECES
+    SHOTS[:] = [
+        dict(c="115233", a=A0, d=PT[1] - T_IN, cx=0.50, push=(1.12, 1.0, 0.8)),        # arrivo su Manuel
+        dict(c="115233", a=P[1][1], d=PT[2] - PT[1], cx=0.50),
+        dict(c="115233", a=P[2][1], d=PT[3] - PT[2], cx=0.50),
+        dict(c="120307", a=P[3][1], d=PT[4] - PT[3], cx=0.56),                          # "Scoprirò"
+        dict(c="135033", a=1.0, d=PT[6] - PT[4], cx=0.50, push=(1.0, 1.05, 2.0)),       # "la storia che si cela dietro"
+        dict(c="135012", a=4.0, d=PT[7] - PT[6], cx=0.50, push=(1.0, 1.05, 1.3)),       # "la raccolta del tè"
+        dict(c="120356", a=P[7][1], d=end_v - PT[7], cx=0.56),                          # "che consumiamo tutti i giorni"
+        dict(c="120356", a=P[7][2], d=2.3, cx=0.56, close=True),                        # chiusura
+    ]
     t = T_IN
     for s in SHOTS:
         s["t"] = t
@@ -88,12 +98,8 @@ def layout():
     return t
 
 
-def src_to_t(c, x):
-    """Istante nel montato di un istante x della clip c (prima inquadratura della clip che lo contiene)."""
-    for i, s in enumerate(SHOTS):
-        if i in VOICE and VOICE[i][0] == c and VOICE[i][1] - 0.01 <= x <= VOICE[i][2] + 0.01:
-            return s["t"] + (x - VOICE[i][1])
-    return None
+def piece_t(i, x):
+    return PT[i] + (x - PIECES[i][1])
 
 
 def shot_video(i, s):
@@ -181,9 +187,9 @@ def over(dst, src, x, y, alpha=1.0):
 
 def compose(base, total):
     caps = []
-    for c, ws in CAPS:
-        ts = [src_to_t(c, x) for _, x in ws]
-        caps.append((ws, ts))
+    for ws in CAPS:
+        ts = [piece_t(i, x) for _, i, x in ws]
+        caps.append(([(w, x) for w, _, x in ws], ts))
     cap_end = []
     for i, (ws, ts) in enumerate(caps):
         nxt = caps[i + 1][1][0] if i + 1 < len(caps) else None
@@ -301,17 +307,15 @@ def whoosh(total):
 def audio(total):
     n = int(round(total * SR))
     voice = np.zeros((n, 2))
-    for i, (c, a, b) in VOICE.items():
+    for i, (c, a, b, g) in enumerate(PIECES):
         src = cleaned(clip(c), f"{WK}/voce")
         x, sr = sf.read(src, dtype="float64")
         assert sr == SR
         x = x if x.ndim == 1 else x.mean(1)
         seg = x[int(a * SR):int(b * SR)].copy()
-        fl = int(0.03 * SR)
+        fl = int(0.012 * SR)
         seg[:fl] *= np.linspace(0, 1, fl); seg[-fl:] *= np.linspace(1, 0, fl)
-        t0 = int(round(SHOTS[i]["t"] * SR))
-        if "mute_src" in SHOTS[i]:
-            pass
+        t0 = int(round(PT[i] * SR))
         voice[t0:t0 + len(seg)] += seg[:n - t0, None]
     voice *= 10 ** ((-16 - lufs_of(voice)) / 20)
     wh = whoosh(total)
@@ -335,9 +339,10 @@ def main():
     base = base_video() if "--reuse" not in sys.argv or not os.path.exists(f"{WK}/base.mkv") else f"{WK}/base.mkv"
     comp = f"{WK}/comp.mkv" if "--audio" in sys.argv else compose(base, total)
     mix = audio(total)
-    run(["ffmpeg", "-v", "error", "-y", "-i", comp, "-i", mix, "-map", "0:v", "-map", "1:a", "-c:v", "libx264",
-         "-crf", "16", "-preset", "slow", "-profile:v", "high", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "256k",
-         "-movflags", "+faststart", "-t", f"{total:.3f}", OUT])
+    run(["ffmpeg", "-v", "error", "-y", "-i", comp, "-i", mix, "-filter_complex",
+         f"[0:v]setpts=PTS/{SPEED},fps={FPS}[v];[1:a]atempo={SPEED}[a]", "-map", "[v]", "-map", "[a]",
+         "-c:v", "libx264", "-crf", "16", "-preset", "slow", "-profile:v", "high", "-pix_fmt", "yuv420p",
+         "-c:a", "aac", "-b:a", "256k", "-movflags", "+faststart", "-t", f"{total / SPEED:.3f}", OUT])
     print(OUT)
 
 
