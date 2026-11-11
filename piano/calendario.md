@@ -224,6 +224,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | ven 29/1 | bilancio: stories set 2 |  |
 | sab 30/1 | bilancio: carosello (+ post YouTube) |  |
 | dom 31/1 | bilancio: reel 3 | programmato prima della partenza per il Vietnam |
+| dom 7/2 | LUNGO D = RIASSUNTO (`piano/riassunto.md`) | provvisorio (Manuel 11/11); pacchetto da decidere |
 
 Nota da Pianificazione, 4/11 (Manuel): cocco e canna di comorin escono anche loro su entrambi i profili (personale e Voci Vere). Quindi tutti i reel mainstream (panni, autostop, cocco, canna) vanno su entrambi; le date 26/11 e 2/12 non sono più condizionate.
 Nota da Pianificazione, 4/11 (Manuel): strategia. Prima si pubblica (anche contenuti più leggeri), poi si dà al profilo una forma professionale e da "Voci Vere". Lo scopo principale, da non dimenticare: DARE VOCE A CHI NE HA PIU' BISOGNO. Ogni lungo e ogni tema nuovo (coir, migranti, ONG) va verificato contro questa frase.
@@ -385,3 +386,5 @@ Nota da Pianificazione, 11/11 (Manuel): a Fort Kochi si lavora su tre ONG: CSSS,
 Nota da Copy, 11/11 (Manuel, via Pianificazione): fortkochi, linee guida di ripresa, domande it/en (generali + per CSSS, Raksha, Ashwasa Bhavan), chiusura in camera, titolo e idea di miniatura per ognuno dei tre video in `copioni/fortkochi_testi.md`. Titoli e miniature definitivi si rifanno sul montato.
 
 Nota da Copy, 11/11 (Manuel): fortkochi, titoli, miniature e struttura si decidono dopo il girato. Idea: VO sul B-roll alternato alle persone, chiusura (frase finale, spiegazione, sigla) in voiceover. Testo VO scritto da Copy sul girato.
+
+Nota da Pianificazione, 11/11 (Manuel): DUE lunghi parlati da lui. `bilancio` (24/1) = esperienza e consigli, introspettivo, lui a camera. NUOVO `riassunto` = mix dei video fatti coi B-roll di reel e lunghi, dom 7/2 provvisorio (`piano/riassunto.md`); senza riprese nuove. Il bilancio non è più il montaggio di tutto il viaggio.
