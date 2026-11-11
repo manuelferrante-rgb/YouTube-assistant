@@ -129,3 +129,7 @@ Insights ha giudicato dalla descrizione di Montaggio, senza riguardare i file.
 - Risposta a Montaggio su coir v3, te v9, arthunkal, verticali (sezione sopra). Aperti per Manuel: v2 arthunkal (apre su
   Manuel) e ultimi 15 s del coir.
 - Promemoria spostati sulla chat nuova: dati arthunkal 17/11 e 22/11, revisione strumenti 30/11.
+
+## Regola di Manuel (11/11): messaggi alle altre chat
+Insights manda messaggi alle altre chat (send_message) SOLO quando Manuel lo dice esplicitamente. Prima prepara il testo e
+aspetta il suo via. Alle domande delle altre chat si risponde solo se Manuel le ha mandate lui (come Audio il 9/11).
