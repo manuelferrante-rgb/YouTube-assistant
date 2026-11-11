@@ -226,7 +226,7 @@ def compose(base, total):
                 fr *= (1 - 0.45 * b)
             ta = min(1, max(0, (u - 0.15) / 0.5))
             dy = int(18 * (1 - ta) ** 2)
-            over(fr, tl, 0, int(H * 0.36) + dy, ta)
+            over(fr, tl, 0, int(H * 0.325) + dy, ta)
             la = min(1, max(0, (u - 0.45) / 0.6))
             if la > 0:
                 s = 1.04 - 0.04 * (la * la * (3 - 2 * la))
