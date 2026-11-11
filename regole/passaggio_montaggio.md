@@ -17,6 +17,17 @@
   parlato, immagini tranquille, mai su interviste con sottotitoli (regola in `regole/montaggio_documentario.md`).
 - Nessun altro lavoro aperto: si aspetta il prossimo video di Manuel (girato su Drive).
 
+## RICHIESTA APERTA 11/11 (da Insights, da confermare con Manuel, NON ancora fatta)
+- coir lungo, nuova intro: le 3 promesse delle miniature (uomo nella laguna, "Made in India", "80 centesimi a tappeto")
+  nei primi ~20 s. Al posto di VO0 un VO nuovo che Manuel deve registrare: "Su quei tappeti c'è scritto Made in India.
+  Non c'è scritto chi li ha fatti. Né che a loro, ci dicono, per ogni tappeto vanno ottanta centesimi. Quattro euro al
+  giorno. Da oggi, ogni volta che ne vedi uno, saprai da dove viene." (l'ultima frase si può togliere se ripete il VO11).
+- Immagini: "Made in India" -> signora seduta tra la fibra che guarda in camera (0063); "ottanta centesimi" -> donna
+  davanti al mucchio di gusci col fazzoletto; "quattro euro" -> donne al lavoro. 0544 resta al primo fotogramma, 0034/0038
+  restano. Resto invariato. Poi capitoli nuovi in projects/coir/capitoli.md e piano/calendario.md.
+- Titolo nuovo (deciso): "CHI C'È DIETRO I NOSTRI TAPPETI: le donne del coir in Kerala, India 🇮🇳".
+- Si parte quando Manuel lo chiede e ha caricato la registrazione del VO.
+
 ## LEZIONI DI COIR (6-9/11), valgono per i prossimi
 - Velocità: lunghi e verticali a 1x quando il VO è registrato sciolto (Manuel). Pause d'enfasi brevi (~0.45 s) nei
   verticali solo dove servono (`say(..., pause=PAUSE)`).
