@@ -24,7 +24,9 @@ from voice_clean import cleaned
 WK = f"{ROOT}/work/spazio"
 RAW = f"{WK}/raw"
 SZ = f"{WK}/sz"
-OUT = f"{WK}/out/VociVere_munnar_spazio_1080x1920.mp4"
+OUT = os.environ.get("OUT", f"{WK}/out/VociVere_munnar_spazio_1080x1920.mp4")
+WH_START = float(os.environ.get("WH_START", "0.32"))   # livello del suono all'avvio della camera (gancio sonoro)
+DING_F = float(os.environ.get("DING_F", "1046.5"))     # nota del ding sul logo (Manuel 11/11 v6)
 W, H, FPS, SR = 1080, 1920, 30, 48000
 GOLD = (182, 138, 75)
 F_CAP = f"{ROOT}/models/Poppins-Medium.ttf"
@@ -181,6 +183,51 @@ def end_layers():
     return np.array(t), np.array(lg)
 
 
+# barre della voce del logo (Manuel 11/11 v6): si muovono come un misuratore di voce mentre entra il logo, si fermano
+# a T_STOP (secondi dall'inizio della chiusura, prima dell'1.1x) e lì parte il ding
+T_STOP = 1.35
+BOX = (292, 107, 421, 181)          # riquadro delle barre nel logo largo 712 px (x0, y0, x1, y1)
+
+
+def bar_segments(lg):
+    x0, y0, x1, y1 = BOX
+    a = lg[y0:y1, x0:x1, 3]
+    xs = np.where(a.max(0) > 40)[0]
+    segs, st, pv = [], xs[0], xs[0]
+    for x in xs[1:]:
+        if x != pv + 1:
+            segs.append((st, pv + 1)); st = x
+        pv = x
+    segs.append((st, pv + 1))
+    return segs
+
+
+def logo_frame(lg, segs, u):
+    """Il logo con le barre scalate in verticale intorno al centro, ognuna col suo ritmo."""
+    A = float(np.clip((T_STOP - u) / 0.3, 0, 1)) ** 1.5
+    if A <= 0:
+        return lg
+    x0, y0, x1, y1 = BOX
+    out = lg.copy()
+    box = lg[y0:y1, x0:x1]
+    nb = np.zeros_like(box)
+    hh = y1 - y0
+    cy = 144 - y0
+    for k, (a, b) in enumerate(segs):
+        r = math.sin(k * 12.9898) * 43758.5453 % 1
+        f = 0.68 + 0.42 * math.sin(2 * math.pi * ((4.5 + 3 * r) * u + r)) * (0.6 + 0.4 * math.sin(7.1 * u + k))
+        f = 1 + A * (max(0.25, f) - 1)
+        col = box[:, a:b]
+        nh = max(2, int(round(hh * f)))
+        sc = cv2.resize(col, (b - a, nh), interpolation=cv2.INTER_AREA)
+        top = int(round(cy - cy * f))
+        sa, sb = max(0, -top), min(nh, hh - top)
+        if sb > sa:
+            nb[top + sa:top + sb, a:b] = sc[sa:sb]
+    out[y0:y1, x0:x1] = nb
+    return out
+
+
 def over(dst, src, x, y, alpha=1.0):
     h, w = src.shape[:2]
     x0, y0 = max(0, x), max(0, y)
@@ -204,6 +251,7 @@ def compose(base, total):
         cap_end.append(min(nxt, last_t + 0.4) if nxt else last_t)
     cache = {}
     tl, lg = end_layers()
+    segs = bar_segments(lg)
     sc = [s for s in SHOTS if s.get("close")][0]
     t_close = sc["t"]
     arr = SHOTS[0]["t"]
@@ -243,7 +291,7 @@ def compose(base, total):
             la = min(1, max(0, (u - 0.45) / 0.6))
             if la > 0:
                 s = 1.04 - 0.04 * (la * la * (3 - 2 * la))
-                l2 = cv2.resize(lg, None, fx=s, fy=s, interpolation=cv2.INTER_AREA)
+                l2 = cv2.resize(logo_frame(lg, segs, u), None, fx=s, fy=s, interpolation=cv2.INTER_AREA)
                 over(fr, l2, (W - l2.shape[1]) // 2, int(H * 0.47) - (l2.shape[0] - lg.shape[0]) // 2, la)
         # sottotitoli
         for j, (ws, ts) in enumerate(caps):
@@ -289,7 +337,7 @@ def whoosh(total):
         state = 0.0
         for s0 in range(0, n, hop):
             tt = s0 / SR
-            fc = 180 + 5200 * (min(1, max(0, tt / tp)) ** 2.2) if tt < tp else 5400 * math.exp(-(tt - tp) / 0.35) + 300
+            fc = 650 + 4750 * (min(1, max(0, tt / tp)) ** 1.8) if tt < tp else 5400 * math.exp(-(tt - tp) / 0.35) + 300
             a = math.exp(-2 * math.pi * fc / SR)
             seg = pink[s0:s0 + hop]
             o = np.empty_like(seg)
@@ -297,17 +345,35 @@ def whoosh(total):
                 state = a * state + (1 - a) * seg[q]
                 o[q] = state
             y[s0:s0 + hop] = o
-        env = np.where(t < tp, (np.clip(t / tp, 0, 1)) ** 2.6, np.exp(-(t - tp) / 0.16))
-        env *= np.clip(t / 0.25, 0, 1)
+        # parte subito, col primo movimento della camera (Manuel 11/11 v6), poi sale fino al bianco
+        env = np.where(t < tp, WH_START + (1 - WH_START) * np.clip(t / tp, 0, 1) ** 1.8, np.exp(-(t - tp) / 0.16))
+        env *= np.clip(t / 0.06, 0, 1)
         out[:, ch] = y / (np.abs(y).max() + 1e-9) * env
     # corpo basso che sale e un colpo morbido all'arrivo
-    sub = np.sin(2 * np.pi * (38 + 30 * np.clip(t / tp, 0, 1)) * t) * np.where(t < tp, np.clip(t / tp, 0, 1) ** 3,
+    sub = np.sin(2 * np.pi * (38 + 30 * np.clip(t / tp, 0, 1)) * t) * np.where(t < tp, 0.2 + 0.8 * np.clip(t / tp, 0, 1) ** 2,
                                                                              np.exp(-(t - tp) / 0.14))
     out += 0.35 * sub[:, None]
     # piccolo soffio sul logo
     tl = SHOTS[-1]["t"] + 0.45
     m = (t > tl) & (t < tl + 1.0)
     out[m] += 0.05 * rng.standard_normal((m.sum(), 2)) * np.sin(np.pi * (t[m] - tl) / 1.0)[:, None] ** 2
+    return out / np.abs(out).max()
+
+
+def ding(total):
+    """Ding di chiusura sul logo (Manuel 11/11 v6): campana morbida sintetizzata qui (parziali inarmonici, decadimento
+    esponenziale), entra quando il logo è pieno."""
+    n = int(round(total * SR))
+    out = np.zeros((n, 2))
+    t0 = SHOTS[-1]["t"] + T_STOP
+    i0 = int(t0 * SR)
+    tt = np.arange(n - i0) / SR
+    y = np.zeros_like(tt)
+    for r, a, d in [(1.0, 1.0, 1.1), (2.0, 0.35, 0.6), (2.76, 0.28, 0.45), (5.4, 0.10, 0.2)]:
+        y += a * np.sin(2 * np.pi * DING_F * r * tt) * np.exp(-tt / d)
+    y *= np.clip(tt / 0.004, 0, 1)
+    out[i0:, 0] = y * 0.95
+    out[i0:, 1] = y
     return out / np.abs(out).max()
 
 
@@ -340,7 +406,9 @@ def audio(total):
     voice *= 10 ** ((-16 - lufs_of(voice)) / 20)
     wh = whoosh(total)
     wh *= 10 ** ((-19 - lufs_of(wh[:int((T_IN + 1) * SR)])) / 20)
-    mix = voice + wh
+    dg = ding(total)
+    dg *= 10 ** ((-21 - lufs_of(dg[int((SHOTS[-1]["t"] + T_STOP - 0.05) * SR):])) / 20)
+    mix = voice + wh + dg
     p = f"{WK}/mix.wav"
     sf.write(f"{WK}/mix_pre.wav", mix.astype(np.float32), SR, subtype="FLOAT")
     m = json.loads(run(["ffmpeg", "-hide_banner", "-i", f"{WK}/mix_pre.wav", "-af",
