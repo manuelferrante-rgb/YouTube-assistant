@@ -208,7 +208,7 @@ J = {
  ('coir', 'C9_madeinindia'): dict(src=g(C, '0063'), t=9.2, cx=.535, cy=.52, zoom=1.45, layout='riga',
      it='MADE IN INDIA', en='MADE IN INDIA'),
  ('coir', 'C10_80centesimi'): dict(src=g(C, '0063'), t=15.5, cx=.52, cy=.45, zoom=1.35, layout='riga',
-     it='80 CENTESIMI A TAPPETO', en='80 CENTS PER RUG'),
+     it='80 CENTESIMI A TAPPETO', en='80 CENTS PER MAT'),
 }
 if __name__ == '__main__':
     import sys
