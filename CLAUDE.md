@@ -14,7 +14,8 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Nel copy: "paesi a basso/medio reddito" o il nome del paese, mai "sottosviluppati" (anche se Manuel lo dice a voce).
 - Storie di persone solo con il loro consenso. Se Manuel sta registrando, ce l'ha: non ricordarglielo mai
   (Manuel, 5/11). Nel girato che manda il consenso c'è sempre, non chiederlo.
-- Salari e dati (Manuel, 5/11): vanno bene dalle parole degli intervistati, attribuite a loro. Le linee generali
+- Salari e dati (Manuel, 5/11): vanno bene dalle parole degli intervistati. Nel voiceover e nei testi non serve attribuirli
+  ("ci dicono"): suona macchinoso (Manuel, 11/11). Le linee generali
   si possono prendere online da fonti verificate (le cerca Claude), con la fonte indicata.
 - Stile: diretto, concreto, niente retorica. Mai il trattino lungo.
 
