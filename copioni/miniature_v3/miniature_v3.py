@@ -176,6 +176,14 @@ J = {
      it='MADE IN INDIA', en='MADE IN INDIA'),
  ('coir', 'C5_manuel'): dict(src=g(C, '0050'), t=1.0, cx=.5, cy=.45, zoom=1.2, layout='basso',
      it=('CHI FA', 'I NOSTRI TAPPETI'), en=('WHO MAKES', 'OUR DOORMATS')),
+ # COIR v4 (Manuel 11/11): espressioni serie, testo coerente con i primi secondi del lungo
+ # (0:00 l'uomo nella laguna "Così viene raccolta la materia prima..."; VO0 "...non c'è scritto chi li ha fatti, né quanto le hanno pagate")
+ ('coir', 'C6_laguna'): dict(src=g(C, '0052'), t=3.45, cx=.40, cy=.48, zoom=1.45, layout='basso', red=True,
+     it=('I NOSTRI TAPPETI', 'NASCONO QUI'), en=('OUR DOORMATS', 'START HERE')),
+ ('coir', 'C7_donne'): dict(src=g(C, '0540'), t=13.5, cx=.5, cy=.5, zoom=1.0, layout='basso', red=True, flip=True,
+     it=('A MANO, SEDUTE A TERRA', 'QUANTO LE PAGANO?'), en=('BY HAND, ON THE GROUND', 'HOW MUCH ARE THEY PAID?')),
+ ('coir', 'C8_anziana'): dict(src=g(C, '0063'), t=9.2, cx=.5, cy=.52, zoom=1.45, layout='dietro', red=['CHI', 'WHO'],
+     it='CHI LI HA FATTI?', en='WHO MADE THEM?'),
 }
 if __name__ == '__main__':
     import sys
