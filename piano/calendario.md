@@ -388,3 +388,5 @@ Nota da Copy, 11/11 (Manuel, via Pianificazione): fortkochi, linee guida di ripr
 Nota da Copy, 11/11 (Manuel): fortkochi, titoli, miniature e struttura si decidono dopo il girato. Idea: VO sul B-roll alternato alle persone, chiusura (frase finale, spiegazione, sigla) in voiceover. Testo VO scritto da Copy sul girato.
 
 Nota da Pianificazione, 11/11 (Manuel): DUE lunghi parlati da lui. `bilancio` (24/1) = esperienza e consigli, introspettivo, lui a camera. NUOVO `riassunto` = mix dei video fatti coi B-roll di reel e lunghi, dom 7/2 provvisorio (`piano/riassunto.md`); senza riprese nuove. Il bilancio non è più il montaggio di tutto il viaggio.
+
+Nota da Pianificazione, 11/11 (Manuel): il `riassunto` è molto parlato, con tante parole di Manuel in voiceover e in camera sopra i B-roll, non poche frasi. Copy scrive il copione per blocchi.
