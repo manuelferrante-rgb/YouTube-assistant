@@ -26,6 +26,9 @@
   davanti al mucchio di gusci col fazzoletto; "quattro euro" -> donne al lavoro. 0544 resta al primo fotogramma, 0034/0038
   restano. Resto invariato. Poi capitoli nuovi in projects/coir/capitoli.md e piano/calendario.md.
 - Titolo nuovo (deciso): "CHI C'È DIETRO I NOSTRI TAPPETI: le donne del coir in Kerala, India 🇮🇳".
+- Manuel 11/11: sotto le parole nuove del VO SOLO video delle persone delle miniature (le 3 del test, su Drive
+  montati/coir/miniatura), sempre coerenti con quello che si dice in quel momento. Trovare le clip confrontando i
+  fotogrammi con le miniature (candidate: 0063 4-7 s, 0540, 0549, 0544).
 - Si parte quando Manuel lo chiede e ha caricato la registrazione del VO.
 - A montaggio finito (Manuel 11/11): avvisare Copy (session_01HtfbgysqTrKE7hBx3kQeSA) che deve rifare i sottotitoli
   it/en del lungo coir sui nuovi tempi, con i capitoli nuovi.
