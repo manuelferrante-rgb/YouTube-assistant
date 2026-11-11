@@ -12,7 +12,7 @@ Titolo EN: WHO IS BEHIND OUR DOORMATS: the coir women of Kerala, India 🇮🇳
 Miniature (Test e confronto, v4, Manuel 11/11): 1 C6_laguna "I NOSTRI TAPPETI NASCONO QUI" (principale), 2 C9_madeinindia
 "MADE IN INDIA", 3 C10_80centesimi "80 CENTESIMI A TAPPETO" (_it e _en; en: OUR DOORMATS START HERE, MADE IN INDIA, 80 CENTS PER MAT).
 Espressioni serie, persona centrale in camera, scritta su una riga, TUTTA BIANCA (Manuel 11/11), centrata poco sopra il fondo.
-Repo copioni/coir_miniature/v3/, generatore copioni/miniature_v3/miniature_v3.py (layout 'riga'). Drive: da sostituire a C1-C3 dopo l'ok di Manuel.
+Repo copioni/coir_miniature/v3/, generatore copioni/miniature_v3/miniature_v3.py (layout 'riga'). Su Drive montati/coir/miniatura/ (1_C6_laguna, 2_C9_madeinindia, 3_C10_80centesimi; C1-C3 in vecchie/), 11/11. Il file TESTI su Drive si aggiorna (titolo, sottotitoli, capitoli) quando Montaggio dà i tempi della nuova intro.
 Da fare quando Montaggio dà i tempi della nuova intro (VO con 80 centesimi e 4 euro al giorno): sottotitoli it/en e capitoli.
 
 ### Descrizione IT
