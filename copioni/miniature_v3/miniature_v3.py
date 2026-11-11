@@ -186,7 +186,7 @@ J = {
      it=('CHI FA', 'I NOSTRI TAPPETI'), en=('WHO MAKES', 'OUR DOORMATS')),
  # COIR v4 (Manuel 11/11): espressioni serie, testo coerente con i primi secondi del lungo
  # (0:00 l'uomo nella laguna "Così viene raccolta la materia prima..."; VO0 "...non c'è scritto chi li ha fatti, né quanto le hanno pagate")
- ('coir', 'C6_laguna'): dict(src=g(C, '0052'), t=3.45, cx=.50, cy=.56, zoom=1.35, layout='riga', red=['NASCONO', 'QUI', 'START', 'HERE'],
+ ('coir', 'C6_laguna'): dict(src=g(C, '0052'), t=3.45, cx=.50, cy=.63, zoom=1.35, layout='riga',
      it='I NOSTRI TAPPETI NASCONO QUI', en='OUR DOORMATS START HERE'),
  ('coir', 'C7_donne'): dict(src=g(C, '0540'), t=13.5, cx=.5, cy=.5, zoom=1.0, layout='basso', red=True, flip=True,
      it=('A MANO, SEDUTE A TERRA', 'QUANTO LE PAGANO?'), en=('BY HAND, ON THE GROUND', 'HOW MUCH ARE THEY PAID?')),
@@ -205,9 +205,9 @@ J = {
  ('coir', 'C7f_lavoro'): dict(src=g(C, '0540'), t=20.0, cx=.5, cy=.5, zoom=1.0, layout='basso', red=True, flip=True,
      it=('A MANO, SEDUTE A TERRA', 'QUANTO LE PAGANO?'), en=('BY HAND, ON THE GROUND', 'HOW MUCH ARE THEY PAID?')),
  # scelta di Manuel 11/11: le due inquadrature della signora piccolina che guarda in camera, una riga sola
- ('coir', 'C9_madeinindia'): dict(src=g(C, '0063'), t=9.2, cx=.535, cy=.52, zoom=1.45, layout='riga', red=['INDIA'],
+ ('coir', 'C9_madeinindia'): dict(src=g(C, '0063'), t=9.2, cx=.535, cy=.52, zoom=1.45, layout='riga',
      it='MADE IN INDIA', en='MADE IN INDIA'),
- ('coir', 'C10_80centesimi'): dict(src=g(C, '0063'), t=15.5, cx=.45, cy=.45, zoom=1.35, layout='riga', red=['80', 'CENTESIMI', 'CENTS'],
+ ('coir', 'C10_80centesimi'): dict(src=g(C, '0063'), t=15.5, cx=.52, cy=.45, zoom=1.35, layout='riga',
      it='80 CENTESIMI A TAPPETO', en='80 CENTS PER RUG'),
 }
 if __name__ == '__main__':
