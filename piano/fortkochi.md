@@ -41,3 +41,7 @@ Gli orari e i telefoni vengono quasi tutti da elenchi di terzi, non verificati. 
 8. I due segnaposto senza nome (a destra e al centro dell'immagine): non identificabili.
 
 Più alta probabilità di dire sì alle riprese: CSSS e Raksha (organizzazioni strutturate, con ufficio e programmi di lavoro). Ashwasa Bhavan: interessante e con legame italiano, ma bambini. Le Missionarie: probabile no.
+
+## Decisione di Manuel, 11/11: si fanno le prime tre
+CSSS, Raksha Society, Ashwasa Bhavan. Le altre (Magic Bus, Vimala Bhavan, Biennale, Ente Kochi) escono, salvo incontri sul posto.
+Ordine: gio 12 CSSS (Veli) e, se c'è tempo, Ashwasa (Veli, stessa zona: da verificare su Maps); ven 13 Raksha (Kochangadi); sab 14 recupero o la terza. Prima uscita: telefonare a CSSS (0484 2227217) e Raksha (0484 222 7707) per sapere se ricevono.

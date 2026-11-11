@@ -379,3 +379,5 @@ Nota da Pianificazione, 10/11 (Manuel): nuovo reel EXTRA `roti` ("How to make ro
 Nota da Pianificazione, 11/11 (Manuel): Manuel è a Fort Kochi 12-14/11 e poi torna in Italia. Vuole 1 o 2 video Voci Vere da lì, opzioni in `piano/fortkochi.md`. Ancora non scelto; se esce il materiale per `migranti` è il lungo B (10/1), altrimenti reel dalla scorta.
 
 Nota da Pianificazione, 11/11 (Manuel): a Fort Kochi (12-14/11) vuole video più lunghi sulle ONG della mappa: intervista ai responsabili e storie delle persone seguite. Piano e fonti in `piano/fortkochi.md`. Formato 3-5 min per ONG; se escono due forti, possibile unico video come lungo B (10/1), da decidere dopo il girato.
+
+Nota da Pianificazione, 11/11 (Manuel): a Fort Kochi si lavora su tre ONG: CSSS, Raksha Society, Ashwasa Bhavan (`piano/fortkochi.md`). Le altre sono escluse.
