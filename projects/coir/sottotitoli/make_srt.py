@@ -1,4 +1,4 @@
-# Sottotitoli YouTube it/en del lungo coir. Copy, 8/11 sulla v2 (6:51); 9/11 spostati sulla v4 (6:45, VociVere_coir_long_4K.mp4):
+# Sottotitoli YouTube it/en del lungo coir (v6, 11/11: intro nuova, vedi V6_INTRO). Copy, 8/11 sulla v2 (6:51); 9/11 spostati sulla v4 (6:45, VociVere_coir_long_4K.mp4):
 # i tempi qui sotto sono quelli della v2, shift() li porta sulla v4 (controllato sulla trascrizione della v4:
 # uguale fino a 1:36, poi -3 s dalla pausa sulla laguna, -6 s dopo Premilla che segue il salario).
 # Tempi dalla trascrizione parakeet del montato (work/coir/long/tr.json), testo corretto a mano: VO dal copione,
@@ -7,8 +7,6 @@
 S = [
  (0.45, 3.4, "Così viene raccolta la materia prima\nper produrre i nostri tappeti.", "This is how the raw material\nfor our doormats is gathered."),
  (3.5, 6.3, "Il cocco da cui viene estratta la fibra\nviene da qua.", "The coconut the fibre comes from\ncomes from here."),
- (6.6, 9.4, "Su quei tappeti c'è scritto Made in India.", "Those doormats say Made in India."),
- (9.5, 12.1, "Non c'è scritto chi li ha fatti,\nné quanto le hanno pagate.", "They don't say who made them,\nor how much the women were paid."),
  (18.46, 21.2, "Mi trovo nel sud dell'India,\nad Anathalavattom, in Kerala.", "I'm in the south of India,\nin Anathalavattom, Kerala."),
  (21.5, 24.7, "Il coir è la fibra del guscio di cocco.", "Coir is the fibre of the coconut husk."),
  (25.31, 27.78, "In Kerala, per generazioni,\nè stata lavorata a mano.", "In Kerala, for generations,\nit was worked by hand."),
@@ -96,6 +94,16 @@ S = [
 def shift(t):
     return t if t < 96 else t - 3 if t < 263 else t - 6
 S = [(shift(a), shift(b), it, en) for a, b, it, en in S]
+# v6 (11/11, Montaggio): intro nuova (VO "Intro" di Manuel, tempi dalla trascrizione del file + 5.35 s, v6_intro.py),
+# dopo la sigla (12.43 s nel v5) tutto +5.1 s.
+V6_INTRO = [
+ (7.75, 9.40, "Su quei tappeti c'è scritto Made in India.", "Those doormats say Made in India."),
+ (9.45, 10.50, "Non c'è scritto chi li ha fatti.", "They don't say who made them."),
+ (10.55, 13.30, "Né che a loro, per ogni tappeto,\nvanno ottanta centesimi.", "Or that for each one,\nthe women get eighty cents."),
+ (13.35, 14.50, "Quattro euro al giorno.", "Four euros a day."),
+ (14.55, 17.30, "Da oggi, ogni volta che ne vedi uno,\nsaprai da dove viene.", "From today, every time you see one,\nyou'll know where it comes from."),
+]
+S = [r for r in S if r[0] < 12.43] + V6_INTRO + [(a + 5.1, b + 5.1, it, en) for a, b, it, en in S if a >= 12.43]
 def fm(t):
     ms = int(round(t * 1000)); return f"{ms//3600000:02d}:{ms//60000%60:02d}:{ms//1000%60:02d},{ms%1000:03d}"
 for k, lang in ((2, 'it'), (3, 'en')):

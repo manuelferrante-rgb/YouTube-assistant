@@ -1,4 +1,4 @@
-# Le donne del coir: PACCHETTO DEFINITIVO (Copy, 8/11; 9/11 sul lungo v4 6:45 approvato da Manuel: capitoli e sottotitoli rifatti)
+# Le donne del coir: PACCHETTO DEFINITIVO (Copy, 8/11; 11/11 sul lungo v6 6:50: intro nuova, titolo, miniature, capitoli e sottotitoli rifatti)
 Tutto su Drive, cartella "Coir" (19zCOBK_aJ6a4SFwGffbZvDKUr-IXR8UA) -> montati/coir/: VociVere_coir_long_4K.mp4, i 5 verticali,
 sottotitoli/ (.it.srt, .en.srt), miniatura/, carosello/, carosello_volti/, storie/, TESTI_titolo_descrizioni_verticali.txt.
 Uscite (calendario, Pianificazione): teaser sab 19/12, lungo dom 20/12, reel e caroselli nei giorni dopo.
@@ -12,8 +12,8 @@ Titolo EN: WHO IS BEHIND OUR DOORMATS: the coir women of Kerala, India 🇮🇳
 Miniature (Test e confronto, v4, Manuel 11/11): 1 C6_laguna "I NOSTRI TAPPETI NASCONO QUI" (principale), 2 C9_madeinindia
 "MADE IN INDIA", 3 C10_80centesimi "80 CENTESIMI A TAPPETO" (_it e _en; en: OUR DOORMATS START HERE, MADE IN INDIA, 80 CENTS PER MAT).
 Espressioni serie, persona centrale in camera, scritta su una riga, TUTTA BIANCA (Manuel 11/11), centrata poco sopra il fondo.
-Repo copioni/coir_miniature/v3/, generatore copioni/miniature_v3/miniature_v3.py (layout 'riga'). Su Drive montati/coir/miniatura/ (1_C6_laguna, 2_C9_madeinindia, 3_C10_80centesimi; C1-C3 in vecchie/), 11/11. Il file TESTI su Drive si aggiorna (titolo, sottotitoli, capitoli) quando Montaggio dà i tempi della nuova intro.
-Da fare quando Montaggio dà i tempi della nuova intro (VO con 80 centesimi e 4 euro al giorno): sottotitoli it/en e capitoli.
+Repo copioni/coir_miniature/v3/, generatore copioni/miniature_v3/miniature_v3.py (layout 'riga'). Su Drive montati/coir/miniatura/ (1_C6_laguna, 2_C9_madeinindia, 3_C10_80centesimi; C1-C3 in vecchie/), 11/11.
+Sottotitoli it/en e capitoli rifatti sul v6 (11/11).
 
 ### Descrizione IT
 Sopra i nostri zerbini c'è scritto Made in India. Non c'è scritto chi li ha fatti.
@@ -24,19 +24,19 @@ società fatta di persone, senza un proprietario, aperta da quarant'anni.
 
 Un uomo di 76 anni tira su i gusci dalla laguna, dove restano in ammollo per mesi. Sotto la tettoia le donne li aprono a mano,
 sedute per terra, fino alle due. In fabbrica la fibra diventa corda, intrecciata camminando all'indietro: 280 pezzi in 8 ore.
-Il salario, ci dicono, è di 400 rupie al giorno, circa 4 euro. Per ogni tappeto, a loro vanno 80 rupie. Per questo i giovani
+Il salario è di 400 rupie al giorno, circa 4 euro. Per ogni tappeto, a loro vanno 80 rupie, circa 80 centesimi. Per questo i giovani
 non vengono più.
 
 Voci Vere racconta le persone e i luoghi lontani dalle cartoline, dando voce a chi ne ha più bisogno.
 
 Capitoli
 0:00 Made in India
-0:18 Le donne che non lo fanno più
-1:20 La laguna
-2:48 Sotto la tettoia
-4:24 La fabbrica
-5:12 I nostri tappeti
-6:08 Chiusura
+0:23 Le donne che non lo fanno più
+1:25 La laguna
+2:53 Sotto la tettoia
+4:29 La fabbrica
+5:17 I nostri tappeti
+6:13 Chiusura
 
 #Kerala #India #VociVere
 
@@ -49,19 +49,19 @@ people, with no owner, open for forty years.
 
 A 76-year-old man pulls the husks out of the lagoon, where they soak for months. Under the shelter the women open them by
 hand, sitting on the ground, until two in the afternoon. In the factory the fibre becomes rope, twisted while walking
-backwards: 280 pieces in 8 hours. The wage, they tell us, is 400 rupees a day, about 4 euros. For each doormat, they get
-80 rupees. That's why young people no longer come.
+backwards: 280 pieces in 8 hours. The wage is 400 rupees a day, about 4 euros. For each doormat, the women get
+80 rupees, about 80 cents. That's why young people no longer come.
 
 Voci Vere tells the stories of people and places far from the postcards, giving a voice to those who need it most.
 
 Chapters
 0:00 Made in India
-0:18 The women who stopped
-1:20 The lagoon
-2:48 Under the shelter
-4:24 The factory
-5:12 Our doormats
-6:08 Closing
+0:23 The women who stopped
+1:25 The lagoon
+2:53 Under the shelter
+4:29 The factory
+5:17 Our doormats
+6:13 Closing
 
 #Kerala #India #VociVere
 
@@ -130,12 +130,12 @@ Titolo Short / prima riga IG:
 Lavoravano il cocco dal 1975. Oggi nessuna 🇮🇳
 Didascalia IG:
 Lavoravano il cocco dal 1975. Oggi nessuna 🇮🇳
-Ci indicano l'unico posto, qui intorno, dove si fa ancora. Il salario, ci dicono, è di 400 rupie al giorno, circa 4 euro.
+Ci indicano l'unico posto, qui intorno, dove si fa ancora. Il salario è di 400 rupie al giorno, circa 4 euro.
 Nel tuo paese c'è un mestiere che sta sparendo?
 L'unico posto dove si fa ancora, e le donne che ci lavorano da quarant'anni: è nel video sul canale.
 Video completo sul canale YouTube Voci Vere, link in bio.
 #india #kerala #viaggio #VociVere #cocco
-Descrizione Short YT: Ci indicano l'unico posto, qui intorno, dove si fa ancora. Il salario, ci dicono, è di 400 rupie al giorno, circa 4 euro. Nel tuo paese c'è un mestiere che sta sparendo?
+Descrizione Short YT: Ci indicano l'unico posto, qui intorno, dove si fa ancora. Il salario è di 400 rupie al giorno, circa 4 euro. Nel tuo paese c'è un mestiere che sta sparendo?
 Commento fissato YT: L'unico posto dove si fa ancora, e le donne che ci lavorano da quarant'anni: è nel video sul canale.
 
 ## CAROSELLI E STORIE

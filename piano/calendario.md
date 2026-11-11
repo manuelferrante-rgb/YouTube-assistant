@@ -405,3 +405,5 @@ tutto uguale al v5 ma +5.1 s. Capitoli nuovi: 0:00 Made in India, 0:23 Le donne 
 2:53 Sotto la tettoia, 4:29 La fabbrica, 5:17 I nostri tappeti, 6:13 Chiusura (`projects/coir/capitoli.md`). Copy: rifare
 i sottotitoli it/en del lungo (intro nuova + resto spostato di +5.1 s dopo 12.43 s). Titolo nuovo: "CHI C'È DIETRO I NOSTRI
 TAPPETI: le donne del coir in Kerala, India 🇮🇳".
+
+Nota da Copy, 11/11: coir v6, sottotitoli it/en rifatti (intro nuova + resto +5.1 s), capitoli 0:00/0:23/1:25/2:53/4:29/5:17/6:13 nella descrizione it/en, titolo "CHI C'È DIETRO I NOSTRI TAPPETI", miniature v4 (1_C6_laguna, 2_C9_madeinindia, 3_C10_80centesimi). Tutto su Drive montati/coir (sottotitoli/, TESTI_titolo_descrizioni_verticali.txt; le versioni v5 in vecchie/). Copione della traccia inglese aggiornato ai tempi v6 (`copioni/coir_audio_en.md`, righe nuove 3-4d). Pacchetto Copy coir completo.
