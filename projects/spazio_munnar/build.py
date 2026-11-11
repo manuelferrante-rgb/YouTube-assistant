@@ -53,22 +53,22 @@ T_IN = T_SPACE - 0.22                                    # il girato entra sotto
 PIECES = [("115233", 11.95, 12.74, 0.0),      # Sono a Munnar,
           ("115233", 12.86, 13.48, 0.0),      # in Kerala,
           ("115233", 13.73, 15.27, 0.03),     # a oltre 1500 metri.
-          ("120307", 3.52, 4.30, 0.03),       # Scoprirò
-          ("120356", 2.00, 2.67, 0.03),       # (E) la storia
-          ("120307", 4.56, 5.33, 0.03),       # che si cela dietro
-          ("120356", 4.10, 5.15, 0.0),        # (nel)la raccolta del tè
+          ("120307", 3.52, 4.02, 0.04),       # Scoprirò (senza "l'arte", Manuel 11/11)
+          ("120356", 2.04, 2.67, 0.04),       # (E) la storia
+          ("120356", 3.88, 5.15, 0.0),        # nella raccolta del tè
           ("120356", 5.30, 6.62, 0.0)]        # che consumiamo tutti i giorni.
+# "dietro la raccolta" tolto: la giunzione "dietro|(nel)la" non veniva pulita in nessuna prova
 # Manuel 11/11: nessun silenzio da "Sono a Munnar" in poi (pause dentro le frasi tolte, jump cut sul girato)
 A0 = 11.80                                     # 115233 entra un attimo prima della voce (braccia che si aprono)
 CAPS = [
     [("Sono", 0, 12.00), ("a", 0, 12.17), ("Munnar,", 0, 12.25)],
     [("in", 1, 12.88), ("Kerala,", 1, 12.97)],
     [("a", 2, 13.75), ("oltre", 2, 13.85), ("1.500", 2, 14.17), ("metri.", 2, 14.97)],
-    [("Scoprirò", 3, 3.66), ("la", 4, 2.02), ("storia", 4, 2.29)],
-    [("che", 5, 4.58), ("si", 5, 4.66), ("cela", 5, 4.75), ("dietro", 5, 5.08)],
-    [("la", 6, 4.10), ("raccolta", 6, 4.38), ("del", 6, 4.71), ("tè", 6, 4.87)],
-    [("che", 7, 5.31), ("consumiamo", 7, 5.43)],
-    [("tutti", 7, 5.99), ("i", 7, 6.15), ("giorni.", 7, 6.23)],
+    [("Scoprirò", 3, 3.56), ("la", 4, 2.05), ("storia", 4, 2.29)],
+    [("nella", 5, 3.92), ("raccolta", 5, 4.38)],
+    [("del", 5, 4.71), ("tè", 5, 4.87)],
+    [("che", 6, 5.31), ("consumiamo", 6, 5.43)],
+    [("tutti", 6, 5.99), ("i", 6, 6.15), ("giorni.", 6, 6.23)],
 ]
 SPEED = 1.1                                    # tutto il reel a 1.1x alla fine (Manuel 11/11)
 SHOTS, PT = [], []
@@ -86,10 +86,10 @@ def layout():
         dict(c="115233", a=P[1][1], d=PT[2] - PT[1], cx=0.50),
         dict(c="115233", a=P[2][1], d=PT[3] - PT[2], cx=0.50),
         dict(c="120307", a=P[3][1], d=PT[4] - PT[3], cx=0.56),                          # "Scoprirò"
-        dict(c="135033", a=1.0, d=PT[6] - PT[4], cx=0.50, push=(1.0, 1.05, 2.0)),       # "la storia che si cela dietro"
-        dict(c="135012", a=4.0, d=PT[7] - PT[6], cx=0.50, push=(1.0, 1.05, 1.3)),       # "la raccolta del tè"
-        dict(c="120356", a=P[7][1], d=end_v - PT[7], cx=0.56),                          # "che consumiamo tutti i giorni"
-        dict(c="120356", a=P[7][2], d=2.3, cx=0.56, close=True),                        # chiusura
+        dict(c="135033", a=1.0, d=PT[5] - PT[4], cx=0.50, push=(1.0, 1.04, 1.0)),       # "la storia"
+        dict(c="135012", a=4.0, d=PT[6] - PT[5], cx=0.50, push=(1.0, 1.05, 1.3)),       # "nella raccolta del tè"
+        dict(c="120356", a=P[6][1], d=end_v - PT[6], cx=0.56),                          # "che consumiamo tutti i giorni"
+        dict(c="120356", a=P[6][2], d=2.3, cx=0.56, close=True),                        # chiusura
     ]
     t = T_IN
     for s in SHOTS:
@@ -193,7 +193,7 @@ def compose(base, total):
     cap_end = []
     for i, (ws, ts) in enumerate(caps):
         nxt = caps[i + 1][1][0] if i + 1 < len(caps) else None
-        last_t = ts[-1] + 0.55
+        last_t = ts[-1] + 0.45
         cap_end.append(min(nxt, last_t + 0.4) if nxt else last_t)
     cache = {}
     tl, lg = end_layers()
@@ -268,7 +268,7 @@ def whoosh(total):
     n = int(round(total * SR))
     t = np.arange(n) / SR
     out = np.zeros((n, 2))
-    tp = T_IN + 0.05                                        # picco: si buca il bianco
+    tp = T_IN - 0.05                                        # picco: si buca il bianco
     for ch in range(2):
         w = rng.standard_normal(n)
         X = np.fft.rfft(w)
@@ -290,17 +290,17 @@ def whoosh(total):
                 state = a * state + (1 - a) * seg[q]
                 o[q] = state
             y[s0:s0 + hop] = o
-        env = np.where(t < tp, (np.clip(t / tp, 0, 1)) ** 2.6, np.exp(-(t - tp) / 0.45))
+        env = np.where(t < tp, (np.clip(t / tp, 0, 1)) ** 2.6, np.exp(-(t - tp) / 0.16))
         env *= np.clip(t / 0.25, 0, 1)
         out[:, ch] = y / (np.abs(y).max() + 1e-9) * env
     # corpo basso che sale e un colpo morbido all'arrivo
     sub = np.sin(2 * np.pi * (38 + 30 * np.clip(t / tp, 0, 1)) * t) * np.where(t < tp, np.clip(t / tp, 0, 1) ** 3,
-                                                                             np.exp(-(t - tp) / 0.3))
+                                                                             np.exp(-(t - tp) / 0.14))
     out += 0.35 * sub[:, None]
     # piccolo soffio sul logo
     tl = SHOTS[-1]["t"] + 0.45
     m = (t > tl) & (t < tl + 1.0)
-    out[m] += 0.12 * rng.standard_normal((m.sum(), 2)) * np.sin(np.pi * (t[m] - tl) / 1.0)[:, None] ** 2
+    out[m] += 0.05 * rng.standard_normal((m.sum(), 2)) * np.sin(np.pi * (t[m] - tl) / 1.0)[:, None] ** 2
     return out / np.abs(out).max()
 
 
