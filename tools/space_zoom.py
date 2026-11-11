@@ -115,7 +115,12 @@ def main():
     ap.add_argument("--start", default="22,62")              # punto sotto la camera all'inizio (lat,lon)
     ap.add_argument("--roll", type=float, default=-35.0)     # gradi di rotazione in tutta la discesa
     ap.add_argument("--clouds", type=float, default=0.75)    # secondi finali con le nuvole
+    ap.add_argument("--size", default="1080x1920")           # 3840x2160 per il lungo 16:9 (te v10)
+    ap.add_argument("--fov", type=float, default=28.0)       # gradi in orizzontale (16:9: ~48, stessa copertura del verticale)
     a = ap.parse_args()
+    global W, H, F
+    W, H = map(int, a.size.split("x"))
+    F = (W / 2) / math.tan(math.radians(a.fov) / 2)
     tiles = a.tiles or os.path.join(a.out, "..", "tiles")
     if a.fetch:
         fetch(tiles, a.lat, a.lon)
@@ -128,8 +133,9 @@ def main():
     px, py = xs - W / 2 + 0.5, ys - H / 2 + 0.5
     rng = np.random.default_rng(7)
     stars = np.zeros((H, W), np.float32)
-    idx = rng.integers(0, H * W, 900)
-    stars.flat[idx] = rng.random(900) ** 3 * 0.9
+    ns = int(900 * W * H / (1080 * 1920))
+    idx = rng.integers(0, H * W, ns)
+    stars.flat[idx] = rng.random(ns) ** 3 * 0.9
     stars = cv2.GaussianBlur(stars, (3, 3), 0.6)
     cl = [fbm(H, W, s) for s in (1, 2, 3)]
     for i in range(N):
