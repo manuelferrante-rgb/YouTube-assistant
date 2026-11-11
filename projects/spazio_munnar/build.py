@@ -53,14 +53,19 @@ T_IN = T_SPACE - 0.22                                    # il girato entra sotto
 # "Scoprirò la storia che si cela dietro la raccolta del tè che consumiamo tutti i giorni"), giunte verificate con
 # la trascrizione automatica; i tagli stanno sotto le immagini del tè, così non si vedono.
 SPEED = 1.1                                    # tutto il reel a 1.1x alla fine (Manuel 11/11)
+DIETRO_END = float(os.environ.get("DIETRO_END", "5.26"))
+IL_END = float(os.environ.get("IL_END", "4.31"))
 SP2 = 1.13 / SPEED                             # seconda frase a 1.13x in totale (Manuel 11/11 v5)
 PIECES = [("115233", 11.95, 12.74, 0.0),      # Sono a Munnar,
           ("115233", 12.86, 13.48, 0.0),      # in Kerala,
           ("115233", 13.73, 15.27, 0.03),     # a oltre 1500 metri.
-          ("120307", 3.52, 5.28, 0.0, SP2),   # Scoprirò l'arte che si cela dietro
-          ("133625", 4.175, 4.295, 0.0, SP2), # il   (da "...raccoglie il tè", Manuel 11/11 v5)
-          ("120356", 4.85, 5.15, 0.0, SP2),   # tè
+          ("120307", 3.52, 5.07, 0.0, SP2),   # Scoprirò l'arte che si cela   (taglio nella chiusura della d)
+          ("120307", 5.07, DIETRO_END, 0.0, 1.0),   # dietro
+          ("133625", 4.175, IL_END, 0.0, 1.0),      # il   (da "...raccoglie il tè", Manuel 11/11 v5)
+          ("120356", 4.85, 5.15, 0.0, 1.0),         # tè
           ("120356", 5.30, 6.62, 0.0, SP2)]   # che consumiamo tutti i giorni.
+# v7: "dietro il tè" resta a 1.1x (solo l'accelerazione generale): alla prova con la trascrizione sull'audio completo,
+# a 1.12-1.13x la giunzione "dietro|il" diventava "di trovare il", a 1.1x è pulita in tutte le varianti di taglio.
 # v5 (Manuel 11/11): torna "l'arte"; "dietro il tè" montato da tre clip. Giunzioni provate con la trascrizione
 # (audio pulito e accelerato) su una griglia di tagli: "dietro" finisce a 5.28 (prima della "qu" di "questo"), il "tè"
 # parte a 4.85 (nella chiusura della t). Manuel voleva la seconda frase a 1.15x: a 1.15x "dietro" si impasta (anche
@@ -74,9 +79,9 @@ CAPS = [
     [("a", 2, 13.75), ("oltre", 2, 13.85), ("1.500", 2, 14.17), ("metri.", 2, 14.97)],
     [("Scoprirò", 3, 3.56), ("l'arte", 3, 4.15)],
     [("che", 3, 4.47), ("si", 3, 4.63), ("cela", 3, 4.79)],
-    [("dietro", 3, 5.11), ("il", 4, 4.19), ("tè", 5, 4.90)],
-    [("che", 6, 5.31), ("consumiamo", 6, 5.43)],
-    [("tutti", 6, 5.99), ("i", 6, 6.15), ("giorni.", 6, 6.23)],
+    [("dietro", 4, 5.11), ("il", 5, 4.19), ("tè", 6, 4.90)],
+    [("che", 7, 5.31), ("consumiamo", 7, 5.43)],
+    [("tutti", 7, 5.99), ("i", 7, 6.15), ("giorni.", 7, 6.23)],
 ]
 PIECES = [p if len(p) == 5 else p + (1.0,) for p in PIECES]
 SHOTS, PT = [], []
@@ -94,10 +99,10 @@ def layout():
         dict(c="115233", a=P[1][1], d=PT[2] - PT[1], cx=0.50),
         dict(c="115233", a=P[2][1], d=PT[3] - PT[2], cx=0.50),
         dict(c="120307", a=P[3][1], d=piece_t(3, 4.45) - PT[3], cx=0.56, sp=SP2),       # "Scoprirò l'arte"
-        dict(c="135033", a=1.0, d=piece_t(3, 5.10) - piece_t(3, 4.45), cx=0.50, push=(1.0, 1.04, 1.0)),  # "che si cela"
-        dict(c="135012", a=4.0, d=PT[6] - piece_t(3, 5.10), cx=0.50, push=(1.0, 1.05, 1.3)),  # "dietro il tè"
-        dict(c="120356", a=P[6][1], d=end_v - PT[6], cx=0.56, sp=SP2),                   # "che consumiamo tutti i giorni"
-        dict(c="120356", a=P[6][2], d=2.3, cx=0.56, close=True),                        # chiusura
+        dict(c="135033", a=1.0, d=PT[4] - piece_t(3, 4.45), cx=0.50, push=(1.0, 1.04, 1.0)),  # "che si cela"
+        dict(c="135012", a=4.0, d=PT[7] - PT[4], cx=0.50, push=(1.0, 1.05, 1.3)),  # "dietro il tè"
+        dict(c="120356", a=P[7][1], d=end_v - PT[7], cx=0.56, sp=SP2),                   # "che consumiamo tutti i giorni"
+        dict(c="114701", a=1.0, d=2.3, cx=0.50, close=True),                            # chiusura: la distesa delle colline (Manuel v7)
     ]
     t = T_IN
     for s in SHOTS:
@@ -186,6 +191,8 @@ def end_layers():
 # barre della voce del logo (Manuel 11/11 v6): si muovono come un misuratore di voce mentre entra il logo, si fermano
 # a T_STOP (secondi dall'inizio della chiusura, prima dell'1.1x) e lì parte il ding
 T_STOP = 1.35
+OV = 0.008                          # incrocio tra i pezzi di voce (v7)
+GAIN = {5: 10 ** (3.0 / 20)}        # "il" (133625) era 3 dB sotto le parole intorno (v7)
 BOX = (292, 107, 421, 181)          # riquadro delle barre nel logo largo 712 px (x0, y0, x1, y1)
 
 
@@ -368,12 +375,23 @@ def ding(total):
     t0 = SHOTS[-1]["t"] + T_STOP
     i0 = int(t0 * SR)
     tt = np.arange(n - i0) / SR
-    y = np.zeros_like(tt)
-    for r, a, d in [(1.0, 1.0, 1.1), (2.0, 0.35, 0.6), (2.76, 0.28, 0.45), (5.4, 0.10, 0.2)]:
-        y += a * np.sin(2 * np.pi * DING_F * r * tt) * np.exp(-tt / d)
-    y *= np.clip(tt / 0.004, 0, 1)
-    out[i0:, 0] = y * 0.95
-    out[i0:, 1] = y
+    # v7 (Manuel: "più naturale"): parziali di una campanella vera, ognuno con una coppia appena stonata che batte
+    # piano, attacco morbido da martelletto, armoniche alte che si spengono prima, piccola coda d'ambiente
+    rng = np.random.default_rng(7)
+    out2 = np.zeros((len(tt), 2))
+    for ch, det in enumerate((1.0, 1.0007)):
+        y = np.zeros_like(tt)
+        for r, a, d in [(1.0, 1.0, 1.4), (2.01, 0.22, 0.7), (2.76, 0.16, 0.45), (4.07, 0.06, 0.25), (5.43, 0.035, 0.15)]:
+            f = DING_F * r * det
+            y += a * 0.5 * (np.sin(2 * np.pi * f * tt) + np.sin(2 * np.pi * (f + 1.3 * r) * tt + 0.7)) * np.exp(-tt / d)
+        y *= 1 - np.exp(-tt / 0.0025)
+        ir_n = int(0.9 * SR)
+        ir = rng.standard_normal(ir_n) * np.exp(-np.arange(ir_n) / SR / 0.22)
+        ir[:int(0.012 * SR)] = 0
+        wet = np.convolve(y, ir)[:len(y)]
+        y = y + 0.18 * wet / (np.abs(wet).max() + 1e-9) * np.abs(y).max()
+        out2[:, ch] = y
+    out[i0:] = out2
     return out / np.abs(out).max()
 
 
@@ -387,15 +405,20 @@ def audio(total):
         x, sr = sf.read(src, dtype="float64")
         assert sr == SR
         x = x if x.ndim == 1 else x.mean(1)
-        seg = x[int(a * SR):int(b * SR)].copy()
-        fl = int(0.005 * SR)
-        seg[:fl] *= np.linspace(0, 1, fl); seg[-fl:] *= np.linspace(1, 0, fl)
+        # v7: dentro un gruppo i pezzi si incrociano (il pezzo prima continua OV oltre il taglio e sfuma mentre entra il
+        # successivo, curve a potenza costante), così alla giunzione non c'è il buco delle dissolvenze a zero
+        seg = x[int(a * SR):int((b + OV) * SR)].copy() * GAIN.get(i, 1.0)
+        fl = int(OV * SR)
+        seg[:fl] *= np.sin(np.linspace(0, np.pi / 2, fl)); seg[-fl:] *= np.cos(np.linspace(0, np.pi / 2, fl))
         if groups and groups[-1][1] == sp and sp != 1.0 and PIECES[i - 1][3] == 0:
             groups[-1][2].append(seg)
         else:
             groups.append([PT[i], sp, [seg]])
     for t0, sp, segs in groups:
-        seg = np.concatenate(segs)
+        fl = int(OV * SR)
+        seg = segs[0]
+        for q in segs[1:]:
+            seg = np.concatenate([seg[:-fl], seg[-fl:] + q[:fl], q[fl:]])
         if sp != 1.0:
             sf.write(f"{WK}/_s.wav", seg.astype(np.float32), SR, subtype="FLOAT")
             run(["ffmpeg", "-v", "error", "-y", "-i", f"{WK}/_s.wav", "-af", f"atempo={sp:.6f}", "-c:a", "pcm_f32le",

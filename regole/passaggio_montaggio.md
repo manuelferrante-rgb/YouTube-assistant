@@ -167,3 +167,7 @@ Nota Montaggio 4/11 sera: arthunkal v5 e te v8 (richieste di Manuel dai dati del
   133625 ("raccoglie il tè"), giunzioni provate con la trascrizione (dettagli in `projects/spazio_munnar/build.py`).
   Seconda frase a 1.13x in totale (Manuel chiedeva 1.15x: a 1.15x "dietro" si impasta anche nella frase originale).
   Girato in work/spazio/raw: le 5 clip di prima + 133625 (cartella te). Resto invariato rispetto alla v4.
+- v6-v7 (11/11, Manuel): scelta la prova A. Suono del movimento che parte col primo fotogramma (gancio sonoro) e sale;
+  barre della voce del logo animate, ding (sintetizzato in build.py) quando si fermano; sotto il logo la distesa delle
+  colline 114701 (muta). "il" +3 dB e incroci tra i pezzi; "dietro il tè" a 1.1x (il resto della seconda frase 1.13x).
+  File: work/spazio/out/VociVere_munnar_spazio_v7_1080x1920.mp4, mandato in chat. Girato in più: 114701 (cartella te).
