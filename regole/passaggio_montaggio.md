@@ -27,6 +27,8 @@
   restano. Resto invariato. Poi capitoli nuovi in projects/coir/capitoli.md e piano/calendario.md.
 - Titolo nuovo (deciso): "CHI C'È DIETRO I NOSTRI TAPPETI: le donne del coir in Kerala, India 🇮🇳".
 - Si parte quando Manuel lo chiede e ha caricato la registrazione del VO.
+- A montaggio finito (Manuel 11/11): avvisare Copy (session_01HtfbgysqTrKE7hBx3kQeSA) che deve rifare i sottotitoli
+  it/en del lungo coir sui nuovi tempi, con i capitoli nuovi.
 
 ## LEZIONI DI COIR (6-9/11), valgono per i prossimi
 - Velocità: lunghi e verticali a 1x quando il VO è registrato sciolto (Manuel). Pause d'enfasi brevi (~0.45 s) nei
