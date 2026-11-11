@@ -1,6 +1,6 @@
 # Un mese in India: il bilancio del viaggio (nome breve: `bilancio`)
 
-Stato: SICURO (Manuel, 9/11). Lungo C, uscita dom 24/1/2027, teaser sab 23/1, pacchetto 25-31/1. Manuel parte per il Vietnam il 31/1.
+Stato: SICURO (Manuel, 9/11). Lungo D (spostato l'11/11), uscita dom 7/2/2027, teaser sab 6/2, pacchetto 8-14/2: è il più forte dei due lunghi finali, quindi per ultimo. Manuel parte per il Vietnam il 31/1.
 Titolo provvisorio di Manuel: "Un mese in India, ti racconto la mia esperienza" (Copy lo rifinisce con la regola gancio + paese nei primi 40 caratteri).
 
 ## Cosa è
@@ -33,8 +33,10 @@ Teaser, lungo, 3 reel, 2 caroselli, 3 stories. Il carosello "I volti" qui è nat
 
 ## Aggiornamento 11/11 (Manuel): il bilancio diventa il lungo parlato, ne nasce un secondo
 Manuel vuole DUE lunghi fatti da lui, parlati:
-1. `bilancio` (24/1, resta com'è): l'esperienza e i consigli, più introspettivo. Lui a camera, B-roll solo a supporto (non un montaggio di tutto). Sezioni: cosa ho imparato, cosa è stato difficile, consigli pratici per chi viaggia in Kerala e Tamil Nadu (contestualizzati, mai "l'India"), cosa è stato più forte, cosa cambia nel mio modo di raccontare. I consigli sono nei limiti di CLAUDE.md: niente generalizzazioni, niente tono da guida turistica. Copy scrive tracce e domande per il parlato.
+1. `bilancio` (7/2): l'esperienza e i consigli, più introspettivo. Lui a camera, B-roll solo a supporto (non un montaggio di tutto). Sezioni: cosa ho imparato, cosa è stato difficile, consigli pratici per chi viaggia in Kerala e Tamil Nadu (contestualizzati, mai "l'India"), cosa è stato più forte, cosa cambia nel mio modo di raccontare. I consigli sono nei limiti di CLAUDE.md: niente generalizzazioni, niente tono da guida turistica. Copy scrive tracce e domande per il parlato.
 2. `riassunto` (nuovo, vedi `piano/riassunto.md`): il mix dei video fatti, montato coi B-roll dei reel e dei lunghi, per far vedere il viaggio. Non richiede riprese nuove.
 Il punto 4 della struttura sopra (numeri del canale) e il blocco "il viaggio in ordine, un blocco per video" passano al `riassunto`.
 
 Precisazione 11/11 (Manuel): `bilancio` è il lungo INTROSPETTIVO: capire cosa è l'India per lui, sempre sul viaggio fatto e sulle persone incontrate. Per i limiti di CLAUDE.md ("mai generalizzazioni") il taglio è: cosa ho capito di Kerala e Tamil Nadu dai posti e dalle persone che ho incontrato, non "cosa è l'India" in assoluto. Le persone sono il materiale, le loro frasi forti si possono lasciare parlare.
+
+Aggiornamento 11/11 (Manuel): ordine scambiato. Il `riassunto` esce il 24/1, il `bilancio` il 7/2 per ultimo, con un GANCIO sul seguito del canale: i video sul Vietnam, sempre a tema Voci Vere (ONG, persone del posto, lavoro e vita quotidiana, paese a medio reddito: contestualizzare, niente generalizzazioni). Il gancio va in chiusura del bilancio (Manuel lo dice a camera) e negli ultimi secondi del teaser. Il parlato finale si registra prima della partenza per il Vietnam (31/1).

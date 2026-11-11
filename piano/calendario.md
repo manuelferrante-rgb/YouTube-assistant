@@ -18,7 +18,8 @@ consegnato, programmato, pubblicato.
 | coir | lungo orizzontale + teaser + 3 reel + 2 caroselli + 3 set di stories | IN APPROVAZIONE (Montaggio 7/11): lungo v3 4K 6:45 (1x, VO13-18, senza campi larghi vuoti, Insights 8/11) `VociVere_coir_long_4K.mp4` + 5 verticali 1x (teaser, made_in_india, indietro, premilla, 1975) in montati/coir della cartella Drive Coir; capitoli in `projects/coir/capitoli.md`, scelte in `projects/coir/girato.md`. Da segnare APPROVATO quando Manuel dà l'ok | proposta lungo A dom 20/12 | `piano/coir.md`, filiera e fatti con fonti |
 | migranti | lungo orizzontale + pacchetto completo | pianificato, da girare a Varkala (9-10/11) e Kochi/Perumbavoor (11-12/11) | proposta lungo B dom 10/1 | `piano/migranti.md` |
 | diwali | 1 reel o scena dentro `migranti` | ANNULLATO (8/11, Manuel: non è riuscito a registrarlo) | nessuno | `piano/diwali.md` (archiviato) |
-| bilancio | lungo parlato con B-roll di tutto il viaggio + pacchetto | SICURO (Manuel 9/11), da montare a metà gennaio | dom 24/1 (lungo C) | `piano/bilancio.md` |
+| bilancio | lungo parlato introspettivo | SICURO (Manuel 9/11), spostato al 7/2 l'11/11, il più forte per ultimo, gancio sul Vietnam | dom 7/2 (lungo D) | `piano/bilancio.md` |
+| riassunto | lungo sul viaggio in sé, voiceover e interviste a spezzoni | Manuel 11/11, da montare dal girato | dom 24/1 (lungo C) | `piano/riassunto.md` |
 | kanyakumari | donne del mare e ONG del posto (verticale/materiale) | girato 3-4/11? Manuel non ha ancora detto cosa ha fatto con KDFSF e Siluvai Nagar | da decidere | `piano/kanyakumari.md` |
 
 ## Piano rifatto il 29/10 (Manuel): lunghi ogni 2-3 settimane, un contenuto un giorno sì e uno no
@@ -215,16 +216,17 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | lun 18/1 | lungo B: reel 3 |  |
 | mer 20/1 | lungo B: carosello "I volti" (+ post YouTube) |  |
 | ven 22/1 | EXTRA dalla scorta |  |
-| sab 23/1 | bilancio: teaser | SICURO (Manuel 9/11) |
-| dom 24/1 | LUNGO C = BILANCIO "Un mese in India" (`piano/bilancio.md`) | SICURO (Manuel 9/11); sostituisce migranti/erosione come lungo C |
-| lun 25/1 | bilancio: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
-| mar 26/1 | bilancio: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
-| mer 27/1 | bilancio: stories set 3 |  |
-| gio 28/1 | bilancio: reel 2 |  |
-| ven 29/1 | bilancio: stories set 2 |  |
-| sab 30/1 | bilancio: carosello (+ post YouTube) |  |
-| dom 31/1 | bilancio: reel 3 | programmato prima della partenza per il Vietnam |
-| dom 7/2 | LUNGO D = RIASSUNTO (`piano/riassunto.md`) | provvisorio (Manuel 11/11); pacchetto da decidere |
+| sab 23/1 | riassunto: teaser | SICURO (Manuel 9/11) |
+| dom 24/1 | LUNGO C = RIASSUNTO, il viaggio in sé (`piano/riassunto.md`) | scambiato col bilancio (Manuel 11/11): il più forte va per ultimo; non richiede riprese |
+| lun 25/1 | riassunto: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 26/1 | riassunto: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
+| mer 27/1 | riassunto: stories set 3 |  |
+| gio 28/1 | riassunto: reel 2 |  |
+| ven 29/1 | riassunto: stories set 2 |  |
+| sab 30/1 | riassunto: carosello (+ post YouTube) |  |
+| dom 31/1 | riassunto: reel 3 | programmato prima della partenza per il Vietnam |
+| sab 6/2 | bilancio: teaser | provvisorio (Manuel 11/11) |
+| dom 7/2 | LUNGO D = BILANCIO "Un mese in India", introspettivo, con gancio sul Vietnam (`piano/bilancio.md`) | il più forte per ultimo (Manuel 11/11); pacchetto 8-14/2 come ogni lungo, giorni da decidere |
 
 Nota da Pianificazione, 4/11 (Manuel): cocco e canna di comorin escono anche loro su entrambi i profili (personale e Voci Vere). Quindi tutti i reel mainstream (panni, autostop, cocco, canna) vanno su entrambi; le date 26/11 e 2/12 non sono più condizionate.
 Nota da Pianificazione, 4/11 (Manuel): strategia. Prima si pubblica (anche contenuti più leggeri), poi si dà al profilo una forma professionale e da "Voci Vere". Lo scopo principale, da non dimenticare: DARE VOCE A CHI NE HA PIU' BISOGNO. Ogni lungo e ogni tema nuovo (coir, migranti, ONG) va verificato contro questa frase.
@@ -392,3 +394,5 @@ Nota da Pianificazione, 11/11 (Manuel): DUE lunghi parlati da lui. `bilancio` (2
 Nota da Pianificazione, 11/11 (Manuel): il `riassunto` è molto parlato, con tante parole di Manuel in voiceover e in camera sopra i B-roll, non poche frasi. Copy scrive il copione per blocchi.
 
 Nota da Pianificazione, 11/11 (Manuel): `bilancio` = introspettivo su cosa Manuel ha capito (Kerala e Tamil Nadu), dalle persone incontrate. `riassunto` = il viaggio in sé, più leggero, interviste a spezzoni: voiceover sopra le persone, o le persone che parlano solo quando dicono qualcosa di forte.
+
+Nota da Pianificazione, 11/11 (Manuel): ORDINE DEI DUE LUNGHI FINALI scambiato. `riassunto` (viaggio in sé, più leggero) esce dom 24/1 con pacchetto 23-31/1; `bilancio` (introspettivo, il più forte) dom 7/2 per ultimo, con gancio sul Vietnam: i video sul Vietnam seguono con lo stesso tema Voci Vere (ONG, persone del posto). Manuel parte per il Vietnam il 31/1: il pacchetto del bilancio (6-14/2) si prepara prima.
