@@ -17,7 +17,13 @@
   parlato, immagini tranquille, mai su interviste con sottotitoli (regola in `regole/montaggio_documentario.md`).
 - Nessun altro lavoro aperto: si aspetta il prossimo video di Manuel (girato su Drive).
 
-## RICHIESTA APERTA 11/11 (da Insights, da confermare con Manuel, NON ancora fatta)
+## FATTO 11/11: coir v6, intro nuova (su Drive; `projects/coir/v6_intro.py`, capitoli in `projects/coir/capitoli.md`)
+- Persone delle miniature: miniatura 2 = 0063 7.8-10.6, miniatura 3 = 0063 13.8-17.9, miniatura 1 = 0052 2.0-5.0.
+- Metodo: v5 copiato senza ricodifica prima (0-7.6) e dopo la sigla (fotogrammi chiave), solo 10 s nuovi codificati;
+  flussi H.264 grezzi uniti, niente -shortest nel mux (tagliava l'audio). Voce nuova con limitatore (picchi alti).
+- Copy avvisata per i sottotitoli (Manuel 11/11).
+
+Richiesta originale:
 - coir lungo, nuova intro: le 3 promesse delle miniature (uomo nella laguna, "Made in India", "80 centesimi a tappeto")
   nei primi ~20 s. Al posto di VO0 un VO nuovo che Manuel deve registrare: "Su quei tappeti c'è scritto Made in India.
   Non c'è scritto chi li ha fatti. Né che a loro per ogni tappeto vanno ottanta centesimi. Quattro euro al

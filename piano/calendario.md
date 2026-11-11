@@ -398,3 +398,10 @@ Nota da Pianificazione, 11/11 (Manuel): `bilancio` = introspettivo su cosa Manue
 Nota da Pianificazione, 11/11 (Manuel): ORDINE DEI DUE LUNGHI FINALI scambiato. `riassunto` (viaggio in sé, più leggero) esce dom 24/1 con pacchetto 23-31/1; `bilancio` (introspettivo, il più forte) dom 7/2 per ultimo, con gancio sul Vietnam: i video sul Vietnam seguono con lo stesso tema Voci Vere (ONG, persone del posto). Manuel parte per il Vietnam il 31/1: il pacchetto del bilancio (6-14/2) si prepara prima.
 
 Nota da Pianificazione, 11/11 (Manuel): dal 1/2 Manuel è in Vietnam e può girare subito lo SPOILER (30-45 s) da mettere in coda al bilancio del 7/2. Girato su Drive entro mar 3/2, Montaggio lo inserisce entro ven 5/2. Se manca, il bilancio chiude col gancio a parole. Dettagli in `piano/bilancio.md` e `piano/vietnam.md`.
+
+Nota da Montaggio, 11/11 (Manuel + Insights): coir lungo v6 su Drive (cartella Coir, montati/coir/VociVere_coir_long_4K.mp4,
+6:50; il v5 è in montati/coir/vecchie). Cambia solo l'intro: VO0 nuovo sulle persone delle tre miniature; dopo la sigla
+tutto uguale al v5 ma +5.1 s. Capitoli nuovi: 0:00 Made in India, 0:23 Le donne che non lo fanno più, 1:25 La laguna,
+2:53 Sotto la tettoia, 4:29 La fabbrica, 5:17 I nostri tappeti, 6:13 Chiusura (`projects/coir/capitoli.md`). Copy: rifare
+i sottotitoli it/en del lungo (intro nuova + resto spostato di +5.1 s dopo 12.43 s). Titolo nuovo: "CHI C'È DIETRO I NOSTRI
+TAPPETI: le donne del coir in Kerala, India 🇮🇳".
