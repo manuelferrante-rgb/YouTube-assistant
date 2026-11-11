@@ -160,3 +160,10 @@ Nota Montaggio 4/11 sera: arthunkal v5 e te v8 (richieste di Manuel dai dati del
 - Manuel: breve; niente musica, solo il suono del movimento (sintetizzato in build.py); chiusura senza riquadro bianco:
   sfondo sfocato, "Video fuori sul canale" + logo. Codice: `projects/spazio_munnar/build.py` (girato da cartella te).
 - Rete: aggiunti all'ambiente gli host eoimages.gsfc.nasa.gov e tiles.maps.eox.at (EOX funziona, NASA no).
+
+## STATO AL 11/11 notte (chat Montaggio session_01Htfbh1qCXGf2QSETifZu2H)
+- Reel "spazio Munnar" v5 (10.8 s), mandato a Manuel in chat, aspetta l'ok. Frase nuova (Manuel): "Sono a Munnar, in
+  Kerala, a oltre 1500 metri. Scoprirò l'arte che si cela dietro il tè che consumiamo tutti i giorni." "il" preso da
+  133625 ("raccoglie il tè"), giunzioni provate con la trascrizione (dettagli in `projects/spazio_munnar/build.py`).
+  Seconda frase a 1.13x in totale (Manuel chiedeva 1.15x: a 1.15x "dietro" si impasta anche nella frase originale).
+  Girato in work/spazio/raw: le 5 clip di prima + 133625 (cartella te). Resto invariato rispetto alla v4.

@@ -50,13 +50,19 @@ T_IN = T_SPACE - 0.22                                    # il girato entra sotto
 # voce: pezzi (clip, da, a, pausa dopo) in fila. La seconda frase è montata dalle parole di Manuel (Manuel 11/11:
 # "Scoprirò la storia che si cela dietro la raccolta del tè che consumiamo tutti i giorni"), giunte verificate con
 # la trascrizione automatica; i tagli stanno sotto le immagini del tè, così non si vedono.
+SPEED = 1.1                                    # tutto il reel a 1.1x alla fine (Manuel 11/11)
+SP2 = 1.13 / SPEED                             # seconda frase a 1.13x in totale (Manuel 11/11 v5)
 PIECES = [("115233", 11.95, 12.74, 0.0),      # Sono a Munnar,
           ("115233", 12.86, 13.48, 0.0),      # in Kerala,
           ("115233", 13.73, 15.27, 0.03),     # a oltre 1500 metri.
-          ("120307", 3.52, 4.02, 0.04),       # Scoprirò (senza "l'arte", Manuel 11/11)
-          ("120356", 2.04, 2.67, 0.04),       # (E) la storia
-          ("120356", 3.88, 5.15, 0.0),        # nella raccolta del tè
-          ("120356", 5.30, 6.62, 0.0)]        # che consumiamo tutti i giorni.
+          ("120307", 3.52, 5.28, 0.0, SP2),   # Scoprirò l'arte che si cela dietro
+          ("133625", 4.175, 4.295, 0.0, SP2), # il   (da "...raccoglie il tè", Manuel 11/11 v5)
+          ("120356", 4.85, 5.15, 0.0, SP2),   # tè
+          ("120356", 5.30, 6.62, 0.0, SP2)]   # che consumiamo tutti i giorni.
+# v5 (Manuel 11/11): torna "l'arte"; "dietro il tè" montato da tre clip. Giunzioni provate con la trascrizione
+# (audio pulito e accelerato) su una griglia di tagli: "dietro" finisce a 5.28 (prima della "qu" di "questo"), il "tè"
+# parte a 4.85 (nella chiusura della t). Manuel voleva la seconda frase a 1.15x: a 1.15x "dietro" si impasta (anche
+# nella frase originale senza tagli), a 1.13x resta chiara, quindi 1.13x in totale (SP2 sopra l'1.1x di tutto il reel).
 # "dietro la raccolta" tolto: la giunzione "dietro|(nel)la" non veniva pulita in nessuna prova
 # Manuel 11/11: nessun silenzio da "Sono a Munnar" in poi (pause dentro le frasi tolte, jump cut sul girato)
 A0 = 11.80                                     # 115233 entra un attimo prima della voce (braccia che si aprono)
@@ -64,31 +70,31 @@ CAPS = [
     [("Sono", 0, 12.00), ("a", 0, 12.17), ("Munnar,", 0, 12.25)],
     [("in", 1, 12.88), ("Kerala,", 1, 12.97)],
     [("a", 2, 13.75), ("oltre", 2, 13.85), ("1.500", 2, 14.17), ("metri.", 2, 14.97)],
-    [("Scoprirò", 3, 3.56), ("la", 4, 2.05), ("storia", 4, 2.29)],
-    [("nella", 5, 3.92), ("raccolta", 5, 4.38)],
-    [("del", 5, 4.71), ("tè", 5, 4.87)],
+    [("Scoprirò", 3, 3.56), ("l'arte", 3, 4.15)],
+    [("che", 3, 4.47), ("si", 3, 4.63), ("cela", 3, 4.79)],
+    [("dietro", 3, 5.11), ("il", 4, 4.19), ("tè", 5, 4.90)],
     [("che", 6, 5.31), ("consumiamo", 6, 5.43)],
     [("tutti", 6, 5.99), ("i", 6, 6.15), ("giorni.", 6, 6.23)],
 ]
-SPEED = 1.1                                    # tutto il reel a 1.1x alla fine (Manuel 11/11)
+PIECES = [p if len(p) == 5 else p + (1.0,) for p in PIECES]
 SHOTS, PT = [], []
 
 
 def layout():
     t = T_IN + (PIECES[0][1] - A0)
-    for c, a, b, g in PIECES:
+    for c, a, b, g, sp in PIECES:
         PT.append(t)
-        t += (b - a) + g
+        t += (b - a) / sp + g
     end_v = t
     P = PIECES
     SHOTS[:] = [
         dict(c="115233", a=A0, d=PT[1] - T_IN, cx=0.50, push=(1.12, 1.0, 0.8)),        # arrivo su Manuel
         dict(c="115233", a=P[1][1], d=PT[2] - PT[1], cx=0.50),
         dict(c="115233", a=P[2][1], d=PT[3] - PT[2], cx=0.50),
-        dict(c="120307", a=P[3][1], d=PT[4] - PT[3], cx=0.56),                          # "Scoprirò"
-        dict(c="135033", a=1.0, d=PT[5] - PT[4], cx=0.50, push=(1.0, 1.04, 1.0)),       # "la storia"
-        dict(c="135012", a=4.0, d=PT[6] - PT[5], cx=0.50, push=(1.0, 1.05, 1.3)),       # "nella raccolta del tè"
-        dict(c="120356", a=P[6][1], d=end_v - PT[6], cx=0.56),                          # "che consumiamo tutti i giorni"
+        dict(c="120307", a=P[3][1], d=piece_t(3, 4.45) - PT[3], cx=0.56, sp=SP2),       # "Scoprirò l'arte"
+        dict(c="135033", a=1.0, d=piece_t(3, 5.10) - piece_t(3, 4.45), cx=0.50, push=(1.0, 1.04, 1.0)),  # "che si cela"
+        dict(c="135012", a=4.0, d=PT[6] - piece_t(3, 5.10), cx=0.50, push=(1.0, 1.05, 1.3)),  # "dietro il tè"
+        dict(c="120356", a=P[6][1], d=end_v - PT[6], cx=0.56, sp=SP2),                   # "che consumiamo tutti i giorni"
         dict(c="120356", a=P[6][2], d=2.3, cx=0.56, close=True),                        # chiusura
     ]
     t = T_IN
@@ -99,7 +105,7 @@ def layout():
 
 
 def piece_t(i, x):
-    return PT[i] + (x - PIECES[i][1])
+    return PT[i] + (x - PIECES[i][1]) / PIECES[i][4]
 
 
 def shot_video(i, s):
@@ -112,13 +118,14 @@ def shot_video(i, s):
         cx = f"({c0}+({c1}-{c0})*({u})*({u})*(3-2*({u})))"
     else:
         cx = str(s.get("cx", 0.5))
-    vf = [f"fps={FPS}", f"crop={cw}:ih:'max(0,min(iw-ow,iw*{cx}-ow/2))':0", f"scale={W}:{H}:flags=lanczos", GRADE]
+    sp = s.get("sp", 1.0)
+    vf = [f"setpts=PTS/{sp}", f"fps={FPS}", f"crop={cw}:ih:'max(0,min(iw-ow,iw*{cx}-ow/2))':0", f"scale={W}:{H}:flags=lanczos", GRADE]
     if "push" in s:
         z0, z1, T = s["push"]
         z = f"({z0}+({z1}-{z0})*(1-pow(1-min(1\\,t/{T})\\,3)))"
         vf.append(f"scale=w='trunc({W}*{z}/2)*2':h='trunc({H}*{z}/2)*2':eval=frame:flags=bicubic,crop={W}:{H}")
     vf += ["tpad=stop_mode=clone:stop_duration=3", f"trim=end_frame={n}", "setpts=PTS-STARTPTS", "format=yuv420p"]
-    run(["ffmpeg", "-v", "error", "-y", "-ss", f"{s['a']:.3f}", "-t", f"{s['d'] + 1:.3f}", "-i", clip(s["c"]), "-an",
+    run(["ffmpeg", "-v", "error", "-y", "-ss", f"{s['a']:.3f}", "-t", f"{s['d'] * sp + 1:.3f}", "-i", clip(s["c"]), "-an",
          "-vf", ",".join(vf), "-frames:v", str(n), "-c:v", "libx264", "-crf", "10", "-preset", "veryfast", p])
     return p
 
@@ -307,15 +314,28 @@ def whoosh(total):
 def audio(total):
     n = int(round(total * SR))
     voice = np.zeros((n, 2))
-    for i, (c, a, b, g) in enumerate(PIECES):
+    # i pezzi consecutivi con la stessa velocità si uniscono prima e si accelerano insieme (atempo, tono invariato)
+    groups = []
+    for i, (c, a, b, g, sp) in enumerate(PIECES):
         src = cleaned(clip(c), f"{WK}/voce")
         x, sr = sf.read(src, dtype="float64")
         assert sr == SR
         x = x if x.ndim == 1 else x.mean(1)
         seg = x[int(a * SR):int(b * SR)].copy()
-        fl = int(0.012 * SR)
+        fl = int(0.005 * SR)
         seg[:fl] *= np.linspace(0, 1, fl); seg[-fl:] *= np.linspace(1, 0, fl)
-        t0 = int(round(PT[i] * SR))
+        if groups and groups[-1][1] == sp and sp != 1.0 and PIECES[i - 1][3] == 0:
+            groups[-1][2].append(seg)
+        else:
+            groups.append([PT[i], sp, [seg]])
+    for t0, sp, segs in groups:
+        seg = np.concatenate(segs)
+        if sp != 1.0:
+            sf.write(f"{WK}/_s.wav", seg.astype(np.float32), SR, subtype="FLOAT")
+            run(["ffmpeg", "-v", "error", "-y", "-i", f"{WK}/_s.wav", "-af", f"atempo={sp:.6f}", "-c:a", "pcm_f32le",
+                 f"{WK}/_t.wav"])
+            seg = sf.read(f"{WK}/_t.wav", dtype="float64")[0]
+        t0 = int(round(t0 * SR))
         voice[t0:t0 + len(seg)] += seg[:n - t0, None]
     voice *= 10 ** ((-16 - lufs_of(voice)) / 20)
     wh = whoosh(total)
