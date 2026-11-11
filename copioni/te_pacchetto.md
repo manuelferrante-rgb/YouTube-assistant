@@ -118,6 +118,21 @@ Video completo sul canale YouTube Voci Vere, link in bio.
 Descrizione Short YT: Munnar, Kerala. Il chai master tira il tè senza fermarsi. Gli ho chiesto di parlare: si è rifiutato. L'hai mai assaggiato?
 Commento fissato YT: Da dove arriva il tè di questo bicchiere, e chi lo raccoglie sulle colline: è nel video sul canale.
 
+### Reel EXTRA "spazio Munnar" (Montaggio, projects/spazio_munnar/build.py; Insights + Manuel 11/11)
+11 s: discesa dallo spazio con le immagini satellitari fino a Munnar, Manuel a braccia aperte; nel video già "Video fuori sul canale"
+e il logo. Esce dom 29/11 dopo le 13:00, lo stesso giorno del lungo te, con il lungo come video correlato (lo mette Manuel).
+Titolo Short / prima riga IG:
+A oltre 1.500 metri, dove nasce il tè che beviamo 🇮🇳
+Didascalia IG:
+A oltre 1.500 metri, dove nasce il tè che beviamo 🇮🇳
+Munnar, Kerala. Colline di tè fino all'orizzonte, raccolto ancora a mano.
+Sai da dove viene il tè che bevi?
+Di chi sono oggi queste colline, affittate nel 1877 per 3.000 rupie l'anno: è nel video sul canale.
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #VociVere #tè
+Descrizione Short YT: Munnar, Kerala. Colline di tè fino all'orizzonte, raccolto ancora a mano. Sai da dove viene il tè che bevi? Di chi sono oggi queste colline: il video completo è nel link sopra il titolo. #india #kerala #viaggio #VociVere #tè
+Commento fissato YT: Di chi sono oggi queste colline, affittate nel 1877 per 3.000 rupie l'anno? Il video completo è nel link sopra il titolo.
+
 Reel del bucato (VociVere_te_bucato_1080x1920.mp4, data libera; testo già scelto da Manuel il 26/10, niente Munnar)
 Didascalia IG / titolo Short:
 POV: non hai la lavatrice (e non ti serve) 🇮🇳
