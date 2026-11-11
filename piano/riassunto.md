@@ -16,3 +16,6 @@ Prima del montaggio: Pianificazione scrive la scaletta, quando c'è tutto il gir
 
 ## Aggiornamento 11/11 (Manuel): tante parole
 Il riassunto è molto parlato: Manuel racconta il viaggio a lungo sopra i B-roll. Copy scrive il copione del voiceover per blocchi (uno per tappa), Manuel lo registra, Montaggio monta sul girato esistente. Regola del voiceover di `regole/pianificazione.md`: blocchi numerati, numero detto prima di ogni blocco, 2 s di pausa. Le interviste restano sottotitolate come negli altri lunghi.
+
+## Precisazione 11/11 (Manuel): più leggero, sul viaggio in sé
+Il `riassunto` è il lungo sul VIAGGIO IN SÉ, più superficiale (parole di Manuel): tappe, luoghi, cibo, spostamenti, momenti. Il focus NON è l'intervista. Le persone entrano a spezzoni: a volte Manuel parla sopra di loro in voiceover (copione di Copy), a volte lascia parlare la persona quando dice qualcosa di forte (sottotitolata). Niente interviste intere. L'introspezione ("cosa ho capito") sta nel `bilancio`, non qui.
