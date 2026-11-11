@@ -178,12 +178,24 @@ J = {
      it=('CHI FA', 'I NOSTRI TAPPETI'), en=('WHO MAKES', 'OUR DOORMATS')),
  # COIR v4 (Manuel 11/11): espressioni serie, testo coerente con i primi secondi del lungo
  # (0:00 l'uomo nella laguna "Così viene raccolta la materia prima..."; VO0 "...non c'è scritto chi li ha fatti, né quanto le hanno pagate")
- ('coir', 'C6_laguna'): dict(src=g(C, '0052'), t=3.45, cx=.40, cy=.48, zoom=1.45, layout='basso', red=True,
+ ('coir', 'C6_laguna'): dict(src=g(C, '0052'), t=3.45, cx=.50, cy=.40, zoom=1.35, layout='basso', red=True,
      it=('I NOSTRI TAPPETI', 'NASCONO QUI'), en=('OUR DOORMATS', 'START HERE')),
  ('coir', 'C7_donne'): dict(src=g(C, '0540'), t=13.5, cx=.5, cy=.5, zoom=1.0, layout='basso', red=True, flip=True,
      it=('A MANO, SEDUTE A TERRA', 'QUANTO LE PAGANO?'), en=('BY HAND, ON THE GROUND', 'HOW MUCH ARE THEY PAID?')),
- ('coir', 'C8_anziana'): dict(src=g(C, '0063'), t=9.2, cx=.5, cy=.52, zoom=1.45, layout='dietro', red=['CHI', 'WHO'],
+ ('coir', 'C8_anziana'): dict(src=g(C, '0063'), t=15.5, cx=.5, cy=.5, zoom=1.35, layout='dietro', red=['CHI', 'WHO'],
      it='CHI LI HA FATTI?', en='WHO MADE THEM?'),
+ # alternative per la seconda (Manuel 11/11): le donne sedute davanti alla saracinesca, 0:20-0:30 del lungo
+ ('coir', 'C7b_rosa'): dict(src=g(C, '0525'), t=10.0, cx=.42, cy=.42, zoom=1.25, layout='basso', red=True,
+     it=('A MANO, PER GENERAZIONI', 'ORA NON LO FANNO PIÙ'), en=('BY HAND, FOR GENERATIONS', 'NOW NOBODY DOES IT')),
+ ('coir', 'C7c_fila'): dict(src=g(C, '0529'), t=2.0, cx=.5, cy=.42, zoom=1.0, layout='basso', red=True,
+     it=('LO FACEVANO A MANO', 'DAL 1975'), en=('THEY DID IT BY HAND', 'SINCE 1975')),
+ # seconda, donne che lavorano il cocco sedute in fila e guardano in camera (Manuel 11/11)
+ ('coir', 'C7d_fila'): dict(src=g(C, '0063'), t=2.8, cx=.52, cy=.5, zoom=1.15, layout='basso', red=True,
+     it=('A MANO, SEDUTE A TERRA', 'QUANTO LE PAGANO?'), en=('BY HAND, ON THE GROUND', 'HOW MUCH ARE THEY PAID?')),
+ ('coir', 'C7e_occhiali'): dict(src=g(C, '0542'), t=21.0, cx=.5, cy=.45, zoom=1.2, layout='basso', red=True, flip=True,
+     it=('A MANO, SEDUTE A TERRA', 'QUANTO LE PAGANO?'), en=('BY HAND, ON THE GROUND', 'HOW MUCH ARE THEY PAID?')),
+ ('coir', 'C7f_lavoro'): dict(src=g(C, '0540'), t=20.0, cx=.5, cy=.5, zoom=1.0, layout='basso', red=True, flip=True,
+     it=('A MANO, SEDUTE A TERRA', 'QUANTO LE PAGANO?'), en=('BY HAND, ON THE GROUND', 'HOW MUCH ARE THEY PAID?')),
 }
 if __name__ == '__main__':
     import sys
