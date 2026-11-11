@@ -396,3 +396,5 @@ Nota da Pianificazione, 11/11 (Manuel): il `riassunto` è molto parlato, con tan
 Nota da Pianificazione, 11/11 (Manuel): `bilancio` = introspettivo su cosa Manuel ha capito (Kerala e Tamil Nadu), dalle persone incontrate. `riassunto` = il viaggio in sé, più leggero, interviste a spezzoni: voiceover sopra le persone, o le persone che parlano solo quando dicono qualcosa di forte.
 
 Nota da Pianificazione, 11/11 (Manuel): ORDINE DEI DUE LUNGHI FINALI scambiato. `riassunto` (viaggio in sé, più leggero) esce dom 24/1 con pacchetto 23-31/1; `bilancio` (introspettivo, il più forte) dom 7/2 per ultimo, con gancio sul Vietnam: i video sul Vietnam seguono con lo stesso tema Voci Vere (ONG, persone del posto). Manuel parte per il Vietnam il 31/1: il pacchetto del bilancio (6-14/2) si prepara prima.
+
+Nota da Pianificazione, 11/11 (Manuel): dal 1/2 Manuel è in Vietnam e può girare subito lo SPOILER (30-45 s) da mettere in coda al bilancio del 7/2. Girato su Drive entro mar 3/2, Montaggio lo inserisce entro ven 5/2. Se manca, il bilancio chiude col gancio a parole. Dettagli in `piano/bilancio.md` e `piano/vietnam.md`.
