@@ -6,9 +6,14 @@ Uscite (calendario, Pianificazione): teaser sab 19/12, lungo dom 20/12, reel e c
 
 Traccia audio inglese (Manuel 10/11, registrazione verso il 13/12): copione e tempi in `copioni/coir_audio_en.md`; su Drive montati/coir/TESTI_audio_inglese.txt.
 ## LUNGO
-Titolo IT: MADE IN INDIA: chi fa i nostri tappeti 🇮🇳 le donne del coir in Kerala
-Titolo EN: MADE IN INDIA: who makes our doormats 🇮🇳 the coir women of Kerala
-Miniature (Test e confronto, v3): 1_C1_premilla (principale), 2_C2_sorriso, 3_C3_corda (_it e _en), Drive montati/coir/miniatura/.
+Titolo IT: CHI C'È DIETRO I NOSTRI TAPPETI: le donne del coir in Kerala, India 🇮🇳
+(11/11, Manuel + Insights; prima: MADE IN INDIA: chi fa i nostri tappeti 🇮🇳 le donne del coir in Kerala)
+Titolo EN: WHO IS BEHIND OUR DOORMATS: the coir women of Kerala, India 🇮🇳
+Miniature (Test e confronto, v4, Manuel 11/11): 1 C6_laguna "I NOSTRI TAPPETI NASCONO QUI" (principale), 2 C9_madeinindia
+"MADE IN INDIA", 3 C10_80centesimi "80 CENTESIMI A TAPPETO" (_it e _en; en: OUR DOORMATS START HERE, MADE IN INDIA, 80 CENTS PER RUG).
+Espressioni serie, persona centrale in camera, scritta su una riga, TUTTA BIANCA (Manuel 11/11), centrata poco sopra il fondo.
+Repo copioni/coir_miniature/v3/, generatore copioni/miniature_v3/miniature_v3.py (layout 'riga'). Drive: da sostituire a C1-C3 dopo l'ok di Manuel.
+Da fare quando Montaggio dà i tempi della nuova intro (VO con 80 centesimi e 4 euro al giorno): sottotitoli it/en e capitoli.
 
 ### Descrizione IT
 Sopra i nostri zerbini c'è scritto Made in India. Non c'è scritto chi li ha fatti.

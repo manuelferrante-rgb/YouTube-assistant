@@ -39,3 +39,10 @@ Titoli:
 4. 4 EURO AL GIORNO PER I NOSTRI TAPPETI: dentro una società del coir in India 🇮🇳 | €4 A DAY FOR OUR DOORMATS: inside a coir society in India 🇮🇳 (con C1 o C4)
 5. IL TUO ZERBINO NASCE IN QUESTA LAGUNA: India 🇮🇳 le donne del coir | YOUR DOORMAT STARTS IN THIS LAGOON: India 🇮🇳 the coir women (con C2 o C3)
 Consigliata: titolo 1 + C1, C2, C3 in Test e confronto (come deciso con Insights).
+
+## COIR v4 (11/11, Manuel + Insights): sostituisce titolo 1 + C1/C2/C3
+Titolo: CHI C'È DIETRO I NOSTRI TAPPETI: le donne del coir in Kerala, India 🇮🇳 | WHO IS BEHIND OUR DOORMATS: the coir women of Kerala, India 🇮🇳
+Miniature: C6_laguna "I NOSTRI TAPPETI NASCONO QUI" (principale), C9_madeinindia "MADE IN INDIA", C10_80centesimi "80 CENTESIMI A TAPPETO".
+Regole di Manuel: espressioni serie, una persona centrale che guarda in camera con sfondo forte, coerenti con i primi 30 s del video,
+una riga sola, scritta tutta bianca (niente rosso), centrata e poco sopra il fondo (layout 'riga'). "80 centesimi" è per tappeto, non al giorno
+(al giorno: 400 rupie, circa 4 euro, dette nel video).
