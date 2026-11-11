@@ -20,8 +20,8 @@
 ## RICHIESTA APERTA 11/11 (da Insights, da confermare con Manuel, NON ancora fatta)
 - coir lungo, nuova intro: le 3 promesse delle miniature (uomo nella laguna, "Made in India", "80 centesimi a tappeto")
   nei primi ~20 s. Al posto di VO0 un VO nuovo che Manuel deve registrare: "Su quei tappeti c'è scritto Made in India.
-  Non c'è scritto chi li ha fatti. Né che a loro, ci dicono, per ogni tappeto vanno ottanta centesimi. Quattro euro al
-  giorno. Da oggi, ogni volta che ne vedi uno, saprai da dove viene." (l'ultima frase si può togliere se ripete il VO11).
+  Non c'è scritto chi li ha fatti. Né che a loro per ogni tappeto vanno ottanta centesimi. Quattro euro al
+  giorno. Da oggi, ogni volta che ne vedi uno, saprai da dove viene." (testo DEFINITIVO 11/11, senza "ci dicono"; VO0 passa da ~5 a ~12-13 s).
 - Immagini: "Made in India" -> signora seduta tra la fibra che guarda in camera (0063); "ottanta centesimi" -> donna
   davanti al mucchio di gusci col fazzoletto; "quattro euro" -> donne al lavoro. 0544 resta al primo fotogramma, 0034/0038
   restano. Resto invariato. Poi capitoli nuovi in projects/coir/capitoli.md e piano/calendario.md.
