@@ -69,3 +69,13 @@ Nota 6/11 (Manuel): "Italia" in VO11 resta: sul posto gli hanno detto che i tapp
 Nota 8/11 sera: Montaggio ha controllato il lungo v2 (promessa del titolo nel primo minuto: c'è; tre B-roll larghi
 vuoti a ~1:13, ~1:25, ~3:45). Insights consiglia di correggerli subito (persone in azione, Premilla in primo piano dopo
 il salario, 6:45 va bene). Miniature e titolo già decisi con Copy: a Montaggio basta la coerenza con l'inizio.
+
+## Titolo, miniature e intro (Manuel, 11/11)
+- Titolo nuovo: "CHI C'È DIETRO I NOSTRI TAPPETI: le donne del coir in Kerala, India 🇮🇳" (EN "WHO IS BEHIND OUR DOORMATS: the
+  coir women of Kerala, India 🇮🇳"), perché la miniatura 2 tiene "MADE IN INDIA" e il titolo non deve ripeterla.
+- Test e confronto: 1 uomo nella laguna "I NOSTRI TAPPETI NASCONO QUI"; 2 donna con i gusci "MADE IN INDIA"; 3 donna
+  "80 CENTESIMI A TAPPETO" ("80 CENTESIMI" in rosso).
+- Intro: VO0 nuovo da registrare, con le tre promesse nei primi ~20 s: "Su quei tappeti c'è scritto Made in India. Non c'è
+  scritto chi li ha fatti. Né che a loro, ci dicono, per ogni tappeto vanno ottanta centesimi. Quattro euro al giorno. Da oggi,
+  ogni volta che ne vedi uno, saprai da dove viene." Messaggi mandati a Copy e Montaggio l'11/11.
+- Da misurare all'uscita (20/12): vincitore del test e fidelizzazione nel primo minuto.
