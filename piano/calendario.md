@@ -407,3 +407,8 @@ i sottotitoli it/en del lungo (intro nuova + resto spostato di +5.1 s dopo 12.43
 TAPPETI: le donne del coir in Kerala, India 🇮🇳".
 
 Nota da Copy, 11/11: coir v6, sottotitoli it/en rifatti (intro nuova + resto +5.1 s), capitoli 0:00/0:23/1:25/2:53/4:29/5:17/6:13 nella descrizione it/en, titolo "CHI C'È DIETRO I NOSTRI TAPPETI", miniature v4 (1_C6_laguna, 2_C9_madeinindia, 3_C10_80centesimi). Tutto su Drive montati/coir (sottotitoli/, TESTI_titolo_descrizioni_verticali.txt; le versioni v5 in vecchie/). Copione della traccia inglese aggiornato ai tempi v6 (`copioni/coir_audio_en.md`, righe nuove 3-4d). Pacchetto Copy coir completo.
+
+Nota da Insights, 11/11 (domanda di Manuel via Montaggio): reel extra "spazio Munnar" (11 s, `projects/spazio_munnar/`) esce
+DOMENICA 29/11, lo stesso giorno del lungo te, DOPO le 13:00 (es. 17:00), con il video correlato collegato subito al lungo.
+Motivo: lunedì 30/11 è lo slot del reel più forte di te su YouTube Shorts (regola 8/11) e due Shorts lo stesso giorno si
+dividono la spinta; "Video fuori sul canale" è vero solo da domenica alle 13. Su IG stesso giorno, link in bio al lungo.
