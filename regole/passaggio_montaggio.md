@@ -139,3 +139,11 @@ Nota Montaggio 4/11 sera: arthunkal v5 e te v8 (richieste di Manuel dai dati del
 - Tabella W_BASILICA in build.py: i tempi a inizio clip erano anticipati di ~0.4 s (corretti in reels.py dalla
   trascrizione della voce pulita).
 - Mai `pkill -f` dentro un comando che contiene lo stesso testo: è successo di nuovo il 4/11 (uccide la shell).
+
+## REEL EXTRA "spazio Munnar" (11/11, Manuel, in approvazione)
+- Riferimento in Drive "Reel voiceover spazio/Riferimenti" (cartella 1V_kn3DJO61loXNLeUWLz6G4oq9jVRDlC). Discesa dallo
+  spazio con immagini satellitari vere (`tools/space_zoom.py`: Blue Marble NASA + Sentinel-2 cloudless 2016 di EOX, CC BY 4.0,
+  da citare in descrizione) fino al 2nd Mile View Point (22RQ+HP7 = 10.0417 N, 77.0393 E), poi il girato del tè.
+- Manuel: breve; niente musica, solo il suono del movimento (sintetizzato in build.py); chiusura senza riquadro bianco:
+  sfondo sfocato, "Video fuori sul canale" + logo. Codice: `projects/spazio_munnar/build.py` (girato da cartella te).
+- Rete: aggiunti all'ambiente gli host eoimages.gsfc.nasa.gov e tiles.maps.eox.at (EOX funziona, NASA no).
