@@ -413,3 +413,11 @@ Nota da Insights, 11/11 (domanda di Manuel via Montaggio): reel extra "spazio Mu
 DOMENICA 29/11, lo stesso giorno del lungo te, DOPO le 13:00 (es. 17:00), con il video correlato collegato subito al lungo.
 Motivo: lunedì 30/11 è lo slot del reel più forte di te su YouTube Shorts (regola 8/11) e due Shorts lo stesso giorno si
 dividono la spinta; "Video fuori sul canale" è vero solo da domenica alle 13. Su IG stesso giorno, link in bio al lungo.
+
+Nota da Montaggio, 12/11 (Manuel): te v10 APPROVATO e caricato su Drive montati/te al posto della v9, stesso nome
+`VociVere_te_long_4K.mp4` (6:29.0, era 6:25.9). Dopo la sigla la discesa dallo spazio del reel "spazio Munnar", poi
+Manuel e "Sono a Munnar"; banner "iscriviti" a 0:34.5. Dalla sigla in poi tutto slitta di +3.067 s. CAPITOLI NUOVI:
+0:00 Le colline del tè, 0:24 Munnar, 0:49 Con Sadish tra i filari, 3:33 La storia e chi ci lavora, 5:47 Il tè del chai
+master, 6:14 Chiusura (`projects/te/capitoli.md`). PER COPY (glielo passa Manuel): sottotitoli it/en del lungo da
+spostare di +3.067 s da 0:24.633 in poi; capitoli it/en nella descrizione da aggiornare. Reel "spazio Munnar" v7
+approvato, cartella Drive ancora da indicare.

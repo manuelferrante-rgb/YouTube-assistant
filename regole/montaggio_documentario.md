@@ -283,7 +283,8 @@ pausa tra le frasi, chiusura "Ascolta altre voci, su" + logo su velo leggero).
 ## Banner nei lunghi: REGOLA STABILE (Manuel 5/11, approvata sul tè e su arthunkal)
 - Due banner piccoli in basso al centro (4.5% dal fondo), con la foto profilo del canale
   (`assets/brand/avatar_youtube.png`) e piccoli click di mouse quando il cursore clicca:
-  1. "iscriviti" (4.9 s): appena finisce la sigla, quando Manuel inizia a parlare. Cursore su ISCRIVITI (diventa
+  1. "iscriviti" (4.9 s): 5-10 s dopo la fine della sigla (Manuel 12/11, prima era "appena finisce la sigla"), su un
+     tratto calmo senza sottotitoli in basso. Cursore su ISCRIVITI (diventa
      ISCRITTO), campanella (si riempie e oscilla), Hype (si accende).
   2. "like" (3.9 s): a metà video, in un tratto calmo (voiceover su B-roll). Cursore su Mi piace e Commenta.
   3. "instagram" (4.2 s, Manuel 9/11): dopo il "like", idealmente alla stessa distanza che c'è tra il primo e il
@@ -309,3 +310,8 @@ Nota Montaggio, 9/11 (Manuel): la frase di chiusura dei lunghi ("Il viaggio di V
 bisogno, continua. Seguimi per scoprire le prossime storie") si usa SEMPRE dalla registrazione pulita
 `assets/voce/chiusura_vocivere.m4a` (frase da 0.88 a 6.80 s), mai dall'audio di una ripresa sul posto. Esempio di
 sostituzione sul lungo già finito: `projects/coir/v5_chiusura.py`.
+
+Nota Montaggio, 12/11 (Manuel, lungo del tè v10): la discesa dallo spazio (`tools/space_zoom.py`, anche 16:9 con
+`--size 3840x2160 --fov 48`) va bene anche nei lunghi al posto della mappa, fatta come nel reel: solo il suono del
+movimento, nessuna voce di Manuel sopra; la voce parte quando lui è in quadro. Mai la voce di chi parla in camera sopra
+immagini dove non c'è. Banner "iscriviti" 5-10 s dopo la sigla.
