@@ -420,7 +420,7 @@ Manuel e "Sono a Munnar"; banner "iscriviti" a 0:34.5. Dalla sigla in poi tutto 
 0:00 Le colline del tè, 0:24 Munnar, 0:49 Con Sadish tra i filari, 3:33 La storia e chi ci lavora, 5:47 Il tè del chai
 master, 6:14 Chiusura (`projects/te/capitoli.md`). PER COPY (glielo passa Manuel): sottotitoli it/en del lungo da
 spostare di +3.067 s da 0:24.633 in poi; capitoli it/en nella descrizione da aggiornare. Reel "spazio Munnar" v7
-approvato, cartella Drive ancora da indicare.
+approvato, Manuel lo ha già (scaricato dalla chat): niente Drive.
 Nota da Insights, 12/11 (Manuel): gli orari di uscita nelle note sono in ora ITALIANA, salvo dove scritto. Lunghi alle 13:00
 italiane (= 17:30 in India): arthunkal dom 15/11 alle 17:30 indiane è quindi alle 13 italiane. Reel extra "spazio Munnar"
 dom 29/11 alle 17:00 italiane (21:30 in India).
