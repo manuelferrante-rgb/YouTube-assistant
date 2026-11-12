@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """te v10 (Manuel 11/11, via Insights): la discesa dallo spazio del reel "spazio Munnar" nel lungo, dopo la sigla.
 
-Parte dal lungo v9 consegnato (work/te/v9in/VociVere_te_long_4K.mp4, 6:25.92) e cambia solo i fotogrammi 739-887
-(24.633-29.600 s, tra due fotogrammi chiave del v9: il resto si copia senza ricodifica):
-- 24.633-27.0: discesa dallo spazio in 16:9 4K (tools/space_zoom.py --size 3840x2160 --fov 48, 2.4 s) sotto
-  "Sono a Munnar, in Kerala"; atterra nel bianco delle nuvole su Manuel a braccia aperte (115233, labiale in sincrono:
-  la clip nel lungo va a 1.1x) per "a oltre 1500 metri", con lo stesso arrivo del reel;
-- 28.10-29.60: le colline (132930, stesso inizio) rifatte senza il vecchio banner, con un avvicinamento leggero;
-- etichetta "Munnar, Kerala" come nel v9 (stessi tempi e stile).
+Parte dal lungo v9 consegnato (work/te/v9in/VociVere_te_long_4K.mp4, 6:25.92) e rifà solo i fotogrammi 739-887
+del v9 (24.633-29.600 s, tra due fotogrammi chiave: il resto si copia senza ricodifica), con INSERT s in più:
+- Manuel 12/11: "Sono a Munnar" non subito dopo la sigla. Discesa dallo spazio di 4 s in 16:9 4K
+  (tools/space_zoom.py --size 3840x2160 --fov 48 --dur 4); la voce parte dopo ~2.5 s (pausa di INSERT s inserita nel
+  silenzio a 24.633, dove la coda della sigla è già spenta); atterra nel bianco delle nuvole su Manuel a braccia aperte
+  (115233, labiale in sincrono: la clip nel lungo va a 1.1x), con lo stesso arrivo del reel;
+- poi le colline (132930, stesso inizio) rifatte senza il vecchio banner, con un avvicinamento leggero;
+- etichetta "Munnar, Kerala" come nel v9, legata alla frase (+INSERT).
+Tutto ciò che viene dopo slitta di INSERT s: capitoli e sottotitoli da aggiornare (projects/te/capitoli.md).
 Banner "iscriviti" spostato (Manuel 11/11: 5-10 s dopo la sigla): via quello a 24.8 (click tolti dall'audio), nuovo a
 BANNER_T con tools/apply_banners.py. Audio: il suono del movimento del reel (sintetizzato) sotto la discesa.
-Durata, parlato, sottotitoli e capitoli invariati.
-    python3 projects/te/v10_spazio.py   (girato 115233 e 132930 in work/spazio/raw, discesa in work/te/sz4k)
+    python3 projects/te/v10_spazio.py   (girato 115233 e 132930 in work/spazio/raw, discesa in work/te/sz4k_4s)
 """
 import glob, json, math, os, subprocess, sys
 import numpy as np, cv2, soundfile as sf
@@ -19,15 +20,18 @@ import numpy as np, cv2, soundfile as sf
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 IN = f"{ROOT}/work/te/v9in/VociVere_te_long_4K.mp4"
 V = f"{ROOT}/work/te/v10"
-SZ = f"{ROOT}/work/te/sz4k"
+SZ = f"{ROOT}/work/te/sz4k_4s"
 OUT = f"{ROOT}/work/te/VociVere_te_long_4K_v10.mp4"
 RAW = f"{ROOT}/work/spazio/raw"
 W, H, FPS, SR = 3840, 2160, 30, 48000
-F0, F1 = 739, 888                       # fotogrammi rifatti: [F0, F1)
-F_HILLS = 843                           # taglio Manuel -> colline nel v9
+F0, F1 = 739, 888                       # fotogrammi del v9 rifatti: [F0, F1)
+NI = 72                                 # fotogrammi inseriti (2.4 s): la voce parte 2.57 s dopo la sigla
+INSERT = NI / 30
+F_HILLS = 843 + NI                      # taglio Manuel -> colline (tempi nuovi)
 T0 = F0 / FPS
 C0 = 11.852                             # 115233: tempo nella clip a T0 (dalla correlazione dell'audio), poi 1.1x
-OLD_BANNER, BANNER_T = 24.8, 33.5       # banner iscriviti: vecchio (click da togliere) e nuovo
+OLD_BANNER, BANNER_T = 24.8, 34.5       # banner iscriviti: vecchio (v9, click da togliere) e nuovo (tempi nuovi, 9.9 s
+                                        # dopo la sigla, sulla grafica del 1877 e poi la scrittura a mano)
 DEF = "eq=contrast=1.03:saturation=1.05"
 X264 = ["-c:v", "libx264", "-preset", "medium", "-crf", "20", "-maxrate", "38M", "-bufsize", "76M", "-profile:v", "high",
         "-level", "5.1", "-pix_fmt", "yuv420p", "-g", "250", "-keyint_min", "25", "-x264-params", "open_gop=0"]
@@ -65,19 +69,19 @@ def label_ass():
                 f"Style: Lab,Playfair Display,{S(46)},&H00F2F2F2,&H00FFFFFF,&H00000000,&H80000000,0,-1,0,0,100,100,0.5,0,1,"
                 f"{S(1.2)},{S(2.2)},1,{S(70)},{S(70)},{S(64)},1\n\n"
                 "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n"
-                "Dialogue: 1,0:00:00.30,0:00:02.90,Lab,,0,0,0,,{\\fad(350,350)}Munnar, Kerala\n")
+                f"Dialogue: 1,0:00:0{0.3 + INSERT:.2f},0:00:0{2.9 + INSERT:.2f},Lab,,0,0,0,,{{\\fad(350,350)}}Munnar, Kerala\n")
     return p
 
 
 def video():
-    n = F1 - F0
+    n = F1 + NI - F0
     desc = sorted(glob.glob(f"{SZ}/*.png"))
     nd = len(desc)
     f_arr = F0 + nd - round(0.22 * FPS)                  # Manuel entra sotto il bianco, come nel reel
     n_man = F_HILLS - f_arr
-    man = frames_of(clip("115233"), C0 + 1.1 * (f_arr / FPS - T0), n_man,
+    man = frames_of(clip("115233"), C0 + 1.1 * ((f_arr - NI) / FPS - T0), n_man,
                     f"setpts=PTS/1.1,fps={FPS},scale={W}:{H}:flags=lanczos,{DEF}")
-    nh = F1 - F_HILLS
+    nh = F1 + NI - F_HILLS
     z = f"(1+0.05*t/{nh / FPS:.3f})"
     hills = frames_of(clip("132930"), 0.567, nh, f"fps={FPS},scale={W}:{H}:flags=lanczos,{DEF},"
                       f"scale=w='trunc({W}*{z}/2)*2':h='trunc({H}*{z}/2)*2':eval=frame:flags=bicubic,crop={W}:{H}")
@@ -85,7 +89,7 @@ def video():
     enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", f"{W}x{H}", "-r",
                             str(FPS), "-i", "-", "-vf", f"ass={label_ass()}:fontsdir={ROOT}/models", *X264,
                             f"{V}/seg.mp4"], stdin=subprocess.PIPE)
-    for f in range(F0, F1):
+    for f in range(F0, F1 + NI):
         if f < f_arr:
             fr = cv2.imread(desc[f - F0])
         elif f < F_HILLS:
@@ -163,6 +167,7 @@ def audio(t_arr):
     voice = lufs(a[int(24.8 * SR):int(27.8 * SR)])
     wh *= 10 ** ((voice - 8 - lufs(wh[:int(tp * SR)])) / 20)
     j0 = int(round(T0 * SR))
+    a = np.concatenate([a[:j0], np.zeros((int(round(INSERT * SR)), 2)), a[j0:]])
     a[j0:j0 + len(wh)] += wh
     peak = np.abs(a).max()
     print(f"voce {voice:.1f} LUFS, picco del mix {20 * np.log10(peak):.1f} dBFS")
@@ -173,7 +178,7 @@ def audio(t_arr):
 
 def main():
     if os.environ.get("REUSE") and os.path.exists(f"{V}/seg.mp4"):
-        seg, t_arr = f"{V}/seg.mp4", (F0 + len(glob.glob(f"{SZ}/*.png")) - round(0.22 * FPS) - F0) / FPS
+        seg, t_arr = f"{V}/seg.mp4", (len(glob.glob(f"{SZ}/*.png")) - round(0.22 * FPS)) / FPS
     else:
         seg, t_arr = video()
     aud = audio(t_arr)
