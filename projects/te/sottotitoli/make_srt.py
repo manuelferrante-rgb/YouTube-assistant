@@ -1,6 +1,8 @@
 # Sottotitoli YouTube del lungo te (v7 finale, 6:24, approvato 27-28/10), italiano e inglese. Tempi dalla trascrizione parakeet
 # del 4K finale (montati/te/VociVere_te_long_4K.mp4), testo ripulito; interviste da projects/te/interviste.md (fedeli).
 #   python3 projects/te/sottotitoli/make_srt.py
+# 12/11 (v10, 6:29.0): i file .srt sono stati spostati a mano di +3.067 s da 0:24 in poi (discesa dallo spazio dopo la sigla).
+# I tempi qui sotto restano quelli della v7: la versione buona sono i .srt.
 import os, textwrap
 C = [
  (0.10, 2.95, "Dietro di me una piantagione immensa di tè.", "Behind me, an immense tea plantation."),

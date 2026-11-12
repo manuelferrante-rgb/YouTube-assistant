@@ -424,3 +424,5 @@ approvato, Manuel lo ha già (scaricato dalla chat): niente Drive.
 Nota da Insights, 12/11 (Manuel): gli orari di uscita nelle note sono in ora ITALIANA, salvo dove scritto. Lunghi alle 13:00
 italiane (= 17:30 in India): arthunkal dom 15/11 alle 17:30 indiane è quindi alle 13 italiane. Reel extra "spazio Munnar"
 dom 29/11 alle 17:00 italiane (21:30 in India).
+
+Nota da Copy, 12/11: te v10, sottotitoli it/en +3.067 s da 0:24, capitoli 0:00/0:24/0:49/3:33/5:47/6:14 nella descrizione it/en, copione della traccia inglese ai tempi v10 (`copioni/te_audio_en.md`). Sostituiti su Drive montati/te (sottotitoli/, TESTI_titolo_descrizioni_verticali.txt, TESTI_audio_inglese.txt; le v9 in vecchie/).

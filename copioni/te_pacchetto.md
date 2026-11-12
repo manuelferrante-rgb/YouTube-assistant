@@ -1,4 +1,4 @@
-# Tè di Munnar: PACCHETTO DEFINITIVO (Copy, 29/10, lungo v7 6:24; 5/11: lungo v8 6:26, capitoli e sottotitoli aggiornati)
+# Tè di Munnar: PACCHETTO DEFINITIVO (Copy, 29/10, lungo v7 6:24; 5/11: lungo v8 6:26; 12/11: lungo v10 6:29, capitoli, sottotitoli e traccia inglese +3.067 s dopo la sigla)
 Tutto su Drive, cartella del video -> montati/te/: sottotitoli/ (.it.srt, .en.srt), miniatura/, carosello/ (9 slide,
 01, 06, 09 video), storie/ (3 set da 6 + storie_testi.md), TESTI_titolo_descrizioni_verticali.txt. Uscite (calendario): teaser sab 14/11, lungo dom 15/11, reel lun 16, mar 17,
 gio 19/11, carosello mer 18/11.
@@ -27,10 +27,10 @@ Voci Vere racconta le persone e i luoghi lontani dalle cartoline, dando voce a c
 Capitoli
 0:00 Le colline del tè
 0:24 Munnar, a 1.500 metri
-0:46 Con Sadish tra i filari
-3:30 Di chi sono queste colline
-5:44 Il chai di Munnar
-6:11 Da dove arriva il tè
+0:49 Con Sadish tra i filari
+3:33 Di chi sono queste colline
+5:47 Il chai di Munnar
+6:14 Da dove arriva il tè
 
 #Kerala #India #VociVere
 
@@ -51,10 +51,10 @@ Voci Vere tells the stories of people and places far from the postcards, giving 
 Chapters
 0:00 The tea hills
 0:24 Munnar, 1,500 metres up
-0:46 Among the rows with Sadish
-3:30 Who owns these hills
-5:44 Munnar chai
-6:11 Where our tea comes from
+0:49 Among the rows with Sadish
+3:33 Who owns these hills
+5:47 Munnar chai
+6:14 Where our tea comes from
 
 #Kerala #India #VociVere
 
