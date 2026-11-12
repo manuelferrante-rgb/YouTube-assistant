@@ -176,7 +176,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | gio 26/11 | EXTRA kallu |  |
 | sab 28/11 | te: teaser |  |
 | dom 29/11 | te: LUNGO | solo se approvato |
-| dom 29/11 | EXTRA "spazio Munnar" (reel 10.8 s, `projects/spazio_munnar/`; v7 APPROVATO da Manuel l'11/11, file `VociVere_munnar_spazio_v7_1080x1920.mp4`, cartella Drive da indicare da Manuel) | decisione di Manuel via Insights/Montaggio 11/11; esce DOPO il lungo (che è alle 13:00 italiane), per esempio alle 17:00 italiane; il lungo collegato subito come video correlato su YouTube, link in bio su IG; 3 giorni dopo kallu 26/11; il lun 30/11 resta il reel più forte del tè |
+| dom 29/11 | EXTRA "spazio Munnar" (reel 10.8 s, `projects/spazio_munnar/`; v7 APPROVATO da Manuel l'11/11, file `VociVere_munnar_spazio_v7_1080x1920.mp4`, Manuel lo ha già scaricato dalla chat: niente caricamento su Drive) | decisione di Manuel via Insights/Montaggio 11/11; esce DOPO il lungo (che è alle 13:00 italiane), per esempio alle 17:00 italiane; il lungo collegato subito come video correlato su YouTube, link in bio su IG; 3 giorni dopo kallu 26/11; il lun 30/11 resta il reel più forte del tè |
 | lun 30/11 | te: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
 | mar 1/12 | te: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
 | mer 2/12 | EXTRA panni (pov giungla) | entrambi i profili |
