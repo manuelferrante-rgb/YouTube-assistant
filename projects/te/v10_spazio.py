@@ -3,10 +3,11 @@
 
 Parte dal lungo v9 consegnato (work/te/v9in/VociVere_te_long_4K.mp4, 6:25.92) e rifà solo i fotogrammi 739-887
 del v9 (24.633-29.600 s, tra due fotogrammi chiave: il resto si copia senza ricodifica), con INSERT s in più:
-- Manuel 12/11: "Sono a Munnar" non subito dopo la sigla. Discesa dallo spazio di 4 s in 16:9 4K
-  (tools/space_zoom.py --size 3840x2160 --fov 48 --dur 4); la voce parte dopo ~2.5 s (pausa di INSERT s inserita nel
-  silenzio a 24.633, dove la coda della sigla è già spenta); atterra nel bianco delle nuvole su Manuel a braccia aperte
-  (115233, labiale in sincrono: la clip nel lungo va a 1.1x), con lo stesso arrivo del reel;
+- Manuel 12/11: come nel reel, mai la sua voce senza di lui. Dopo la sigla la discesa dallo spazio di 3.3 s in 16:9 4K
+  (tools/space_zoom.py --size 3840x2160 --fov 48, fotogrammi del render da 4 s ricampionati a 99) con il solo suono
+  del movimento; nel bianco delle nuvole entra l'inquadratura di Manuel a braccia aperte dal suo inizio (115233,
+  labiale in sincrono: la clip nel lungo va a 1.1x), con lo stesso arrivo del reel, e solo allora "Sono a Munnar".
+  Inseriti INSERT s nel silenzio a 24.633 (la coda della sigla è già spenta);
 - poi le colline (132930, stesso inizio) rifatte senza il vecchio banner, con un avvicinamento leggero;
 - etichetta "Munnar, Kerala" come nel v9, legata alla frase (+INSERT).
 Tutto ciò che viene dopo slitta di INSERT s: capitoli e sottotitoli da aggiornare (projects/te/capitoli.md).
@@ -25,7 +26,8 @@ OUT = f"{ROOT}/work/te/VociVere_te_long_4K_v10.mp4"
 RAW = f"{ROOT}/work/spazio/raw"
 W, H, FPS, SR = 3840, 2160, 30, 48000
 F0, F1 = 739, 888                       # fotogrammi del v9 rifatti: [F0, F1)
-NI = 72                                 # fotogrammi inseriti (2.4 s): la voce parte 2.57 s dopo la sigla
+ND = 99                                 # fotogrammi della discesa (3.3 s, come nel reel)
+NI = ND - 7                             # fotogrammi inseriti: Manuel entra 0.22 s prima della fine, sotto il bianco
 INSERT = NI / 30
 F_HILLS = 843 + NI                      # taglio Manuel -> colline (tempi nuovi)
 T0 = F0 / FPS
@@ -75,7 +77,8 @@ def label_ass():
 
 def video():
     n = F1 + NI - F0
-    desc = sorted(glob.glob(f"{SZ}/*.png"))
+    allp = sorted(glob.glob(f"{SZ}/*.png"))
+    desc = [allp[round(i * (len(allp) - 1) / (ND - 1))] for i in range(ND)]
     nd = len(desc)
     f_arr = F0 + nd - round(0.22 * FPS)                  # Manuel entra sotto il bianco, come nel reel
     n_man = F_HILLS - f_arr
@@ -161,11 +164,11 @@ def audio(t_arr):
         seg[:, ch] -= g * c[:, ch]
         print(f"click canale {ch}: guadagno {g:.3f}, livello sui click {20 * np.log10(before):.1f} -> "
               f"{20 * np.log10(np.sqrt(np.mean(seg[m, ch] ** 2))):.1f} dB")
-    # suono del movimento: dall'inizio della discesa al bianco, 8 dB sotto la voce di "Sono a Munnar..."
+    # suono del movimento: dall'inizio della discesa al bianco, da solo (niente voce sopra), 3 dB sotto la voce come nel reel
     tp = t_arr + 0.2
     wh = whoosh(int((tp + 1.2) * SR), tp)
     voice = lufs(a[int(24.8 * SR):int(27.8 * SR)])
-    wh *= 10 ** ((voice - 8 - lufs(wh[:int(tp * SR)])) / 20)
+    wh *= 10 ** ((voice - 3 - lufs(wh[:int(tp * SR)])) / 20)
     j0 = int(round(T0 * SR))
     a = np.concatenate([a[:j0], np.zeros((int(round(INSERT * SR)), 2)), a[j0:]])
     a[j0:j0 + len(wh)] += wh
@@ -178,7 +181,7 @@ def audio(t_arr):
 
 def main():
     if os.environ.get("REUSE") and os.path.exists(f"{V}/seg.mp4"):
-        seg, t_arr = f"{V}/seg.mp4", (len(glob.glob(f"{SZ}/*.png")) - round(0.22 * FPS)) / FPS
+        seg, t_arr = f"{V}/seg.mp4", NI / FPS
     else:
         seg, t_arr = video()
     aud = audio(t_arr)
