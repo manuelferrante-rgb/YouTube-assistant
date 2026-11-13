@@ -144,7 +144,7 @@ I blocchi 1, 2, 5, 8, 13, 14 non dipendono dalle interviste: si possono registra
 
 1. VO (intro, su B-roll delle due realtà)
    "Una vita normale. Andare a scuola, imparare un lavoro, tornare a casa la sera.
-   A Kochi, in Kerala, ci sono due posti dove questo, ogni giorno, va costruito."
+   A Kochi, in Kerala, ci sono due posti dove bambini e ragazzi ripartono da qui: crescere come gli altri."
 
 2. C (contesto, col fondale)
    "Sono a Kochi, nel sud dell'India, in Kerala. Qui ho passato due giorni in due posti diversi.
@@ -173,7 +173,7 @@ I blocchi 1, 2, 5, 8, 13, 14 non dipendono dalle interviste: si possono registra
 
 8. I (intermezzo in camera)
    "Due giorni qui. E la cosa che mi colpisce di più non è la difficoltà. È quanto tutto sia normale:
-   i compiti, il pranzo, le battute tra di loro."
+   i compiti, il pranzo, le battute tra di loro. Qui nessuno ti chiede da dove arrivi. Ti chiedono dove vuoi andare."
 
 9. VO (la giornata, su B-roll di entrambe)
    "La giornata comincia presto. [A Ashwasa: sveglia, scuola, compiti.] [A Raksha: lezioni, laboratori, il pranzo insieme.]
@@ -191,18 +191,23 @@ I blocchi 1, 2, 5, 8, 13, 14 non dipendono dalle interviste: si possono registra
 
 13. VO (outro, cosa abbiamo imparato, su B-roll lento: il cortile che si svuota, le scarpe, la porta)
    "Sono venuto a Kochi per raccontare due associazioni. Ho trovato persone che chiedono una cosa sola:
-   essere trattate come tutti gli altri. Non con pietà. Con una sedia a scuola, un lavoro, una porta di casa."
+   essere trattate come tutti gli altri. Non con pietà. Con una sedia a scuola, un lavoro, una porta di casa.
+   Quello che è successo prima non dipende da loro. Quello che viene dopo, qui, lo costruiscono insieme."
 
 14. VO (conclusione forte, ultime immagini)
    "Una vita normale non è scontata. Qui, a Kochi, c'è chi la costruisce ogni giorno. Un giorno alla volta."
    Poi la chiusura fissa già registrata.
 
+Filo del video (Manuel 13/11): il concetto della "seconda possibilità" SENZA dirlo né farlo intendere. Qui hanno la
+possibilità di vivere come gli altri, di ripartire, di avere una vita normale; la colpa di quello che c'era prima non è
+mai loro. Parole: vita normale, ripartire, crescere come gli altri, essere come gli altri. Sta in intro (1), intermezzo (8),
+outro (13-14), titolo e miniatura, e nelle frasi delle persone (la ragazza di Raksha sulla vita normale).
 Nota: in VO e testi i numeri detti dalle persone si dicono senza "ci dicono" (Manuel 11/11). Niente "salvare", "aiutare",
 "poveri", "seconda possibilità". I minori: voce agli adulti, volti e nomi come ha deciso chi li segue.
 
 ## TITOLI (gancio + spiegazione + bandiera; Kochi, Kerala)
 1. VOGLIONO SOLO UNA VITA NORMALE: due case a Kochi, Kerala 🇮🇳 (consigliato: riprende la frase della ragazza e l'intro)
-2. COME TUTTI GLI ALTRI: crescere a Kochi, in Kerala 🇮🇳
+2. CRESCERE COME TUTTI GLI ALTRI: due case a Kochi, Kerala 🇮🇳
 3. UNA SUORA ITALIANA HA APERTO QUESTA CASA: Kochi, Kerala 🇮🇳 (solo se confermato; parla all'Italia, ma lascia fuori Raksha)
 4. A SCUOLA, AL LAVORO, A CASA: due realtà di Kochi, in Kerala 🇮🇳
 EN (per il consigliato): THEY JUST WANT A NORMAL LIFE: two homes in Kochi, Kerala 🇮🇳
