@@ -1,6 +1,29 @@
-# Copy: stato e passaggio di consegne (aggiornato 10/11 sera)
+# Copy: stato e passaggio di consegne (aggiornato 13/11)
 Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in `regole/copy.md` (in fondo le note più nuove),
 `regole/formato_reel.md`, `copioni/caroselli/testi_caroselli.md` (regole dei caroselli), `copioni/stories/storie_testi.md`.
+
+## Fatto 11-13/11 (sessione session_01HtfbgxkwhMbMCwGetFjun7, ora in archivio)
+- coir: lungo v6 (6:50, intro nuova con le persone delle miniature). Titolo nuovo "CHI C'È DIETRO I NOSTRI TAPPETI: le donne del
+  coir in Kerala, India 🇮🇳" (EN "WHO IS BEHIND OUR DOORMATS..."). Miniature v4 su Drive montati/coir/miniatura: 1_C6_laguna
+  "I NOSTRI TAPPETI NASCONO QUI" (principale), 2_C9_madeinindia "MADE IN INDIA", 3_C10_80centesimi "80 CENTESIMI A TAPPETO"
+  (en "80 CENTS PER MAT"). Sottotitoli it/en, capitoli (0:00/0:23/1:25/2:53/4:29/5:17/6:13), TESTI e copione inglese aggiornati
+  (`copioni/coir_pacchetto.md`, `copioni/coir_audio_en.md`). Pacchetto coir COMPLETO.
+- REGOLE MINIATURE (Manuel 11/11): espressioni serie (non sorridenti), una persona centrale che guarda in camera con sfondo
+  forte, scritta su UNA riga, TUTTA BIANCA (niente rosso), centrata e poco sopra il fondo (layout 'riga' in
+  `copioni/miniature_v3/miniature_v3.py`); titolo e testo coerenti con i primi 30 s del video; il testo non ripete il titolo.
+- Mai "ci dicono" per numeri e salari nei testi e nel VO (CLAUDE.md, Manuel 11/11). "80 centesimi" è a tappeto, non al giorno.
+- te: lungo v10 (6:29.0, discesa dallo spazio dopo la sigla): sottotitoli, capitoli (0:00/0:24/0:49/3:33/5:47/6:14), TESTI e
+  copione inglese +3.067 s, su Drive. Testi del reel extra "spazio Munnar" (dom 29/11 17:00 italiane) in `copioni/te_pacchetto.md`.
+- fortkochi: VIDEO UNICO Ashwasa Bhavan + Raksha (Manuel 13/11): scaletta, copione a 14 blocchi (1, 2, 5, 8, 13, 14 registrabili
+  subito), 4 fatti da confermare, titoli e miniature in `copioni/fortkochi_testi.md` (sezione "VIDEO UNICO"). Filo: vita normale,
+  crescere come gli altri, MAI "seconda possibilità" né colpa loro. Da fare: inserire le frasi delle persone quando Montaggio
+  scrive `projects/fortkochi/girato.md`. CSSS (donne) a parte, se la gira.
+- Manuel (11/11): quando chiede indicazioni sul posto, niente schemi rigidi non richiesti; titoli e miniature solo dopo il girato.
+
+## PROMEMORIA DA RIPROGRAMMARE nella chat nuova (send_later, ora italiana, initiation human_request), testi esatti sotto:
+sab 14/11 12:00 commento fissato teaser arthunkal; dom 15/11 13:15 collegare lungo arthunkal a teaser e V2 (video correlato + link IG);
+lun 16/11 12:00 commento fissato V2 statua; dom 22/11 10:00 registrazione traccia inglese te (guidare Manuel, poi testo per Montaggio);
+dom 13/12 10:00 registrazione traccia inglese coir (idem).
 
 ## Fatto il 10/11 (sessione session_01HtfbgysqTrKE7hBx3kQeSA)
 - arthunkal: lungo caricato e programmato da Manuel (dom 15/11 13:00) con titolo, descrizione, capitoli, miniature A2/A3/A1, sottotitoli.
@@ -14,8 +37,7 @@ Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in
 - Manuel cambia spesso le didascalie prima di pubblicare (toglie la domanda o la sposta in cima, toglie "Nel video:"): salvare
   sempre la versione che manda lui. Su YouTube il titolo dello Short resta il fatto concreto.
 
-## PROMEMORIA da dare a Manuel (PROGRAMMATI con send_later dalla chat Copy session_01HtfbgxkwhMbMCwGetFjun7 il 10/11, ora italiana:
-## 13/11 12:00, 14/11 12:00, 15/11 13:15, 16/11 12:00, 22/11 10:00, 13/12 10:00)
+## Testi dei promemoria (l'autostop del 13/11 è già stato dato)
 - dom 15/11 dopo le 13:00: collegare il lungo arthunkal come video correlato a teaser (14/11) e V2 statua (16/11), link su IG.
 - Commenti fissati YouTube (Manuel non li mette in programmazione, vanno messi appena esce lo Short):
   sab 14/11 teaser arthunkal: "Nel video: chi cammina, chi dà da mangiare a chi passa, e perché in questa chiesa c'è una statua arrivata da Milano."
