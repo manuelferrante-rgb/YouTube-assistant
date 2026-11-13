@@ -20,7 +20,8 @@ Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in
   scrive `projects/fortkochi/girato.md`. CSSS (donne) a parte, se la gira.
 - Manuel (11/11): quando chiede indicazioni sul posto, niente schemi rigidi non richiesti; titoli e miniature solo dopo il girato.
 
-## PROMEMORIA DA RIPROGRAMMARE nella chat nuova (send_later, ora italiana, initiation human_request), testi esatti sotto:
+## PROMEMORIA DA RIPROGRAMMARE nella chat nuova (send_later, ora italiana, initiation human_request), testi esatti sotto.
+## Nella chat vecchia sono stati cancellati 15/11, 22/11 e 13/12; 14/11 e 16/11 restano lì (cancellazione negata): se arrivano doppi, va bene.
 sab 14/11 12:00 commento fissato teaser arthunkal; dom 15/11 13:15 collegare lungo arthunkal a teaser e V2 (video correlato + link IG);
 lun 16/11 12:00 commento fissato V2 statua; dom 22/11 10:00 registrazione traccia inglese te (guidare Manuel, poi testo per Montaggio);
 dom 13/12 10:00 registrazione traccia inglese coir (idem).
