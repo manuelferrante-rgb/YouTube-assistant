@@ -56,7 +56,7 @@ Alla lavoratrice:
 - I soldi li gestisci tu? / Do you manage the money yourself?
 - Cosa vuoi per tua figlia? (o per i tuoi figli) / What do you want for your daughter?
 
-## 2. Raksha Society (Kochangadi): RAGAZZI CON DISABILITÀ CHE IMPARANO UN MESTIERE
+## 2. Raksha Society (SUPERATA dal 13/11: vedi VIDEO UNICO in fondo) (Kochangadi): RAGAZZI CON DISABILITÀ CHE IMPARANO UN MESTIERE
 Angolo: la formazione professionale, non la malattia. Il protagonista è un ragazzo o una ragazza (o un'insegnante)
 mentre impara un lavoro. Se i volti dei ragazzi non si possono mostrare, protagonista l'insegnante.
 Struttura: gancio sulle mani che lavorano, cos'è Raksha (breve, il responsabile), la giornata di un ragazzo,
@@ -73,7 +73,7 @@ Al ragazzo / alla mamma (solo se il responsabile dice sì):
 - (mamma) Com'era prima di venire qui? / What was it like before coming here?
 - (mamma) Cosa speri per lui/lei? / What do you hope for him/her?
 
-## 3. Ashwasa Bhavan (Veli): UNA CASA PER BAMBINI SENZA FAMIGLIA
+## 3. Ashwasa Bhavan (SUPERATA dal 13/11: vedi VIDEO UNICO in fondo) (Veli): UNA CASA PER BAMBINI SENZA FAMIGLIA
 Prima cosa da chiedere: chi l'ha fondata. Le fonti dicono una suora italiana nel 2005 (Sr Fabbri o Sr Fabiola):
 fatti dire nome, città, anno. Se è confermato, è il gancio per l'Italia. Se no, il video regge lo stesso sulla casa.
 Protagonista: chi ci lavora (suora, educatrice, cuoca). I bambini sono lo sfondo della vita di casa, mai il caso pietoso.
@@ -102,3 +102,113 @@ Idea generale: si alterna VO sul B-roll di Manuel e persone che parlano; il VO f
 La chiusura (frase finale, spiegazione finale, sigla) va in VO sul B-roll, non in camera.
 Sul posto basta avere B-roll in abbondanza (dettagli, luogo, persone al lavoro, fine giornata) e farsi dire nomi,
 anni e numeri dalle persone. Il testo del VO lo scrive Copy dopo, sul girato, e Manuel lo registra al ritorno.
+
+
+# VIDEO UNICO ASHWASA + RAKSHA (Manuel 13/11, via Pianificazione)
+Un solo video che alterna Ashwasa Bhavan (casa dei bambini, Veli, Fort Kochi) e Raksha Society (bambini e ragazzi con
+disabilità, Kochangadi, Kochi). Filo: cosa portano queste due realtà a Kochi e come accompagnano le persone. Temi ponte
+in comune: arrivare, la giornata normale, chi ti sta accanto, il dopo. Mai "seconda possibilità", mai pietà.
+"Orfani" solo se lo dicono loro. Girato non ancora trascritto: dove c'è [PAROLE DI ...] va la frase vera dal girato
+(`projects/fortkochi/girato.md` di Montaggio). La scaletta è una base: si sistema sul girato.
+
+## PRIMA DI REGISTRARE: 4 fatti da confermare (li sai tu dalla visita, o si sentono nelle interviste)
+1. Ashwasa: nome della suora che l'ha aperta, da dove veniva in Italia, anno (fonti: 2005, "Sr Fabbri" o "Sr Fabiola").
+2. Ashwasa: quanti bambini vivono lì oggi (una fonte: più di 50) e come arrivano (fonti: Child Welfare Committee).
+3. Raksha: da quando esiste (fonti: 1985) e quanti ragazzi la frequentano.
+4. Raksha: cosa fanno lì (fonti: pre-scuola, scuola speciale, formazione al lavoro; non ci dormono).
+Se uno non torna, si toglie la frase o si cambia: nei blocchi è tra [ ].
+
+## SCALETTA (8-10 min circa)
+0. GANCIO (0:00-0:20): la ragazza di Raksha con la sua voce: [PAROLE DELLA RAGAZZA: "viviamo una vita normale"].
+   Poi VO 1 su B-roll delle due realtà (mani, quaderni, scarpe in fila, cortile).
+   Sigla.
+1. CONTESTO IN CAMERA, fondale sistemato: C 2.
+2. ASHWASA, ARRIVARE: B-roll casa + VO 3; intervista Ashwasa (due persone), pezzo 1: chi sono, come arrivano i bambini.
+   Dentro: VO 4 sopra di loro (si vedono parlare, senza la loro voce), poi la loro voce sul passaggio forte.
+3. PONTE: VO 5 (da una casa all'altra: arrivare).
+4. RAKSHA, ARRIVARE: B-roll scuola + VO 6; intervista della ragazza, pezzo 1: chi è, cosa fa lì.
+   Dentro: VO 7 sopra di lei, poi la sua voce.
+5. INTERMEZZO IN CAMERA: I 8 (cosa ho visto finora).
+6. LA GIORNATA NORMALE: VO 9 su B-roll di entrambe (orari, pasti, lezioni, gioco). Ashwasa pezzo 2 (la giornata),
+   Raksha pezzo 2 (cosa impara, cosa le piace).
+7. CHI TI STA ACCANTO: intervista Ashwasa (la persona sola), pezzo 1: perché fa questo lavoro. VO 10 sopra.
+8. COSA MANCA: Ashwasa e Raksha, cosa non funziona o cosa serve (dalle interviste). VO 11 breve di raccordo.
+9. IL DOPO: intermezzo in camera I 12 (cosa succede a 18 anni / dopo la scuola), poi le loro risposte.
+10. RITORNO ALLA RAGAZZA: il passaggio più forte sulla vita normale, con la sua voce.
+11. OUTRO in VO su B-roll: VO 13 (cosa abbiamo imparato) + VO 14 (conclusione) + chiusura fissa (registrazione già fatta,
+    `assets/voce/chiusura_vocivere.m4a`).
+
+## COPIONE DI MANUEL (registrazione: numero, 2 s di pausa, testo; voce calma)
+Tipo: C = in camera col fondale, VO = voiceover su B-roll, VO-P = voiceover sopra le persone senza la loro voce, I = intermezzo in camera.
+I blocchi 1, 2, 5, 8, 13, 14 non dipendono dalle interviste: si possono registrare subito.
+
+1. VO (intro, su B-roll delle due realtà)
+   "Una vita normale. Andare a scuola, imparare un lavoro, tornare a casa la sera.
+   A Kochi, in Kerala, ci sono due posti dove questo, ogni giorno, va costruito."
+
+2. C (contesto, col fondale)
+   "Sono a Kochi, nel sud dell'India, in Kerala. Qui ho passato due giorni in due posti diversi.
+   Il primo è Ashwasa Bhavan, a Fort Kochi: una casa dove crescono bambini che arrivano qui da [fuori / dai servizi sociali].
+   L'ha aperta [nel 2005] una suora italiana.
+   Il secondo è Raksha, a Kochangadi: una scuola per bambini e ragazzi con disabilità, che qui imparano anche un lavoro.
+   Due realtà diverse. Ma con una cosa in comune: accompagnano qualcuno verso una vita come quella di tutti."
+
+3. VO (Ashwasa, entrare)
+   "Ashwasa Bhavan. Da fuori è una casa come le altre della via. Dentro vivono [più di cinquanta] bambini e ragazzi."
+
+4. VO-P (sopra l'intervista Ashwasa, due persone)
+   "[Nomi e ruolo]. Mi raccontano come arrivano i bambini: [sintesi delle loro parole].
+   [Ognuno ha la sua storia, e qui nessuno la racconta davanti a loro.]"
+
+5. VO (ponte)
+   "Arrivare in un posto nuovo. Per un bambino vuol dire un letto, un orario, qualcuno che ti aspetta.
+   A pochi chilometri da qui, arrivare vuol dire un'altra cosa."
+
+6. VO (Raksha, entrare)
+   "Raksha. [Dal 1985] qui vengono bambini e ragazzi con [paralisi cerebrale, autismo, disabilità diverse].
+   Al mattino arrivano, la sera tornano a casa dalle loro famiglie."
+
+7. VO-P (sopra la ragazza di Raksha)
+   "[Nome] ha [età]. Qui [cosa fa: studia, impara a ...]. [Una sua frase detta in sintesi.]"
+
+8. I (intermezzo in camera)
+   "Due giorni qui. E la cosa che mi colpisce di più non è la difficoltà. È quanto tutto sia normale:
+   i compiti, il pranzo, le battute tra di loro."
+
+9. VO (la giornata, su B-roll di entrambe)
+   "La giornata comincia presto. [A Ashwasa: sveglia, scuola, compiti.] [A Raksha: lezioni, laboratori, il pranzo insieme.]
+   Niente di speciale. Ed è proprio questo il punto."
+
+10. VO-P (sopra la persona di Ashwasa intervistata da sola)
+   "[Nome] lavora qui da [anni]. [Perché lo fa, in una frase sua.]"
+
+11. VO (raccordo su cosa manca)
+   "Non tutto funziona. Lo dicono loro, per primi."
+
+12. I (il dopo, in camera)
+   "C'è una domanda che ho fatto in tutti e due i posti: cosa succede dopo?
+   Quando un ragazzo compie diciotto anni, o finisce la scuola. La risposta non è semplice."
+
+13. VO (outro, cosa abbiamo imparato, su B-roll lento: il cortile che si svuota, le scarpe, la porta)
+   "Sono venuto a Kochi per raccontare due associazioni. Ho trovato persone che chiedono una cosa sola:
+   essere trattate come tutti gli altri. Non con pietà. Con una sedia a scuola, un lavoro, una porta di casa."
+
+14. VO (conclusione forte, ultime immagini)
+   "Una vita normale non è scontata. Qui, a Kochi, c'è chi la costruisce ogni giorno. Un giorno alla volta."
+   Poi la chiusura fissa già registrata.
+
+Nota: in VO e testi i numeri detti dalle persone si dicono senza "ci dicono" (Manuel 11/11). Niente "salvare", "aiutare",
+"poveri", "seconda possibilità". I minori: voce agli adulti, volti e nomi come ha deciso chi li segue.
+
+## TITOLI (gancio + spiegazione + bandiera; Kochi, Kerala)
+1. VOGLIONO SOLO UNA VITA NORMALE: due case a Kochi, Kerala 🇮🇳 (consigliato: riprende la frase della ragazza e l'intro)
+2. COME TUTTI GLI ALTRI: crescere a Kochi, in Kerala 🇮🇳
+3. UNA SUORA ITALIANA HA APERTO QUESTA CASA: Kochi, Kerala 🇮🇳 (solo se confermato; parla all'Italia, ma lascia fuori Raksha)
+4. A SCUOLA, AL LAVORO, A CASA: due realtà di Kochi, in Kerala 🇮🇳
+EN (per il consigliato): THEY JUST WANT A NORMAL LIFE: two homes in Kochi, Kerala 🇮🇳
+
+## MINIATURE (persona centrale che guarda in camera, sfondo forte, scritta su una riga, tutta bianca)
+1. La ragazza di Raksha, in camera, nel suo posto (aula o laboratorio): "UNA VITA NORMALE". Consigliata, se il volto si può.
+2. La suora o l'operatrice di Ashwasa, centrale, con la casa dietro: "DALL'ITALIA A KOCHI" (se confermato) o "QUI È CASA".
+3. Senza volti: mani di un bambino e di un'adulta sul quaderno, o le scarpe in fila davanti alla porta: "QUI È CASA".
+Il testo della miniatura non ripete il titolo, e la cosa che promette si vede nei primi 30 s del video.
