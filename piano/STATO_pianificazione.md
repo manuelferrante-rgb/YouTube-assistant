@@ -60,3 +60,8 @@ Da leggere all'avvio di ogni nuova chat Pianificazione, dopo CLAUDE.md e `regole
 - Insights su statua V2: da misurare martedì 17/11 e domenica 22/11 (i promemoria li ha programmati Insights, non Pianificazione).
 - Manuel scrive dal telefono, ci sono refusi: capisci senza chiedere. Preferisce decisioni già prese con una raccomandazione.
 - Il classificatore di sicurezza ha bloccato `git commit --amend` e simili: usa commit nuovi, pull --rebase e push normale.
+
+## Promemoria ricreati il 13/11 (sessione session_01HtfbgzRWCqFKSmTBynYgBP)
+I 5 vecchi (trig_015LNf..., trig_01D5yu..., trig_01NQwt..., trig_01DzZp..., trig_01BmmX...) sono cancellati. Nuovi send_later, tutti alle 17:30 India (13:00 Italia), legati a questa sessione:
+arthunkal dom 15/11 trig_01VbUBKXZmGmqq4JTJ4de5cs; te dom 29/11 (anche spazio Munnar) trig_01TQeeMMw5WKU3eyuq44tUBj; coir dom 20/12 trig_01RVE1Z3CmZUFcLSgf8XSjy9; lungo B dom 10/1 trig_01A2hE51iKC7VgssWtTwdpX4; riassunto dom 24/1 trig_01H6PqPR15ond6k2ifVtaEFp; bilancio dom 7/2 trig_016jyb7uzBDAqb6fTJRR3mDK.
+Se questa sessione viene chiusa, la chat nuova li ricrea e cancella questi.
