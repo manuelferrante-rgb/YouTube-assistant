@@ -45,3 +45,10 @@ Più alta probabilità di dire sì alle riprese: CSSS e Raksha (organizzazioni s
 ## Decisione di Manuel, 11/11: si fanno le prime tre
 CSSS, Raksha Society, Ashwasa Bhavan. Le altre (Magic Bus, Vimala Bhavan, Biennale, Ente Kochi) escono, salvo incontri sul posto.
 Ordine: gio 12 CSSS (Veli) e, se c'è tempo, Ashwasa (Veli, stessa zona: da verificare su Maps); ven 13 Raksha (Kochangadi); sab 14 recupero o la terza. Prima uscita: telefonare a CSSS (0484 2227217) e Raksha (0484 222 7707) per sapere se ricevono.
+
+## Cambio di formato, 13/11 (Manuel)
+Girate Raksha e Ashwasa Bhavan: tre interviste (Ashwasa una a due persone e una a una persona, Raksha una ragazza; da confermare sul girato). CSSS (donne) resta a parte, se la gira.
+UN SOLO VIDEO che alterna Ashwasa e Raksha (non più uno per associazione), sul livello sociale che portano a Kochi e su come accompagnano le persone (bambini e persone con disabilità), con temi in comune.
+Struttura: intro forte sulla vita normale (lo dice la ragazza di Raksha); NON "seconda possibilità" (implica che la prima sia sprecata); contesto in camera di Manuel con fondale; interviste alternate a pezzi con B-roll, a tratti con voiceover di Manuel sopra le persone senza la loro voce e poi la loro voce nei passaggi forti; intermezzi in camera; outro su cosa abbiamo imparato, conclusione forte in voiceover. Nel girato quasi nessun parlato di Manuel: lo registra dopo sul copione di Copy.
+Titolo e miniatura forti, senza pietà: Copy propone.
+Da fare: Manuel carica il girato su Drive; Montaggio scrive `projects/fortkochi/girato.md` con trascrizione; Copy scrive scaletta, copione a blocchi, titoli, miniature in `copioni/fortkochi_testi.md`. Uscita: da decidere dopo il montaggio; è candidato a lungo B (10/1).
