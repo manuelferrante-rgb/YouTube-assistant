@@ -54,3 +54,6 @@ Titolo e miniatura forti, senza pietà: Copy propone.
 Da fare: Manuel carica il girato su Drive; Montaggio scrive `projects/fortkochi/girato.md` con trascrizione; Copy scrive scaletta, copione a blocchi, titoli, miniature in `copioni/fortkochi_testi.md`. Uscita: da decidere dopo il montaggio; è candidato a lungo B (10/1).
 
 Precisazione 13/11 (Manuel): non usare la frase "seconda possibilità", ma far capire il concetto: queste persone hanno la possibilità di vivere come gli altri, ripartire, vita normale, senza insinuare che abbiano sbagliato qualcosa. Va in intro, intermezzi e outro, e può guidare titolo e miniatura. Passato a Copy.
+
+## Decisione di Manuel, 14/11: si chiama NGO, esce dom 24/1
+Il video unico Raksha + Ashwasa Bhavan è il lungo NGO (file con nome breve `fortkochi`, invariato): teaser sab 23/1, lungo dom 24/1, pacchetto 25-31/1 e "I volti" a inizio febbraio. Con il bilancio (e il tè) è il cuore di Voci Vere. Il riassunto del 10/1 ne contiene un piccolo spoiler, il bilancio del 7/2 ne parla. Le due NGO scelte le ha dette Manuel a Copy.

@@ -205,29 +205,29 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | gio 31/12 | EXTRA comorin: tre mari (loop) |  |
 | dom 3/1 | EXTRA dalla scorta |  |
 | mar 6/1 | EXTRA dalla scorta |  |
-| sab 9/1 | lungo B: teaser |  |
-| dom 10/1 | LUNGO B (migranti o erosione) |  |
-| lun 11/1 | lungo B: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
-| mar 12/1 | lungo B: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
-| mer 13/1 | lungo B: stories set 3 |  |
-| gio 14/1 | lungo B: reel 2 |  |
-| ven 15/1 | lungo B: stories set 2 |  |
-| sab 16/1 | lungo B: carosello (+ post YouTube) |  |
+| sab 9/1 | riassunto: teaser |  |
+| dom 10/1 | LUNGO B = RIASSUNTO "un mese in India", più clickbait, con piccolo spoiler sulle interviste NGO (`piano/riassunto.md`) | spostato dal 24/1 (Manuel 14/11); non richiede riprese |
+| lun 11/1 | riassunto: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 12/1 | riassunto: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
+| mer 13/1 | riassunto: stories set 3 |  |
+| gio 14/1 | riassunto: reel 2 |  |
+| ven 15/1 | riassunto: stories set 2 |  |
+| sab 16/1 | riassunto: carosello (+ post YouTube) |  |
 | dom 17/1 | EXTRA dalla scorta |  |
-| lun 18/1 | lungo B: reel 3 |  |
-| mer 20/1 | lungo B: carosello "I volti" (+ post YouTube) |  |
+| lun 18/1 | riassunto: reel 3 |  |
+| mer 20/1 | riassunto: carosello "I volti" (+ post YouTube) |  |
 | ven 22/1 | EXTRA dalla scorta |  |
-| sab 23/1 | riassunto: teaser | SICURO (Manuel 9/11) |
-| dom 24/1 | LUNGO C = RIASSUNTO, il viaggio in sé (`piano/riassunto.md`) | scambiato col bilancio (Manuel 11/11): il più forte va per ultimo; non richiede riprese |
-| lun 25/1 | riassunto: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
-| mar 26/1 | riassunto: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
-| mer 27/1 | riassunto: stories set 3 |  |
-| gio 28/1 | riassunto: reel 2 |  |
-| ven 29/1 | riassunto: stories set 2 |  |
-| sab 30/1 | riassunto: carosello (+ post YouTube) |  |
-| dom 31/1 | riassunto: reel 3 | programmato prima della partenza per il Vietnam |
+| sab 23/1 | NGO: teaser |  |
+| dom 24/1 | LUNGO C = NGO (Fort Kochi: Raksha + Ashwasa Bhavan, `piano/fortkochi.md`), il cuore di Voci Vere | spostato dal 10/1 (Manuel 14/11) |
+| lun 25/1 | NGO: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| mar 26/1 | NGO: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
+| mer 27/1 | NGO: stories set 3 |  |
+| gio 28/1 | NGO: reel 2 |  |
+| ven 29/1 | NGO: stories set 2 |  |
+| sab 30/1 | NGO: carosello (+ post YouTube) |  |
+| dom 31/1 | NGO: reel 3 | programmato prima della partenza per il Vietnam |
 | sab 6/2 | bilancio: teaser | provvisorio (Manuel 11/11) |
-| dom 7/2 | LUNGO D = BILANCIO "Un mese in India", introspettivo, con gancio sul Vietnam (`piano/bilancio.md`) | il più forte per ultimo (Manuel 11/11); pacchetto 8-14/2 come ogni lungo, giorni da decidere |
+| dom 7/2 | LUNGO D = BILANCIO, introspettivo (cosa ho capito, le persone, le NGO), con gancio sul Vietnam (`piano/bilancio.md`) | il più forte per ultimo (Manuel 11/11); pacchetto 8-14/2 come ogni lungo, giorni da decidere |
 
 Nota da Pianificazione, 4/11 (Manuel): cocco e canna di comorin escono anche loro su entrambi i profili (personale e Voci Vere). Quindi tutti i reel mainstream (panni, autostop, cocco, canna) vanno su entrambi; le date 26/11 e 2/12 non sono più condizionate.
 Nota da Pianificazione, 4/11 (Manuel): strategia. Prima si pubblica (anche contenuti più leggeri), poi si dà al profilo una forma professionale e da "Voci Vere". Lo scopo principale, da non dimenticare: DARE VOCE A CHI NE HA PIU' BISOGNO. Ogni lungo e ogni tema nuovo (coir, migranti, ONG) va verificato contro questa frase.
@@ -430,3 +430,6 @@ Nota da Copy, 12/11: te v10, sottotitoli it/en +3.067 s da 0:24, capitoli 0:00/0
 Nota da Pianificazione, 13/11 (Manuel): Fort Kochi, girate Raksha e Ashwasa Bhavan. Diventa UN video che alterna le due, più produzione (contesto in camera, voiceover, interviste a pezzi), dettagli in `piano/fortkochi.md`. Candidato lungo B (10/1); la CSSS resta a parte. Passato a Copy per scaletta, copione e titoli.
 
 Nota da Copy, 13/11 (Manuel, via Pianificazione): fortkochi VIDEO UNICO Ashwasa + Raksha: scaletta, copione di Manuel a 14 blocchi (1, 2, 5, 8, 13, 14 registrabili subito), 4 fatti da confermare, 4 titoli e 3 miniature in `copioni/fortkochi_testi.md` (sezione "VIDEO UNICO"). Le frasi delle persone si inseriscono quando c'è `projects/fortkochi/girato.md`.
+
+Nota da Pianificazione, 14/11 (Manuel): ORDINE NUOVO DEI LUNGHI. Arthunkal 15/11, te 29/11, coir 20/12, RIASSUNTO dom 10/1 (teaser 9/1, pacchetto 11-20/1), NGO dom 24/1 (teaser 23/1, pacchetto 25/1-31/1, "I volti" dopo il 31/1), BILANCIO dom 7/2. `NGO` = il video unico su Raksha e Ashwasa Bhavan di Fort Kochi (file con nome breve `fortkochi`, invariato). Il riassunto diventa più clickbait, sulla nicchia "un mese in India" (consigli, come si vive un mese, costi, cosa aspettarsi), parlato da Manuel, con un piccolo spoiler sulle interviste NGO; i consigli pratici passano dal bilancio al riassunto. Il bilancio resta introspettivo e parla anche delle NGO. NGO e bilancio (e il te) sono il cuore di Voci Vere: dare voce a chi ne ha più bisogno. Insights: prompt per la ricerca sul riassunto in `piano/riassunto.md`, Manuel lo passa lui. Copy: titolo del bilancio da rifare (il "Un mese in India" va al riassunto).
+

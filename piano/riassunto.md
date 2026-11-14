@@ -19,3 +19,19 @@ Il riassunto è molto parlato: Manuel racconta il viaggio a lungo sopra i B-roll
 
 ## Precisazione 11/11 (Manuel): più leggero, sul viaggio in sé
 Il `riassunto` è il lungo sul VIAGGIO IN SÉ, più superficiale (parole di Manuel): tappe, luoghi, cibo, spostamenti, momenti. Il focus NON è l'intervista. Le persone entrano a spezzoni: a volte Manuel parla sopra di loro in voiceover (copione di Copy), a volte lascia parlare la persona quando dice qualcosa di forte (sottotitolata). Niente interviste intere. L'introspezione ("cosa ho capito") sta nel `bilancio`, non qui.
+
+## Decisione di Manuel, 14/11: esce dom 10/1, più clickbait (sostituisce l'uscita del 24/1)
+Il riassunto è il lungo B: teaser sab 9/1, lungo dom 10/1, pacchetto 11-20/1. Il 24/1 va a NGO, il 7/2 al bilancio.
+Taglio: la porta d'ingresso al canale sulla nicchia di ricerca "un mese in India" (Kerala e Tamil Nadu): cosa ho fatto in un mese, come si vive, consigli pratici, costi, cosa aspettarsi. Clickbait "tra virgolette": titolo e miniatura da viaggio, contenuto Voci Vere. Le persone entrano a spezzoni e ogni blocco porta a un lungo già uscito (mercato, Arthunkal, tè, coir). Piccolo spoiler sulle interviste NGO di Fort Kochi (esce il 24/1): una frase forte e un'immagine, senza svelare.
+Limiti: il titolo può dire "India", il contenuto parla sempre di Kerala e Tamil Nadu e dei posti visti, mai "gli indiani" o "l'India è così". Niente sofferenza come esca.
+Quando c'è la ricerca di Insights (`analisi/riassunto.md`), Copy scrive copione, titoli e miniature; Manuel registra; Montaggio monta sul girato esistente.
+
+### Prompt per Insights (Manuel lo incolla nella chat Insights)
+Sei la chat Insights di Voci Vere, leggi CLAUDE.md e piano/riassunto.md. Il lungo `riassunto` esce dom 10/1/2027: è il lungo più "clickbait" del viaggio, parlato da Manuel, sulla nicchia di ricerca "un mese in India" (viaggio in Kerala e Tamil Nadu, consigli, come si vive un mese, costi, cosa aspettarsi), con dentro le persone dei lunghi già usciti (mercato, Arthunkal, tè, coir) e un piccolo spoiler sulle interviste NGO di Fort Kochi (lungo del 24/1). Deve portare nuovi iscritti dalla ricerca e mandarli ai lunghi Voci Vere.
+1. Competitor italiani (e 3-4 stranieri forti) con video tipo "un mese in India", "viaggio in Kerala", "India: cosa nessuno ti dice", "quanto costa l'India", "consigli India": per i 10-15 migliori dammi titolo, miniatura (cosa c'è, testo, faccia o no), durata, visualizzazioni rispetto agli iscritti, data, i primi 30 secondi (gancio e promessa), struttura e capitoli.
+2. Le parole che la gente cerca davvero su YouTube in italiano (suggerimenti di ricerca, varianti con Kerala, costi, consigli, primo viaggio, da solo) e quali hanno poca concorrenza.
+3. Le domande che tornano nei commenti di quei video: sono i blocchi che il riassunto deve rispondere.
+4. Cosa fa funzionare il passaggio da un video di viaggio a video più impegnati (schermata finale, capitoli, rimandi a parole): esempi concreti.
+5. Il gancio e la miniatura che rendono "clickbait" senza uscire dai limiti di CLAUDE.md: niente sofferenza come esca, niente generalizzazioni sull'India nel contenuto (si parla di Kerala e Tamil Nadu), niente tono da salvatore.
+6. Durata consigliata, posizione dello spoiler NGO, teaser del 9/1 e quale reel del pacchetto mettere lunedì 11/1 su Shorts.
+Consegna: analisi/riassunto.md, con 3 strutture possibili e una raccomandazione; le lezioni confermate come regola in regole/copy.md o regole/pianificazione.md. Non scrivere titoli definitivi né il copione: li fa Copy da qui. Scadenza: entro dom 6/12, così Copy ha un mese per copione e voiceover.
