@@ -140,3 +140,11 @@ Nota da Insights, 8/11 sera (mercato a 7 giorni, YouTube + IG; `analisi/mercato.
 
 Hashtag (Manuel, 10/11): da ora in ogni didascalia e descrizione c'è #VociVere, al posto di #vitalocale (tolto: "veramente brutto").
 Schema: #india #kerala #viaggio #VociVere + uno sul tema.
+
+Nota da Insights, 16/11 (decisione di Manuel + competitor, `analisi/riassunto.md`): DESCRIZIONE DEI LUNGHI, dal riassunto in poi.
+Ordine: 2-4 righe su cosa si vede (con le parole che la gente cerca: luogo, "viaggio in India", "Kerala", "India del Sud");
+capitoli; "I video di questo viaggio" con i link agli altri lunghi; poi i link di supporto: PayPal, gadget su Amazon (link
+affiliati, con la frase "alcuni link sono affiliati: se acquisti ricevo una piccola percentuale, a te non costa niente"), sito
+del coaching (una riga, mai in alto, mai ripetuto). Commento fissato: la lista corta dei video collegati.
+Miniature dei lunghi "di viaggio" (riassunto): il posto scritto grande (KERALA, INDIA DEL SUD) sopra un paesaggio, persone
+sorridenti; mai esche negative (disastro, sporco, pericolosa, odio), che nei competitor portano commenti di disprezzo.

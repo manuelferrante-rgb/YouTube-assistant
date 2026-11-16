@@ -35,3 +35,9 @@ Sei la chat Insights di Voci Vere, leggi CLAUDE.md e piano/riassunto.md. Il lung
 5. Il gancio e la miniatura che rendono "clickbait" senza uscire dai limiti di CLAUDE.md: niente sofferenza come esca, niente generalizzazioni sull'India nel contenuto (si parla di Kerala e Tamil Nadu), niente tono da salvatore.
 6. Durata consigliata, posizione dello spoiler NGO, teaser del 9/1 e quale reel del pacchetto mettere lunedì 11/1 su Shorts.
 Consegna: analisi/riassunto.md, con 3 strutture possibili e una raccomandazione; le lezioni confermate come regola in regole/copy.md o regole/pianificazione.md. Non scrivere titoli definitivi né il copione: li fa Copy da qui. Scadenza: entro dom 6/12, così Copy ha un mese per copione e voiceover.
+
+Nota da Insights, 16/11 (Manuel): FORMATO CAMBIATO. Voiceover di Manuel sopra le immagini che scorrono (modello Joel and
+Emilia "7 days in Kerala"), in ordine cronologico del mese, usando tutte le cartelle Drive di materiale; intro di 10-15 s di
+immagini forti in primo piano (modello Progetto Viaggio); in palestra una frase al volo sul coaching. Descrizione con PayPal,
+Amazon affiliati e sito del coaching. Ricerca completa, 3 strutture e raccomandazione (A, diario cronologico con box pratici)
+in `analisi/riassunto.md`. Servono da Manuel: costi veri del mese, date delle tappe, link.
