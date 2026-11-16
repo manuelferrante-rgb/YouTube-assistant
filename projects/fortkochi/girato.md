@@ -158,3 +158,21 @@ corridoi. Adulti (suore, operatrici, educatrice, cuoche) senza sfocatura.
 ## Clip scartate o da non usare
 `0036` (Carlo Acutis, fuori tema), `0040` (targa donatori), `0035` 30-33 ("savior") e 310-313 ("people like you"),
 `0046` audio (nome non comprensibile), `0055`-`0056` (turistico, Jew Town: solo se serve un "dove siamo").
+
+## Preparazione al montaggio (Montaggio, 16/11, sul copione v3 di Copy)
+### Audio delle interviste (pezzi del copione v3)
+Voce pulita con RNNoise (`work/fortkochi/voce/<clip>.wav`), fondo misurato nei pezzi del copione: 0035 tra -40 e -54 dB,
+0016 tra -48 e -53, 0018 -50/-53, 0019 -49/-54 (voce intorno a -16/-22). Nessun pezzo da sostituire per rumore di fondo.
+La 0016 (suore) ha eco della stanza e accento forte: si capisce, ma i sottotitoli vanno fatti con attenzione; se al
+riascolto nel montato un pezzo resta poco chiaro, lo segnalo qui e Copy lo sostituisce con una riga di VO.
+La frase di Manuel 0035 310.8-312.8 ("It's important, people like you in the society") è pulita: si usa.
+
+### Volti dei bambini sfocati (`tools/face_blur.py`, rilevatore YuNet + tracce, controllato fotogramma per fotogramma)
+File pronti in `work/fortkochi/blur/`: `0010_blur` (due bambini davanti alla TV), `0013_blur` e `0014_blur` (operatrice
+nitida, i due bimbi sfocati), `0012_blur` (foto dei bambini sul muro sfocate). `0017_blur`: si usa SOLO 0-8.5 s (dopo, il
+bimbo in braccio si gira e il rilevatore lo perde). `0003` (corridoio con le foto alle pareti): sfocatura a macchie poco
+pulita; si usa il tratto 4.0-8.0 (foto lontane, non riconoscibili) o si evita. `0025` (neonato in braccio): nessun volto
+visibile, nessuna sfocatura. Adulti (suore, operatrici, cuoche) sempre nitidi.
+
+### Manca
+Le registrazioni di Manuel dei blocchi 1-24 (Copy: "[CARTELLA]"). Il montaggio parte quando sono su Drive.
