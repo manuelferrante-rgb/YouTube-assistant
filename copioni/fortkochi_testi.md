@@ -395,3 +395,10 @@ Titoli: 1) COME TUTTI GLI ALTRI, A UN'ALTRA VELOCITÀ: due posti a Kochi, Kerala
 EN (1): LIKE EVERYONE ELSE, AT A DIFFERENT SPEED: two places in Kochi, Kerala 🇮🇳
 Miniature: l'educatrice di Raksha in camera, nel suo ufficio, "COME GLI ALTRI" (consigliata); il ragazzo che saluta (0039, se il
 fotogramma regge) "A UN'ALTRA VELOCITÀ"; le mani della suora col neonato (0025), "QUI È CASA". Mai un bambino di Ashwasa in volto.
+
+## VOICEOVER REGISTRATI (Manuel 16/11, controllati da Copy)
+File: Drive cartella del video, "Voice Over + Camera/Via Privata Flumendosa.m4a" (4:04, audio pulito: fondo -66 dB, voce ~-19 dB,
+-24 LUFS). Ci sono tutti i 18 VO (1, 2, 4-13, 15, 16, 18, 21, 23, 24), in ordine, senza i numeri detti: si riconoscono dal testo.
+Prese buone (tempi nel file): 1 19.4-27.7; 2 44.9-49.6 + 54.4-61.6; 4 70.1-78.5; 5 80.5-81.9; 6 90.9-93.1; 7 94.2-98.6;
+8 100.1-114.4; 9 116.5-123.0; 10 126.5-135.4; 11 149.6-155.9; 12 162.4-164.0; 13 165.3-166.3; 15 169.2-177.2;
+16 178.5-186.8 + 197.7-201.0; 18 204.8-211.8; 21 214.7-216.8; 23 220.0-230.8; 24 232.4-236.8. Le altre sono prese ripetute ("ripeto").
