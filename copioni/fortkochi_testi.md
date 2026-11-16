@@ -234,8 +234,8 @@ in italiano, mai VO sopra di loro mentre parlano. Durata stimata: 8-9 min (VO e 
 - Raksha: Renee, educatrice speciale (0035, 5:16, intervista migliore del video); cancello blu (0031, 0032, 0042 Renee al cancello),
   cartello "Raksha Vocational Training and Rehabilitation Centre" (0034), cartelloni (0037), giardino con i vasi e le carrozzine (0038).
 - Fort Kochi e Mattancherry: strade, persone, frutta, turisti (0043-0056), per l'outro.
-- PER MONTAGGIO: bambini di Ashwasa riconoscibili in 0010, 0013, 0014, 0017, 0025. Solo di spalle, mani, o fuori fuoco: mai il volto
-  (Manuel 16/11), e mai nella miniatura o nel teaser. 0036 (Renee su Carlo Acutis) fuori tema.
+- PER MONTAGGIO (Manuel 16/11, aggiornato): i bambini di Ashwasa SI VEDONO, con il volto sfocato (blur che segue il viso), così si usa
+  il B-roll (0010, 0013, 0014, 0017, 0025 e ogni altra clip con bambini). Mai nella miniatura o nel teaser. 0036 (Renee su Carlo Acutis) fuori tema.
 
 ## Fatti verificati sul girato
 - Ashwasa: aperta nel 2006 da suor Fabiola, italiana (le fonti online dicevano 2005: vale il 2006 detto dalla suora); "vent'anni";
@@ -246,7 +246,7 @@ in italiano, mai VO sopra di loro mentre parlano. Durata stimata: 8-9 min (VO e 
   giorno; li preparano a essere indipendenti nel lavoro e nella vita di tutti i giorni; seguono tutta la famiglia, anche fratelli e sorelle.
 - Non detto nel girato, quindi tolto: quanti bambini vivono oggi ad Ashwasa e quanti ragazzi vanno a Raksha; da dove veniva in Italia
   suor Fabiola (nella 0016 si sente qualcosa come "Grappa": se lo sai, si può aggiungere al blocco 4).
-- Da confermare con Manuel: "Ashwasa Bhavan" = "casa del conforto" (ashwasam in malayalam è conforto, sollievo). Se non torna, si toglie la frase.
+- Confermati da Manuel 16/11: "casa del conforto" va bene; anno 2006 (quello detto dalla suora); di suor Fabiola si dice solo "italiana".
 
 ## COPIONE (numero, 2 s di pausa, testo; voce calma)
 C = in camera col fondale, VO = voiceover sulle immagini. [INT] = pezzo d'intervista con la sua voce (clip e secondi, da trascrizione).
@@ -292,7 +292,7 @@ C = in camera col fondale, VO = voiceover sulle immagini. [INT] = pezzo d'interv
 
 8. C (intermezzo)
    "Mi aspettavo un posto triste. Ho trovato i panni stesi, i giochi in cortile, il pranzo pronto.
-   La storia di ogni bambino resta sua. Per questo non vedete i loro volti."
+   La storia di ogni bambino resta sua. Per questo i loro volti restano coperti."
 
 9. VO (cancello blu, cartello di Raksha)
    "Raksha esiste dal 1985. Non è un collegio: i ragazzi arrivano la mattina e la sera tornano a casa dalle loro famiglie."

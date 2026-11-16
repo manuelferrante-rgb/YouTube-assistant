@@ -436,3 +436,5 @@ Nota da Pianificazione, 14/11 (Manuel): ORDINE NUOVO DEI LUNGHI. Arthunkal 15/11
 
 
 Nota da Copy, 16/11 (Manuel): fortkochi (Ashwasa + Raksha) esce dom 24/1. Voiceover scritto sul girato in `copioni/fortkochi_testi.md` (sezione "VOICEOVER SUL GIRATO", 15 blocchi, camera 3, 8, 13), trascrizioni delle interviste in `copioni/fortkochi_trascrizioni.txt` (girato.md di Montaggio non c'era). Per Montaggio: bambini di Ashwasa mai in volto (clip 0010, 0013, 0014, 0017, 0025), mai in miniatura o teaser.
+
+Nota da Copy, 16/11 (Manuel): fortkochi, i bambini di Ashwasa si vedono nel lungo con il volto sfocato (non più esclusi), così si usa il B-roll; mai in miniatura o teaser. Blocco 8 del copione aggiornato ("i loro volti restano coperti").
