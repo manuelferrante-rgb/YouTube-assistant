@@ -60,3 +60,10 @@ durata, gancio). Punti già fermi da passare alle chat:
 - Capitoli sempre; descrizione e commento fissato con i link agli altri lunghi e ai link di supporto (Copy, regola 16/11).
 - Una scheda per lungo nell'ultimo terzo verso un altro lungo collegato; mai all'inizio (Insights 10/11).
 - Il reel più forte esce il lunedì su YouTube Shorts (regola 8/11).
+
+## NGO (`fortkochi`, lungo dom 24/1): decisioni di Manuel 16/11 (messaggi dati a Manuel in chat)
+- Apertura SEMPRE sulle scene più forti del girato + voiceover fatto bene (mai Manuel in camera all'inizio). Gancio: la
+  ragazza di Raksha con la sua voce, poi VO 1 sulle immagini forti, poi sigla.
+- Manuel in camera (fondale curato, guarda in camera) solo dopo la sigla o dove deve spiegare qualcosa. Il resto voiceover
+  classico sulle immagini. Niente voiceover sopra le persone che parlano: interviste con la loro voce, sottotitolate.
+- Durata 10-12 min, il tempo in più nella parte centrale. Blocco 2 in camera corto (12-15 s). Suora italiana detta presto.
