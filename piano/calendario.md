@@ -20,6 +20,7 @@ consegnato, programmato, pubblicato.
 | diwali | 1 reel o scena dentro `migranti` | ANNULLATO (8/11, Manuel: non è riuscito a registrarlo) | nessuno | `piano/diwali.md` (archiviato) |
 | bilancio | lungo parlato introspettivo | SICURO (Manuel 9/11), spostato al 7/2 l'11/11, il più forte per ultimo, gancio sul Vietnam | dom 7/2 (lungo D) | `piano/bilancio.md` |
 | riassunto | lungo sul viaggio in sé, voiceover e interviste a spezzoni | Manuel 11/11, da montare dal girato | dom 24/1 (lungo C) | `piano/riassunto.md` |
+| fortkochi (NGO) | lungo (Ashwasa Bhavan + Raksha) + teaser + 3 reel + pacchetto | GIRATO (13/11, Drive "Kochi NGO" 1J2VdasjXPmTi9OTbMbNYrBbV9_BH3EZc); trascritto da Montaggio il 16/11: `projects/fortkochi/girato.md` (attenzione: la "ragazza di Raksha" è la coordinatrice di Ashwasa). Si aspetta il copione VO di Copy e la registrazione di Manuel | teaser sab 23/1, lungo dom 24/1 (Manuel 16/11) | `piano/fortkochi.md`, `copioni/fortkochi_testi.md` |
 | kanyakumari | donne del mare e ONG del posto (verticale/materiale) | girato 3-4/11? Manuel non ha ancora detto cosa ha fatto con KDFSF e Siluvai Nagar | da decidere | `piano/kanyakumari.md` |
 
 ## Piano rifatto il 29/10 (Manuel): lunghi ogni 2-3 settimane, un contenuto un giorno sì e uno no
