@@ -67,3 +67,6 @@ durata, gancio). Punti già fermi da passare alle chat:
 - Manuel in camera (fondale curato, guarda in camera) solo dopo la sigla o dove deve spiegare qualcosa. Il resto voiceover
   classico sulle immagini. Niente voiceover sopra le persone che parlano: interviste con la loro voce, sottotitolate.
 - Durata 10-12 min, il tempo in più nella parte centrale. Blocco 2 in camera corto (12-15 s). Suora italiana detta presto.
+- (Manuel, 16/11) I minuti in più vengono da PIÙ PAROLE, non da tratti vuoti: più voiceover sulle immagini e qualche parte
+  in camera in più. In camera poco: 3-4 interventi da 15-25 s al massimo (circa 1,5-2 min su 10-12), mai due di fila.
+  Ogni immagine ha sopra il voiceover, la voce di una persona o un momento vero di 3-5 s; nessun B-roll muto più lungo.
