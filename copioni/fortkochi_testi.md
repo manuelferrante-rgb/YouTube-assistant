@@ -230,7 +230,7 @@ in italiano, mai VO sopra di loro mentre parlano. Promessa di titolo e miniatura
 - Bambini di Ashwasa: si vedono, con il volto sfocato, così si usa il B-roll. Mai in miniatura o teaser. Persone di Raksha senza sfocatura.
 - Suor Fabiola: solo "italiana", la città non si dice. Anno 2006 (detto dalla suora). "Ashwasa Bhavan" = "casa del conforto" va bene.
 - Nomi delle persone: non si dicono nel VO (l'educatrice di Raksha, la coordinatrice e le suore hanno nomi non chiari nell'audio).
-- Da non usare: 0035 30-33 ("savior"), 0036, 0040 (targa donatori). 0035 310.8-312.8 "It's important, people like you in the society"
+- Da non usare: 0036 (Carlo Acutis), 0040 (targa donatori). 0035 30-33 ("Raksha vuol dire savior") si usa (Manuel 16/11), nel blocco 15. 0035 310.8-312.8 "It's important, people like you in the society"
   lo dice MANUEL all'educatrice (Manuel 16/11), non lei a lui: si può usare in coda al blocco 21, solo se l'audio è pulito.
 
 ## Fatti (tutti dal girato)
@@ -333,7 +333,8 @@ ASHWASA
 RAKSHA
 15. VO (cancello blu che si apre 0042, cartello, ingresso con i festoni, scale)
    "Raksha esiste dal 1985. È una scuola di giorno: i ragazzi arrivano la mattina, e la sera tornano a casa dalle loro famiglie."
-   [INT educatrice, 0035 22.9-27.2, 43.9-59.0, 117.1-125.5] "Il nome è Raksha Society, per la cura dei bambini con bisogni speciali...
+   [INT educatrice, 0035 22.9-27.2, 30-33, 43.9-59.0, 117.1-125.5] "Il nome è Raksha Society, per la cura dei bambini con bisogni speciali...
+   Raksha vuol dire salvatore...
    Prepariamo ogni singola persona a diventare indipendente, nel lavoro e nella vita di tutti i giorni... Tornano a casa dopo
    le lezioni e ogni giorno tornano a scuola."
 
