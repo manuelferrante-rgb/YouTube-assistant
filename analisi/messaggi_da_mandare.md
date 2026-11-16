@@ -76,7 +76,10 @@ girato (`projects/fortkochi/girato.md` di Montaggio). Indicazioni generali:
 - Durata intorno ai 10 minuti se il materiale regge, senza tratti vuoti: il tempo lo danno le parole (voiceover e interviste),
   non le immagini lasciate scorrere. Se viene più corto, va bene così.
 - Ashwasa: i bambini non si vedono in volto; lì il racconto lo portano le interviste, il voiceover e io in camera.
-- La suora italiana, se confermata, detta presto: è il gancio per il pubblico italiano.
+- FOCUS (Manuel, 16/11): far vedere quanto bene fanno le persone che lavorano lì e quanto i bambini e i ragazzi vengono
+  accompagnati; e la riflessione su di noi: siamo fortunati e spesso non ci rendiamo conto di quello che abbiamo. La
+  riflessione la dico io, su di me e su chi guarda ("io do per scontato..."), mai come pietà verso di loro: loro sono
+  raccontati per quello che fanno e per la vita normale che si costruiscono. La suora italiana è un fatto da dire, non il gancio.
 - Miniatura e teaser mai con un bambino di Ashwasa.
 - Copione numerato come sempre (numero, 2 s di pausa, testo), con scritto per ogni blocco se è in camera o voiceover.
 
@@ -90,4 +93,6 @@ più forti), perché Copy ci scrive sopra il voiceover. Poi il montaggio, come g
 - Ashwasa: i volti dei bambini sfocati quando si vedono; meglio inquadrature senza volto che tante facce sfocate. Raksha: il
   B-roll con le persone si usa senza sfocare;
 - le regole di sempre: promessa di titolo e miniatura nel primo minuto, capitoli, ultimi 15 s puliti per la schermata finale.
-I bambini sono la vita della casa, mai inquadrati come casi da compatire.
+Focus del video (Manuel): quanto bene fanno le persone che lavorano lì, quanto i bambini vengono accompagnati, e noi che
+siamo fortunati senza rendercene conto. La storia dei bambini va fatta sentire (con le parole di chi ci lavora e le immagini
+di quello che fanno), anche senza mostrare i volti; mai con musica o rallenty da pietà.
