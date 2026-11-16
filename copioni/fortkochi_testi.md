@@ -217,3 +217,122 @@ EN (per il consigliato): THEY JUST WANT A NORMAL LIFE: two homes in Kochi, Keral
 2. La suora o l'operatrice di Ashwasa, centrale, con la casa dietro: "DALL'ITALIA A KOCHI" (se confermato) o "QUI È CASA".
 3. Senza volti: mani di un bambino e di un'adulta sul quaderno, o le scarpe in fila davanti alla porta: "QUI È CASA".
 Il testo della miniatura non ripete il titolo, e la cosa che promette si vede nei primi 30 s del video.
+
+# VOICEOVER SUL GIRATO (Copy, 16/11, richiesta di Manuel). SOSTITUISCE il copione a 14 blocchi qui sopra.
+Esce dom 24/1 (Manuel 16/11). Girato: cartella Drive 1J2VdasjXPmTi9OTbMbNYrBbV9_BH3EZc, 51 clip del 13/11.
+`projects/fortkochi/girato.md` di Montaggio non c'era: le interviste le ha trascritte Copy, in `copioni/fortkochi_trascrizioni.txt`.
+Focus (Manuel 16/11): quanto bene lavorano le persone che ci sono e quanto i bambini e i ragazzi vengono accompagnati; poi la
+riflessione di Manuel su di sé e su chi guarda ("io do per scontato..."), mai pietà verso di loro. Suor Fabiola è un fatto, non il gancio.
+Si apre sulle scene forti con il VO, Manuel in camera solo dopo la sigla e poche volte. Le persone parlano con la loro voce, sottotitolate
+in italiano, mai VO sopra di loro mentre parlano. Durata stimata: 8-9 min (VO e camera ~3,5 min, interviste ~4,5 min). Va bene così.
+
+## Chi c'è nel girato
+- Ashwasa Bhavan: due suore all'ingresso (0016, 4:43; una ha vissuto tre anni in Italia, in una casa per anziani); una suora da sola
+  sulla giornata (0018, 1:31); la coordinatrice dei progetti, 29 anni, assistente sociale da cinque, lì dal mese scorso (0019, ~1 min;
+  il nome non si capisce). B-roll: cortile e giochi (0015, 0020, 0026, 0028, 0030), muri dipinti e scritta "Family" (0002, 0023, 0024),
+  corridoio (0003), camerata (0004), scale "Girls' home" (0005), cucina e cuoche (0006-0008), panni stesi (0022), grotta (0021).
+- Raksha: Renee, educatrice speciale (0035, 5:16, intervista migliore del video); cancello blu (0031, 0032, 0042 Renee al cancello),
+  cartello "Raksha Vocational Training and Rehabilitation Centre" (0034), cartelloni (0037), giardino con i vasi e le carrozzine (0038).
+- Fort Kochi e Mattancherry: strade, persone, frutta, turisti (0043-0056), per l'outro.
+- PER MONTAGGIO: bambini di Ashwasa riconoscibili in 0010, 0013, 0014, 0017, 0025. Solo di spalle, mani, o fuori fuoco: mai il volto
+  (Manuel 16/11), e mai nella miniatura o nel teaser. 0036 (Renee su Carlo Acutis) fuori tema.
+
+## Fatti verificati sul girato
+- Ashwasa: aperta nel 2006 da suor Fabiola, italiana (le fonti online dicevano 2005: vale il 2006 detto dalla suora); "vent'anni";
+  "più di cento bambini sono passati da qui"; i bambini li manda il tribunale per i minori quando i genitori sono in difficoltà; ogni
+  bambino va in una scuola diversa, pranzo per chi torna, cena alle 7, poi studio o gioco. Cosa non va: regole del governo, non
+  decidono da sole.
+- Raksha: dal 1985 ("quasi 40 anni"); bambini da tre mesi di età, appena c'è una diagnosi; non è residenziale, tornano a casa ogni
+  giorno; li preparano a essere indipendenti nel lavoro e nella vita di tutti i giorni; seguono tutta la famiglia, anche fratelli e sorelle.
+- Non detto nel girato, quindi tolto: quanti bambini vivono oggi ad Ashwasa e quanti ragazzi vanno a Raksha; da dove veniva in Italia
+  suor Fabiola (nella 0016 si sente qualcosa come "Grappa": se lo sai, si può aggiungere al blocco 4).
+- Da confermare con Manuel: "Ashwasa Bhavan" = "casa del conforto" (ashwasam in malayalam è conforto, sollievo). Se non torna, si toglie la frase.
+
+## COPIONE (numero, 2 s di pausa, testo; voce calma)
+C = in camera col fondale, VO = voiceover sulle immagini. [INT] = pezzo d'intervista con la sua voce (clip e secondi, da trascrizione).
+
+1. VO (gancio: cortile coi giochi, corridoio, camerata, la suora che tiene un bambino in braccio di spalle, cucina)
+   "In vent'anni, più di cento bambini sono cresciuti in questa casa.
+   Qui hanno trovato un letto, un orario, qualcuno che li aspetta per pranzo."
+   [INT Renee, 0035 242-263] "Questi bambini sono come gli altri bambini. Quello che sanno fare gli altri, lo sanno fare anche i nostri.
+   Solo che lo fanno in un altro modo, con un altro stile, a un'altra velocità."
+
+2. VO (cancello blu di Raksha, giardino, carrozzine)
+   "A pochi minuti di strada, in una scuola, bambini e ragazzi con disabilità imparano a vivere da soli e a lavorare.
+   Due posti a Kochi, in Kerala. E le persone che ci lavorano ogni giorno."
+   SIGLA
+
+3. C (dopo la sigla)
+   "Sono a Kochi, nel sud dell'India. Qui, tra Fort Kochi e Mattancherry, ho passato una giornata in due posti.
+   Ashwasa Bhavan è una casa per bambini che non possono vivere con la loro famiglia.
+   Raksha è una scuola per bambini e ragazzi con disabilità.
+   Volevo vedere chi ci lavora, e come si cresce lì dentro."
+
+4. VO (ingresso e cortile di Ashwasa, muri dipinti, cartello "Girls' home")
+   "Ashwasa Bhavan vuol dire casa del conforto. La gestiscono delle suore.
+   L'ha aperta nel 2006 una suora italiana, suor Fabiola, che lavorava già in questa zona."
+   [INT suore, 0016 31-51] "Nel 2006 l'ha aperta suor Fabiola. Sono vent'anni che portiamo avanti questa casa.
+   Sono passati da qui più di cento bambini."
+
+5. VO (la camerata coi letti a castello, le scale, i panni stesi)
+   "Nessun bambino arriva qui per caso. Quando una famiglia non ce la fa, decide un tribunale per i minori."
+   [INT suore, 0016 105-132] "Quando i genitori hanno delle difficoltà, portano i bambini davanti al tribunale e spiegano le ragioni.
+   Ed è il tribunale che manda i bambini qui."
+
+6. VO (cucina: le cuoche, il riso, i piatti)
+   "Una casa così la tengono in piedi le persone: cuoche, educatrici, suore.
+   La giornata è la stessa di qualsiasi bambino."
+   [INT suora, 0018 13-57] la giornata: sveglia, colazione, ognuno nella sua scuola, chi torna a pranzo, cena alle sette,
+   poi studio o gioco, poi a dormire.
+
+7. VO (cortile coi giochi, la mazza da cricket a terra, la scritta "Family")
+   "Ognuno va in una scuola diversa, insieme agli altri bambini del quartiere. La mattina esce, il pomeriggio torna.
+   Una vita normale. Che qui qualcuno prepara ogni giorno."
+   [INT coordinatrice, 0019 3-45] chi è, 29 anni, cinque da assistente sociale, perché ha scelto questo lavoro.
+
+8. C (intermezzo)
+   "Mi aspettavo un posto triste. Ho trovato i panni stesi, i giochi in cortile, il pranzo pronto.
+   La storia di ogni bambino resta sua. Per questo non vedete i loro volti."
+
+9. VO (cancello blu, cartello di Raksha)
+   "Raksha esiste dal 1985. Non è un collegio: i ragazzi arrivano la mattina e la sera tornano a casa dalle loro famiglie."
+   [INT Renee, 0035 0-60] il suo nome, educatrice speciale; "prepariamo ogni persona a diventare indipendente, nel lavoro e nella vita di tutti i giorni."
+   [INT Renee, 0035 88-125] dai tre mesi di età, appena c'è una diagnosi; non dormono qui, tornano a casa.
+
+10. VO (giardino con i vasi, le carrozzine, i cartelloni)
+   "Alcuni arrivano a pochi mesi. E con loro arriva tutta la famiglia."
+   [INT Renee, 0035 166-232] "Un figlio che nasce è un sogno per i genitori. Quando arriva la diagnosi, quel sogno si rompe.
+   ... Parliamo con i genitori, e anche con i fratelli e le sorelle: seguiamo tutta la famiglia."
+
+11. VO (raccordo, breve)
+   "Ho chiesto a tutte e due cosa non funziona."
+   [INT suore, 0016 182-210] "Si può fare meglio. Ma non possiamo decidere da sole: ci sono le regole del governo, e ogni proposta
+   va presentata a loro."
+   [INT Renee, 0035 268-309] "Oggi un lavoro lo dà a chi è più adatto. ... Queste persone vanno accettate come sono,
+   e le barriere, quelle fisiche e quelle nella testa delle persone, vanno tolte."
+
+12. VO (raccordo, breve)
+   "E perché lo fanno."
+   [INT suore, 0016 242-254 e 263-281] "Perché vogliamo che questi bambini si costruiscano un buon futuro. ... Lo facciamo con amore,
+   e i bambini ci rendono felici."
+   [INT suora, 0018 68-84] "Voglio bene ai bambini, per questo sono felice di lavorare qui."
+
+13. C (riflessione, la parte di Manuel)
+   "Io do per scontate tante cose. Una casa dove tornare la sera. Una scuola che mi prende così come sono.
+   Qualcuno che mi aspetta per cena.
+   Qui ho visto persone che passano le giornate a costruire queste cose per altri, una alla volta.
+   E bambini e ragazzi che le vivono come le viviamo noi: vanno a scuola, giocano, crescono."
+
+14. VO (outro: le strade di Fort Kochi, i turisti, la frutta; poi il cortile di Ashwasa vuoto)
+   "Fuori, Fort Kochi è piena di turisti, di negozi, di fotografie.
+   A pochi passi, dietro un cancello, c'è chi lavora perché un bambino abbia una giornata come tutte le altre.
+   Noi siamo fortunati. E spesso non ce ne accorgiamo."
+
+15. VO (ultime immagini: il cancello di Raksha, Renee che saluta)
+   "Una vita normale non è scontata. Qui, a Kochi, c'è chi la costruisce ogni giorno."
+   Poi la chiusura fissa già registrata.
+
+Da registrare: tutti i blocchi (1-15). In camera: 3, 8, 13. Le frasi [INT] sono una traduzione per orientarsi:
+i sottotitoli it/en li fa Copy sul montato, fedeli all'audio.
+Titoli e miniature: si rifanno sul montato (le proposte del 13/11 restano una base; miniatura mai con un bambino di Ashwasa:
+candidata Renee al cancello o in aula, 0035/0042).
