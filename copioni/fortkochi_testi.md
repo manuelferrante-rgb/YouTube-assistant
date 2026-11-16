@@ -402,3 +402,13 @@ File: Drive cartella del video, "Voice Over + Camera/Via Privata Flumendosa.m4a"
 Prese buone (tempi nel file): 1 19.4-27.7; 2 44.9-49.6 + 54.4-61.6; 4 70.1-78.5; 5 80.5-81.9; 6 90.9-93.1; 7 94.2-98.6;
 8 100.1-114.4; 9 116.5-123.0; 10 126.5-135.4; 11 149.6-155.9; 12 162.4-164.0; 13 165.3-166.3; 15 169.2-177.2;
 16 178.5-186.8 + 197.7-201.0; 18 204.8-211.8; 21 214.7-216.8; 23 220.0-230.8; 24 232.4-236.8. Le altre sono prese ripetute ("ripeto").
+
+## CORREZIONI E CAMERA (Manuel 16/11, controllati da Copy)
+- "Voice Over + Camera/Correzioni" (m4a): blocco 1 corretto (presa 10.0-18.3: "...per ragazzi e ragazze con disabilità. Qui imparano
+  un lavoro e la sera tornano a casa."), blocco 8 corretto (36.9-42.1, solo la frase "La legge... in ogni distretto": il resto del blocco
+  dal file VO 100.1-114.4), blocco 4 rifatto (62.4-73.8, dopo "ripeto"). Usare queste al posto delle prese del file VO.
+- "Voice Over + Camera/IMG_9082.MOV" (7:23, 4K 30 fps, fondale con piante, audio pulito): tutti i 6 pezzi in camera, ultime prese buone:
+  3 13.4-15.1 + 45.6-47.9 + 54.1-55.7 + 68.3-71.3 + 114.4-118.5 (SALTARE "E Raksha, una casa per...": Raksha è una scuola, non una
+  casa; la presenta già il VO 1 e la riprende il 15); 14 168.9-180.1 + 185.3-187.7 (manca "per questo i loro volti restano coperti":
+  si lascia, il blur si spiega da sé); 17 195.8-198.8 + 220.0-224.4 + 249.9-258.9 (dalla seconda "pochi secondi"); 19 271.3-282.3;
+  20 304.2-311.3; 22 321.8-328.7 (dal secondo "io do per scontate") + 346.2-348.3 + 353.5-356.7 + 382.8-386.8 + 429.3-433.1 + 437.0-438.8.
