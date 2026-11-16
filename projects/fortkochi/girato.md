@@ -15,8 +15,8 @@ virgolette sono quello che si sente, con l'inglese loro; la traduzione fedele la
    only thing they do it in a different way, in a different style, in a different speed" (`0035` 244-263). È il gancio.
 3. Raksha non ha B-roll con bambini o ragazzi: solo corridoi, scale, bacheca, orto, cortile, cartello, cancello
    (vedi B-roll). I bambini si vedono solo ad Ashwasa. La parte Raksha regge sulla voce dell'educatrice + VO.
-4. Fondatrice di Ashwasa: "Sister Fabiola", nel 2006 ("after 2006", `0016` 31-38), non 2005. Città italiana non chiara
-   nell'audio (17-31: "from the ... side"; forse un nome di città, non si capisce): se la sa Manuel, la dice lui in VO.
+4. Fondatrice di Ashwasa: "Sister Fabiola", nel 2006 ("after 2006", `0016` 31-38), non 2005. Manuel (16/11): la città
+   non si dice, basta "dall'Italia". Nomi delle suore: come si sentono nell'audio, va bene così (Manuel 16/11).
 5. Il parlato di Manuel sul posto è quasi zero (`0030`: sullo scivolo, "bambino per un giorno"). Tutto il resto lo
    registra lui in VO / in camera sul copione di Copy.
 
@@ -123,7 +123,7 @@ virgolette sono quello che si sente, con l'inglese loro; la traduzione fedele la
   due bimbi piccoli che giocano (volti visibili: sfocare o tagliare l'inquadratura sulle mani), `0017` bimbo in braccio
   (sfocare).
 
-### Raksha (poco)
+### Raksha (poco: è tutto il girato di Raksha, Manuel 16/11; cartella controllata, 51 clip in tutto)
 - `0034` cartello "RAKSHA VOCATIONAL TRAINING AND REHABILITATION CENTRE" (formazione al lavoro, utile all'ingresso).
 - `0037` ingresso, scale, bacheca con le attività dei ragazzi, corridoio con una persona in fondo; `0041` cortile interno
   con biciclette e scooter; `0038` orto in vasi (forse dei ragazzi, da chiedere); `0042` cancello blu.
