@@ -171,3 +171,15 @@ Nota Montaggio 4/11 sera: arthunkal v5 e te v8 (richieste di Manuel dai dati del
   barre della voce del logo animate, ding (sintetizzato in build.py) quando si fermano; sotto il logo la distesa delle
   colline 114701 (muta). "il" +3 dB e incroci tra i pezzi; "dietro il tè" a 1.1x (il resto della seconda frase 1.13x).
   File: work/spazio/out/VociVere_munnar_spazio_v7_1080x1920.mp4, mandato in chat. Girato in più: 114701 (cartella te).
+
+## STATO AL 16/11 (chat Montaggio session_01Htfbh1qCXGf2QSETifZu2H, chiusa)
+- Reel "spazio Munnar" v7 APPROVATO (11/11); Manuel lo ha già scaricato dalla chat, niente Drive. Esce dom 29/11 dopo il
+  lungo del tè. Rifarlo: `python3 projects/spazio_munnar/build.py` (girato in work/spazio/raw dalla cartella te
+  1D0vC10Ej5Uo8cns93a8aeiYJi-kU-JMw: 115233, 120307, 120356, 133625, 135012, 135033, 114701; discesa con
+  `tools/space_zoom.py work/spazio/sz --lat 10.0417 --lon 77.0393 --fetch --h0 22000 --start 19,74 --dur 3.3`).
+- Lungo del tè v10 APPROVATO (12/11) e su Drive montati/te `VociVere_te_long_4K.mp4` (6:29.0): discesa dallo spazio dopo
+  la sigla, banner iscriviti a 0:34.5. Capitoli nuovi in `projects/te/capitoli.md`. Da fare per Copy (lo passa Manuel):
+  sottotitoli it/en +3.067 s da 0:24.633, capitoli nella descrizione. Codice: `projects/te/v10_spazio.py`.
+- Regole nuove (in `regole/montaggio_documentario.md`): banner iscriviti 5-10 s dopo la sigla; discesa dallo spazio come
+  nel reel, mai la voce di chi parla in camera sopra immagini dove non c'è.
+- Nessun lavoro di Montaggio in sospeso.
