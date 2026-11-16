@@ -61,17 +61,33 @@ durata, gancio). Punti già fermi da passare alle chat:
 - Una scheda per lungo nell'ultimo terzo verso un altro lungo collegato; mai all'inizio (Insights 10/11).
 - Il reel più forte esce il lunedì su YouTube Shorts (regola 8/11).
 
-## NGO (`fortkochi`, lungo dom 24/1): decisioni di Manuel 16/11 (messaggi dati a Manuel in chat)
-- Apertura SEMPRE sulle scene più forti del girato + voiceover fatto bene (mai Manuel in camera all'inizio). Gancio: la
-  ragazza di Raksha con la sua voce, poi VO 1 sulle immagini forti, poi sigla.
-- Manuel in camera (fondale curato, guarda in camera) solo dopo la sigla o dove deve spiegare qualcosa. Il resto voiceover
-  classico sulle immagini. Niente voiceover sopra le persone che parlano: interviste con la loro voce, sottotitolate.
-- Durata 10-12 min, il tempo in più nella parte centrale. Blocco 2 in camera corto (12-15 s). Suora italiana detta presto.
-- (Manuel, 16/11) I minuti in più vengono da PIÙ PAROLE, non da tratti vuoti: più voiceover sulle immagini e qualche parte
-  in camera in più. In camera poco: 3-4 interventi da 15-25 s al massimo (circa 1,5-2 min su 10-12), mai due di fila.
-  Ogni immagine ha sopra il voiceover, la voce di una persona o un momento vero di 3-5 s; nessun B-roll muto più lungo.
-- (Manuel, 16/11) VOLTI. Ashwasa Bhavan (casa dei bambini): volti dei bambini sfocati quando si vedono. Lì il racconto sta
-  nelle interviste, nel B-roll del posto e dei bambini senza volto (mani, quaderni, scarpe, schiene, giochi) e in Manuel in
-  camera. Meglio scegliere inquadrature senza volto che sfocare: troppe facce sfocate danno un tono "da cronaca". Sfocatura
-  morbida che segue il volto, non a quadretti. Raksha: il B-roll forte con le persone si usa senza sfocare (Manuel).
-  Miniatura e teaser: mai un bambino di Ashwasa; da Raksha, dalla suora/educatrice o dal luogo.
+## NGO (`fortkochi`, lungo dom 24/1): messaggi finali (Manuel, 16/11)
+Il girato non è tantissimo: indicazioni generali, basate sui nostri ultimi lunghi (coir, te) e sui competitor che vanno bene.
+
+### Per Copy
+Da Manuel (16/11). Video NGO (`fortkochi`, Ashwasa Bhavan + Raksha, esce dom 24/1): il girato è su Drive. Scrivimi il
+voiceover partendo dalla scaletta "VIDEO UNICO" di `copioni/fortkochi_testi.md`, adattandola a quello che c'è davvero nel
+girato (`projects/fortkochi/girato.md` di Montaggio). Indicazioni generali:
+- Si apre sulle scene più forti, con un voiceover scritto bene, come nel coir: chi guarda capisce subito di cosa parla il
+  video. Mai io in camera all'inizio.
+- Io in camera (fondale curato) dopo la sigla e dove serve spiegare qualcosa; poche volte e brevi, per non annoiare.
+- Per il resto voiceover classico sulle immagini. Le persone parlano con la loro voce, sottotitolate: niente voiceover sopra
+  di loro mentre parlano.
+- Durata intorno ai 10 minuti se il materiale regge, senza tratti vuoti: il tempo lo danno le parole (voiceover e interviste),
+  non le immagini lasciate scorrere. Se viene più corto, va bene così.
+- Ashwasa: i bambini non si vedono in volto; lì il racconto lo portano le interviste, il voiceover e io in camera.
+- La suora italiana, se confermata, detta presto: è il gancio per il pubblico italiano.
+- Miniatura e teaser mai con un bambino di Ashwasa.
+- Copione numerato come sempre (numero, 2 s di pausa, testo), con scritto per ogni blocco se è in camera o voiceover.
+
+### Per Montaggio
+Da Manuel (16/11). Video NGO (`fortkochi`: Ashwasa Bhavan e Raksha, Fort Kochi; esce dom 24/1, teaser sab 23/1). Il girato è
+su Drive. Primo passo: scaricalo, trascrivilo e scrivi `projects/fortkochi/girato.md` (chi parla, frasi forti, B-roll, scene
+più forti), perché Copy ci scrive sopra il voiceover. Poi il montaggio, come gli ultimi lunghi (coir, te):
+- apertura sulle scene più forti con il voiceover; io in camera solo dopo la sigla e dove spiego qualcosa;
+- voiceover classico sulle immagini, interviste con la loro voce e sottotitolate, niente voiceover sopra chi parla;
+- nessun tratto muto lungo: ogni immagine ha la voce, un'intervista o un suono vero; non riempire per allungare;
+- Ashwasa: i volti dei bambini sfocati quando si vedono; meglio inquadrature senza volto che tante facce sfocate. Raksha: il
+  B-roll con le persone si usa senza sfocare;
+- le regole di sempre: promessa di titolo e miniatura nel primo minuto, capitoli, ultimi 15 s puliti per la schermata finale.
+I bambini sono la vita della casa, mai inquadrati come casi da compatire.
