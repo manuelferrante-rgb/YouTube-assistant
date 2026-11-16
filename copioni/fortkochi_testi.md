@@ -239,16 +239,26 @@ dopo i 18 anni chi vuole si sposa, chi vuole studia; non possono decidere da sol
 Raksha: dal 1985; bambini dai tre mesi, appena c'è una diagnosi; scuola diurna, tornano a casa ogni giorno; li preparano a essere
 indipendenti nel lavoro e nella vita di tutti i giorni; seguono tutta la famiglia, anche fratelli e sorelle; centro di formazione al lavoro.
 
-## COPIONE (numero, 2 s di pausa, testo; voce calma)
+## COPIONE v3 (Manuel 16/11: aggiunte tutte e 4 le opzioni per arrivare a ~10 min: più educatrice, legame con l'Italia,
+## contesto con fonti, un pezzo in camera in più). Sostituisce la v2.
 C = in camera col fondale, VO = voiceover sulle immagini. [INT] = intervista con la sua voce (clip e secondi da girato.md;
-le traduzioni servono a orientarsi, i sottotitoli si fanno fedeli all'audio). Da registrare: 1-19. In camera: 3, 11, 13, 15, 17.
+le traduzioni servono a orientarsi, i sottotitoli si fanno fedeli all'audio). Da registrare: 1-24. In camera: 3, 14, 17, 19, 20, 22.
+AUDIO (Manuel 16/11): tutto deve sentirsi bene. Interviste solo nei pezzi puliti dopo la pulizia voce; se un pezzo resta con eco,
+gracchiato o rumore di fondo, si taglia (Montaggio lo segnala a Copy, che lo sostituisce con una riga di VO). B-roll con audio
+sporco: muto, sotto la musica di Audio o un ambiente pulito dello stesso posto.
+
+Fonti dei blocchi 8 e 16:
+- Juvenile Justice (Care and Protection of Children) Act 2015, sezione 27: un Child Welfare Committee per ogni distretto
+  (https://lawx.in/acts/section/114/1022/8805); Kerala: comitati per tutti i 14 distretti (https://inkl.com/news/cwcs-jjbs-for-all-districts-reconstituted-in-kerala).
+- Censimento della disabilità del Kerala 2015, Kerala Social Security Mission: circa 793.000 persone (7,93,937; la bozza diceva
+  7,91,998), prevalenza intorno al 2,2% (https://socialsecuritymission.gov.in/category/for-differently-abled,
+  https://iipsindia.ac.in/sites/default/files/81_Identification_of_Disability_for_Inclusive_Development.pdf).
 
 APERTURA
 [INT educatrice, 0035 244.2-268.1] lei in quadro qualche secondo, poi 0039 ruotata (il ragazzo che saluta, la sala ai tavoli):
-   "Questi bambini sono come gli altri bambini. Quello che sanno fare gli altri, lo sanno fare anche i nostri.
-   Solo che lo fanno in un altro modo, con un altro stile, a un'altra velocità."
+   "Questi bambini sono come gli altri bambini... Solo che lo fanno in un altro modo, con un altro stile, a un'altra velocità."
 
-1. VO (cartello del centro di formazione, bacheca "Raksha products", cancello blu)
+1. VO (cartello del centro di formazione, bacheca, cancello blu)
    "Lei insegna in una scuola di Kochi, in Kerala, per bambini e ragazzi con disabilità.
    Qui imparano un lavoro. E la sera tornano a casa."
 
@@ -266,89 +276,114 @@ APERTURA
 ASHWASA
 4. VO (ingresso, muri dipinti, scale "Girls' home")
    "Ashwasa Bhavan vuol dire casa del conforto. La gestiscono delle suore.
-   L'ha aperta nel 2006 una suora arrivata dall'Italia, suor Fabiola, che lavorava già in questa zona."
+   L'ha aperta nel 2006 una suora arrivata dall'Italia: suor Fabiola."
    [INT suore, 0016 31.1-38.3, 41.1-45.7, 47.1-50.9] "Suor Fabiola l'ha aperta nel 2006... Sono vent'anni che portiamo avanti
    questa casa... Sono passati da qui più di cento bambini."
 
-5. VO (camerata coi letti a castello, corridoio, panni stesi)
+5. VO (breve, sulla grotta in giardino o sul corridoio)
+   "Ho chiesto perché proprio qui."
+   [INT suore, 0016 80.5-101] la congregazione aveva già una casa qui vicino; suor Fabiola faceva già missione in questa zona.
+
+6. VO (breve, sulla suora che entra nella stanza dei lettini 0012)
+   "Una delle due suore, l'Italia la conosce bene."
+   [INT suora, 0016 55.3-61.9] "Negli ultimi due, tre anni ero in Italia, lavoravo con gli anziani."
+
+7. VO (camerata coi letti a castello, corridoio, panni stesi)
    "Nessun bambino arriva qui per caso. Quando una famiglia non ce la fa, decide un tribunale."
    [INT suore, 0016 105.8-130.3] "Arrivano tramite il tribunale. Quando i genitori hanno delle difficoltà, portano i bambini davanti
    al tribunale e spiegano le ragioni. Ed è il tribunale che manda i bambini qui, perché ci prendiamo cura di loro."
 
-6. VO (cucina: le cuoche, il cibo, il vassoio; refettorio)
+8. VO (contesto, su cortile dall'alto 0029 e corridoio)
+   "Quel tribunale è un comitato per i minori. La legge indiana sulla giustizia minorile, del 2015, ne vuole uno in ogni distretto:
+   in Kerala sono quattordici. Sono loro a decidere dove va un bambino quando la sua famiglia non può tenerlo."
+
+9. VO (cucina: le cuoche, il cibo, il vassoio; refettorio)
    "Una casa così la tengono in piedi le persone. Cuoche, operatrici, suore.
    E la giornata è quella di qualsiasi bambino."
    [INT suora, 0018 14.2-55.0] la giornata: scuola dalle 7:30, colazione, ognuno nella sua scuola, chi torna a pranzo, cena alle sette,
    studio, gioco, a letto.
 
-7. VO (cortile, giochi; poi Manuel sullo scivolo 0030, "bambino per un giorno")
+10. VO (cortile, giochi; poi Manuel sullo scivolo 0030, "bambino per un giorno")
    "Ognuno va in una scuola diversa, insieme agli altri bambini del quartiere. La mattina esce, il pomeriggio torna.
    Una vita normale. Che qui qualcuno prepara ogni giorno."
    [INT coordinatrice, 0019 7.5-12.9, 32.5-43.7, 47.9-56.2] coordinatrice dei progetti, 29 anni, cinque anni da assistente sociale,
    le piace stare con i bambini e giocare con loro.
 
-8. VO (dormitorio, scale, cortile dall'alto)
+11. VO (dormitorio, scale, cortile dall'alto)
    "E a diciotto anni? Chi vuole si sposa. Chi vuole continua a studiare.
    La porta non si chiude il giorno del compleanno."
 
-9. VO (raccordo breve)
+12. VO (raccordo breve)
    "Ho chiesto cosa non funziona."
    [INT suore, 0016 191.4-208.2] "Non possiamo mostrare i bambini. Non possiamo fare tante cose. Non possiamo prendere decisioni da sole:
    se abbiamo una proposta, dobbiamo portarla davanti al governo."
 
-10. VO (raccordo breve)
+13. VO (raccordo breve)
    "E perché lo fanno."
    [INT suore, 0016 242.6-254.4 e 272-280] "È una nostra scelta. Vogliamo che questi bambini si costruiscano un buon futuro.
    ... Naturalmente vogliamo bene ai bambini, e così siamo felici anche noi."
    [INT suora, 0018 63.6-84.7] "Voglio molto bene ai bambini, sono felice di lavorare qui."
 
-11. C (intermezzo, passaggio a Raksha)
+14. C (intermezzo, passaggio a Raksha)
    "Mi aspettavo un posto triste. Ho trovato i panni stesi, i giochi in cortile, il pranzo pronto.
    La storia di ogni bambino resta sua: per questo i loro volti restano coperti.
    A pochi minuti da qui c'è l'altro posto."
 
 RAKSHA
-12. VO (cancello blu che si apre 0042, cartello, ingresso con i festoni, scale)
+15. VO (cancello blu che si apre 0042, cartello, ingresso con i festoni, scale)
    "Raksha esiste dal 1985. È una scuola di giorno: i ragazzi arrivano la mattina, e la sera tornano a casa dalle loro famiglie."
-   [INT educatrice, 0035 43.9-59.0 e 117.1-125.5] "Prepariamo ogni singola persona a diventare indipendente nella vita, nel lavoro
-   e nella vita di tutti i giorni... Tornano a casa dopo le lezioni e ogni giorno tornano a scuola."
+   [INT educatrice, 0035 22.9-27.2, 43.9-59.0, 117.1-125.5] "Il nome è Raksha Society, per la cura dei bambini con bisogni speciali...
+   Prepariamo ogni singola persona a diventare indipendente, nel lavoro e nella vita di tutti i giorni... Tornano a casa dopo
+   le lezioni e ogni giorno tornano a scuola."
 
-13. C (le famiglie e la diagnosi)
-   "Qui alcuni bambini arrivano a tre mesi, appena un medico fa la diagnosi.
-   Ho chiesto cosa succede, in quel momento, a una famiglia."
+16. VO (contesto, su corridoi, scale, cortile interno 0041)
+   "In Kerala le persone con disabilità sono quasi ottocentomila, circa due su cento.
+   Le ha contate lo Stato, casa per casa, nel 2015."
+
+17. C (il pezzo in più: le poche riprese)
+   "A Raksha mi hanno chiesto di fare poche riprese, e va bene così.
+   Ho visto un ragazzo che mi salutava con un secchio in mano, e una sala piena di ragazzi al lavoro.
+   Pochi secondi. Mi sono bastati per capire che qui non si viene a passare il tempo. Si viene a imparare."
+
+18. VO (0039 ruotata: il ragazzo che saluta, la sala ai tavoli; poi la bacheca "Raksha products", l'orto)
+   "Ragazze e ragazzi in divisa, ai tavoli. Sulla bacheca, le foto di quello che fanno. È un centro di formazione al lavoro."
+
+19. C (le famiglie e la diagnosi)
+   "Ho chiesto quando arrivano i bambini. E cosa succede, in quel momento, a una famiglia."
+   [INT educatrice, 0035 88.3-108] "Appena c'è una diagnosi, a sei mesi o a un anno, i medici ce li mandano.
+   Abbiamo bambini dai tre mesi di età."
    [INT educatrice, 0035 164.7-182.8, 189.5-214.3, 225.9-231.5] "Un figlio che nasce è un sogno per i genitori. Quando arriva la
-   diagnosi, quel sogno si rompe, e all'inizio non sanno cosa fare... Noi li ascoltiamo e li guidiamo... Non solo i genitori,
-   anche i fratelli e le sorelle: seguiamo tutta la famiglia."
+   diagnosi, quel sogno si rompe, e all'inizio non sanno cosa fare... Molti all'inizio vengono solo per la fisioterapia; poi,
+   con la nostra valutazione, i genitori capiscono... Li ascoltiamo e li guidiamo. Non solo i genitori, anche i fratelli e le sorelle:
+   seguiamo tutta la famiglia."
 
-14. VO (0039: il ragazzo col secchio che saluta, la sala con ragazze e ragazzi in divisa ai tavoli; bacheca dei prodotti, orto)
-   "Il bambino cresce, e qui impara un lavoro. Al piano di sotto ragazze e ragazzi in divisa lavorano ai tavoli.
-   Sulla bacheca, le foto di quello che fanno."
-
-15. C (il lavoro fuori)
+20. C (il lavoro fuori)
    "Dentro queste mura le cose funzionano. Il difficile comincia fuori.
    Ho chiesto cosa succede quando cercano un lavoro."
    [INT educatrice, 0035 275.8-298.1] "Oggi un lavoro lo dà a chi è più adatto. Ai nostri ragazzi manca qualcosa... anche dopo tutte
    le terapie trovano delle difficoltà. In qualche momento della vita hanno bisogno di qualcuno che li guidi."
 
-16. VO (orto, cortile interno, scale)
+21. VO (orto, cortile interno, scale)
    "Lei non chiede pietà. Usa un'altra parola."
    [INT educatrice, 0035 268.8-275.2 e 298.9-309.5] "Quando entrano nella società, devono essere accettati come sono...
    Quei limiti vanno accettati dalla comunità. E le barriere, quelle fisiche e quelle emotive, vanno tolte."
 
-17. C (riflessione, la parte di Manuel)
+22. C (riflessione, la parte di Manuel)
    "Io do per scontate tante cose. Una casa dove tornare la sera. Una scuola che mi prende così come sono.
    Un lavoro che posso cercare senza che nessuno mi guardi in modo diverso.
    Qui ho visto persone che passano le giornate a costruire queste cose per altri, una alla volta.
    E bambini e ragazzi che le vivono come le viviamo noi: vanno a scuola, lavorano, crescono."
 
-18. VO (outro: strade di Fort Kochi e Mattancherry, turisti, frutta; poi il cortile di Ashwasa vuoto)
+23. VO (outro: strade di Fort Kochi e Mattancherry, turisti, frutta; poi il cortile di Ashwasa vuoto)
    "Fuori, Kochi è piena di turisti, di negozi, di fotografie.
    A pochi passi, dietro un cancello, c'è chi lavora perché un bambino abbia una giornata come tutte le altre.
    Noi siamo fortunati. E spesso non ce ne accorgiamo."
 
-19. VO (ultime immagini: il cancello blu di Raksha, l'educatrice)
+24. VO (ultime immagini: il cancello blu di Raksha, l'educatrice)
    "Una vita normale non è scontata. Qui, a Kochi, c'è chi la costruisce ogni giorno."
    Poi la chiusura fissa già registrata.
+
+Durata stimata v3: ~10 min (interviste ~6 min, VO e camera ~4,5 min).
 
 ## TITOLO E MINIATURA (proposta, si chiudono sul montato; la promessa è la frase dell'apertura)
 Titoli: 1) COME TUTTI GLI ALTRI, A UN'ALTRA VELOCITÀ: due posti a Kochi, Kerala 🇮🇳 (consigliato)

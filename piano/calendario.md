@@ -440,3 +440,5 @@ Nota da Copy, 16/11 (Manuel): fortkochi (Ashwasa + Raksha) esce dom 24/1. Voiceo
 Nota da Copy, 16/11 (Manuel): fortkochi, i bambini di Ashwasa si vedono nel lungo con il volto sfocato (non più esclusi), così si usa il B-roll; mai in miniatura o teaser. Blocco 8 del copione aggiornato ("i loro volti restano coperti").
 
 Nota da Copy, 16/11: fortkochi, copione v2 sul girato.md di Montaggio (19 blocchi, in camera 3, 11, 13, 15, 17; Raksha spezzata da 2 pezzi in camera e VO; apertura con l'educatrice) in `copioni/fortkochi_testi.md`, sezione "VOICEOVER SUL GIRATO v2".
+
+Nota da Copy, 16/11 (Manuel): fortkochi, copione v3 (24 blocchi, in camera 3, 14, 17, 19, 20, 22; ~10 min) con legame con l'Italia, più intervista dell'educatrice, due VO di contesto con fonti e un pezzo in camera in più. Audio: tutto pulito, i pezzi d'intervista con eco o gracchiati si tagliano, B-roll con audio sporco muto.
