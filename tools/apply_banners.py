@@ -29,11 +29,13 @@ def main():
     ap.add_argument("--iscriviti", type=float); ap.add_argument("--like", type=float)
     ap.add_argument("--instagram", type=float)
     a = ap.parse_args()
-    info = json.loads(run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height,nb_frames",
+    info = json.loads(run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=width,height,nb_frames,r_frame_rate",
                            "-of", "json", a.inp]))["streams"][0]
     W, N = info["width"], int(info["nb_frames"])
+    fn, fd = map(int, info["r_frame_rate"].split("/"))
+    F = fn / fd                          # cadenza del lungo (30 o 23.976, fortkochi 16/11)
     bdir = f"{ROOT}/work/banner"
-    keys = [int(round(float(l.split(",")[0]) * 30)) for l in run(
+    keys = [int(round(float(l.split(",")[0]) * F)) for l in run(
         ["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "packet=pts_time,flags", "-of", "csv=p=0", a.inp]
     ).split() if ",K" in l]
     jobs = sorted([(t, k) for k, t in (("iscriviti", a.iscriviti), ("like", a.like), ("instagram", a.instagram)) if t is not None])
@@ -45,24 +47,24 @@ def main():
     os.makedirs(work, exist_ok=True)
     segs, cur = [], 0
     for i, (t, k) in enumerate(jobs):
-        f0, f1 = int(round(t * 30)), int(round((t + DUR[k]) * 30))
+        f0, f1 = int(round(t * F)), int(round((t + DUR[k]) * F))
         k0 = max(x for x in keys if x <= f0)
         k1 = min([x for x in keys if x >= f1 + 1] + [N])
         if k0 > cur:
             p = f"{work}/c{i}.mp4"
-            run(["ffmpeg", "-v", "error", "-y", "-ss", f"{cur / 30:.6f}", "-i", a.inp, "-map", "0:v", "-c", "copy",
+            run(["ffmpeg", "-v", "error", "-y", "-ss", f"{cur / F:.6f}", "-i", a.inp, "-map", "0:v", "-c", "copy",
                  "-frames:v", str(k0 - cur), p])
             segs.append(p)
         p = f"{work}/b{i}.mp4"
-        off = (f0 - k0) / 30
-        run(["ffmpeg", "-v", "error", "-y", "-ss", f"{k0 / 30:.6f}", "-i", a.inp, "-i", f"{bdir}/banner_{k}_{W}.mov",
+        off = (f0 - k0) / F
+        run(["ffmpeg", "-v", "error", "-y", "-ss", f"{k0 / F:.6f}", "-i", a.inp, "-i", f"{bdir}/banner_{k}_{W}.mov",
              "-filter_complex", f"[1:v]setpts=PTS-STARTPTS+{off:.4f}/TB[o];[0:v][o]overlay=(W-w)/2:H-h-H*0.045:eof_action=pass,"
              f"format=yuv420p[v]", "-map", "[v]", "-frames:v", str(k1 - k0)] + X264 + [p])
         segs.append(p)
         cur = k1
     if cur < N:
         p = f"{work}/c_end.mp4"
-        run(["ffmpeg", "-v", "error", "-y", "-ss", f"{cur / 30:.6f}", "-i", a.inp, "-map", "0:v", "-c", "copy", p])
+        run(["ffmpeg", "-v", "error", "-y", "-ss", f"{cur / F:.6f}", "-i", a.inp, "-map", "0:v", "-c", "copy", p])
         segs.append(p)
     with open(f"{work}/list.txt", "w") as f:
         f.writelines(f"file '{os.path.abspath(s)}'\n" for s in segs)
