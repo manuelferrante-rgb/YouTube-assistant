@@ -230,7 +230,8 @@ in italiano, mai VO sopra di loro mentre parlano. Promessa di titolo e miniatura
 - Bambini di Ashwasa: si vedono, con il volto sfocato, così si usa il B-roll. Mai in miniatura o teaser. Persone di Raksha senza sfocatura.
 - Suor Fabiola: solo "italiana", la città non si dice. Anno 2006 (detto dalla suora). "Ashwasa Bhavan" = "casa del conforto" va bene.
 - Nomi delle persone: non si dicono nel VO (l'educatrice di Raksha, la coordinatrice e le suore hanno nomi non chiari nell'audio).
-- Da non usare: 0035 30-33 ("savior"), 0035 310-313 ("people like you"), 0036, 0040 (targa donatori).
+- Da non usare: 0035 30-33 ("savior"), 0036, 0040 (targa donatori). 0035 310.8-312.8 "It's important, people like you in the society"
+  lo dice MANUEL all'educatrice (Manuel 16/11), non lei a lui: si può usare in coda al blocco 21, solo se l'audio è pulito.
 
 ## Fatti (tutti dal girato)
 Ashwasa: aperta nel 2006 da suor Fabiola, italiana, che lavorava già in zona; vent'anni; più di cento bambini passati da qui; i bambini li
@@ -367,6 +368,8 @@ RAKSHA
    "Lei non chiede pietà. Usa un'altra parola."
    [INT educatrice, 0035 268.8-275.2 e 298.9-309.5] "Quando entrano nella società, devono essere accettati come sono...
    Quei limiti vanno accettati dalla comunità. E le barriere, quelle fisiche e quelle emotive, vanno tolte."
+   [se l'audio è pulito: Manuel, 0035 310.8-312.8, "It's important, people like you in the society": "È importante che nella
+   società ci siano persone come te." Poi lei che ringrazia, e si chiude l'intervista.]
 
 22. C (riflessione, la parte di Manuel)
    "Io do per scontate tante cose. Una casa dove tornare la sera. Una scuola che mi prende così come sono.
