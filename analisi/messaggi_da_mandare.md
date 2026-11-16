@@ -70,3 +70,8 @@ durata, gancio). Punti già fermi da passare alle chat:
 - (Manuel, 16/11) I minuti in più vengono da PIÙ PAROLE, non da tratti vuoti: più voiceover sulle immagini e qualche parte
   in camera in più. In camera poco: 3-4 interventi da 15-25 s al massimo (circa 1,5-2 min su 10-12), mai due di fila.
   Ogni immagine ha sopra il voiceover, la voce di una persona o un momento vero di 3-5 s; nessun B-roll muto più lungo.
+- (Manuel, 16/11) VOLTI. Ashwasa Bhavan (casa dei bambini): volti dei bambini sfocati quando si vedono. Lì il racconto sta
+  nelle interviste, nel B-roll del posto e dei bambini senza volto (mani, quaderni, scarpe, schiene, giochi) e in Manuel in
+  camera. Meglio scegliere inquadrature senza volto che sfocare: troppe facce sfocate danno un tono "da cronaca". Sfocatura
+  morbida che segue il volto, non a quadretti. Raksha: il B-roll forte con le persone si usa senza sfocare (Manuel).
+  Miniatura e teaser: mai un bambino di Ashwasa; da Raksha, dalla suora/educatrice o dal luogo.
