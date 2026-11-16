@@ -18,7 +18,11 @@ import json, os, subprocess, sys
 import numpy as np
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-FPS = 30
+# cadenza del montato: 30 di default; DOC_FPS="24000/1001" per girato a 23.976 (fortkochi, Manuel 16/11: fluidità,
+# niente conversioni). SPF = campioni audio a 48 kHz per fotogramma (1600 a 30 fps, 2002 a 23.976: interi esatti).
+FPS_STR = os.environ.get("DOC_FPS", "30")
+FPS = eval(FPS_STR)
+SPF = round(48000 / FPS)
 GRADE_DEFAULT = "eq=contrast=1.03:saturation=1.05"
 # afftdn ritarda l'audio di 1200 campioni a 48 kHz (25 ms, misurato il 27/10): si tolgono, così il labiale resta esatto
 AFFTDN_FIX = "atrim=start_sample=1200,asetpts=PTS-STARTPTS"
@@ -169,7 +173,7 @@ class Timeline:
         if s["grade"] and s["grade"] != "null":
             f.append(s["grade"])
         f.append(f"setpts=(PTS-STARTPTS)/{s['speed']}")
-        f.append(f"fps={FPS},tpad=stop_mode=clone:stop_duration=2,trim=end_frame={s['n']},setpts=PTS-STARTPTS")
+        f.append(f"fps={FPS_STR},tpad=stop_mode=clone:stop_duration=2,trim=end_frame={s['n']},setpts=PTS-STARTPTS")
         f += self._fx(s)
         f.append("format=yuv420p")
         return ",".join(f)
@@ -308,7 +312,7 @@ class Timeline:
             for p, s in zip(parts, self.shots):
                 pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", p, "-map", "0:a:0", "-f", "s16le", "-ac", "2",
                                       "-ar", "48000", "-"], capture_output=True).stdout
-                need = s["n"] * 1600 * 4
+                need = s["n"] * SPF * 4
                 pcm = pcm[:need] + b"\0" * max(0, need - len(pcm))
                 wf.writeframes(pcm)
         if getattr(self, "drop_shots", False) and not direct:   # disco stretto: dopo cut.mkv e nat.wav non servono
@@ -450,7 +454,7 @@ class Timeline:
 
         ass = getattr(self, "ass_override", None) or ass   # sottotitoli/titoli animati preparati a parte
         vin = ["-f", "concat", "-safe", "0", "-i", lst] if direct else ["-i", cut]
-        run(["ffmpeg", "-v", "error", "-y", *vin, "-i", mix, "-vf", f"setpts=N/({FPS}*TB),ass={ass}:fontsdir={ROOT}/models", "-r", str(FPS),
+        run(["ffmpeg", "-v", "error", "-y", *vin, "-i", mix, "-vf", f"setpts=N/(({FPS_STR})*TB),ass={ass}:fontsdir={ROOT}/models", "-r", FPS_STR,
              "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-crf", str(crf), *getattr(self, "final_opts", []), "-preset", preset, "-profile:v", "high",
              "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", "-t", f"{total:.3f}", out])
         self.check(out)

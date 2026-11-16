@@ -176,3 +176,15 @@ visibile, nessuna sfocatura. Adulti (suore, operatrici, cuoche) sempre nitidi.
 
 ### Manca
 Le registrazioni di Manuel dei blocchi 1-24 (Copy: "[CARTELLA]"). Il montaggio parte quando sono su Drive.
+
+## Montaggio v1 (16/11): scelte e pezzi tolti (`python3 projects/fortkochi/build.py long [--preview]`)
+- Montato a 23.976 fps come il girato (`DOC_FPS` in `tools/doc_render.py`, Manuel 16/11: fluidità); camera 30 fps convertita.
+- Musica originale fatta da Montaggio (`projects/fortkochi/musica.py`, Manuel 16/11: Audio per ora non si usa): solo sotto i VO
+  dell'apertura, della giornata, di Raksha e del finale, ~23 dB sotto la voce; mai sotto interviste o camera.
+- B-roll muti; interviste con voce RNNoise e fondo a -60 dB chiuso nelle pause; camera con tagli tra le prese a zoom alternato.
+- 0039 ruotata: solo la sala (7.4-11.6), niente saluto (Manuel 16/11).
+- Pezzi d'intervista tolti perché l'audio non si capisce o non è certo: 0016 93-96 (è Manuel che ripete, non la suora);
+  0018 18.6-21 (ora della sveglia: "five thirty" o "six thirty", non chiaro) e 43.5-45 ("no meals there", ambiguo);
+  0018 68-79 (risposta confusa, resta solo "sono felice di lavorare qui"); 0019 50-56 ("con i bambini... giocare", poco chiaro).
+- 0016 (suore): si sente, ma con eco e accento forte; i sottotitoli sono scritti a mano sui tempi delle parole.
+- Blocco 3: aggiunto "Ashwasa Bhavan," (61.4) prima di "una casa per bambini...", che senza il nome restava a metà.
