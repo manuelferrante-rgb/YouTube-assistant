@@ -13,8 +13,11 @@ virgolette sono quello che si sente, con l'inglese loro; la traduzione fedele la
    forte del girato).
 2. La frase sulla vita normale c'è, ma la dice l'educatrice di Raksha: "these children are like the other children...
    only thing they do it in a different way, in a different style, in a different speed" (`0035` 244-263). È il gancio.
-3. Raksha non ha B-roll con bambini o ragazzi: solo corridoi, scale, bacheca, orto, cortile, cartello, cancello
-   (vedi B-roll). I bambini si vedono solo ad Ashwasa. La parte Raksha regge sulla voce dell'educatrice + VO.
+3. Raksha ha poco girato (l'educatrice voleva poche riprese; quello che c'è va usato tutto, Manuel 16/11): i ragazzi si
+   vedono solo nella camminata `0039` (girata di 180°): il ragazzo che saluta col secchio e la sala dove lavorano, con
+   ragazze e ragazzi in divisa ai tavoli (circa 6 s in tutto). Poi bacheca "Raksha products" con le foto dei lavori
+   (`0037` 6.8-10), corridoi, scale, orto, cortile, cartello, cancello. L'intervista (5 min) è lunga: Manuel la spezza
+   con parti sue in camera e VO (Manuel 16/11).
 4. Fondatrice di Ashwasa: "Sister Fabiola", nel 2006 ("after 2006", `0016` 31-38), non 2005. Manuel (16/11): la città
    non si dice, basta "dall'Italia". Nomi delle suore: come si sentono nell'audio, va bene così (Manuel 16/11).
 5. Il parlato di Manuel sul posto è quasi zero (`0030`: sullo scivolo, "bambino per un giorno"). Tutto il resto lo
@@ -125,9 +128,14 @@ virgolette sono quello che si sente, con l'inglese loro; la traduzione fedele la
 
 ### Raksha (poco: è tutto il girato di Raksha, Manuel 16/11; cartella controllata, 51 clip in tutto)
 - `0034` cartello "RAKSHA VOCATIONAL TRAINING AND REHABILITATION CENTRE" (formazione al lavoro, utile all'ingresso).
-- `0037` ingresso, scale, bacheca con le attività dei ragazzi, corridoio con una persona in fondo; `0041` cortile interno
+- `0037` ingresso con festoni (0-2), scale (3-6), bacheca "RAKSHA PRODUCTS" con foto dei lavori dei ragazzi e cartellone
+  "World No Tobacco Day" disegnato (6.8-10), aula con l'educatrice che esce verso la camera (13-17); `0041` cortile interno
   con biciclette e scooter; `0038` orto in vasi (forse dei ragazzi, da chiedere); `0042` cancello blu.
-- `0039` camminata con camera capovolta: in parte recuperabile ruotata di 180° (corridoio), da provare.
+- `0039` (12.4 s, girata al contrario: si usa RUOTATA DI 180°, Manuel 16/11: "è molto forte", va usata). Camminata
+  dentro Raksha dietro l'educatrice: 1.8-2.6 cortile con un'operatrice al lavandino e un ragazzo con la camicia a quadri
+  gialla; 2.9-4.2 il RAGAZZO con un secchio si gira verso la camera e saluta Manuel; 4.4-7.0 passaggio mosso (tagliare);
+  7.4-11.6 la SALA dove lavorano: ragazze e ragazzi in divisa azzurra seduti ai tavoli, un ragazzo in piedi, scale in
+  fondo; 12.0-12.4 ingresso con la scala. Persone di Raksha: senza sfocare (Manuel 16/11).
 - `0040` targa dei donatori (italiani e spagnoli): NON usare (niente targhe di donazioni in primo piano).
 
 ## SCENE PIÙ FORTI (proposta per l'apertura e per Copy)
