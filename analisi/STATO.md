@@ -138,3 +138,8 @@ aspetta il suo via. Alle domande delle altre chat si risponde solo se Manuel le 
 Da ora Insights si concentra su YouTube: lunghi fatti bene e Shorts collegati. IG riceve lo stesso materiale e qualche storia,
 senza analisi dedicata salvo richiesta. Arthunkal a 48 ore in `analisi/arthunkal.md` (andato male: 214 impressioni, CTR 1,4%).
 Ogni registrazione di Manuel inizia o finisce con lo zoom sulla copertina del video (così si capisce a quale si riferisce).
+
+## Metodo (Manuel, 17/11)
+Dopo ogni controllo dei dati (48 ore e 7 giorni) si sistemano subito i verticali e i lunghi dei video successivi: Insights dice
+cosa cambiare, Manuel decide, le chat correggono. Prossimo: arthunkal rifatto appena Montaggio finisce il lavoro in corso
+(`analisi/arthunkal_rifacimento.md`); controllo a 7 giorni il 22/11.
