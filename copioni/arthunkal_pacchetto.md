@@ -152,3 +152,37 @@ B. 13 KM PREGANDO, SENZA MAI FERMARSI: una notte con i pellegrini del Kerala �
    EN: 13 KM OF PRAYER WITHOUT STOPPING: a night with Kerala's pilgrims 🇮🇳
 Miniature: la A2 (anziano col telo bianco) oggi dice "A PIEDI, DI NOTTE / 13 KM PREGANDO" e ripeterebbe il titolo. Con il titolo A
 la scritta diventa "PREGANDO FINO ALL'ALBA" (o "DA MEZZANOTTE"); con il B "A PIEDI, DI NOTTE". Si rigenerano con miniature_v3.py se Manuel cambia.
+
+## RIFACIMENTO (Manuel 17/11, `analisi/arthunkal_rifacimento.md`; modello Progetto Happiness). SOSTITUISCE titolo, miniature e verticali sopra.
+
+### Titolo del lungo (proposte; Manuel sceglie)
+1. 13 KM A PIEDI, DI NOTTE, PER UNA STATUA ARRIVATA DA MILANO: Kerala, India 🇮🇳 (consigliato: folla, numero e gancio italiano)
+   EN: 13 KM ON FOOT, AT NIGHT, FOR A STATUE FROM MILAN: Kerala, India 🇮🇳
+2. MIGLIAIA DI PERSONE A PIEDI TUTTA LA NOTTE: 13 km sulla costa del Kerala, India 🇮🇳
+   EN: THOUSANDS ON FOOT ALL NIGHT: 13 km along the coast of Kerala, India 🇮🇳
+3. UNA STATUA DI MILANO IN INDIA: 13 km a piedi, di notte, per arrivarci 🇮🇳
+   EN: A STATUE FROM MILAN IN INDIA: 13 km on foot, at night, to reach it 🇮🇳
+4. 400.000 PERSONE IN CAMMINO DI NOTTE: il pellegrinaggio di Arthunkal, Kerala 🇮🇳
+   (solo se Manuel accetta il numero: lo dice l'organizzatore, non c'è una fonte che lo verifichi)
+
+### Miniature (Drive montati/arthunkal/miniatura/v4_rifacimento, repo copioni/arthunkal_miniature/v4/, generatore v4.py; it + en)
+1. M1_manuel_kerala: Manuel al centro davanti alla folla, la basilica dietro, "KERALA" enorme (stile "MUMBAI"). Principale.
+2. M2_notte: la folla di notte che cammina, "DA MEZZANOTTE ALL'ALBA".
+3. M3_milano: la basilica con le mani alzate della folla, "DA MILANO, NEL 1647".
+Le scritte non ripetono il titolo 1. ATTENZIONE: nel girato non ho trovato la statua in quadro (si vede la basilica). Se nel
+lungo la statua non si vede, la M3 promette una cosa che non c'è: Manuel controlla se l'ha filmata.
+
+### Frase della sigla (da registrare una volta, vale per tutti i lunghi)
+1. "Sono Manuel. Viaggio per dare voce a chi ne ha più bisogno. Questo è Voci Vere."
+2. "Sono Manuel. Vado dove le storie non arrivano, per dare voce a chi ne ha più bisogno. Benvenuti in Voci Vere."
+3. (Copy) "Sono Manuel. Viaggio lontano dalle cartoline, dove le persone raccontano la loro vita con la loro voce. Questo è Voci Vere."
+Consigliata la 1: corta, chiara, sta nei 4-5 s della sigla e riprende il payoff del canale.
+
+### Verticali nuovi (Manuel in camera che fa vedere dove è; una sola scritta, in alto, all'inizio)
+| Verticale | Titolo dello Short | Unica scritta | Primo secondo |
+|---|---|---|---|
+| Teaser | In India c'è una statua arrivata da Milano nel 1647 🇮🇳 | MILANO, 1647 | la basilica con la folla (la statua se c'è), Manuel in camera |
+| 13 km | 13 km a piedi, di notte, pregando 🇮🇳 | 13 KM A PIEDI | la folla di notte col rosario |
+| Cibo gratis | Cibo e acqua gratis per chi cammina 13 km 🇮🇳 | CIBO GRATIS | le mani che passano cibo o acqua |
+| La pellegrina | 13 km di notte: «Lì succedono tanti miracoli» 🇮🇳 | «TANTI MIRACOLI» | lei che cammina tra la folla |
+Didascalie e descrizioni: quando Montaggio ha i montati. Pacchetto del lungo (descrizione con link, capitoli, sottotitoli): sui tempi del nuovo montato.
