@@ -469,3 +469,7 @@ I titoli invariati sono già nei pacchetti e nei file TESTI su Drive (te, arthun
 Nota da Insights, 17/11 (Manuel): ARTHUNKAL SI RIFÀ DA ZERO (lungo + 4 verticali nuovi, nuovo caricamento): piano in
 `analisi/arthunkal_rifacimento.md`. Da ora NON escono su YouTube i vecchi V4 (19/11) e V3 (23/11) né il carosello di arthunkal;
 il vecchio lungo diventa privato quando esce il nuovo. Data del nuovo lungo e dei verticali: la decide Pianificazione con Manuel.
+
+Nota da Insights, 17/11 sera (Manuel): Montaggio NON fa per ora le istruzioni di Insights del 17/11 (primi secondi dei verticali
+e rifacimento di arthunkal): sta lavorando ad altro, decide Manuel quando riprenderle. Il piano resta in
+`analisi/arthunkal_rifacimento.md`. Le indicazioni da Progetto Happiness arriveranno dopo le registrazioni di Manuel.
