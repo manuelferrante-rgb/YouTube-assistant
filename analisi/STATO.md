@@ -143,3 +143,7 @@ Ogni registrazione di Manuel inizia o finisce con lo zoom sulla copertina del vi
 Dopo ogni controllo dei dati (48 ore e 7 giorni) si sistemano subito i verticali e i lunghi dei video successivi: Insights dice
 cosa cambiare, Manuel decide, le chat correggono. Prossimo: arthunkal rifatto appena Montaggio finisce il lavoro in corso
 (`analisi/arthunkal_rifacimento.md`); controllo a 7 giorni il 22/11.
+Prassi (Manuel, 17/11 sera): Montaggio finisce il lavoro in corso, poi si rifà arthunkal (lungo + verticali) e si pubblica
+subito (forse mer 18 o gio 19/11, magari di sera per provare un orario nuovo). Appena ci sono dati del nuovo, Insights li
+analizza e si risistemano i video successivi già montati (te, coir, extra) con le regole nuove. Ogni volta così: pubblico,
+dati, correzioni sui successivi. Il promemoria del 22/11 è stato aggiornato per chiedere i dati del nuovo arthunkal.
