@@ -58,3 +58,6 @@ Video lunghi ultimi 28 giorni: mercato 307, arthunkal 15, "Voci Vere primo video
 - Te (29/11): titolo e miniatura con un fatto concreto e un numero (Copy ha già "AFFITTATE PER 3.000 RUPIE L'ANNO" con T1).
 - Shorts: il reel del lunedì deve essere un fatto concreto e visivo con un numero, come il pesce; teaser idem, mai un'atmosfera.
 - V2 statua: Manuel controlla in Studio > Contenuti se ci sono limitazioni.
+- Nota 17/11 (Manuel): il V2 statua NON ha limitazioni in Studio. Ipotesi: i primi pochi spettatori l'hanno scorso via
+  (0:04 di media) e YouTube ha fermato la distribuzione; oppure partenza ritardata, capita agli Shorts. Si riguarda a 7 giorni
+  (22/11). Non ricaricarlo: un doppione può essere trattato come contenuto ripetitivo.
