@@ -23,9 +23,8 @@ trascritta con parakeet. Manuel: "mi è piaciuto molto: intro, durata, editing, 
 
 ## Cosa prendiamo
 1. Apertura di 20-40 s di sole immagini forti del posto con musica, poi il nome del posto grande. (Già vicino al nostro intro.)
-2. Una sigla con la missione detta da Manuel, sempre uguale, con una domanda che torna in ogni video. Proposta da decidere con
-   Manuel: "Sono Manuel. Viaggio nei paesi dove le storie non arrivano, per dare voce a chi ne ha più bisogno. A ogni persona
-   chiedo [una domanda fissa]. Questo è Voci Vere."
+2. Una sigla con la missione detta da Manuel, sempre uguale (Manuel 17/11: NIENTE domanda fissa; la missione è "dare voce a
+   chi ne ha più bisogno", il payoff del canale). Testo da scegliere con Manuel (proposte in chat del 17/11).
 3. Entro 1:30 Manuel in camera, dentro il posto, con 2-3 fatti concreti con numeri e "oggi lo scopriamo insieme".
 4. Manuel guida in camera mentre cammina ed entra nei posti; una cosa nuova ogni 1-2 minuti; il voiceover solo dove serve.
 5. Un'intervista lunga e vera verso la fine come cuore del video; chiusura in voiceover che risponde alla domanda della serie.
