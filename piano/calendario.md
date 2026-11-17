@@ -465,3 +465,7 @@ Kallu: "alcolica in poche ore" da NPR (https://www.npr.org/sections/thesalt/2018
 Comunismo: 1957 primo governo comunista eletto in India (fatti verificati in `projects/comunismo/brief.md`); alternativa se Manuel vuole la
 notizia: "L'ultimo governo comunista dell'India ha perso: 35 seggi su 140 🇮🇳", a schermo "35 SEGGI SU 140".
 I titoli invariati sono già nei pacchetti e nei file TESTI su Drive (te, arthunkal); comunismo e kallu non avevano un pacchetto Copy.
+
+Nota da Insights, 17/11 (Manuel): ARTHUNKAL SI RIFÀ DA ZERO (lungo + 4 verticali nuovi, nuovo caricamento): piano in
+`analisi/arthunkal_rifacimento.md`. Da ora NON escono su YouTube i vecchi V4 (19/11) e V3 (23/11) né il carosello di arthunkal;
+il vecchio lungo diventa privato quando esce il nuovo. Data del nuovo lungo e dei verticali: la decide Pianificazione con Manuel.
