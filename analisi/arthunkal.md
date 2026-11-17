@@ -49,8 +49,7 @@ Video lunghi ultimi 28 giorni: mercato 307, arthunkal 15, "Voci Vere primo video
    La prova della frase di rimando al lungo per ora non si può misurare.
 5. Il pubblico che YouTube ci porta sugli Shorts sono italiani sopra i 45 anni. L'unico Short che ha funzionato davvero resta
    il fatto concreto e visivo (pesce da 50 chili all'asta).
-6. Ipotesi da tenere d'occhio: sul canale ci sono anche video di palestra. Con un canale così piccolo, argomenti diversi
-   confondono YouTube su a chi mostrare i video. Decide Manuel.
+6. (Corretto 17/11) I due video di palestra nella lista NON sono pubblici (Manuel): non influiscono. Ipotesi scartata.
 
 ### Cosa fare (da confermare a 7 giorni, 22/11)
 - Arthunkal: lasciare finire il test delle miniature. Se a 7 giorni il CTR resta sotto il 2%, cambiare titolo con un fatto
