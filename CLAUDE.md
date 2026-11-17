@@ -9,12 +9,8 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 
 ## Limiti (sempre)
 - Sofferenza e clickbait (Manuel, 5/11): poco sfruttamento per il clickbait, ma non troppo. Mai al centro del racconto.
-- Parole forti (Manuel, 17/11, dal modello Progetto Happiness): per farsi conoscere servono, ma "con modo". Forti sul posto,
-  sui numeri e sulla situazione, o quando le dicono le persone del posto (soprannomi, frasi loro); mai Manuel che paragona le
-  persone ad animali o macchine o dice che la loro vita non vale. Regola ed esempi in `regole/copy.md` (nota Insights 17/11).
-- Ogni contenuto contestualizzato (paese, regione, situazione), mai generalizzazioni.
-- Framing "raccontare", mai "salvare" o "aiutare dall'alto". Niente tono da salvatore bianco.
-- Nel copy: "paesi a basso/medio reddito" o il nome del paese, mai "sottosviluppati" (anche se Manuel lo dice a voce).
+- Parole forti (Manuel, 17/11): per farsi conoscere servono e si possono usare, anche paragoni duri come quelli di Progetto
+  Happiness ("formicaio"). Decide Manuel caso per caso. L'unica attenzione: dopo la frase forte le persone parlano con la loro voce.
 - Storie di persone solo con il loro consenso. Se Manuel sta registrando, ce l'ha: non ricordarglielo mai
   (Manuel, 5/11). Nel girato che manda il consenso c'è sempre, non chiederlo.
 - Salari e dati (Manuel, 5/11): vanno bene dalle parole degli intervistati. Nel voiceover e nei testi non serve attribuirli

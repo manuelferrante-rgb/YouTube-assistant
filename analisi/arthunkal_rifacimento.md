@@ -32,3 +32,11 @@ Libertà su durata, velocità, musica e scritte. L'unica cosa che i dati chiedon
 ## Cosa si ferma
 I vecchi V4 (19/11) e V3 (23/11) di arthunkal e il carosello non escono su YouTube: il materiale va ai verticali nuovi.
 Il vecchio lungo diventa privato il giorno in cui esce quello nuovo. La data la decide Pianificazione con Manuel.
+
+## Aggiornamento di Manuel (17/11 sera)
+- Si fa appena Montaggio finisce il lavoro in corso: lungo + verticali, fatti bene.
+- I verticali usciti finora erano troppo statici e con troppe scritte. Nei nuovi c'è MANUEL IN CAMERA che fa vedere dove è e
+  cosa sta succedendo (come Progetto Happiness), poche scritte (solo il fatto in alto all'inizio), più movimento.
+- Si possono velocizzare: tagliare le pause, le scene lente e i tratti in cui Manuel parla piano; velocità più alta dove serve.
+- Modello per il lungo: `analisi/competitor/progetto_happiness_mumbai.md` (apertura di sole immagini e nome del posto, sigla con la
+  missione, Manuel in camera con i numeri entro 1:30, una cosa nuova ogni 1-2 minuti, intervista vera come cuore, chiusura in VO).

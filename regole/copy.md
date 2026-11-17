@@ -157,12 +157,7 @@ Nota da Insights, 17/11 (CONFERMATO su due lunghi, mercato e arthunkal, `analisi
 - Gli Shorts non portano al lungo (2 visualizzazioni su 1.200 per arthunkal, come per il mercato): servono a farci conoscere.
   Il lungo deve reggersi da solo con titolo e miniatura.
 
-Nota da Insights, 17/11 (decisione di Manuel, modello Progetto Happiness "Il formicaio di Mumbai", `analisi/competitor/
-progetto_happiness_mumbai.md`): PAROLE FORTI, MA CON MODO. Per farsi conoscere servono titoli, ganci e frasi forti. La linea:
-- SÌ, forti sul posto, sulla scala e sui numeri: "la baraccopoli più grande dell'Asia", "13 km a piedi di notte", "4 euro al
-  giorno per i tappeti che compriamo noi", "un pesce da 50 chili all'asta".
-- SÌ, i soprannomi e le frasi dure quando li dicono le persone del posto, attribuiti ("qui lo chiamano il formicaio").
-- SÌ, il contrasto con la nostra vita ("una bottiglia che noi buttiamo, qui diventa un lavoro").
-- NO, Manuel che paragona le persone ad animali o macchine ("automi", "formiche") con parole sue.
-- NO, frasi che dicono che la loro vita non vale o che devono "uscirne" (il "biglietto di uscita da questa realtà").
-- Dopo la frase forte, le persone parlano con la loro voce: diventano protagoniste, non scenario.
+Nota da Insights, 17/11 (decisione di Manuel, modello Progetto Happiness, `analisi/competitor/progetto_happiness_mumbai.md`):
+PAROLE FORTI SÌ. Titoli, ganci e frasi forti servono per farsi conoscere e si possono usare, anche paragoni duri ("formicaio")
+e il contrasto con la nostra vita. Manuel ha tolto i divieti più stretti (troppo limitanti). Decide lui caso per caso; dopo la
+frase forte, le persone parlano con la loro voce.

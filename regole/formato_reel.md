@@ -94,3 +94,8 @@ Nota da Insights, 17/11 (CONFERMATO su mercato e arthunkal, `analisi/arthunkal.m
 titolo (l'oggetto, il gesto, il numero a schermo), non una persona qualsiasi o un'atmosfera. Il pesce da 50 kg all'asta ha
 tenuto il 60,8%; il teaser di arthunkal con una persona il 27%, l'autostop il 29%, il V2 della statua 0:04 di media.
 Il primo titolo a schermo dice il numero o il fatto, subito.
+
+Nota da Insights, 17/11 sera (decisione di Manuel, dopo i verticali di arthunkal andati male): i verticali erano troppo statici e
+con troppe scritte. D'ora in poi: Manuel in camera che fa vedere dove è e cosa succede (quando c'è nel girato), poche scritte
+(il fatto all'inizio, poi solo i sottotitoli), più movimento; si possono velocizzare tagliando pause e scene lente. Le regole
+di questo file restano una base, non un vincolo: prevale un video che si muove.
