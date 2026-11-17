@@ -148,3 +148,11 @@ affiliati, con la frase "alcuni link sono affiliati: se acquisti ricevo una picc
 del coaching (una riga, mai in alto, mai ripetuto). Commento fissato: la lista corta dei video collegati.
 Miniature dei lunghi "di viaggio" (riassunto): il posto scritto grande (KERALA, INDIA DEL SUD) sopra un paesaggio, persone
 sorridenti; mai esche negative (disastro, sporco, pericolosa, odio), che nei competitor portano commenti di disprezzo.
+
+Nota da Insights, 17/11 (CONFERMATO su due lunghi, mercato e arthunkal, `analisi/arthunkal.md`):
+- Titolo e miniatura dei lunghi promettono una COSA CONCRETA DA VEDERE, meglio con un numero (il pesce da 50 kg all'asta:
+  CTR 3,7%), mai un'idea astratta ("la preghiera che non si ferma mai": CTR 1,4%, YouTube l'ha mostrato 4 volte meno).
+- Titolo degli Shorts: il fatto concreto con un numero, e lo stesso fatto deve VEDERSI nel primo secondo del video. Una persona
+  da sola o un'atmosfera non bastano (teaser arthunkal 27% resta, autostop 29%; pesce 60,8%).
+- Gli Shorts non portano al lungo (2 visualizzazioni su 1.200 per arthunkal, come per il mercato): servono a farci conoscere.
+  Il lungo deve reggersi da solo con titolo e miniatura.

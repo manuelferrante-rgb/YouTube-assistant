@@ -60,3 +60,12 @@ Video lunghi ultimi 28 giorni: mercato 307, arthunkal 15, "Voci Vere primo video
 - Nota 17/11 (Manuel): il V2 statua NON ha limitazioni in Studio. Ipotesi: i primi pochi spettatori l'hanno scorso via
   (0:04 di media) e YouTube ha fermato la distribuzione; oppure partenza ritardata, capita agli Shorts. Si riguarda a 7 giorni
   (22/11). Non ricaricarlo: un doppione può essere trattato come contenuto ripetitivo.
+
+## Correzioni per le prossime 3 settimane (Insights 17/11, regole in `regole/copy.md` e `regole/formato_reel.md`)
+- Arthunkal reel 2 (gio 19/11): il V4 "13 km di rosario senza mai smettere" (numero + gesto); reel 3 (lun 23/11): il V3.
+  Montaggio controlla che il primo secondo mostri il fatto (la folla di notte col rosario), non un'inquadratura generica.
+- Extra meenakshi (18/11), comunismo (22/11), kallu (26/11): titolo = fatto con numero; primo secondo = quel fatto.
+- Te: teaser sab 28/11 "Colline affittate per 3.000 rupie l'anno, nel 1877" (il primo secondo mostra le colline con chi
+  raccoglie, il numero a schermo subito); reel di lunedì 30/11 = V3 "26-29 chili di tè al giorno, raccolti a mano"; poi V2
+  (3/12) e V4 chai (7/12). Il titolo del lungo ("AFFITTATE PER 3.000 RUPIE L'ANNO") è già concreto.
+- Arthunkal lungo: si decide il 22/11 (se CTR < 2%, titolo nuovo con un fatto concreto).
