@@ -36,7 +36,7 @@ La linfa della palma da cocco, alcolica in poche ore 🇮🇳
 Didascalia IG:
 La linfa della palma da cocco, alcolica in poche ore 🇮🇳
 In Kerala la chiamano kallu. La raccolgono in una ciotola in cima alla palma, e fermenta da sola.
-Qui la fanno loro e la servono in bottiglia, senza etichetta. Si sente il cocco, nel sapore e nell'odore.
+In questo locale la fanno loro. Si sente il cocco, nel sapore e nell'odore.
 
 L'hai mai provata?
 
