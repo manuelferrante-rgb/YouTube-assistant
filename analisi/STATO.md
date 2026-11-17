@@ -133,3 +133,8 @@ Insights ha giudicato dalla descrizione di Montaggio, senza riguardare i file.
 ## Regola di Manuel (11/11): messaggi alle altre chat
 Insights manda messaggi alle altre chat (send_message) SOLO quando Manuel lo dice esplicitamente. Prima prepara il testo e
 aspetta il suo via. Alle domande delle altre chat si risponde solo se Manuel le ha mandate lui (come Audio il 9/11).
+
+## Decisione di Manuel (17/11): focus YouTube
+Da ora Insights si concentra su YouTube: lunghi fatti bene e Shorts collegati. IG riceve lo stesso materiale e qualche storia,
+senza analisi dedicata salvo richiesta. Arthunkal a 48 ore in `analisi/arthunkal.md` (andato male: 214 impressioni, CTR 1,4%).
+Ogni registrazione di Manuel inizia o finisce con lo zoom sulla copertina del video (così si capisce a quale si riferisce).
