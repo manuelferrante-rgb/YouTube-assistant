@@ -442,3 +442,34 @@ Nota da Copy, 16/11 (Manuel): fortkochi, i bambini di Ashwasa si vedono nel lung
 Nota da Copy, 16/11: fortkochi, copione v2 sul girato.md di Montaggio (19 blocchi, in camera 3, 11, 13, 15, 17; Raksha spezzata da 2 pezzi in camera e VO; apertura con l'educatrice) in `copioni/fortkochi_testi.md`, sezione "VOICEOVER SUL GIRATO v2".
 
 Nota da Copy, 16/11 (Manuel): fortkochi, copione v3 (24 blocchi, in camera 3, 14, 17, 19, 20, 22; ~10 min) con legame con l'Italia, più intervista dell'educatrice, due VO di contesto con fonti e un pezzo in camera in più. Audio: tutto pulito, i pezzi d'intervista con eco o gracchiati si tagliano, B-roll con audio sporco muto.
+
+Nota da Copy, 17/11: titoli e primo titolo a schermo dei verticali (regola Insights 17/11: il fatto con il numero, e lo stesso fatto
+si VEDE nel primo secondo). Montaggio rifà i primi secondi da qui. Titolo dello Short = prima riga IG. Primo titolo a schermo: stile Tag
+dei reel, una riga, max ~22 caratteri, dal primo fotogramma.
+
+| Uscita | Verticale | Titolo dello Short (definitivo) | Primo titolo a schermo | Cosa si vede nel primo secondo |
+|---|---|---|---|---|
+| mer 18/11 | meenakshi | Saccheggiato nel 1310. Guardatelo oggi 🇮🇳 (invariato) | SACCHEGGIATO NEL 1310 | le torri colorate del tempio (non più il signore col segno: va dopo) |
+| gio 19/11 | arthunkal V4 | 13 km di rosario senza mai smettere 🇮🇳 (invariato) | 13 KM DI ROSARIO | la folla di notte che cammina con il rosario in mano |
+| dom 22/11 | comunismo | Kerala, 1957: il primo governo comunista eletto dell'India 🇮🇳 (NUOVO) | COMUNISTI DAL 1957 | la bandiera rossa animata con "1957" (flag_anim) |
+| lun 23/11 | arthunkal V3 | 13 km di notte per la sua fede: «Lì succedono tanti miracoli» 🇮🇳 (invariato) | 13 KM DI NOTTE | lei che cammina di notte tra i pellegrini |
+| gio 26/11 | kallu | La linfa della palma da cocco, alcolica in poche ore 🇮🇳 (NUOVO) | BIRRA DI COCCO | il vaso che versa il kallu nel bicchiere (o la ciotola sulla palma) |
+| sab 28/11 | tè teaser V1 | Colline affittate per 3.000 rupie l'anno, nel 1877 🇮🇳 (invariato) | 3.000 RUPIE L'ANNO | le colline di tè con chi raccoglie |
+| dom 29/11 | spazio Munnar | A oltre 1.500 metri, dove nasce il tè che beviamo 🇮🇳 (invariato) | A 1.500 METRI | la discesa già vicina alle colline (non la Terra intera) |
+| lun 30/11 | tè V3 | 26-29 chili di tè al giorno, raccolti a mano 🇮🇳 (invariato) | 26-29 KG AL GIORNO | il sacco pieno di foglie o la raccolta a mano veloce |
+| gio 3/12 | tè V2 | Del tè si staccano solo 2-3 foglie 🇮🇳 (invariato) | SOLO 2-3 FOGLIE | primo piano della mano di Sadish che stacca le foglie |
+| lun 7/12 | tè V4 chai | Un bicchiere di chai a Munnar, tirato da un bicchiere all'altro 🇮🇳 (invariato) | CHAI TIRATO | il chai master che tira il tè, già in movimento |
+
+Note: kallu e chai non hanno un numero verificato (nel girato non c'è un prezzo né un dato); il fatto concreto è l'oggetto che si vede.
+Kallu: "alcolica in poche ore" da NPR (https://www.npr.org/sections/thesalt/2018/06/12/616899254/for-a-true-taste-of-south-india-try-a-toddy-shop).
+Comunismo: 1957 primo governo comunista eletto in India (fatti verificati in `projects/comunismo/brief.md`); alternativa se Manuel vuole la
+notizia: "L'ultimo governo comunista dell'India ha perso: 35 seggi su 140 🇮🇳", a schermo "35 SEGGI SU 140".
+I titoli invariati sono già nei pacchetti e nei file TESTI su Drive (te, arthunkal); comunismo e kallu non avevano un pacchetto Copy.
+
+Nota da Insights, 17/11 (Manuel): ARTHUNKAL SI RIFÀ DA ZERO (lungo + 4 verticali nuovi, nuovo caricamento): piano in
+`analisi/arthunkal_rifacimento.md`. Da ora NON escono su YouTube i vecchi V4 (19/11) e V3 (23/11) né il carosello di arthunkal;
+il vecchio lungo diventa privato quando esce il nuovo. Data del nuovo lungo e dei verticali: la decide Pianificazione con Manuel.
+
+Nota da Insights, 17/11 sera (Manuel): Montaggio NON fa per ora le istruzioni di Insights del 17/11 (primi secondi dei verticali
+e rifacimento di arthunkal): sta lavorando ad altro, decide Manuel quando riprenderle. Il piano resta in
+`analisi/arthunkal_rifacimento.md`. Le indicazioni da Progetto Happiness arriveranno dopo le registrazioni di Manuel.

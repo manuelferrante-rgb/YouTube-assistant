@@ -144,3 +144,11 @@ Testo "DA MEZZANOTTE / PREGANDO" (il titolo dice già 13 km e di notte):
 1. v2_1_pellegrina: la signora in marrone che cammina di notte con la folla (consigliata).
 2. v2_2_folla: la colonna di pellegrini sotto le luci.
 3. v2_3_pellegrina_vicino: la stessa signora più vicina.
+
+### TITOLI ALTERNATIVI DEL LUNGO (Copy 17/11, regola Insights: cosa concreta da vedere, con un numero). Se dom 22/11 il CTR è sotto il 2%.
+A (consigliato). 13 KM A PIEDI, DI NOTTE: con i pellegrini sulla costa del Kerala, India 🇮🇳
+   EN: 13 KM ON FOOT, AT NIGHT: with the pilgrims on Kerala's coast, India 🇮🇳
+B. 13 KM PREGANDO, SENZA MAI FERMARSI: una notte con i pellegrini del Kerala 🇮🇳
+   EN: 13 KM OF PRAYER WITHOUT STOPPING: a night with Kerala's pilgrims 🇮🇳
+Miniature: la A2 (anziano col telo bianco) oggi dice "A PIEDI, DI NOTTE / 13 KM PREGANDO" e ripeterebbe il titolo. Con il titolo A
+la scritta diventa "PREGANDO FINO ALL'ALBA" (o "DA MEZZANOTTE"); con il B "A PIEDI, DI NOTTE". Si rigenerano con miniature_v3.py se Manuel cambia.
