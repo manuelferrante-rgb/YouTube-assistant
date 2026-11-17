@@ -85,29 +85,35 @@ def _lufs(path, a=None, b=None):
     return float(json.loads(out.split("[Parsed_loudnorm")[-1].split("\n", 1)[1])["input_i"])
 
 
+SOFT = {"0030"}                 # clip col vento dove RNNoise pieno mangiava l'inizio delle parole ("bambino per un giorno")
+
+
+def soft_rnn(src, out):
+    """Pulizia più leggera: passa-alto, riduzione spettrale, RNNoise mescolato al 60% (Manuel 17/11: l'inizio di
+    "bambino per un giorno" non si sentiva). Ritardi di afftdn e arnndn compensati: labiale invariato."""
+    from voice_clean import RNN
+    cleaned(src, VOCE)                                          # scarica il modello se manca
+    run(["ffmpeg", "-v", "error", "-y", "-i", src, "-map", "0:a:0", "-ar", "48000", "-af",
+         "aformat=channel_layouts=mono,volume=0.5,highpass=f=150,highpass=f=150,afftdn=nf=-25:nr=12,"
+         f"atrim=start_sample=1200,asetpts=PTS-STARTPTS,arnndn=m={RNN}:mix=0.6,atrim=start_sample=480,asetpts=PTS-STARTPTS",
+         "-c:a", "pcm_s16le", out])
+    return out
+
+
 def leveled(src):
-    """Voce pulita (RNNoise) a -18 LUFS con guadagno fisso; il fondo della clip (stanza, ventilatore) tenuto a -60 dB e
-    chiuso nelle pause (gate -30 dB). Stessi tempi della clip (labiale invariato)."""
-    out = f"{VOCE}/liv_{os.path.splitext(os.path.basename(src))[0]}.wav"
+    """Solo la voce pulita (RNNoise) a -18 LUFS con guadagno fisso, nient'altro della clip (Manuel 17/11: nelle interviste
+    si sentivano rumori; prima restava un filo del fondo della stanza a -60 dB, ora no). Nelle pause tra le frasi
+    la voce pulita si chiude a -45 dB (resti di RNNoise), con 60 ms prima e 200 ms dopo ogni tratto di voce.
+    Stessi tempi della clip (labiale invariato)."""
+    name = os.path.splitext(os.path.basename(src))[0]
+    out = f"{VOCE}/liv2_{name}.wav"
     if os.path.exists(out):
         return out
-    cv = cleaned(src, VOCE)
+    code = name.split("_")[2] if name.startswith("DJI_") else ""
+    cv = soft_rnn(src, f"{VOCE}/soft_{name}.wav") if code in SOFT else cleaned(src, VOCE)
     gv = VOICE_LUFS - _lufs(cv)
-    x = _pcm(src, "highpass=f=100,highpass=f=100").astype(np.float64)
     c = _pcm(cv).astype(np.float64)
-    n = min(len(x), len(c)); x, c = x[:n], c[:n]
-    res = np.copy(x)
-    Bk = 24000
-    for i in range(0, n, Bk):
-        xc, cc = x[i:i + Bk], c[i:i + Bk]
-        k = float(xc @ cc) / (float(cc @ cc) + 1e-9)
-        res[i:i + Bk] = xc - k * cc
-    h = 4800
-    m = n // h
-    lev = 10 * np.log10((res[:m * h].reshape(m, h) ** 2).mean(1) + 1e-12)
-    lev = np.convolve(lev, np.ones(4) / 4, mode="same")
-    g = np.minimum(FLOOR_DB - lev, gv - 10)
-    g = np.interp(np.arange(n), (np.arange(m) + 0.5) * h, g)
+    n = len(c)
     hv = 480
     mv = n // hv
     dv = 20 * np.log10(np.sqrt((c[:mv * hv].reshape(mv, hv) ** 2).mean(1)) + 1e-9)
@@ -115,14 +121,14 @@ def leveled(src):
     lo, hi = np.percentile(dv, 10), np.percentile(dv, 95)
     on = dv > lo + 0.2 * (hi - lo)
     on = np.convolve(on.astype(float), np.ones(27), mode="full")[6:6 + mv] > 0
-    gate = np.where(on, 1.0, 10 ** (-30 / 20))
-    gate = np.convolve(gate, np.ones(3) / 3, mode="same")
+    gate = np.where(on, 1.0, 10 ** (-45 / 20))
+    gate = np.convolve(gate, np.ones(5) / 5, mode="same")
     gate = np.interp(np.arange(n), (np.arange(mv) + 0.5) * hv, gate)
-    y = (c * 10 ** (gv / 20) + res * 10 ** (g / 20)) * gate
+    y = c * gate * 10 ** (gv / 20)
     y = np.clip(y, -0.98, 0.98).astype(np.float32)
     import soundfile as sf
     sf.write(out, np.stack([y, y], 1), 48000, subtype="PCM_16")
-    print(f"livello {os.path.basename(src)}: voce {gv:+.1f} dB, fondo {np.median(lev):.0f} -> {FLOOR_DB:.0f} dB", flush=True)
+    print(f"voce {name}: {gv:+.1f} dB, solo voce pulita", flush=True)
     return out
 
 
@@ -211,18 +217,24 @@ def tight(src, ranges, min_gap=0.32, keep=0.1):
     return out
 
 
-def piece(name, parts, gap=0.22, pad=(0.06, 0.1)):
-    """Voiceover da uno o più file: parts = [(file, [(a, b), ...]), ...], tratti uniti con respiri di gap s,
-    ogni file portato a -18 LUFS (guadagno fisso). -> (wav, durata)."""
-    key = abs(hash(json.dumps(parts))) % 10 ** 8
+VO_SPEED = 1.05                # Manuel 17/11: voiceover e camera a 1.05x, senza pause né respiri tra le frasi
+
+
+def piece(name, parts, gap=0.04, pad=(0.05, 0.08), speed=VO_SPEED, cut=(0.15, 0.05)):
+    """Voiceover da uno o più file: parts = [(file, [(a, b), ...]), ...]. Dentro ogni tratto si tolgono le pause e i
+    respiri più lunghi di cut[0] s (si tengono cut[1] s di margine, mai dentro le parole); i tratti si uniscono con
+    gap s; ogni file portato a -18 LUFS (guadagno fisso), poi tutto a speed (tono invariato). -> (wav, durata)."""
+    key = abs(hash(json.dumps([parts, gap, pad, speed, cut]))) % 10 ** 8
     out = f"{OUT}/{name}_{key}.wav"
     if not os.path.exists(out):
         segs = []
         for j, (src, ranges) in enumerate(parts):
             D = dur_of(src)
-            rr = [(max(0, a - pad[0]), min(D, b + pad[1])) for a, b in ranges]
+            rr = tight(src, ranges, min_gap=cut[0], keep=cut[1]) if cut else ranges
+            rr = [(max(0, a - (pad[0] if a in [x[0] for x in ranges] else 0)),
+                   min(D, b + (pad[1] if b in [x[1] for x in ranges] else 0))) for a, b in rr]
             fc = "".join(f"[0:a]atrim={a}:{b},asetpts=PTS-STARTPTS,aresample=48000,"
-                         f"afade=t=in:d=0.03,afade=t=out:st={(b - a) - 0.05:.3f}:d=0.05,apad=pad_dur={gap}[p{i}];"
+                         f"afade=t=in:d=0.015,afade=t=out:st={(b - a) - 0.025:.3f}:d=0.025,apad=pad_dur={gap}[p{i}];"
                          for i, (a, b) in enumerate(rr))
             tot = sum(b - a + gap for a, b in rr)
             fc += "".join(f"[p{i}]" for i in range(len(rr))) + f"concat=n={len(rr)}:v=0:a=1,atrim=end={tot:.3f}[o]"
@@ -235,15 +247,14 @@ def piece(name, parts, gap=0.22, pad=(0.06, 0.1)):
             segs.append(tmp2); os.remove(tmp)
         lst = out.replace(".wav", "_l.txt")
         open(lst, "w").write("".join(f"file '{s}'\n" for s in segs))
-        run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst,
-             "-ac", "1", "-ar", "48000", out])
-        x = _pcm(out)                                   # via l'ultimo respiro
-        sf_n = len(x) - int(gap * 48000)
+        tmp3 = out.replace(".wav", "_c.wav")
+        run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-ac", "1", "-ar", "48000", tmp3])
+        x = _pcm(tmp3)                                  # via l'ultimo respiro
         import soundfile as sf
-        sf.write(out, x[:sf_n], 48000, subtype="PCM_16")
-        for s in segs:
-            os.remove(s)
-        os.remove(lst)
+        sf.write(tmp3, x[:len(x) - int(gap * 48000)], 48000, subtype="PCM_16")
+        run(["ffmpeg", "-v", "error", "-y", "-i", tmp3, "-af", f"atempo={speed}", "-ac", "1", "-ar", "48000", out])
+        for f_ in segs + [lst, tmp3]:
+            os.remove(f_)
     return out, dur_of(out)
 
 
@@ -265,45 +276,54 @@ class Edit:
         if zoom != 1.0:
             self.tl.shots[-1]["zy"] = zy
 
-    def say(self, src, ranges, cover=None, subs=(), cut_gaps=True, pad=(0.06, 0.12), exact=False, lift=False,
-            zooms=None, grade=DEF):
-        """Parlato con la voce livellata; cover = {indice: (clip, inizio)} copre quel tratto con un'altra immagine
-        mentre la voce continua (B-roll che segue il parlato). subs (inizio, fine, testo) in tempi della sorgente.
-        zooms: un ingrandimento per tratto (camera: tagli alternati 1.0 / 1.12, il salto non si vede)."""
+    def say(self, src, segs, cover=None, subs=(), lift=False, zooms=None, grade=DEF, speed=1.0, cut=None,
+            pad=(0.05, 0.1), **_):
+        """Parlato con la voce pulita della clip. segs = [(a, b) o (a, b, (clip, inizio))]: il terzo elemento copre quel
+        tratto con un B-roll mentre la voce continua (il B-roll entra mentre si dice la cosa). cover = {indice: (clip,
+        inizio)} come prima. cut = (pausa minima, margine): dentro ogni tratto si tolgono pause e respiri più lunghi.
+        subs (inizio, fine, testo) in tempi della sorgente. zooms: ingrandimento alternato tra i tagli in camera.
+        speed: velocità del parlato (camera 1.05x, interviste 1x)."""
         cover = cover or {}
         D = dur_of(src)
-        if not exact:
-            ranges = [snap_w(src, a, b) for a, b in ranges]
-        if cut_gaps and not cover:
-            ranges = tight(src, ranges)
-        padded = []
-        for i, (a, b) in enumerate(ranges):
-            nxt = ranges[i + 1][0] if i + 1 < len(ranges) else D
-            prv = padded[-1][1] if padded else 0.0
-            padded.append((max(prv, a - pad[0], 0.0), min(b + pad[1], nxt, D - 0.05)))
+        segs = [(x[0], x[1], x[2] if len(x) > 2 else cover.get(k)) for k, x in enumerate(segs)]
+        pieces = []                                       # (a, b, cover clip, offset nel B-roll)
+        for k, (a, b, cv) in enumerate(segs):
+            sub = tight(src, [(a, b)], min_gap=cut[0], keep=cut[1]) if cut else [(a, b)]
+            off = 0.0
+            for m, (p, q) in enumerate(sub):
+                p2 = max(0.0, p - (pad[0] if m == 0 else 0.0))
+                q2 = min(D - 0.05, q + (pad[1] if m == len(sub) - 1 else 0.0))
+                if pieces and pieces[-1][1] > p2:          # niente sovrapposizioni tra tratti contigui
+                    p2 = pieces[-1][1]
+                pieces.append((p2, q2, cv, off))
+                off += (q2 - p2) / speed
         self.tl.audio_map[src] = leveled(src)
-        for i, (a, b) in enumerate(padded):
+        zi = 0
+        for a, b, cv, off in pieces:
             t0 = self.t
             g = 10 ** (range_gain(src, a, b) / 20) if lift else 1.0
-            if i in cover:
-                src2, a2 = cover[i][:2]
-                self.tl._add(src2, a2, b - a, gain=0.0, grade=DEF, fade=0.05, fx=dict(zoom=(1.0, 1.035, None)))
-                self.tl.vos.append(dict(file=src, a=a, b=b, speed=1.0, t=t0, lev=True, raw=True, af=f"volume={g:.3f}"))
+            if cv:
+                self.tl._add(cv[0], cv[1] + off, (b - a) / speed, gain=0.0, grade=DEF, fade=0.05,
+                             fx=dict(zoom=(1.0, 1.035, None)))
+                self.tl.vos.append(dict(file=src, a=a, b=b, speed=speed, t=t0, lev=True, raw=True, af=f"volume={g:.3f}"))
             else:
-                z = zooms[i % len(zooms)] if zooms else 1.0
-                self.tl.speech(src, [(a, b)], grade=grade, gain=g, zoom=z)
+                z = zooms[zi % len(zooms)] if zooms else 1.0
+                zi += 1
+                self.tl.speech(src, [(a, b)], speed=speed, grade=grade, gain=g, zoom=z)
                 if z != 1.0:
                     self.tl.shots[-1]["zy"] = 0.25
             for sa, sb, txt in subs:
                 lo, hi = max(sa, a), min(sb, b)
                 if hi - lo > 0.15:
-                    self.tl.subs.append((t0 + (lo - a), t0 + (hi - a), txt))
+                    self.tl.subs.append((t0 + (lo - a) / speed, t0 + (hi - a) / speed, txt))
 
-    def cam(self, ranges):
-        """Manuel in camera col fondale: tagli tra le prese con zoom alternato, voce livellata, niente sottotitoli."""
-        self.say(CAM, ranges, zooms=[1.0, 1.12], pad=(0.06, 0.12), exact=True, grade="eq=contrast=1.02:saturation=1.0")
+    def cam(self, segs):
+        """Manuel in camera col fondale (Manuel 17/11): 1.05x, via pause e respiri, B-roll sulle cose che dice,
+        in camera solo pochi secondi di fila; tagli tra le prese con zoom alternato."""
+        self.say(CAM, segs, zooms=[1.0, 1.12], speed=VO_SPEED, cut=(0.15, 0.05), pad=(0.05, 0.08),
+                 grade="eq=contrast=1.02:saturation=1.0")
 
-    def vo(self, name, parts, items, lead=0.15, tail=0.22):
+    def vo(self, name, parts, items, lead=0.08, tail=0.14):
         """Voiceover sopra immagini mute: items = [(clip, inizio, durata o None[, opzioni di b()])]. -> (t, durata)."""
         f, d = piece(f"vo_{name}", parts)
         t0 = self.t
@@ -394,13 +414,19 @@ V = {1: [(CORR, [(9.95, 14.95), (15.4, 18.3)])],
      12: [(VOF, [(162.35, 164.0)])], 13: [(VOF, [(165.25, 166.3)])], 15: [(VOF, [(169.15, 177.2)])],
      16: [(VOF, [(181.45, 186.75), (197.5, 201.0)])], 18: [(VOF, [(204.75, 211.8)])], 21: [(VOF, [(214.6, 216.85)])],
      23: [(VOF, [(219.9, 230.8)])], 24: [(VOF, [(232.35, 236.8)])]}
-CAMR = {3: [(13.2, 15.2), (45.4, 47.95), (53.8, 55.75), (61.3, 62.8), (67.95, 71.3), (115.2, 118.5)],
-        14: [(170.6, 172.1), (172.6, 176.8), (177.6, 180.0), (185.0, 187.6)],
-        17: [(195.5, 198.9), (220.78, 224.25), (252.93, 258.85)],
-        19: [(271.0, 272.75), (279.6, 282.2)],
-        20: [(303.9, 306.3), (306.9, 311.2)],
-        22: [(325.25, 328.6), (346.18, 348.25), (353.48, 356.62), (382.68, 386.72), (430.08, 433.1), (436.88, 438.77)]}
-I = dict(cut_gaps=False, lift=True, exact=True, pad=(0.05, 0.1))     # interviste: tagli esatti sulle risposte
+# pezzi in camera (Manuel 17/11): inizi e fini misurati sulla voce (energia a 10 ms), B-roll sulle cose che dice,
+# in camera solo pochi secondi di fila
+CAMR = {3: [(13.45, 15.1, (C("0044"), 0.3)), (45.6, 47.9, (C("0047"), 0.3)), (54.05, 55.7),
+            (61.55, 62.65, (C("0028"), 0.3)), (68.22, 71.25, (C("0002"), 0.3)), (115.45, 118.45)],
+        14: [(170.88, 172.05), (172.9, 173.75), (173.75, 174.6, (C("0022"), 1.0)), (174.6, 175.5, (C("0007"), 0.5)),
+             (175.5, 176.88, (C("0020"), 10.0)), (177.9, 180.02), (185.25, 187.62, (C("0032"), 0.3))],
+        17: [(195.78, 198.85), (220.82, 222.4, (ROT, 2.85)), (222.6, 224.32, (ROT, 9.4)), (252.97, 258.85)],
+        19: [(271.28, 272.8), (279.9, 282.25, (C("0037"), 13.2))],
+        20: [(304.2, 306.4), (307.12, 308.45), (308.9, 311.25, (C("0041"), 0.0))],
+        22: [(325.3, 326.6), (327.2, 328.65, (C("0028"), 0.3)), (346.22, 348.28, (C("0037"), 0.2)), (353.5, 356.68),
+             (382.78, 386.75, (C("0006"), 0.4)), (430.1, 433.1, (B("0013"), 3.0)), (436.92, 438.8)]}
+I = dict(lift=True, pad=(0.05, 0.1), zooms=[1.0, 1.15])   # interviste: zoom secco a ogni taglio (Manuel 17/11)
+I2 = dict(I, cut=(0.35, 0.1))                                # e via le pause lunghe dentro le risposte     # interviste: tagli esatti sulle risposte
 
 SIGLA_CLIPS = [(C("0029"), 2.0), (C("0025"), 0.5), (ROT, 8.6), (C("0022"), 1.5), (C("0023"), 0.5), (C("0015"), 8.0)]
 
@@ -412,14 +438,14 @@ def long_video(W, H):
     E35, E16, E18, E19 = C("0035"), C("0016"), C("0018"), C("0019")
 
     # 0. APERTURA: l'educatrice di Raksha, la promessa del video (titolo e miniatura); poi la sala, VO1, VO2, sigla
-    e.say(E35, [(244.1, 247.95), (248.2, 249.85), (249.85, 252.2), (252.2, 257.65), (257.65, 263.6), (263.6, 268.1)],
-          cover={1: (ROT, 7.45), 2: (ROT, 9.15)},
-          subs=[(244.1, 247.95, "Quello che cerchiamo di far capire alla comunità è che"),
-                (248.2, 252.2, "questi bambini sono come gli altri bambini."),
-                (252.2, 257.65, "Le capacità che hanno gli altri bambini, le hanno anche i nostri,"),
-                (257.65, 260.25, "solo che lo fanno in un modo diverso."),
-                (260.25, 263.6, "In un modo diverso, con uno stile diverso, a una velocità diversa."),
-                (263.6, 268.1, "Dobbiamo solo guidarli e dargli la formazione giusta.")], **I)
+    # (Manuel 17/11: più corta e più svelta) da "these children", via "the awareness..." e "we need to guide them";
+    # la sala di Raksha su "sono come gli altri bambini", il ragazzo che saluta su "in un modo diverso"
+    e.say(E35, [(248.22, 249.8), (249.8, 252.1, (ROT, 9.3)), (252.4, 258.95), (258.95, 260.3, (ROT, 2.85)),
+                (260.3, 263.45)], cut=(0.3, 0.08),
+          subs=[(248.2, 252.2, "Questi bambini sono come gli altri bambini."),
+                (252.2, 256.4, "Le capacità che hanno gli altri bambini,"),
+                (256.4, 259.9, "le hanno anche i nostri: solo che lo fanno in un modo diverso."),
+                (259.9, 263.6, "In un modo diverso, con uno stile diverso, a una velocità diversa.")], **I)
     t_v1 = e.t
     vo(1, [(C("0034"), 0.0, 2.1), (C("0037"), 6.9, 3.0), (C("0042"), 0.2, None)])
     vo(2, [(C("0029"), 0.0, 3.2), (B("0003"), 4.2, 2.4), (C("0025"), 0.1, 2.9), (C("0006"), 0.4, None)], tail=0.5)
@@ -432,24 +458,24 @@ def long_video(W, H):
 
     # 2. ASHWASA
     t_ash = e.t
-    vo(4, [(C("0015"), 0.5, 3.4), (C("0002"), 0.3, 3.2), (C("0005"), 3.4, None)])
+    vo(4, [(C("0015"), 0.5, 3.4), (C("0024"), 0.3, 3.2), (C("0005"), 3.4, None)])
     e.say(E16, [(30.9, 34.85), (36.0, 38.4), (40.85, 45.3), (47.0, 50.95)],
           subs=[(30.9, 34.85, "Dal 2006 ha cominciato suor Fabiola."), (36.0, 38.4, "È lei che l'ha aperta."),
                 (40.85, 45.3, "Sono vent'anni che portiamo avanti questa casa."),
-                (47.0, 50.95, "Da qui sono passati più di cento bambini.")], **I)
+                (47.0, 50.95, "Da qui sono passati più di cento bambini.")], **I2)
     vo(5, [(C("0021"), 0.4, None)], tail=0.15)
     e.say(E16, [(85.6, 87.8), (88.5, 92.2)],
           subs=[(85.6, 87.8, "Aveva già una casa qui vicino."),
-                (88.5, 92.2, "Fa parte della nostra congregazione, non potevamo andare lontano.")], **I)
+                (88.5, 92.2, "Fa parte della nostra congregazione, non potevamo andare lontano.")], **I2)
     vo(6, [(B("0012"), 0.4, None)], tail=0.15)
-    e.say(E16, [(55.55, 60.2)], subs=[(55.55, 60.2, "Negli ultimi anni ero in Italia, lavoravo con gli anziani.")], **I)
+    e.say(E16, [(55.55, 60.2)], subs=[(55.55, 60.2, "Negli ultimi anni ero in Italia, lavoravo con gli anziani.")], **I2)
     vo(7, [(C("0004"), 0.6, 2.6), (C("0022"), 0.8, None)])
     e.say(E16, [(108.75, 111.3), (117.2, 122.0), (122.0, 125.05), (125.05, 130.0)], cover={2: (C("0025"), 0.0)},
           subs=[(108.75, 111.3, "Arrivano tramite il tribunale."),
                 (117.2, 122.0, "Quando i genitori hanno delle difficoltà, portano i bambini davanti al tribunale"),
                 (122.0, 125.05, "e spiegano le ragioni."),
-                (125.05, 130.0, "Così il tribunale manda i bambini qui, perché ce ne prendiamo cura.")], **I)
-    vo(8, [(C("0029"), 10.5, 4.0), (C("0020"), 0.6, 4.0), (C("0026"), 2.0, None)])
+                (125.05, 130.0, "Così il tribunale manda i bambini qui, perché ce ne prendiamo cura.")], **I2)
+    vo(8, [(C("0029"), 10.5, 4.0), (C("0021"), 1.5, 2.4), (C("0026"), 2.0, None)])
 
     # 3. LA GIORNATA
     t_g = e.t
@@ -458,7 +484,7 @@ def long_video(W, H):
     off_g = e.t - t_g + 0.2
     e.say(E18, [(14.1, 17.65), (21.75, 28.3), (29.3, 32.2), (32.8, 35.55), (36.6, 40.6), (41.3, 43.4), (45.9, 49.0),
                 (50.2, 55.15)],
-          cover={4: (C("0007"), 0.3), 5: (C("0020"), 2.0), 6: (C("0009"), 0.3), 7: (C("0004"), 1.4)},
+          cover={4: (C("0007"), 0.3), 5: (C("0011"), 1.0), 6: (C("0009"), 0.3), 7: (C("0004"), 1.4)},
           subs=[(14.1, 17.65, "I bambini cominciano la scuola alle sette e mezza."),
                 (21.75, 25.4, "Si lavano e fanno colazione, ognuno per conto suo:"),
                 (25.4, 28.3, "non possiamo tenerli tutti insieme a colazione."),
@@ -467,28 +493,28 @@ def long_video(W, H):
                 (36.6, 40.6, "Poi alcuni tornano per il pranzo,"),
                 (41.3, 43.4, "altri restano a scuola fino a sera."),
                 (45.9, 49.0, "Alle sette cenano."),
-                (50.2, 55.15, "Poi un po' di studio e di gioco, e poi a dormire.")], **I)
+                (50.2, 55.15, "Poi un po' di studio e di gioco, e poi a dormire.")], **I2)
     t10 = e.t
-    vo(10, [(C("0015"), 6.0, 3.0), (B("0010"), 0.5, 3.4), (C("0020"), 8.0, None)], tail=0.2)
+    vo(10, [(C("0050"), 0.3, 2.8), (B("0010"), 0.5, 3.0), (C("0011"), 3.5, None)], tail=0.2)
     music(tl, "giornata", t10 - 0.3, e.t + 0.4, offset=off_g, fin=0.8, fout=0.6)
-    e.say(C("0030"), [(8.5, 11.2)], exact=True, pad=(0.0, 0.0))        # Manuel sullo scivolo: "bambino per un giorno"
+    e.say(C("0030"), [(9.35, 10.95)], lift=True, pad=(0.05, 0.1))        # Manuel sullo scivolo: "bambino per un giorno"
     e.say(E19, [(7.35, 9.6), (10.45, 11.2), (11.55, 12.6), (32.6, 36.95)],
           subs=[(7.35, 9.6, "Lavoro qui come coordinatrice dei progetti."), (10.45, 11.2, "Quanti anni hai?"),
-                (11.55, 12.6, "Ventinove."), (32.6, 36.95, "Faccio l'assistente sociale da cinque anni.")], **I)
+                (11.55, 12.6, "Ventinove."), (32.6, 36.95, "Faccio l'assistente sociale da cinque anni.")], **I2)
     t_like = e.t
-    vo(11, [(C("0005"), 1.0, 2.2), (C("0004"), 3.0, 2.4), (C("0029"), 9.0, None)])
+    vo(11, [(C("0005"), 1.0, 2.2), (C("0023"), 0.3, 2.4), (B("0012"), 9.0, None)])
     vo(12, [(B("0014"), 0.3, None)], tail=0.15)
     e.say(E16, [(191.2, 196.3), (201.0, 203.2), (204.05, 208.0)],
           subs=[(191.2, 196.3, "Non possiamo mostrare i bambini. Non possiamo fare tante cose."),
                 (201.0, 203.2, "Non possiamo prendere decisioni da sole."),
-                (204.05, 208.0, "Se abbiamo una proposta, dobbiamo portarla davanti al governo.")], **I)
+                (204.05, 208.0, "Se abbiamo una proposta, dobbiamo portarla davanti al governo.")], **I2)
     vo(13, [(B("0013"), 1.5, None)], tail=0.15)
     e.say(E16, [(246.4, 250.45), (251.5, 254.35), (272.0, 278.1)],
           subs=[(246.4, 250.45, "Vogliamo aiutare i bambini a costruirsi un buon futuro."),
                 (251.5, 254.35, "Diciamo, amore e affetto per i bambini."),
-                (272.0, 278.1, "Così, naturalmente, vogliamo bene ai bambini, e siamo felici anche noi.")], **I)
+                (272.0, 278.1, "Così, naturalmente, vogliamo bene ai bambini, e siamo felici anche noi.")], **I2)
     e.say(E18, [(66.3, 67.5), (79.85, 81.9)],
-          subs=[(66.3, 67.5, "Cosa ti piace di questo posto?"), (79.85, 81.9, "Sono felice di lavorare qui.")], **I)
+          subs=[(66.3, 67.5, "Cosa ti piace di questo posto?"), (79.85, 81.9, "Sono felice di lavorare qui.")], **I2)
     e.cam(CAMR[14])
 
     # 4. RAKSHA
@@ -496,31 +522,31 @@ def long_video(W, H):
     vo(15, [(C("0042"), 0.0, 3.0), (C("0034"), 0.0, 2.1), (C("0037"), 0.2, 2.0), (C("0037"), 3.0, None)])
     music(tl, "raksha", t_r - 0.3, e.t + 0.2, fin=1.0, fout=0.6)
     e.say(E35, [(22.7, 27.3), (28.0, 29.3), (29.8, 32.9), (46.2, 49.9), (50.8, 53.8), (54.5, 59.0), (120.1, 125.9)],
-          cover={4: (C("0032"), 0.0)},
+          cover={4: (ROT, 7.6)},
           subs=[(22.7, 27.3, "Il nome è Raksha Society, per la cura dei bambini con bisogni speciali."),
                 (28.0, 29.3, "Raksha cosa vuol dire?"), (29.8, 32.9, "Raksha vuol dire... salvatore."),
                 (46.2, 49.9, "È un'organizzazione che lavora con le persone con disabilità."),
                 (50.8, 53.8, "Prepariamo ogni singola persona"),
                 (54.5, 59.0, "a diventare indipendente, economicamente e nella vita di tutti i giorni."),
-                (120.1, 125.9, "Vengono di giorno: dopo le lezioni tornano a casa, e ogni giorno tornano a scuola.")], **I)
+                (120.1, 125.9, "Vengono di giorno: dopo le lezioni tornano a casa, e ogni giorno tornano a scuola.")], **I2)
     t16 = e.t
     vo(16, [(C("0037"), 11.0, 3.2), (C("0033"), 0.0, 3.2), (C("0037"), 17.0, None)])
     music(tl, "raksha", t16 - 0.3, e.t + 0.2, offset=12.0, fin=0.8, fout=0.8)
     e.cam(CAMR[17])
     t18 = e.t
-    vo(18, [(ROT, 9.3, 2.3), (C("0037"), 7.2, 2.7), (C("0038"), 0.2, None)])
+    vo(18, [(ROT, 8.0, 2.0), (C("0037"), 7.2, 2.7), (C("0038"), 0.2, None)])
     t_fam = e.t
     e.cam(CAMR[19])
     e.say(E35, [(90.6, 94.45), (94.6, 98.6), (99.2, 101.2), (104.4, 108.1)],
           subs=[(90.6, 94.45, "Appena c'è una diagnosi, che abbiano sei mesi o un anno,"),
                 (94.6, 98.6, "quando i medici vedono che un bambino è a rischio,"),
                 (99.2, 101.2, "li mandano in posti come il nostro."),
-                (104.4, 108.1, "Abbiamo bambini fin dai tre mesi di età.")], **I)
+                (104.4, 108.1, "Abbiamo bambini fin dai tre mesi di età.")], **I2)
     e.say(E35, [(166.1, 170.75), (171.6, 179.3), (179.8, 182.75)], 
           subs=[(166.1, 170.75, "Di solito un figlio che nasce è un sogno per i genitori."),
                 (171.6, 175.9, "Quando ai bambini viene diagnosticata una disabilità,"),
                 (175.9, 179.3, "i sogni dei genitori vanno in pezzi."),
-                (179.8, 182.75, "All'inizio si sentono impotenti.")], **I)
+                (179.8, 182.75, "All'inizio si sentono impotenti.")], **I2)
     e.say(E35, [(189.1, 191.95), (195.2, 196.4), (198.0, 203.65), (203.65, 209.6), (210.2, 214.05), (225.7, 231.6)],
           cover={3: (C("0037"), 13.0)},
           subs=[(189.1, 191.95, "Molti all'inizio vengono qui solo per la fisioterapia."), (195.2, 196.4, "Ma poi,"),
@@ -528,7 +554,7 @@ def long_video(W, H):
                 (203.65, 209.6, "avere difficoltà a scuola e in altro, anche nel parlare e nel linguaggio."),
                 (210.2, 214.05, "Allora li seguiamo, li guidiamo come si deve."),
                 (225.7, 228.55, "Seguiamo non solo i genitori,"),
-                (228.55, 231.6, "anche i fratelli e le sorelle: seguiamo tutta la famiglia.")], **I)
+                (228.55, 231.6, "anche i fratelli e le sorelle: seguiamo tutta la famiglia.")], **I2)
     t_lav = e.t
     e.cam(CAMR[20])
     e.say(E35, [(275.7, 279.95), (280.3, 284.45), (285.1, 287.45), (288.0, 295.1), (295.3, 298.2)],
@@ -536,7 +562,7 @@ def long_video(W, H):
                 (280.3, 284.45, "prendono la persona più adatta per quel lavoro."),
                 (285.1, 287.45, "Ai nostri ragazzi manca qualcosa."),
                 (288.0, 295.1, "Anche con la riabilitazione e le terapie, nella vita trovano delle difficoltà."),
-                (295.3, 298.2, "A un certo punto hanno bisogno di qualcuno che li guidi.")], **I)
+                (295.3, 298.2, "A un certo punto hanno bisogno di qualcuno che li guidi.")], **I2)
     vo(21, [(C("0041"), 0.0, None)], tail=0.15)
     e.say(E35, [(268.7, 272.75), (272.9, 275.35), (298.6, 302.45), (302.9, 309.6), (310.3, 313.6), (313.7, 314.5)],
           subs=[(268.7, 272.75, "Quando entrano nella società, nella comunità,"),
@@ -544,14 +570,15 @@ def long_video(W, H):
                 (298.6, 302.45, "Tutti quei limiti devono essere accettati dalla comunità."),
                 (302.9, 309.6, "E le barriere, soprattutto quelle fisiche ed emotive, nella società vanno tolte."),
                 (310.3, 313.6, "È importante che nella società ci siano persone come te."),
-                (313.7, 314.5, "Grazie mille.")], **I)
+                (313.7, 314.5, "Grazie mille.")], **I2)
 
     # 5. CHIUSURA
     t_fine = e.t
     e.cam(CAMR[22])
     t23 = e.t
-    vo(23, [(C("0056"), 1.0, 1.3), (C("0055"), 0.0, 1.2), (C("0048"), 1.0, 1.3), (C("0045"), 1.5, 2.2),
-            (C("0026"), 0.0, 2.4), (C("0015"), 9.0, 2.0), (C("0028"), 0.3, None)], lead=0.3, tail=0.5)
+    # Kochi fuori (Manuel 17/11): il quartiere al posto della folla del mercato e della statua
+    vo(23, [(C("0048"), 1.0, 1.5), (C("0043"), 1.2, 2.0), (C("0046"), 0.1, 1.8), (C("0026"), 0.0, 2.2),
+            (C("0045"), 1.5, 1.8), (C("0028"), 0.3, None)], lead=0.3, tail=0.5)
     vo(24, [(C("0042"), 0.0, 3.0), (C("0029"), 10.0, None)], lead=0.2, tail=0.4)
     # frase di chiusura dalla registrazione pulita (regola 9/11), immagini senza volti, scritta finale
     f_ch, d_ch = piece("chiusura", [(CHIUSURA, [(0.88, 6.80)])])
@@ -559,7 +586,7 @@ def long_video(W, H):
     t_c0 = e.t
     tl.vos.append(dict(file=f_ch, a=0, b=d_ch, speed=1.0, t=t_c0 + lead, raw=True))
     dur = lead + d_ch + after
-    items = [(C("0045"), 0.5), (C("0022"), 2.0), (C("0021"), 1.0), (C("0029"), 12.0)]
+    items = [(C("0046"), 22.5), (C("0022"), 2.0), (C("0021"), 1.0), (C("0029"), 12.0)]
     tl._add(closing_visual(W, H, items, dur, lead, dur - lead), 0, dur, audio=False, grade="null")
     music(tl, "finale", t23 - 0.4, e.t, fin=1.5, fout=1.0)
     sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="fortkochi")

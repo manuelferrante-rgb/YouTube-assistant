@@ -315,3 +315,18 @@ Nota Montaggio, 12/11 (Manuel, lungo del tè v10): la discesa dallo spazio (`too
 `--size 3840x2160 --fov 48`) va bene anche nei lunghi al posto della mappa, fatta come nel reel: solo il suono del
 movimento, nessuna voce di Manuel sopra; la voce parte quando lui è in quadro. Mai la voce di chi parla in camera sopra
 immagini dove non c'è. Banner "iscriviti" 5-10 s dopo la sigla.
+
+Nota Montaggio, 17/11 (Manuel, sul lungo fortkochi v1): vale per tutti i lunghi.
+- Manuel in camera e voiceover a 1.05x, senza pause né respiri tra le frasi (solo ~0.04 s tra un tratto e l'altro).
+  Tagli misurati sulla voce (energia a 10 ms): le parole del riconoscimento sulla camera arrivano ~0.3 s prima della voce vera.
+- Manuel in camera solo nei momenti importanti, mai più di 6-10 s di fila: sulle cose che dice va il B-roll specifico
+  ("a Kochi" -> la città, "dove sono" -> i posti, "panni stesi, un pasto pronto" -> panni e pasto), la voce continua.
+- Interviste: zoom secco (1.15) a ogni taglio per cambiare immagine; via le pause lunghe dentro le risposte; apertura
+  sulla frase forte, corta (~15 s), con il B-roll che segue le parole.
+- Voce delle interviste: solo la voce pulita della traccia, niente fondo della stanza sotto (prima restava a -60 dB e si
+  sentiva). Nelle clip col vento RNNoise pieno mangia l'inizio delle parole: pulizia più leggera (`soft_rnn` in
+  `projects/fortkochi/build.py`).
+- B-roll: niente ripetizioni (lo stesso parco giochi più volte); le persone del posto (quartiere, chi saluta, chi guarda
+  in camera) nei momenti di contesto, al posto delle immagini da cartolina (folla del mercato, statue), sempre coerenti
+  con il parlato.
+- Musica: la fa Montaggio quando Audio non c'è (`projects/fortkochi/musica.py`), poca e bassa, solo dove cala l'attenzione.
