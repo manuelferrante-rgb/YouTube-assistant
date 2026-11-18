@@ -176,8 +176,8 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | mer 25/11 | arthunkal: carosello "I volti" (+ post YouTube) (OPZIONALE) |  |
 | gio 26/11 | EXTRA kallu |  |
 | sab 28/11 | vuoto | il teaser del tè esce domenica con il lungo (Manuel 18/11) |
-| dom 29/11 | te: LUNGO 13:00 + Short V1 (ex teaser) subito dopo, con il lungo come video correlato | solo se approvato; regola Manuel 18/11 |
-| dom 29/11 | EXTRA "spazio Munnar" (reel 10.8 s, `projects/spazio_munnar/`; v7 APPROVATO da Manuel l'11/11, file `VociVere_munnar_spazio_v7_1080x1920.mp4`, Manuel lo ha già scaricato dalla chat: niente caricamento su Drive) | decisione di Manuel via Insights/Montaggio 11/11; esce DOPO il lungo (che è alle 13:00 italiane), per esempio alle 17:00 italiane; il lungo collegato subito come video correlato su YouTube, link in bio su IG; 3 giorni dopo kallu 26/11; il lun 30/11 resta il reel più forte del tè |
+| dom 29/11 | te: LUNGO 13:00 | solo se approvato |
+| dom 29/11 | te: Short teaser = "spazio Munnar", subito dopo il lungo delle 13:00 (Manuel 18/11, non più alle 17:00) (reel 10.8 s, `projects/spazio_munnar/`; v7 APPROVATO da Manuel l'11/11, file `VociVere_munnar_spazio_v7_1080x1920.mp4`, Manuel lo ha già scaricato dalla chat: niente caricamento su Drive) | decisione di Manuel via Insights/Montaggio 11/11; esce DOPO il lungo (che è alle 13:00 italiane), per esempio alle 17:00 italiane; il lungo collegato subito come video correlato su YouTube, link in bio su IG; 3 giorni dopo kallu 26/11; il lun 30/11 resta il reel più forte del tè |
 | lun 30/11 | te: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
 | mar 1/12 | te: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | scambiato col reel del lunedì (Insights 8/11) |
 | mer 2/12 | EXTRA panni (pov giungla) | entrambi i profili |
@@ -203,7 +203,7 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | lun 28/12 | lungo A: reel 3 |  |
 | mer 30/12 | lungo A: carosello "I volti" (+ post YouTube) (OPZIONALE) |  |
 | gio 31/12 | EXTRA comorin: tre mari (loop) |  |
-| dom 3/1 | EXTRA dalla scorta |  |
+| dom 3/1 | EXTRA te V1 "Colline affittate per 3.000 rupie l'anno, nel 1877" (ex teaser del tè) | Manuel 18/11: il teaser del tè è spazio Munnar, V1 va qui al posto di uno slot dalla scorta |
 | mar 6/1 | EXTRA dalla scorta |  |
 | dom 10/1 | LUNGO B = RIASSUNTO + Short teaser subito dopo (video correlato al lungo, Manuel 18/11); "un mese in India", più clickbait, con piccolo spoiler sulle interviste NGO (`piano/riassunto.md`) | spostato dal 24/1 (Manuel 14/11); non richiede riprese |
 | lun 11/1 | riassunto: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
@@ -481,3 +481,7 @@ su 216 dagli Short correlati, `analisi/mercato.md`) e prima dell'uscita non si p
 da solo (un fatto, niente "video completo domenica"). Il sabato prima resta vuoto. Tè: dom 29/11 lungo 13:00 + V1 subito dopo, "spazio
 Munnar" resta alle 17:00 (sab 28/11 vuoto). Vale anche per coir 20/12, riassunto 10/1, NGO 24/1, bilancio 7/2 e il nuovo arthunkal.
 Gio 19/11 e lun 23/11 (vecchi verticali di arthunkal) restano vuoti in attesa dei verticali nuovi (proposta, da confermare con Manuel).
+
+Nota da Pianificazione, 18/11 (Manuel): per il tè il teaser è "spazio Munnar": esce dom 29/11 subito dopo il lungo delle 13:00 (non più
+alle 17:00), collegato al lungo. Shorts del tè: spazio Munnar 29/11, V3 30/11, V2 3/12, V4 chai 7/12. Il vecchio teaser V1 ("3.000 rupie
+l'anno, nel 1877") non è buttato: esce come extra dom 3/1 (era uno slot "dalla scorta").
