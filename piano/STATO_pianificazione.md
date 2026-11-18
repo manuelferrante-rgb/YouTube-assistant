@@ -68,3 +68,31 @@ Se questa sessione viene chiusa, la chat nuova li ricrea e cancella questi.
 
 ## Aggiornamento 14/11 (Manuel)
 LUNGHI: arthunkal 15/11, te 29/11, coir 20/12, riassunto 10/1 (più clickbait, nicchia "un mese in India", spoiler NGO), NGO 24/1 (Fort Kochi, file `fortkochi`), bilancio 7/2 (introspettivo, NGO, Vietnam). Prompt per Insights sul riassunto in `piano/riassunto.md`. Promemoria del 10/1 e del 24/1 aggiornati (stessi ID).
+
+## PASSAGGIO DI CONSEGNE 18/11 (dalla sessione session_01HtfbgzRWCqFKSmTBynYgBP, ora archiviata, alla nuova chat Pianificazione)
+Leggi tutto il file sopra (8/11, 9/11, 13/11, 14/11) e poi questo, che prevale.
+
+### FOCUS SU YOUTUBE (Manuel, 18/11): la novità più importante
+- Manuel vuole crescere su YouTube, è il focus. Instagram e le stories sono tempo perso (pochi follower). YouTube funziona diverso da Instagram: le scelte si fanno per YouTube.
+- Per ogni lungo le uscite fisse: lungo + 4 verticali come Shorts (teaser + 3 reel) + 1 post YouTube (carosello "fatto" nella scheda Community, con link al lungo). Stories IG e carosello "I volti": OPZIONALI, segnati così in calendario, li decide Manuel di volta in volta. I verticali vanno anche su IG come copia, senza lavoro dedicato. Regola in `regole/pianificazione.md`.
+- Compito nuovo di questa chat: il piano di crescita del canale YouTube, in `piano/youtube.md` (da creare). Parti dalle analisi di Insights (`analisi/STATO.md`, `analisi/mercato.md`, `analisi/arthunkal.md`, `analisi/arthunkal_rifacimento.md`, `analisi/riassunto.md`, `analisi/competitor/pattern.md`, `analisi/miniature.md`): non rifarle. Con fonti verificate (documentazione ufficiale YouTube, Creator Insider) guarda: come YouTube distribuisce i video di un canale piccolo (ricerca, suggeriti, Shorts feed; CTR, durata di visualizzazione), cosa smettere e cosa fare di più rispetto a IG, il "sistema" di ogni lungo su YouTube (playlist per paese/tema, schermata finale, schede, video correlato degli Shorts, commento fissato, post Community, prima ora dopo l'uscita, test miniature, traccia inglese), le ricerche da occupare (Kerala, Tamil Nadu, India del Sud: vedi `analisi/riassunto.md`), cadenza e orari degli Shorts, obiettivi a 3 mesi. In cima "Cosa cambiare da subito" (max 5 punti). Titoli e miniature restano di Copy, montaggio di Montaggio: tu scrivi la strategia e le regole di calendario; le regole per altre aree come nota datata in fondo ai loro file.
+- (Il 18/11 avevo aperto per errore una chat separata "YouTube - crescita", session_01Htfbgz7yWMgLaNaDhPetcb: archiviata senza lavoro salvato. Manuel voleva una nuova Pianificazione.)
+
+### Lunghi (stato 18/11)
+| Data | Lungo | Stato |
+|---|---|---|
+| dom 15/11 | arthunkal | USCITO ma è andato male (48 h: 214 impressioni, CTR 1,4%, 14 visualizzazioni). Insights 17/11: SI RIFÀ DA ZERO (lungo + 4 verticali nuovi, nuovo caricamento, il vecchio diventa privato). Piano in `analisi/arthunkal_rifacimento.md`. Non escono più su YouTube i vecchi V4 (19/11), V3 (23/11) e il carosello. Montaggio ha una chat nuova per arthunkal (vedi CLAUDE.md e note di Montaggio del 18/11). DATA DEL NUOVO ARTHUNKAL: da decidere con Manuel quando Montaggio lo consegna. |
+| dom 29/11 | te | v10 approvato. Teaser V1 sab 28/11, extra "spazio Munnar" dom 29/11 alle 17:00 italiane, V3 lun 30/11 su Shorts, V2 gio 3/12, V4 chai lun 7/12 (titoli e primi secondi in nota Copy 17/11). |
+| dom 20/12 | coir | v6 approvato, pacchetto Copy completo. |
+| dom 10/1 | riassunto | Lungo B. Ricerca Insights fatta (`analisi/riassunto.md`, 16/11): voiceover di Manuel sulle immagini, cronologico, ricerche da occupare "viaggio in India del Sud", "Kerala viaggio", "primo viaggio in India consigli" ("un mese in India" non si cerca in italiano). |
+| dom 24/1 | NGO (`fortkochi`, Raksha + Ashwasa Bhavan) | Copy: copione v3 (24 blocchi, ~10 min) in `copioni/fortkochi_testi.md`; Montaggio sta lavorando a fortkochi v2. Bambini di Ashwasa a volto sfocato, mai in miniatura o teaser. |
+| dom 7/2 | bilancio | Introspettivo, NGO, gancio e spoiler Vietnam (girato 1-3/2). |
+Frase della sigla di tutti i lunghi da arthunkal rifatto in poi: nota Copy 18/11 in calendario.
+
+### Settimana in corso (18-24/11; la tabella va rivista per arthunkal)
+mer 18/11 meenakshi (titolo nuovo Copy 17/11); gio 19/11 vecchio arthunkal V4 NON su YouTube (decidere con Manuel se lasciare vuoto o mettere altro); ven 20/11 stories set 2 opzionale; sab 21/11 carosello arthunkal annullato; dom 22/11 comunismo (titolo nuovo Copy 17/11); lun 23/11 vecchio V3 NON su YouTube; gio 26/11 kallu. Proposta da fare a Manuel: riempire 19/11 e 23/11 con niente (vanno bene i giorni vuoti) finché arrivano i verticali nuovi di arthunkal.
+
+### Promemoria "collega il lungo a teaser e reel" (send_later): DA RICREARE
+Erano legati alla sessione archiviata, quindi non arrivano più. Ricreali con send_later alle 17:30 ora India del giorno del lungo (= 13:00 italiane; Manuel è in Italia, puoi scrivere l'ora come 13:00[Europe/Rome]) e cancella i vecchi con delete_trigger:
+te 29/11 (anche spazio Munnar alle 17:00 italiane) trig_01TQeeMMw5WKU3eyuq44tUBj; coir 20/12 trig_01RVE1Z3CmZUFcLSgf8XSjy9; riassunto 10/1 trig_01A2hE51iKC7VgssWtTwdpX4; NGO 24/1 trig_01H6PqPR15ond6k2ifVtaEFp; bilancio 7/2 trig_016jyb7uzBDAqb6fTJRR3mDK. Più uno per il nuovo arthunkal quando ha la data. Il 7/2 Manuel è in Vietnam: usa 13:00[Europe/Rome].
+I promemoria arrivano solo se la chat è aperta: se arrivano in ritardo, dillo a Manuel (il 15/11 è arrivato con un giorno di ritardo).
