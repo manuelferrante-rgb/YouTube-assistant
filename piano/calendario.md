@@ -515,3 +515,8 @@ dopo l'ok di Manuel. Codice `projects/arthunkal/rifacimento.py`, scelte in `proj
 Nota da Montaggio, 18/11 sera (Manuel): su Drive in `montati/arthunkal` restano SOLO i file nuovi del rifacimento (lungo 4K,
 trailer verticale e orizzontale, ponte, 4 reel). Il vecchio lungo `VociVere_arthunkal_long_4K.mp4` e i vecchi v1-v4 sono stati
 cancellati (nel cestino di Drive per 30 giorni). Restano le cartelle di Copy (miniatura, carosello, storie, sottotitoli del vecchio lungo).
+
+Nota da Montaggio, 18/11 notte: FORTKOCHI v3 (6:47) su Drive "Kochi NGO" montati/fortkochi, al posto della v2, IN APPROVAZIONE.
+Si apre sul ragazzo seduto che saluta Manuel, interviste più corte e strette, tagli netti, sottotitoli 1.5x, bambini senza sfocatura
+(consenso di tutti, Manuel 18/11). Capitoli e banner nuovi in `projects/fortkochi/capitoli.md`; Copy rifà sottotitoli it/en e capitoli
+dopo l'ok di Manuel.
