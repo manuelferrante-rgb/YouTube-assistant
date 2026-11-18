@@ -156,75 +156,75 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | Giorno | Uscita | Nota |
 |---|---|---|
 | sab 7/11 | mercato: carosello "fatto" (+ post YouTube) | PUBBLICATO (Manuel 7/11) |
-| dom 8/11 | (nessuna uscita) | stories set 1 non pubblicate, spostate al 10/11 |
+| dom 8/11 | (nessuna uscita) (IG, OPZIONALE: decide Manuel di volta in volta) | stories set 1 non pubblicate, spostate al 10/11 |
 | lun 9/11 | mercato: reel 3 |  |
-| mar 10/11 | mercato: stories set 1 | slittato dall'8/11 (Manuel 9/11) |
-| mer 11/11 | mercato: stories set 2 | slittato dal 6/11 |
-| gio 12/11 | mercato: carosello "I volti" (+ post YouTube) | set 3 spostate al 13/11 (Manuel 10/11) |
-| ven 13/11 | EXTRA autostop e mercato: stories set 3, insieme | autostop riportato al 13/11 (Manuel 10/11); entrambi i profili; set 3 insieme all'autostop (Manuel 10/11); meenakshi 18/11 è a 5 giorni |
+| mar 10/11 | mercato: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | slittato dall'8/11 (Manuel 9/11) |
+| mer 11/11 | mercato: stories set 2 (IG, OPZIONALE: decide Manuel di volta in volta) | slittato dal 6/11 |
+| gio 12/11 | mercato: carosello "I volti" (+ post YouTube) (OPZIONALE) | set 3 spostate al 13/11 (Manuel 10/11) |
+| ven 13/11 | EXTRA autostop e mercato: stories set 3, insieme (IG, OPZIONALE: decide Manuel di volta in volta) | autostop riportato al 13/11 (Manuel 10/11); entrambi i profili; set 3 insieme all'autostop (Manuel 10/11); meenakshi 18/11 è a 5 giorni |
 | sab 14/11 | arthunkal: teaser |  |
 | dom 15/11 | arthunkal: LUNGO |  |
 | lun 16/11 | arthunkal: reel V2 statua, "Una statua arrivata da Milano nel 1647, sulla costa del Kerala", su YouTube Shorts | scelto da Insights 10/11; testo per portare al lungo in `analisi/arthunkal.md`; collegare il lungo (video correlato) dopo le 13 di dom 15/11 |
-| mar 17/11 | arthunkal: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
+| mar 17/11 | arthunkal: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | scambiato col reel del lunedì (Insights 8/11) |
 | mer 18/11 | EXTRA meenakshi | spostato dall'11/11 |
 | gio 19/11 | arthunkal: reel 2 |  |
-| ven 20/11 | arthunkal: stories set 2 |  |
+| ven 20/11 | arthunkal: stories set 2 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | sab 21/11 | arthunkal: carosello (+ post YouTube) |  |
 | dom 22/11 | EXTRA comunismo | posticipato dal 12/11 |
 | lun 23/11 | arthunkal: reel 3 |  |
-| mar 24/11 | arthunkal: stories set 3 |  |
-| mer 25/11 | arthunkal: carosello "I volti" (+ post YouTube) |  |
+| mar 24/11 | arthunkal: stories set 3 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
+| mer 25/11 | arthunkal: carosello "I volti" (+ post YouTube) (OPZIONALE) |  |
 | gio 26/11 | EXTRA kallu |  |
 | sab 28/11 | te: teaser |  |
 | dom 29/11 | te: LUNGO | solo se approvato |
 | dom 29/11 | EXTRA "spazio Munnar" (reel 10.8 s, `projects/spazio_munnar/`; v7 APPROVATO da Manuel l'11/11, file `VociVere_munnar_spazio_v7_1080x1920.mp4`, Manuel lo ha già scaricato dalla chat: niente caricamento su Drive) | decisione di Manuel via Insights/Montaggio 11/11; esce DOPO il lungo (che è alle 13:00 italiane), per esempio alle 17:00 italiane; il lungo collegato subito come video correlato su YouTube, link in bio su IG; 3 giorni dopo kallu 26/11; il lun 30/11 resta il reel più forte del tè |
 | lun 30/11 | te: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
-| mar 1/12 | te: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
+| mar 1/12 | te: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | scambiato col reel del lunedì (Insights 8/11) |
 | mer 2/12 | EXTRA panni (pov giungla) | entrambi i profili |
 | gio 3/12 | te: reel 2 |  |
-| ven 4/12 | te: stories set 2 |  |
+| ven 4/12 | te: stories set 2 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | sab 5/12 | te: carosello (+ post YouTube) |  |
 | dom 6/12 | EXTRA comorin: statua di Thiruvalluvar | dopo VO, Audio, Montaggio |
 | lun 7/12 | te: reel 3 |  |
-| mar 8/12 | te: stories set 3 |  |
+| mar 8/12 | te: stories set 3 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | mer 9/12 | EXTRA bucato (te) |  |
-| gio 10/12 | te: carosello "I volti" (+ post YouTube) |  |
+| gio 10/12 | te: carosello "I volti" (+ post YouTube) (OPZIONALE) |  |
 | sab 12/12 | EXTRA comorin: canna da zucchero | entrambi i profili |
 | mar 15/12 | EXTRA comorin: cocco | entrambi i profili |
 | ven 18/12 | EXTRA roti ("How to make roti") | reel nuovo di Manuel 10/11; entrambi i profili; 3 giorni dopo cocco 15/12, 9 prima di treno 27/12 |
 | sab 19/12 | lungo A (coir): teaser |  |
 | dom 20/12 | LUNGO A (coir) |  |
 | lun 21/12 | lungo A: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
-| mar 22/12 | lungo A: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
-| mer 23/12 | lungo A: stories set 3 |  |
+| mar 22/12 | lungo A: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | scambiato col reel del lunedì (Insights 8/11) |
+| mer 23/12 | lungo A: stories set 3 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | gio 24/12 | lungo A: reel 2 |  |
-| ven 25/12 | lungo A: stories set 2 | Natale, sposta se serve |
+| ven 25/12 | lungo A: stories set 2 (IG, OPZIONALE: decide Manuel di volta in volta) | Natale, sposta se serve |
 | sab 26/12 | lungo A: carosello (+ post YouTube) |  |
 | dom 27/12 | EXTRA treno in India | reel già fatto, in galleria |
 | lun 28/12 | lungo A: reel 3 |  |
-| mer 30/12 | lungo A: carosello "I volti" (+ post YouTube) |  |
+| mer 30/12 | lungo A: carosello "I volti" (+ post YouTube) (OPZIONALE) |  |
 | gio 31/12 | EXTRA comorin: tre mari (loop) |  |
 | dom 3/1 | EXTRA dalla scorta |  |
 | mar 6/1 | EXTRA dalla scorta |  |
 | sab 9/1 | riassunto: teaser |  |
 | dom 10/1 | LUNGO B = RIASSUNTO "un mese in India", più clickbait, con piccolo spoiler sulle interviste NGO (`piano/riassunto.md`) | spostato dal 24/1 (Manuel 14/11); non richiede riprese |
 | lun 11/1 | riassunto: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
-| mar 12/1 | riassunto: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
-| mer 13/1 | riassunto: stories set 3 |  |
+| mar 12/1 | riassunto: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | scambiato col reel del lunedì (Insights 8/11) |
+| mer 13/1 | riassunto: stories set 3 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | gio 14/1 | riassunto: reel 2 |  |
-| ven 15/1 | riassunto: stories set 2 |  |
+| ven 15/1 | riassunto: stories set 2 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | sab 16/1 | riassunto: carosello (+ post YouTube) |  |
 | dom 17/1 | EXTRA dalla scorta |  |
 | lun 18/1 | riassunto: reel 3 |  |
-| mer 20/1 | riassunto: carosello "I volti" (+ post YouTube) |  |
+| mer 20/1 | riassunto: carosello "I volti" (+ post YouTube) (OPZIONALE) |  |
 | ven 22/1 | EXTRA dalla scorta |  |
 | sab 23/1 | NGO: teaser |  |
 | dom 24/1 | LUNGO C = NGO (Fort Kochi: Raksha + Ashwasa Bhavan, `piano/fortkochi.md`), il cuore di Voci Vere | spostato dal 10/1 (Manuel 14/11) |
 | lun 25/1 | NGO: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
-| mar 26/1 | NGO: stories set 1 | scambiato col reel del lunedì (Insights 8/11) |
-| mer 27/1 | NGO: stories set 3 |  |
+| mar 26/1 | NGO: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | scambiato col reel del lunedì (Insights 8/11) |
+| mer 27/1 | NGO: stories set 3 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | gio 28/1 | NGO: reel 2 |  |
-| ven 29/1 | NGO: stories set 2 |  |
+| ven 29/1 | NGO: stories set 2 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | sab 30/1 | NGO: carosello (+ post YouTube) |  |
 | dom 31/1 | NGO: reel 3 | programmato prima della partenza per il Vietnam |
 | sab 6/2 | bilancio: teaser | provvisorio (Manuel 11/11) |
@@ -475,3 +475,6 @@ e rifacimento di arthunkal): sta lavorando ad altro, decide Manuel quando ripren
 `analisi/arthunkal_rifacimento.md`. Le indicazioni da Progetto Happiness arriveranno dopo le registrazioni di Manuel.
 
 Nota da Copy, 18/11 (Manuel): FRASE DELLA SIGLA di tutti i lunghi, da arthunkal rifatto in poi: "Mi chiamo Manuel. Viaggio per ascoltare le persone che di solito nessuno ascolta, e lasciare che siano loro a raccontare la loro vita. La mia missione è dare voce a chi ne ha più bisogno. Questo è Voci Vere." Manuel la registra una volta (regola in `regole/copy.md`).
+
+Nota da Pianificazione, 18/11 (Manuel): FOCUS SU YOUTUBE. Per ogni lungo le uscite fisse sono: lungo + 4 verticali (teaser e 3 reel, come YouTube Shorts) + 1 post YouTube (il carosello "fatto" come post della scheda Community, con il link al lungo). Le stories Instagram e il carosello "I volti" diventano OPZIONALI: restano in tabella segnati così, Manuel decide di volta in volta se pubblicarli. Instagram resta come copia dei verticali, senza lavoro in più. Nuova chat "YouTube - crescita" per la strategia di crescita su YouTube (istruzioni in `analisi/youtube/LEGGIMI.md`).
+
