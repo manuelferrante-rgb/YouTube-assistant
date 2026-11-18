@@ -60,3 +60,6 @@ Nota da Insights, 18/11 (decisione di Manuel, dai dati di mercato e arthunkal): 
 video correlato. Gli altri 3 verticali escono nei giorni o nelle settimane dopo. Il teaser verticale del giorno prima non ha
 portato niente al lungo (arthunkal: 2 visualizzazioni da Short correlati su 1.200; mercato: trailer 16,6% resta): proposta di
 Insights di toglierlo (decide Manuel). Da misurare sul nuovo arthunkal: "Short correlati" del lungo dal verticale ponte.
+AGGIORNAMENTO 18/11 (Manuel, deciso): niente teaser il giorno prima. Giorno del lungo: lungo + trailer (l'apertura del lungo con
+la sigla, verticale collegato + orizzontale da condividere) + reel forte "ponte" (subito o dopo qualche ora). Poi 4 reel (non 3)
+presi dal lungo, nello stile nuovo, nei giorni o settimane dopo.
