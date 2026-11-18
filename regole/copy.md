@@ -165,3 +165,5 @@ frase forte, le persone parlano con la loro voce.
 Sigla dei lunghi (Manuel, 18/11, modello Progetto Happiness): frase della missione detta da Manuel, sempre uguale:
 "Mi chiamo Manuel. Viaggio per ascoltare le persone che di solito nessuno ascolta, e lasciare che siano loro a raccontare la loro vita.
 La mia missione è dare voce a chi ne ha più bisogno. Questo è Voci Vere." Niente domanda fissa.
+
+Nota da Pianificazione, 18/11 (Manuel): il teaser non esce più il sabato prima del lungo ma la domenica stessa, subito dopo il lungo, collegato come video correlato. Titolo e testo del teaser: un fatto che sta in piedi da solo, niente annunci tipo "video completo domenica".
