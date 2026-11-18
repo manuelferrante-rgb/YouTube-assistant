@@ -172,6 +172,43 @@ Nota Montaggio 4/11 sera: arthunkal v5 e te v8 (richieste di Manuel dai dati del
   colline 114701 (muta). "il" +3 dB e incroci tra i pezzi; "dietro il tè" a 1.1x (il resto della seconda frase 1.13x).
   File: work/spazio/out/VociVere_munnar_spazio_v7_1080x1920.mp4, mandato in chat. Girato in più: 114701 (cartella te).
 
+## STATO AL 18/11 (chat Montaggio session_01HtfbgyzvMUqUofz65iySak, chiusa per Arthunkal)
+- fortkochi (NGO): lungo v2 4K 7:23 a 23.976 fps su Drive "Kochi NGO" montati/fortkochi, IN APPROVAZIONE. Codice
+  `projects/fortkochi/build.py` (camera e VO 1.05x senza pause, B-roll sul parlato, zoom nelle interviste, bambini sfocati con
+  `tools/face_blur.py`), musica originale `projects/fortkochi/musica.py`, capitoli `projects/fortkochi/capitoli.md`, scelte in
+  `projects/fortkochi/girato.md`. Verticali di fortkochi: da fare dopo l'ok di Manuel. Regole nuove di Manuel del 17/11 in fondo a
+  `regole/montaggio_documentario.md`.
+- `tools/doc_render.py` ora va anche a 23.976 (`DOC_FPS=24000/1001`); `tools/apply_banners.py` legge la cadenza del file.
+- Manuel 18/11: NON rifare i verticali vecchi (meenakshi, comunismo, kallu, tè, spazio): si rifanno solo quelli legati ai lunghi.
+
+### ARTHUNKAL DA ZERO (lungo + 4 verticali): lavoro della chat nuova
+Piano: `analisi/arthunkal_rifacimento.md` (promessa, struttura, 4 verticali) e modello `analisi/competitor/progetto_happiness_mumbai.md`.
+Regole verticali: in fondo a `regole/formato_reel.md` (Insights 17/11: il fatto nel primo secondo; Manuel in camera, poche scritte,
+più movimento, velocizzare). Il vecchio codice (`projects/arthunkal/build.py`, `reels.py`) è un catalogo utile delle clip, ma i
+vecchi voiceover `vo_take1/2` NON esistono più (né su Drive né in locale): il nuovo montaggio usa solo il girato.
+Girato: Drive 1-31YVr-_SzqFcstOSf8RrILg_0iVDqSX, 84 clip (4.5 GB), `montati/` è vuota. Nella chat vecchia era stato scaricato e
+trascritto (trascrizione da rifare: `tools/transcribe_segments.py`). Parlato di Manuel in camera trovato (tempi nella clip):
+- `072327` (spiaggia, folla): 0.97-4.40 "Sono le sette del mattino e queste persone camminano da mezzanotte." 5.13-7.57 "Tredici
+  chilometri lungo la costa del Kerala." 8.46-10.07 "Pregando il rosario senza mai fermarsi." 10.88-12.91 "Centinaia di migliaia di
+  persone." 14.48-18.24 "La prima volta nel 2002 ne erano poche centinaia". = la promessa in camera entro 1:30.
+- `072415` "si parte da un santuario dedicato a Maria a Kalavoor", `072430` "Per 13-14 km fino ad Arthunkal".
+- Cibo e volontari: `073357` "una comunità intera che... da bere e da mangiare", `075124` "Chi prega, chi guarda dalle case, chi offre
+  acqua e chi è solo curioso", `075419` "volontari e volontarie devoti alla causa", `075747` "Volontari induisti che danno la loro
+  mano...", `075826` "Davvero una comunità riunita", `080133` "sosta per bere e mangiare qualcosino".
+- Cammino: `080017` "Proviamo per un pezzettino ad unirci a loro", `080217` "Prima lo facevano in strada... con il traffico... in spiaggia".
+- Basilica: `093557` "La chiesa l'ha ricostruita un gesuita italiano nel 1584. Padre Giacomo Fenicio. Qui lo chiamano ancora
+  Veluthachan", `093816` "Il padre bianco. Nel 1647 arrivò una statua di San Sebastiano da depositare nella chiesa" ("da Milano"
+  NON lo dice: va in scritta). Statua: `091540`; facciata `090903`; arrivo `090733` ("E dopo chilometri di cammino!").
+- Storia: `073335` cristianesimo antico, 52 d.C. tradizione; `074032` la Madonna apparsa ad Alappuzha.
+- `140536` (23/10) dice "milioni di persone": NON usare (nessuna fonte). `093832` = vecchia chiusura in camera: si usa sempre
+  `assets/voce/chiusura_vocivere.m4a`.
+- Interviste (tempi e traduzioni in `projects/arthunkal/interviste.md`): organizzatore `071857` (quattrocentomila, apparizione di
+  Maria, ottobre mese del rosario), ragazzi `072623/072658/072719` ("cristiani... musulmani... tutti insieme"), Elizabeth `074350`,
+  pellegrina `085034` ("Lì succedono tanti miracoli", "un po' di felicità").
+- Notte: `023744`, `023818`, `023510`, `023529` (vecchia grade NIGHT in build.py).
+MANCANO (da chiedere a Manuel/Copy): la frase della missione per la sigla (testo da Copy, registrazione di Manuel) e il voiceover di
+chiusura. Senza, si monta un v1 con la sigla attuale e la chiusura fissa, e si segnala.
+
 ## STATO AL 16/11 (chat Montaggio session_01Htfbh1qCXGf2QSETifZu2H, chiusa)
 - Reel "spazio Munnar" v7 APPROVATO (11/11); Manuel lo ha già scaricato dalla chat, niente Drive. Esce dom 29/11 dopo il
   lungo del tè. Rifarlo: `python3 projects/spazio_munnar/build.py` (girato in work/spazio/raw dalla cartella te
