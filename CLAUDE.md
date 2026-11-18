@@ -33,7 +33,7 @@ altre chat va scritta subito nel file giusto, poi commit e push sul branch della
 | Insights e Pianificazione | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
 Sessioni (3 chat dal 18/11): Montaggio session_01HtfbgxXus65RdWaXM91tFS (dal 18/11, arthunkal da zero; le precedenti session_01HtfbgyzvMUqUofz65iySak (fortkochi), session_01Htfbh1qCXGf2QSETifZu2H, session_01Htfbh1snHZyaWpD1y2Ff4n, session_01Htfbgygqfq2ApmZ8QQUNmP, session_01Htfbh1DnYNwCNcosU1MxNF (coir) (fa anche l'audio), Copy session_01HtfbgxNZJiZLZ12NpYTLy1 (dal 18/11; le precedenti session_01HtfbgyG3AZWwU6Vz6254eE, session_01HtfbgxkwhMbMCwGetFjun7, session_01HtfbgysqTrKE7hBx3kQeSA e session_01Htfbh1pdXfsApjZ5UHH6NS sono chiuse),
-Insights e Pianificazione session_01HtfbgxkNTt22kkzsAAPSRS (Insights dal 9/11, Pianificazione dal 18/11). Chiuse: Pianificazione session_01Htfbh1D7bjmwMvz43C3vrD e precedenti, Audio session_01HtfbgznfgQLyxms46EphZT e precedenti.
+Insights e Pianificazione session_01Htfbh1oQccBWhjrehre6NK (dal 18/11; la precedente session_01HtfbgxkNTt22kkzsAAPSRS è chiusa). Chiuse: Pianificazione session_01Htfbh1D7bjmwMvz43C3vrD e precedenti, Audio session_01HtfbgznfgQLyxms46EphZT e precedenti.
 
 FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
 1. Pianificazione (fatti, riprese), Copy (domande, parti in camera, voiceover, testi a schermo), Insights (cosa
