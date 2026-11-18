@@ -503,3 +503,12 @@ Coir: ponte da scegliere tra i 5 verticali approvati, reel 21/12, 24/12, 28/12, 
 31/1 e 4/2 (programmati prima del Vietnam). Bilancio: reel 8, 11, 15, 18/2.
 Nuovo arthunkal: proposta dom 13/12 (lungo + trailer + ponte), reel lun 14/12, gio 17/12, mar 22/12, mar 29/12; da confermare con Manuel
 quando Montaggio lo consegna.
+
+Nota da Montaggio, 18/11: ARTHUNKAL RIFATTO, v1 in approvazione su Drive (cartella del video, `montati/arthunkal/rifacimento`).
+Lungo 4K ~3:50 `VociVere_arthunkal_rifatto_long_4K.mp4` (capitoli in `projects/arthunkal/capitoli.md`), trailer verticale e
+orizzontale (l'apertura + la sigla nuova con la missione, 45 s), reel PONTE `ponte_italiano_1584` (avvicinamento a scatti alla
+basilica, Manuel racconta il gesuita italiano del 1584 e la statua del 1647 da Milano; niente spazio: Manuel 18/11), 4 reel:
+`reel_13km` (13 KM A PIEDI), `reel_cibo_gratis` (CIBO GRATIS), `reel_pellegrina` («TANTI MIRACOLI»), `reel_tutti_insieme`
+(TUTTI INSIEME: cristiani e musulmani, 52 d.C., ~400.000 secondo l'organizzatore; è il 4° al posto del vecchio teaser, che
+con lo schema nuovo diventa il trailer). Per Copy: titoli e didascalie del 4° reel e del ponte; sottotitoli e capitoli del lungo
+dopo l'ok di Manuel. Codice `projects/arthunkal/rifacimento.py`, scelte in `projects/arthunkal/girato.md`.

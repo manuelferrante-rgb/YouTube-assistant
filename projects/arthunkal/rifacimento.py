@@ -113,6 +113,15 @@ def range_gain(src, a, b, target=-23.0):
 
 
 class TL(Timeline):
+    def _vf(self, s):
+        """Verticali: anche qui lo zoom secco (ritaglio 9:16 più stretto), che il motore fa solo nel 16:9."""
+        f = super()._vf(s)
+        if self.vertical and s["zoom"] != 1.0:
+            z, cx, zy = s["zoom"], s["cx"], s.get("zy", 0.3)
+            f = f.replace(f"crop=ih*9/16:ih:'max(0,min(iw-ih*9/16,iw*{cx}-ih*9/32))':0",
+                          f"crop=ih*9/16/{z}:ih/{z}:'max(0,min(iw-ih*9/16/{z},iw*{cx}-ih*9/32/{z}))':'(ih-ih/{z})*{zy}'", 1)
+        return f
+
     def _af(self, s):
         if not (s["norm"] and s["src"] in self.audio_map):
             return super()._af(s)
@@ -335,7 +344,7 @@ class Edit:
                 "MarginL, MarginR, MarginV, Encoding\n"
                 f"Style: Sub,Poppins Medium,{sub},&H0098D8F2,&H0098D8F2,&H00000000,&H90000000,0,0,0,0,100,100,"
                 f"0.5,0,1,{sub / 32:.1f},{sub / 36:.1f},2,{int(W * 0.08)},{int(W * 0.08)},{self.tl.sub_margin},1\n"
-                f"Style: Promessa,Anton,{S(110 if v else 120)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,"
+                f"Style: Promessa,Anton,{S(135 if v else 120)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,"
                 f"2,0,1,{S(2)},{S(5)},{8 if v else 2},{S(60)},{S(60)},{S(330 if v else 150)},1\n"
                 f"Style: Luogo,Anton,{S(190 if v else 200)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,"
                 f"4,0,1,{S(3)},{S(6)},5,0,0,0,1\n"
@@ -441,7 +450,7 @@ def apertura(e, vertical=False):
         e.b(C(k), a, d, nat=0.0 if k == "0263" else 0.55, grade=gr, cx=cx.get(k, 0.5))   # 0263: c'è la voce di Manuel
         tl.shots[-1]["open"] = True
     # la promessa nei primi secondi, poi il nome del posto (Copy 18/11)
-    e.title(t0 + 0.9, t0 + 5.6, "MIGLIAIA DI PERSONE, 13 KM A PIEDI")
+    e.title(t0 + 0.9, t0 + 5.6, r"MIGLIAIA DI PERSONE,\N13 KM A PIEDI" if vertical else "MIGLIAIA DI PERSONE, 13 KM A PIEDI")
     e.title(t0 + 6.0, t0 + 10.6, "DA MEZZANOTTE ALL'ALBA")
     t_luogo = e.t - 4.6
     e.title(t_luogo + 0.4, e.t - 0.1, r"ARTHUNKAL\N{\fs%d}KERALA, INDIA" % int(90 * e.k), "Luogo")
@@ -644,16 +653,16 @@ def reel_pellegrina():
     e = reel_edit("rpell")
     fact(e, "«TANTI MIRACOLI»")
     E = C("0281")
-    e.b(E, 27.3, 1.4, cx=0.55)                                     # lei che cammina tra la folla
+    e.b(E, 6.3, 1.4, cx=0.6, nat=0.5)                              # lei che cammina tra la folla
     e.cam(C("0243"), [(5.0, 7.62)], cx=0.45)                       # "Tredici chilometri lungo la costa del Kerala"
     t_m = e.t
     e.say(E, [(30.75, 32.2), (33.0, 33.7), (38.0, 39.5), (40.1, 41.75), (43.35, 44.75)], speed=1.05, lift=True,
-          pad=(0.05, 0.1), cut=(0.3, 0.08), cx=0.55,
+          pad=(0.05, 0.1), cut=(0.3, 0.08), cx=0.55, zooms=[1.0, 1.25],
           subs=[(30.75, 32.2, "È la prima volta per te?"), (33.0, 33.7, "No."),
                 (38.0, 39.5, "Abbiamo camminato sulla spiaggia."), (40.1, 41.75, "E ora siamo in strada."),
                 (43.35, 44.75, "Che cosa significa per te?")])
     e.say(E, [(45.6, 49.2), (51.2, 55.4), (55.85, 57.1)], speed=1.05, lift=True, boost=7.0, pad=(0.05, 0.1),
-          cut=(0.3, 0.08), cx=0.55,
+          cut=(0.3, 0.08), cx=0.55, zooms=[1.25, 1.0],
           subs=[(45.6, 47.0, "È fede, è credere."), (47.2, 49.2, "Lì succedono tanti miracoli."),
                 (51.2, 55.4, "Chi partecipa ci trova qualcosa."), (55.85, 57.1, "Un po' di felicità.")])
     reel_music(e, "storia", t_m - 0.2, e.t + 2.8, level=0.07)
@@ -664,17 +673,17 @@ def reel_pellegrina():
 def reel_insieme():
     e = reel_edit("rinsieme")
     fact(e, "TUTTI INSIEME")
-    e.say(C("0250"), [(0.0, 1.8), (2.3, 3.4), (4.0, 7.2)], speed=1.05, lift=True, pad=(0.05, 0.1), cx=0.6,
+    e.say(C("0250"), [(0.0, 1.8), (2.3, 3.4), (4.0, 7.2)], speed=1.05, lift=True, pad=(0.05, 0.1), cx=0.6, zooms=[1.0, 1.25],
           subs=[(0.0, 1.8, "Ci sono cristiani..."), (2.3, 3.4, "Sì."), (4.0, 5.0, "Musulmani."),
                 (5.0, 7.2, "Sì. Tutti insieme.")])
     t_m = e.t
     e.cam(C("0254"), [(0.75, 2.8), (5.3, 9.05), (9.75, 11.0)])
-    e.say(C("0240"), [(21.05, 25.65), (61.75, 64.45)], speed=1.05, lift=True, pad=(0.05, 0.1), cx=0.55,
+    e.say(C("0240"), [(21.05, 25.65), (61.75, 64.45)], speed=1.05, lift=True, pad=(0.05, 0.1), cx=0.55, zooms=[1.0, 1.25],
           subs=[(21.05, 24.3, "Nasce da un'apparizione di Maria,"), (24.3, 25.65, "qui ad Alappuzha."),
                 (61.75, 64.45, "Partecipano circa quattrocentomila persone.")])
     e.say(C("0247"), [(10.0, 13.25)], speed=1.05, lift=True, cx=0.6,
           subs=[(10.0, 13.25, "È come una preghiera a Gesù, il mio amore.")])
-    e.say(C("0249"), [(0.05, 2.2), (6.75, 10.4), (11.0, 12.25)], speed=1.05, lift=True, cx=0.6,
+    e.say(C("0249"), [(0.05, 2.2), (6.75, 10.4), (11.0, 12.25)], speed=1.05, lift=True, cx=0.6, zooms=[1.25, 1.0],
           subs=[(0.05, 2.2, "Perché tornate ogni anno?"), (6.75, 10.4, "Per la Madre, Maria."),
                 (11.0, 12.25, "Veniamo sempre.")])
     reel_music(e, "cammino", t_m - 0.2, e.t + 2.8, level=0.07, offset=8.0)
@@ -712,11 +721,21 @@ def space_clip():
 
 
 def reel_ponte():
-    """Reel PONTE (stile "spazio Munnar"): dallo spazio sulla basilica, poi Manuel con la storia del gesuita italiano."""
+    """Reel PONTE (una curiosità che porta al lungo). Manuel 18/11: la discesa dallo spazio resta di Munnar, qui qualcosa
+    di simile ma non quello: AVVICINAMENTO A SCATTI alla basilica da terra (da lontano, più vicino, la facciata con le mani
+    alzate), un colpo d'aria a ogni stacco, poi Manuel con la storia del gesuita italiano."""
+    from sfx import sfx_file
     e = reel_edit("rponte")
     fact(e, "UN ITALIANO, 1584", d=3.6)
-    e.gfx(space_clip(), audio=True)
-    e.b(C("0302"), 0.4, 1.8, nat=0.4, cx=0.5)                       # le mani alzate davanti alla basilica
+    steps = [("0298", 0.0, 0.75, 0.5), ("0297", 1.2, 0.75, 0.52), ("0308", 0.6, 0.8, 0.5), ("0302", 0.4, 1.9, 0.5)]
+    for i, (k, a, d, cx) in enumerate(steps):
+        t = e.t
+        mark(C(k), a, d)
+        e.tl._add(C(k), a, d, gain=0.45, cx=cx, grade=DEF, fade=0.03,
+                  fx=dict(zoom=(1.0, 1.22 if i < 3 else 1.06, None), **({"flash": 0.1} if i else {})))
+        if i:
+            e.tl.sfx(max(0.0, t - 0.25), sfx_file("whoosh_short"), 0.35)
+    e.tl.sfx(e.t - 1.9, sfx_file("hit"), 0.22)
     s1 = storia(1080, 1920, "1584v", "1584|padre Giacomo Fenicio|gesuita italiano, ricostruisce la chiesa|0.4", 6.0)
     s2 = storia(1080, 1920, "1647v", "1647|San Sebastiano|una statua arrivata da Milano|0.5", 5.0, prev="1584")
     t_m = e.t
