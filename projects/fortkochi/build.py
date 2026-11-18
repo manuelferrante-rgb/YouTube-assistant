@@ -42,10 +42,8 @@ def C(k):
 
 
 def B(k):
-    """Clip con i volti dei bambini sfocati (tools/face_blur.py, controllate fotogramma per fotogramma)."""
-    p = f"{WORK}/blur/{k}_blur.mp4"
-    assert os.path.exists(p), p
-    return p
+    """v3 (Manuel 18/11): bambini SENZA sfocatura, Manuel ha il consenso di tutti: la clip originale."""
+    return C(k)
 
 
 ROT = f"{WORK}/rot/0039r.mp4"        # camminata dentro Raksha ruotata di 180°: sala 7.4-11.6
@@ -264,6 +262,7 @@ class Edit:
         self.tl = TL(W, H, f"{OUT}/{tag}_work")
         self.W, self.H, self.k = W, H, H / 1080
         self.cards = []
+        self.tl.sub_size = int(52 * self.k * 1.5)        # v3 (Manuel 18/11): sottotitoli 1.5 volte più grandi (telefono)
 
     @property
     def t(self):
@@ -277,7 +276,7 @@ class Edit:
             self.tl.shots[-1]["zy"] = zy
 
     def say(self, src, segs, cover=None, subs=(), lift=False, zooms=None, grade=DEF, speed=1.0, cut=None,
-            pad=(0.05, 0.1), **_):
+            pad=(0.05, 0.1), cx=0.5, zy=0.25, **_):
         """Parlato con la voce pulita della clip. segs = [(a, b) o (a, b, (clip, inizio))]: il terzo elemento copre quel
         tratto con un B-roll mentre la voce continua (il B-roll entra mentre si dice la cosa). cover = {indice: (clip,
         inizio)} come prima. cut = (pausa minima, margine): dentro ogni tratto si tolgono pause e respiri più lunghi.
@@ -303,15 +302,18 @@ class Edit:
             t0 = self.t
             g = 10 ** (range_gain(src, a, b) / 20) if lift else 1.0
             if cv:
-                self.tl._add(cv[0], cv[1] + off, (b - a) / speed, gain=0.0, grade=DEF, fade=0.05,
-                             fx=dict(zoom=(1.0, 1.035, None)))
+                z_ = cv[2] if len(cv) > 2 else 1.0
+                self.tl._add(cv[0], cv[1] + off, (b - a) / speed, gain=0.0, grade=cv[4] if len(cv) > 4 else DEF, fade=0.05,
+                             fx=dict(zoom=(1.0, 1.035, None)), zoom=z_, cx=cv[3] if len(cv) > 3 else 0.5)
+                if z_ != 1.0:
+                    self.tl.shots[-1]["zy"] = cv[5] if len(cv) > 5 else 0.5
                 self.tl.vos.append(dict(file=src, a=a, b=b, speed=speed, t=t0, lev=True, raw=True, af=f"volume={g:.3f}"))
             else:
                 z = zooms[zi % len(zooms)] if zooms else 1.0
                 zi += 1
-                self.tl.speech(src, [(a, b)], speed=speed, grade=grade, gain=g, zoom=z)
+                self.tl.speech(src, [(a, b)], speed=speed, grade=grade, gain=g, zoom=z, cx=cx if z != 1.0 else 0.5)
                 if z != 1.0:
-                    self.tl.shots[-1]["zy"] = 0.25
+                    self.tl.shots[-1]["zy"] = zy
             for sa, sb, txt in subs:
                 lo, hi = max(sa, a), min(sb, b)
                 if hi - lo > 0.15:
@@ -349,16 +351,21 @@ class Edit:
         p = f"{self.tl.dir}/scritte.ass"
         with open(p, "w") as f:
             f.write(head)
+            merged = []                                   # v3: lo stesso sottotitolo spezzato dai tagli diventa uno solo
             for a, b, txt in sorted(self.tl.subs):
+                if merged and merged[-1][2] == txt and a - merged[-1][1] < 0.3:
+                    merged[-1][1] = max(merged[-1][1], b)
+                elif merged and a < merged[-1][1]:
+                    merged[-1][1] = a; merged.append([a, b, txt])
+                else:
+                    merged.append([a, b, txt])
+            for a, b, txt in merged:
                 f.write(f"Dialogue: 0,{ts(a)},{ts(b)},Sub,,0,0,0,,{txt}\n")
         return p
 
     def render(self, out):
         self.tl.fix_freezes()
-        for prev, sh in zip(self.tl.shots, self.tl.shots[1:]):      # dissolvenze brevi solo tra B-roll muti
-            if not (prev["norm"] or sh["norm"] or "sigla" in sh["src"] or "sigla" in prev["src"]) and sh["d"] > 0.6 \
-                    and prev["d"] > 0.3 and sh["src"] != prev["src"] and "chiusura_" not in sh["src"]:
-                sh["xin"] = 0.25
+        # v3 (Manuel 18/11): tagli netti, niente dissolvenze sovrapposte
         self.tl.ass_override = self.ass()
         for v in self.tl.vos:
             if v.get("lev"):
@@ -420,13 +427,17 @@ CAMR = {3: [(13.45, 15.1, (C("0044"), 0.3)), (45.6, 47.9, (C("0047"), 0.3)), (54
             (61.55, 62.65, (C("0028"), 0.3)), (68.22, 71.25, (C("0002"), 0.3)), (115.45, 118.45)],
         14: [(170.88, 172.05), (172.9, 173.75), (173.75, 174.6, (C("0022"), 1.0)), (174.6, 175.5, (C("0007"), 0.5)),
              (175.5, 176.88, (C("0020"), 10.0)), (177.9, 180.02), (185.25, 187.62, (C("0032"), 0.3))],
-        17: [(195.78, 198.85), (220.82, 222.4, (ROT, 2.85)), (222.6, 224.32, (ROT, 9.4)), (252.97, 258.85)],
-        19: [(271.28, 272.8), (279.9, 282.25, (C("0037"), 13.2))],
+        17: [(195.78, 198.85), (220.82, 222.4, (C("0033"), 0.3)),     # "ho visto un ragazzo che mi salutava" (v3: lui, non il secchio)
+             (222.6, 224.32, (ROT, 7.6, 1.45, 0.3, DEF + ",eq=brightness=0.04:gamma=1.15", 0.6)), (252.97, 258.85)],
+        19: [(271.28, 272.8), (279.9, 282.25)],          # v3: Manuel in camera invece delle stesse scale
         20: [(304.2, 306.4), (307.12, 308.45), (308.9, 311.25, (C("0041"), 0.0))],
-        22: [(325.3, 326.6), (327.2, 328.65, (C("0028"), 0.3)), (346.22, 348.28, (C("0037"), 0.2)), (353.5, 356.68),
+        22: [(325.3, 326.6), (327.2, 328.65, (C("0028"), 0.3)), (346.22, 348.28), (353.5, 356.68),
              (382.78, 386.75, (C("0006"), 0.4)), (430.1, 433.1, (B("0013"), 3.0)), (436.92, 438.8)]}
 I = dict(lift=True, pad=(0.05, 0.1), zooms=[1.0, 1.15])   # interviste: zoom secco a ogni taglio (Manuel 17/11)
-I2 = dict(I, cut=(0.35, 0.1))                                # e via le pause lunghe dentro le risposte     # interviste: tagli esatti sulle risposte
+I2 = dict(I, cut=(0.35, 0.1))
+# v3 (Manuel 18/11): interviste più strette a ogni taglio (inquadratura più stretta sul viso, non solo 1.15)
+IS = dict(I2, zooms=[1.0, 1.3], cx=0.5, zy=0.3)       # suore alla porta: le due insieme, più vicine
+IE = dict(I2, zooms=[1.0, 1.45], cx=0.48, zy=0.22)    # educatrice di Raksha: stretta sul viso                                # e via le pause lunghe dentro le risposte     # interviste: tagli esatti sulle risposte
 
 SIGLA_CLIPS = [(C("0029"), 2.0), (C("0025"), 0.5), (ROT, 8.6), (C("0022"), 1.5), (C("0023"), 0.5), (C("0015"), 8.0)]
 
@@ -440,8 +451,13 @@ def long_video(W, H):
     # 0. APERTURA: l'educatrice di Raksha, la promessa del video (titolo e miniatura); poi la sala, VO1, VO2, sigla
     # (Manuel 17/11: più corta e più svelta) da "these children", via "the awareness..." e "we need to guide them";
     # la sala di Raksha su "sono come gli altri bambini", il ragazzo che saluta su "in un modo diverso"
-    e.say(E35, [(248.22, 249.8), (249.8, 252.1, (ROT, 9.3)), (252.4, 258.95), (258.95, 260.3, (ROT, 2.85)),
-                (260.3, 263.45)], cut=(0.3, 0.08),
+    # v3 (Manuel 18/11): si apre SUBITO sul ragazzo seduto che saluta Manuel (0033, tutta la clip, muta), poi i ragazzi
+    # nella sala inquadrati stretti (non la stanza), lei in video; 3 s dopo di nuovo il ragazzo. Via l'uomo col secchio.
+    BOY = C("0033")
+    e.say(E35, [(248.22, 249.8, (BOY, 0.0)), (249.8, 252.1, (ROT, 9.3, 1.6, 0.3, DEF + ",eq=brightness=0.04:gamma=1.15", 0.7)),
+                (252.4, 255.4), (255.4, 257.2, (BOY, 1.6)),
+                (257.2, 258.95),
+                (258.95, 263.45)], cut=(0.3, 0.08),
           subs=[(248.2, 252.2, "Questi bambini sono come gli altri bambini."),
                 (252.2, 256.4, "Le capacità che hanno gli altri bambini,"),
                 (256.4, 259.9, "le hanno anche i nostri: solo che lo fanno in un modo diverso."),
@@ -459,22 +475,22 @@ def long_video(W, H):
     # 2. ASHWASA
     t_ash = e.t
     vo(4, [(C("0015"), 0.5, 3.4), (C("0024"), 0.3, 3.2), (C("0005"), 3.4, None)])
-    e.say(E16, [(30.9, 34.85), (36.0, 38.4), (40.85, 45.3), (47.0, 50.95)],
+    e.say(E16, [(30.9, 34.85, (C("0017"), 0.5)), (36.0, 38.4), (40.85, 45.3), (47.0, 50.95, (C("0014"), 0.3))],
           subs=[(30.9, 34.85, "Dal 2006 ha cominciato suor Fabiola."), (36.0, 38.4, "È lei che l'ha aperta."),
                 (40.85, 45.3, "Sono vent'anni che portiamo avanti questa casa."),
-                (47.0, 50.95, "Da qui sono passati più di cento bambini.")], **I2)
+                (47.0, 50.95, "Da qui sono passati più di cento bambini.")], **IS)
     vo(5, [(C("0021"), 0.4, None)], tail=0.15)
-    e.say(E16, [(85.6, 87.8), (88.5, 92.2)],
+    e.say(E16, [(85.6, 87.8), (88.5, 92.2, (C("0029"), 3.0))],
           subs=[(85.6, 87.8, "Aveva già una casa qui vicino."),
-                (88.5, 92.2, "Fa parte della nostra congregazione, non potevamo andare lontano.")], **I2)
+                (88.5, 92.2, "Fa parte della nostra congregazione, non potevamo andare lontano.")], **IS)
     vo(6, [(B("0012"), 0.4, None)], tail=0.15)
-    e.say(E16, [(55.55, 60.2)], subs=[(55.55, 60.2, "Negli ultimi anni ero in Italia, lavoravo con gli anziani.")], **I2)
+    e.say(E16, [(55.55, 60.2)], subs=[(55.55, 60.2, "Negli ultimi anni ero in Italia, lavoravo con gli anziani.")], **dict(IS, zooms=[1.3]))
     vo(7, [(C("0004"), 0.6, 2.6), (C("0022"), 0.8, None)])
-    e.say(E16, [(108.75, 111.3), (117.2, 122.0), (122.0, 125.05), (125.05, 130.0)], cover={2: (C("0025"), 0.0)},
+    e.say(E16, [(108.75, 111.3), (117.2, 122.0, (C("0017"), 4.0)), (122.0, 125.05), (125.05, 130.0, (C("0025"), 0.0))],
           subs=[(108.75, 111.3, "Arrivano tramite il tribunale."),
                 (117.2, 122.0, "Quando i genitori hanno delle difficoltà, portano i bambini davanti al tribunale"),
                 (122.0, 125.05, "e spiegano le ragioni."),
-                (125.05, 130.0, "Così il tribunale manda i bambini qui, perché ce ne prendiamo cura.")], **I2)
+                (125.05, 130.0, "Così il tribunale manda i bambini qui, perché ce ne prendiamo cura.")], **IS)
     vo(8, [(C("0029"), 10.5, 4.0), (C("0021"), 1.5, 2.4), (C("0026"), 2.0, None)])
 
     # 3. LA GIORNATA
@@ -504,73 +520,63 @@ def long_video(W, H):
     t_like = e.t
     vo(11, [(C("0005"), 1.0, 2.2), (C("0023"), 0.3, 2.4), (B("0012"), 9.0, None)])
     vo(12, [(B("0014"), 0.3, None)], tail=0.15)
-    e.say(E16, [(191.2, 196.3), (201.0, 203.2), (204.05, 208.0)],
+    e.say(E16, [(191.2, 196.3), (201.0, 203.2, (C("0010"), 2.0)), (204.05, 208.0)],
           subs=[(191.2, 196.3, "Non possiamo mostrare i bambini. Non possiamo fare tante cose."),
                 (201.0, 203.2, "Non possiamo prendere decisioni da sole."),
-                (204.05, 208.0, "Se abbiamo una proposta, dobbiamo portarla davanti al governo.")], **I2)
+                (204.05, 208.0, "Se abbiamo una proposta, dobbiamo portarla davanti al governo.")], **dict(IS, zooms=[1.3, 1.0]))
     vo(13, [(B("0013"), 1.5, None)], tail=0.15)
-    e.say(E16, [(246.4, 250.45), (251.5, 254.35), (272.0, 278.1)],
+    e.say(E16, [(246.4, 250.45, (C("0013"), 5.0)), (251.5, 254.35), (272.0, 278.1)],
           subs=[(246.4, 250.45, "Vogliamo aiutare i bambini a costruirsi un buon futuro."),
                 (251.5, 254.35, "Diciamo, amore e affetto per i bambini."),
-                (272.0, 278.1, "Così, naturalmente, vogliamo bene ai bambini, e siamo felici anche noi.")], **I2)
+                (272.0, 278.1, "Così, naturalmente, vogliamo bene ai bambini, e siamo felici anche noi.")], **IS)
     e.say(E18, [(66.3, 67.5), (79.85, 81.9)],
           subs=[(66.3, 67.5, "Cosa ti piace di questo posto?"), (79.85, 81.9, "Sono felice di lavorare qui.")], **I2)
     e.cam(CAMR[14])
 
     # 4. RAKSHA
     t_r = e.t
-    vo(15, [(C("0042"), 0.0, 3.0), (C("0034"), 0.0, 2.1), (C("0037"), 0.2, 2.0), (C("0037"), 3.0, None)])
+    vo(15, [(C("0042"), 2.0, 1.9), (C("0037"), 0.2, None)])       # v3: meno scale e corridoi ripetuti
     music(tl, "raksha", t_r - 0.3, e.t + 0.2, fin=1.0, fout=0.6)
-    e.say(E35, [(22.7, 27.3), (28.0, 29.3), (29.8, 32.9), (46.2, 49.9), (50.8, 53.8), (54.5, 59.0), (120.1, 125.9)],
-          cover={4: (ROT, 7.6)},
+    e.say(E35, [(22.7, 27.3), (46.2, 49.9), (50.8, 53.8, (C("0034"), 0.3)), (54.5, 59.0), (120.1, 125.9)],
           subs=[(22.7, 27.3, "Il nome è Raksha Society, per la cura dei bambini con bisogni speciali."),
-                (28.0, 29.3, "Raksha cosa vuol dire?"), (29.8, 32.9, "Raksha vuol dire... salvatore."),
                 (46.2, 49.9, "È un'organizzazione che lavora con le persone con disabilità."),
                 (50.8, 53.8, "Prepariamo ogni singola persona"),
                 (54.5, 59.0, "a diventare indipendente, economicamente e nella vita di tutti i giorni."),
-                (120.1, 125.9, "Vengono di giorno: dopo le lezioni tornano a casa, e ogni giorno tornano a scuola.")], **I2)
+                (120.1, 125.9, "Vengono di giorno: dopo le lezioni tornano a casa, e ogni giorno tornano a scuola.")], **IE)
     t16 = e.t
-    vo(16, [(C("0037"), 11.0, 3.2), (C("0033"), 0.0, 3.2), (C("0037"), 17.0, None)])
+    vo(16, [(C("0037"), 11.0, 3.0), (C("0038"), 0.0, None)])
     music(tl, "raksha", t16 - 0.3, e.t + 0.2, offset=12.0, fin=0.8, fout=0.8)
     e.cam(CAMR[17])
     t18 = e.t
-    vo(18, [(ROT, 8.0, 2.0), (C("0037"), 7.2, 2.7), (C("0038"), 0.2, None)])
+    vo(18, [(C("0037"), 13.5, None)])
     t_fam = e.t
     e.cam(CAMR[19])
+    # v3 (Manuel 18/11): educatrice solo sulle frasi forti (15-20 s per blocco), inquadratura stretta a ogni taglio
     e.say(E35, [(90.6, 94.45), (94.6, 98.6), (99.2, 101.2), (104.4, 108.1)],
           subs=[(90.6, 94.45, "Appena c'è una diagnosi, che abbiano sei mesi o un anno,"),
                 (94.6, 98.6, "quando i medici vedono che un bambino è a rischio,"),
                 (99.2, 101.2, "li mandano in posti come il nostro."),
-                (104.4, 108.1, "Abbiamo bambini fin dai tre mesi di età.")], **I2)
-    e.say(E35, [(166.1, 170.75), (171.6, 179.3), (179.8, 182.75)], 
+                (104.4, 108.1, "Abbiamo bambini fin dai tre mesi di età.")], **IE)
+    e.say(E35, [(166.1, 170.75), (171.6, 179.3), (179.8, 182.75), (225.7, 231.6)],
           subs=[(166.1, 170.75, "Di solito un figlio che nasce è un sogno per i genitori."),
                 (171.6, 175.9, "Quando ai bambini viene diagnosticata una disabilità,"),
                 (175.9, 179.3, "i sogni dei genitori vanno in pezzi."),
-                (179.8, 182.75, "All'inizio si sentono impotenti.")], **I2)
-    e.say(E35, [(189.1, 191.95), (195.2, 196.4), (198.0, 203.65), (203.65, 209.6), (210.2, 214.05), (225.7, 231.6)],
-          cover={3: (C("0037"), 13.0)},
-          subs=[(189.1, 191.95, "Molti all'inizio vengono qui solo per la fisioterapia."), (195.2, 196.4, "Ma poi,"),
-                (198.0, 203.65, "con la nostra valutazione, i genitori capiscono che il bambino potrebbe"),
-                (203.65, 209.6, "avere difficoltà a scuola e in altro, anche nel parlare e nel linguaggio."),
-                (210.2, 214.05, "Allora li seguiamo, li guidiamo come si deve."),
-                (225.7, 228.55, "Seguiamo non solo i genitori,"),
-                (228.55, 231.6, "anche i fratelli e le sorelle: seguiamo tutta la famiglia.")], **I2)
+                (179.8, 182.75, "All'inizio si sentono impotenti."),
+                (225.7, 228.55, "Noi seguiamo non solo i genitori,"),
+                (228.55, 231.6, "anche i fratelli e le sorelle: seguiamo tutta la famiglia.")], **dict(IE, zooms=[1.45, 1.0]))
     t_lav = e.t
     e.cam(CAMR[20])
-    e.say(E35, [(275.7, 279.95), (280.3, 284.45), (285.1, 287.45), (288.0, 295.1), (295.3, 298.2)],
+    e.say(E35, [(275.7, 279.95), (280.3, 284.45), (295.3, 298.2)],
           subs=[(275.7, 279.95, "Perché oggi, se vuoi trovare un lavoro,"),
                 (280.3, 284.45, "prendono la persona più adatta per quel lavoro."),
-                (285.1, 287.45, "Ai nostri ragazzi manca qualcosa."),
-                (288.0, 295.1, "Anche con la riabilitazione e le terapie, nella vita trovano delle difficoltà."),
-                (295.3, 298.2, "A un certo punto hanno bisogno di qualcuno che li guidi.")], **I2)
-    vo(21, [(C("0041"), 0.0, None)], tail=0.15)
-    e.say(E35, [(268.7, 272.75), (272.9, 275.35), (298.6, 302.45), (302.9, 309.6), (310.3, 313.6), (313.7, 314.5)],
+                (295.3, 298.2, "A un certo punto hanno bisogno di qualcuno che li guidi.")], **IE)
+    vo(21, [(C("0037"), 17.0, None)], tail=0.15)
+    e.say(E35, [(268.7, 272.75), (272.9, 275.35), (302.9, 309.6), (310.3, 313.6), (313.7, 314.5)],
           subs=[(268.7, 272.75, "Quando entrano nella società, nella comunità,"),
                 (272.9, 275.35, "devono essere accettati come sono."),
-                (298.6, 302.45, "Tutti quei limiti devono essere accettati dalla comunità."),
                 (302.9, 309.6, "E le barriere, soprattutto quelle fisiche ed emotive, nella società vanno tolte."),
                 (310.3, 313.6, "È importante che nella società ci siano persone come te."),
-                (313.7, 314.5, "Grazie mille.")], **I2)
+                (313.7, 314.5, "Grazie mille.")], **dict(IE, zooms=[1.45, 1.0]))
 
     # 5. CHIUSURA
     t_fine = e.t
