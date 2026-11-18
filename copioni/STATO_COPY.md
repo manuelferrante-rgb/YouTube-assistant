@@ -9,7 +9,17 @@
 - arthunkal RIFACIMENTO (Manuel 17/11): titoli, 3 miniature v4 (Drive montati/arthunkal/miniatura/v4_rifacimento), frase della sigla,
   verticali nuovi in `copioni/arthunkal_pacchetto.md` (sezione RIFACIMENTO). Aspetta le scelte di Manuel (titolo, sigla, statua filmata?)
   e i tempi di Montaggio per descrizione, capitoli, sottotitoli e didascalie.
-- Promemoria send_later attivi: dom 22/11 10:00 traccia inglese te; dom 13/12 10:00 traccia inglese coir.
+- arthunkal (aggiornamento 18/11): statua NON filmata. Titolo scelto "13 KM A PIEDI, DI NOTTE: migliaia di pellegrini sulla costa
+  del Kerala, India 🇮🇳"; miniature M1 KERALA (principale), M2 notte, M3 basilica "RICOSTRUITA DA UN ITALIANO". Frase della sigla scelta
+  (in `regole/copy.md`), Manuel la registra e la carica in Drive arthunkal/sigla. SCHEMA NUOVO di ogni lungo (CLAUDE.md Formati):
+  lungo + trailer + reel ponte lo stesso giorno, poi 4 reel; testi di arthunkal e te nelle sezioni "SCHEMA NUOVO" dei pacchetti.
+  Messaggio a Montaggio GIÀ DATO da Manuel (18/11): Montaggio sta montando. Copy aspetta il montato per descrizione con link
+  (ordine in `regole/copy.md`, nota Insights 16/11), capitoli, sottotitoli it/en, didascalie dei 4 reel e del ponte.
+- te: il V1 nel file TESTI su Drive (montati/te/TESTI_titolo_descrizioni_verticali.txt) dice ancora "Domenica il video completo":
+  da aggiornare con la riga standard e i testi di trailer, se Manuel lo chiede.
+- Promemoria da RIPROGRAMMARE nella chat nuova (send_later, ora italiana, initiation human_request): dom 22/11 10:00 registrazione
+  traccia inglese te (`copioni/te_audio_en.md`, tempi v10: guidare Manuel, poi testo per Montaggio); dom 13/12 10:00 stessa cosa per
+  il coir (`copioni/coir_audio_en.md`, tempi v6). Nella chat vecchia vengono cancellati.
 - Coir prima del 20/12: proporre titolo e miniatura principale con il numero ("80 CENTESIMI A TAPPETO").
 
 Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in `regole/copy.md` (in fondo le note più nuove),
