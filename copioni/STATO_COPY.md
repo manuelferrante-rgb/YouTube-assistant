@@ -1,4 +1,17 @@
-# Copy: stato e passaggio di consegne (aggiornato 13/11)
+# Copy: stato e passaggio di consegne (aggiornato 18/11)
+
+## Fatto 13-18/11 (sessione session_01HtfbgyG3AZWwU6Vz6254eE)
+- fortkochi (Ashwasa + Raksha, lungo B, Manuel 16/11: esce dom 24/1): copione v3 a 24 blocchi in `copioni/fortkochi_testi.md`,
+  VO e camera REGISTRATI e controllati (Drive cartella 1J2VdasjXPmTi9OTbMbNYrBbV9_BH3EZc, "Voice Over + Camera"), prese buone
+  nel file, messaggio per Montaggio dato a Manuel. Da fare: sottotitoli it/en, titolo, descrizione, capitoli, miniatura sul montato.
+- Verticali delle prossime 3 settimane: titolo dello Short e primo titolo a schermo in fondo a `piano/calendario.md` (nota Copy 17/11).
+  Testi dei reel extra comunismo (22/11) e kallu (26/11) in `copioni/extra_testi.md`.
+- arthunkal RIFACIMENTO (Manuel 17/11): titoli, 3 miniature v4 (Drive montati/arthunkal/miniatura/v4_rifacimento), frase della sigla,
+  verticali nuovi in `copioni/arthunkal_pacchetto.md` (sezione RIFACIMENTO). Aspetta le scelte di Manuel (titolo, sigla, statua filmata?)
+  e i tempi di Montaggio per descrizione, capitoli, sottotitoli e didascalie.
+- Promemoria send_later attivi: dom 22/11 10:00 traccia inglese te; dom 13/12 10:00 traccia inglese coir.
+- Coir prima del 20/12: proporre titolo e miniatura principale con il numero ("80 CENTESIMI A TAPPETO").
+
 Da leggere all'avvio di ogni nuova chat Copy, dopo CLAUDE.md. Regole complete in `regole/copy.md` (in fondo le note più nuove),
 `regole/formato_reel.md`, `copioni/caroselli/testi_caroselli.md` (regole dei caroselli), `copioni/stories/storie_testi.md`.
 
