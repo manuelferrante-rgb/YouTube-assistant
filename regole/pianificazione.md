@@ -64,3 +64,8 @@ AGGIORNAMENTO 18/11 (Manuel, deciso): niente teaser il giorno prima. Giorno del 
 la sigla, verticale collegato + orizzontale da condividere) + reel forte "ponte" (subito o dopo qualche ora). Poi 4 reel (non 3)
 presi dal lungo, nello stile nuovo, nei giorni o settimane dopo.
 - SCHEMA DI USCITA DI OGNI LUNGO (Manuel, 18/11; sostituisce "1 teaser (sabato prima)" e "3 reel"): niente teaser il giorno prima. Il giorno del lungo, dalle 13:00: il lungo, il TRAILER (apertura del lungo con la sigla, verticale come Short collegato e orizzontale per WhatsApp e storie) e il REEL PONTE (reel forte stile "spazio Munnar", subito o qualche ora dopo, collegato). Poi 4 reel presi dal lungo, di norma lunedì e giovedì delle settimane dopo, senza toccare gli extra. Restano il carosello "fatto" come post YouTube e gli opzionali.
+
+Nota da Insights e Pianificazione, 18/11 (Manuel): PIANIFICAZIONE LEGGERA, FOCUS YOUTUBE. Pianificazione è dentro la chat
+Insights. Non si segue più un calendario dettagliato al 100%: per ogni lungo fatto bene lo schema è lungo + trailer + reel ponte
+il giorno stesso, poi 4 verticali; in mezzo extra e contenuti nuovi quando ci sono. Tutto il traffico va verso il lungo su YouTube.
+Instagram: Manuel mette lo stesso materiale quando se ne ricorda, senza piano. Le date in `piano/calendario.md` sono indicative.

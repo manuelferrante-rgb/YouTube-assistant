@@ -147,3 +147,9 @@ Prassi (Manuel, 17/11 sera): Montaggio finisce il lavoro in corso, poi si rifà 
 subito (forse mer 18 o gio 19/11, magari di sera per provare un orario nuovo). Appena ci sono dati del nuovo, Insights li
 analizza e si risistemano i video successivi già montati (te, coir, extra) con le regole nuove. Ogni volta così: pubblico,
 dati, correzioni sui successivi. Il promemoria del 22/11 è stato aggiornato per chiedere i dati del nuovo arthunkal.
+
+## Dal 18/11: questa chat è Insights E Pianificazione (Manuel)
+3 chat in tutto: Montaggio (anche audio), Copy, Insights e Pianificazione (questa). Pianificazione leggera: lungo + trailer +
+reel ponte il giorno stesso, poi 4 verticali, extra quando ci sono; focus YouTube, Instagram senza piano. I promemoria "Collega
+lungo" (te 29/11, coir 20/12, riassunto 10/1, NGO 24/1, bilancio 7/2) sono stati spostati qui con lo schema nuovo. Stato
+precedente di Pianificazione: `piano/STATO_pianificazione.md`.
