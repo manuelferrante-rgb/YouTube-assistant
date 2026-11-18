@@ -1,4 +1,51 @@
-# Insights: stato e passaggio di consegne (aggiornato 8/11/2026 sera)
+# Insights e Pianificazione: stato e passaggio di consegne (aggiornato 18/11 sera)
+
+## LEGGI PRIMA QUESTO (riassunto per la chat nuova del 18/11)
+Chat: questa è "Insights e Pianificazione" (dal 18/11). Le chat sono 3: Montaggio (anche audio), Copy, Insights e Pianificazione.
+Manuel: risposte brevi, una raccomandazione, decisione già presa. Mai il trattino lungo. I messaggi alle altre chat li prepari
+e li mandi SOLO quando Manuel dice di mandarli (regola 11/11); di solito li copia lui.
+
+### Decisioni di Manuel ancora valide (dalle più recenti)
+- Focus YouTube (17/11). Instagram: stesso materiale quando se ne ricorda, nessuna analisi dedicata.
+- Pianificazione leggera (18/11, `regole/pianificazione.md`): niente calendario rigido. Per ogni lungo: NIENTE teaser il giorno
+  prima; il giorno del lungo esce il lungo + TRAILER (l'apertura del lungo con la sigla, verticale collegato + orizzontale da
+  condividere) + REEL PONTE (stile "spazio Munnar", subito o dopo qualche ora, collegato). Poi 4 reel presi dal lungo nei giorni
+  dopo. Extra in mezzo quando ci sono.
+- Prassi (17/11): pubblica, dati a 48 ore e 7 giorni, correzioni subito sui lunghi e verticali successivi già montati.
+- Stile nuovo: lunghi sul modello Progetto Happiness (`analisi/competitor/progetto_happiness_mumbai.md`): apertura di sole
+  immagini forti con musica e nome del posto, sigla con la frase della missione (scelta da Manuel, testo in copioni, vedi git log
+  "Copy: frase della sigla"), Manuel in camera con 2-3 numeri entro 1:30, una cosa nuova ogni 1-2 minuti, intervista vera come
+  cuore, chiusura in voiceover. Verticali: Manuel in camera, movimento, poche scritte, velocizzati; il fatto del titolo nel primo
+  secondo (`regole/formato_reel.md`, note 17/11).
+- Titoli e miniature: una cosa concreta da vedere con un numero (regola confermata 17/11 in `regole/copy.md`). Parole forti sì,
+  anche paragoni duri (CLAUDE.md, 17/11). Miniature: una delle 3 del test con Manuel al centro e il posto scritto enorme.
+- Shorts non portano al lungo (confermato su mercato e arthunkal): servono a farsi conoscere.
+
+### Dove siamo (18/11)
+- ARTHUNKAL andato male (48 ore: 214 impressioni, CTR 1,4%, 14 visualizzazioni; `analisi/arthunkal.md`): Montaggio lo sta
+  RIFACENDO da zero (lungo + trailer + ponte + 4 reel), piano in `analisi/arthunkal_rifacimento.md`. Manuel lo ripubblica appena
+  pronto (forse di sera, per provare un orario nuovo). Vecchi V3/V4 e carosello di arthunkal non escono.
+- TÈ (lungo dom 29/11, v10 6:29): ponte = "spazio Munnar" il giorno stesso. Traccia inglese: promemoria di Copy il 22/11.
+- COIR (dom 20/12): titolo "CHI C'È DIETRO I NOSTRI TAPPETI...", intro con VO nuovo, 3 miniature (`analisi/coir_script.md`).
+- RIASSUNTO (dom 10/1): ricerca fatta (`analisi/riassunto.md`), messaggi pronti in `analisi/messaggi_da_mandare.md`.
+- FORTKOCHI / NGO (dom 24/1): v2 7:23 su Drive; revisione con 5 modifiche in `analisi/fortkochi.md`, messaggio per Montaggio
+  da mandare dopo arthunkal.
+- BILANCIO (dom 7/2): solo punti fermi in `analisi/messaggi_da_mandare.md`.
+- Dati mercato: `analisi/mercato.md`. Competitor India: `analisi/riassunto.md`.
+
+### Come leggere i dati di Manuel
+Registrazioni dello schermo su Drive "Insights Voci Vere/<n>" (rclone con GDRIVE_RCLONE_TOKEN, root del Drive; il "My Drive"
+di Manuel). Ogni registrazione inizia o finisce con lo zoom sulla copertina. Competitor: Drive "Competitor/". Fotogrammi con
+ffmpeg, audio con `tools/transcribe_segments.py`. YouTube: le pagine dei singoli video sono bloccate (anti-bot): NON aggirarlo,
+si chiede a Manuel di registrare. Ricerca e miniature (i.ytimg.com) funzionano con yt-dlp --flat-playlist.
+
+### Promemoria programmati (spostati sulla chat nuova)
+22/11 dati arthunkal (nuovo) e programmare 48 h/7 giorni; 29/11, 20/12, 10/1, 24/1, 7/2 "collega lungo"; 30/11 revisione strumenti.
+Dopo l'uscita di ogni lungo: programmare 48 h e 7 giorni.
+
+---
+STORICO (sotto, per riferimento)
+
 
 Da leggere all'avvio di ogni nuova chat Insights, dopo CLAUDE.md e analisi/README.md.
 
