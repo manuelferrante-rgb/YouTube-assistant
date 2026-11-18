@@ -96,3 +96,7 @@ mer 18/11 meenakshi (titolo nuovo Copy 17/11); gio 19/11 vecchio arthunkal V4 NO
 Erano legati alla sessione archiviata, quindi non arrivano più. Ricreali con send_later alle 17:30 ora India del giorno del lungo (= 13:00 italiane; Manuel è in Italia, puoi scrivere l'ora come 13:00[Europe/Rome]) e cancella i vecchi con delete_trigger:
 te 29/11 (anche spazio Munnar alle 17:00 italiane) trig_01TQeeMMw5WKU3eyuq44tUBj; coir 20/12 trig_01RVE1Z3CmZUFcLSgf8XSjy9; riassunto 10/1 trig_01A2hE51iKC7VgssWtTwdpX4; NGO 24/1 trig_01H6PqPR15ond6k2ifVtaEFp; bilancio 7/2 trig_016jyb7uzBDAqb6fTJRR3mDK. Più uno per il nuovo arthunkal quando ha la data. Il 7/2 Manuel è in Vietnam: usa 13:00[Europe/Rome].
 I promemoria arrivano solo se la chat è aperta: se arrivano in ritardo, dillo a Manuel (il 15/11 è arrivato con un giorno di ritardo).
+
+## Promemoria ricreati il 18/11 (sessione session_01Htfbh1D7bjmwMvz43C3vrD)
+send_later alle 13:00 italiane, legati a questa sessione: te dom 29/11 (anche spazio Munnar) trig_01G6hbWdgb8ahZwtuaMBxiEf; coir dom 20/12 trig_01AdD89M4CYnTstBZiscFHnX; riassunto dom 10/1 trig_012pmR5CK9edXWrfL7JTWhoA; NGO dom 24/1 trig_018k34CAtmSSxJPbwUqBqSAw; bilancio dom 7/2 trig_015dHETeQmxTXEsZaKhPpBPo. Manca quello del nuovo arthunkal (quando ha la data).
+Vecchi cancellati: trig_01A2hE..., trig_01H6Pq..., trig_016jyb.... NON cancellati (permesso negato): trig_01TQeeMMw5WKU3eyuq44tUBj (te) e trig_01RVE1Z3CmZUFcLSgf8XSjy9 (coir); puntano alla sessione archiviata, quindi non arrivano. Se servisse, Manuel li cancella dai task programmati.
