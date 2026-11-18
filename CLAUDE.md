@@ -19,21 +19,21 @@ Gli allenamenti in palestra (1 video ogni 3-5) li gestisce Manuel: niente suppor
 - Stile: diretto, concreto, niente retorica. Mai il trattino lungo.
 
 ## Chat di lavoro (dal 25/10)
-Il lavoro è diviso in 5 chat. Ogni chat legge questo file all'avvio e si occupa solo della sua area.
+Il lavoro è diviso in 3 chat (Manuel, 18/11: prima erano 5). Ogni chat legge questo file all'avvio e si occupa solo della sua area.
+Pianificazione è dentro la chat Insights; Audio è dentro Montaggio (la chat Audio è archiviata). Le righe sotto dicono cosa fa ogni area.
 Le chat non si parlano: la memoria comune sono i file del repo. Ogni decisione di Manuel che conta anche per
 altre chat va scritta subito nel file giusto, poi commit e push sul branch della sessione (prima un pull).
 
 | Chat | Fa | Scrive in |
 |---|---|---|
-| Pianificazione | idee per luogo, ricerca dei fatti con fonti, lista riprese, voiceover da registrare, piano editoriale e calendario uscite | `piano/` (`piano/calendario.md`, un file per video in preparazione) e il copione in `projects/<video>/` |
+| Pianificazione (dentro Insights dal 18/11) | idee per luogo, ricerca dei fatti con fonti, lista riprese, voiceover da registrare, piano editoriale e calendario uscite | `piano/` (`piano/calendario.md`, un file per video in preparazione) e il copione in `projects/<video>/` |
 | Montaggio | lunghi, verticali, grafiche, sottotitoli, minutaggi dei capitoli, consegna su Drive; inserisce i suoni della chat Audio e le chiede gli effetti con `projects/<video>/audio_cue.md` | `projects/<video>/`, `regole/montaggio_documentario.md`, `tools/` |
-| Audio | SOLO musiche e segni melodici originali a tema del video, autore Voci Vere (`audio/musica/compose.py`), solo sui tratti di solo B-roll e se servono; mai rumori esterni, librerie, ambienti o suoni del girato; niente pulizia voce (è di Montaggio). Regola di Manuel 27-28/10, confermata il 29/10: nessuna eccezione | `audio/` (kit e catalogo con licenze), `projects/<video>/audio/`, `regole/audio.md` |
+| Audio (dentro Montaggio dal 18/11) | SOLO musiche e segni melodici originali a tema del video, autore Voci Vere (`audio/musica/compose.py`), solo sui tratti di solo B-roll e se servono; mai rumori esterni, librerie, ambienti o suoni del girato; niente pulizia voce (è di Montaggio). Regola di Manuel 27-28/10, confermata il 29/10: nessuna eccezione | `audio/` (kit e catalogo con licenze), `projects/<video>/audio/`, `regole/audio.md` |
 | Copy e packaging | titoli, descrizioni it/en, capitoli (dai minutaggi del montaggio), didascalie IG, testi dei verticali, idee miniatura, carosello di ogni lungo, sottotitoli it/en del lungo; testi a schermo per Montaggio (scritte sui B-roll del lungo, gancio e scritte dei 4 verticali, sul girato già registrato); dal 25/10 per i prossimi video anche le domande da fare alle persone e la parte di storia da dire in camera | `copioni/<video>_testi.md` |
-| Insights | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
+| Insights e Pianificazione | analisi dei dati che Manuel manda (screenshot/esportazioni di YouTube Studio e IG), cosa funziona e cosa cambiare; analisi dei competitor (lunghi, Shorts, Reel) e formati brevi che portano al lungo | `analisi/` e, quando una lezione è confermata, la regola nel file dell'area interessata |
 
-Sessioni (per mandarsi un messaggio diretto se serve, oltre ai file): Montaggio session_01HtfbgxXus65RdWaXM91tFS (dal 18/11, arthunkal da zero; le precedenti session_01HtfbgyzvMUqUofz65iySak (fortkochi), session_01Htfbh1qCXGf2QSETifZu2H, session_01Htfbh1snHZyaWpD1y2Ff4n, session_01Htfbgygqfq2ApmZ8QQUNmP, session_01Htfbh1DnYNwCNcosU1MxNF (coir) e session_01Htfbh2Xp2z2rbRNGYUwBKL sono chiuse),
-Pianificazione session_01Htfbh1D7bjmwMvz43C3vrD (dal 18/11; le precedenti session_01HtfbgzRWCqFKSmTBynYgBP, session_01Htfbh1JY3Yt7kZFCWdZ1R7 e session_01Htfbh1gkXBLknEYqpSW8Nz sono chiuse), Copy session_01HtfbgyG3AZWwU6Vz6254eE (dal 13/11; le precedenti session_01HtfbgxkwhMbMCwGetFjun7, session_01HtfbgysqTrKE7hBx3kQeSA e session_01Htfbh1pdXfsApjZ5UHH6NS sono chiuse),
-Insights session_01HtfbgxkNTt22kkzsAAPSRS (dal 9/11; la precedente session_01HtfbgytQCQCLucysNXetfy è chiusa), Audio session_01HtfbgznfgQLyxms46EphZT (dal 9/11; la precedente session_01Htfbh1kM4nuyvmpEN66EKu è chiusa).
+Sessioni (3 chat dal 18/11): Montaggio session_01HtfbgxXus65RdWaXM91tFS (dal 18/11, arthunkal da zero; le precedenti session_01HtfbgyzvMUqUofz65iySak (fortkochi), session_01Htfbh1qCXGf2QSETifZu2H, session_01Htfbh1snHZyaWpD1y2Ff4n, session_01Htfbgygqfq2ApmZ8QQUNmP, session_01Htfbh1DnYNwCNcosU1MxNF (coir) (fa anche l'audio), Copy session_01HtfbgyG3AZWwU6Vz6254eE (dal 13/11; le precedenti session_01HtfbgxkwhMbMCwGetFjun7, session_01HtfbgysqTrKE7hBx3kQeSA e session_01Htfbh1pdXfsApjZ5UHH6NS sono chiuse),
+Insights e Pianificazione session_01HtfbgxkNTt22kkzsAAPSRS (Insights dal 9/11, Pianificazione dal 18/11). Chiuse: Pianificazione session_01Htfbh1D7bjmwMvz43C3vrD e precedenti, Audio session_01HtfbgznfgQLyxms46EphZT e precedenti.
 
 FLUSSO DI OGNI VIDEO (Manuel, 26/10), così nessuno ripete le stesse cose:
 1. Pianificazione (fatti, riprese), Copy (domande, parti in camera, voiceover, testi a schermo), Insights (cosa
