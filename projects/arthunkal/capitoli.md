@@ -1,7 +1,7 @@
 # Arthunkal RIFATTO (18/11): minutaggi dei capitoli del lungo nuovo
 
 Lungo v1 del rifacimento (Montaggio 18/11), 3:50, file `VociVere_arthunkal_rifatto_long_4K.mp4` su Drive in
-`montati/arthunkal/rifacimento`. Codice `projects/arthunkal/rifacimento.py long` (tempi esatti in
+`montati/arthunkal`. Codice `projects/arthunkal/rifacimento.py long` (tempi esatti in
 `work/arthunkal/out2/long_*.json`). I capitoli del vecchio lungo (v4/v5) sono superati: il vecchio diventa privato
 quando esce questo. Titoli di lavoro: quelli definitivi it/en li scrive Copy.
 

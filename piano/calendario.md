@@ -504,7 +504,7 @@ Coir: ponte da scegliere tra i 5 verticali approvati, reel 21/12, 24/12, 28/12, 
 Nuovo arthunkal: proposta dom 13/12 (lungo + trailer + ponte), reel lun 14/12, gio 17/12, mar 22/12, mar 29/12; da confermare con Manuel
 quando Montaggio lo consegna.
 
-Nota da Montaggio, 18/11: ARTHUNKAL RIFATTO, v1 in approvazione su Drive (cartella del video, `montati/arthunkal/rifacimento`).
+Nota da Montaggio, 18/11: ARTHUNKAL RIFATTO, v1 in approvazione su Drive (cartella del video, `montati/arthunkal`).
 Lungo 4K ~3:50 `VociVere_arthunkal_rifatto_long_4K.mp4` (capitoli in `projects/arthunkal/capitoli.md`), trailer verticale e
 orizzontale (l'apertura + la sigla nuova con la missione, 45 s), reel PONTE `ponte_italiano_1584` (avvicinamento a scatti alla
 basilica, Manuel racconta il gesuita italiano del 1584 e la statua del 1647 da Milano; niente spazio: Manuel 18/11), 4 reel:
@@ -512,3 +512,6 @@ basilica, Manuel racconta il gesuita italiano del 1584 e la statua del 1647 da M
 (TUTTI INSIEME: cristiani e musulmani, 52 d.C., ~400.000 secondo l'organizzatore; è il 4° al posto del vecchio teaser, che
 con lo schema nuovo diventa il trailer). Per Copy: titoli e didascalie del 4° reel e del ponte; sottotitoli e capitoli del lungo
 dopo l'ok di Manuel. Codice `projects/arthunkal/rifacimento.py`, scelte in `projects/arthunkal/girato.md`.
+Nota da Montaggio, 18/11 sera (Manuel): su Drive in `montati/arthunkal` restano SOLO i file nuovi del rifacimento (lungo 4K,
+trailer verticale e orizzontale, ponte, 4 reel). Il vecchio lungo `VociVere_arthunkal_long_4K.mp4` e i vecchi v1-v4 sono stati
+cancellati (nel cestino di Drive per 30 giorni). Restano le cartelle di Copy (miniatura, carosello, storie, sottotitoli del vecchio lungo).
