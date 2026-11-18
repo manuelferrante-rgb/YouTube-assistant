@@ -194,3 +194,7 @@ Didascalie e descrizioni: quando Montaggio ha i montati. Pacchetto del lungo (de
 - Miniatura 3: M3_basilica "RICOSTRUITA DA UN ITALIANO" (en "REBUILT BY AN ITALIAN"), al posto di M3_milano (in vecchie/ su Drive).
 - Teaser: "Una chiesa in India ricostruita da un gesuita italiano nel 1584 🇮🇳", unica scritta "UN ITALIANO, 1584", primo secondo
   la basilica con la folla e Manuel in camera.
+
+### FRASE DELLA SIGLA, SCELTA DI MANUEL (18/11): vale per tutti i lunghi, registrata una volta
+"Mi chiamo Manuel. Viaggio per ascoltare le persone che di solito nessuno ascolta, e lasciare che siano loro a raccontare la loro vita.
+La mia missione è dare voce a chi ne ha più bisogno. Questo è Voci Vere."

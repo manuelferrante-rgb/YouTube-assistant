@@ -473,3 +473,5 @@ il vecchio lungo diventa privato quando esce il nuovo. Data del nuovo lungo e de
 Nota da Insights, 17/11 sera (Manuel): Montaggio NON fa per ora le istruzioni di Insights del 17/11 (primi secondi dei verticali
 e rifacimento di arthunkal): sta lavorando ad altro, decide Manuel quando riprenderle. Il piano resta in
 `analisi/arthunkal_rifacimento.md`. Le indicazioni da Progetto Happiness arriveranno dopo le registrazioni di Manuel.
+
+Nota da Copy, 18/11 (Manuel): FRASE DELLA SIGLA di tutti i lunghi, da arthunkal rifatto in poi: "Mi chiamo Manuel. Viaggio per ascoltare le persone che di solito nessuno ascolta, e lasciare che siano loro a raccontare la loro vita. La mia missione è dare voce a chi ne ha più bisogno. Questo è Voci Vere." Manuel la registra una volta (regola in `regole/copy.md`).

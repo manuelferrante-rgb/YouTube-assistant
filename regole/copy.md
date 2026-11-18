@@ -161,3 +161,7 @@ Nota da Insights, 17/11 (decisione di Manuel, modello Progetto Happiness, `anali
 PAROLE FORTI SÌ. Titoli, ganci e frasi forti servono per farsi conoscere e si possono usare, anche paragoni duri ("formicaio")
 e il contrasto con la nostra vita. Manuel ha tolto i divieti più stretti (troppo limitanti). Decide lui caso per caso; dopo la
 frase forte, le persone parlano con la loro voce.
+
+Sigla dei lunghi (Manuel, 18/11, modello Progetto Happiness): frase della missione detta da Manuel, sempre uguale:
+"Mi chiamo Manuel. Viaggio per ascoltare le persone che di solito nessuno ascolta, e lasciare che siano loro a raccontare la loro vita.
+La mia missione è dare voce a chi ne ha più bisogno. Questo è Voci Vere." Niente domanda fissa.
