@@ -186,3 +186,11 @@ Consigliata la 1: corta, chiara, sta nei 4-5 s della sigla e riprende il payoff 
 | Cibo gratis | Cibo e acqua gratis per chi cammina 13 km 🇮🇳 | CIBO GRATIS | le mani che passano cibo o acqua |
 | La pellegrina | 13 km di notte: «Lì succedono tanti miracoli» 🇮🇳 | «TANTI MIRACOLI» | lei che cammina tra la folla |
 Didascalie e descrizioni: quando Montaggio ha i montati. Pacchetto del lungo (descrizione con link, capitoli, sottotitoli): sui tempi del nuovo montato.
+
+### Aggiornamento 18/11 (Manuel: la statua NON è stata filmata)
+- Titolo consigliato nuovo: 13 KM A PIEDI, DI NOTTE: migliaia di pellegrini sulla costa del Kerala, India 🇮🇳
+  (EN: 13 KM ON FOOT, AT NIGHT: thousands of pilgrims on the coast of Kerala, India 🇮🇳). Milano e il 1647 restano nel video
+  (VO e linea del tempo), non nella promessa: la statua non si vede.
+- Miniatura 3: M3_basilica "RICOSTRUITA DA UN ITALIANO" (en "REBUILT BY AN ITALIAN"), al posto di M3_milano (in vecchie/ su Drive).
+- Teaser: "Una chiesa in India ricostruita da un gesuita italiano nel 1584 🇮🇳", unica scritta "UN ITALIANO, 1584", primo secondo
+  la basilica con la folla e Manuel in camera.
