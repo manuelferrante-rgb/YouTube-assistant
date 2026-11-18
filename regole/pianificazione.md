@@ -54,3 +54,9 @@
 - FOCUS SU YOUTUBE (Manuel, 18/11): si cresce su YouTube, Instagram è secondario (pochi follower, le stories sono tempo perso). Per ogni lungo le uscite fisse sono lungo + 4 verticali (Shorts) + 1 post YouTube (carosello "fatto" nella scheda Community). Stories IG e carosello "I volti" sono opzionali: in calendario restano segnati "OPZIONALE", li decide Manuel di volta in volta. I verticali vanno anche su IG come copia, senza lavoro dedicato. Le scelte di calendario si fanno pensando a YouTube (giorni e ore, Short il lunedì dopo il lungo, distanza tra i lunghi): la strategia è in `analisi/youtube/`.
 
 - NIENTE TEASER PRIMA DEL LUNGO (Manuel, 18/11): il teaser diventa il quarto Short e esce la domenica stessa, subito dopo il lungo delle 13:00, con il lungo già collegato come video correlato. Sta in piedi da solo come gli altri Short. Il sabato prima resta vuoto. Sostituisce "1 teaser (sabato prima)" nelle regole sopra.
+
+Nota da Insights, 18/11 (decisione di Manuel, dai dati di mercato e arthunkal): IL GIORNO DEL LUNGO esce anche un verticale
+"ponte" stile "spazio Munnar" (crea curiosità e rimanda al lungo), pubblicato subito dopo il lungo con il lungo collegato come
+video correlato. Gli altri 3 verticali escono nei giorni o nelle settimane dopo. Il teaser verticale del giorno prima non ha
+portato niente al lungo (arthunkal: 2 visualizzazioni da Short correlati su 1.200; mercato: trailer 16,6% resta): proposta di
+Insights di toglierlo (decide Manuel). Da misurare sul nuovo arthunkal: "Short correlati" del lungo dal verticale ponte.
