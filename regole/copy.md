@@ -167,3 +167,9 @@ Sigla dei lunghi (Manuel, 18/11, modello Progetto Happiness): frase della missio
 La mia missione è dare voce a chi ne ha più bisogno. Questo è Voci Vere." Niente domanda fissa.
 
 Nota da Pianificazione, 18/11 (Manuel): il teaser non esce più il sabato prima del lungo ma la domenica stessa, subito dopo il lungo, collegato come video correlato. Titolo e testo del teaser: un fatto che sta in piedi da solo, niente annunci tipo "video completo domenica".
+
+Testi del nuovo schema di ogni lungo (Manuel, 18/11, CLAUDE.md Formati): per ogni lungo Copy scrive
+- TRAILER (apertura del lungo con la sigla): titolo dello Short = un fatto concreto, didascalia con "Il video completo è uscito oggi
+  sul canale YouTube Voci Vere, link in bio" (YT: "nel link sopra il titolo"), e un testo corto per la versione orizzontale da condividere;
+- REEL PONTE: titolo = la curiosità che fa andare a vedere il lungo (anche una domanda), una sola scritta, la risposta solo nel lungo;
+- 4 REEL dopo: titolo = fatto concreto con un numero, una sola scritta all'inizio, che si vede nel primo secondo. Poche scritte.

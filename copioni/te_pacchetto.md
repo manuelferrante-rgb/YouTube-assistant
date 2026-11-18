@@ -148,3 +148,22 @@ Sadish da solo con le foglie in mano davanti alle colline, "E OGGI / DI CHI SONO
 1. v2_1_sadish: Sadish a mezzo busto, colline larghe.
 2. v2_2_sadish_vicino: più vicino, il viso grande (consigliata, si legge meglio sul telefono).
 3. v2_3_sadish_mano: la mano aperta verso i filari.
+
+### SCHEMA NUOVO (Manuel 18/11): dom 29/11 lungo + TRAILER + PONTE "spazio Munnar" (testi sopra); poi i 4 reel V1-V4. Niente teaser sabato.
+TRAILER (apertura del lungo v10 con la sigla; verticale collegato + orizzontale da condividere)
+- Titolo Short / prima riga IG: Il tè ancora raccolto a mano, sulle colline di Munnar 🇮🇳
+  (non il 3.000 rupie: è già nel titolo del lungo e nel reel V1)
+- Didascalia IG:
+  Il tè ancora raccolto a mano, sulle colline di Munnar 🇮🇳
+  Kerala, a oltre 1.500 metri. Foglia per foglia, tutto il giorno.
+
+  Sai da dove viene il tè che bevi?
+
+  Il video completo è uscito oggi sul canale YouTube Voci Vere, link in bio.
+  #india #kerala #viaggio #VociVere #tè
+- Descrizione Short YT: Munnar, Kerala: il tè si raccoglie ancora a mano. Il video completo è uscito oggi: è nel link sopra il titolo. #india #kerala #viaggio #VociVere #tè
+- Orizzontale (da condividere): È uscito il nuovo video di Voci Vere: le colline del tè di Munnar, affittate nel 1877 per 3.000 rupie l'anno, e chi ci lavora oggi. [link del lungo]
+PONTE: "spazio Munnar", testi già pronti (sezione Reel EXTRA sopra), esce dopo il lungo.
+4 REEL: V1 (3.000 rupie), V3 (26-29 kg), V2 (2-3 foglie), V4 chai, con titoli e prima scritta come nella tabella Copy 17/11 in
+piano/calendario.md. Nelle didascalie di V1-V4 il rimando diventa "Video completo sul canale YouTube Voci Vere, link in bio."
+(già così in V2-V4; il V1 era un teaser: togliere "Domenica il video completo" e mettere la riga standard).

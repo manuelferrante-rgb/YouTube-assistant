@@ -198,3 +198,33 @@ Didascalie e descrizioni: quando Montaggio ha i montati. Pacchetto del lungo (de
 ### FRASE DELLA SIGLA, SCELTA DI MANUEL (18/11): vale per tutti i lunghi, registrata una volta
 "Mi chiamo Manuel. Viaggio per ascoltare le persone che di solito nessuno ascolta, e lasciare che siano loro a raccontare la loro vita.
 La mia missione è dare voce a chi ne ha più bisogno. Questo è Voci Vere."
+
+### SCHEMA NUOVO (Manuel 18/11): giorno del lungo = lungo + TRAILER + REEL PONTE; poi 4 reel. Niente teaser il giorno prima.
+TRAILER (apertura del lungo con la sigla; verticale collegato al lungo + orizzontale da condividere)
+- Titolo Short / prima riga IG: Migliaia a piedi da mezzanotte all'alba, sulla costa del Kerala 🇮🇳
+- Didascalia IG:
+  Migliaia a piedi da mezzanotte all'alba, sulla costa del Kerala 🇮🇳
+  13 km di cammino, pregando, fino alla basilica di Arthunkal: nel 1584 la ricostruì un gesuita italiano.
+
+  Tu cammineresti tutta la notte?
+
+  Il video completo è uscito oggi sul canale YouTube Voci Vere, link in bio.
+  #india #kerala #viaggio #VociVere #pellegrinaggio
+- Descrizione Short YT: 13 km a piedi, da mezzanotte all'alba, fino alla basilica di Arthunkal, in Kerala. Il video completo è uscito oggi: è nel link sopra il titolo. #india #kerala #viaggio #VociVere #pellegrinaggio
+- Orizzontale (da condividere, messaggio o post): È uscito il nuovo video di Voci Vere: 13 km a piedi, di notte, con migliaia di pellegrini sulla costa del Kerala. [link del lungo]
+
+REEL PONTE (curiosità che porta al lungo, come "spazio Munnar"; esce dopo il lungo, lungo collegato)
+- Titolo Short / prima riga IG: Cosa ci fanno migliaia di persone in strada alle 2:30 di notte, in India? 🇮🇳
+- Unica scritta: 2:30 DI NOTTE. Primo secondo: la colonna di persone sotto i lampioni (0236), Manuel in camera dentro la folla.
+  Non dà la risposta: si chiude sulla folla che cammina.
+- Didascalia IG: Cosa ci fanno migliaia di persone in strada alle 2:30 di notte, in India? 🇮🇳 / Kerala, sulla costa. / Lo scopri nel video uscito oggi sul canale YouTube Voci Vere, link in bio. / #india #kerala #viaggio #VociVere #pellegrinaggio
+- Descrizione Short YT: Kerala, India, alle 2:30 di notte. Lo scopri nel video completo, nel link sopra il titolo.
+
+4 REEL DOPO (dal lungo; Manuel in camera, movimento, una sola scritta all'inizio)
+| Reel | Titolo dello Short | Unica scritta | Primo secondo |
+|---|---|---|---|
+| 1 | 13 km a piedi, di notte, pregando 🇮🇳 | 13 KM A PIEDI | la folla di notte col rosario |
+| 2 | Cibo e acqua gratis per chi cammina 13 km 🇮🇳 | CIBO GRATIS | le mani che passano cibo o acqua |
+| 3 | 13 km di notte: «Lì succedono tanti miracoli» 🇮🇳 | «TANTI MIRACOLI» | lei che cammina tra la folla |
+| 4 | Una chiesa in India ricostruita da un gesuita italiano nel 1584 🇮🇳 | UN ITALIANO, 1584 | la basilica con la folla, Manuel in camera |
+Didascalie dei 4 reel: sui montati.
