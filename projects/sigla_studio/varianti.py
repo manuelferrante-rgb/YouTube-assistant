@@ -26,7 +26,18 @@ TAG = os.environ.get("SIGLA_TAG", "")
 FRASE, FA, FB = f"{S}/frase_sigla_manuel.m4a", 1.70, 5.75
 V0 = 0.30                     # inizio della frase nella sigla
 T_VOCI = V0 + 4.88 - FA       # attacco di "Voci" (3.48 s)
+_T_QUESTO = 3.98              # attacco di "Questo è" nel file
 DUR = 6.0
+# frase della MISSIONE (Manuel 18/11, da arthunkal rifatto in poi): SIGLA_MISSIONE=1 -> assets/voce/sigla_missione.m4a
+# (pulita da projects/sigla_missione/voce.py, tempi di "Questo è" e "Voci" nel .json accanto); sigla ~12.6 s
+if os.environ.get("SIGLA_MISSIONE"):
+    import json as _json
+    FRASE = f"{ROOT}/assets/voce/sigla_missione.m4a"
+    _m = _json.load(open(FRASE.replace(".m4a", ".json")))
+    FA, FB = 0.0, _m["fine"] + 0.25
+    T_VOCI = V0 + _m["voci"] - FA
+    _T_QUESTO = _m["questo"]
+    DUR = T_VOCI + 2.52
 GOLD = np.array([75, 138, 182], np.float32) / 255     # BGR
 
 
@@ -78,8 +89,8 @@ def ease(u):
 
 
 def voice():
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", FRASE, "-af", f"atrim={FA}:{FB},asetpts=PTS-STARTPTS,"
-                          "highpass=f=80,loudnorm=I=-16:TP=-2", "-ac", "2", "-ar", str(SR), "-f", "f32le", "-"],
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", FRASE, "-af", f"atrim={FA}:{FB},asetpts=PTS-STARTPTS," +
+                          ("anull" if os.environ.get("SIGLA_MISSIONE") else "highpass=f=80,loudnorm=I=-16:TP=-2"), "-ac", "2", "-ar", str(SR), "-f", "f32le", "-"],
                          capture_output=True, check=True).stdout
     return np.frombuffer(raw, np.float32).reshape(-1, 2)
 
@@ -113,13 +124,14 @@ def encode(name, gen, events):
 
 
 # pezzi: 6 x 0.53 s fino a poco prima di "Voci"
-SEG = (T_VOCI - 0.15) / len(PIECES)
+NP = len(CLIPS) or len(PIECES)
+SEG = (T_VOCI - 0.15) / NP
 PF = ([frames(c, int(SEG * FPS) + 8, a) for c, a in CLIPS] if CLIPS else
       [frames(f"{S}/{p}", int(SEG * FPS) + 8) for p in PIECES])
 
 
 def piece_at(t, push=0.05):
-    i = min(int(t / SEG), len(PIECES) - 1)
+    i = min(int(t / SEG), NP - 1)
     fr = PF[i][min(int((t - i * SEG) * FPS), len(PF[i]) - 1)].astype(np.float32) / 255
     z = 1 + push * (t - i * SEG) / SEG
     M = np.float32([[z, 0, W / 2 * (1 - z)], [0, z, H / 2 * (1 - z)]])
@@ -181,7 +193,7 @@ def gen_B(t, f):
         fr, i = piece_at(t, push=0.03)
         # dissolvenza breve verso il pezzo successivo
         tl = (i + 1) * SEG - t
-        if tl < 0.12 and i + 1 < len(PIECES):
+        if tl < 0.12 and i + 1 < NP:
             nx = (PF[i + 1][0].astype(np.float32) / 255)
             a = 1 - tl / 0.12
             fr = fr * (1 - a) + nx * a
@@ -281,7 +293,7 @@ if __name__ == "__main__":
 # immagini con il look della B (grana, colori un po' spenti, dissolvenze) ma a tutto schermo 16:9 (niente bande),
 # l'onda della C che entra solo da "Questo è" e si chiude nell'icona del logo su "Voci", logo su sfondo sfocato (B),
 # suono della A.
-T_QUESTO = V0 + 3.98 - FA          # attacco di "Questo è" (2.58 s)
+T_QUESTO = V0 + _T_QUESTO - FA          # attacco di "Questo è" (2.58 s)
 
 
 def gen_D(t, f):
@@ -289,7 +301,7 @@ def gen_D(t, f):
     if t < t_close:
         fr, i = piece_at(t, push=0.03)
         tl = (i + 1) * SEG - t
-        if tl < 0.12 and i + 1 < len(PIECES):
+        if tl < 0.12 and i + 1 < NP:
             a = 1 - tl / 0.12
             fr = fr * (1 - a) + (PF[i + 1][0].astype(np.float32) / 255) * a
         fr = film(fr, f, bars=False)

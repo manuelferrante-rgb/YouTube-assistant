@@ -49,13 +49,19 @@ def sigla(tl, workdir):
 
 
 
-def sigla_d(tl, workdir, clips=None, tag=""):
+def sigla_d(tl, workdir, clips=None, tag="", missione=False):
     """Sigla fissa scelta da Manuel il 23/10 (variante D di projects/sigla_studio/varianti.py): clip già montata
-    con la frase, l'onda e il suono, nelle dimensioni del montaggio."""
+    con la frase, l'onda e il suono, nelle dimensioni del montaggio.
+    missione=True (Manuel 18/11, tutti i lunghi da arthunkal rifatto in poi): frase della missione
+    (assets/voce/sigla_missione.m4a, ~12.6 s); clips può avere più di 6 pezzi (8 consigliati)."""
     import subprocess
+    if missione:
+        tag = f"M_{tag}"
     out = f"{ROOT}/work/sigla_studio/sigla_D_{tag or 'scelta'}_{tl.W}x{tl.H}.mp4"
     if not os.path.exists(out):
         env = dict(os.environ, SIGLA_W=str(tl.W), SIGLA_H=str(tl.H))
+        if missione:
+            env["SIGLA_MISSIONE"] = "1"
         if clips:                                    # sigla a tema: 6 pezzi del video al posto di quelli del mercato
             env.update(SIGLA_CLIPS=";".join(f"{c}@{a}" for c, a in clips), SIGLA_TAG=tag)
         subprocess.run(["python3", f"{ROOT}/projects/sigla_studio/varianti.py", "D"], env=env, check=True)

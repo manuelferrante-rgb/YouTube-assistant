@@ -330,3 +330,11 @@ Nota Montaggio, 17/11 (Manuel, sul lungo fortkochi v1): vale per tutti i lunghi.
   in camera) nei momenti di contesto, al posto delle immagini da cartolina (folla del mercato, statue), sempre coerenti
   con il parlato.
 - Musica: la fa Montaggio quando Audio non c'è (`projects/fortkochi/musica.py`), poca e bassa, solo dove cala l'attenzione.
+
+Nota Montaggio, 18/11 (Manuel, frase della missione di Copy): SIGLA DEI LUNGHI da arthunkal rifatto in poi = sigla D con la
+frase "Mi chiamo Manuel. Viaggio per ascoltare le persone che di solito nessuno ascolta, e lasciare che siano loro a raccontare
+la loro vita. La mia missione è dare voce a chi ne ha più bisogno. Questo è Voci Vere." Presa pulita (RNNoise all'80%, pause
+accorciate, 1.05x, -16 LUFS) in `assets/voce/sigla_missione.m4a` (tempi di "Questo è" e "Voci" nel .json accanto), rifatta da
+`projects/sigla_missione/voce.py` sulla presa originale (Drive, cartella di arthunkal, sottocartella `sigla`). Nel build:
+`sigla_d(tl, OUT, clips=[8 pezzi del video], tag=..., missione=True)`: ~12.6 s, pezzi del video sotto la frase, l'onda oro da
+"Questo è", il logo su "Voci". La vecchia frase ("Il mondo, raccontato da chi lo vive") resta solo nei video già usciti.
