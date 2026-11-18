@@ -175,38 +175,39 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | mar 24/11 | arthunkal: stories set 3 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | mer 25/11 | arthunkal: carosello "I volti" (+ post YouTube) (OPZIONALE) |  |
 | gio 26/11 | EXTRA kallu |  |
-| sab 28/11 | vuoto | il teaser del tè esce domenica con il lungo (Manuel 18/11) |
-| dom 29/11 | te: LUNGO 13:00 | solo se approvato |
-| dom 29/11 | te: Short teaser = "spazio Munnar", subito dopo il lungo delle 13:00 (Manuel 18/11, non più alle 17:00) (reel 10.8 s, `projects/spazio_munnar/`; v7 APPROVATO da Manuel l'11/11, file `VociVere_munnar_spazio_v7_1080x1920.mp4`, Manuel lo ha già scaricato dalla chat: niente caricamento su Drive) | decisione di Manuel via Insights/Montaggio 11/11; esce DOPO il lungo (che è alle 13:00 italiane), per esempio alle 17:00 italiane; il lungo collegato subito come video correlato su YouTube, link in bio su IG; 3 giorni dopo kallu 26/11; il lun 30/11 resta il reel più forte del tè |
-| lun 30/11 | te: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| sab 28/11 | vuoto | niente teaser il giorno prima (Manuel 18/11) |
+| dom 29/11 | te: LUNGO 13:00 + TRAILER (apertura con sigla, verticale come Short collegato + orizzontale per WhatsApp e storie) | solo se approvato; trailer da fare (Montaggio) |
+| dom 29/11 | te: REEL PONTE "spazio Munnar" (reel 10.8 s, `projects/spazio_munnar/`, v7 approvato 11/11, Manuel ha già il file), subito o qualche ora dopo il lungo, collegato | Manuel 18/11 |
+| lun 30/11 | te: reel 1 (V3, 26-29 kg al giorno) |  |
 | mar 1/12 | te: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | scambiato col reel del lunedì (Insights 8/11) |
 | mer 2/12 | EXTRA panni (pov giungla) | entrambi i profili |
-| gio 3/12 | te: reel 2 |  |
+| gio 3/12 | te: reel 2 (V2, 2-3 foglie) |  |
 | ven 4/12 | te: stories set 2 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | sab 5/12 | te: carosello (+ post YouTube) |  |
 | dom 6/12 | EXTRA comorin: statua di Thiruvalluvar | dopo VO, Audio, Montaggio |
-| lun 7/12 | te: reel 3 |  |
+| lun 7/12 | te: reel 3 (V4 chai) |  |
 | mar 8/12 | te: stories set 3 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | mer 9/12 | EXTRA bucato (te) |  |
-| gio 10/12 | te: carosello "I volti" (+ post YouTube) (OPZIONALE) |  |
+| gio 10/12 | te: reel 4 (V1, 3.000 rupie l'anno nel 1877) | il carosello "I volti" (OPZIONALE) va a ven 11/12 se Manuel lo vuole |
 | sab 12/12 | EXTRA comorin: canna da zucchero | entrambi i profili |
 | mar 15/12 | EXTRA comorin: cocco | entrambi i profili |
 | ven 18/12 | EXTRA roti ("How to make roti") | reel nuovo di Manuel 10/11; entrambi i profili; 3 giorni dopo cocco 15/12, 9 prima di treno 27/12 |
-| dom 20/12 | LUNGO A (coir) + Short teaser subito dopo, con il lungo come video correlato | niente teaser il sabato prima (Manuel 18/11): esce con il lungo, collegato come video correlato |
-| lun 21/12 | lungo A: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| dom 20/12 | LUNGO A (coir) 13:00 + TRAILER (verticale + orizzontale) + REEL PONTE (da scegliere tra i 5 verticali approvati, Manuel e Insights) | schema Manuel 18/11: lungo 13:00, poi trailer e reel ponte collegati al lungo |
+| lun 21/12 | coir: reel 1 |  |
 | mar 22/12 | lungo A: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | scambiato col reel del lunedì (Insights 8/11) |
 | mer 23/12 | lungo A: stories set 3 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
-| gio 24/12 | lungo A: reel 2 |  |
+| gio 24/12 | coir: reel 2 |  |
 | ven 25/12 | lungo A: stories set 2 (IG, OPZIONALE: decide Manuel di volta in volta) | Natale, sposta se serve |
 | sab 26/12 | lungo A: carosello (+ post YouTube) |  |
 | dom 27/12 | EXTRA treno in India | reel già fatto, in galleria |
-| lun 28/12 | lungo A: reel 3 |  |
+| lun 28/12 | coir: reel 3 |  |
 | mer 30/12 | lungo A: carosello "I volti" (+ post YouTube) (OPZIONALE) |  |
 | gio 31/12 | EXTRA comorin: tre mari (loop) |  |
-| dom 3/1 | EXTRA te V1 "Colline affittate per 3.000 rupie l'anno, nel 1877" (ex teaser del tè) | Manuel 18/11: il teaser del tè è spazio Munnar, V1 va qui al posto di uno slot dalla scorta |
+| sab 2/1 | coir: reel 4 | gio 31/12 occupato dall'extra tre mari |
+| dom 3/1 | EXTRA dalla scorta |  |
 | mar 6/1 | EXTRA dalla scorta |  |
-| dom 10/1 | LUNGO B = RIASSUNTO + Short teaser subito dopo (video correlato al lungo, Manuel 18/11); "un mese in India", più clickbait, con piccolo spoiler sulle interviste NGO (`piano/riassunto.md`) | spostato dal 24/1 (Manuel 14/11); non richiede riprese |
-| lun 11/1 | riassunto: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| dom 10/1 | LUNGO B = RIASSUNTO 13:00 + TRAILER (verticale + orizzontale) + REEL PONTE; "un mese in India", più clickbait, con piccolo spoiler sulle interviste NGO (`piano/riassunto.md`) | schema Manuel 18/11: lungo 13:00, poi trailer e reel ponte collegati al lungo |
+| lun 11/1 | riassunto: reel 1 |  |
 | mar 12/1 | riassunto: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | scambiato col reel del lunedì (Insights 8/11) |
 | mer 13/1 | riassunto: stories set 3 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | gio 14/1 | riassunto: reel 2 |  |
@@ -215,16 +216,22 @@ Reel istantanei (serie di Manuel, editati e pubblicati subito): nei giorni vuoti
 | dom 17/1 | EXTRA dalla scorta |  |
 | lun 18/1 | riassunto: reel 3 |  |
 | mer 20/1 | riassunto: carosello "I volti" (+ post YouTube) (OPZIONALE) |  |
+| gio 21/1 | riassunto: reel 4 |  |
 | ven 22/1 | EXTRA dalla scorta |  |
-| dom 24/1 | LUNGO C = NGO + Short teaser subito dopo (video correlato al lungo, Manuel 18/11); (Fort Kochi: Raksha + Ashwasa Bhavan, `piano/fortkochi.md`), il cuore di Voci Vere | spostato dal 10/1 (Manuel 14/11) |
-| lun 25/1 | NGO: reel più forte (scelto caso per caso da Manuel e Insights), su YouTube Shorts il prima possibile | regola Insights 8/11 |
+| dom 24/1 | LUNGO C = NGO 13:00 + TRAILER (verticale + orizzontale) + REEL PONTE (Fort Kochi: Raksha + Ashwasa Bhavan, `piano/fortkochi.md`; bambini mai in volto) | schema Manuel 18/11: lungo 13:00, poi trailer e reel ponte collegati al lungo |
+| lun 25/1 | NGO: reel 1 |  |
 | mar 26/1 | NGO: stories set 1 (IG, OPZIONALE: decide Manuel di volta in volta) | scambiato col reel del lunedì (Insights 8/11) |
 | mer 27/1 | NGO: stories set 3 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | gio 28/1 | NGO: reel 2 |  |
 | ven 29/1 | NGO: stories set 2 (IG, OPZIONALE: decide Manuel di volta in volta) |  |
 | sab 30/1 | NGO: carosello (+ post YouTube) |  |
 | dom 31/1 | NGO: reel 3 | programmato prima della partenza per il Vietnam |
-| dom 7/2 | LUNGO D = BILANCIO + Short teaser subito dopo (video correlato al lungo, Manuel 18/11);, introspettivo (cosa ho capito, le persone, le NGO), con gancio sul Vietnam (`piano/bilancio.md`) | il più forte per ultimo (Manuel 11/11); pacchetto 8-14/2 come ogni lungo, giorni da decidere |
+| gio 4/2 | NGO: reel 4 | programmato prima della partenza per il Vietnam |
+| dom 7/2 | LUNGO D = BILANCIO 13:00 + TRAILER (verticale + orizzontale) + REEL PONTE; introspettivo (cosa ho capito, le persone, le NGO), gancio sul Vietnam (`piano/bilancio.md`) | schema Manuel 18/11: lungo 13:00, poi trailer e reel ponte collegati al lungo |
+| lun 8/2 | bilancio: reel 1 |  |
+| gio 11/2 | bilancio: reel 2 |  |
+| lun 15/2 | bilancio: reel 3 |  |
+| gio 18/2 | bilancio: reel 4 |  |
 
 Nota da Pianificazione, 4/11 (Manuel): cocco e canna di comorin escono anche loro su entrambi i profili (personale e Voci Vere). Quindi tutti i reel mainstream (panni, autostop, cocco, canna) vanno su entrambi; le date 26/11 e 2/12 non sono più condizionate.
 Nota da Pianificazione, 4/11 (Manuel): strategia. Prima si pubblica (anche contenuti più leggeri), poi si dà al profilo una forma professionale e da "Voci Vere". Lo scopo principale, da non dimenticare: DARE VOCE A CHI NE HA PIU' BISOGNO. Ogni lungo e ogni tema nuovo (coir, migranti, ONG) va verificato contro questa frase.
@@ -485,3 +492,14 @@ Gio 19/11 e lun 23/11 (vecchi verticali di arthunkal) restano vuoti in attesa de
 Nota da Pianificazione, 18/11 (Manuel): per il tè il teaser è "spazio Munnar": esce dom 29/11 subito dopo il lungo delle 13:00 (non più
 alle 17:00), collegato al lungo. Shorts del tè: spazio Munnar 29/11, V3 30/11, V2 3/12, V4 chai 7/12. Il vecchio teaser V1 ("3.000 rupie
 l'anno, nel 1877") non è buttato: esce come extra dom 3/1 (era uno slot "dalla scorta").
+
+Nota da Pianificazione, 18/11 (Manuel): NUOVO SCHEMA DI USCITA DI OGNI LUNGO (sostituisce le note di oggi su teaser e spazio Munnar).
+Niente teaser il giorno prima. Il giorno del lungo, dalle 13:00: (1) il lungo; (2) il TRAILER = l'apertura del lungo con la sigla, in
+verticale (Short/Reel collegato al lungo) e in orizzontale (da condividere su WhatsApp e nelle storie); (3) il REEL PONTE, un reel forte
+stile "spazio Munnar", subito o qualche ora dopo, collegato al lungo. Poi 4 reel presi dal lungo (non più 3), lun e gio delle settimane dopo.
+Restano il carosello "fatto" come post YouTube e gli opzionali (stories, "I volti"). Gli extra restano dove sono.
+Tè: trailer da fare (Montaggio), ponte = spazio Munnar dom 29/11, reel V3 30/11, V2 3/12, V4 7/12, V1 10/12 (il 3/1 torna dalla scorta).
+Coir: ponte da scegliere tra i 5 verticali approvati, reel 21/12, 24/12, 28/12, 2/1. Riassunto: reel 11, 14, 18, 21/1. NGO: reel 25, 28,
+31/1 e 4/2 (programmati prima del Vietnam). Bilancio: reel 8, 11, 15, 18/2.
+Nuovo arthunkal: proposta dom 13/12 (lungo + trailer + ponte), reel lun 14/12, gio 17/12, mar 22/12, mar 29/12; da confermare con Manuel
+quando Montaggio lo consegna.

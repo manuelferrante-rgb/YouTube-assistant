@@ -338,3 +338,5 @@ accorciate, 1.05x, -16 LUFS) in `assets/voce/sigla_missione.m4a` (tempi di "Ques
 `projects/sigla_missione/voce.py` sulla presa originale (Drive, cartella di arthunkal, sottocartella `sigla`). Nel build:
 `sigla_d(tl, OUT, clips=[8 pezzi del video], tag=..., missione=True)`: ~12.6 s, pezzi del video sotto la frase, l'onda oro da
 "Questo è", il logo su "Voci". La vecchia frase ("Il mondo, raccontato da chi lo vive") resta solo nei video già usciti.
+
+Nota da Pianificazione, 18/11 (Manuel): nuovo schema di ogni lungo. Da consegnare: lungo + TRAILER (l'apertura del lungo con la sigla, in verticale 9:16 e in orizzontale 16:9) + REEL PONTE (reel forte stile "spazio Munnar") + 4 reel presi dal lungo (non più teaser + 3). Tè: manca il trailer per dom 29/11 (il ponte è spazio Munnar, i 4 reel sono V1-V4). Date in `piano/calendario.md`.

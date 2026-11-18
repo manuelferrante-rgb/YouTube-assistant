@@ -63,3 +63,4 @@ Insights di toglierlo (decide Manuel). Da misurare sul nuovo arthunkal: "Short c
 AGGIORNAMENTO 18/11 (Manuel, deciso): niente teaser il giorno prima. Giorno del lungo: lungo + trailer (l'apertura del lungo con
 la sigla, verticale collegato + orizzontale da condividere) + reel forte "ponte" (subito o dopo qualche ora). Poi 4 reel (non 3)
 presi dal lungo, nello stile nuovo, nei giorni o settimane dopo.
+- SCHEMA DI USCITA DI OGNI LUNGO (Manuel, 18/11; sostituisce "1 teaser (sabato prima)" e "3 reel"): niente teaser il giorno prima. Il giorno del lungo, dalle 13:00: il lungo, il TRAILER (apertura del lungo con la sigla, verticale come Short collegato e orizzontale per WhatsApp e storie) e il REEL PONTE (reel forte stile "spazio Munnar", subito o qualche ora dopo, collegato). Poi 4 reel presi dal lungo, di norma lunedì e giovedì delle settimane dopo, senza toccare gli extra. Restano il carosello "fatto" come post YouTube e gli opzionali.

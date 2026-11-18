@@ -173,3 +173,4 @@ Testi del nuovo schema di ogni lungo (Manuel, 18/11, CLAUDE.md Formati): per ogn
   sul canale YouTube Voci Vere, link in bio" (YT: "nel link sopra il titolo"), e un testo corto per la versione orizzontale da condividere;
 - REEL PONTE: titolo = la curiosità che fa andare a vedere il lungo (anche una domanda), una sola scritta, la risposta solo nel lungo;
 - 4 REEL dopo: titolo = fatto concreto con un numero, una sola scritta all'inizio, che si vede nel primo secondo. Poche scritte.
+Nota da Pianificazione, 18/11 (Manuel): nuovo schema di ogni lungo, sostituisce la nota di oggi sul teaser. Il giorno del lungo: lungo + TRAILER (apertura con sigla, verticale e orizzontale) + REEL PONTE (stile "spazio Munnar"), tutti collegati al lungo; poi 4 reel (non più 3). Servono testi per trailer e ponte e per il quarto reel. Date in `piano/calendario.md`.

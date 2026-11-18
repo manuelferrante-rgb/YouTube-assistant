@@ -103,7 +103,7 @@ Regole tra chat:
   (dal 25/10 niente musica di YouTube: la musica è originale, composta dalla chat Audio) -> montaggio e consegna.
 - Titolo e descrizione YT anche in inglese (traduzioni YouTube).
 - PACCHETTO DI OGNI LUNGO (Manuel, 25/10), sempre dopo l'analisi incrociata tra le chat (Insights, Pianificazione,
-  Copy, Montaggio, Audio): 1 lungo 16:9 + 1 teaser verticale + 3 reel verticali dopo il lungo + 2 caroselli
+  Copy, Montaggio, Audio): 1 lungo 16:9 + trailer (verticale e orizzontale) + reel ponte + 4 reel dopo il lungo (schema 18/11 in Formati) + 2 caroselli
   ("fatto" e "I volti", Manuel 4/11) + 3 set di stories da 6 (IG e post YouTube, 7-8 immagini 4:5, lo fa Copy:
   `copioni/caroselli/`, regole in `regole/copy.md`).
   Con titoli, descrizioni, capitoli, sottotitoli it/en, miniatura, didascalie, giorni di uscita suggeriti, analisi.
