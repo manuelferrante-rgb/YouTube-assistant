@@ -410,10 +410,10 @@ def closing_visual(W, H, items, dur, card_at, card_dur):
     # Manuel 19/11: la luce sulla riga "Seguimi per scoprire le prossime storie" parte quando lui dice "Seguimi"
     # (4.69 s nel file della chiusura, che parte da 0.88 a 1.05x: 3.63 s dopo l'inizio della voce = inizio della scritta)
     comet = (4.69 - 0.88) / 1.05
-    fr = f"{OUT}/scritta_{W}x{H}_{card_dur:.2f}_c{comet:.2f}"
+    fr = f"{OUT}/scritta_{W}x{H}_{card_dur:.2f}_c{comet:.2f}_top"
     if not os.path.exists(f"{fr}/0000.png"):
         run(["python3", f"{ROOT}/tools/scritta_finale.py", fr, "--w", str(W), "--h", str(H), "--dur", f"{card_dur:.2f}",
-             "--fadeout", "0.6", "--comet", f"{comet:.2f}"])
+             "--fadeout", "0.6", "--comet", f"{comet:.2f}", "--top"])
     d = dur / len(items)
     ins, fc = [], ""
     for i, (c, a) in enumerate(items):

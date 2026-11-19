@@ -24,15 +24,16 @@ def alpha(im, k):
     im = im.copy(); im.putalpha(im.split()[3].point(lambda v: int(v * k))); return im
 
 
-def main(out, W, H, dur, fps=30, fadeout=0.0, comet=1.7):
+def main(out, W, H, dur, fps=30, fadeout=0.0, comet=1.7, top=False):
     k = H / 1080
     S = lambda v: int(round(v * k))
     f, fs = ImageFont.truetype(FONT, S(70)), ImageFont.truetype(FONT, S(44))
     os.makedirs(out, exist_ok=True)
     g = np.zeros((H, W, 4), np.uint8); y = np.arange(H)
-    g[..., 3] = (np.clip((y - S(470)) / S(330), 0, 1) * 150)[:, None].astype(np.uint8)
+    up = S(522) if top else 0      # Manuel 19/11: in ALTO, il centro resta libero per la schermata finale di YouTube
+    g[..., 3] = ((np.clip((S(430) - y) / S(330), 0, 1) if top else np.clip((y - S(470)) / S(330), 0, 1)) * 150)[:, None].astype(np.uint8)
     veil = Image.fromarray(g, "RGBA")
-    main_ = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(main_); yy = S(612)
+    main_ = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(main_); yy = S(612) - up
     for segs in (L1, L2):
         w = sum(d.textlength(s, font=f) for s, _ in segs); x = (W - w) / 2
         for s, gg in segs:
@@ -42,7 +43,7 @@ def main(out, W, H, dur, fps=30, fadeout=0.0, comet=1.7):
     sh.putalpha(main_.split()[3].filter(ImageFilter.GaussianBlur(S(5))).point(lambda v: int(v * 0.8)))
     main_ = Image.alpha_composite(sh, main_)
     sw = d.textlength(SUB, font=fs)
-    bx0, bx1, by0, by1 = int((W - sw) / 2 - S(34)), int((W + sw) / 2 + S(34)), S(828), S(902)
+    bx0, bx1, by0, by1 = int((W - sw) / 2 - S(34)), int((W + sw) / 2 + S(34)), S(828) - up, S(902) - up
     for i in range(int(round(dur * fps))):
         t = i / fps
         fr = Image.alpha_composite(alpha(veil, ease(t / 0.8)), alpha(main_, ease(t / 0.8)))
@@ -83,5 +84,6 @@ if __name__ == "__main__":
     ap.add_argument("--dur", type=float, default=6.5); ap.add_argument("--fadeout", type=float, default=0.0)
     # Manuel 19/11: la luce parte quando Manuel dice "Seguimi per scoprire le prossime storie" (tempo dall'inizio della scritta)
     ap.add_argument("--comet", type=float, default=1.7)
+    ap.add_argument("--top", action="store_true")      # scritta in alto (Manuel 19/11)
     a = ap.parse_args()
-    main(a.out, a.w, a.h, a.dur, fadeout=a.fadeout, comet=a.comet)
+    main(a.out, a.w, a.h, a.dur, fadeout=a.fadeout, comet=a.comet, top=a.top)

@@ -395,10 +395,10 @@ def closing_visual(W, H, items, dur, card_at, card_dur):
     # Manuel 19/11: la luce sulla riga "Seguimi per scoprire le prossime storie" parte quando lui dice "Seguimi"
     # (4.69 s nel file della chiusura, che parte da 0.88 a 1.05x: 3.63 s dopo l'inizio della voce = inizio della scritta)
     comet = (4.69 - 0.88) / 1.05
-    fr = f"{OUT}/scritta_{W}x{H}_{card_dur:.2f}_c{comet:.2f}"
+    fr = f"{OUT}/scritta_{W}x{H}_{card_dur:.2f}_c{comet:.2f}_top"
     if not os.path.exists(f"{fr}/0000.png"):
         run(["python3", f"{ROOT}/tools/scritta_finale.py", fr, "--w", str(W), "--h", str(H), "--dur", f"{card_dur:.2f}",
-             "--fadeout", "0.6", "--comet", f"{comet:.2f}"])
+             "--fadeout", "0.6", "--comet", f"{comet:.2f}", "--top"])
     d = dur / len(items)
     ins, fc = [], ""
     for i, (c, a) in enumerate(items):
@@ -430,7 +430,7 @@ CAMR = {3: [(13.45, 15.1, (C("0044"), 0.3)), (45.6, 47.9, (C("0047"), 0.3)), (54
             (61.55, 62.65, (C("0028"), 0.3)), (68.22, 71.25, (C("0002"), 0.3)), (115.45, 118.45)],
         14: [(170.88, 172.05), (172.9, 173.75), (173.75, 174.6, (C("0022"), 1.0)), (174.6, 175.5, (C("0007"), 0.5)),
              (175.5, 176.88, (C("0020"), 10.0)), (177.9, 180.02), (185.25, 187.62, (C("0032"), 0.3))],
-        17: [(195.78, 198.85), (220.82, 222.4, (C("0033"), 0.3)),     # "ho visto un ragazzo che mi salutava" (v3: lui, non il secchio)
+        17: [(195.78, 198.85), (220.82, 222.4, (C("0033"), 0.3, 1.35, 0.38, DEF + ",eq=brightness=0.06:gamma=1.22:saturation=1.08", 0.62)),     # "ho visto un ragazzo che mi salutava" (v3: lui, non il secchio)
              (222.6, 224.32, (ROT, 7.6, 1.45, 0.3, DEF + ",eq=brightness=0.04:gamma=1.15", 0.6)), (252.97, 258.85)],
         19: [(271.28, 272.8), (279.9, 282.25)],          # v3: Manuel in camera invece delle stesse scale
         20: [(304.2, 306.4), (307.12, 308.45), (308.9, 311.25, (C("0041"), 0.0))],
@@ -458,8 +458,8 @@ def long_video(W, H):
     # v3 (Manuel 18/11): si apre SUBITO sul ragazzo seduto che saluta Manuel (0033, tutta la clip, muta), poi i ragazzi
     # nella sala inquadrati stretti (non la stanza), lei in video; 3 s dopo di nuovo il ragazzo. Via l'uomo col secchio.
     BOY = C("0033")
-    e.say(E35, [(248.22, 249.8, (BOY, 0.0)), (249.8, 252.1, (ROT, 9.3, 1.6, 0.3, DEF + ",eq=brightness=0.04:gamma=1.15", 0.7)),
-                (252.4, 255.4), (255.4, 257.2, (BOY, 1.6)),
+    e.say(E35, [(248.22, 249.8, (BOY, 0.0, 1.35, 0.38, DEF + ",eq=brightness=0.06:gamma=1.22:saturation=1.08", 0.62)), (249.8, 252.1, (ROT, 9.3, 1.6, 0.3, DEF + ",eq=brightness=0.04:gamma=1.15", 0.7)),
+                (252.4, 255.4), (255.4, 257.2, (BOY, 1.6, 1.35, 0.38, DEF + ",eq=brightness=0.06:gamma=1.22:saturation=1.08", 0.62)),
                 (257.2, 258.95),
                 (258.95, 263.45)], cut=(0.3, 0.08),
           subs=[(248.2, 252.2, "Questi bambini sono come gli altri bambini."),
@@ -467,7 +467,7 @@ def long_video(W, H):
                 (256.4, 259.9, "le hanno anche i nostri: solo che lo fanno in un modo diverso."),
                 (259.9, 263.6, "In un modo diverso, con uno stile diverso, a una velocità diversa.")], **I)
     t_v1 = e.t
-    vo(1, [(C("0034"), 0.0, 2.1), (C("0037"), 6.9, 3.0), (C("0042"), 0.2, None)])
+    vo(1, [(C("0034"), 0.0, 2.1), (C("0037"), 8.4, 1.6), (C("0042"), 0.2, None)])   # v4: metà bacheca qui, metà al VO18
     vo(2, [(C("0029"), 0.0, 3.2), (B("0003"), 4.2, 2.4), (C("0025"), 0.1, 2.9), (C("0006"), 0.4, None)], tail=0.5)
     music(tl, "apertura", t_v1 - 0.3, e.t + 0.2, fin=1.2, fout=0.8)
     t_sigla = sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="fortkochi", missione=True)
@@ -539,47 +539,39 @@ def long_video(W, H):
 
     # 4. RAKSHA
     t_r = e.t
-    vo(15, [(C("0042"), 2.0, 1.9), (C("0037"), 0.2, None)])       # v3: meno scale e corridoi ripetuti
+    vo(15, [(C("0037"), 0.2, 2.6), (C("0037"), 3.0, 2.4), (C("0042"), 2.4, None)])       # v4 (Manuel 19/11): festoni e scale UNA sola volta
     music(tl, "raksha", t_r - 0.3, e.t + 0.2, fin=1.0, fout=0.6)
-    e.say(E35, [(22.7, 27.3), (46.2, 49.9), (50.8, 53.8, (C("0034"), 0.3)), (54.5, 59.0), (120.1, 125.9)],
+    e.say(E35, [(22.7, 27.3), (46.2, 49.9), (50.8, 53.8), (54.5, 59.0), (120.1, 125.9)],
           subs=[(22.7, 27.3, "Il nome è Raksha Society, per la cura dei bambini con bisogni speciali."),
                 (46.2, 49.9, "È un'organizzazione che lavora con le persone con disabilità."),
                 (50.8, 53.8, "Prepariamo ogni singola persona"),
                 (54.5, 59.0, "a diventare indipendente, economicamente e nella vita di tutti i giorni."),
                 (120.1, 125.9, "Vengono di giorno: dopo le lezioni tornano a casa, e ogni giorno tornano a scuola.")], **IE)
     t16 = e.t
-    vo(16, [(C("0037"), 11.0, 3.0), (C("0038"), 0.0, None)])
+    vo(16, [(C("0045"), 3.6, 4.2), (C("0048"), 3.0, 2.2), (C("0049"), 0.0, None)])       # v4: il dato sul Kerala sopra la gente di Kochi, non i corridoi
     music(tl, "raksha", t16 - 0.3, e.t + 0.2, offset=12.0, fin=0.8, fout=0.8)
     e.cam(CAMR[17])
     t18 = e.t
-    vo(18, [(C("0037"), 13.5, None)])
+    vo(18, [(ROT, 10.2, 2.2, dict(zoom=1.5, cx=0.6, zy=0.7)),
+            (C("0037"), 6.8, 1.6), (C("0038"), 0.0, None)])         # v4: la sala, la bacheca "Raksha products", l'orto
     t_fam = e.t
     e.cam(CAMR[19])
-    # v3 (Manuel 18/11): educatrice solo sulle frasi forti (15-20 s per blocco), inquadratura stretta a ogni taglio
-    e.say(E35, [(90.6, 94.45), (94.6, 98.6), (99.2, 101.2), (104.4, 108.1)],
+    # v4 (Manuel 19/11): dell'educatrice solo 4 frasi forti: la diagnosi a pochi mesi, "un figlio è un sogno per i genitori",
+    # il lavoro, "persone come te"; inquadrature strette a ogni taglio, il resto tolto
+    e.say(E35, [(90.6, 94.45), (104.4, 108.1)],
           subs=[(90.6, 94.45, "Appena c'è una diagnosi, che abbiano sei mesi o un anno,"),
-                (94.6, 98.6, "quando i medici vedono che un bambino è a rischio,"),
-                (99.2, 101.2, "li mandano in posti come il nostro."),
-                (104.4, 108.1, "Abbiamo bambini fin dai tre mesi di età.")], **IE)
-    e.say(E35, [(166.1, 170.75), (171.6, 179.3), (179.8, 182.75), (225.7, 231.6)],
+                (104.4, 108.1, "abbiamo bambini fin dai tre mesi di età.")], **IE)
+    e.say(E35, [(166.1, 170.75), (171.6, 179.3)],
           subs=[(166.1, 170.75, "Di solito un figlio che nasce è un sogno per i genitori."),
                 (171.6, 175.9, "Quando ai bambini viene diagnosticata una disabilità,"),
-                (175.9, 179.3, "i sogni dei genitori vanno in pezzi."),
-                (179.8, 182.75, "All'inizio si sentono impotenti."),
-                (225.7, 228.55, "Noi seguiamo non solo i genitori,"),
-                (228.55, 231.6, "anche i fratelli e le sorelle: seguiamo tutta la famiglia.")], **dict(IE, zooms=[1.45, 1.0]))
+                (175.9, 179.3, "i sogni dei genitori vanno in pezzi.")], **dict(IE, zooms=[1.45, 1.0]))
     t_lav = e.t
     e.cam(CAMR[20])
-    e.say(E35, [(275.7, 279.95), (280.3, 284.45), (295.3, 298.2)],
+    e.say(E35, [(275.7, 279.95), (280.3, 284.45, (C("0037"), 13.5))],
           subs=[(275.7, 279.95, "Perché oggi, se vuoi trovare un lavoro,"),
-                (280.3, 284.45, "prendono la persona più adatta per quel lavoro."),
-                (295.3, 298.2, "A un certo punto hanno bisogno di qualcuno che li guidi.")], **IE)
-    vo(21, [(C("0037"), 17.0, None)], tail=0.15)
-    e.say(E35, [(268.7, 272.75), (272.9, 275.35), (302.9, 309.6), (310.3, 313.6), (313.7, 314.5)],
-          subs=[(268.7, 272.75, "Quando entrano nella società, nella comunità,"),
-                (272.9, 275.35, "devono essere accettati come sono."),
-                (302.9, 309.6, "E le barriere, soprattutto quelle fisiche ed emotive, nella società vanno tolte."),
-                (310.3, 313.6, "È importante che nella società ci siano persone come te."),
+                (280.3, 284.45, "prendono la persona più adatta per quel lavoro.")], **IE)
+    e.say(E35, [(310.3, 313.6), (313.7, 314.5)],
+          subs=[(310.3, 313.6, "È importante che nella società ci siano persone come te."),
                 (313.7, 314.5, "Grazie mille.")], **dict(IE, zooms=[1.45, 1.0]))
 
     # 5. CHIUSURA
@@ -589,14 +581,14 @@ def long_video(W, H):
     # Kochi fuori (Manuel 17/11): il quartiere al posto della folla del mercato e della statua
     vo(23, [(C("0048"), 1.0, 1.5), (C("0043"), 1.2, 2.0), (C("0046"), 0.1, 1.8), (C("0026"), 0.0, 2.2),
             (C("0045"), 1.5, 1.8), (C("0028"), 0.3, None)], lead=0.3, tail=0.5)
-    vo(24, [(C("0042"), 0.0, 3.0), (C("0029"), 10.0, None)], lead=0.2, tail=0.4)
+    vo(24, [(C("0022"), 3.0, 2.4), (C("0029"), 10.0, None)], lead=0.2, tail=0.4)   # v4: ultimi 15 s senza volti
     # frase di chiusura dalla registrazione pulita (regola 9/11), immagini senza volti, scritta finale
     f_ch, d_ch = piece("chiusura", [(CHIUSURA, [(0.88, 6.80)])])
     lead, after = 0.3, 2.6
     t_c0 = e.t
     tl.vos.append(dict(file=f_ch, a=0, b=d_ch, speed=1.0, t=t_c0 + lead, raw=True))
     dur = lead + d_ch + after
-    items = [(C("0046"), 22.5), (C("0022"), 2.0), (C("0021"), 1.0), (C("0029"), 12.0)]
+    items = [(C("0024"), 0.3), (C("0028"), 2.5), (C("0021"), 0.5), (C("0023"), 0.3)]   # v4: senza volti
     tl._add(closing_visual(W, H, items, dur, lead, dur - lead), 0, dur, audio=False, grade="null")
     music(tl, "finale", t23 - 0.4, e.t, fin=1.5, fout=1.0)
     # v3: niente sigla vecchia in coda (la frase vecchia resta solo nei video già usciti)

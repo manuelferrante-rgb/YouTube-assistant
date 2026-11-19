@@ -345,3 +345,10 @@ Nota Montaggio, 19/11 (Manuel): nella CHIUSURA dei lunghi la luce che attraversa
 scoprire le prossime storie" (scritta finale, `tools/scritta_finale.py`) NON parte subito: parte quando Manuel dice "Seguimi
 per scoprire le prossime storie". Con `assets/voce/chiusura_vocivere.m4a` ("Seguimi" a 4.69 s nel file, voce da 0.88 a 1.05x)
 sono 3.63 s dopo l'inizio della voce: `--comet 3.63` (già nei `closing_visual` di arthunkal e fortkochi).
+
+Nota Montaggio, 19/11 (Manuel, dopo arthunkal rifatto e fortkochi v3): vale per tutti i lunghi.
+1. Niente cartelli fermi lunghi: le date (linea del tempo) brevi, sopra immagini vere che si muovono, non 8 s di grafica ferma.
+2. Dopo il punto più forte (l'arrivo, la rivelazione) niente momenti di contorno: si va verso la chiusura.
+3. La scritta finale sta IN ALTO (`tools/scritta_finale.py --top`): il centro resta libero per gli elementi della schermata
+   finale di YouTube. Ultimi 15 s senza volti e senza scritte al centro.
+4. Ogni lungo nuovo usa la sigla con la frase della missione (`sigla_d(..., missione=True)`), mai più la sigla vecchia in coda.
