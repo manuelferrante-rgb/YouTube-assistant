@@ -528,3 +528,8 @@ correzione di Montaggio (slot libero di dicembre). Revisione in `analisi/arthunk
 Nota da Insights e Pianificazione, 19/11 (Manuel): su Instagram il trailer di arthunkal esce ORIZZONTALE come test (regola "niente
 orizzontale su IG" tolta); il ponte su IG resta verticale. YouTube: solo verticali. Misura a 48 ore: % scorsi via del trailer IG
 contro i reel verticali.
+
+Nota da Montaggio, 19/11: FORTKOCHI v4 (6:14) su Drive al posto della v3, IN APPROVAZIONE (sigla nuova, scritta finale in alto,
+educatrice a 4 frasi, scale una volta, ultimi 15 s senza volti). Capitoli e banner in `projects/fortkochi/capitoli.md`.
+ARTHUNKAL: lungo, trailer e ponte escono così (Manuel 19/11); reel pellegrina (13.9 s, apre su "lì succedono tanti miracoli"),
+13 km (notte ferma) e cibo gratis (volontari che servono) sostituiti su Drive in montati/arthunkal.

@@ -1,6 +1,26 @@
 # fortkochi (NGO): capitoli del lungo
 
-## v3 (Montaggio 18/11, 6:46.8) - IN APPROVAZIONE, sostituisce la v2
+## v4 (Montaggio 19/11, 6:13.8) - IN APPROVAZIONE, sostituisce la v3
+File: `VociVere_fortkochi_long_4K.mp4` in montati/fortkochi (Drive "Kochi NGO"), al posto della v3.
+v4 (Manuel 19/11): sigla nuova con la frase della missione all'inizio, niente sigla vecchia in coda; chiusura sulla scritta finale
+IN ALTO (centro libero per la schermata finale), luce su "Seguimi..." quando Manuel lo dice; educatrice ridotta a 4 frasi (diagnosi
+a pochi mesi, "un figlio è un sogno", il lavoro, "persone come te"); festoni e scale una sola volta; il ragazzo che saluta più
+chiaro e stretto; ultimi 15 s senza volti.
+
+| Tempo | Italiano | English |
+|---|---|---|
+| 0:00 | Come gli altri bambini | Like the other children |
+| 0:47 | Due posti a Kochi | Two places in Kochi |
+| 0:59 | Ashwasa Bhavan | Ashwasa Bhavan |
+| 2:10 | La giornata | The day |
+| 3:53 | Raksha | Raksha |
+| 4:50 | Le famiglie | The families |
+| 5:14 | Il lavoro, fuori | Work, outside |
+| 5:32 | Quello che diamo per scontato | What we take for granted |
+
+Banner: iscriviti 0:52.5, like 3:06.9, instagram 4:43.9.
+
+## v3 (Montaggio 18/11, 6:46.8, superata)
 File: `VociVere_fortkochi_long_4K.mp4` in montati/fortkochi (Drive "Kochi NGO"); la v2 è stata sostituita.
 v3 (Manuel 18/11 + revisione Insights `analisi/fortkochi.md`): si apre sul ragazzo seduto che saluta Manuel (`0033`, tutta la
 clip, muta) e sui ragazzi della sala inquadrati stretti con la voce dell'educatrice, lei in video, poi di nuovo il ragazzo;
