@@ -254,7 +254,7 @@ class Edit:
                       fx=dict(zoom=(1.0, 1.035, None)) if push else None, speed=speed, fade=0.12)
 
     def say(self, src, segs, subs=(), lift=False, zooms=None, grade=DEF, speed=1.0, cut=None, pad=(0.05, 0.1), cx=0.5,
-            boost=0.0, words=False):
+            boost=0.0, words=False, zy=0.3):
         """Parlato con la voce pulita della clip. segs = [(a, b) o (a, b, (clip, inizio))]: il terzo elemento copre quel
         tratto con un B-roll (o una grafica) mentre la voce continua. subs (inizio, fine, testo) in tempi della sorgente."""
         D = dur_of(src)
@@ -287,7 +287,7 @@ class Edit:
                 zi += 1
                 self.tl.speech(src, [(a, b)], speed=speed, grade=grade, gain=g, zoom=z, cx=cx)
                 if z != 1.0:
-                    self.tl.shots[-1]["zy"] = 0.3
+                    self.tl.shots[-1]["zy"] = zy
             for sa, sb, txt in subs:
                 lo, hi = max(sa, a), min(sb, b)
                 if hi - lo > 0.15:
@@ -610,7 +610,7 @@ def fact(e, txt, d=3.2):
 
 
 def reel_music(e, name, t0, t1, level=0.10, offset=0.0):
-    music(e.tl, name, t0, t1, offset=offset, level=level, fin=0.4, fout=0.8)
+    music(e.tl, name, max(0.0, t0), t1, offset=offset, level=level, fin=0.4, fout=0.8)
 
 
 def reel_13km():
@@ -621,9 +621,11 @@ def reel_13km():
     e.b(C("0237"), 2.4, 0.9, nat=0.5, grade=NIGHT, cx=0.45)
     t_m = e.t
     E27 = C("0243")
-    e.cam(E27, [(0.72, 2.6), (2.6, 4.45, (C("0231"), 4.0)), (5.0, 7.62), (8.35, 10.1, (C("0264"), 6.0)),
+    e.cam(E27, [(0.72, 2.6), (2.6, 3.5, (C("0234"), 0.3)), (3.5, 4.45, (C("0231"), 10.2)), (5.0, 7.62), (8.35, 10.1, (C("0264"), 6.0)),
                 (10.8, 12.95, (C("0258"), 2.0))], cx=0.45)
-    e.tl.shots[-4]["grade"] = NIGHT
+    for sh in e.tl.shots[-8:]:                                      # Manuel 19/11: notte ferma, non mossa
+        if "_0231_" in sh["src"] or "_0234_" in sh["src"]:
+            sh["grade"] = NIGHT
     e.cam(C("0244"), [(1.5, 4.6)], cx=0.4)
     e.cam(C("0245"), [(0.0, 3.6)], cx=0.4)
     e.cam(C("0270"), [(0.0, 3.3)], cx=0.45)
@@ -644,7 +646,10 @@ def reel_cibo():
     e.cam(C("0255"), [(4.1, 5.6), (6.9, 9.6)])
     e.cam(C("0262"), [(3.05, 3.8), (4.2, 7.8)])
     e.cam(C("0265"), [(1.35, 4.05)], cx=0.55)
-    e.cam(C("0267"), [(0.95, 2.15), (3.1, 6.1)], cx=0.5)
+    e.cam(C("0267"), [(0.95, 2.15, (C("0231"), 0.3)), (3.1, 6.1, (C("0255"), 0.3))], cx=0.5)   # Manuel 19/11: chi serve, non il rosario
+    for sh in e.tl.shots[-3:]:
+        if "_0231_" in sh["src"]:
+            sh["grade"] = NIGHT
     e.cam(C("0268"), [(0.55, 2.95)])
     e.cam(C("0274"), [(2.6, 6.05)])
     reel_music(e, "cammino", t_m - 0.2, e.t + 2.8, offset=20.0)
@@ -656,18 +661,15 @@ def reel_pellegrina():
     e = reel_edit("rpell")
     fact(e, "«TANTI MIRACOLI»")
     E = C("0281")
-    e.b(E, 6.3, 1.4, cx=0.6, nat=0.5)                              # lei che cammina tra la folla
-    e.cam(C("0243"), [(5.0, 7.62)], cx=0.45)                       # "Tredici chilometri lungo la costa del Kerala"
+    # Manuel 19/11: si apre su di lei che dice "Lì succedono tanti miracoli", stretta; via la parte lenta (domande)
     t_m = e.t
-    e.say(E, [(30.75, 32.2), (33.0, 33.7), (38.0, 39.5), (40.1, 41.75), (43.35, 44.75)], speed=1.05, lift=True,
-          pad=(0.05, 0.1), cut=(0.3, 0.08), cx=0.55, zooms=[1.0, 1.25],
-          subs=[(30.75, 32.2, "È la prima volta per te?"), (33.0, 33.7, "No."),
-                (38.0, 39.5, "Abbiamo camminato sulla spiaggia."), (40.1, 41.75, "E ora siamo in strada."),
-                (43.35, 44.75, "Che cosa significa per te?")])
-    e.say(E, [(45.6, 49.2), (51.2, 55.4), (55.85, 57.1)], speed=1.05, lift=True, boost=7.0, pad=(0.05, 0.1),
-          cut=(0.3, 0.08), cx=0.55, zooms=[1.25, 1.0],
-          subs=[(45.6, 47.0, "È fede, è credere."), (47.2, 49.2, "Lì succedono tanti miracoli."),
-                (51.2, 55.4, "Chi partecipa ci trova qualcosa."), (55.85, 57.1, "Un po' di felicità.")])
+    e.say(E, [(47.2, 49.2)], speed=1.05, lift=True, boost=7.0, pad=(0.08, 0.1), cx=0.69, zooms=[1.5], zy=0.6,
+          subs=[(47.2, 49.2, "Lì succedono tanti miracoli.")])
+    e.cam(C("0243"), [(5.0, 7.62)], cx=0.45)                       # "Tredici chilometri lungo la costa del Kerala"
+    e.say(E, [(45.6, 47.0), (51.2, 55.4), (55.85, 57.1)], speed=1.05, lift=True, boost=7.0, pad=(0.05, 0.1),
+          cut=(0.3, 0.08), cx=0.69, zooms=[1.0, 1.5], zy=0.6,
+          subs=[(45.6, 47.0, "È fede, è credere."), (51.2, 55.4, "Chi partecipa ci trova qualcosa."),
+                (55.85, 57.1, "Un po' di felicità.")])
     reel_music(e, "storia", t_m - 0.2, e.t + 2.8, level=0.07)
     e.close(E, 57.2, cx=0.55, variant="A")
     return e
