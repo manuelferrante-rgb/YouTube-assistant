@@ -252,9 +252,8 @@ Capitoli
 I video di questo viaggio
 Il mercato del pesce sulla spiaggia, in Kerala: https://youtu.be/LW4zO_0oSgQ
 
-Sostieni Voci Vere: [link PayPal]
-[solo quando il conto Amazon affiliati è aperto] La mia attrezzatura: [link Amazon]. Alcuni link sono affiliati: se acquisti ricevo una piccola percentuale, a te non costa niente.
-Coaching online con me: [link sito]
+Sostieni Voci Vere: https://www.paypal.me/manuelangeloferrante
+Coaching online con me: https://manuelferrante.it/
 
 Voci Vere racconta le persone e i luoghi lontani dalle cartoline, dando voce a chi ne ha più bisogno.
 #india #kerala #viaggio #VociVere #pellegrinaggio
@@ -275,9 +274,8 @@ Chapters
 Videos from this trip
 The fish market on the beach, in Kerala: https://youtu.be/LW4zO_0oSgQ
 
-Support Voci Vere: [PayPal link]
-[only once the Amazon affiliate account is open] My gear: [Amazon link]. Some links are affiliate links: if you buy, I get a small percentage at no cost to you.
-Online coaching with me: [website link]
+Support Voci Vere: https://www.paypal.me/manuelangeloferrante
+Online coaching with me: https://manuelferrante.it/
 
 Voci Vere tells the stories of people and places far from the postcards, giving a voice to those who need it most.
 #india #kerala #travel #VociVere #pilgrimage
