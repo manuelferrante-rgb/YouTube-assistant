@@ -40,3 +40,15 @@ Il vecchio lungo diventa privato il giorno in cui esce quello nuovo. La data la 
 - Si possono velocizzare: tagliare le pause, le scene lente e i tratti in cui Manuel parla piano; velocità più alta dove serve.
 - Modello per il lungo: `analisi/competitor/progetto_happiness_mumbai.md` (apertura di sole immagini e nome del posto, sigla con la
   missione, Manuel in camera con i numeri entro 1:30, una cosa nuova ogni 1-2 minuti, intervista vera come cuore, chiusura in VO).
+
+## Revisione di Insights sui file nuovi (19/11, Drive montati/arthunkal)
+Visti lungo 3:50, trailer 45 s, ponte 21 s e 4 reel (fotogrammi + trascrizione). VA BENE, si pubblica.
+- Lungo: la promessa arriva subito (folla di notte, "MIGLIAIA DI PERSONE, 13 KM A PIEDI", "DA MEZZANOTTE ALL'ALBA"), Manuel in
+  camera a 0:57 con ora, km e "centinaia di migliaia", una cosa nuova ogni 20-40 s, interviste brevi. Sigla integra.
+  Deboli ma non da rifare: i 4 cartelli "1584/1647" (3:06-3:16, statici), la statua di Milano solo detta. Titolo giusto: quello
+  senza Milano (Copy 18/11), perché la statua non si vede.
+- Ponte "UN ITALIANO, 1584": primo secondo giusto (basilica + scritta). Ha 5 s di cartelli fermi (8-9 s, 13-16 s) e il VO non dice
+  "da Milano". Va bene così per oggi.
+- Reel, ordine consigliato: 13 km (il più forte, numero + folla + Manuel in camera), tutti insieme, cibo gratis, pellegrina.
+  Pellegrina: il più debole (inquadratura larga ferma per 15 s, lei al bordo, la frase del titolo arriva solo a 12 s): da sistemare.
+  13 km: a 0:05-0:06 due immagini di notte mosse. Cibo gratis: "volontari induisti" sopra un rosario in primo piano.

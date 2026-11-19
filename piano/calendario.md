@@ -520,3 +520,8 @@ Nota da Montaggio, 18/11 notte: FORTKOCHI v3 (6:47) su Drive "Kochi NGO" montati
 Si apre sul ragazzo seduto che saluta Manuel, interviste più corte e strette, tagli netti, sottotitoli 1.5x, bambini senza sfocatura
 (consenso di tutti, Manuel 18/11). Capitoli e banner nuovi in `projects/fortkochi/capitoli.md`; Copy rifà sottotitoli it/en e capitoli
 dopo l'ok di Manuel.
+
+Nota da Insights e Pianificazione, 19/11 (Manuel): ARTHUNKAL RIFATTO ESCE OGGI gio 19/11 (non più il 13/12), prova di orario serale:
+lungo 18:30 italiane + trailer verticale subito dopo (collegato) + ponte "UN ITALIANO, 1584" verso le 21:00 (collegato). Il vecchio lungo
+diventa privato appena il nuovo è online. Reel: lun 23/11 13 km, mer 25/11 tutti insieme, ven 27/11 cibo gratis, pellegrina dopo la
+correzione di Montaggio (slot libero di dicembre). Revisione in `analisi/arthunkal_rifacimento.md`. Dati: 48 ore sab 21/11 sera, 7 giorni gio 26/11.

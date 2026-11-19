@@ -24,3 +24,13 @@ Metro: i nostri dati (mercato, arthunkal) e il modello Progetto Happiness (`comp
 5. RAKSHA HA POCO GIRATO e si vedono più volte le stesse scale e lo stesso corridoio (3:54, 4:48, 5:30). Meglio un pezzo di
    Manuel in camera in più che la stessa immagine tre volte.
 6. Durata 7:23: va bene così. I 10 minuti non servono se il materiale non c'è.
+
+## Revisione della v3 (19/11, 6:47)
+Molto meglio della v2: tagli netti, sottotitoli più grandi, suore alternate con B-roll, Manuel in camera più spesso, bambini visibili.
+Resta da sistemare:
+1. 4:48-6:00: l'educatrice di Raksha quasi un minuto nella stessa inquadratura larga dell'ufficio (un solo stacco, le scale a 5:40).
+   È il punto dove si perde gente. Tenere 3-4 frasi forti (diagnosi a pochi mesi, "un figlio è un sogno per i genitori", il lavoro,
+   "persone come te") e coprire il resto con Raksha al lavoro.
+2. Le stesse scale e lo stesso corridoio tornano 4 volte (3:52, 4:16, 4:40, 5:40): al massimo una.
+3. Primo secondo: il ragazzo che saluta è scuro e largo; schiarirlo o stringere.
+4. Fine: togliere la vecchia sigla (opzione 1 di Montaggio) e chiudere sulla scritta finale; sigla nuova all'inizio come arthunkal.
