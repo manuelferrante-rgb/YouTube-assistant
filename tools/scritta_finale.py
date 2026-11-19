@@ -24,7 +24,7 @@ def alpha(im, k):
     im = im.copy(); im.putalpha(im.split()[3].point(lambda v: int(v * k))); return im
 
 
-def main(out, W, H, dur, fps=30, fadeout=0.0):
+def main(out, W, H, dur, fps=30, fadeout=0.0, comet=1.7):
     k = H / 1080
     S = lambda v: int(round(v * k))
     f, fs = ImageFont.truetype(FONT, S(70)), ImageFont.truetype(FONT, S(44))
@@ -52,7 +52,7 @@ def main(out, W, H, dur, fps=30, fadeout=0.0):
             d.rectangle([bx0, by0, bx1, by1], fill=(0, 0, 0, int(200 * b)))
             d.text(((W - sw) / 2, by0 + S(13)), SUB, font=fs, fill=WHITE + (int(255 * b),))
             fr = Image.alpha_composite(fr, lay)
-        c = (t - 1.7) / 1.3                                    # cometa 1.7-3.0 s, una volta, poi si richiude
+        c = (t - comet) / 1.3                                  # cometa da `comet` s (default 1.7), una volta, poi si richiude
         if 0 < c < 1.4:
             head = bx0 + (bx1 - bx0) * ease(min(c, 1))
             tail = (bx1 - bx0) * 0.5 * max(0, 1 - max(0, c - 0.6) / 0.75)
@@ -81,5 +81,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("out"); ap.add_argument("--w", type=int, default=1920); ap.add_argument("--h", type=int, default=1080)
     ap.add_argument("--dur", type=float, default=6.5); ap.add_argument("--fadeout", type=float, default=0.0)
+    # Manuel 19/11: la luce parte quando Manuel dice "Seguimi per scoprire le prossime storie" (tempo dall'inizio della scritta)
+    ap.add_argument("--comet", type=float, default=1.7)
     a = ap.parse_args()
-    main(a.out, a.w, a.h, a.dur, fadeout=a.fadeout)
+    main(a.out, a.w, a.h, a.dur, fadeout=a.fadeout, comet=a.comet)

@@ -340,3 +340,8 @@ accorciate, 1.05x, -16 LUFS) in `assets/voce/sigla_missione.m4a` (tempi di "Ques
 "Questo è", il logo su "Voci". La vecchia frase ("Il mondo, raccontato da chi lo vive") resta solo nei video già usciti.
 
 Nota da Pianificazione, 18/11 (Manuel): nuovo schema di ogni lungo. Da consegnare: lungo + TRAILER (l'apertura del lungo con la sigla, in verticale 9:16 e in orizzontale 16:9) + REEL PONTE (reel forte stile "spazio Munnar") + 4 reel presi dal lungo (non più teaser + 3). Tè: manca il trailer per dom 29/11 (il ponte è spazio Munnar, i 4 reel sono V1-V4). Date in `piano/calendario.md`.
+
+Nota Montaggio, 19/11 (Manuel): nella CHIUSURA dei lunghi la luce che attraversa da sinistra a destra il riquadro "Seguimi per
+scoprire le prossime storie" (scritta finale, `tools/scritta_finale.py`) NON parte subito: parte quando Manuel dice "Seguimi
+per scoprire le prossime storie". Con `assets/voce/chiusura_vocivere.m4a` ("Seguimi" a 4.69 s nel file, voce da 0.88 a 1.05x)
+sono 3.63 s dopo l'inizio della voce: `--comet 3.63` (già nei `closing_visual` di arthunkal e fortkochi).
