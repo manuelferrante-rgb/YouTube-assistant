@@ -69,3 +69,7 @@ Video lunghi ultimi 28 giorni: mercato 307, arthunkal 15, "Voci Vere primo video
   raccoglie, il numero a schermo subito); reel di lunedì 30/11 = V3 "26-29 chili di tè al giorno, raccolti a mano"; poi V2
   (3/12) e V4 chai (7/12). Il titolo del lungo ("AFFITTATE PER 3.000 RUPIE L'ANNO") è già concreto.
 - Arthunkal lungo: si decide il 22/11 (se CTR < 2%, titolo nuovo con un fatto concreto).
+
+Nota 19/11 (Manuel): prima di pubblicare il rifacimento, il vecchio arthunkal è tutto tolto. YouTube: vecchio lungo e i due vecchi
+Short (teaser 14/11, statua 16/11) PRIVATI. Instagram: i due vecchi reel ARCHIVIATI. Da qui i dati di arthunkal sono solo quelli
+del rifacimento (uscito 19/11 sera); i numeri del vecchio restano sopra come riferimento.
