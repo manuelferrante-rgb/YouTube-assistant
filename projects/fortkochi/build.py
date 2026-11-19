@@ -439,7 +439,8 @@ I2 = dict(I, cut=(0.35, 0.1))
 IS = dict(I2, zooms=[1.0, 1.3], cx=0.5, zy=0.3)       # suore alla porta: le due insieme, più vicine
 IE = dict(I2, zooms=[1.0, 1.45], cx=0.48, zy=0.22)    # educatrice di Raksha: stretta sul viso                                # e via le pause lunghe dentro le risposte     # interviste: tagli esatti sulle risposte
 
-SIGLA_CLIPS = [(C("0029"), 2.0), (C("0025"), 0.5), (ROT, 8.6), (C("0022"), 1.5), (C("0023"), 0.5), (C("0015"), 8.0)]
+SIGLA_CLIPS = [(C("0029"), 2.0), (C("0025"), 0.5), (ROT, 10.4), (C("0022"), 1.5), (C("0023"), 0.5), (C("0015"), 8.0),
+               (C("0024"), 0.5), (C("0011"), 2.0)]     # 8 pezzi sotto la frase della missione (Manuel 18/11)
 
 
 def long_video(W, H):
@@ -466,7 +467,7 @@ def long_video(W, H):
     vo(1, [(C("0034"), 0.0, 2.1), (C("0037"), 6.9, 3.0), (C("0042"), 0.2, None)])
     vo(2, [(C("0029"), 0.0, 3.2), (B("0003"), 4.2, 2.4), (C("0025"), 0.1, 2.9), (C("0006"), 0.4, None)], tail=0.5)
     music(tl, "apertura", t_v1 - 0.3, e.t + 0.2, fin=1.2, fout=0.8)
-    t_sigla = sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="fortkochi")
+    t_sigla = sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="fortkochi", missione=True)
     t_dopo_sigla = e.t
 
     # 1. IN CAMERA: dove siamo, i due posti
@@ -595,7 +596,7 @@ def long_video(W, H):
     items = [(C("0046"), 22.5), (C("0022"), 2.0), (C("0021"), 1.0), (C("0029"), 12.0)]
     tl._add(closing_visual(W, H, items, dur, lead, dur - lead), 0, dur, audio=False, grade="null")
     music(tl, "finale", t23 - 0.4, e.t, fin=1.5, fout=1.0)
-    sigla_d(tl, OUT, clips=SIGLA_CLIPS, tag="fortkochi")
+    # v3: niente sigla vecchia in coda (la frase vecchia resta solo nei video già usciti)
 
     chapters = [(0.0, "Come gli altri bambini", "Like the other children"),
                 (t_dopo_sigla, "Due posti a Kochi", "Two places in Kochi"),
