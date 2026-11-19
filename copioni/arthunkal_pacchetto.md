@@ -228,3 +228,118 @@ REEL PONTE (curiosità che porta al lungo, come "spazio Munnar"; esce dopo il lu
 | 3 | 13 km di notte: «Lì succedono tanti miracoli» 🇮🇳 | «TANTI MIRACOLI» | lei che cammina tra la folla |
 | 4 | Una chiesa in India ricostruita da un gesuita italiano nel 1584 🇮🇳 | UN ITALIANO, 1584 | la basilica con la folla, Manuel in camera |
 Didascalie dei 4 reel: sui montati.
+
+## USCITA ARTHUNKAL RIFATTO (gio 19/11; Copy 19/11). Lungo v1 rifacimento 3:50, sottotitoli it/en già fatti da Insights.
+Lungo 18:30, trailer subito dopo, ponte verso le 21:00. Miniature: M1 KERALA principale, M2 e M3 nel test.
+
+### Titolo
+IT: 13 KM A PIEDI, DI NOTTE: migliaia di pellegrini sulla costa del Kerala, India 🇮🇳
+EN: 13 KM ON FOOT, AT NIGHT: thousands of pilgrims on the coast of Kerala, India 🇮🇳
+
+### Descrizione IT
+Ogni anno, da mezzanotte all'alba, migliaia di pellegrini camminano 13 km lungo la costa del Kerala, nell'India del Sud: dal santuario di Kalavoor alla basilica di Arthunkal, pregando il rosario senza mai fermarsi.
+Un viaggio in India lontano dalle cartoline: chi cammina e perché, chi aspetta lungo la strada con acqua e cibo gratis per tutti, e una chiesa ricostruita nel 1584 da un gesuita italiano.
+
+Capitoli
+0:00 Da mezzanotte all'alba
+0:44 13 km a piedi
+1:04 Perché camminano
+1:38 Chi non cammina
+2:02 In cammino con loro
+2:47 La basilica del gesuita italiano
+3:31 Il viaggio continua
+
+I video di questo viaggio
+Il mercato del pesce sulla spiaggia, in Kerala: https://youtu.be/LW4zO_0oSgQ
+
+Sostieni Voci Vere: [link PayPal]
+[solo quando il conto Amazon affiliati è aperto] La mia attrezzatura: [link Amazon]. Alcuni link sono affiliati: se acquisti ricevo una piccola percentuale, a te non costa niente.
+Coaching online con me: [link sito]
+
+Voci Vere racconta le persone e i luoghi lontani dalle cartoline, dando voce a chi ne ha più bisogno.
+#india #kerala #viaggio #VociVere #pellegrinaggio
+
+### Descrizione EN
+Every year, from midnight to dawn, thousands of pilgrims walk 13 km along the coast of Kerala, South India: from the Kalavoor shrine to the basilica of Arthunkal, praying the rosary without ever stopping.
+A journey through India far from the postcards: who walks and why, who waits along the road with free water and food for everyone, and a church rebuilt in 1584 by an Italian Jesuit.
+
+Chapters
+0:00 From midnight to dawn
+0:44 13 km on foot
+1:04 Why they walk
+1:38 Those who don't walk
+2:02 Walking with them
+2:47 The Italian Jesuit's basilica
+3:31 The journey goes on
+
+Videos from this trip
+The fish market on the beach, in Kerala: https://youtu.be/LW4zO_0oSgQ
+
+Support Voci Vere: [PayPal link]
+[only once the Amazon affiliate account is open] My gear: [Amazon link]. Some links are affiliate links: if you buy, I get a small percentage at no cost to you.
+Online coaching with me: [website link]
+
+Voci Vere tells the stories of people and places far from the postcards, giving a voice to those who need it most.
+#india #kerala #travel #VociVere #pilgrimage
+
+### Commento fissato (lungo)
+Tu cammineresti 13 km, tutta la notte?
+Gli altri video dal Kerala: il mercato del pesce sulla spiaggia, un pesce da 50 chili all'asta 👉 https://youtu.be/LW4zO_0oSgQ
+
+### PONTE (montato "UN ITALIANO, 1584": la basilica, il gesuita, la statua del 1647), verso le 21:00, lungo collegato
+Titolo Short / prima riga IG: Una chiesa in India ricostruita da un gesuita italiano nel 1584 🇮🇳
+Didascalia IG:
+Una chiesa in India ricostruita da un gesuita italiano nel 1584 🇮🇳
+Arthunkal, sulla costa del Kerala. Lui era padre Giacomo Fenicio: qui lo chiamano ancora Veluthachan, il padre bianco. Nel 1647 arriva da Milano una statua di San Sebastiano.
+Ogni anno migliaia di persone camminano 13 km, da mezzanotte all'alba, per arrivare fino a questa chiesa.
+
+Te lo aspettavi, un pezzo d'Italia così lontano?
+
+Il video completo è uscito oggi sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #VociVere #storia
+Descrizione Short YT: Arthunkal, Kerala: la chiesa l'ha ricostruita un gesuita italiano nel 1584, e ogni anno migliaia di persone camminano 13 km di notte per arrivarci. Il video completo è uscito oggi: è nel link sopra il titolo. #india #kerala #viaggio #VociVere #storia
+Commento fissato YT: Perché migliaia di persone camminano tutta la notte fino a questa chiesa: è nel video completo, link sopra il titolo.
+
+### REEL 1 "13 km" (lun 23/11)
+Titolo Short / prima riga IG: 13 km a piedi, di notte, pregando 🇮🇳
+Didascalia IG:
+13 km a piedi, di notte, pregando 🇮🇳
+Da mezzanotte all'alba lungo la costa del Kerala, dal santuario di Kalavoor alla basilica di Arthunkal, recitando il rosario senza mai fermarsi. La prima volta, nel 2002, erano poche centinaia.
+
+Ce la faresti?
+
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #VociVere #pellegrinaggio
+Descrizione Short YT: Da mezzanotte all'alba, 13 km lungo la costa del Kerala pregando il rosario senza mai fermarsi. Nel 2002 erano poche centinaia. Ce la faresti? #india #kerala #viaggio #VociVere #pellegrinaggio
+Commento fissato YT: Chi aspetta i pellegrini lungo la strada con acqua e cibo gratis, e la chiesa dove arrivano: è nel video completo sul canale.
+
+### REEL "TUTTI INSIEME" (mer 25/11, nuovo)
+Titolo Short / prima riga IG: Cristiani e musulmani insieme, 13 km a piedi 🇮🇳
+Didascalia IG:
+Cristiani e musulmani insieme, 13 km a piedi 🇮🇳
+Il pellegrinaggio di Arthunkal, in Kerala: circa 400.000 persone secondo chi lo organizza, da mezzanotte all'alba. Qui il cristianesimo è antico: la tradizione dice che è arrivato nel 52 d.C. con l'apostolo Tommaso.
+
+Da te succederebbe?
+
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #VociVere #pellegrinaggio
+Descrizione Short YT: Kerala, India: al pellegrinaggio di Arthunkal camminano insieme cristiani e musulmani, circa 400.000 persone secondo chi lo organizza. Da te succederebbe? #india #kerala #viaggio #VociVere #pellegrinaggio
+Commento fissato YT: Lungo la strada danno una mano anche volontari induisti, per una festa cattolica: è nel video completo sul canale.
+
+### REEL "CIBO GRATIS" (ven 27/11)
+Titolo Short / prima riga IG: Cibo e acqua gratis per chi cammina 13 km 🇮🇳
+Didascalia IG:
+Cibo e acqua gratis per chi cammina 13 km 🇮🇳
+Sulla strada per Arthunkal, in Kerala, una comunità intera dà da bere e da mangiare ai pellegrini che camminano tutta la notte. Tra i volontari anche induisti, per una festa cattolica.
+
+Da te succede una cosa così?
+
+Video completo sul canale YouTube Voci Vere, link in bio.
+#india #kerala #viaggio #VociVere #pellegrinaggio
+Descrizione Short YT: Kerala, India: lungo i 13 km del pellegrinaggio di Arthunkal, acqua e cibo gratis per chi cammina, anche da volontari induisti. Da te succede una cosa così? #india #kerala #viaggio #VociVere #pellegrinaggio
+Commento fissato YT: Perché camminano 13 km di notte e dove arrivano: è nel video completo sul canale.
+
+### POST YOUTUBE (facoltativo, dal giorno dopo il lungo, al posto del vecchio carosello)
+Foto: un fotogramma della folla di notte col rosario (primi 30 s del lungo), senza scritte.
+Testo: 13 km a piedi, da mezzanotte all'alba, con migliaia di pellegrini sulla costa del Kerala. Il video è fuori 👇 [link del lungo]
+Tu cammineresti tutta la notte?
