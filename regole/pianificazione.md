@@ -69,3 +69,11 @@ Nota da Insights e Pianificazione, 18/11 (Manuel): PIANIFICAZIONE LEGGERA, FOCUS
 Insights. Non si segue più un calendario dettagliato al 100%: per ogni lungo fatto bene lo schema è lungo + trailer + reel ponte
 il giorno stesso, poi 4 verticali; in mezzo extra e contenuti nuovi quando ci sono. Tutto il traffico va verso il lungo su YouTube.
 Instagram: Manuel mette lo stesso materiale quando se ne ricorda, senza piano. Le date in `piano/calendario.md` sono indicative.
+
+Nota da Insights e Pianificazione, 21/11 (Manuel): TRAILER NUOVO dai prossimi lunghi (tè compreso, se Montaggio non l'ha già fatto).
+Non è più l'apertura del lungo con la sigla: è un video a sé, verticale e orizzontale, con lo stesso stile (immagini forti, musica,
+le parole di Manuel) ma preso da TUTTO il video, che spiega in poche frasi di cosa parla e crea curiosità senza dare il finale. Senza sigla.
+Indicazioni di Insights (dati del mercato: il teaser montato come trailer lo scorreva via l'84% su YT): nel primo secondo il fatto più
+forte del video con la scritta, entro 3 s la voce di Manuel o di una persona che apre la domanda, 30-45 s, chiusura sulla domanda.
+Poi il ponte il giorno del lungo e i reel collegati: per ora 4, da portare a 5 o più se il materiale regge (si decide con i dati
+del nuovo arthunkal, mar 24/11).

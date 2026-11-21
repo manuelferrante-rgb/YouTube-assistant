@@ -80,8 +80,8 @@ Regole tra chat:
 - YouTube lungo: 16:9, 1920x1080 (o 4K).
 - Shorts YT e Reel IG: 9:16, 1080x1920, testi nella safe zone. Su Instagram l'orizzontale si può provare (Manuel 19/11: tolta la regola "niente orizzontale"; primo test il trailer di arthunkal). Su YouTube Shorts solo verticale.
 - SCHEMA NUOVO DI OGNI LUNGO (Manuel, 18/11, sostituisce teaser + 3 reel): NIENTE teaser il giorno prima. Il giorno del lungo:
-  il lungo, il TRAILER (l'apertura del lungo, 30-40 s di immagini forti con la sigla e le parole di Manuel, in verticale come
-  Short/Reel collegato al lungo e in orizzontale da condividere) e, subito o dopo qualche ora, il REEL FORTE "ponte" (stile
+  il lungo, il TRAILER (dal 21/11 un video a sé preso da tutto il lungo, senza sigla: 30-45 s di immagini forti e parole di Manuel
+  che spiegano di cosa parla e creano curiosità; in verticale come Short/Reel collegato al lungo e in orizzontale da condividere) e, subito o dopo qualche ora, il REEL FORTE "ponte" (stile
   "spazio Munnar": curiosità che porta al lungo, collegato). Poi 4 reel nei giorni o settimane dopo, presi dal lungo, nello
   stile nuovo (Manuel in camera, movimento, poche scritte, veloci; mai statici e pieni di testo). Regola in `regole/pianificazione.md`.
 - (Schema vecchio, superato dal 18/11) Ogni video lungo esce nel fine settimana (orientativamente). Per ognuno 4 Shorts/Reel dallo stesso girato
